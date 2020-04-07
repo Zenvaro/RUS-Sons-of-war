@@ -1,0 +1,15 @@
+UID = 2172
+NationTag = ARM
+Name = Armored Cars
+Alias = uni_ARM_Amc
+ForcePool = 12
+ShortName = Arm. Cars
+Text = $uni_CAU_Amc_txt
+Color = $colARMRegular 
+ModelType0 = $mdl_CAU_Amc|1
+FamilyType0 = $famLtVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Area_Armenia

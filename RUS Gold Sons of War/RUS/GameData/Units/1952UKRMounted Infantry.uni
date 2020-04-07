@@ -1,0 +1,15 @@
+UID = 1952
+NationTag = UKR
+Name = Mounted Infantry
+Alias = uni_UKR_Cav1
+ForcePool = 6
+ShortName = Mtd. Inf.
+Text = $uni_UKR_Cav1_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_UKR_Inf10|1
+FamilyType0 = $famCavalry|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Ukrainians

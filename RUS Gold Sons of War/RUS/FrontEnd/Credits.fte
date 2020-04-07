@@ -1,0 +1,43 @@
+UID = 50028
+Bitmap = menu_options.bmp
+x = 0
+y = 0
+z = 96
+DragDrop = {None}
+Anchor = VCenter HCenter
+GameState = stCredits
+Capacity = 0
+
+
+Caption0 = 0|60|0
+Caption1 = 0|270|0
+Caption2 = 0|84|0
+Caption3 = 0|96|0
+Caption4 = 0|108|0
+Caption5 = 0|120|0
+Caption6 = 0|132|0
+Caption7 = 0|144|0
+Caption8 = 0|156|0
+Caption9 = 0|180|0
+Caption10 = 0|192|0
+Caption11 = 0|192|0
+
+Various12 = 80|87|0
+Various13 = 170|87|0
+Various14 = 320|87|0
+Various15 = 70|170|0
+Various16 = 200|170|0
+Various17 = 255|155|0
+Various18 = 385|170|0
+
+// Abort
+Btn1 = -1|450|17
+
+{ButtonDef}
+Image = Btn_close_options_OFF.png
+OverImage = Btn_close_options_ON.png
+DownImage = Btn_close_options_CLICK.png
+Hint = $Cancel
+UpAction = CancelAction
+ClickSound = $sndTick
+{/ButtonDef}

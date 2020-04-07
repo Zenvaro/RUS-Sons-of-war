@@ -1,0 +1,11 @@
+UID = 141
+Name = $abi_nam_Traitor
+Alias = Traitor
+Kind = $abiFlavor
+Text = $abi_txt_Traitor
+ImageID = abi_Flag.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1
+ProgRate = 0

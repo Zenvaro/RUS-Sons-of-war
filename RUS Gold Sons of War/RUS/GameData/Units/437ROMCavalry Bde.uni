@@ -1,0 +1,15 @@
+UID = 437
+NationTag = ROM
+Name = Cavalry Bde
+Alias = uni_ROM_Cav1
+ForcePool = 10
+ShortName = Cav. Bde.
+Text = $uni_ROM_Cav1_txt
+Color = $colROMRegular 
+ModelType0 = $mdl_ROM_Cav1|3
+FamilyType0 = $famCavalry|3
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Recruit_Rumanians

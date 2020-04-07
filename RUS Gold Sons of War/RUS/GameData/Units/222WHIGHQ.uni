@@ -1,0 +1,16 @@
+UID = 222
+NationTag = WHI
+Name = GHQ
+Alias = uni_WHI_Ghq
+ForcePool = 1
+ShortName = GHQ
+Text = $uni_WHI_Ghq_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 1
+Area = $Recruit_Russians
+CustomNames = GHQ

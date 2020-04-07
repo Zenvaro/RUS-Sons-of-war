@@ -1,0 +1,1326 @@
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Tiflis
+
+StartEvent = evt_nam_CAU_CaucasusArmy|1|2|evt_txt_CAU_CaucasusArmy|Event-img_CMN_CaucasusAtWar|$Tiflis|NULL
+
+Conditions
+
+  MinDate = 1918/11/04
+
+Actions
+
+
+SelectFaction = $RED
+  ChgRgnDecisionFP = $rgdTcheka;1
+  ChgRgnDecisionFP = $rgdRequisitions;1
+  ChgRgnDecisionFP = $rgdConscriptions;1
+
+SelectFaction = $RED
+
+  RemRgnDecisionExcl = $Area_Georgia
+  RemRgnDecisionExcl = $Area_Armenia
+  RemRgnDecisionExcl = $Area_Azerbaijan
+
+SelectFaction = $WHI
+
+  RemRgnDecisionExcl = $Area_Georgia
+  RemRgnDecisionExcl = $Area_Armenia
+  RemRgnDecisionExcl = $Area_Azerbaijan
+
+SelectFaction = $WH3
+
+  RemRgnDecisionExcl = $Area_Georgia
+  RemRgnDecisionExcl = $Area_Armenia
+  RemRgnDecisionExcl = $Area_Azerbaijan
+
+SelectFaction = $CMN
+SelectRegion = $Sukhumi
+
+  BlockState = 0
+
+SelectRegion = $Tyrnyauz
+
+  BlockState = 0
+
+SelectRegion = $Oni
+
+  BlockState = 0
+
+SelectRegion = $Kazbek
+
+  BlockState = 0
+
+SelectRegion = $Tskhinvali
+
+  BlockState = 0
+
+SelectRegion = $Sachkere
+
+  BlockState = 0
+
+SelectRegion = $Kutaisi
+
+  BlockState = 0
+
+SelectRegion = $Poti
+
+  BlockState = 0
+
+SelectRegion = $Batumi
+
+  BlockState = 0
+
+SelectRegion = $Ozurgeti
+
+  BlockState = 0
+
+SelectRegion = $Khulo
+
+  BlockState = 0
+
+SelectRegion = $Borzhomi
+
+  BlockState = 0
+
+SelectRegion = $Tiflis
+
+  BlockState = 0
+
+SelectRegion = $Vale
+
+  BlockState = 0
+
+SelectRegion = $Kareli
+
+  BlockState = 0
+
+SelectRegion = $Dusheti
+
+  BlockState = 0
+
+SelectRegion = $Kaspi
+
+  BlockState = 0
+
+SelectRegion = $Telavi
+
+  BlockState = 0
+
+SelectRegion = $Vanadzor
+
+  BlockState = 0
+
+SelectRegion = $Kvareli
+
+  BlockState = 0
+
+SelectRegion = $Gori
+
+  BlockState = 0
+
+SelectRegion = $Elizavetpol
+
+  BlockState = 0
+
+SelectRegion = $Slavyanka
+
+  BlockState = 0
+
+SelectRegion = $Xanlar
+
+  BlockState = 0
+
+SelectRegion = $Goris
+
+  BlockState = 0
+
+SelectRegion = $Kajaran
+
+  BlockState = 0
+
+SelectRegion = $Astara
+
+  BlockState = 0
+
+SelectRegion = $Pushkino
+
+  BlockState = 0
+
+SelectRegion = $Baku
+
+  BlockState = 0
+
+SelectRegion = $Bidzhov
+
+  BlockState = 0
+
+SelectRegion = $Ivanovka
+
+  BlockState = 0
+
+SelectRegion = $Seki
+
+  BlockState = 0
+
+SelectRegion = $Lenkoran
+
+  BlockState = 0
+
+SelectRegion = $Sabirabad
+
+  BlockState = 0
+
+SelectRegion = $Barda
+
+  BlockState = 0
+
+SelectRegion = $Safaraliyev
+
+  BlockState = 0
+
+SelectRegion = $Agdam
+
+  BlockState = 0
+
+SelectRegion = $Goradiz
+
+  BlockState = 0
+
+SelectRegion = $Gyumri
+
+  BlockState = 0
+
+SelectRegion = $Dilijan
+
+  BlockState = 0
+
+SelectRegion = $Erevan
+
+  BlockState = 0
+
+SelectRegion = $Igdir
+
+  BlockState = 0
+
+SelectRegion = $Ararat
+
+  BlockState = 0
+
+SelectRegion = $Sadarak
+
+  BlockState = 0
+
+SelectRegion = $Sevan
+
+  BlockState = 0
+
+SelectRegion = $Nakhitchevan
+
+  BlockState = 0
+
+SelectFaction = $GEO
+SelectRegion = $Sukhumi
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tyrnyauz
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Oni
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kazbek
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tskhinvali
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sachkere
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kutaisi
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Poti
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Batumi
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ozurgeti
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Khulo
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Borzhomi
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tiflis
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Vale
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kareli
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dusheti
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kaspi
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Telavi
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Vanadzor
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kvareli
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Gori
+
+  ChangeRgnOwner = WHI
+
+SelectFaction = $AZR
+SelectRegion = $Elizavetpol
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Slavyanka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Xanlar
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Goris
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kajaran
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Astara
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Pushkino
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Baku
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bidzhov
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ivanovka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Seki
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lenkoran
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sabirabad
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Barda
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Safaraliyev
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Agdam
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Goradiz
+
+  ChangeRgnOwner = WHI
+
+SelectFaction = $ARM
+SelectRegion = $Gyumri
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dilijan
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Erevan
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Igdir
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ararat
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sadarak
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sevan
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Nakhitchevan
+
+  ChangeRgnOwner = WHI
+
+SelectFaction = $GEO
+
+  ChangeLoyaltyFac = $Area_Georgia;100
+
+SelectFaction = $GEO
+
+  RemRgnDecisionExcl = $Area_Georgia
+  RemRgnDecisionExcl = $Area_Azerbaijan
+  RemRgnDecisionExcl = $Area_Armenia
+
+SelectFaction = $AZR
+
+  ChangeLoyaltyFac = $Area_Azerbaijan;100
+
+SelectFaction = $AZR
+
+  RemRgnDecisionExcl = $Area_Georgia
+  RemRgnDecisionExcl = $Area_Azerbaijan
+  RemRgnDecisionExcl = $Area_Armenia
+
+SelectFaction = $ARM
+
+  ChangeLoyaltyFac = $Area_Armenia;100
+
+SelectFaction = $ARM
+
+  RemRgnDecisionExcl = $Area_Georgia
+  RemRgnDecisionExcl = $Area_Azerbaijan
+  RemRgnDecisionExcl = $Area_Armenia
+
+SelectFaction = $GEO
+SelectRegion = $Kazbek
+
+  CreateStruc
+    SetType = $Depot
+    SetLevel = 2
+    SetName = Kazbek Depot
+  Apply
+  ChangeSupply = 50;10;0
+
+SelectFaction = $AZR
+SelectRegion = $Baku
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 0
+    SetName = Azerbaijan Army
+  Apply
+  CreateUnit
+    SetType = $uni_CAU_Mekhmandarov2
+    FlavorName = Azerbaijani Army
+    SetName = S. Mekhmandarov
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Hq2
+    SetName = Azerbaijani HQ
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Makaev1
+    SetName = A.G. Makaev
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Kargaleteli1
+    SetName = V.D. Kargaleteli
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Dubrovsky1
+    SetName = V.I. Dubrovsky
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Agabekov1
+    SetName = S. Agabekov
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Amc
+    FlavorName = 1st Armored Cars Rgt
+    SetName = 1st Armored Cars Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Eng
+    FlavorName = 1st Fortification Bty
+    SetName = 1st Fortification Bty
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Art5
+    FlavorName = 2nd Mountain Artillery Div
+    SetName = 2nd Mountain Artillery Div
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Art1
+    SUFlavorName = 1st Light Artillery Div
+    SetName = 1st Light Artillery Div
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Art2
+    SUFlavorName = Howitzer Bty
+    SetName = Howitzer Bty
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Rgt0
+    SUFlavorName = 7th Shirvansk Infantry Rgt
+    SetName = 7th Shirvansk Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Rgt0
+    SUFlavorName = 8th Agdamsk Infantry Rgt
+    SetName = 8th Agdamsk Infantry Rgt
+  Apply
+
+SelectFaction = $AZR
+SelectRegion = $Baku
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 0
+    SetName = Cavalry Division.
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Cav1
+    SUFlavorName = 1st Tatarsk Cavalry Rgt
+    SetName = 1st Tatarsk Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Cav1
+    SUFlavorName = 2nd Karabah Cavalry Rgt
+    SetName = 2nd Karabah Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Cav1
+    SUFlavorName = 3rd Shekinsk Cavalry Rgt
+    SetName = 3rd Shekinsk Cavalry Rgt
+  Apply
+
+SelectFaction = $AZR
+SelectRegion = $Baku
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 0
+    SetName = 1st Azerbaijani Div.
+  Apply
+  CreateUnit
+    SetType = $uni_CAU_Shikhlinski1
+    FlavorName = 1st Azerbaijani Div.
+    SetName = A. Shikhlinski
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Rgt0
+    SUFlavorName = 1st Djavanshir Infantry Rgt
+    SetName = 1st Djavanshir Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Rgt0
+    SUFlavorName = 2nd Zagatalsk Infantry Rgt
+    SetName = 2nd Zagatalsk Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Rgt0
+    SUFlavorName = 3rd Giandzha Infantry Rgt
+    SetName = 3rd Giandzha Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Mil1
+    SUFlavorName = Kurdi Rifle Bty
+    SetName = Kurdi Rifle Bty
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Cav1
+    SUFlavorName = 4th Kurdi Cavalry Rgt
+    SetName = 4th Kurdi Cavalry Rgt
+  Apply
+
+SelectFaction = $AZR
+SelectRegion = $Elizavetpol
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = 2nd Azerbaijani Division
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Rgt0
+    SUFlavorName = 4th Gubin Infantry Rgt
+    SetName = 4th Gubin Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Rgt0
+    SUFlavorName = 5th Bakin Infantry Rgt
+    SetName = 5th Bakin Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Rgt0
+    SUFlavorName = 6th Geichan Infantry Rgt
+    SetName = 6th Geichan Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_AZR_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 2nd Division Supply
+  Apply
+
+
+SelectFaction = $ARM
+SelectRegion = $Erevan
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 1
+    FixType = 0
+    SetName = Armenian Army
+  Apply
+  CreateUnit
+    SetType = $uni_CAU_Kanayan1
+    SetName = D. Kanayan
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Hq2
+    SetName = Armenian HQ
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Nazarbekov2
+    SetName = F.I. Nazarbekov
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Areshev1
+    SetName = M.V. Areshev
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Srvantstian1
+    SetName = A. Srvantstian
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Nzhdeh1
+    SetName = G. Nzhdeh
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Ozanian1
+    SetName = A.T. Ozanian
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Ter-Pogosian1
+    SetName = A.S. Ter-Pogosian
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Rgt0
+    SetName = Alahansk Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Rgt0
+    SetName = Loriysk Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Rgt0
+    SetName = Khazahsk Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Rgt0
+    SetName = Shushinsk Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Cav1
+    SetName = Ezidsk Cavalry
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Mon
+    SUFlavorName = 1st Mountain
+    SetName = 1st Mountain Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Mon
+    SUFlavorName = 2nd Mountain
+    SetName = 2nd Mountain Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = Armenian Supply
+  Apply
+
+SelectFaction = $ARM
+SelectRegion = $Erevan
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = 1st Armenian Infantry Division
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Rgt0
+    SUFlavorName = 1st Armenian Infantry Rgt
+    SetName = 1st Armenian Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Rgt0
+    SUFlavorName = 2nd Armenian Infantry Rgt
+    SetName = 2nd Armenian Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Rgt0
+    SUFlavorName = 3rd Armenian Infantry Rgt
+    SetName = 3rd Armenian Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
+  Apply
+
+SelectFaction = $ARM
+SelectRegion = $Erevan
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = 1st Armenian Cavalry Bde
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Cav1
+    SUFlavorName = 1st Armenian Cavalry Rgt
+    SetName = 1st Armenian Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Cav1
+    SUFlavorName = 2nd Armenian Cavalry Rgt
+    SetName = 2nd Armenian Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Cav1
+    SUFlavorName = 3rd Armenian Cavalry Rgt
+    SetName = 3rd Armenian Cavalry Rgt
+  Apply
+
+SelectFaction = $ARM
+SelectRegion = $Erevan
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = 2nd Armenian Infantry Division
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Rgt0
+    SUFlavorName = 4th Armenian Infantry Rgt
+    SetName = 4th Armenian Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Rgt0
+    SUFlavorName = 5th Armenian Infantry Rgt
+    SetName = 5th Armenian Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Rgt0
+    SUFlavorName = 6th Armenian Infantry Rgt
+    SetName = 6th Armenian Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 2nd Division Supply
+  Apply
+
+SelectFaction = $ARM
+SelectRegion = $Erevan
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = West Armenia Infantry Division
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Rgt0
+    SUFlavorName = 7th Armenian Infantry Rgt
+    SetName = 7th Armenian Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Rgt0
+    SUFlavorName = 8th Armenian Infantry Rgt
+    SetName = 8th Armenian Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Rgt0
+    SUFlavorName = 9th Armenian Infantry Rgt
+    SetName = 9th Armenian Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = Weast Armenia Division Supply
+  Apply
+
+SelectFaction = $GEO
+SelectRegion = $Tiflis
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = Georgian Army
+  Apply
+  CreateUnit
+    SetType = $uni_CAU_Kvinitadze2
+    FlavorName = Georgian Army
+    SetName = G. Kvinitadze
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Hq2
+    SetName = Georgian HQ
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Sig
+    SUFlavorName = Telegraphists Co.
+    SetName = Telegraphists Co.
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Eng
+    SUFlavorName = Engineers Btn
+    SetName = Engineers Battalion
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Amt
+    SUFlavorName = 1st Heavy Armored Train
+    SetName = 1st Heavy Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Amt
+    SUFlavorName = 2nd Heavy Armored Train
+    SetName = 2nd Heavy Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Amt
+    SUFlavorName = 3rd Heavy Armored Train
+    SetName = 3rd Heavy Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Amt
+    SUFlavorName = 4th Heavy Armored Train
+    SetName = 4th Heavy Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = Georgian Supply
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = Georgian Supply
+  Apply
+
+SelectFaction = $GEO
+SelectRegion = $Tiflis
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = Georgian Air Force
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Bas1
+    SUFlavorName = Tiflis Airfield|Georgian Recon Sqd|Georgian Fighter Sqd|Georgian Bomber Sqd
+    SetName = Georgian AF
+  Apply
+
+SelectFaction = $GEO
+SelectRegion = $Tiflis
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = 1st Georgian Division
+  Apply
+  CreateUnit
+    SetType = $uni_CAU_Mazhniashvili2
+    FlavorName = 1st Georgian Div.
+    SetName = G. Mazhniashvili
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Sie
+    SUFlavorName = 1st Georgina Mortir Dvn
+    SetName = 1st Georgian Mortir Dvn
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Rgt0
+    SUFlavorName = 1st Georgian Rifle Rgt
+    SetName = 1st Georgian Rifle Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Rgt0
+    SUFlavorName = 2nd Georgian Rifle Rgt
+    SetName = 2nd Georgian Rifle Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Rgt0
+    SUFlavorName = 3rd Georgian Rifle Rgt
+    SetName = 3rd Georgian Rifle Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Amc
+    SUFlavorName = Armored Cars Squadron
+    SetName = Armored Cars Sqd
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
+  Apply
+
+
+SelectFaction = $GEO
+SelectRegion = $Batumi
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = 2nd Georgian Division
+  Apply
+  CreateUnit
+    SetType = $uni_CAU_Artmeladze1
+    FlavorName = 2nd Georgian Div.
+    SetName = P. Artmeladze
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Rgt0
+    SUFlavorName = 4th Georgian Rifle Rgt
+    SetName = 4th Georgian Rifle Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Rgt0
+    SUFlavorName = 5th Georgian Rifle Rgt
+    SetName = 5th Georgian Rifle Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Rgt0
+    SUFlavorName = 6th Georgian Rifle Rgt
+    SetName = 6th Georgian Rifle Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 2nd Division Supply
+  Apply
+
+SelectFaction = $GEO
+SelectRegion = $Batumi
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = Batumi People's Guard
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Mil1
+    SUFlavorName = People's Btn|People's Btn
+    SetName = 3rd People's Guard
+  Apply
+
+SelectFaction = $GEO
+SelectRegion = $Sukhumi
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = Frontier Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Mil1
+    SUFlavorName = 10th Georgian
+    SetName = Sukhumi Frontier Rgt
+  Apply
+
+
+SelectFaction = $GEO
+SelectRegion = $Gori
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = Cavalry Brigade
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Cav1
+    SUFlavorName = Cavalry Rgt
+    SetName = Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Cav1
+    SUFlavorName = Cavalry Rgt
+    SetName = Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Cav1
+    SUFlavorName = Cavalry Rgt
+    SetName = Cavalry Rgt
+  Apply
+
+SelectFaction = $GEO
+SelectRegion = $Gori
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = Gori People's Guard
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Mil1
+    SUFlavorName = People's Btn|People's Btn
+    SetName = 4th People's Guard
+  Apply
+
+SelectFaction = $GEO
+SelectRegion = $Tiflis
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = People's Guard
+  Apply
+  CreateUnit
+    SetType = $uni_CAU_Jugheli1
+    FlavorName = V. Jugheli
+    SetName = V. Jugheli
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Mil1
+    SUFlavorName = People's Btn|People's Btn
+    SetName = 1st People's Guard
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Mil1
+    SUFlavorName = People's Btn|People's Btn
+    SetName = 2nd People's Guard
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Art1
+    SUFlavorName = People's Guard Arty
+    SetName = People's Guard Arty
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = Batumi Supply
+  Apply
+
+SelectFaction = $GEO
+SelectRegion = $Kazbek
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 1
+    SetName = Georgian Mountain Div.
+  Apply
+  CreateUnit
+    SetType = $uni_CAU_Cholokashvili1
+    FlavorName = Cholokashvili
+    SetName = K. Cholokashvili
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Mon
+    SUFlavorName = 1st Mountain
+    SetLevel = 1
+    SetName = 1st Mountain Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Mon
+    SUFlavorName = 2nd Mountain
+    SetLevel = 1
+    SetName = 2nd Mountain Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Mon
+    SUFlavorName = 3rd Mountain
+    SetLevel = 1
+    SetName = 3rd Mountain Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Art5
+    SUFlavorName = Mountain Division Arty
+    SetLevel = 1
+    SetName = 1st Mountain Artillery
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Art5
+    SUFlavorName = Mountain Division Arty
+    SetLevel = 1
+    SetName = 2nd Mountain Artillery
+  Apply
+  CreateUnit
+    SetType = $uni_GEO_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = Mountain Supply
+  Apply
+
+SelectFaction = $ARM
+
+  ChangeUnitPool = $uni_ARM_MG0;10
+  ChangeUnitPool = $uni_ARM_Mon;8
+  ChangeUnitPool = $uni_ARM_Cav2;4
+  ChangeUnitPool = $uni_ARM_Mil1;12
+  ChangeUnitPool = $uni_ARM_Div2;4
+  ChangeUnitPool = $uni_ARM_Div3;1
+  ChangeUnitPool = $uni_ARM_Art0;3
+  ChangeUnitPool = $uni_ARM_Art1;3
+  ChangeUnitPool = $uni_ARM_Art2;3
+  ChangeUnitPool = $uni_ARM_Art3;3
+  ChangeUnitPool = $uni_ARM_Art4;3
+  ChangeUnitPool = $uni_ARM_Eng;5
+  ChangeUnitPool = $uni_ARM_Med;5
+  ChangeUnitPool = $uni_ARM_Sig;5
+  ChangeUnitPool = $uni_ARM_Sup;20
+  ChangeUnitPool = $uni_ARM_Amt;2
+  ChangeUnitPool = $uni_ARM_Amc;1
+  ChangeUnitPool = $uni_ARM_Bas1;2
+  ChangeUnitPool = $uni_ARM_Air2;2
+  ChangeUnitPool = $uni_ARM_Hq2;2
+
+SelectFaction = $AZR
+
+  ChangeUnitPool = $uni_AZR_MG0;10
+  ChangeUnitPool = $uni_AZR_Mon;8
+  ChangeUnitPool = $uni_AZR_Cav2;4
+  ChangeUnitPool = $uni_AZR_Mil1;12
+  ChangeUnitPool = $uni_AZR_Div2;4
+  ChangeUnitPool = $uni_AZR_Div3;1
+  ChangeUnitPool = $uni_AZR_Art0;3
+  ChangeUnitPool = $uni_AZR_Art1;3
+  ChangeUnitPool = $uni_AZR_Art2;3
+  ChangeUnitPool = $uni_AZR_Art3;3
+  ChangeUnitPool = $uni_AZR_Art4;3
+  ChangeUnitPool = $uni_AZR_Eng;5
+  ChangeUnitPool = $uni_AZR_Med;5
+  ChangeUnitPool = $uni_AZR_Sig;5
+  ChangeUnitPool = $uni_AZR_Sup;20
+  ChangeUnitPool = $uni_AZR_Amt;2
+  ChangeUnitPool = $uni_AZR_Amc;1
+  ChangeUnitPool = $uni_AZR_Bas1;2
+  ChangeUnitPool = $uni_AZR_Air2;2
+  ChangeUnitPool = $uni_AZR_Hq2;2
+
+SelectFaction = $GEO
+
+  ChangeUnitPool = $uni_GEO_MG0;10
+  ChangeUnitPool = $uni_GEO_Mon;8
+  ChangeUnitPool = $uni_GEO_Cav2;4
+  ChangeUnitPool = $uni_GEO_Mil1;14
+  ChangeUnitPool = $uni_GEO_Div2;4
+  ChangeUnitPool = $uni_GEO_Div3;1
+  ChangeUnitPool = $uni_GEO_Art0;3
+  ChangeUnitPool = $uni_GEO_Art1;3
+  ChangeUnitPool = $uni_GEO_Art2;3
+  ChangeUnitPool = $uni_GEO_Art3;3
+  ChangeUnitPool = $uni_GEO_Art4;3
+  ChangeUnitPool = $uni_GEO_Eng;5
+  ChangeUnitPool = $uni_GEO_Med;5
+  ChangeUnitPool = $uni_GEO_Sig;5
+  ChangeUnitPool = $uni_GEO_Sup;20
+  ChangeUnitPool = $uni_GEO_Amt;2
+  ChangeUnitPool = $uni_GEO_Amc;1
+  ChangeUnitPool = $uni_GEO_Bas1;2
+  ChangeUnitPool = $uni_GEO_Air2;2
+  ChangeUnitPool = $uni_GEO_Hq2;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+
+StartEvent = evt_nam_Flavor_CMN_JOIN_Azerbaidjan|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/06
+
+Actions
+
+SelectFaction = $AZR
+
+  SelectSubUnits = Area $Area_Azerbaijan;FactionTags CAU WHI
+  AlterCuSubUnit = ApplyToList;SetFixing 0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+
+StartEvent = evt_nam_Flavor_CMN_JOIN_Georgia|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/06
+
+Actions
+
+SelectFaction = $GEO
+
+  SelectSubUnits = Area $Area_Georgia;FactionTags CAU WHI
+  AlterCuSubUnit = ApplyToList;SetFixing 0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+
+StartEvent = evt_nam_Flavor_CMN_JOIN_Armenia|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/06
+
+Actions
+
+SelectFaction = $ARM
+
+  SelectSubUnits = Area $Area_Armenia;FactionTags CAU WHI
+  AlterCuSubUnit = ApplyToList;SetFixing 0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_CaucasianDOW_AIActivate1|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/01
+  CheckIsPlayer = NOT
+  EvalRgnOwned = $Grozny
+  EvalRgnOwned = $Vladikavkaz
+
+Actions
+
+  AI.SetLocalInterest = $Tiflis;200
+  AI.SetLocalInterest = $Baku;200
+  AI.SetLocalInterest = $Erevan;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_CaucasianDOW_AIActivate1|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/01
+  CheckIsPlayer = NOT
+  EvalRgnOwned = $Grozny
+  EvalRgnOwned = $Vladikavkaz
+
+Actions
+
+  AI.SetLocalInterest = $Tiflis;200
+  AI.SetLocalInterest = $Baku;200
+  AI.SetLocalInterest = $Erevan;200
+
+EndEvent
+
+NULL ==========================================================================
+

@@ -1,0 +1,16 @@
+UID = 859
+NationTag = GBR
+Name = Artillery Bde
+Alias = uni_GBR_Art7
+ForcePool = 8
+ShortName = Art. Bde.
+Text = $uni_GBR_Art7_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Art3|1
+ModelType1 = $mdl_GBR_Art4|2
+FamilyType0 = $famLightArty|1
+FamilyType1 = $famMedArty|2
+CmdCost = 2
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

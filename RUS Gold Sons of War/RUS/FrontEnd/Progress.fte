@@ -1,0 +1,22 @@
+UID = 50029
+Bitmap = Progress_Back.png
+x = 0
+y = 0
+z = 96
+DragDrop = {None}
+Anchor = VCenter HCenter
+GameState = stProgress
+Capacity = 0
+
+// Title
+Caption0 = 0|967|0
+
+// Progress Bar Position
+Various1 = 517|834|0
+Various2 = 517|834|0 // new images
+
+// Progress Bar Image
+StrParam0 = ProgressBar.png
+StrParam1 = ProgressBar.png
+
+Param0 = 0 // num of images

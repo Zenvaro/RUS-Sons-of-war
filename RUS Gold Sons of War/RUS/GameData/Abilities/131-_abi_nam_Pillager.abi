@@ -1,0 +1,10 @@
+UID = 131
+Name = $abi_nam_Pillager
+Alias = Pillager
+Kind = $abiFlavor
+Text = $abi_txt_Pillager
+ImageID = abi_Pillager.png
+Color = $colAbi_Red
+Appliance = Group
+Family = 0
+Level = 1

@@ -1,0 +1,14 @@
+UID = 1904
+NationTag = RED
+Name = Cavalry Rgt (late conscript)
+Alias = uni_RED_Cav21
+ForcePool = 4
+ShortName = Cavalry
+Text = $uni_RED_Cav20_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Cav7|1
+FamilyType0 = $famCavalry|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

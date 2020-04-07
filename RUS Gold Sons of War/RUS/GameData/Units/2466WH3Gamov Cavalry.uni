@@ -1,0 +1,16 @@
+UID = 2466
+NationTag = ZAB
+Name = Gamov Cavalry
+Alias = uni_WH3_GamCav
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WH3_Cav0_txt
+Color = $colZABRegular 
+ModelType0 = $mdl_WH3_GamCav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Vladivostock
+CustomNames = 1st Mungolian-Buriat Cavalry Rgt|2nd Daouria Cavalry Rgt|2nd Khamar Cavalry Rgt|3rd Khamar Cavalry Rgt|1st Zabaikal Cossacks Rgt|1st Amur Cossacks Rgt|1st Ussuri Cossacks Rgt|3rd Daouria Cavalry Rgt|4th Daouria Cavalry Rgt|3rd Khamar Cavalry Rgt|4th Khamar Cavalry Rgt|5th Khamar Cavalry Rgt|6th Khamar Cavalry Rgt|7th Khamar Cavalry Rgt|2nd Amur Cossacks Rgt|3rd Amur Cossacks Rgt|4th Amur Cossacks Rgt|2nd Ussuri Cossacks Rgt|3rd Ussuri Cossacks Rgt|4th Ussuri Cossacks Rgt|5th Ussuri Cossacks Rgt|6th Ussuri Cossacks Rgt|2nd Mungolian-Buriat Cavalry Rgt|3rd Mungolian-Buriat Cavalry Rgt

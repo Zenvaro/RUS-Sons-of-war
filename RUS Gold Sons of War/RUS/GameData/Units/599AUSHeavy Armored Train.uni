@@ -1,0 +1,16 @@
+UID = 599
+NationTag = AUS
+Name = Heavy Armored Train
+Alias = uni_AUS_Amt2
+ForcePool = 10
+ShortName = Arm. Train
+Text = $uni_AUS_Amt2_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_AUS_Amt2|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Austrians
+CustomNames = Wien'|'Dresden'|'Aspern'|'Lissa'|'Zenta'|'Lemberg'|'Habsburg'|'Szent Istvan'|'Prag'|'Pilsen'

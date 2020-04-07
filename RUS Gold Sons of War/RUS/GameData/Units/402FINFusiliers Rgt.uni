@@ -1,0 +1,16 @@
+UID = 402
+NationTag = FIN
+Name = Fusiliers Rgt
+Alias = uni_FIN_Inf6
+ForcePool = 8
+ShortName = Fusiliers Rgt.
+Text = $uni_FIN_Inf6_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_FIN_Inf2|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Finns
+CustomNames = 1st Helsinki Fusiliers Rgt|2nd Vaasa Fusiliers Rgt|3rd Tampere Fusiliers Rgt|4th Pori Fusiliers Rgt|5th Turku Fusiliers Rgt|6th Ahvenanmaa Fusiliers Rgt|7th Helsinki Fusiliers Rgt|10th Viipuri Fusiliers Rgt|11th Keski-Suomi Fusiliers Rgt|12th Kouvola Fusiliers Rgt|13th Mikkeli Fusiliers Rgt|14th Kuopio Fusiliers Rgt|15th Viipuri Fusiliers Rgt|16th Kotka Fusiliers Rgt|17th Pohjois-Savo Fusiliers Rgt|18th Helsinki Fusiliers Rgt|19th Sortavala Fusiliers Rgt|20th Porvoo Fusiliers Rgt|21st Lahti Fusiliers Rgt|22nd Sortavala Fusiliers Rgt|23rd Tampere Fusiliers Rgt|24th Tampere Fusiliers Rgt|25th Merikarvia Fusiliers Rgt|26th Rauma Fusiliers Rgt|27th Salo Fusiliers Rgt|28th Turku Fusiliers Rgt|29th Helsinki Fusiliers Rgt|30th Porvoo Fusiliers Rgt

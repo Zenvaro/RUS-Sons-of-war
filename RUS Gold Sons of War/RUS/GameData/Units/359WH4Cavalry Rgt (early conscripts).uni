@@ -1,0 +1,16 @@
+UID = 359
+NationTag = WH4
+Name = Cavalry Rgt (early conscripts)
+Alias = uni_WH4_Cav0
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WH4_Cav0_txt
+Color = $colWH4Regular 
+ModelType0 = $mdl_WH4_Cav0|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_WesternWhites
+CustomNames = 1st Jagers Cavalry Rgt|2nd Jagers Cavalry Rgt|3rd Jagers Cavalry Rgt|4th Pskov Cavalry Rgt|5th Pskov Cavalry Rgt|6th Yamburg Cavalry Rgt|7th Narva Cavalry Rgt|8th Narva Cavalry Rgt

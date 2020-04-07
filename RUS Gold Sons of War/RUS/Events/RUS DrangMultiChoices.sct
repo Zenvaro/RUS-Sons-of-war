@@ -1,0 +1,4276 @@
+  NULL = The Ultimatum
+  NULL = NULL
+  NULL = NULL
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_UkraineIncident_Choice1|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  MaxDate = 1921/03/01
+  ActorEnabled = $gmaMCEvent;RED_UkraineIncident
+  CheckOption = $gmaMCEvent;RED_UkraineIncident;=;1
+
+Actions
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Drang_UkraineIncident1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Drang_UkraineIncident1;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChgFacEngagementPts = 15
+  ChangeFacMorale = 5
+
+SelectFaction = $RED
+  ChgFacEngagementPts = 15
+  ChangeFacMorale = 10
+  ChgVPCount = 50
+  ChangeActorPool = $gmaMCEvent;MaxUse;0;SubType;RED_UkraineIncident
+  SetEvtOccurs = evt_nam_RED_Ukraine21OptionChosen;CuOccurs;1
+  SetEvtOccurs = evt_nam_RED_UkraineIncident_Choice1;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_UkraineIncident_Choice2;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_UkraineIncident_Choice3;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_KievControlled1921;MaxOccurs;15
+
+SelectFaction = $GER
+  SetEvtOccurs = evt_nam_GER_FullWar;MaxOccurs;1
+  SetEvtOccurs = evt_nam_GER_BalticJoin_Generate;MaxOccurs;1
+  SetEvtOccurs = evt_nam_GER_FinlandJoin_Generate;MaxOccurs;1
+  SetEvtOccurs = evt_nam_GER_RumaniaJoin_Generate;MaxOccurs;1
+  SetEvtOccurs = evt_nam_GER_CaucasusJoin_Generate;MaxOccurs;1
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+
+SelectRegion = $Kharkov
+  ChangeRgnOwner = GER
+
+SelectFaction = $GER
+SelectRegion = $Kharkov
+  SelectSubUnits = Region $Kharkov;FactionTags UKR GER AUS DON
+  AlterCuSubUnit = ApplytoList;Move out
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Ukraine Soviet Republic
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pol
+  SetName = Kharkov Soviet
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SUFlavorName = 1st Kharkov Red Guards|2nd Kharkov Red Guards
+  SetName = Kharkov Red Grds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil5
+  SUFlavorName = 1st Kharkov Workers|2nd Kharkov Workers|3rd Kharkovv Workers
+  SetLevel = 1
+  SetName = Station Workers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SetName = Kharkov Bty
+  Apply
+  SelectSubUnits = Region $Kharkov;FactionTags RED
+  AlterCuSubUnit = ApplytoList;Move In
+
+SelectRegion = $Kiev
+  ChangeRgnOwner = GER
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+  SelectSubUnits = Region $Kiev;FactionTags UKR GER AUS DON
+  AlterCuSubUnit = ApplytoList;Move out
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Kiev Arsenal Uprising
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pol
+  SetName = Kiev Soviet
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SUFlavorName = 1st Kiev Red Guards|2nd Kiev Red Guards
+  SetName = Kiev Red Grds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil5
+  SUFlavorName = 1st Kiev Workers|2nd Kiev Workers|3rd Kiev Workers
+  SetLevel = 1
+  SetName = Arsenal Workers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil5
+  SUFlavorName = 4th Kiev Workers|5th Kiev Workers|6th Kiev Workers
+  SetLevel = 1
+  SetName = Docks Workers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SetName = Arsenal Bty
+  Apply
+  SelectSubUnits = Region $Kiev;FactionTags RED
+  AlterCuSubUnit = ApplytoList;Move In
+
+SelectRegion = $Belgorod
+  ChangeRgnOwner = GER
+
+SelectFaction = $GER
+SelectRegion = $Belgorod
+  SelectSubUnits = Region $Kiev;FactionTags UKR GER AUS DON
+  AlterCuSubUnit = ApplytoList;Move out
+
+SelectFaction = $RED
+SelectRegion = $Belgorod
+
+SelectFaction = $RED
+SelectRegion = $Belgorod
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Ukraine Soviet Republic
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pol
+  SetName = Belgorod Soviet
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SUFlavorName = 1st Belgorod Red Guards|2nd Belgorod Red Guards
+  SetName = Belgorod Red Grds
+  Apply
+  SelectSubUnits = Region $Belgorod;FactionTags RED
+  AlterCuSubUnit = ApplytoList;Move In
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+
+SelectRegion = $Kiev
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Western Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 1st Cos.Reserve Rgt|2nd Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 1st Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Kharkov
+
+SelectFaction = $GER
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Northern Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 2nd Cos.Reserve Rgt|3rd Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 2nd Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Lugansk
+
+SelectFaction = $GER
+SelectRegion = $Lugansk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Eastern Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 4th Cos.Reserve Rgt|5th Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 3rd Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Perekop
+
+SelectFaction = $GER
+SelectRegion = $Perekop
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Southern Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 6th Cos.Reserve Rgt|7th Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 4th Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Poltava
+
+SelectFaction = $GER
+SelectRegion = $Poltava
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Dnepr Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Poltava Mil|2nd Poltava Mil
+  SetLevel = 1
+  SetName = Poltava Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Poltava Mil|4th Poltava Mil
+  SetName = Poltava Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Poltava Artillery Reserve
+  Apply
+
+SelectRegion = $Kharkov
+
+SelectFaction = $GER
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 0
+  FixType = 999
+  SetName = Kharkov Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Kharkov Mil|2nd Kharkov Mil
+  SetLevel = 1
+  SetName = Kharkov Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Kharkov Mil|4th Kharkov Mil
+  SetName = Kharkov Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Kharkov Artillery Reserve
+  Apply
+  SetCohesion = 75
+
+SelectRegion = $Kiev
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Kiev Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Kiev Mil|2nd Kiev Mil
+  SetLevel = 1
+  SetName = Kiev Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Kiev Mil|4th Kiev Mil
+  SetName = Kiev Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Kiev Artillery Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 3rd Kiev Supply
+  Apply
+
+SelectRegion = $Ekaterinoslav
+
+SelectFaction = $GER
+SelectRegion = $Ekaterinoslav
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Ekaterinoslav Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Ekat. Mil|2nd Ekat. Mil
+  SetLevel = 1
+  SetName = Ekat. Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Ekat. Mil|4th Ekat. Mil
+  SetName = Ekat. Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Ekat. Artillery Reserve
+  Apply
+
+SelectRegion = $Odessa
+
+SelectFaction = $GER
+SelectRegion = $Odessa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Odessa Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Odessa Mil|2nd Odessa Mil
+  SetLevel = 1
+  SetName = Odessa Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Odessa Mil|4th Odessa Mil
+  SetName = Odessa Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Odessa Artillery Reserve
+  Apply
+
+SelectRegion = $Perekop
+
+SelectFaction = $GER
+SelectRegion = $Perekop
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Krim Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Perekop Mil|2nd Perekop Mil
+  SetLevel = 1
+  SetName = Perekop Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Perekop Mil|4th Perekop Mil
+  SetName = Perekop Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Perekop Artillery Reserve
+  Apply
+
+SelectRegion = $Cherkasy
+
+SelectFaction = $GER
+SelectRegion = $Cherkasy
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Cherkasy Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Cherk. Mil|2nd Cherk. Mil
+  SetName = Cherk. Militia Bde
+  Apply
+
+SelectRegion = $Vinnytsia
+
+SelectFaction = $GER
+SelectRegion = $Vinnytsia
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Vinnytsia Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Vynn. Mil|2nd Vynn. Mil
+  SetName = Vynn. Militia Bde
+  Apply
+
+SelectRegion = $Rowno
+
+SelectFaction = $GER
+SelectRegion = $Rowno
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Rowno Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Rowno Mil|2nd Rowno Mil
+  SetName = Rowno Militia Bde
+  Apply
+
+SelectRegion = $Zhitomir
+
+SelectFaction = $GER
+SelectRegion = $Zhitomir
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Zhitomir Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Zhit. Mil|2nd Zhit. Mil
+  SetName = Zhit. Militia Bde
+  Apply
+
+SelectRegion = $Alexandrovsk
+
+SelectFaction = $GER
+SelectRegion = $Alexandrovsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Alexandrovsk Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Alex. Mil|2nd Alex. Mil
+  SetName = Alex. Militia Bde
+  Apply
+
+SelectRegion = $Makeievka
+
+SelectFaction = $GER
+SelectRegion = $Makeievka
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Makeievka Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Makeievka Mil|2nd Makeievka Mil
+  SetName = Makeievka Militia Bde
+  Apply
+
+SelectRegion = $Melitopol
+
+SelectFaction = $GER
+SelectRegion = $Melitopol
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Melitopol Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Melitopol Mil|2nd Melitopol Mil
+  SetName = Melitopol Militia Bde
+  Apply
+
+SelectRegion = $Nikopol
+
+SelectFaction = $GER
+SelectRegion = $Nikopol
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Nikopol Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Nikopol Mil|2nd Nikopol Mil
+  SetName = Nikopol Militia Bde
+  Apply
+
+SelectRegion = $Tiraspol
+
+SelectFaction = $GER
+SelectRegion = $Tiraspol
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Tiraspol Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Tiraspol Mil|2nd Tiraspol Mil
+  SetName = Tiraspol Militia Bde
+  Apply
+
+SelectRegion = $Berdychev
+
+SelectFaction = $GER
+SelectRegion = $Berdychev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Berdychev Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Berdychev Mil|2nd Berdychev Mil
+  SetName = Berdychev Militia Bde
+  Apply
+
+SelectRegion = $Eupatoria
+
+SelectFaction = $GER
+SelectRegion = $Eupatoria
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Eupatoria Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Eupatoria Mil|2nd Eupatoria Mil
+  SetName = Eupatoria Militia Bde
+  Apply
+  SetCohesion = 100
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+SelectRegion = $Kiev
+  ChangeLoyaltyFac = 15
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+
+SelectRegion = $Kharkov
+  ChangeLoyaltyFac = 15
+
+SelectFaction = $GER
+SelectRegion = $Kharkov
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $RED
+SelectRegion = $Germany
+
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Austria
+
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Austria
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Transylvania
+
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = -5
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_UkraineIncident_Choice2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  MaxDate = 1921/03/01
+  ActorEnabled = $gmaMCEvent;RED_UkraineIncident
+  CheckOption = $gmaMCEvent;RED_UkraineIncident;=;2
+
+Actions
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Drang_UkraineIncident2;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Drang_UkraineIncident2;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = 15
+
+SelectFaction = $RED
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = 1
+  ChgVPCount = -10
+  ChangeActorPool = $gmaMCEvent;MaxUse;0;SubType;RED_UkraineIncident
+  SetEvtOccurs = evt_nam_RED_Ukraine21OptionChosen;CuOccurs;1
+  SetEvtOccurs = evt_nam_RED_UkraineIncident_Choice1;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_UkraineIncident_Choice2;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_UkraineIncident_Choice3;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_KievControlled1921;MaxOccurs;15
+
+SelectFaction = $GER
+  SetEvtOccurs = evt_nam_GER_FalsePeace1921;MaxOccurs;1
+
+SelectRegion = $Kharkov
+  SelectSubUnits = Region $Kharkov;FactionTags UKR GER AUS DON
+  AlterCuSubUnit = ApplytoList;Move out
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 0
+  SetName = Ukraine Soviet Republic
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SUFlavorName = Red Guards|Red Guards
+  SetName = Kharkov Red Guards
+  Apply
+  SelectSubUnits = Region $Kharkov;FactionTags RED
+  AlterCuSubUnit = ApplytoList;Move In
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+
+SelectRegion = $Kiev
+  SelectSubUnits = Region $Kharkov;FactionTags UKR GER AUS DON
+  AlterCuSubUnit = ApplytoList;Move out
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 0
+  SetName = Kiev Arsenal Uprising
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil6
+  SUFlavorName = Kiev Arsenal Workers
+  SetName = Kiev Arsenal Workers
+  Apply
+  SelectSubUnits = Region $Kiev;FactionTags RED
+  AlterCuSubUnit = ApplytoList;Move In
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Western Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 1st Cos.Reserve Rgt|2nd Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 1st Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Kharkov
+
+SelectFaction = $GER
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Northern Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 2nd Cos.Reserve Rgt|3rd Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 2nd Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Lugansk
+
+SelectFaction = $GER
+SelectRegion = $Lugansk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Eastern Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 4th Cos.Reserve Rgt|5th Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 3rd Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Perekop
+
+SelectFaction = $GER
+SelectRegion = $Perekop
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Southern Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 6th Cos.Reserve Rgt|7th Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 4th Cossack Reserve Bde
+  Apply
+  SetCohesion = 25
+
+SelectRegion = $Kiev
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Kiev Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Kiev Mil|2nd Kiev Mil
+  SetLevel = 1
+  SetName = Kiev Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Kiev Mil|4th Kiev Mil
+  SetName = Kiev Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Kiev Artillery Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 3rd Kiev Supply
+  Apply
+
+SelectRegion = $Ekaterinoslav
+
+SelectFaction = $GER
+SelectRegion = $Ekaterinoslav
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Ekaterinoslav Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Ekat. Mil|2nd Ekat. Mil
+  SetLevel = 1
+  SetName = Ekat. Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Ekat. Mil|4th Ekat. Mil
+  SetName = Ekat. Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Ekat. Artillery Reserve
+  Apply
+
+SelectRegion = $Odessa
+
+SelectFaction = $GER
+SelectRegion = $Odessa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Odessa Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Odessa Mil|2nd Odessa Mil
+  SetLevel = 1
+  SetName = Odessa Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Odessa Mil|4th Odessa Mil
+  SetName = Odessa Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Odessa Artillery Reserve
+  Apply
+
+SelectRegion = $Poltava
+
+SelectFaction = $GER
+SelectRegion = $Poltava
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Dnepr Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Poltava Mil|2nd Poltava Mil
+  SetLevel = 1
+  SetName = Poltava Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Poltava Mil|4th Poltava Mil
+  SetName = Poltava Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Poltava Artillery Reserve
+  Apply
+
+SelectRegion = $Kharkov
+
+SelectFaction = $GER
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 0
+  FixType = 999
+  SetName = Kharkov Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Kharkov Mil|2nd Kharkov Mil
+  SetLevel = 1
+  SetName = Kharkov Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Kharkov Mil|4th Kharkov Mil
+  SetName = Kharkov Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Kharkov Artillery Reserve
+  Apply
+
+SelectRegion = $Perekop
+
+SelectFaction = $GER
+SelectRegion = $Perekop
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Krim Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Perekop Mil|2nd Perekop Mil
+  SetLevel = 1
+  SetName = Perekop Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Perekop Mil|4th Perekop Mil
+  SetName = Perekop Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Perekop Artillery Reserve
+  Apply
+  SetCohesion = 100
+
+SelectFaction = $RED
+SelectRegion = $Germany
+
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 10
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 10
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 10
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 10
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Austria
+
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 10
+
+SelectFaction = $GER
+SelectRegion = $Austria
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 10
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Transylvania
+
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = -5
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_UkraineIncident_Choice3|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  MaxDate = 1921/03/01
+  ActorEnabled = $gmaMCEvent;RED_UkraineIncident
+  CheckOption = $gmaMCEvent;RED_UkraineIncident;=;3
+
+Actions
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Drang_UkraineIncident3;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Drang_UkraineIncident3;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChgFacEngagementPts = -20
+  ChangeFacMorale = 20
+  ChangeMoneyPool = -200
+
+SelectFaction = $RED
+  ChangeFacMorale = -10
+  ChangeMoneyPool = 300
+
+SelectFaction = $GER
+  SetFacRelationships = RED;20
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaMCEvent;MaxUse;0;SubType;RED_UkraineIncident
+  SetEvtOccurs = evt_nam_RED_Ukraine21OptionChosen;CuOccurs;1
+  SetEvtOccurs = evt_nam_RED_UkraineIncident_Choice1;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_UkraineIncident_Choice2;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_UkraineIncident_Choice3;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_RealPeace1921;MaxOccurs;1
+  SetEvtOccurs = evt_nam_RED_RumanianDOW_ON;MaxOccurs;0
+
+SelectFaction = $GER
+  SetEvtOccurs = evt_nam_GER_RumaniaJoin_Generate;MaxOccurs;0
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_RumaniaJoin
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_RumanianDOW
+
+SelectFaction = $CMN
+SelectRegion = $Stolin
+
+SelectRegion = $Stolin
+  SelectRegion = $Stolin
+  BlockState = 1
+
+SelectRegion = $Sarny
+  SelectRegion = $Sarny
+  BlockState = 1
+
+SelectRegion = $Olevsk
+  SelectRegion = $Olevsk
+  BlockState = 1
+
+SelectRegion = $Prypiat
+  SelectRegion = $Prypiat
+  BlockState = 1
+
+SelectRegion = $Loiev
+  SelectRegion = $Loiev
+  BlockState = 1
+
+SelectRegion = $Mozyr
+  SelectRegion = $Mozyr
+  BlockState = 1
+
+SelectRegion = $Glinska
+  SelectRegion = $Glinska
+  BlockState = 1
+
+SelectRegion = $Belokorovitchy
+  SelectRegion = $Belokorovitchy
+  BlockState = 1
+
+SelectRegion = $Ielsk
+  SelectRegion = $Ielsk
+  BlockState = 1
+
+SelectRegion = $Ovruch
+  SelectRegion = $Ovruch
+  BlockState = 1
+
+SelectRegion = $Tchernobyl
+  SelectRegion = $Tchernobyl
+  BlockState = 1
+
+SelectRegion = $Rojytche
+  SelectRegion = $Rojytche
+  BlockState = 1
+
+SelectRegion = $Proskurov
+  SelectRegion = $Proskurov
+  BlockState = 1
+
+SelectRegion = $Khmelnik
+  SelectRegion = $Khmelnik
+  BlockState = 1
+
+SelectRegion = $Iziaslav
+  SelectRegion = $Iziaslav
+  BlockState = 1
+
+SelectRegion = $Ostroh
+  SelectRegion = $Ostroh
+  BlockState = 1
+
+SelectRegion = $Rowno
+  SelectRegion = $Rowno
+  BlockState = 1
+
+SelectRegion = $Kostopil
+  SelectRegion = $Kostopil
+  BlockState = 1
+
+SelectRegion = $Volynsky
+  SelectRegion = $Volynsky
+  BlockState = 1
+
+SelectRegion = $Novograd
+  SelectRegion = $Novograd
+  BlockState = 1
+
+SelectRegion = $Korosteni
+  SelectRegion = $Korosteni
+  BlockState = 1
+
+SelectRegion = $Dymer
+  SelectRegion = $Dymer
+  BlockState = 1
+
+SelectRegion = $Radomir
+  SelectRegion = $Radomir
+  BlockState = 1
+
+SelectRegion = $Liubar
+  SelectRegion = $Liubar
+  BlockState = 1
+
+SelectRegion = $Vinnytsia
+  SelectRegion = $Vinnytsia
+  BlockState = 1
+
+SelectRegion = $Berdychev
+  SelectRegion = $Berdychev
+  BlockState = 1
+
+SelectRegion = $Zhitomir
+  SelectRegion = $Zhitomir
+  BlockState = 1
+
+SelectRegion = $Korostychev
+  SelectRegion = $Korostychev
+  BlockState = 1
+
+SelectRegion = $Kiev
+  SelectRegion = $Kiev
+  BlockState = 1
+
+SelectRegion = $Kaniv
+  SelectRegion = $Kaniv
+  BlockState = 1
+
+SelectRegion = $Bila Tsverka
+  SelectRegion = $Bila Tsverka
+  BlockState = 1
+
+SelectRegion = $Korsun
+  SelectRegion = $Korsun
+  BlockState = 1
+
+SelectRegion = $Skvyra
+  SelectRegion = $Skvyra
+  BlockState = 1
+
+SelectRegion = $Odessa
+  SelectRegion = $Odessa
+  BlockState = 1
+
+SelectRegion = $Rozdilna
+  SelectRegion = $Rozdilna
+  BlockState = 1
+
+SelectRegion = $Nikolaiev
+  SelectRegion = $Nikolaiev
+  BlockState = 1
+
+SelectRegion = $Berezvika
+  SelectRegion = $Berezvika
+  BlockState = 1
+
+SelectRegion = $Tiraspol
+  SelectRegion = $Tiraspol
+  BlockState = 1
+
+SelectRegion = $Balta
+  SelectRegion = $Balta
+  BlockState = 1
+
+SelectRegion = $Berchad
+  SelectRegion = $Berchad
+  BlockState = 1
+
+SelectRegion = $Ouman
+  SelectRegion = $Ouman
+  BlockState = 1
+
+SelectRegion = $Holta
+  SelectRegion = $Holta
+  BlockState = 1
+
+SelectRegion = $Pomitchna
+  SelectRegion = $Pomitchna
+  BlockState = 1
+
+SelectRegion = $Olviopol
+  SelectRegion = $Olviopol
+  BlockState = 1
+
+SelectRegion = $Nova Odessa
+  SelectRegion = $Nova Odessa
+  BlockState = 1
+
+SelectRegion = $Ochakov
+  SelectRegion = $Ochakov
+  BlockState = 1
+
+SelectRegion = $Kherson
+  SelectRegion = $Kherson
+  BlockState = 1
+
+SelectRegion = $Inulets
+  SelectRegion = $Inulets
+  BlockState = 1
+
+SelectRegion = $Nikopol
+  SelectRegion = $Nikopol
+  BlockState = 1
+
+SelectRegion = $Ekaterinoslav
+  SelectRegion = $Ekaterinoslav
+  BlockState = 1
+
+SelectRegion = $Krivoi Rog
+  SelectRegion = $Krivoi Rog
+  BlockState = 1
+
+SelectRegion = $Elizavetgrad
+  SelectRegion = $Elizavetgrad
+  BlockState = 1
+
+SelectRegion = $Dolynska
+  SelectRegion = $Dolynska
+  BlockState = 1
+
+SelectRegion = $Oleksandria
+  SelectRegion = $Oleksandria
+  BlockState = 1
+
+SelectRegion = $Cherkasy
+  SelectRegion = $Cherkasy
+  BlockState = 1
+
+SelectRegion = $Boryspil
+  SelectRegion = $Boryspil
+  BlockState = 1
+
+SelectRegion = $Pryluky
+  SelectRegion = $Pryluky
+  BlockState = 1
+
+SelectRegion = $Lokhvitsa
+  SelectRegion = $Lokhvitsa
+  BlockState = 1
+
+SelectRegion = $Pereiaslav
+  SelectRegion = $Pereiaslav
+  BlockState = 1
+
+SelectRegion = $Sudhza
+  SelectRegion = $Sudhza
+  BlockState = 1
+
+SelectRegion = $Sumy
+  SelectRegion = $Sumy
+  BlockState = 1
+
+SelectRegion = $Grayvoron
+  SelectRegion = $Grayvoron
+  BlockState = 1
+
+SelectRegion = $Lebedyn
+  SelectRegion = $Lebedyn
+  BlockState = 1
+
+SelectRegion = $Krasnokutsk
+  SelectRegion = $Krasnokutsk
+  BlockState = 1
+
+SelectRegion = $Lubny
+  SelectRegion = $Lubny
+  BlockState = 1
+
+SelectRegion = $Kremenchuk
+  SelectRegion = $Kremenchuk
+  BlockState = 1
+
+SelectRegion = $Mahdalynivka
+  SelectRegion = $Mahdalynivka
+  BlockState = 1
+
+SelectRegion = $Poltava
+  SelectRegion = $Poltava
+  BlockState = 1
+
+SelectRegion = $Kolomak
+  SelectRegion = $Kolomak
+  BlockState = 1
+
+SelectRegion = $Karlivka
+  SelectRegion = $Karlivka
+  BlockState = 1
+
+SelectRegion = $Merefa
+  SelectRegion = $Merefa
+  BlockState = 1
+
+SelectRegion = $Zmiev
+  SelectRegion = $Zmiev
+  BlockState = 1
+
+SelectRegion = $Kharkov
+  SelectRegion = $Kharkov
+  BlockState = 1
+
+SelectRegion = $Belgorod
+  SelectRegion = $Belgorod
+  BlockState = 1
+
+SelectRegion = $Kupiansk
+  SelectRegion = $Kupiansk
+  BlockState = 1
+
+SelectRegion = $Balaklia
+  SelectRegion = $Balaklia
+  BlockState = 1
+
+SelectRegion = $Valuyki
+  SelectRegion = $Valuyki
+  BlockState = 1
+
+SelectRegion = $Alekseevka
+  SelectRegion = $Alekseevka
+  BlockState = 1
+
+SelectRegion = $Millerovo
+  SelectRegion = $Millerovo
+  BlockState = 1
+
+SelectRegion = $Sieverodonetsk
+  SelectRegion = $Sieverodonetsk
+  BlockState = 1
+
+SelectRegion = $Lyssytchansk
+  SelectRegion = $Lyssytchansk
+  BlockState = 1
+
+SelectRegion = $Lugansk
+  SelectRegion = $Lugansk
+  BlockState = 1
+
+SelectRegion = $Enakievo
+  SelectRegion = $Enakievo
+  BlockState = 1
+
+SelectRegion = $Makeievka
+  SelectRegion = $Makeievka
+  BlockState = 1
+
+SelectRegion = $Dobropole
+  SelectRegion = $Dobropole
+  BlockState = 1
+
+SelectRegion = $Lozova
+  SelectRegion = $Lozova
+  BlockState = 1
+
+SelectRegion = $Novomoskovsk
+  SelectRegion = $Novomoskovsk
+  BlockState = 1
+
+SelectRegion = $Pavlograd
+  SelectRegion = $Pavlograd
+  BlockState = 1
+
+SelectRegion = $Alexandrovsk
+  SelectRegion = $Alexandrovsk
+  BlockState = 1
+
+SelectRegion = $Shaplino
+  SelectRegion = $Shaplino
+  BlockState = 1
+
+SelectRegion = $Volnovakha
+  SelectRegion = $Volnovakha
+  BlockState = 1
+
+SelectRegion = $Mariupol
+  SelectRegion = $Mariupol
+  BlockState = 1
+
+SelectRegion = $Huliaipole
+  SelectRegion = $Huliaipole
+  BlockState = 1
+
+SelectRegion = $Berdjiansk
+  SelectRegion = $Berdjiansk
+  BlockState = 1
+
+SelectRegion = $Vasylivka
+  SelectRegion = $Vasylivka
+  BlockState = 1
+
+SelectRegion = $Melitopol
+  SelectRegion = $Melitopol
+  BlockState = 1
+
+SelectRegion = $Kakhovka
+  SelectRegion = $Kakhovka
+  BlockState = 1
+
+SelectRegion = $Akimovka
+  SelectRegion = $Akimovka
+  BlockState = 1
+
+SelectRegion = $Perekop
+  SelectRegion = $Perekop
+  BlockState = 1
+
+SelectRegion = $Klyutchevoie
+  SelectRegion = $Klyutchevoie
+  BlockState = 1
+
+SelectRegion = $Skadovsk
+  SelectRegion = $Skadovsk
+  BlockState = 1
+
+SelectRegion = $Dzhankoi
+  SelectRegion = $Dzhankoi
+  BlockState = 1
+
+SelectRegion = $Eupatoria
+  SelectRegion = $Eupatoria
+  BlockState = 1
+
+SelectRegion = $Simferopol
+  SelectRegion = $Simferopol
+  BlockState = 1
+
+SelectRegion = $Zuya
+  SelectRegion = $Zuya
+  BlockState = 1
+
+SelectRegion = $Sevastopol
+  SelectRegion = $Sevastopol
+  BlockState = 1
+
+SelectRegion = $Feodosia
+  SelectRegion = $Feodosia
+  BlockState = 1
+
+SelectRegion = $Kertch
+  SelectRegion = $Kertch
+  BlockState = 1
+
+SelectRegion = $Prut Confluent
+  SelectRegion = $Prut Confluent
+  BlockState = 1
+
+SelectRegion = $Danube Estuary
+  SelectRegion = $Danube Estuary
+  BlockState = 1
+
+SelectRegion = $Dnieper Estuary
+  SelectRegion = $Dnieper Estuary
+  BlockState = 1
+
+SelectRegion = $Dnieper
+  SelectRegion = $Dnieper
+  BlockState = 1
+
+SelectRegion = $Middle Dnieper
+  SelectRegion = $Middle Dnieper
+  BlockState = 1
+
+SelectRegion = $Psel Confluent
+  SelectRegion = $Psel Confluent
+  BlockState = 1
+
+SelectRegion = $Desna Confluent
+  SelectRegion = $Desna Confluent
+  BlockState = 1
+
+SelectRegion = $Prypiat Confluent
+  SelectRegion = $Prypiat Confluent
+  BlockState = 1
+
+SelectRegion = $Middle Donets
+  SelectRegion = $Middle Donets
+  BlockState = 1
+
+SelectRegion = $Upper Donets
+  SelectRegion = $Upper Donets
+  BlockState = 1
+
+SelectRegion = $Bug
+  SelectRegion = $Bug
+  BlockState = 1
+
+SelectRegion = $Snihurivka
+  SelectRegion = $Snihurivka
+  BlockState = 1
+
+SelectRegion = $Orikhiv
+  SelectRegion = $Orikhiv
+  BlockState = 1
+
+SelectRegion = $Borovenky
+  SelectRegion = $Borovenky
+  BlockState = 1
+
+SelectRegion = $Chuhuiv
+  SelectRegion = $Chuhuiv
+  BlockState = 1
+
+SelectRegion = $Austria
+  SelectRegion = $Austria
+  BlockState = 1
+
+SelectRegion = $Bohemia
+  SelectRegion = $Bohemia
+  BlockState = 1
+
+SelectRegion = $Hungary
+  SelectRegion = $Hungary
+  BlockState = 1
+
+SelectRegion = $Transylvania
+  SelectRegion = $Transylvania
+  BlockState = 1
+
+SelectRegion = $Cieszyn
+  SelectRegion = $Cieszyn
+  BlockState = 1
+
+SelectRegion = $Nowy Targ
+  SelectRegion = $Nowy Targ
+  BlockState = 1
+
+SelectRegion = $Wolbrom
+  SelectRegion = $Wolbrom
+  BlockState = 1
+
+SelectRegion = $Tarnow
+  SelectRegion = $Tarnow
+  BlockState = 1
+
+SelectRegion = $Przesmyl
+  SelectRegion = $Przesmyl
+  BlockState = 1
+
+SelectRegion = $Krakow
+  SelectRegion = $Krakow
+  BlockState = 1
+
+SelectRegion = $Bochnia
+  SelectRegion = $Bochnia
+  BlockState = 1
+
+SelectRegion = $Brzesko
+  SelectRegion = $Brzesko
+  BlockState = 1
+
+SelectRegion = $Busko-Zdroj
+  SelectRegion = $Busko-Zdroj
+  BlockState = 1
+
+SelectRegion = $Belzec
+  SelectRegion = $Belzec
+  BlockState = 1
+
+SelectRegion = $Zamosc
+  SelectRegion = $Zamosc
+  BlockState = 1
+
+SelectRegion = $Chelm
+  SelectRegion = $Chelm
+  BlockState = 1
+
+SelectRegion = $Lublin
+  SelectRegion = $Lublin
+  BlockState = 1
+
+SelectRegion = $Radom
+  SelectRegion = $Radom
+  BlockState = 1
+
+SelectRegion = $Kielce
+  SelectRegion = $Kielce
+  BlockState = 1
+
+SelectRegion = $Sambor
+  SelectRegion = $Sambor
+  BlockState = 1
+
+SelectRegion = $Lwow
+  SelectRegion = $Lwow
+  BlockState = 1
+
+SelectRegion = $Stryj
+  SelectRegion = $Stryj
+  BlockState = 1
+
+SelectRegion = $Ivano-Frankivsk
+  SelectRegion = $Ivano-Frankivsk
+  BlockState = 1
+
+SelectRegion = $Chortkiv
+  SelectRegion = $Chortkiv
+  BlockState = 1
+
+SelectRegion = $Cernowitz
+  SelectRegion = $Cernowitz
+  BlockState = 1
+
+SelectRegion = $Krasno
+  SelectRegion = $Krasno
+  BlockState = 1
+
+SelectRegion = $Lutsk
+  SelectRegion = $Lutsk
+  BlockState = 1
+
+SelectRegion = $Ternopil
+  SelectRegion = $Ternopil
+  BlockState = 1
+
+SelectRegion = $Dubno
+  SelectRegion = $Dubno
+  BlockState = 1
+
+SelectRegion = $Kremenetz
+  SelectRegion = $Kremenetz
+  BlockState = 1
+
+SelectRegion = $Nowy Sacz
+  SelectRegion = $Nowy Sacz
+  BlockState = 1
+
+SelectRegion = $Sandomierz
+  SelectRegion = $Sandomierz
+  BlockState = 1
+
+SelectRegion = $Stalowa Wola
+  SelectRegion = $Stalowa Wola
+  BlockState = 1
+
+SelectRegion = $Jaroslaw
+  SelectRegion = $Jaroslaw
+  BlockState = 1
+
+SelectRegion = $Kamenska
+  SelectRegion = $Kamenska
+  BlockState = 1
+
+SelectRegion = $Eastern Turkey
+  SelectRegion = $Eastern Turkey
+  BlockState = 1
+
+SelectRegion = $Constantinople
+  SelectRegion = $Constantinople
+  BlockState = 1
+
+SelectRegion = $Anatolia
+  SelectRegion = $Anatolia
+  BlockState = 1
+
+SelectFaction = $RED
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED;Models  $mdl_RED_Par1  $mdl_RED_Par2
+  AlterCuSubUnit = ApplytoList;Kill
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED;OnlyPermFixed
+  AlterCuSubUnit = ApplytoList;Kill
+  Replacement = RED;$famMedArty;4
+
+SelectRegion = $Brovary
+  RemoveStructure = ByDefUID 6;ALL;ANYFAC
+
+SelectRegion = $Bakhmach
+  RemoveStructure = ByDefUID 6;ALL;ANYFAC
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED
+  AlterCuSubUnit = ApplytoList;Move $Rostov
+
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 20
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -20
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 20
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = -20
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 20
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = -20
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 20
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = -20
+
+SelectFaction = $RED
+SelectRegion = $Austria
+
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 20
+
+SelectFaction = $GER
+SelectRegion = $Austria
+  ChangeLoyaltyFac = -20
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 20
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = -20
+
+SelectFaction = $RED
+SelectRegion = $Transylvania
+
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = 20
+
+SelectFaction = $GER
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = -20
+
+EndEvent
+  NULL = Other Consequences of Choices
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_UkraineIncident_NoResponse|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  MaxDate = 1921/06/30
+  EvalEvent = evt_nam_RED_Ukraine21OptionChosen;=;0
+
+CheckAILevel = 0
+  ActorEnabled = $gmaMCEvent;RED_UkraineIncident
+
+Actions
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Drang_UkraineIncident1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Drang_UkraineIncident1;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChgFacEngagementPts = 15
+  ChangeFacMorale = 5
+
+SelectFaction = $RED
+  ChgFacEngagementPts = 15
+  ChangeFacMorale = 10
+  ChgVPCount = 50
+  ChangeActorPool = $gmaMCEvent;MaxUse;0;SubType;RED_UkraineIncident
+  SetEvtOccurs = evt_nam_RED_UkraineIncident_Choice1;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_UkraineIncident_Choice2;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_UkraineIncident_Choice3;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_KievControlled1921;MaxOccurs;15
+
+SelectFaction = $GER
+  SetEvtOccurs = evt_nam_GER_FullWar;MaxOccurs;1
+  SetEvtOccurs = evt_nam_GER_BalticJoin_Generate;MaxOccurs;1
+  SetEvtOccurs = evt_nam_GER_FinlandJoin_Generate;MaxOccurs;1
+  SetEvtOccurs = evt_nam_GER_RumaniaJoin_Generate;MaxOccurs;1
+  SetEvtOccurs = evt_nam_GER_CaucasusJoin_Generate;MaxOccurs;1
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+
+SelectRegion = $Kharkov
+  ChangeRgnOwner = GER
+
+SelectFaction = $GER
+SelectRegion = $Kharkov
+  SelectSubUnits = Region $Kharkov;FactionTags UKR GER AUS DON
+  AlterCuSubUnit = ApplytoList;Move out
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Ukraine Soviet Republic
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pol
+  SetName = Kharkov Soviet
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SUFlavorName = 1st Kharkov Red Guards|2nd Kharkov Red Guards
+  SetName = Kharkov Red Grds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil5
+  SUFlavorName = 1st Kharkov Workers|2nd Kharkov Workers|3rd Kharkovv Workers
+  SetLevel = 1
+  SetName = Station Workers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SetName = Kharkov Bty
+  Apply
+  SelectSubUnits = Region $Kharkov;FactionTags RED
+  AlterCuSubUnit = ApplytoList;Move In
+
+SelectRegion = $Kiev
+  ChangeRgnOwner = GER
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+  SelectSubUnits = Region $Kiev;FactionTags UKR GER AUS DON
+  AlterCuSubUnit = ApplytoList;Move out
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Kiev Arsenal Uprising
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pol
+  SetName = Kiev Soviet
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SUFlavorName = 1st Kiev Red Guards|2nd Kiev Red Guards
+  SetName = Kiev Red Grds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil5
+  SUFlavorName = 1st Kiev Workers|2nd Kiev Workers|3rd Kiev Workers
+  SetLevel = 1
+  SetName = Arsenal Workers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil5
+  SUFlavorName = 4th Kiev Workers|5th Kiev Workers|6th Kiev Workers
+  SetLevel = 1
+  SetName = Docks Workers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SetName = Arsenal Bty
+  Apply
+  SelectSubUnits = Region $Kiev;FactionTags RED
+  AlterCuSubUnit = ApplytoList;Move In
+
+SelectRegion = $Belgorod
+  ChangeRgnOwner = GER
+
+SelectFaction = $GER
+SelectRegion = $Belgorod
+  SelectSubUnits = Region $Kiev;FactionTags UKR GER AUS DON
+  AlterCuSubUnit = ApplytoList;Move out
+
+SelectFaction = $RED
+SelectRegion = $Belgorod
+
+SelectFaction = $RED
+SelectRegion = $Belgorod
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Ukraine Soviet Republic
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pol
+  SetName = Belgorod Soviet
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SUFlavorName = 1st Belgorod Red Guards|2nd Belgorod Red Guards
+  SetName = Belgorod Red Grds
+  Apply
+  SelectSubUnits = Region $Belgorod;FactionTags RED
+  AlterCuSubUnit = ApplytoList;Move In
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+
+SelectRegion = $Kiev
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Western Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 1st Cos.Reserve Rgt|2nd Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 1st Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Kharkov
+
+SelectFaction = $GER
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Northern Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 2nd Cos.Reserve Rgt|3rd Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 2nd Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Lugansk
+
+SelectFaction = $GER
+SelectRegion = $Lugansk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Eastern Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 4th Cos.Reserve Rgt|5th Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 3rd Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Perekop
+
+SelectFaction = $GER
+SelectRegion = $Perekop
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Southern Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 6th Cos.Reserve Rgt|7th Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 4th Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Poltava
+
+SelectFaction = $GER
+SelectRegion = $Poltava
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Dnepr Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Poltava Mil|2nd Poltava Mil
+  SetLevel = 1
+  SetName = Poltava Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Poltava Mil|4th Poltava Mil
+  SetName = Poltava Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Poltava Artillery Reserve
+  Apply
+
+SelectRegion = $Kharkov
+
+SelectFaction = $GER
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 0
+  FixType = 999
+  SetName = Kharkov Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Kharkov Mil|2nd Kharkov Mil
+  SetLevel = 1
+  SetName = Kharkov Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Kharkov Mil|4th Kharkov Mil
+  SetName = Kharkov Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Kharkov Artillery Reserve
+  Apply
+
+SelectRegion = $Kiev
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Kiev Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Kiev Mil|2nd Kiev Mil
+  SetLevel = 1
+  SetName = Kiev Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Kiev Mil|4th Kiev Mil
+  SetName = Kiev Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Kiev Artillery Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 3rd Kiev Supply
+  Apply
+
+SelectRegion = $Ekaterinoslav
+
+SelectFaction = $GER
+SelectRegion = $Ekaterinoslav
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Ekaterinoslav Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Ekat. Mil|2nd Ekat. Mil
+  SetLevel = 1
+  SetName = Ekat. Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Ekat. Mil|4th Ekat. Mil
+  SetName = Ekat. Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Ekat. Artillery Reserve
+  Apply
+
+SelectRegion = $Odessa
+
+SelectFaction = $GER
+SelectRegion = $Odessa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Odessa Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Odessa Mil|2nd Odessa Mil
+  SetLevel = 1
+  SetName = Odessa Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Odessa Mil|4th Odessa Mil
+  SetName = Odessa Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Odessa Artillery Reserve
+  Apply
+
+SelectRegion = $Perekop
+
+SelectFaction = $GER
+SelectRegion = $Perekop
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Krim Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Perekop Mil|2nd Perekop Mil
+  SetLevel = 1
+  SetName = Perekop Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Perekop Mil|4th Perekop Mil
+  SetName = Perekop Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Perekop Artillery Reserve
+  Apply
+
+SelectRegion = $Cherkasy
+
+SelectFaction = $GER
+SelectRegion = $Cherkasy
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Cherkasy Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Cherk. Mil|2nd Cherk. Mil
+  SetName = Cherk. Militia Bde
+  Apply
+
+SelectRegion = $Vinnytsia
+
+SelectFaction = $GER
+SelectRegion = $Vinnytsia
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Vinnytsia Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Vynn. Mil|2nd Vynn. Mil
+  SetName = Vynn. Militia Bde
+  Apply
+
+SelectRegion = $Rowno
+
+SelectFaction = $GER
+SelectRegion = $Rowno
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Rowno Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Rowno Mil|2nd Rowno Mil
+  SetName = Rowno Militia Bde
+  Apply
+
+SelectRegion = $Zhitomir
+
+SelectFaction = $GER
+SelectRegion = $Zhitomir
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Zhitomir Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Zhit. Mil|2nd Zhit. Mil
+  SetName = Zhit. Militia Bde
+  Apply
+
+SelectRegion = $Alexandrovsk
+
+SelectFaction = $GER
+SelectRegion = $Alexandrovsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Alexandrovsk Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Alex. Mil|2nd Alex. Mil
+  SetName = Alex. Militia Bde
+  Apply
+
+SelectRegion = $Makeievka
+
+SelectFaction = $GER
+SelectRegion = $Makeievka
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Makeievka Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Makeievka Mil|2nd Makeievka Mil
+  SetName = Makeievka Militia Bde
+  Apply
+
+SelectRegion = $Melitopol
+
+SelectFaction = $GER
+SelectRegion = $Melitopol
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Melitopol Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Melitopol Mil|2nd Melitopol Mil
+  SetName = Melitopol Militia Bde
+  Apply
+
+SelectRegion = $Nikopol
+
+SelectFaction = $GER
+SelectRegion = $Nikopol
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Nikopol Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Nikopol Mil|2nd Nikopol Mil
+  SetName = Nikopol Militia Bde
+  Apply
+
+SelectRegion = $Tiraspol
+
+SelectFaction = $GER
+SelectRegion = $Tiraspol
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Tiraspol Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Tiraspol Mil|2nd Tiraspol Mil
+  SetName = Tiraspol Militia Bde
+  Apply
+
+SelectRegion = $Berdychev
+
+SelectFaction = $GER
+SelectRegion = $Berdychev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Berdychev Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Berdychev Mil|2nd Berdychev Mil
+  SetName = Berdychev Militia Bde
+  Apply
+
+SelectRegion = $Eupatoria
+
+SelectFaction = $GER
+SelectRegion = $Eupatoria
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Eupatoria Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Eupatoria Mil|2nd Eupatoria Mil
+  SetName = Eupatoria Militia Bde
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+SelectRegion = $Kiev
+  ChangeLoyaltyFac = 10
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+
+SelectRegion = $Kharkov
+  ChangeLoyaltyFac = 10
+
+SelectFaction = $GER
+SelectRegion = $Kharkov
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Germany
+
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Austria
+
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Austria
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Transylvania
+
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = -5
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+SelectRegion = $Germany
+StartEvent = evt_nam_GER_FullWar|0|0|NULL|NULL|$Germany|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  NULL = NULL
+
+SelectFaction = $CMN
+SelectRegion = $Constanta
+
+SelectRegion = $Constanta
+  SelectRegion = $Constanta
+  BlockState = 0
+
+SelectRegion = $Buzau
+  SelectRegion = $Buzau
+  BlockState = 0
+
+SelectRegion = $Calarasi
+  SelectRegion = $Calarasi
+  BlockState = 0
+
+SelectRegion = $Bucuresti
+  SelectRegion = $Bucuresti
+  BlockState = 0
+
+SelectRegion = $Danube
+  SelectRegion = $Danube
+  BlockState = 0
+
+SelectRegion = $Botosani
+  SelectRegion = $Botosani
+  BlockState = 0
+
+SelectRegion = $Suceava
+  SelectRegion = $Suceava
+  BlockState = 0
+
+SelectRegion = $Iasi
+  SelectRegion = $Iasi
+  BlockState = 0
+
+SelectRegion = $Roman
+  SelectRegion = $Roman
+  BlockState = 0
+
+SelectRegion = $Vaslui
+  SelectRegion = $Vaslui
+  BlockState = 0
+
+SelectRegion = $Bacau
+  SelectRegion = $Bacau
+  BlockState = 0
+
+SelectRegion = $Gheorghe
+  SelectRegion = $Gheorghe
+  BlockState = 0
+
+SelectRegion = $Komrat
+  SelectRegion = $Komrat
+  BlockState = 0
+
+SelectRegion = $Ismail
+  SelectRegion = $Ismail
+  BlockState = 0
+
+SelectRegion = $Kagul
+  SelectRegion = $Kagul
+  BlockState = 0
+
+SelectRegion = $Galati
+  SelectRegion = $Galati
+  BlockState = 0
+
+SelectRegion = $Focsani
+  SelectRegion = $Focsani
+  BlockState = 0
+
+SelectRegion = $Braila
+  SelectRegion = $Braila
+  BlockState = 0
+
+SelectRegion = $Sulina
+  SelectRegion = $Sulina
+  BlockState = 0
+
+SelectRegion = $Tulcea
+  SelectRegion = $Tulcea
+  BlockState = 0
+
+SelectRegion = $Babadag
+  SelectRegion = $Babadag
+  BlockState = 0
+
+SelectRegion = $Zalitch
+  SelectRegion = $Zalitch
+  BlockState = 0
+
+SelectRegion = $Khotyn
+  SelectRegion = $Khotyn
+  BlockState = 0
+
+SelectRegion = $Sarata
+  SelectRegion = $Sarata
+  BlockState = 0
+
+SelectRegion = $Chisinau
+  SelectRegion = $Chisinau
+  BlockState = 0
+
+SelectRegion = $Bilhorod
+  SelectRegion = $Bilhorod
+  BlockState = 0
+
+SelectRegion = $Criuleni
+  SelectRegion = $Criuleni
+  BlockState = 0
+
+SelectRegion = $Orhei
+  SelectRegion = $Orhei
+  BlockState = 0
+
+SelectRegion = $Soroca
+  SelectRegion = $Soroca
+  BlockState = 0
+
+SelectRegion = $Prut Confluent
+  SelectRegion = $Prut Confluent
+  BlockState = 0
+
+SelectRegion = $Danube Estuary
+  SelectRegion = $Danube Estuary
+  BlockState = 0
+
+SelectRegion = $Wallachia
+  SelectRegion = $Wallachia
+  BlockState = 0
+  SelectSubUnits = Area $Area_Romania ;FactionTags ROM;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 10
+  SelectSubUnits = Area $Area_Wallachia;FactionTags ROM;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 10
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+StartEvent = evt_nam_RED_KievControlled1921|0|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1921/03/01
+  MaxDate = 1922/06/30
+
+EvalRgnOwned = $Kiev;NOT
+
+Actions
+  ChangeFacMorale = -1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+StartEvent = evt_nam_GER_FalsePeace1921|0|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1921/01/18
+  MaxDate = 1922/06/30
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED
+  EvalSubUnitCount = >=;40
+
+Actions
+  SetEvtOccurs = evt_nam_GER_FullWar;MaxOccurs;1
+  ChgFacEngagementPts = 40
+  ChangeFacMorale = 20
+
+SelectFaction = $RED
+SelectRegion = $Germany
+
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 25
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 25
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 25
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 25
+
+SelectFaction = $RED
+SelectRegion = $Austria
+
+SelectRegion = $Austria
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 25
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 25
+
+SelectFaction = $RED
+SelectRegion = $Transylvania
+
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = 25
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RealPeace1921|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/02/01
+  EvalEngagementPts = >=;30
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_UkrainianDOW.png;Title;opt_title_RED_UkrainianDOW;MsgString;opt_desc_RED_UkrainianDOW;ToolString;opt_hint_RED_UkrainianDOW;SubType;RED_UkrainianDOW;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_UkrainianDOW_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionDip;RED_UkrainianDOW;=;1
+
+Actions
+  ChangeFacMorale = 5
+  ChgFacEngagementPts = -5
+
+SelectFaction = $GER
+  ChgFacEngagementPts = 20
+  ChangeMoneyPool = 100
+  ChangeFacMorale = 15
+  SetFacRelationships = RED;-100
+  GenTextMsg  = opt_notify_GER_UkrainianDOW;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_UkrainianDOW;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_UkrainianDOW
+
+SelectFaction = $GER
+  SetEvtOccurs = evt_nam_GER_FullWar;MaxOccurs;1
+
+SelectFaction = $CMN
+SelectRegion = $Eastern Turkey
+
+SelectRegion = $Eastern Turkey
+  SelectRegion = $Eastern Turkey
+  BlockState = 0
+
+SelectRegion = $Constantinople
+  SelectRegion = $Constantinople
+  BlockState = 0
+
+SelectRegion = $Anatolia
+  SelectRegion = $Anatolia
+  BlockState = 0
+
+SelectRegion = $Austria
+  SelectRegion = $Austria
+  BlockState = 0
+
+SelectRegion = $Bohemia
+  SelectRegion = $Bohemia
+  BlockState = 0
+
+SelectRegion = $Hungary
+  SelectRegion = $Hungary
+  BlockState = 0
+
+SelectRegion = $Transylvania
+  SelectRegion = $Transylvania
+  BlockState = 0
+
+SelectRegion = $Cieszyn
+  SelectRegion = $Cieszyn
+  BlockState = 0
+
+SelectRegion = $Nowy Targ
+  SelectRegion = $Nowy Targ
+  BlockState = 0
+
+SelectRegion = $Wolbrom
+  SelectRegion = $Wolbrom
+  BlockState = 0
+
+SelectRegion = $Tarnow
+  SelectRegion = $Tarnow
+  BlockState = 0
+
+SelectRegion = $Przesmyl
+  SelectRegion = $Przesmyl
+  BlockState = 0
+
+SelectRegion = $Krakow
+  SelectRegion = $Krakow
+  BlockState = 0
+
+SelectRegion = $Bochnia
+  SelectRegion = $Bochnia
+  BlockState = 0
+
+SelectRegion = $Brzesko
+  SelectRegion = $Brzesko
+  BlockState = 0
+
+SelectRegion = $Busko-Zdroj
+  SelectRegion = $Busko-Zdroj
+  BlockState = 0
+
+SelectRegion = $Belzec
+  SelectRegion = $Belzec
+  BlockState = 0
+
+SelectRegion = $Zamosc
+  SelectRegion = $Zamosc
+  BlockState = 0
+
+SelectRegion = $Chelm
+  SelectRegion = $Chelm
+  BlockState = 0
+
+SelectRegion = $Lublin
+  SelectRegion = $Lublin
+  BlockState = 0
+
+SelectRegion = $Radom
+  SelectRegion = $Radom
+  BlockState = 0
+
+SelectRegion = $Kielce
+  SelectRegion = $Kielce
+  BlockState = 0
+
+SelectRegion = $Sambor
+  SelectRegion = $Sambor
+  BlockState = 0
+
+SelectRegion = $Lwow
+  SelectRegion = $Lwow
+  BlockState = 0
+
+SelectRegion = $Stryj
+  SelectRegion = $Stryj
+  BlockState = 0
+
+SelectRegion = $Ivano-Frankivsk
+  SelectRegion = $Ivano-Frankivsk
+  BlockState = 0
+
+SelectRegion = $Chortkiv
+  SelectRegion = $Chortkiv
+  BlockState = 0
+
+SelectRegion = $Cernowitz
+  SelectRegion = $Cernowitz
+  BlockState = 0
+
+SelectRegion = $Krasno
+  SelectRegion = $Krasno
+  BlockState = 0
+
+SelectRegion = $Lutsk
+  SelectRegion = $Lutsk
+  BlockState = 0
+
+SelectRegion = $Ternopil
+  SelectRegion = $Ternopil
+  BlockState = 0
+
+SelectRegion = $Dubno
+  SelectRegion = $Dubno
+  BlockState = 0
+
+SelectRegion = $Kremenetz
+  SelectRegion = $Kremenetz
+  BlockState = 0
+
+SelectRegion = $Nowy Sacz
+  SelectRegion = $Nowy Sacz
+  BlockState = 0
+
+SelectRegion = $Sandomierz
+  SelectRegion = $Sandomierz
+  BlockState = 0
+
+SelectRegion = $Stalowa Wola
+  SelectRegion = $Stalowa Wola
+  BlockState = 0
+
+SelectRegion = $Jaroslaw
+  SelectRegion = $Jaroslaw
+  BlockState = 0
+
+SelectRegion = $Kamenska
+  SelectRegion = $Kamenska
+  BlockState = 0
+
+SelectRegion = $Stolin
+  SelectRegion = $Stolin
+  BlockState = 0
+
+SelectRegion = $Sarny
+  SelectRegion = $Sarny
+  BlockState = 0
+
+SelectRegion = $Olevsk
+  SelectRegion = $Olevsk
+  BlockState = 0
+
+SelectRegion = $Prypiat
+  SelectRegion = $Prypiat
+  BlockState = 0
+
+SelectRegion = $Loiev
+  SelectRegion = $Loiev
+  BlockState = 0
+
+SelectRegion = $Mozyr
+  SelectRegion = $Mozyr
+  BlockState = 0
+
+SelectRegion = $Glinska
+  SelectRegion = $Glinska
+  BlockState = 0
+
+SelectRegion = $Belokorovitchy
+  SelectRegion = $Belokorovitchy
+  BlockState = 0
+
+SelectRegion = $Ielsk
+  SelectRegion = $Ielsk
+  BlockState = 0
+
+SelectRegion = $Ovruch
+  SelectRegion = $Ovruch
+  BlockState = 0
+
+SelectRegion = $Tchernobyl
+  SelectRegion = $Tchernobyl
+  BlockState = 0
+
+SelectRegion = $Rojytche
+  SelectRegion = $Rojytche
+  BlockState = 0
+
+SelectRegion = $Proskurov
+  SelectRegion = $Proskurov
+  BlockState = 0
+
+SelectRegion = $Khmelnik
+  SelectRegion = $Khmelnik
+  BlockState = 0
+
+SelectRegion = $Iziaslav
+  SelectRegion = $Iziaslav
+  BlockState = 0
+
+SelectRegion = $Ostroh
+  SelectRegion = $Ostroh
+  BlockState = 0
+
+SelectRegion = $Rowno
+  SelectRegion = $Rowno
+  BlockState = 0
+
+SelectRegion = $Kostopil
+  SelectRegion = $Kostopil
+  BlockState = 0
+
+SelectRegion = $Volynsky
+  SelectRegion = $Volynsky
+  BlockState = 0
+
+SelectRegion = $Novograd
+  SelectRegion = $Novograd
+  BlockState = 0
+
+SelectRegion = $Korosteni
+  SelectRegion = $Korosteni
+  BlockState = 0
+
+SelectRegion = $Dymer
+  SelectRegion = $Dymer
+  BlockState = 0
+
+SelectRegion = $Radomir
+  SelectRegion = $Radomir
+  BlockState = 0
+
+SelectRegion = $Liubar
+  SelectRegion = $Liubar
+  BlockState = 0
+
+SelectRegion = $Vinnytsia
+  SelectRegion = $Vinnytsia
+  BlockState = 0
+
+SelectRegion = $Berdychev
+  SelectRegion = $Berdychev
+  BlockState = 0
+
+SelectRegion = $Zhitomir
+  SelectRegion = $Zhitomir
+  BlockState = 0
+
+SelectRegion = $Korostychev
+  SelectRegion = $Korostychev
+  BlockState = 0
+
+SelectRegion = $Kiev
+  SelectRegion = $Kiev
+  BlockState = 0
+
+SelectRegion = $Kaniv
+  SelectRegion = $Kaniv
+  BlockState = 0
+
+SelectRegion = $Bila Tsverka
+  SelectRegion = $Bila Tsverka
+  BlockState = 0
+
+SelectRegion = $Korsun
+  SelectRegion = $Korsun
+  BlockState = 0
+
+SelectRegion = $Skvyra
+  SelectRegion = $Skvyra
+  BlockState = 0
+
+SelectRegion = $Odessa
+  SelectRegion = $Odessa
+  BlockState = 0
+
+SelectRegion = $Rozdilna
+  SelectRegion = $Rozdilna
+  BlockState = 0
+
+SelectRegion = $Nikolaiev
+  SelectRegion = $Nikolaiev
+  BlockState = 0
+
+SelectRegion = $Berezvika
+  SelectRegion = $Berezvika
+  BlockState = 0
+
+SelectRegion = $Tiraspol
+  SelectRegion = $Tiraspol
+  BlockState = 0
+
+SelectRegion = $Balta
+  SelectRegion = $Balta
+  BlockState = 0
+
+SelectRegion = $Berchad
+  SelectRegion = $Berchad
+  BlockState = 0
+
+SelectRegion = $Ouman
+  SelectRegion = $Ouman
+  BlockState = 0
+
+SelectRegion = $Holta
+  SelectRegion = $Holta
+  BlockState = 0
+
+SelectRegion = $Pomitchna
+  SelectRegion = $Pomitchna
+  BlockState = 0
+
+SelectRegion = $Olviopol
+  SelectRegion = $Olviopol
+  BlockState = 0
+
+SelectRegion = $Nova Odessa
+  SelectRegion = $Nova Odessa
+  BlockState = 0
+
+SelectRegion = $Ochakov
+  SelectRegion = $Ochakov
+  BlockState = 0
+
+SelectRegion = $Kherson
+  SelectRegion = $Kherson
+  BlockState = 0
+
+SelectRegion = $Inulets
+  SelectRegion = $Inulets
+  BlockState = 0
+
+SelectRegion = $Nikopol
+  SelectRegion = $Nikopol
+  BlockState = 0
+
+SelectRegion = $Ekaterinoslav
+  SelectRegion = $Ekaterinoslav
+  BlockState = 0
+
+SelectRegion = $Krivoi Rog
+  SelectRegion = $Krivoi Rog
+  BlockState = 0
+
+SelectRegion = $Elizavetgrad
+  SelectRegion = $Elizavetgrad
+  BlockState = 0
+
+SelectRegion = $Dolynska
+  SelectRegion = $Dolynska
+  BlockState = 0
+
+SelectRegion = $Oleksandria
+  SelectRegion = $Oleksandria
+  BlockState = 0
+
+SelectRegion = $Cherkasy
+  SelectRegion = $Cherkasy
+  BlockState = 0
+
+SelectRegion = $Boryspil
+  SelectRegion = $Boryspil
+  BlockState = 0
+
+SelectRegion = $Pryluky
+  SelectRegion = $Pryluky
+  BlockState = 0
+
+SelectRegion = $Lokhvitsa
+  SelectRegion = $Lokhvitsa
+  BlockState = 0
+
+SelectRegion = $Pereiaslav
+  SelectRegion = $Pereiaslav
+  BlockState = 0
+
+SelectRegion = $Sudhza
+  SelectRegion = $Sudhza
+  BlockState = 0
+
+SelectRegion = $Sumy
+  SelectRegion = $Sumy
+  BlockState = 0
+
+SelectRegion = $Grayvoron
+  SelectRegion = $Grayvoron
+  BlockState = 0
+
+SelectRegion = $Lebedyn
+  SelectRegion = $Lebedyn
+  BlockState = 0
+
+SelectRegion = $Krasnokutsk
+  SelectRegion = $Krasnokutsk
+  BlockState = 0
+
+SelectRegion = $Lubny
+  SelectRegion = $Lubny
+  BlockState = 0
+
+SelectRegion = $Kremenchuk
+  SelectRegion = $Kremenchuk
+  BlockState = 0
+
+SelectRegion = $Mahdalynivka
+  SelectRegion = $Mahdalynivka
+  BlockState = 0
+
+SelectRegion = $Poltava
+  SelectRegion = $Poltava
+  BlockState = 0
+
+SelectRegion = $Kolomak
+  SelectRegion = $Kolomak
+  BlockState = 0
+
+SelectRegion = $Karlivka
+  SelectRegion = $Karlivka
+  BlockState = 0
+
+SelectRegion = $Merefa
+  SelectRegion = $Merefa
+  BlockState = 0
+
+SelectRegion = $Zmiev
+  SelectRegion = $Zmiev
+  BlockState = 0
+
+SelectRegion = $Kharkov
+  SelectRegion = $Kharkov
+  BlockState = 0
+
+SelectRegion = $Belgorod
+  SelectRegion = $Belgorod
+  BlockState = 0
+
+SelectRegion = $Kupiansk
+  SelectRegion = $Kupiansk
+  BlockState = 0
+
+SelectRegion = $Balaklia
+  SelectRegion = $Balaklia
+  BlockState = 0
+
+SelectRegion = $Valuyki
+  SelectRegion = $Valuyki
+  BlockState = 0
+
+SelectRegion = $Alekseevka
+  SelectRegion = $Alekseevka
+  BlockState = 0
+
+SelectRegion = $Millerovo
+  SelectRegion = $Millerovo
+  BlockState = 0
+
+SelectRegion = $Sieverodonetsk
+  SelectRegion = $Sieverodonetsk
+  BlockState = 0
+
+SelectRegion = $Lyssytchansk
+  SelectRegion = $Lyssytchansk
+  BlockState = 0
+
+SelectRegion = $Lugansk
+  SelectRegion = $Lugansk
+  BlockState = 0
+
+SelectRegion = $Enakievo
+  SelectRegion = $Enakievo
+  BlockState = 0
+
+SelectRegion = $Makeievka
+  SelectRegion = $Makeievka
+  BlockState = 0
+
+SelectRegion = $Dobropole
+  SelectRegion = $Dobropole
+  BlockState = 0
+
+SelectRegion = $Lozova
+  SelectRegion = $Lozova
+  BlockState = 0
+
+SelectRegion = $Novomoskovsk
+  SelectRegion = $Novomoskovsk
+  BlockState = 0
+
+SelectRegion = $Pavlograd
+  SelectRegion = $Pavlograd
+  BlockState = 0
+
+SelectRegion = $Alexandrovsk
+  SelectRegion = $Alexandrovsk
+  BlockState = 0
+
+SelectRegion = $Shaplino
+  SelectRegion = $Shaplino
+  BlockState = 0
+
+SelectRegion = $Volnovakha
+  SelectRegion = $Volnovakha
+  BlockState = 0
+
+SelectRegion = $Mariupol
+  SelectRegion = $Mariupol
+  BlockState = 0
+
+SelectRegion = $Huliaipole
+  SelectRegion = $Huliaipole
+  BlockState = 0
+
+SelectRegion = $Berdjiansk
+  SelectRegion = $Berdjiansk
+  BlockState = 0
+
+SelectRegion = $Vasylivka
+  SelectRegion = $Vasylivka
+  BlockState = 0
+
+SelectRegion = $Melitopol
+  SelectRegion = $Melitopol
+  BlockState = 0
+
+SelectRegion = $Kakhovka
+  SelectRegion = $Kakhovka
+  BlockState = 0
+
+SelectRegion = $Akimovka
+  SelectRegion = $Akimovka
+  BlockState = 0
+
+SelectRegion = $Perekop
+  SelectRegion = $Perekop
+  BlockState = 0
+
+SelectRegion = $Klyutchevoie
+  SelectRegion = $Klyutchevoie
+  BlockState = 0
+
+SelectRegion = $Skadovsk
+  SelectRegion = $Skadovsk
+  BlockState = 0
+
+SelectRegion = $Dzhankoi
+  SelectRegion = $Dzhankoi
+  BlockState = 0
+
+SelectRegion = $Eupatoria
+  SelectRegion = $Eupatoria
+  BlockState = 0
+
+SelectRegion = $Simferopol
+  SelectRegion = $Simferopol
+  BlockState = 0
+
+SelectRegion = $Zuya
+  SelectRegion = $Zuya
+  BlockState = 0
+
+SelectRegion = $Sevastopol
+  SelectRegion = $Sevastopol
+  BlockState = 0
+
+SelectRegion = $Feodosia
+  SelectRegion = $Feodosia
+  BlockState = 0
+
+SelectRegion = $Kertch
+  SelectRegion = $Kertch
+  BlockState = 0
+
+SelectRegion = $Prut Confluent
+  SelectRegion = $Prut Confluent
+  BlockState = 0
+
+SelectRegion = $Danube Estuary
+  SelectRegion = $Danube Estuary
+  BlockState = 0
+
+SelectRegion = $Dnieper Estuary
+  SelectRegion = $Dnieper Estuary
+  BlockState = 0
+
+SelectRegion = $Dnieper
+  SelectRegion = $Dnieper
+  BlockState = 0
+
+SelectRegion = $Middle Dnieper
+  SelectRegion = $Middle Dnieper
+  BlockState = 0
+
+SelectRegion = $Psel Confluent
+  SelectRegion = $Psel Confluent
+  BlockState = 0
+
+SelectRegion = $Desna Confluent
+  SelectRegion = $Desna Confluent
+  BlockState = 0
+
+SelectRegion = $Prypiat Confluent
+  SelectRegion = $Prypiat Confluent
+  BlockState = 0
+
+SelectRegion = $Middle Donets
+  SelectRegion = $Middle Donets
+  BlockState = 0
+
+SelectRegion = $Upper Donets
+  SelectRegion = $Upper Donets
+  BlockState = 0
+
+SelectRegion = $Bug
+  SelectRegion = $Bug
+  BlockState = 0
+
+SelectRegion = $Snihurivka
+  SelectRegion = $Snihurivka
+  BlockState = 0
+
+SelectRegion = $Orikhiv
+  SelectRegion = $Orikhiv
+  BlockState = 0
+
+SelectRegion = $Borovenky
+  SelectRegion = $Borovenky
+  BlockState = 0
+
+SelectRegion = $Chuhuiv
+  SelectRegion = $Chuhuiv
+  BlockState = 0
+  SelectSubUnits = Theater $Theater_Ukraine;FactionTags UKR;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 0
+  SetCohesion = 80
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+
+SelectRegion = $Kiev
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Western Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 1st Cos.Reserve Rgt|2nd Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 1st Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Kharkov
+
+SelectFaction = $GER
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Northern Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 2nd Cos.Reserve Rgt|3rd Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 2nd Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Lugansk
+
+SelectFaction = $GER
+SelectRegion = $Lugansk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Eastern Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 4th Cos.Reserve Rgt|5th Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 3rd Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Perekop
+
+SelectFaction = $GER
+SelectRegion = $Perekop
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Southern Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bde2
+  SUFlavorName = 6th Cos.Reserve Rgt|7th Cos.Reserve Rgt
+  SetLevel = 1
+  SetName = 4th Cossack Reserve Bde
+  Apply
+
+SelectRegion = $Kiev
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Kiev Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Kiev Mil|2nd Kiev Mil
+  SetLevel = 1
+  SetName = Kiev Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Kiev Mil|4th Kiev Mil
+  SetName = Kiev Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Kiev Artillery Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 3rd Kiev Supply
+  Apply
+
+SelectRegion = $Ekaterinoslav
+
+SelectFaction = $GER
+SelectRegion = $Ekaterinoslav
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Ekaterinoslav Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Ekat. Mil|2nd Ekat. Mil
+  SetLevel = 1
+  SetName = Ekat. Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Ekat. Mil|4th Ekat. Mil
+  SetName = Ekat. Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Ekat. Artillery Reserve
+  Apply
+
+SelectRegion = $Odessa
+
+SelectFaction = $GER
+SelectRegion = $Odessa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Odessa Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Odessa Mil|2nd Odessa Mil
+  SetLevel = 1
+  SetName = Odessa Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Odessa Mil|4th Odessa Mil
+  SetName = Odessa Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Odessa Artillery Reserve
+  Apply
+
+SelectRegion = $Poltava
+
+SelectFaction = $GER
+SelectRegion = $Poltava
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Dnepr Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Poltava Mil|2nd Poltava Mil
+  SetLevel = 1
+  SetName = Poltava Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Poltava Mil|4th Poltava Mil
+  SetName = Poltava Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Poltava Artillery Reserve
+  Apply
+
+SelectRegion = $Kharkov
+
+SelectFaction = $GER
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Kharkov Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Kharkov Mil|2nd Kharkov Mil
+  SetLevel = 1
+  SetName = Kharkov Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Kharkov Mil|4th Kharkov Mil
+  SetName = Kharkov Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Kharkov Artillery Reserve
+  Apply
+
+SelectRegion = $Perekop
+
+SelectFaction = $GER
+SelectRegion = $Perekop
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Krim Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Perekop Mil|2nd Perekop Mil
+  SetLevel = 1
+  SetName = Perekop Militia Bde
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 3rd Perekop Mil|4th Perekop Mil
+  SetName = Perekop Militia Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Art1
+  SetName = Perekop Artillery Reserve
+  Apply
+
+SelectRegion = $Lugansk
+
+SelectFaction = $GER
+SelectRegion = $Lugansk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Lugansk Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Lugansk Mil|2nd Lugansk Mil
+  SetName = Lugansk Militia Bde
+  Apply
+
+SelectRegion = $Cherkasy
+
+SelectFaction = $GER
+SelectRegion = $Cherkasy
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Cherkasy Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Cherk. Mil|2nd Cherk. Mil
+  SetName = Cherk. Militia Bde
+  Apply
+
+SelectRegion = $Mozyr
+
+SelectFaction = $GER
+SelectRegion = $Mozyr
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Mozyr Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Mozyr Mil|2nd Mozyr Mil
+  SetName = Mozyr Militia Bde
+  Apply
+
+SelectRegion = $Belgorod
+
+SelectFaction = $GER
+SelectRegion = $Belgorod
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Belgorod Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Belg. Mil|2nd Belg. Mil
+  SetName = Belg. Militia Bde
+  Apply
+
+SelectRegion = $Vinnytsia
+
+SelectFaction = $GER
+SelectRegion = $Vinnytsia
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Vinnytsia Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Vynn. Mil|2nd Vynn. Mil
+  SetName = Vynn. Militia Bde
+  Apply
+
+SelectRegion = $Rowno
+
+SelectFaction = $GER
+SelectRegion = $Rowno
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Rowno Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Rowno Mil|2nd Rowno Mil
+  SetName = Rowno Militia Bde
+  Apply
+
+SelectRegion = $Zhitomir
+
+SelectFaction = $GER
+SelectRegion = $Zhitomir
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Zhitomir Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Zhit. Mil|2nd Zhit. Mil
+  SetName = Zhit. Militia Bde
+  Apply
+
+SelectRegion = $Alexandrovsk
+
+SelectFaction = $GER
+SelectRegion = $Alexandrovsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Alexandrovsk Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Alex. Mil|2nd Alex. Mil
+  SetName = Alex. Militia Bde
+  Apply
+
+SelectRegion = $Lyssytchansk
+
+SelectFaction = $GER
+SelectRegion = $Lyssytchansk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Lyssytchansk Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Lyss. Mil|2nd Lyss. Mil
+  SetName = Lyss. Militia Bde
+  Apply
+
+SelectRegion = $Makeievka
+
+SelectFaction = $GER
+SelectRegion = $Makeievka
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Makeievka Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Makeievka Mil|2nd Makeievka Mil
+  SetName = Makeievka Militia Bde
+  Apply
+
+SelectRegion = $Melitopol
+
+SelectFaction = $GER
+SelectRegion = $Melitopol
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Melitopol Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Melitopol Mil|2nd Melitopol Mil
+  SetName = Melitopol Militia Bde
+  Apply
+
+SelectRegion = $Nikopol
+
+SelectFaction = $GER
+SelectRegion = $Nikopol
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Nikopol Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Nikopol Mil|2nd Nikopol Mil
+  SetName = Nikopol Militia Bde
+  Apply
+
+SelectRegion = $Tiraspol
+
+SelectFaction = $GER
+SelectRegion = $Tiraspol
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Tiraspol Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Tiraspol Mil|2nd Tiraspol Mil
+  SetName = Tiraspol Militia Bde
+  Apply
+
+SelectRegion = $Balta
+
+SelectFaction = $GER
+SelectRegion = $Balta
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Balta Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Balta Mil|2nd Balta Mil
+  SetName = Balta Militia Bde
+  Apply
+
+SelectRegion = $Ouman
+
+SelectFaction = $GER
+SelectRegion = $Ouman
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Ouman Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Ouman Mil|2nd Ouman Mil
+  SetName = Ouman Militia Bde
+  Apply
+
+SelectRegion = $Bila Tsverka
+
+SelectFaction = $GER
+SelectRegion = $Bila Tsverka
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Bila Tsverka Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Bila Tsverka Mil|2nd Bila Tsverka Mil
+  SetName = Bila Tsverka Militia Bde
+  Apply
+
+SelectRegion = $Berdychev
+
+SelectFaction = $GER
+SelectRegion = $Berdychev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Berdychev Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Berdychev Mil|2nd Berdychev Mil
+  SetName = Berdychev Militia Bde
+  Apply
+
+SelectRegion = $Khmelnik
+
+SelectFaction = $GER
+SelectRegion = $Khmelnik
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Khmelnik Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Khmelnik Mil|2nd Khmelnik Mil
+  SetName = Khmelnik Militia Bde
+  Apply
+
+SelectRegion = $Korosteni
+
+SelectFaction = $GER
+SelectRegion = $Korosteni
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Koresteni Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Korosteni Mil|2nd Korosteni Mil
+  SetName = Korosteni Militia Bde
+  Apply
+
+SelectRegion = $Sumy
+
+SelectFaction = $GER
+SelectRegion = $Sumy
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Sumy Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Sumy Mil|2nd Sumy Mil
+  SetName = Sumy Militia Bde
+  Apply
+
+SelectRegion = $Kupiansk
+
+SelectFaction = $GER
+SelectRegion = $Kupiansk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Kupiansk Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Kupiansk Mil|2nd Kupiansk Mil
+  SetName = Kupiansk Militia Bde
+  Apply
+
+SelectRegion = $Eupatoria
+
+SelectFaction = $GER
+SelectRegion = $Eupatoria
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Eupatoria Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Eupatoria Mil|2nd Eupatoria Mil
+  SetName = Eupatoria Militia Bde
+  Apply
+
+SelectRegion = $Simferopol
+
+SelectFaction = $GER
+SelectRegion = $Simferopol
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Simferopol Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Simferopol Mil|2nd Simferopol Mil
+  SetName = Simferopol Militia Bde
+  Apply
+
+SelectRegion = $Feodosia
+
+SelectFaction = $GER
+SelectRegion = $Feodosia
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Feodosia Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Feodosia Mil|2nd Feodosia Mil
+  SetName = Feodosia Militia Bde
+  Apply
+
+SelectRegion = $Kertch
+
+SelectFaction = $GER
+SelectRegion = $Kertch
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = Kertch Militia
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Mil
+  SUFlavorName = 1st Kertch Mil|2nd Kertch Mil
+  SetName = Kertch Militia Bde
+  Apply
+  SetCohesion = 100
+
+EndEvent

@@ -1,0 +1,16 @@
+UID = 196
+NationTag = KUB
+Name = Rgt (cavalry)
+Alias = uni_WHI_Cav2
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_WHI_Cav2_txt
+Color = $colKUBRegular 
+ModelType0 = $mdl_WHI_Cav3|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Kuban
+CustomNames = 1st Kuban Cavalry Rgt|2nd Kuban Cavalry Rgt|3rd Kuban Cavalry Rgt|4th Kuban Cavalry Rgt|5th Kuban Cavalry Rgt|6th Kuban Cavalry Rgt|7th Kuban Cavalry Rgt|8th Kuban Cavalry Rgt|1st Terek Cavalry Rgt|2nd Terek Cavalry Rgt|1st Cherkess Cavalry Rgt|1st Khoper Cavalry Rgt|2nd Khoper Cavalry Rgt|3rd Khoper Cavalry Rgt|1st Caucasus Rgt|1st Sunjen-Vladikavkaz Rgt|2nd Sunjen-Vladikavkaz Rgt|3rd Sunjen-Vladikavkaz Rgt|3rd Caucasus Cavalry Rgt

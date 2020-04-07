@@ -1,0 +1,16 @@
+UID = 380
+NationTag = WH5
+Name = Cavalry Rgt (early conscripts)
+Alias = uni_WH5_Cav0
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WH5_Cav0_txt
+Color = $colWH5Regular 
+ModelType0 = $mdl_WH5_Cav0|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_NorthernWhites
+CustomNames = White Sea Mountain Cavalry|Dvina Cavalry Rgt|Arkhangelsk Cavalry Rgt|1st Northern Cavalry Rgt|2nd Northern Cavalry Rgt|3rd Northern Cavalry Rgt|4th Northern Cavalry Rgt|5th Northern Cavalry Rgt|6th Northern Cavalry Rgt|7th Northern Cavalry Rgt|8th Northern Cavalry Rgt|9th Northern Cavalry Rgt|10th Northern Cavalry Rgt

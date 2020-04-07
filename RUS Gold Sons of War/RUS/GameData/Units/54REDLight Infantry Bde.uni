@@ -1,0 +1,17 @@
+UID = 54
+NationTag = RED
+Name = Light Infantry Bde
+Alias = uni_RED_Bde9
+ForcePool = 50
+ShortName = Lt. Inf. Bde.
+Text = $uni_RED_Bde9_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Lit|2
+ModelType1 = $mdl_RED_Art1|1
+FamilyType0 = $famLightInf|2
+FamilyType1 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 
+CustomNames = 70th Infantry Bde|71st Infantry Bde|72nd Infantry Bde|73rd Infantry Bde|74th Infantry Bde|75th Infantry Bde|76th Infantry Bde|77th Infantry Bde|78th Infantry Bde|79th Infantry Bde|80th Infantry Bde|81st Infantry Bde|82nd Infantry Bde|83rd Infantry Bde|84th Infantry Bde|85th Infantry Bde|86th Infantry Bde|87th Infantry Bde|88th Infantry Bde|89th Infantry Bde|90th Infantry Bde|91st Infantry Bde|92nd Infantry Bde|93rd Infantry Bde|94th Infantry Bde|95th Infantry Bde|96th Infantry Bde|97th Infantry Bde|98th Infantry Bde|99th Infantry Bde|100th Infantry Bde

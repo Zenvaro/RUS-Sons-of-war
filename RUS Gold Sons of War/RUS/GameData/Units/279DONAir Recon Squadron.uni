@@ -1,0 +1,17 @@
+UID = 279
+NationTag = DON
+Name = Air Recon Squadron
+Alias = uni_DON_Air1
+ForcePool = 2
+ShortName = Rec. Air Sqd.
+Text = $uni_DON_Air1_txt
+Color = $colDONRegular 
+SymbolID = symbol_Air.png
+ModelType0 = $mdl_DON_Air1|2
+FamilyType0 = $famAirRecon|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Area_Don
+CustomNames = 1st Don Air Sqd|2nd Don Air Sqd|3rd Don Air Sqd|4th Don Air Sqd|5th Don Air Sqd|6th Don Air Sqd|7th Don Air Sqd|8th Don Air Sqd|9th Don Air Sqd|10th Don Air Sqd|11th Don Air Sqd|12th Don Air Sqd

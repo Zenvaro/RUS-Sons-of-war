@@ -1,0 +1,17 @@
+UID = 526
+NationTag = GER
+Name = Cruiser
+Alias = uni_GER_CL1
+ForcePool = 6
+ShortName = Cruiser
+Text = $uni_GER_CL1_txt
+Color = $colGERNavy
+DoubleLength = 1
+ModelType0 = $mdl_GER_CL|4
+FamilyType0 = $famLightWarship|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+Area = $Recruit_Germans
+CustomNames = 1. Kreuzer Flot.|2. Kreuzer Flot.|3. Kreuzer Flot.|4. Kreuzer Flot.|5. Kreuzer Flot.|6. Kreuzer Flot.|7. Kreuzer Flot.|8. Kreuzer Flot.|9. Kreuzer Flot.|10. Kreuzer Flot.

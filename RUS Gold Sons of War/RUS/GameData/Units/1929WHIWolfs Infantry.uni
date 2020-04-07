@@ -1,0 +1,15 @@
+UID = 1929
+NationTag = WHI
+Name = White Wolves Infantry
+Alias = uni_WHI_WI
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WHI_WI_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_WI|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_SouthernWhites

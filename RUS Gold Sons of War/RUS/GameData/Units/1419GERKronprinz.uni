@@ -1,0 +1,17 @@
+UID = 1419
+NationTag = GER
+Name = Kronprinz
+Alias = uni_GER_Kronprinz
+ForcePool = -1
+ShortName = Kronprinz
+Text = $uni_GER_Kronprinz_txt
+Color = $colGERRegular 
+ModelType0 = $ldr_GER_Kronprinz|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

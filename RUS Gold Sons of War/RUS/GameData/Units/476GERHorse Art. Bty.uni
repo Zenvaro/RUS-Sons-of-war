@@ -1,0 +1,16 @@
+UID = 476
+NationTag = GER
+Name = Horse Art. Bty
+Alias = uni_GER_Art0
+ForcePool = 3
+ShortName = Horse Art.
+Text = $uni_GER_Art0_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Art0|1
+FamilyType0 = $famLightArty|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = 1. ReitendeArtillerie-Regiment|2. ReitendeArtillerie-Regiment|3. ReitendeArtillerie-Regiment|4. ReitendeArtillerie-Regiment|5. ReitendeArtillerie-Regiment|6. ReitendeArtillerie-Regiment|7. ReitendeArtillerie-Regiment|8. ReitendeArtillerie-Regiment|9. ReitendeArtillerie-Regiment|10. ReitendeArtillerie-Regiment|11. ReitendeArtillerie-Regiment|12. ReitendeArtillerie-Regiment|13. ReitendeArtillerie-Regiment|14. ReitendeArtillerie-Regiment|15. ReitendeArtillerie-Regiment|16. ReitendeArtillerie-Regiment|17. ReitendeArtillerie-Regiment|18. ReitendeArtillerie-Regiment|19. ReitendeArtillerie-Regiment|20. ReitendeArtillerie-Regiment

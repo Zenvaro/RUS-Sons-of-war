@@ -1,0 +1,16 @@
+UID = 288
+NationTag = WH2
+Name = Infantry Rgt (early conscripts)
+Alias = uni_WH2_Rgt0
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WH2_Rgt0_txt
+Color = $colWH2Regular 
+ModelType0 = $mdl_WH2_Inf0|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Komuch
+CustomNames = 1st Ufa Rgt|2nd Simbirsk Fusiliers Rgt|3rd Syzran Fusiliers Rgt|4th Kazan Fusiliers Rgt|5th Kazan Fusiliers Rgt|6th Samara Fusiliers Rgt|7th Samara Fusiliers Rgt|8th Samara Fusiliers Rgt|9th Simbirsk Fusiliers Rgt|10th Buzuluk Fusiliers Rgt|11th Bugulmin Fusiliers Rgt|12th Saratov Fusiliers Rgt|13th Saratov Fusiliers Rgt|14th Penza Fusiliers Rgt|15th Penza Fusiliers Rgt|49th Kazan Fusiliers Rgt|50th Arsk Fusiliers Rgt|51st Urjum Fusiliers Rgt

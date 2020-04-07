@@ -1,0 +1,15 @@
+UID = 61
+NationTag = RED
+Name = Turkmen Rgt
+Alias = uni_RED_Rgt6
+ForcePool = 100
+ShortName = Inf. Rgt.
+Text = $uni_RED_Rgt6_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Inf15|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Central_Asia

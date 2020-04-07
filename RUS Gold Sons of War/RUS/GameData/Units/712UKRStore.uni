@@ -1,0 +1,15 @@
+UID = 712
+NationTag = UKR
+Name = Store
+Alias = uni_UKR_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_UKR_Sup2_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_UKR_Store|8
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Ukrainians

@@ -1,0 +1,161 @@
+UID = 50006
+Bitmap = NothingBitmap.bmp
+x = 0
+y = 200
+z = 90
+DragDrop = {None}
+Capacity = 0
+Btn1 = -1|1|38		// Filter 1
+Btn2 = -1|21|38		// Filter 2
+Btn3 = -1|42|38		// Filter 3
+Btn4 = -1|64|38		// Filter 4
+Btn5 = -1|85|38		// Filter 5
+Btn6 = -1|106|38	// Filter 6
+Btn7 = -1|6|74  	// Minimap 'button' = active area
+Btn8 = -1|6|74 	  	// idem, vue politique
+Btn9 = -1|101|-4   	// To Ledger
+Btn10 = -1|0|-28  	// To Ledger
+Btn11 = -1|127|38	// Filter 5
+Btn12 = -1|149|38	// Filter 6
+
+Various0 = 6|74|0	// colored filters offset (same as mini map back)
+Various1 = .        // Weather Icon
+Various2 = .        // Terrain Img
+Various3 = .        // Terrain String
+Various4 = 0|-98|0    // Offset for Replay Minimap BG
+
+StrParam0 = MinimapBgOnly.png // image Replay Minimap BG
+
+Anchor = Bottom 
+
+Slave0 = Minimap_Back.bmp|15|18 // position of the dots
+//10-13
+
+// FILTER 1
+{ButtonDef}
+Image = b_filter_ControlOFF.bmp
+OverImage = b_filter_ControlOFF.bmp
+DownImage = b_filter_ControlON.bmp
+DisaImage = b_filter_ControlOFF.bmp
+Hint = $MapFilter1Hint
+UpAction = ToFilter1
+ClickSound = $sndTab
+{/ButtonDef}
+
+// FILTER 2
+{ButtonDef}
+Image = b_filter_SupplyOFF.bmp
+OverImage = b_filter_SupplyOFF.bmp
+DownImage = b_filter_SupplyON.bmp
+DisaImage = b_filter_SupplyOFF.bmp
+Hint = $MapFilter2Hint
+UpAction = ToFilter2
+ClickSound = $sndTab
+{/ButtonDef}
+
+// FILTER 3
+{ButtonDef}
+Image = b_filter_ObjectiveOFF.bmp
+OverImage = b_filter_ObjectiveOFF.bmp
+DownImage = b_filter_ObjectiveON.bmp
+DisaImage = b_filter_ObjectiveOFF.bmp
+Hint = $MapFilter3Hint
+UpAction = ToFilter3
+ClickSound = $sndTab
+{/ButtonDef}
+
+// FILTER 4
+{ButtonDef}
+Image = b_filter_LoyaltyOFF.bmp
+OverImage = b_filter_LoyaltyOFF.bmp
+DownImage = b_filter_LoyaltyON.bmp
+DisaImage = b_filter_LoyaltyOFF.bmp
+Hint = $MapFilter4Hint
+UpAction = ToFilter4
+ClickSound = $sndTab
+{/ButtonDef}
+
+// FILTER 5
+{ButtonDef}
+Image = b_filter_StateOFF.bmp
+OverImage = b_filter_StateOFF.bmp
+DownImage = b_filter_StateON.bmp
+DisaImage = b_filter_StateOFF.bmp
+Hint = $MapFilter5Hint
+UpAction = ToFilter5
+ClickSound = $sndTab
+{/ButtonDef}
+
+// FILTER 6
+{ButtonDef}
+Image = b_filter_RegionOFF.bmp
+OverImage = b_filter_RegionOFF.bmp
+DownImage = b_filter_RegionON.bmp
+DisaImage = b_filter_RegionOFF.bmp
+Hint = $MapFilter6Hint
+UpAction = ToFilter6
+ClickSound = $sndTab
+{/ButtonDef}
+
+// important note: the name of the minimap file should also be given to the gxMiniMap_ variable.
+{ButtonDef}
+Image = Minimap.bmp
+OverImage = Minimap.bmp
+DownImage = Minimap.bmp
+DisaImage = Minimap.bmp
+UpAction = MiniMapClick
+ClickSound = $sndTab
+{/ButtonDef}
+{ButtonDef}
+Image = Minimap.bmp
+OverImage = Minimap.bmp
+DownImage = Minimap.bmp
+DisaImage = Minimap.bmp
+UpAction = PolMiniMapClick
+ClickSound = $sndTab
+{/ButtonDef}
+
+
+// Ledger access (Atlas)
+{ButtonDef}
+Image = Btn_Ledger.png
+OverImage = Btn_Ledger_HL.png
+DownImage = Btn_Ledger_HL.png
+DisaImage = Btn_Ledger.png
+UpAction = ToLedger
+ClickSound = $sndTab
+Hint = $LedgerHint
+{/ButtonDef}
+
+{ButtonDef}
+Image = Btn_reconstruction.png
+OverImage = Btn_reconstruction_HL.png
+DownImage = Btn_reconstruction_HL.png
+DisaImage = Btn_reconstruction.png
+UpAction = ToBuildMode
+ClickSound = $sndTab
+Hint = $BuildModeHint
+{/ButtonDef}
+
+
+// FILTER 7
+{ButtonDef}
+Image = b_filter_WeatherZoneOFF
+OverImage = b_filter_WeatherZoneOFF
+DownImage = b_filter_WeatherZoneON
+DisaImage = b_filter_WeatherZoneOFF
+Hint = $MapFilter7Hint
+UpAction = ToFilter7
+ClickSound = $sndTab
+{/ButtonDef}
+
+// FILTER 8
+{ButtonDef}
+Image = b_filter_WeatherStatusOFF
+OverImage = b_filter_WeatherStatusOFF
+DownImage = b_filter_WeatherStatusON
+DisaImage = b_filter_WeatherStatusOFF
+Hint = $MapFilter8Hint
+UpAction = ToFilter8
+ClickSound = $sndTab
+{/ButtonDef}

@@ -1,0 +1,15 @@
+UID = 491
+NationTag = GER
+Name = Fortress Batteries
+Alias = uni_GER_FtG
+ForcePool = -1
+ShortName = Fortress Batteries
+Text = $uni_GER_FtG_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_FtG|2
+FamilyType0 = $famHvyArty|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 2
+Area = $Recruit_Germans

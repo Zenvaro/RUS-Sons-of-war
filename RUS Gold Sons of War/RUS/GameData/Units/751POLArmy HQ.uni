@@ -1,0 +1,16 @@
+UID = 751
+NationTag = POL
+Name = Army HQ
+Alias = uni_POL_Hq1
+ForcePool = 4
+ShortName = Army HQ
+Text = $uni_POL_Hq1_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_POL_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 1
+Area = $Recruit_Poles
+AltArea = $Area_Galicia

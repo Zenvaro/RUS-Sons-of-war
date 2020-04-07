@@ -1,0 +1,14 @@
+UID = 809
+NationTag = FRA
+Name = Marines Rgt
+Alias = uni_FRA_Mar
+ForcePool = 6
+ShortName = Marines Rgt.
+Text = $uni_FRA_Mar_txt
+Color = $colFRANavy
+ModelType0 = $mdl_FRA_Mar|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

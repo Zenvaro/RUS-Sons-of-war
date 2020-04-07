@@ -1,0 +1,16 @@
+UID = 321
+NationTag = WH3
+Name = Turkmen Rgt
+Alias = uni_WH3_Rgt5
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WH3_Rgt5_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_Inf2|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Central_Asia
+CustomNames = 1st Khiva Infantry Rgt|2nd  Khiva Infantry Rgt|1st Bukhara Infantry Rgt|2nd Bukhara Infantry Rgt|3rd Khiva Infantry Rgt|4th Khiva Infantry Rgt|5th Khiva Infantry Rgt|3rd Bukhara Infantry Rgt|4th Bukhara Infantry Rgt|5th Bukhara Infantry Rgt|6th Bukhara Infantry Rgt|7th Bukhara Infantry Rgt|1st Merv Infantry Rgt|2nd Merv Infantry Rgt|1st Samarkand Infantry Rgt|2nd Samarkand Infantry Rgt|3rd Samarkand Infantry Rgt|1st Urgench Infantry Rgt|2nd Urgench Infantry Rgt|1st Krasnovodsk Infantry Rgt

@@ -1,0 +1,16 @@
+UID = 381
+NationTag = WH5
+Name = Cavalry Rgt
+Alias = uni_WH5_Cav1
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WH5_Cav1_txt
+Color = $colWH5Regular 
+ModelType0 = $mdl_WH5_Cav1|1
+FamilyType0 = $famLeader|1
+FamilyType1 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_NorthernWhites

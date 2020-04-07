@@ -1,0 +1,15 @@
+UID = 126
+NationTag = RED
+Name = Supply
+Alias = uni_RED_Sup1
+ForcePool = 100
+ShortName = Supply
+Text = $uni_RED_Sup1_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Soviet Supply|2nd Soviet Supply|3rd Soviet Supply|4th Soviet Supply|5th Soviet Supply|6th Soviet Supply|7th Soviet Supply|8th Soviet Supply|9th Soviet Supply|10th Soviet Supply|11th Soviet Supply|12th Soviet Supply|13th Soviet Supply|14th Soviet Supply|15th Soviet Supply|16th Soviet Supply|17th Soviet Supply|18th Soviet Supply|19th Soviet Supply|20th Soviet Supply|21st Soviet Supply|22nd Soviet Supply|23rd Soviet Supply|24th Soviet Supply|25th Soviet Supply|26th Soviet Supply|27th Soviet Supply|28th Soviet Supply|29th Soviet Supply|30th Soviet Supply|31st Soviet Supply|32nd Soviet Supply|33rd Soviet Supply|34th Soviet Supply|35th Soviet Supply|36th Soviet Supply|37th Soviet Supply|38th Soviet Supply|39th Soviet Supply|40th Soviet Supply|41st Soviet Supply|42nd Soviet Supply|43rd Soviet Supply|44th Soviet Supply|45th Soviet Supply|46th Soviet Supply|47th Soviet Supply|48th Soviet Supply|49th Soviet Supply|50th Soviet Supply|51st Soviet Supply|52nd Soviet Supply|53rd Soviet Supply|54th Soviet Supply|55th Soviet Supply|56th Soviet Supply|57th Soviet Supply|58th Soviet Supply|59th Soviet Supply|60th Soviet Supply|61th Soviet Supply|62nd Soviet Supply|63rd Soviet Supply|64th Soviet Supply|65th Soviet Supply|66th Soviet Supply|67th Soviet Supply|68th Soviet Supply|69th Soviet Supply|70th Soviet Supply|71st Soviet Supply|72nd Soviet Supply|73rd Soviet Supply|74th Soviet Supply|75th Soviet Supply|76th Soviet Supply|77th Soviet Supply|78th Soviet Supply|79th Soviet Supply|80th Soviet Supply

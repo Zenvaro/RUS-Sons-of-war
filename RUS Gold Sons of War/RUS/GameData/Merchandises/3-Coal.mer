@@ -1,0 +1,9 @@
+UID = 3
+Alias = resCoal
+Name = $res_nam_Coal
+ShortName = $res_shortnam_Coal
+Kind = 1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *CoalAsset*

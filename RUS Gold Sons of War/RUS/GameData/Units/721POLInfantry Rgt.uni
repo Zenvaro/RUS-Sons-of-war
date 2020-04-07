@@ -1,0 +1,16 @@
+UID = 721
+NationTag = POL
+Name = Infantry Rgt
+Alias = uni_POL_Rgt1
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_POL_Rgt1_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_POL_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Recruit_Poles
+AltArea = $Area_Galicia

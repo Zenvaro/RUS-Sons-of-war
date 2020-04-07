@@ -1,0 +1,14 @@
+UID = 251
+NationTag = WHI
+Name = Volunteers Rgt 
+Alias = uni_WHI_VolBde
+ShortName = Vols. Rgt. 
+Text = $uni_WHI_VolBde_txt
+Color = $colWHIMilitia
+ModelType0 = $mdl_WHI_Mil2|1
+FamilyType0 = $famMilitia|1
+CmdCost = 2
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Recruit_Russians

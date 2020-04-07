@@ -1,0 +1,37 @@
+UID = 50030
+Bitmap = RpBackground.png
+x = 0
+y = 0
+z = 96
+DragDrop = {None}
+Anchor = HCenter
+GameState = stReplay
+Capacity = 0
+CanBeMoved = 1
+
+Various0 = 247|96|0  // Scn Name
+Various1 = 257|118|0  // Save date
+Various2 = 257|140|0  // Turn name
+Various3 = 355|174|0 // day of turn (centered)
+Various4 = 220|220|0 // Right flag
+Various5 = 400|220|0 // Left flag
+
+Various6 = 0|24|0  // Play Button
+Various7 = 0|24|0  // Pause Button
+Various8 = 0|24|0  // Reverse Button
+Various9 = 0|24|0  // Next Button
+Various10 = 0|24|0 // Previous Button
+Various11 = 0|24|0 // Forward Button
+Various12 = 0|24|0 // Backward Button
+
+// Abort
+Btn1 = -1|451|68
+
+{ButtonDef}
+Image = Btn_Parchment_Close_OFF.png
+OverImage = Btn_Parchment_Close_HL.png
+DownImage = Btn_Parchment_Close_ON.png
+Hint = $Cancel
+UpAction = CancelAction
+ClickSound = $sndTick
+{/ButtonDef}

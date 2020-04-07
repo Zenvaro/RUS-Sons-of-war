@@ -1,0 +1,1 @@
+Structures should be numbered in sequence, without gaps. Prefix the name of the structure with the UID (is made to speed access to data).

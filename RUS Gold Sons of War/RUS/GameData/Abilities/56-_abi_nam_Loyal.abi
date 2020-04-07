@@ -1,0 +1,15 @@
+UID = 56
+Name = $abi_nam_Loyal
+Alias = Loyal
+Kind = $abiCmdAdjust
+Text = $abi_txt_Loyal
+ImageID = abi_Loyal.png
+Color = $colAbi_Blue
+Appliance = Group
+Family = 5
+Level = 1
+ProgRate = 0
+Param0 = 1
+Param1 = 0
+Param2 = 0
+Param3 = 0

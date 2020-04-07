@@ -1,0 +1,15 @@
+UID = 309
+NationTag = WH2
+Name = SR Detachment
+Alias = uni_WH2_Mil1
+ForcePool = 6
+ShortName = SR Detachment
+Text = $uni_WH2_Mil1_txt
+Color = $colWH2Regular
+ModelType0 = $mdl_WHI_Mil5|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = SR Detachment

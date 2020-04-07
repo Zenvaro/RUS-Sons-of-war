@@ -1,0 +1,15 @@
+UID = 1939
+NationTag = AZR
+Name = Army HQ
+Alias = uni_AZR_Hq2
+ForcePool = 6
+ShortName = Army HQ
+Text = $uni_AZR_Hq2_txt
+Color = $colAZRRegular 
+ModelType0 = $mdl_AZR_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 1
+Area = $Recruit_Russians

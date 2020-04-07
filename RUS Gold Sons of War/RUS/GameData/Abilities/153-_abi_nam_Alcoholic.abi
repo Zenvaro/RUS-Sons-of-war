@@ -1,0 +1,10 @@
+UID = 153
+Name = $abi_nam_Alcoholic
+Alias = Alcoholic
+Kind = $abiFlavor
+Text = $abi_txt_Alcoholic
+ImageID = abi_Black.png
+Color = $colAbi_Tan
+Appliance = Leader
+Family = 1
+Level = 1

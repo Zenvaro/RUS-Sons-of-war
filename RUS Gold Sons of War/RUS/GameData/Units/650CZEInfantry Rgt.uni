@@ -1,0 +1,14 @@
+UID = 650
+NationTag = CZE
+Name = Infantry Rgt
+Alias = uni_CZE_Rgt1
+ForcePool = 10
+ShortName = Inf. Rgt.
+Text = $uni_CZE_Rgt1_txt
+Color = $colCZERegular 
+ModelType0 = $mdl_CZE_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

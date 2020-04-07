@@ -1,0 +1,12 @@
+UID = 82
+Name = $abi_nam_VeryFast_Cavalryman
+Alias = Very_Fast_Cavalry
+Kind = $abiMoveBonus
+Text = $abi_txt_VeryFast_Cavalryman
+ImageID = abi_movebonus.png
+Color = $colAbi_Green
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = 25
+ListParams3 = $famCavalry

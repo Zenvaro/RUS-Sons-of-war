@@ -1,0 +1,12 @@
+UID = 88
+Name = $abi_nam_Expert_Forager
+Alias = Expert_Forager
+Kind = $abiSupplyMod
+Text = $abi_txt_Expert_Forager
+ImageID = abi_ranger2.png
+Color = $colAbi_LightYellow
+Appliance = Group
+Family = 0
+Level = 1
+Param0 = 0
+Param1 = 50

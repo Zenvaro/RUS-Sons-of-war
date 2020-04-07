@@ -1,0 +1,123 @@
+UID = 50008
+Bitmap = UnitPanel1024.png
+x = 0
+y = 0
+z = 90
+Anchor = Bottom Left
+DragDrop = {None}
+Capacity = 5
+Coo1 = 360|206|0
+Coo2 = 450|206|0
+Coo3 = 540|206|0
+Coo4 = 630|206|0
+Coo5 = 720|206|0
+
+Various0 = 310|166|0	// Group title
+Various1 = 0|66|0		  // Struc name stripe, offset 
+Various2 = 78|54|0		// Unit power value
+
+// Filters, Slot 1/8
+Various3 = 189|186
+// Filters, Slot 2/8
+Various4 = 189|220
+// Filters, Slot 3/8
+Various5 = 189|254
+// Filters, Slot 4/8
+Various6 = 224|186
+// Filters, Slot 5/8
+Various7 = 224|220
+// Filters, Slot 6/8
+Various8 = 224|254
+// Filters, Slot 7/8
+Various9 = 0|0
+// Filters, Slot 8/8
+Various10 = 0|0
+
+Various11 = 32|32|0  // Ressourses Offset
+Various12 = -5|-8|0  // Selection square, relative to start of struct
+
+Various13 = 318|42|0 // Building Mode.
+Various14 = 2|2|0    // Building Faction Flag
+Various15 = 2|34|0   // Building Structure Lvl
+Various16 = 2|16|0   // Building Activation
+Various17 = 320|108  // Position of the army flag near the name of it
+Various18 = 2|2|0    // Building ForcePool
+Various19 = 50|2|0   // Building Nato
+
+// Economic Filters, 7 Slots
+Various20 = .        // Btn Filter All
+Various21 = .        // Btn Filter Agri
+Various22 = .        // Btn Filter Mines
+Various23 = .        // Btn Filter Indus
+Various24 = .        // Btn Filter Colo
+Various25 = .        // Btn Filter Military
+Various26 = .        // Btn Filter Various
+
+// Military Filters, 10 Slots
+Various27 = 185|142  // Btn Filter All
+Various28 = .        // Btn Filter Crp
+Various29 = .        // Btn Filter Div
+Various30 = .        // Btn Filter Bde
+Various31 = 220|142  // Btn Filter Inf
+Various32 = 185|175  // Btn Filter Cav
+Various33 = 220|175  // Btn Filter Art
+Various34 = 185|208  // Btn Filter Oth
+Various35 = 220|208  // Btn Filter Nav
+Various36 = 185|241  // Btn Filter Sta
+
+// Faction Filters
+Various37 = 265|108
+Various38 = 290|108
+Various39 = 315|108
+Various40 = 341|108
+Various41 = 265|133
+Various42 = 290|133
+Various43 = 315|133
+Various44 = 341|133
+Various45 = 367|133
+Various46 = 393|133
+Various47 = 419|133
+Various48 = 445|133
+Various49 = 471|133
+Various50 = 497|133
+Various51 = 523|133
+Various52 = 549|133
+
+// *** strings parameters ***
+
+StrParam0 = panel_regiment_selector.png	    // Image name for the selection square
+StrParam1 = unit_name_bgd.png 		// unit Name plate
+StrParam2 = Not_used
+StrParam3 = unit_name_bgd2.png 		// unit Name plate 2
+StrParam4 = unit_name_bgd3.png 		// unit Name plate 3
+StrParam5 = unit_name_bgd_¤.png 	// unit Name plate 4
+StrParam6 = unit_PowerValue_Plate.png // Power Value plate on unit card
+StrParam7 = unit_Quantity_Plate.png // Quantity (pool number) plate on unit card
+
+// *** integer parameters ***
+Param0 = 1              // max length allowed for the unit name
+Param1 = 5               // Number of ressourses by line
+Param2 = 80              // max length allowed for the unit name in Pixel
+
+// *** buttons ***
+// Left scroll
+Btn1 = -1|335|233
+{ButtonDef}
+Image = panel_regiment_arrow_left.png
+OverImage = panel_regiment_arrow_left.png
+DownImage = panel_regiment_arrow_left_on.png
+DisaImage = panel_regiment_arrow_left.png
+UpAction = ScrollLeft
+ClickSound = $sndLever
+{/ButtonDef}
+
+// Right scroll
+Btn2 = -1|857|233
+{ButtonDef}
+Image = panel_regiment_arrow_right.png
+OverImage = panel_regiment_arrow_right.png
+DownImage = panel_regiment_arrow_right_on.png
+DisaImage = panel_regiment_arrow_right.png
+UpAction = ScrollRight
+ClickSound = $sndLever
+{/ButtonDef}

@@ -1,0 +1,15 @@
+UID = 2179
+NationTag = GEO
+Name = Infantry Rgt
+Alias = uni_GEO_Rgt1
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_CAU_Rgt1_txt
+Color = $colGEORegular 
+ModelType0 = $mdl_GEO_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Georgia

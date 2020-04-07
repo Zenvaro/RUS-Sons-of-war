@@ -1,0 +1,16 @@
+UID = 264
+NationTag = DON
+Name = Plastuns Rgt
+Alias = uni_DON_Rgt3
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_DON_Rgt3_txt
+Color = $colDONRegular 
+ModelType0 = $mdl_DON_Lit2|1
+FamilyType0 = $famLightInf|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Area_Don
+CustomNames = 1st Plastuns Btn|2nd Plastuns Btn|3rd Plastuns Btn|4th Plastuns Btn|5th Plastuns Btn|6th Plastuns Btn|7th Plastuns Btn|8th Plastuns Btn|9th Plastuns Btn|10th Plastuns Btn|11th Plastuns Btn|12th Plastuns Btn|13th Plastuns Btn|14th Plastuns Btn|15th Plastuns Btn|16th Plastuns Btn|17th Plastuns Btn|18th Plastuns Btn|19th Plastuns Btn|20th Plastuns Btn|21st Plastuns Btn|22nd Plastuns Btn|23rd Plastuns Btn|24th Plastuns Btn|25th Plastuns Btn|26th Plastuns Btn|27th Plastuns Btn|28th Plastuns Btn|29th Plastuns Btn|30th Plastuns Btn

@@ -1,0 +1,17 @@
+UID = 160
+NationTag = RED
+Name = Cheka Security Battalion
+Alias = uni_RED_Tck
+ForcePool = 12
+ShortName = Cheka
+Text = $uni_RED_Tck_txt
+Color = $colREDMilitia
+ModelType0 = $mdl_RED_Tck|1
+ModelType1 = $mdl_RED_Pol|1
+FamilyType0 = $famMilitia|1
+FamilyType1 = $famNavalEngineer|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Cheka Security Btn|2nd Cheka Security Btn|3rd Cheka Security Btn|4th Cheka Security Btn|5th Cheka Security Btn|6th Cheka Security Btn|7th Cheka Security Btn|8th Cheka Security Btn|9th Cheka Security Btn|10th Cheka Security Btn|11th Cheka Security Btn|12th Cheka Security Btn|13th Cheka Security Btn|14th Cheka Security Btn|15th Cheka Security Btn|16th Cheka Security Btn|17th Cheka Security Btn|18th Cheka Security Btn|19th Cheka Security Btn|20th Cheka Security Btn|21st Cheka Security Btn|22nd Cheka Security Btn|23rd Cheka Security Btn|24th Cheka Security Btn|25th Cheka Security Btn|26th Cheka Security Btn|27th Cheka Security Btn|28th Cheka Security Btn|29th Cheka Security Btn|30th Cheka Security Btn

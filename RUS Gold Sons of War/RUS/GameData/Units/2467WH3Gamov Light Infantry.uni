@@ -1,0 +1,16 @@
+UID = 2467
+NationTag = ZAB
+Name = Gamov Light Infantry
+Alias = uni_WH3_GamInf
+ForcePool = 6
+ShortName = Lt. Inf. Bn.
+Text = $uni_WH3_Lit0_txt
+Color = $colZABRegular 
+ModelType0 = $mdl_WH3_GamInf|1
+FamilyType0 = $famLightInf|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Vladivostock
+CustomNames = 1st Gamov Rgt|2nd Mandchouria Rgt|2nd Zabaikal Cossacks Rgt|3rd Zabaikal Cossacks Rgt|4th Zabaikal Cossacks Rgt|5th Zabaikal Cossacks Rgt|6th Zabaikal Cossacks Rgt|3rd Mandchouria Rgt|4th Mandchouria Rgt|5th Mandchouria Rgt|6th Mandchouria Rgt|7th Zabaikal Cossacks Rgt|8th Zabaikal Cossacks Rgt|9th Zabaikal Cossacks Rgt|10th Zabaikal Cossacks Rgt

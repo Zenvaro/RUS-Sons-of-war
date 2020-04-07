@@ -1,0 +1,17 @@
+UID = 1447
+NationTag = GER
+Name = L. von Sanders
+Alias = uni_GER_Sanders3
+ForcePool = -1
+ShortName = Von Sanders
+Text = $uni_GER_Sanders3_txt
+Color = $colGERRegular 
+ModelType0 = $ldr_GER_Sanders3|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

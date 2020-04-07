@@ -1,0 +1,11 @@
+UID = 144
+Name = $abi_nam_Double-Face
+Alias = Double-Face
+Kind = $abiFlavor
+Text = $abi_txt_Double-Face
+ImageID = abi_Knife.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1
+ProgRate = 0

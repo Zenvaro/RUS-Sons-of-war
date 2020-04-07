@@ -1,0 +1,11 @@
+UID = 118
+Name = $abi_nam_DoubleCommand12
+Alias = Austrian-Hungarian
+Kind = $abiMultiNation
+Text = $abi_txt_DoubleCommand12
+ImageID = abi_Hungarian.png
+Color = $colAbi_Tan
+Appliance = Group
+Family = 0
+Level = 1
+StrParam0 = AUS|HUN

@@ -1,0 +1,2158 @@
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Riga
+
+StartEvent = evt_nam_WHI_BalticJoin_Generate|1|0|NULL|NULL|$Riga|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Riga
+
+StartEvent = evt_nam_WH3_BalticJoin_Generate|1|0|NULL|NULL|$Riga|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalUnqUnit = A.V. Kolchak
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_BalticJoin_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WHI_BalticJoin
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Petrograd;NOT
+  EvalRgnOwned = $Moscow;NOT
+
+SelectFaction = $WHI
+
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;1
+
+Actions
+
+  ChangeOption = $gmaOptionDip;WHI_BalticJoin;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_BalticJoin_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WH3_BalticJoin
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Petrograd;NOT
+  EvalRgnOwned = $Moscow;NOT
+
+SelectFaction = $WH3
+
+  EvalUnqUnit = A.V. Kolchak
+
+Actions
+
+  ChangeOption = $gmaOptionDip;WH3_BalticJoin;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_BalticJoin_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_WHI_BalticJoin_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;10;ImageID;Opt_WHI_BalticJoin.png;Title;opt_title_WHI_BalticJoin;MsgString;opt_desc_WHI_BalticJoin;ToolString;opt_hint_WHI_BalticJoin;SubType;WHI_BalticJoin;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_BalticJoin_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_WH3_BalticJoin_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;10;ImageID;Opt_WHI_BalticJoin.png;Title;opt_title_WHI_BalticJoin;MsgString;opt_desc_WHI_BalticJoin;ToolString;opt_hint_WHI_BalticJoin;SubType;WH3_BalticJoin;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_BalticJoin_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_BalticJoin_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;WHI_BalticJoin;=;1
+  CanPayOption = $gmaOptionDip;WHI_BalticJoin
+  EvalEvent = evt_nam_WH3_BalticJoin_Check;=;0
+
+Actions
+
+SelectFaction = $WHI
+
+  PayOption = $gmaOptionDip;WHI_BalticJoin
+  GenTextMsg  = opt_notify_WHI_BalticJoin;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_BalticJoin
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_BalticJoin
+
+SelectFaction = $WHI
+
+  SetEvtOccurs = evt_nam_WHI_BalticJoin_Tracker;CuOccurs;1
+
+SelectFaction = $WHI
+
+  SetFacRelationships = EST;-200
+  SetFacRelationships = LAT;-200
+  SetFacRelationships = LIT;-200
+
+SelectFaction = $WH3
+
+  SetFacRelationships = EST;-200
+  SetFacRelationships = LAT;-200
+  SetFacRelationships = LIT;-200
+
+SelectFaction = $WHI
+
+  ChangeFacMorale = 10
+
+SelectFaction = $WHI
+
+  ChgVPCount = 50
+
+SelectFaction = $WH3
+
+  ChangeFacMorale = 10
+
+SelectFaction = $WH3
+
+  ChgVPCount = 50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_BalticJoin_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;WH3_BalticJoin;=;1
+  CanPayOption = $gmaOptionDip;WH3_BalticJoin
+  EvalEvent = evt_nam_WHI_BalticJoin_Check;=;0
+
+Actions
+
+SelectFaction = $WH3
+
+  PayOption = $gmaOptionDip;WH3_BalticJoin
+
+SelectFaction = $WHI
+
+  GenTextMsg  = opt_notify_WHI_BalticJoin;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  GenTextMsg  = opt_notify_WHI_BalticJoin;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_BalticJoin
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_BalticJoin
+
+SelectFaction = $WHI
+
+  SetEvtOccurs = evt_nam_WHI_BalticJoin_Tracker;CuOccurs;1
+
+SelectFaction = $WHI
+
+  SetFacRelationships = EST;-200
+  SetFacRelationships = LAT;-200
+  SetFacRelationships = LIT;-200
+
+SelectFaction = $WH3
+
+  SetFacRelationships = EST;-200
+  SetFacRelationships = LAT;-200
+  SetFacRelationships = LIT;-200
+
+SelectFaction = $WHI
+
+  ChangeFacMorale = 10
+
+SelectFaction = $WHI
+
+  ChgVPCount = 50
+
+SelectFaction = $WH3
+
+  ChangeFacMorale = 10
+
+SelectFaction = $WH3
+
+  ChgVPCount = 50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = RGD_Remove_Exclusion_Balt_RED2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_BalticJoin_Tracker;=;1
+  EvalEvent = evt_nam_RED_BolshevikDictature;=;0
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = RGD_Remove_Exclusion_Balt_WHI2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_BalticJoin_Tracker;=;1
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Helsinki
+
+StartEvent = evt_nam_WHI_FinlandJoin_Generate|1|0|NULL|NULL|$Helsinki|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Helsinki
+
+StartEvent = evt_nam_WH3_FinlandJoin_Generate|1|0|NULL|NULL|$Helsinki|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalUnqUnit = A.V. Kolchak;
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_FinlandJoin_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WHI_FinlandJoin
+  CanPayOption = $gmaOptionDip;WHI_FinlandJoin;125
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Petrograd;NOT
+  EvalRgnOwned = $Moscow;NOT
+
+SelectFaction = $WHI
+
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;1
+
+Actions
+
+  ChangeOption = $gmaOptionDip;WHI_FinlandJoin;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_FinlandJoin_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WH3_FinlandJoin
+  CanPayOption = $gmaOptionDip;WH3_FinlandJoin;125
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Petrograd;NOT
+  EvalRgnOwned = $Moscow;NOT
+
+SelectFaction = $WH3
+
+  EvalUnqUnit = A.V. Kolchak;
+
+Actions
+
+  ChangeOption = $gmaOptionDip;WH3_FinlandJoin;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_FinlandJoin_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;1
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_WHI_FinlandJoin_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;15;ImageID;Opt_WHI_FinlandJoin.png;Title;opt_title_WHI_FinlandJoin;MsgString;opt_desc_WHI_FinlandJoin;ToolString;opt_hint_WHI_FinlandJoin;SubType;WHI_FinlandJoin;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_FinlandJoin_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_WH3_FinlandJoin_Generate;=;1
+  EvalUnqUnit = A.V. Kolchak;
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;15;ImageID;Opt_WHI_FinlandJoin.png;Title;opt_title_WHI_FinlandJoin;MsgString;opt_desc_WHI_FinlandJoin;ToolString;opt_hint_WHI_FinlandJoin;SubType;WH3_FinlandJoin;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_FinlandJoin_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WH3_FinlandJoin_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_FinlandJoin_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;1
+  EvalEvent = evt_nam_WH3_FinlandJoin_Check;=;0
+  CheckOption = $gmaOptionDip;WHI_FinlandJoin;=;1
+  CanPayOption = $gmaOptionDip;WHI_FinlandJoin
+
+Actions
+
+SelectFaction = $WHI
+
+  PayOption = $gmaOptionDip;WHI_FinlandJoin
+  GenTextMsg  = opt_notify_WHI_FinlandJoin;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_FinlandJoin
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_FinlandJoin
+  SetEvtOccurs = evt_nam_WHI_FinlandJoin_Tracker;CuOccurs;1
+
+SelectFaction = $WHI
+
+  SetFacRelationships = FIN;-200
+
+SelectFaction = $WH3
+
+  SetFacRelationships = FIN;-200
+
+SelectFaction = $WHI
+
+  ChangeFacMorale = 10
+
+SelectFaction = $WHI
+
+  ChgVPCount = 50
+
+SelectFaction = $WH3
+
+  ChangeFacMorale = 10
+
+SelectFaction = $WH3
+
+  ChgVPCount = 50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_FinlandJoin_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = A.V. Kolchak
+  EvalEvent = evt_nam_WHI_FinlandJoin_Check;=;0
+  CheckOption = $gmaOptionDip;WH3_FinlandJoin;=;1
+  CanPayOption = $gmaOptionDip;WH3_FinlandJoin
+
+Actions
+
+SelectFaction = $WH3
+
+  PayOption = $gmaOptionDip;WH3_FinlandJoin
+
+SelectFaction = $WHI
+
+  GenTextMsg  = opt_notify_WHI_FinlandJoin;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  GenTextMsg  = opt_notify_WHI_FinlandJoin;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_FinlandJoin
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_FinlandJoin
+  SetEvtOccurs = evt_nam_WHI_FinlandJoin_Tracker;CuOccurs;1
+
+SelectFaction = $WHI
+
+  SetFacRelationships = FIN;-200
+
+SelectFaction = $WH3
+
+  SetFacRelationships = FIN;-200
+
+SelectFaction = $WHI
+
+  ChangeFacMorale = 10
+
+SelectFaction = $WHI
+
+  ChgVPCount = 50
+
+SelectFaction = $WH3
+
+  ChangeFacMorale = 10
+
+SelectFaction = $WH3
+
+  ChgVPCount = 50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = RGD_Remove_Exclusion_Finland_RED|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_FinlandJoin_Tracker;=;1
+  EvalEvent = evt_nam_RED_BolshevikDictature;=;0
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = RGD_Remove_Exclusion_Finland_WHI|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_FinlandJoin_Tracker;=;1
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_WHI_SignAlliance_UKR_Generate|1|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_Renforts_CMN_UkrainianArmy2;=;0
+  EvalEvent = evt_nam_Renforts_CMN_UkrainianArmy;=;1
+  EvalUnqUnit = A.I. Denikin;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_WH3_SignAlliance_UKR_Generate|1|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_Renforts_CMN_UkrainianArmy2;=;0
+  EvalEvent = evt_nam_Renforts_CMN_UkrainianArmy;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_SignAlliance_UKR_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WHI_SignAlliance_UKR
+  CanPayOption = $gmaOptionDip;WHI_SignAlliance_UKR;125
+  EvalEngagementPts = >=;10
+  EvalUnqUnit = A.I. Denikin;NOT
+
+Actions
+
+SelectFaction = $WHI
+
+  ChangeOption = $gmaOptionDip;WHI_SignAlliance_UKR;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_SignAlliance_UKR_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WH3_SignAlliance_UKR
+  CanPayOption = $gmaOptionDip;WH3_SignAlliance_UKR;125
+  EvalEngagementPts = >=;10
+
+SelectFaction = $WH3
+
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+SelectFaction = $WHI
+
+  ChangeOption = $gmaOptionDip;WH3_SignAlliance_UKR;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_SignAlliance_UKR_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_WHI_SignAlliance_UKR_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;10;VP;25;ImageID;Opt_RED_UkrainianDOW.png;Title;opt_title_WHI_SignAlliance_UKR;ToolString;opt_hint_WHI_SignAlliance_UKR;SubType;WHI_SignAlliance_UKR;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_SignAlliance_UKR_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_WH3_SignAlliance_UKR_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;10;VP;25;ImageID;Opt_RED_UkrainianDOW.png;Title;opt_title_WHI_SignAlliance_UKR;ToolString;opt_hint_WHI_SignAlliance_UKR;SubType;WH3_SignAlliance_UKR;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_SignAlliance_UKR_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = A.I. Denikin;NOT
+
+SelectFaction = $WHI
+
+  CheckOption = $gmaOptionDip;WHI_SignAlliance_UKR;=;1
+  CanPayOption = $gmaOptionDip;WHI_SignAlliance_UKR
+  EvalEvent = evt_nam_WH3_SignAlliance_UKR_Check ;=;0
+
+Actions
+
+SelectFaction = $WH3
+
+  SetFacRelationships = UKR;50
+  SetFacRelationships = ROM;50
+
+SelectFaction = $WHI
+
+  PayOption = $gmaOptionDip;WHI_SignAlliance_UKR
+  SetFacRelationships = UKR;50
+  SetFacRelationships = ROM;50
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WHI_SignAlliance_UKR;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_SignAlliance_UKR
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_SignAlliance_UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_SignAlliance_UKR_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = A.V. Kolchak;NOT
+  CheckOption = $gmaOptionDip;WH3_SignAlliance_UKR;=;1
+  CanPayOption = $gmaOptionDip;WH3_SignAlliance_UKR
+  EvalEvent = evt_nam_WHI_SignAlliance_UKR_Check ;=;0
+
+Actions
+
+  SetFacRelationships = UKR;50
+  SetFacRelationships = ROM;50
+  PayOption = $gmaOptionDip;WH3_SignAlliance_UKR
+
+SelectFaction = $WHI
+
+  SetFacRelationships = UKR;50
+  SetFacRelationships = ROM;50
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WHI_SignAlliance_UKR;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_SignAlliance_UKR
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_SignAlliance_UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tiflis
+
+StartEvent = evt_nam_WHI_CaucasusJoin_Generate|1|0|NULL|NULL|$Tiflis|NULL
+
+Conditions
+
+SelectFaction = $WHI
+
+  EvalUnqUnit = A.I. Denikin;NOT
+  MinDate = 1919/02/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tiflis
+
+StartEvent = evt_nam_WH3_CaucasusJoin_Generate|1|0|NULL|NULL|$Tiflis|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  EvalUnqUnit = A.V. Kolchak;NOT
+  MinDate = 1919/02/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_CaucasusJoin_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WHI_CaucasusJoin
+  CanPayOption = $gmaOptionDip;WHI_CaucasusJoin
+
+SelectFaction = $WHI
+
+  EvalUnqUnit = A.I. Denikin;NOT
+  Probability = 10
+
+Actions
+
+  ChangeOption = $gmaOptionDip;WHI_CaucasusJoin;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_CaucasusJoin_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WH3_CaucasusJoin
+  CanPayOption = $gmaOptionDip;WH3_CaucasusJoin
+
+SelectFaction = $WH3
+
+  EvalUnqUnit = A.V. Kolchak;NOT
+  Probability = 10
+
+Actions
+
+SelectFaction = $WH3
+
+  ChangeOption = $gmaOptionDip;WH3_CaucasusJoin;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_CaucasusJoin_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_WHI_CaucasusJoin_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;13;Money;80;VP;100;ImageID;Opt_GER_CaucasusJoin.png;Title;opt_title_WHI_CaucasusJoin;MsgString;opt_desc_WHI_CaucasusJoin;ToolString;opt_hint_WHI_CaucasusJoin;SubType;WHI_CaucasusJoin;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_CaucasusJoin_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_WH3_CaucasusJoin_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;13;Money;80;VP;100;ImageID;Opt_GER_CaucasusJoin.png;Title;opt_title_WHI_CaucasusJoin;MsgString;opt_desc_WHI_CaucasusJoin;ToolString;opt_hint_WHI_CaucasusJoin;SubType;WH3_CaucasusJoin;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_CaucasusJoin_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_CaucasusJoin_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalEvent = evt_nam_WHI_CaucasusJoin_Check;=;0
+  CheckOption = $gmaOptionDip;WH3_CaucasusJoin;=;1
+  CanPayOption = $gmaOptionDip;WH3_CaucasusJoin
+
+Actions
+
+  PayOption = $gmaOptionDip;WH3_CaucasusJoin
+
+SelectFaction = $WHI
+
+  GenTextMsg  = opt_notify_WHI_CaucasusJoin;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  GenTextMsg  = opt_notify_WHI_CaucasusJoin;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_CaucasusJoin
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_CaucasusJoin
+
+SelectFaction = $WHI
+
+  SetEvtOccurs = evt_nam_WHI_CaucasusJoin_Tracker;CuOccurs;1
+
+SelectFaction = $WHI
+
+  SetFacRelationships = GEO;200
+  SetFacRelationships = AZR;200
+  ChangeFacMorale = -10
+
+SelectFaction = $WH3
+
+  SetFacRelationships = GEO;200
+  SetFacRelationships = AZR;200
+  ChangeFacMorale = -10
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_CaucasusJoin_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WHI
+
+  EvalUnqUnit = A.I. Denikin;NOT
+
+SelectFaction = $WHI
+
+  EvalEvent = evt_nam_WH3_CaucasusJoin_Check;=;0
+  CheckOption = $gmaOptionDip;WHI_CaucasusJoin;=;1
+  CanPayOption = $gmaOptionDip;WHI_CaucasusJoin
+
+Actions
+
+  PayOption = $gmaOptionDip;WHI_CaucasusJoin
+  GenTextMsg  = opt_notify_WHI_CaucasusJoin;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  GenTextMsg  = opt_notify_WHI_CaucasusJoin;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_CaucasusJoin
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_CaucasusJoin
+
+SelectFaction = $WHI
+
+  SetEvtOccurs = evt_nam_WHI_CaucasusJoin_Tracker;CuOccurs;1
+
+SelectFaction = $WHI
+
+  SetFacRelationships = GEO;200
+  SetFacRelationships = AZR;200
+
+SelectFaction = $WH3
+
+  SetFacRelationships = GEO;200
+  SetFacRelationships = AZR;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = RGD_Remove_Exclusion_Caucasus_RED2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_CaucasusJoin_Tracker;=;1
+  EvalEvent = evt_nam_RED_BolshevikDictature;=;0
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Georgia
+  RemRgnDecisionExcl = $Area_Armenia
+  RemRgnDecisionExcl = $Area_Azerbaijan
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_YudenichArmy_Generate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  EvalEvent = evt_nam_WHI_BalticJoin_Tracker;=;0
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_YudenichArmy_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WHI_YudenichArmy
+  EvalEvent = evt_nam_WHI_BalticJoin_Tracker;=;0
+
+Actions
+
+  ChangeOption = $gmaOptionDip;WHI_YudenichArmy;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_YudenichArmy_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  EvalEvent = evt_nam_WHI_YudenichArmy_Generate;=;1
+  EvalEvent = evt_nam_WHI_BalticJoin_Tracker;=;0
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Event-img_CMN_YudenichArrives.png;Title;opt_title_WHI_YudenichArmy;MsgString;opt_desc_WHI_YudenichArmy;ToolString;opt_hint_WHI_YudenichArmy;SubType;WHI_YudenichArmy;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_YudenichArmy_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_YudenichArmy_Check_Case1A|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;WHI_YudenichArmy;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;100
+  EvalEvent = evt_nam_WHI_YudenichArmy_Tracker;=;0
+  EvalEvent = evt_nam_WHI_BalticJoin_Tracker;=;0
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -100
+  GenTextMsg  = opt_notify_WHI_YudenichArmy;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  GenTextMsg  = opt_notify_RED_YudenichArmy;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_YudenichArmy
+  SetEvtOccurs = evt_nam_WHI_YudenichArmy_Tracker;CuOccurs;1
+
+SelectFaction = $WHI
+SelectRegion = $Tallinn
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 1
+    SetName = Northwest Army GHQ
+  Apply
+  CreateUnit
+    GMEParam = N.N. Yudenich
+    SetCommit = 1
+    SetType = $uni_WH4_Yudenich3
+    FlavorName = Northwest Army
+    SetName = N.N. Yudenich
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Prince Lieven2
+    SetName = A.P. Lieven
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Amc
+    SUFlavorName = Armored Cars
+    SetName = Armored Cars Sqd
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Tnk1
+    SUFlavorName = Tank Co.|Tank Co.
+    SetName = Tank Battalion
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Amt1
+    SUFlavorName = 'Admiral Essen'
+    SetName = 'Admiral Essen'
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Amt1
+    SUFlavorName = 'Pskovite'
+    SetName = 'Pskovite'
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Amt1
+    SUFlavorName = 'Talabian'
+    SetName = 'Talabian'
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Amt1
+    SUFlavorName = 'Admiral Kolchak'
+    SetName = 'Admiral Kolchak'
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Art1
+    SUFlavorName = Light Arty Btn
+    SetName = Light Arty Btn
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Air2
+    SetName = NWA Squadron
+  Apply
+  SetHealth = 70
+  SetCohesion = 100
+  CreateUnit
+    GMEParam = 2
+    SetType = $uni_WH4_Dzerozhinsky1
+    FlavorName = 1st Division
+    SetName = A.F. Dzerozhinsky
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_WH4_Bde4
+    SetName = 1st Independent Inf Div
+  Apply
+  CreateUnit
+    GMEParam = 2
+    SetType = $uni_WH4_Yaroslavtsev1
+    FlavorName = 2nd Division
+    SetName = Yaroslavtsev
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_WH4_Bde4
+    SetName = 2nd Inf Div
+  Apply
+  CreateUnit
+    GMEParam = 2
+    SetType = $uni_WH4_Dydorov1
+    FlavorName = 5th Division
+    SetName = C.I. Dydorov
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_WH4_Bde4
+    SetName = 5th Inf Div
+  Apply
+  CreateUnit
+    GMEParam = 2
+    SetType = $uni_WH4_Dolgorukov1
+    FlavorName = 4th Division
+    SetName = A.N. Dolgorukov
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_WH4_Bde4
+    SetName = 4th Inf Div
+  Apply
+  CreateUnit
+    GMEParam = 2
+    SetType = $uni_WH4_Ezhevskiy1
+    SetName = C.A. Ezhevskiy
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_WH4_Bde4
+    SetName = Separate Brigade
+  Apply
+  CreateUnit
+    GMEParam = 2
+    SetType = $uni_WH4_Arseniev1
+    FlavorName = 3rd Division
+    SetName = E.K. Arseniev
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_WH4_Bde4
+    SetName = Separate Brigade
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+  CreateUnit
+    SetType = $uni_WH4_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = North West Supply
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = North West Supply
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = North West Supply
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = North West Supply
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = North West Supply
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = North West Supply
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_FleetBaltic_Generate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_FleetBaltic_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WHI_FleetBaltic
+
+Actions
+
+  ChangeOption = $gmaOptionDip;WHI_FleetBaltic;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_FleetBaltic_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/01
+  EvalEvent = evt_nam_WHI_FleetBaltic_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Event-img_WHI_FleetBaltic.png;Title;opt_title_WHI_FleetBaltic;MsgString;opt_desc_WHI_FleetBaltic;ToolString;opt_hint_WHI_FleetBaltic;SubType;WHI_FleetBaltic;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_FleetBaltic_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_FleetBaltic_Check_Case1A|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;WHI_FleetBaltic;=;1
+  EvalEngagementPts = >=;5
+  EvalEvent = evt_nam_WHI_FleetBaltic_Tracker;=;0
+  EvalRgnOwned = $Turku
+
+Actions
+
+  ChgFacEngagementPts = -5
+  GenTextMsg  = opt_notify_WHI_FleetBaltic;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  GenTextMsg  = opt_notify_RED_FleetBaltic;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_FleetBaltic
+  SetEvtOccurs = evt_nam_WHI_FleetBaltic_Tracker;CuOccurs;1
+  SelectSubUnits = Models $mdl_WHI_B $mdl_WHI_CL $mdl_WHI_DD $mdl_WHI_Tra $mdl_WHI_AC;FactionTags WHI WH5
+  AlterCuSubUnit = ApplytoList;Move $Turku
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_FleetBaltic_Check_Case1B|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;WHI_FleetBaltic;=;1
+  EvalEngagementPts = >=;5
+  EvalRgnOwned = $Turku
+  EvalEvent = evt_nam_WHI_FinlandJoin_Tracker;=;1
+  EvalEvent = evt_nam_RED_Peace_in_the_North_West_Tracker;=;0
+  EvalEvent = evt_nam_WHI_FleetBaltic_Tracker;=;0
+
+Actions
+
+  ChgFacEngagementPts = -5
+  GenTextMsg  = opt_notify_WHI_FleetBaltic;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  GenTextMsg  = opt_notify_RED_FleetBaltic;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_FleetBaltic
+  SetEvtOccurs = evt_nam_WHI_FleetBaltic_Tracker;CuOccurs;1
+  SelectSubUnits = Models $mdl_WHI_B $mdl_WHI_CL $mdl_WHI_DD $mdl_WHI_Tra $mdl_WHI_AC;FactionTags WHI WH5
+  AlterCuSubUnit = ApplytoList;Move $Turku
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_FleetBaltic_Check_Case2A|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEngagementPts = >=;5
+  EvalRgnOwned = $Riga
+  EvalEvent = evt_nam_WHI_FleetBaltic_Tracker;=;0
+  EvalEvent = evt_nam_RED_Peace_in_the_North_West_Tracker;=;0
+  EvalEvent = evt_nam_RED_BalticDOW_Tracker;=;1
+  CheckOption = $gmaOptionDip;WHI_FleetBaltic;=;1
+
+Actions
+
+  ChgFacEngagementPts = -5
+  GenTextMsg  = opt_notify_WHI_FleetBaltic;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  GenTextMsg  = opt_notify_RED_FleetBaltic;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_FleetBaltic
+  SetEvtOccurs = evt_nam_WHI_FleetBaltic_Tracker;CuOccurs;1
+  SelectSubUnits = Models $mdl_WHI_B $mdl_WHI_CL $mdl_WHI_DD $mdl_WHI_Tra $mdl_WHI_AC;FactionTags WHI WH5
+  AlterCuSubUnit = ApplytoList;Move $Riga
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_FleetBaltic_Check_Case2B|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEngagementPts = >=;5
+  EvalRgnOwned = $Riga
+  EvalEvent = evt_nam_WHI_FleetBaltic_Tracker;=;0
+  EvalEvent = evt_nam_RED_Peace_in_the_North_West_Tracker;=;0
+  EvalEvent = evt_nam_WHI_BalticJoin_Tracker;=;1
+  CheckOption = $gmaOptionDip;WHI_FleetBaltic;=;1
+
+Actions
+
+  ChgFacEngagementPts = -5
+  GenTextMsg  = opt_notify_WHI_FleetBaltic;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  GenTextMsg  = opt_notify_RED_FleetBaltic;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_FleetBaltic
+  SetEvtOccurs = evt_nam_WHI_FleetBaltic_Tracker;CuOccurs;1
+  SelectSubUnits = Models $mdl_WHI_B $mdl_WHI_CL $mdl_WHI_DD $mdl_WHI_Tra $mdl_WHI_AC;FactionTags WHI WH5
+  AlterCuSubUnit = ApplytoList;Move $Riga
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Erevan
+
+StartEvent = evt_nam_WHI_ArmeniaJoin_Generate|1|0|NULL|NULL|$Erevan|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Erevan
+
+StartEvent = evt_nam_WH3_ArmeniaJoin_Generate|1|0|NULL|NULL|$Erevan|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ArmeniaJoin_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;1
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WHI_ArmeniaJoin
+  CanPayOption = $gmaOptionDip;WHI_ArmeniaJoin;125
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Petrograd;NOT
+  EvalRgnOwned = $Moscow;NOT
+
+SelectFaction = $WHI
+
+  EvalRgnOwned = $Baku
+  EvalRgnOwned = $Tiflis
+  EvalRgnOwned = $Batumi
+
+Actions
+
+  ChangeOption = $gmaOptionDip;WHI_ArmeniaJoin;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_ArmeniaJoin_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WH3_ArmeniaJoin
+  CanPayOption = $gmaOptionDip;WH3_ArmeniaJoin;125
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Petrograd;NOT
+  EvalRgnOwned = $Moscow;NOT
+
+SelectFaction = $WH3
+
+  EvalUnqUnit = A.V. Kolchak;
+  EvalRgnOwned = $Baku
+  EvalRgnOwned = $Tiflis
+  EvalRgnOwned = $Batumi
+
+Actions
+
+  ChangeOption = $gmaOptionDip;WH3_ArmeniaJoin;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ArmeniaJoin_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_WHI_ArmeniaJoin_Generate;=;1
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;10;ImageID;Opt_WHI_ArmeniaJoin.png;Title;opt_title_WHI_ArmeniaJoin;MsgString;opt_desc_WHI_ArmeniaJoin;ToolString;opt_hint_WHI_ArmeniaJoin;SubType;WHI_ArmeniaJoin;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_ArmeniaJoin_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_WH3_ArmeniaJoin_Generate;=;1
+  EvalUnqUnit = A.V. Kolchak
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;15;ImageID;Opt_WHI_ArmeniaJoin.png;Title;opt_title_WHI_ArmeniaJoin;MsgString;opt_desc_WHI_ArmeniaJoin;ToolString;opt_hint_WHI_ArmeniaJoin;SubType;WH3_ArmeniaJoin;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ArmeniaJoin_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WH3_ArmeniaJoin_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ArmeniaJoin_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;1
+  EvalEvent = evt_nam_WH3_ArmeniaJoin_Check;=;0
+  CheckOption = $gmaOptionDip;WHI_ArmeniaJoin;=;1
+  CanPayOption = $gmaOptionDip;WHI_ArmeniaJoin
+
+Actions
+
+SelectFaction = $WHI
+
+  PayOption = $gmaOptionDip;WHI_ArmeniaJoin
+  GenTextMsg  = opt_notify_WHI_ArmeniaJoin;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_ArmeniaJoin
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_ArmeniaJoin
+  SetEvtOccurs = evt_nam_WHI_ArmeniaJoin_Tracker;CuOccurs;1
+
+SelectFaction = $WHI
+
+  SetFacRelationships = ARM;-200
+
+SelectFaction = $WH3
+
+  SetFacRelationships = ARM;-200
+
+SelectFaction = $WHI
+
+  ChangeFacMorale = 10
+
+SelectFaction = $WHI
+
+  ChgVPCount = 50
+
+SelectFaction = $WH3
+
+  ChangeFacMorale = 10
+
+SelectFaction = $WH3
+
+  ChgVPCount = 50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_ArmeniaJoin_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = A.V. Kolchak
+  EvalEvent = evt_nam_WHI_ArmeniaJoin_Check;=;0
+  CheckOption = $gmaOptionDip;WH3_ArmeniaJoin;=;1
+  CanPayOption = $gmaOptionDip;WH3_ArmeniaJoin
+
+Actions
+
+SelectFaction = $WH3
+
+  PayOption = $gmaOptionDip;WH3_ArmeniaJoin
+
+SelectFaction = $WHI
+
+  GenTextMsg  = opt_notify_WHI_ArmeniaJoin;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  GenTextMsg  = opt_notify_WHI_ArmeniaJoin;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_ArmeniaJoin
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_ArmeniaJoin
+  SetEvtOccurs = evt_nam_WHI_ArmeniaJoin_Tracker;CuOccurs;1
+
+SelectFaction = $WHI
+
+  SetFacRelationships = ARM;-200
+
+SelectFaction = $WH3
+
+  SetFacRelationships = ARM;-200
+
+SelectFaction = $WHI
+
+  ChangeFacMorale = 10
+
+SelectFaction = $WHI
+
+  ChgVPCount = 50
+
+SelectFaction = $WH3
+
+  ChangeFacMorale = 10
+
+SelectFaction = $WH3
+
+  ChgVPCount = 50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Chita
+
+StartEvent = evt_nam_WH3_Attack_Semenov_Generate|1|0|NULL|NULL|$Chita|NULL
+
+Conditions
+
+  MinDate = 1918/11/20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Attack_Semenov_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/20
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WH3_Attack_Semenov
+  Probability = 10
+
+Actions
+
+  ChangeOption = $gmaOptionDip;WH3_Attack_Semenov;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Attack_Semenov_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/10
+  EvalEvent = evt_nam_WH3_Attack_Semenov_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;10;ImageID;Opt_WH3_Attack_Semenov.png;Title;opt_title_WH3_Attack_Semenov;MsgString;opt_desc_WH3_Attack_Semenov;ToolString;opt_hint_WH3_Attack_Semenov;SubType;WH3_Attack_Semenov;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Attack_Semenov_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Attack_Semenov_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;WH3_Attack_Semenov;=;1
+  EvalEngagementPts = >=;10
+  EvalEvent = evt_nam_WH3_Attack_Semenov_Check;=;0
+
+Actions
+
+  ChgFacEngagementPts = -10
+  GenTextMsg  = opt_notify_WH3_Attack_Semenov;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_Attack_Semenov
+  SetEvtOccurs = evt_nam_WH3_Attack_Semenov_Tracker;CuOccurs;1
+
+SelectFaction = $WH3
+
+  SetFacRelationships = JAP;-100
+
+  RemRgnDecisionExcl = $Area_Zabaikal
+  RemRgnDecisionExcl = $Area_Vladivostock
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Chita
+
+StartEvent = evt_nam_WH3_Semenov_Dictature|999|1|NULL|NULL|$Chita|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_Attack_Semenov_Check;=;0
+  EvalEvent = evt_nam_CMN_SemyonovJAPpuppetState;=;1
+
+Actions
+
+  ChgVPCount = -10
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Vladivostok
+
+StartEvent = evt_nam_CMN_Japan_Retreat|1|2|evt_txt_CMN_Japan_Retreat|Event-img_CMN_Japan_Retreat|$Vladivostok|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_CMN_SemyonovJAPpuppetState;=;1
+
+SelectFaction = $JAP
+
+  EvalRgnOwned = $Verkhneudinsk;NOT
+  EvalRgnOwned = $Bikin;NOT
+  EvalRgnOwned = $Vladivostok;NOT
+  EvalRgnOwned = $Khabarovsk;NOT
+  EvalRgnOwned = $Chita;NOT
+  EvalRgnOwned = $Nerchinsk;NOT
+  EvalRgnOwned = $Spasskoye;NOT
+  EvalRgnOwned = $Nikolsk;NOT
+  EvalRgnOwned = $Blagoveshchensk;NOT
+  EvalRgnOwned = $Troitskossavsk;NOT
+  EvalRgnOwned = $Spasskoye;NOT
+  EvalRgnOwned = $Irkutsk;NOT
+
+Actions
+
+SelectFaction = $JAP
+
+  SelectSubUnits = FactionTags JAP
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+
+  ChangeUnitPool = $uni_WH3_Cav0;15
+  ChangeUnitPool = $uni_WH3_Lit0;15
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Attack_Basmachi_Generate|1|0|NULL|NULL|$Chita|NULL
+
+Conditions
+
+  MinDate = 1918/06/20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Attack_Basmachi_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/20
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WH3_Attack_Basmachi
+  Probability = 10
+
+Actions
+
+  ChangeOption = $gmaOptionDip;WH3_Attack_Basmachi;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Attack_Basmachi_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/10
+  EvalEvent = evt_nam_WH3_Attack_Basmachi_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;10;ImageID;Opt_WH3_Attack_Basmachi.png;Title;opt_title_WH3_Attack_Basmachi;MsgString;opt_desc_WH3_Attack_Basmachi;ToolString;opt_hint_WH3_Attack_Basmachi;SubType;WH3_Attack_Basmachi;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Attack_Basmachi_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Attack_Basmachi_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;WH3_Attack_Basmachi;=;1
+  EvalEngagementPts = >=;10
+  EvalEvent = evt_nam_WH3_Attack_Basmachi_Check;=;0
+
+Actions
+
+  ChgFacEngagementPts = -10
+  GenTextMsg  = opt_notify_WH3_Attack_Basmachi;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_Attack_Basmachi
+  SetEvtOccurs = evt_nam_WH3_Attack_Basmachi_Tracker;CuOccurs;1
+
+SelectFaction = $WH3
+
+  SetFacRelationships = KAZ;-100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WHI_Attack_Basmachi_Generate|1|0|NULL|NULL|$Chita|NULL
+
+Conditions
+
+  MinDate = 1918/06/20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Attack_Basmachi_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/20
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;WHI_Attack_Basmachi
+  Probability = 10
+
+Actions
+
+  ChangeOption = $gmaOptionDip;WHI_Attack_Basmachi;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Attack_Basmachi_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/10
+  EvalEvent = evt_nam_WHI_Attack_Basmachi_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;10;ImageID;Opt_WH3_Attack_Basmachi.png;Title;opt_title_WHI_Attack_Basmachi;MsgString;opt_desc_WHI_Attack_Basmachi;ToolString;opt_hint_WHI_Attack_Basmachi;SubType;WHI_Attack_Basmachi;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Attack_Basmachi_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Attack_Basmachi_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;WHI_Attack_Basmachi;=;1
+  EvalEngagementPts = >=;10
+  EvalEvent = evt_nam_WHI_Attack_Basmachi_Check;=;0
+
+Actions
+
+  ChgFacEngagementPts = -10
+  GenTextMsg  = opt_notify_WHI_Attack_Basmachi;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_Attack_Basmachi
+  SetEvtOccurs = evt_nam_WHI_Attack_Basmachi_Tracker;CuOccurs;1
+
+SelectFaction = $WHI
+
+  SetFacRelationships = KAZ;-100
+
+EndEvent
+
+NULL ==========================================================================

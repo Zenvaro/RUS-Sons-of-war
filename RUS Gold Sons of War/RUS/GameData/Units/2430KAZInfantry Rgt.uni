@@ -1,0 +1,15 @@
+UID = 2430
+NationTag = KAZ
+Name = Infantry Rgt
+Alias = uni_KAZ_Rgt
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_KAZ_Rgt1_txt
+Color = $colKAZRegular 
+ModelType0 = $mdl_KAZ_Inf2|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Theater_Central_Asia

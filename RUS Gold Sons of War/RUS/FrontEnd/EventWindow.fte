@@ -1,0 +1,48 @@
+UID = 50020
+Bitmap = EvtBack-Large.png
+x = 0
+y = 0
+z = 92
+DragDrop = {None}
+Anchor = VCenter HCenter
+GameState = stEvtWindow
+Capacity = 0
+CanBeMoved = 1
+
+Caption0 = 0|160|0		// title coordinate (x centered)
+Caption1 = 0|160|0		// title coordinate, Renforcement event
+Caption2 = 80|240|0		// first line of text coordinate, standard event without image
+Caption3 = 75|425|0	  // first line of text coordinate, standard event with landscape image
+Caption4 = 75|425|0	  // first line of text coordinate, standard event with portrait image
+Caption5 = 80|240|0		// first line of text coordinate, Renforcement event
+Various6 = 75|191|0		// coordinate of the flavor image, if any, standard event
+Various7 = 525|140|0	// Date position
+Various8 = 10|258|0		// Filler image position
+Various9 = 0|0|0      // Offset for Flags
+Various10= 40|0|0     // Offset for Text
+Various11= 25|0|0     // Offset for NATO Symbol
+
+Param0 = 90			// max nb of char for each line of text, no image/landscape image
+Param1 = 90			// max nb of char for each line of text, portrait image
+Param2 = 12			// spacing, renf event
+Param3 = 90		  // max nb of char for each line of text, renforcement list
+Param4 = 0			// this nb of chars or above disable the Small filler image
+Param5 = 0			// this nb of chars or above disable the Medium filler image
+Param6 = 0			// this nb of chars or above disable the Large filler image
+param7 = 1      // Show MiniFlags (0: Disable; 1:Enable)
+Param8 = 19     // Number of lines
+
+StrParam0 = Newspaper_Text_¤.bmp	// Filler image base name (3 size: Large, Medium, Small)
+
+
+// Abort
+Btn1 = -1|629|40
+
+{ButtonDef}
+Image = Btn_Validate_OFF.png
+OverImage = Btn_Validate_HL.png
+DownImage = Btn_Validate_ON.png
+Hint = $Close
+UpAction = CancelAction
+ClickSound = $sndTick
+{/ButtonDef}

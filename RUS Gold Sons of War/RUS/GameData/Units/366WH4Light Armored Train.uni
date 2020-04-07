@@ -1,0 +1,16 @@
+UID = 366
+NationTag = WH4
+Name = Light Armored Train
+Alias = uni_WH4_Amt1
+ForcePool = 12
+ShortName = Lt. Arm. Train
+Text = $uni_WH4_Amt1_txt
+Color = $colWH4Regular 
+ModelType0 = $mdl_WHI_Amt1|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_WesternWhites
+CustomNames = 'Admiral Essen'|'Pskovite'|'Admiral Kolchak'|'Talabchanin'|'To Petrograd'

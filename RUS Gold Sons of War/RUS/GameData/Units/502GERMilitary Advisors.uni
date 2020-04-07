@@ -1,0 +1,17 @@
+UID = 502
+NationTag = GER
+Name = Military Advisors
+Alias = uni_GER_Adv
+ForcePool = 4
+ShortName = Military Advisors
+Text = $uni_GER_Adv_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Adv|1
+FamilyType0 = $famLeader|1
+FamilyType1 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = 1. Militaere Mission|2. Militaere Mission|3. Militaere Mission|4. Militaere Mission|5. Militaere Mission|6. Militaere Mission|7. Militaere Mission|8. Militaere Mission|9. Militaere Mission|10. Militaere Mission|11. Militaere Mission|12. Militaere Mission|13. Militaere Mission|14. Militaere Mission|15. Militaere Mission|16. Militaere Mission|17. Militaere Mission|18. Militaere Mission|19. Militaere Mission|20. Militaere Mission

@@ -1,0 +1,723 @@
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_Grichin-Almazov|1|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  SelectSubUnits = Models $ldr_WHI_Grichin-Almazov3
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WH3_OmskGHQ_Ready;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_OmskGHQ
+  SelectSubUnits = Models $ldr_WHI_Grichin-Almazov3
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 1
+    SetName = Siberian Army Great Head Quarter
+  Apply
+  CreateUnit
+    GMEParam = A.N. Grichin-Almazov
+    SetCommit = 1
+    SetType = $uni_WH3_Grichin-Almazov3
+    SetName = A.N. Grichin-Almazov
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WH3_New_OmskGHQ;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_Grichin-AlmazovOverrunned|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalEvent = evt_nam_WH3_OmskGHQ_Grichin-Almazov;=;1
+  EvalUnqUnit = A.N. Grichin-Almazov;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_OmskGHQ_Grichin-Almazov_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  EvalEvent = evt_nam_WH3_OmskGHQ_Grichin-AlmazovOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WH3_OmskGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_OmskGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WH3_OmskGHQ;MsgString;opt_desc_WH3_OmskGHQ;ToolString;opt_hint_WH3_OmskGHQ;SubType;WH3_OmskGHQ;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_Bakich|1|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  SelectSubUnits = Models $ldr_WH3_Bakich2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WH3_OmskGHQ_Ready;=;1
+
+Actions
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_OmskGHQ
+  SelectSubUnits = Models $ldr_WH3_Bakich2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 1
+    SetName = Siberian Army Great Head Quarter
+  Apply
+  CreateUnit
+    GMEParam = A. Bakich
+    SetCommit = 1
+    SetType = $uni_WH3_Bakich1
+    SetName = A. Bakich
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WH3_New_OmskGHQ;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_BakichOverrunned|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalEvent = evt_nam_WH3_OmskGHQ_Bakich;=;1
+  EvalUnqUnit = A. Bakich;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_OmskGHQ_Bakich_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  EvalEvent = evt_nam_WH3_OmskGHQ_BakichOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WH3_OmskGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_OmskGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WH3_OmskGHQ;MsgString;opt_desc_WH3_OmskGHQ;ToolString;opt_hint_WH3_OmskGHQ;SubType;WH3_OmskGHQ;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_Martynov|1|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  SelectSubUnits = Models $ldr_WH3_Martynov2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WH3_OmskGHQ_Ready;=;1
+
+Actions
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_OmskGHQ
+  SelectSubUnits = Models $ldr_WH3_Martynov2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 1
+    SetName = Siberian Army Great Head Quarter
+  Apply
+  CreateUnit
+    GMEParam = M.F. Martynov
+    SetCommit = 1
+    SetType = $uni_WH3_Martynov3
+    SetName = M.F. Martynov
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WH3_New_OmskGHQ;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_MartynovOverrunned|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalEvent = evt_nam_WH3_OmskGHQ_Martynov;=;1
+  EvalUnqUnit = M.F. Martynov;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_OmskGHQ_Martynov_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  EvalEvent = evt_nam_WH3_OmskGHQ_MartynovOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WH3_OmskGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_OmskGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WH3_OmskGHQ;MsgString;opt_desc_WH3_OmskGHQ;ToolString;opt_hint_WH3_OmskGHQ;SubType;WH3_OmskGHQ;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_Khanzhin|1|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  SelectSubUnits = Models $ldr_WH3_Khanzhin2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WH3_OmskGHQ_Ready;=;1
+
+Actions
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_OmskGHQ
+  SelectSubUnits = Models $ldr_WH3_Khanzhin2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 1
+    SetName = Siberian Army Great Head Quarter
+  Apply
+  CreateUnit
+    GMEParam = M.V. Khanzhin
+    SetCommit = 1
+    SetType = $uni_WH3_Khanzhin3
+    SetName = M.V. Khanzhin
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WH3_New_OmskGHQ;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_KhanzhinOverrunned|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalEvent = evt_nam_WH3_OmskGHQ_Khanzhin;=;1
+  EvalUnqUnit = M.V. Khanzhin;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_OmskGHQ_Khanzhin_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  EvalEvent = evt_nam_WH3_OmskGHQ_KhanzhinOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WH3_OmskGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_OmskGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WH3_OmskGHQ;MsgString;opt_desc_WH3_OmskGHQ;ToolString;opt_hint_WH3_OmskGHQ;SubType;WH3_OmskGHQ;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_Tolstov|1|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  SelectSubUnits = Models $ldr_WH3_Tolstov2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WH3_OmskGHQ_Ready;=;1
+
+Actions
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_OmskGHQ
+  SelectSubUnits = Models $ldr_WH3_Tolstov2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 1
+    SetName = Siberian Army Great Head Quarter
+  Apply
+  CreateUnit
+    GMEParam = V.S. Tolstov
+    SetCommit = 1
+    SetType = $uni_WH3_Tolstov3
+    SetName = V.S. Tolstov
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WH3_New_OmskGHQ;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_TolstovOverrunned|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalEvent = evt_nam_WH3_OmskGHQ_Tolstov;=;1
+  EvalUnqUnit = V.S. Tolstov;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_OmskGHQ_Tolstov_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  EvalEvent = evt_nam_WH3_OmskGHQ_TolstovOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WH3_OmskGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_OmskGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WH3_OmskGHQ;MsgString;opt_desc_WH3_OmskGHQ;ToolString;opt_hint_WH3_OmskGHQ;SubType;WH3_OmskGHQ;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_Dutov|1|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  SelectSubUnits = Models $ldr_WH3_Dutov2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WH3_OmskGHQ_Ready;=;1
+
+Actions
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_OmskGHQ
+  SelectSubUnits = Models $ldr_WH3_Dutov2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 1
+    SetName = Siberian Army Great Head Quarter
+  Apply
+  CreateUnit
+    GMEParam = A.I. Dutov
+    SetCommit = 1
+    SetType = $uni_WH3_Dutov3
+    SetName = A.I. Dutov
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WH3_New_OmskGHQ;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_DutovOverrunned|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalEvent = evt_nam_WH3_OmskGHQ_Dutov;=;1
+  EvalUnqUnit = A.I. Dutov;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_OmskGHQ_Dutov_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  EvalEvent = evt_nam_WH3_OmskGHQ_DutovOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WH3_OmskGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_OmskGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WH3_OmskGHQ;MsgString;opt_desc_WH3_OmskGHQ;ToolString;opt_hint_WH3_OmskGHQ;SubType;WH3_OmskGHQ;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_Ivanov-Rinov|1|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  SelectSubUnits = Models $ldr_WH3_Ivanov-Rinov2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WH3_OmskGHQ_Ready;=;1
+
+Actions
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_OmskGHQ
+  SelectSubUnits = Models $ldr_WH3_Ivanov-Rinov2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 1
+    SetName = Siberian Army Great Head Quarter
+  Apply
+  CreateUnit
+    GMEParam = P.P Ivanov-Rinov
+    SetCommit = 1
+    SetType = $uni_WH3_Ivanov-Rinov3
+    SetName = P.P Ivanov-Rinov
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WH3_New_OmskGHQ;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_Ivanov-RinovOverrunned|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalEvent = evt_nam_WH3_OmskGHQ_Ivanov-Rinov;=;1
+  EvalUnqUnit = P.P. Ivanov-Rinov;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_OmskGHQ_Ivanov-Rinov_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  EvalEvent = evt_nam_WH3_OmskGHQ_Ivanov-RinovOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WH3_OmskGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_OmskGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WH3_OmskGHQ;MsgString;opt_desc_WH3_OmskGHQ;ToolString;opt_hint_WH3_OmskGHQ;SubType;WH3_OmskGHQ;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_Gaida|1|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  SelectSubUnits = Models $ldr_CZE_Gaida2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WH3_OmskGHQ_Ready;=;1
+
+Actions
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_OmskGHQ
+  SelectSubUnits = Models $ldr_CZE_Gaida2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 1
+    SetName = Siberian Army Great Head Quarter
+  Apply
+  CreateUnit
+    GMEParam = R. Gaida
+    SetCommit = 1
+    SetType = $uni_CZE_Gaida3
+    SetName = R. Gaida
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_OmskGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WH3_New_OmskGHQ;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskGHQ_GaidaOverrunned|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalEvent = evt_nam_WH3_OmskGHQ_Gaida;=;1
+  EvalUnqUnit = R. Gaida;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_OmskGHQ_Gaida_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  EvalEvent = evt_nam_WH3_OmskGHQ_GaidaOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WH3_OmskGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_OmskGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WH3_OmskGHQ;MsgString;opt_desc_WH3_OmskGHQ;ToolString;opt_hint_WH3_OmskGHQ;SubType;WH3_OmskGHQ;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+

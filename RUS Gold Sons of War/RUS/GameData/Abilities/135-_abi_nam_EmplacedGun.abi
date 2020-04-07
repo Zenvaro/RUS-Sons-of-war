@@ -1,0 +1,10 @@
+UID = 135
+Name = $abi_nam_EmplacedGun
+Alias = Emplaced
+Kind = $abiFlavor
+Text = $abi_txt_EmplacedGun
+ImageID = abi_nomove.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1

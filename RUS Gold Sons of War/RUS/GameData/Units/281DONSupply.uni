@@ -1,0 +1,16 @@
+UID = 281
+NationTag = DON
+Name = Supply
+Alias = uni_DON_Sup1
+ForcePool = 12
+ShortName = Supply
+Text = $uni_DON_Sup1_txt
+Color = $colDONRegular 
+ModelType0 = $mdl_WHI_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Don
+CustomNames = 1st Cossacks Supply|2nd Cossacks Supply|3rd Cossacks Supply|4th Cossacks Supply|5th Cossacks Supply|6th Cossacks Supply|7th Cossacks Supply|8th Cossacks Supply|9th Cossacks Supply|10th Cossacks Supply|11th Cossacks Supply|12th Cossacks Supply|13th Cossacks Supply|14th Cossacks Supply|15th Cossacks Supply|16th Cossacks Supply|17th Cossacks Supply|18th Cossacks Supply|19th Cossacks Supply|20th Cossacks Supply|21st Cossacks Supply|22nd Cossacks Supply|23rd Cossacks Supply|24th Cossacks Supply|25th Cossacks Supply|26th Cossacks Supply|27th Cossacks Supply|28th Cossacks Supply|29th Cossacks Supply|30th Cossacks Supply|31st Cossacks Supply|32nd Cossacks Supply|33rd Cossacks Supply|34th Cossacks Supply|35th Cossacks Supply|36th Cossacks Supply|37th Cossacks Supply|38th Cossacks Supply|39th Cossacks Supply|40th Cossacks Supply

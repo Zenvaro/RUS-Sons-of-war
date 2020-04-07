@@ -1,0 +1,17 @@
+UID = 593
+NationTag = AUS
+Name = Air Fighter Squadron
+Alias = uni_AUS_Air2
+ForcePool = 2
+ShortName = Fight. Air Sqd.
+Text = $uni_AUS_Air2_txt
+Color = $colAUSRegular 
+SymbolID = symbol_Air.png
+ModelType0 = $mdl_AUS_Air2|2
+FamilyType0 = $famAirFighter|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1
+Area = $Recruit_Austrians
+CustomNames = 1. Jagdgeschwader|2. Jagdgeschwader|3.  Jagdgeschwader|4. Jagdgeschwader|5. Jagdgeschwader|6. Jagdgeschwader|7. Jagdgeschwader|8. Jagdgeschwader|9. Jagdgeschwader|10. Jagdgeschwader|11. Jagdgeschwader|12. Jagdgeschwader|13. Jagdgeschwader|14. Jagdgeschwader|15. Jagdgeschwader|16. Jagdgeschwader|17. Jagdgeschwader|18. Jagdgeschwader|19. Jagdgeschwader|20. Jagdgeschwader|21. Jagdgeschwader|22. Jagdgeschwader|23.  Jagdgeschwader|24. Jagdgeschwader|25. Jagdgeschwader|26. Jagdgeschwader|27. Jagdgeschwader|28. Jagdgeschwader|29. Jagdgeschwader|30. Jagdgeschwader|

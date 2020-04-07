@@ -1,0 +1,15 @@
+UID = 2173
+NationTag = ARM
+Name = Armored Train
+Alias = uni_ARM_Amt
+ForcePool = 12
+ShortName = Arm. Train
+Text = $uni_CAU_Amt_txt
+Color = $colARMRegular 
+ModelType0 = $mdl_CAU_Amt|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Area_Armenia

@@ -1,0 +1,11 @@
+UID = 123
+Name = $abi_nam_Latvian
+Alias = Latvian
+Kind = $abiIDFlag
+Text = $abi_txt_Latvian
+ImageID = abi_Baltic.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1
+Param0 = $LatvianFlag

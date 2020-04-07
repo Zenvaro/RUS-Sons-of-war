@@ -1,0 +1,15 @@
+UID = 2444
+NationTag = KAZ
+Name = Army HQ
+Alias = uni_KAZ_Hq
+ForcePool = 6
+ShortName = Army HQ
+Text = $uni_KAZ_Hq_txt
+Color = $colKAZRegular 
+ModelType0 = $mdl_KAZ_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Central_Asia

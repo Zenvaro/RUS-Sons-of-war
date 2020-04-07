@@ -1,0 +1,815 @@
+  NULL
+  NULL = NULL
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_allowingRGDGERReq|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalRgnDecisionDef = $rgdRequisitions;>=;1;
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_allowingRGDGERReforms|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalRgnDecisionDef = $rgdReforms;>=;1;
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_RGDGERRReqreset|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalMoney = <=;150;
+  EvalWSU = <=;100;
+
+Actions
+  SetEvtOccurs = evt_nam_RGDGERRActReq;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_RGDGERConscriptsreset|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalConscript = <=;125;
+
+Actions
+  SetEvtOccurs = evt_nam_RGDGERRActConscripts;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_RGDGERRActReq|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 1;5;9;13;17;21;
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_allowingRGDGERReq;>=;1;
+  Probability = 95
+  AddToRegListFromAreas = $Area_Wielkopolska;$Area_Central_Powers ;$Area_Galicia;$Area_Mazowia ;$Area_OstPreussen;$Area_Lithuania ;$Area_Latvia;$Area_Estonia;$Area_Wallachia;$Area_Romania;$Area_Volhynian;$Area_Kiew;$Area_Podolsk;$Area_Kherson;$Area_Ekaterinoslav;$Area_Chernigov;$Area_Poltava;$Area_Kharkov;$Area_Taurida;$Area_Vilnius;$Area_Minsk;$Area_Mogilev;$Area_Finland;$Area_Karelia;$Area_Kuban;$Area_Don;$Area_Astrakhan;$Area_Stavropol;$Area_Terek;$Area_Georgia ;$Area_Armenia;$Area_Azerbaijan;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdReforms;0
+  IsRgnDecisionActValid = $rgdRequisitions
+
+Actions
+  AddRgnDecisionAct = $rgdRequisitions;CURRENT
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_RGDGERRActConscripts|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 1;5;9;13;17;21;
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_allowingRGDGERReq;>=;1;
+  Probability = 95
+  AddToRegListFromAreas = $Area_Wielkopolska;$Area_Central_Powers ;$Area_Galicia;$Area_Mazowia ;$Area_OstPreussen;$Area_Lithuania ;$Area_Latvia;$Area_Estonia;$Area_Wallachia;$Area_Romania;$Area_Volhynian;$Area_Kiew;$Area_Podolsk;$Area_Kherson;$Area_Ekaterinoslav;$Area_Chernigov;$Area_Poltava;$Area_Kharkov;$Area_Taurida;$Area_Vilnius;$Area_Minsk;$Area_Mogilev;$Area_Finland;$Area_Karelia;$Area_Kuban;$Area_Don;$Area_Astrakhan;$Area_Stavropol;$Area_Terek;$Area_Georgia ;$Area_Armenia;$Area_Azerbaijan;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdReforms;0
+  IsRgnDecisionActValid = $rgdConscriptions
+
+Actions
+  AddRgnDecisionAct = $rgdConscriptions;CURRENT
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_RGDGERReformreset|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+
+Actions
+  SetEvtOccurs = evt_nam_RGDGERRActReform;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_RGDGERRActReform|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 2;6;10;14;18;22
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_allowingRGDGERReforms;>=;1;
+  Probability = 70
+  AddToRegListFromAreas = $Area_Wielkopolska;$Area_Central_Powers ;$Area_Galicia;$Area_Mazowia ;$Area_OstPreussen;$Area_Lithuania ;$Area_Latvia;$Area_Estonia;$Area_Wallachia;$Area_Romania;$Area_Volhynian;$Area_Kiew;$Area_Podolsk;$Area_Kherson;$Area_Ekaterinoslav;$Area_Chernigov;$Area_Poltava;$Area_Kharkov;$Area_Taurida;$Area_Vilnius;$Area_Minsk;$Area_Mogilev;$Area_Finland;$Area_Karelia;$Area_Kuban;$Area_Don;$Area_Astrakhan;$Area_Stavropol;$Area_Terek;$Area_Georgia ;$Area_Armenia;$Area_Azerbaijan;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLackLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdReforms;0
+  IsRgnDecisionActValid = $rgdReforms
+
+Actions
+  AddRgnDecisionAct = $rgdReforms;CURRENT
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PoolAdjust|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+
+Actions
+  AI.SetPoolRatio = $famElite;25
+  AI.SetPoolRatio = $famLine;100
+  AI.SetPoolRatio = $famLightInf;25
+  AI.SetPoolRatio = $famSkirmisher;25
+  AI.SetPoolRatio = $famRaider;10
+  AI.SetPoolRatio = $famMilitia;5
+  AI.SetPoolRatio = $famCavalry;50
+  AI.SetPoolRatio = $famHvyCavalry;25
+  AI.SetPoolRatio = $famLtVehicle;75
+  AI.SetPoolRatio = $famMedVehicle;50
+  AI.SetPoolRatio = $famHvyVehicle;50
+  AI.SetPoolRatio = $famSHvyVehicle;50
+  AI.SetPoolRatio = $famLightArty;50
+  AI.SetPoolRatio = $famMedArty;50
+  AI.SetPoolRatio = $famHvyArty;50
+  AI.SetPoolRatio = $famSHvyArty;50
+  AI.SetPoolRatio = $famArmoredTrain;25
+  AI.SetPoolRatio = $famSupply;75
+  AI.SetPoolRatio = $famGood;0
+  AI.SetPoolRatio = $famService;5
+  AI.SetPoolRatio = $famEngineer;10
+  AI.SetPoolRatio = $famNavalEngineer;5
+  AI.SetPoolRatio = $famHvyWarship;1
+  AI.SetPoolRatio = $famHeavyWarship;1
+  AI.SetPoolRatio = $famLightWarship;1
+  AI.SetPoolRatio = $famLtWarship;1
+  AI.SetPoolRatio = $famRaiderShip;5
+  AI.SetPoolRatio = $famTransportShip;5
+  AI.SetPoolRatio = $famHvyCoastalShip;5
+  AI.SetPoolRatio = $famLitCoastalShip;5
+  AI.SetPoolRatio = $famCarrierShip;1
+  AI.SetPoolRatio = $famSubmarine;10
+  AI.SetPoolRatio = $famSubTransport;1
+  AI.SetPoolRatio = $famAirRecon;10
+  AI.SetPoolRatio = $famAirFighter;10
+  AI.SetPoolRatio = $famAirNavBomber;5
+  AI.SetPoolRatio = $famAirLevelBomber;10
+  AI.SetPoolRatio = $famAirStratBomber;5
+  AI.SetPoolRatio = $famAirTransport;5
+  AI.SetPoolRatio = $famCoastalShip;5
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Hindenburg_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;GER_Hindenburg
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;GER_Hindenburg;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BaltikumKorps_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;GER_BaltikumKorps
+  Probability = 35
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;GER_BaltikumKorps;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_FinlandGulfMines_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;GER_FinlandGulfMines
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;GER_FinlandGulfMines;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_MannerheimLine1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;GER_MannerheimLine1
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;GER_MannerheimLine1;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_More_Rail_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;GER_More_Rail
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;GER_More_Rail;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_NewDivisionFinland_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;GER_NewDivisionFinland
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;GER_NewDivisionFinland;1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_NewDivisionBaltics_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;GER_NewDivisionBaltics
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;GER_NewDivisionBaltics;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Kronprinz_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;GER_Kronprinz
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;GER_Kronprinz;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_FinlandArmSales1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;GER_FinlandArmSales1
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;GER_FinlandArmSales1;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_FinlandAircraftVolunteers_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;GER_FinlandAircraftVolunteers
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;GER_FinlandAircraftVolunteers;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BalticArmSales1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;GER_BalticArmSales1
+  Probability = 100
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;GER_BalticArmSales1;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BalticAircraftVolunteers_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;GER_BalticAircraftVolunteers
+  Probability = 100
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;GER_BalticAircraftVolunteers;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_UkraineArmSales1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;GER_UkraineArmSales1
+  Probability = 100
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;GER_UkraineArmSales1;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_CaucasusArmSales1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;GER_CaucasusArmSales1
+  Probability = 100
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;GER_CaucasusArmSales1;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_WhitesArmSales1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;GER_WhitesArmSales1
+  Probability = 100
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;GER_WhitesArmSales1;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_More_Money_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;GER_More_Money
+  EvalMoney = <;200
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;GER_More_Money;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_GeneralMobilization_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;GER_GeneralMobilization
+  Probability = 85
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;GER_GeneralMobilization;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Blockade_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;GER_Blockade
+  EvalEngagementPts = >=;15
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;GER_Blockade;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PartialMobilization_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;GER_PartialMobilization
+  Probability = 85
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;GER_PartialMobilization;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_KomunistPartyBanned_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;GER_KomunistPartyBanned
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;GER_KomunistPartyBanned;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Repression_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;GER_Repression
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;GER_Repression;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Repression2_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;GER_Repression2
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;GER_Repression2;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Propaganda1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  EvalMoney = >=;150
+  ActorEnabled = $gmaOptionPol;GER_Propaganda1
+  Probability = 85
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;GER_Propaganda1;1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Propaganda2_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  EvalMoney = >=;500
+  ActorEnabled = $gmaOptionPol;GER_Propaganda1
+  Probability = 35
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;GER_Propaganda2;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Army2_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;GER_Army2
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;GER_Army2;1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Army6_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;GER_Army6
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;GER_Army6;1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Army13_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;GER_Army13
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;GER_Army13;1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Army15_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;GER_Army15
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;GER_Army15;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_AUS_Army6_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;AUS_Army6
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;AUS_Army6;1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_AUS_ArmyGroupDonau_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;AUS_ArmyGroupDonau
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;AUS_ArmyGroupDonau;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Bermondt-Avalov_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/05/05
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;GER_Bermondt-Avalov
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;GER_Bermondt-Avalov;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PrisonnersRecruitment_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/03
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;GER_PrisonnersRecruitment
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;GER_PrisonnersRecruitment;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PanzerWaffe_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/03/15
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;GER_PanzerWaffe
+  Probability = 35
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;GER_PanzerWaffe;1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PanzerWaffe2_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/03/15
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;GER_PanzerWaffe2
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;GER_PanzerWaffe2;1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PanzerWaffe3_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/03/15
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;GER_PanzerWaffe3
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;GER_PanzerWaffe3;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_SignAlliance_WHI_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;GER_SignAlliance_WHI
+
+SelectFaction = $WHI
+
+EvalRgnOwned = $Rostov
+  Probability = 5
+
+Actions
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;GER_SignAlliance_WHI;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BreakAlliance_WHI_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_GER_AllianceWithWhites;>=;1
+
+SelectFaction = $WHI
+
+EvalRgnOwned = $Sevastopol
+
+EvalRgnOwned = $Rostov
+
+EvalRgnOwned = $Tzaritsyn
+  ActorEnabled = $gmaOptionDip;GER_BreakAlliance_WHI
+  Probability = 50
+
+Actions
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;GER_BreakAlliance_WHI;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Germany_Mobilization1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;GER_Germany_Mobilization1
+  Probability = 15
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;GER_Germany_Mobilization1;1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Germany_Mobilization2_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_Germany_Mobilization1_Tracker;=;1
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;GER_Germany_Mobilization2
+  Probability = 15
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;GER_Germany_Mobilization2;1
+
+EndEvent

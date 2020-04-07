@@ -1,0 +1,16 @@
+UID = 226
+NationTag = WHI
+Name = Railroad Eng.
+Alias = uni_WHI_RREng
+ForcePool = 6
+ShortName = Railroad Eng.
+Text = $uni_WHI_RREng_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_RREng|1
+FamilyType0 = $famEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Russians
+CustomNames = 1st Railroad Eng. Btn|2nd Railroad Eng. Btn|3rd Railroad Eng. Btn|4th Railroad Eng. Btn|5th Railroad Eng. Btn|6th Railroad Eng. Btn|7th Railroad Eng. Btn|8th Railroad Eng. Btn|9th Railroad Eng. Btn|10th Railroad Eng. Btn|11th Railroad Eng. Btn|12th Railroad Eng. Btn|13th Railroad Eng. Btn|14th Railroad Eng. Btn|15th Railroad Eng. Btn|16th Railroad Eng. Btn|17th Railroad Eng. Btn|18th Railroad Eng. Btn|19th Railroad Eng. Btn|20th Railroad Eng. Btn|21st Railroad Eng. Btn|22nd Railroad Eng. Btn|23rd Railroad Eng. Btn|24th Railroad Eng. Btn|25th Railroad Eng. Btn|26th Railroad Eng. Btn|27th Railroad Eng. Btn|28th Railroad Eng. Btn|29th Railroad Eng. Btn|30th Railroad Eng. Btn

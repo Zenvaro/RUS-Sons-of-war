@@ -1,0 +1,17 @@
+UID = 302
+NationTag = WH2
+Name = Air Squadron
+Alias = uni_WH2_Air
+ForcePool = 2
+ShortName = Air Sqd.
+Text = $uni_WH2_Air_txt
+Color = $colWH2Regular 
+SymbolID = symbol_Air.png
+ModelType0 = $mdl_WHI_Air1|2
+FamilyType0 = $famAirRecon|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Komuch
+CustomNames = Air Recon Squadron|Volga Air Squadron|Komuch Air Squadron

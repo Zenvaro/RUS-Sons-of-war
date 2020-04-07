@@ -1,0 +1,17 @@
+UID = 1494
+NationTag = GER
+Name = E. von Below
+Alias = uni_GER_EBelow2
+ForcePool = -1
+ShortName = Von Below
+Text = $uni_GER_EBelow2_txt
+Color = $colGERRegular 
+ModelType0 = $ldr_GER_EBelow2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

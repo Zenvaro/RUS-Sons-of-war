@@ -1,0 +1,13 @@
+UID = 167
+NationTag = RED
+Name = Merchandise
+Alias = uni_RED_Mer
+ShortName = Merchandise
+Text = $uni_RED_Mer_txt
+Color = $colREDMilitia
+ModelType0 = $mdl_RED_Mer|1
+FamilyType0 = $famGood|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

@@ -1,0 +1,15 @@
+UID = 194
+NationTag = WHI
+Name = Sharpshooters 
+Alias = uni_WHI_Shp1
+ForcePool = 6
+ShortName = Sharpshooters
+Text = $uni_WHI_Shp1_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Lit|1
+FamilyType0 = $famLightInf|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_SouthernWhites

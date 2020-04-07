@@ -1,0 +1,1944 @@
+  NULL = NULL
+
+SelectFaction = $CMN
+
+SelectFaction = $CMN
+StartEvent = evt_nam_ResetArmyNearCities|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+SelectFaction = $RED
+  SetEvtOccurs = evt_nam_CPArmyNearMoscow;CuOccurs;0
+  SetEvtOccurs = evt_nam_CPArmyNearPetrograd;CuOccurs;0
+  SetEvtOccurs = evt_nam_EnemyArmyNearTzaritsyn;CuOccurs;0
+  SetEvtOccurs = evt_nam_CPArmyNearSamara;CuOccurs;0
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_CPArmyNearMoscow|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+EvalRgnOwned = $Moscow
+  EvalAreaPowerRatio = LAND;$EventArea_Close_to_Moscow;1;>=;100;100
+  EvalAreaPowerRatio = LAND;$EventArea_Close_to_Moscow;50;<=;100;100
+
+Actions
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_CPArmyNearPetrograd|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+EvalRgnOwned = $Petrograd
+  EvalAreaPowerRatio = LAND;$EventArea_Close_to_Petrograd;1;>=;100;100
+  EvalAreaPowerRatio = LAND;$EventArea_Close_to_Petrograd;50;<=;100;100
+
+Actions
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_EnemyArmyNearTzaritsyn|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+EvalRgnOwned = $Tzaritsyn
+  EvalAreaPowerRatio = LAND;$EventArea_Close_to_Tzaritsyn;1;>=;100;100
+  EvalAreaPowerRatio = LAND;$EventArea_Close_to_Tzaritsyn;50;<=;100;100
+
+Actions
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_CPArmyNearSamara|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+EvalRgnOwned = $Samara
+  EvalAreaPowerRatio = LAND;$EventArea_Close_to_Samara;1;>=;100;100
+  EvalAreaPowerRatio = LAND;$EventArea_Close_to_Samara;50;<=;100;100
+
+Actions
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_GeneralMobilization_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FullWar;=;1
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_GER_Mobilization1.png;Title;opt_title_GER_GeneralMobilization;MsgString;opt_desc_GER_GeneralMobilization;ToolString;opt_hint_GER_GeneralMobilization;SubType;GER_GeneralMobilization;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_GeneralMobilization_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_GeneralMobilization|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;GER_GeneralMobilization;=;1
+  EvalEngagementPts = >=;10
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeMoneyPool = -20
+  ChangeConscriptPool = 500
+  ChangeFacMorale = -10
+  ChgVPCount = -30
+  Replacement = GER;$famElite;1
+  Replacement = GER;$famLine;10
+  Replacement = BAY;$famLine;3
+  Replacement = GER;$famMilitia;20
+  Replacement = BAY;$famMilitia;5
+  Replacement = GER;$famLightInf;3
+  Replacement = GER;$famCavalry;5
+  Replacement = GER;$famLightArty;2
+  Replacement = GER;$famMedArty;1
+  Replacement = GER;$famService;2
+  Replacement = GER;$famEngineer;1
+  Replacement = GER;$famAirRecon;1
+  Replacement = GER;$famAirFighter;2
+  Replacement = GER;$famAirLevelBomber;1
+  ChangeLoyaltyFac = $Area_Central_Powers;-15
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Central_Powers;15
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_GeneralMobilization;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GermanGeneralMobilization;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;GER_GeneralMobilization
+
+  ChgEvtOccurs = evt_nam_GER_GeneralMobilization_Tracker;CuOccurs;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Hindenburg_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_GER_Hindenburg.png;Title;opt_title_GER_Hindenburg;MsgString;opt_desc_GER_Hindenburg;ToolString;opt_hint_GER_Hindenburg;SubType;GER_Hindenburg;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Hindenburg_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;GER_Hindenburg;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = 10
+  ChgVPCount = -100
+
+SelectRegion = $Germany
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = P. von Hindenburg
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Hindenburg3
+  SetName = P. von Hindenburg
+  Apply
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_CMN_Hindenburg;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Hindenburg;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;GER_Hindenburg
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Kronprinz_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_GER_Kronprinz.png;Title;opt_title_GER_Kronprinz;MsgString;opt_desc_GER_Kronprinz;ToolString;opt_hint_GER_Kronprinz;SubType;GER_Kronprinz;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Kronprinz_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;GER_Kronprinz;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = 5
+  ChgVPCount = -50
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Kronprinz
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Kronprinz
+  SetName = Kronprinz
+  Apply
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_CMN_Kronprinz;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Kronprinz;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;GER_Kronprinz
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Blockade_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FullWar;=;1
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Event-img_Renforts_CMN_BlackSeaAllied.png;Title;opt_title_GER_Blockade;MsgString;opt_desc_GER_Blockade;ToolString;opt_hint_GER_Blockade;SubType;GER_Blockade;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Blockade_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;GER_Blockade;=;1
+  EvalEngagementPts = >=;15
+
+Actions
+  ChgFacEngagementPts = -15
+  ChangeFacMorale = 5
+  ChgVPCount = -50
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+  ChangeAssetsProd = -10;-10;0;-2;-1;0
+SelectRegion = $Rostov
+  ChangeAssetsProd = -5;-5;0;0;-1;0
+SelectRegion = $Vladivostok
+  ChangeAssetsProd = -10;-3;0;-2;-1;0
+SelectRegion = $Arkhangelsk
+  ChangeAssetsProd = 0;0;0;-1;0;0
+SelectRegion = $Murmansk
+  ChangeAssetsProd = 0;0;0;-2;0;0
+SelectRegion = $Novorossiysk
+  ChangeAssetsProd = 0;0;0;-1;0;0
+  GenTextMsg  = opt_notify_CMN_Blockade;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Blockade;1;NULL;NULL;NULL
+  SetEvtOccurs = evt_nam_GER_BlockadeEstablished;CuOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;GER_Blockade
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BlockadeEstablished|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PartialMobilization_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_Mobilization2.png;Title;opt_title_GER_PartialMobilization;MsgString;opt_desc_GER_PartialMobilization;ToolString;opt_hint_GER_PartialMobilization;SubType;GER_PartialMobilization;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_PartialMobilization|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;GER_PartialMobilization;=;1
+  EvalEngagementPts = >=;1
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -1
+  ChangeMoneyPool = -5
+  ChangeConscriptPool = 150
+  ChangeFacMorale = -1
+  ChgVPCount = -10
+  Replacement = GER;$famLine;3
+  Replacement = GER;$famMilitia;5
+  Replacement = GER;$famLightInf;1
+  Replacement = GER;$famCavalry;1
+  ChangeLoyaltyFac = $Area_Central_Powers;-5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Central_Powers;5
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_PartialMobilization;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GermanPartialMobilization;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;GER_PartialMobilization
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PartialMobilization_Regen|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 6;12;18;0
+  ActorDisabled = $gmaOptionPol;GER_PartialMobilization
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_GER_PartialMobilization_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_Mobilization2.png;Title;opt_title_GER_PartialMobilization;MsgString;opt_desc_GER_PartialMobilization;ToolString;opt_hint_GER_PartialMobilization;SubType;GER_PartialMobilization;SParam1;GER
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_KomunistPartyBanned_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_Anti-Bolchevism1.png;Title;opt_title_GER_KomunistPartyBanned;MsgString;opt_desc_GER_KomunistPartyBanned;ToolString;opt_hint_GER_KomunistPartyBanned;SubType;GER_KomunistPartyBanned;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_KomunistPartyBanned_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;GER_KomunistPartyBanned;=;1
+  EvalEngagementPts = >=;10
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = 5
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 25
+
+SelectFaction = $RED
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -25
+
+SelectFaction = $GER
+SelectRegion = $Bavaria
+
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = 25
+
+SelectFaction = $RED
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = -25
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 20
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = -20
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 20
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = -20
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 15
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Austria
+
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 15
+
+SelectFaction = $RED
+SelectRegion = $Austria
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 15
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Transylvania
+
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = 15
+
+SelectFaction = $RED
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = -15
+  GenTextMsg  = opt_notify_CMN_KomunistPartyBanned;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_KomunistPartyBanned;1;NULL;NULL;NULL
+  SetEvtOccurs = evt_nam_GER_KPBanned;CuOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;GER_KomunistPartyBanned
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_KPBanned|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Repression1|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Repression_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_KPBanned;=;1
+SelectRegion = $Germany
+  EvalLoyalty = <=;50
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_Repression.png;Title;opt_title_GER_Repression;MsgString;opt_desc_GER_Repression;ToolString;opt_hint_GER_Repression;SubType;GER_Repression;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Repression_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;GER_Repression;=;1
+  EvalEngagementPts = >=;10
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = -5
+  ChgVPCount = -100
+SelectRegion = $Germany
+
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 25
+
+SelectFaction = $RED
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -25
+
+SelectFaction = $GER
+SelectRegion = $Bavaria
+
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = 25
+
+SelectFaction = $RED
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = -25
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 20
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = -20
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 20
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = -20
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 15
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Austria
+
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 15
+
+SelectFaction = $RED
+SelectRegion = $Austria
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 15
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Transylvania
+
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = 15
+
+SelectFaction = $RED
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = -15
+  GenTextMsg  = opt_notify_CMN_Repression;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Repression;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;GER_Repression
+  SetEvtOccurs = evt_nam_GER_Repression1;CuOccurs;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Repression2_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_Repression1;=;1
+SelectRegion = $Germany
+  EvalLoyalty = <=;50
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_Anti-Bolchevism2.png;Title;opt_title_GER_Repression2;MsgString;opt_desc_GER_Repression2;ToolString;opt_hint_GER_Repression2;SubType;GER_Repression2;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Repression2_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;GER_Repression2;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = -3
+  ChgVPCount = -20
+SelectRegion = $Germany
+
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 15
+
+SelectFaction = $RED
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Bavaria
+
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = 15
+
+SelectFaction = $RED
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = -15
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 10
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 10
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $GER
+SelectRegion = $Austria
+
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED
+SelectRegion = $Austria
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $GER
+SelectRegion = $Transylvania
+
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = -5
+  GenTextMsg  = opt_notify_CMN_Repression2;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Repression2;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;GER_Repression2
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Repression2_Regen|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/03/01
+  TurnIndex = 6;12;18;0
+  EvalEvent = evt_nam_GER_Repression1;=;1
+  ActorDisabled = $gmaOptionPol;GER_Repression2
+  Probability = 35
+
+Actions
+  GenTextMsg  = opt_notify_GER_Repression2_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_Anti-Bolchevism1.png;Title;opt_title_GER_Repression2;MsgString;opt_desc_GER_Repression2;ToolString;opt_hint_GER_Repression2;SubType;GER_Repression2;SParam1;GER
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Propaganda1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_Propaganda1.png;Title;opt_title_GER_Propaganda1;MsgString;opt_desc_GER_Propaganda1;ToolString;opt_hint_GER_Propaganda1;SubType;GER_Propaganda1;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Propaganda1|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;GER_Propaganda1;=;1
+  EvalMoney = >=;100
+  EvalEngagementPts = >=;1
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -1
+  ChangeMoneyPool = -100
+  ChangeFacMorale = 2
+  ChangeLoyaltyFac = $Area_Central_Powers;-5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Central_Powers;5
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Propaganda1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_CMN_Propaganda1;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;GER_Propaganda1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Propaganda1_Regen|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 6;12;18;0
+  ActorDisabled = $gmaOptionPol;GER_Propaganda1
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_GER_Propaganda1_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_Propaganda1.png;Title;opt_title_GER_Propaganda1;MsgString;opt_desc_GER_Propaganda1;ToolString;opt_hint_GER_Propaganda1;SubType;GER_Propaganda1;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Propaganda2_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_Propaganda2.png;Title;opt_title_GER_Propaganda2;MsgString;opt_desc_GER_Propaganda2;ToolString;opt_hint_GER_Propaganda2;SubType;GER_Propaganda2;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Propaganda2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;GER_Propaganda2;=;1
+  EvalMoney = >=;300
+  EvalEngagementPts = >=;3
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -3
+  ChangeMoneyPool = -300
+  ChangeFacMorale = 5
+  ChangeLoyaltyFac = $Area_Central_Powers;10
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Central_Powers;-10
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Propaganda2;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_CMN_Propaganda2;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;GER_Propaganda2
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Propaganda2_Regen|6|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 0;15
+  ActorDisabled = $gmaOptionPol;GER_Propaganda2
+  Probability = 35
+
+Actions
+  GenTextMsg  = opt_notify_GER_Propaganda2_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_Propaganda2.png;Title;opt_title_GER_Propaganda2;MsgString;opt_desc_GER_Propaganda2;ToolString;opt_hint_GER_Propaganda2;SubType;GER_Propaganda2;SParam1;GER
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_GeneralMobilization_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_GER_FullWar;=;1
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Mobilization1.png;Title;opt_title_RED_GeneralMobilization;MsgString;opt_desc_RED_GeneralMobilization;ToolString;opt_hint_RED_GeneralMobilization;SubType;RED_GeneralMobilization;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_GeneralMobilization|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;RED_GeneralMobilization;=;1
+  EvalEngagementPts = >=;20
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -20
+  ChangeMoneyPool = -20
+  ChangeRailPool = 50
+  ChangeConscriptPool = 450
+  ChangeFacMorale = -10
+  ChgVPCount = -30
+
+SelectFaction = $RED 
+  Replacement = RED;$famLine;5
+  Replacement = RED;$famMilitia;10
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famCavalry;5
+  Replacement = RED;$famLightArty;1
+  Replacement = RED;$famMedArty;1
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_GeneralMobilization;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_RedGeneralMobilization;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_GeneralMobilization
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Frunze_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  SelectSubUnits = Region $Moscow;Models $ldr_RED_Frunze3
+  EvalSubUnitSel = NULL
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Event-img_RED_PolitkomCreation.png;Title;opt_title_RED_Frunze;MsgString;opt_desc_RED_Frunze;ToolString;opt_hint_RED_Frunze;SubType;RED_Frunze;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Frunze_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;RED_Frunze;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = 5
+  ChgVPCount = -100
+  SelectSubUnits = Region $Moscow;Models $ldr_RED_Frunze3
+  AlterCuSubUnit = ApplyToList;SetFixing 0;LeaderActive
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_CMN_Frunze;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Frunze;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_Frunze
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Stalin_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  SelectSubUnits = Region $Moscow;Models $ldr_RED_Stalin3
+  EvalSubUnitSel = NULL
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Stalin.png;Title;opt_title_RED_Stalin;MsgString;opt_desc_RED_Stalin;ToolString;opt_hint_RED_Stalin;SubType;RED_Stalin;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Stalin_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;RED_Stalin;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = 5
+  ChgVPCount = -100
+  SelectSubUnits = Region $Moscow;Models $ldr_RED_Stalin3
+  AlterCuSubUnit = ApplyToList;SetFixing 0;LeaderActive
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_CMN_Stalin;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Stalin;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_Stalin
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedPropaganda1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Propaganda1.png;Title;opt_title_RED_RedPropaganda1;MsgString;opt_desc_RED_RedPropaganda1DNO;ToolString;opt_hint_RED_RedPropaganda1DNO;SubType;RED_RedPropaganda1;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedPropaganda1|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;RED_RedPropaganda1;=;1
+  EvalMoney = >=;50
+  EvalEngagementPts = >=;1
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -1
+  ChangeMoneyPool = -50
+  ChangeFacMorale = 1
+  GenTextMsg  = opt_notify_RED_RedPropaganda1;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_CMN_RedPropaganda1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_RedPropaganda1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedPropaganda1_Regen|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 6;12;18;0
+  ActorDisabled = $gmaOptionPol;RED_RedPropaganda1
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_RED_RedPropaganda1_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Propaganda1.png;Title;opt_title_RED_RedPropaganda1;MsgString;opt_desc_RED_RedPropaganda1DNO;ToolString;opt_hint_RED_RedPropaganda1DNO;SubType;RED_RedPropaganda1;SParam1;RED
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SovietUkraine_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Kharkov
+
+EvalRgnOwned = $Belgorod
+
+EvalRgnOwned = $Donetsk
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_SovietUkraine.png;Title;opt_title_RED_SovietUkraine;MsgString;opt_desc_RED_SovietUkraine;ToolString;opt_hint_RED_SovietUkraine;SubType;RED_SovietUkraine;SParam1;GER
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SovietUkraine_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;RED_SovietUkraine;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = 1
+  ChgVPCount = -10
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Poltava;-5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Poltava;5
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Kharkov;-5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Kharkov;5
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Ekaterinoslav;-5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Ekaterinoslav;5
+
+SelectFaction = $RED
+SelectRegion = $Pavlograd
+
+SelectRegion = $Pavlograd
+
+SelectFaction = $RED
+SelectRegion = $Pavlograd
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 0
+  SetName = 6thUkrainian Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Par2
+  SUFlavorName = UkrP. 21|UkrP. 22
+  SetName = 15th Partisans
+  Apply
+
+SelectRegion = $Alexandrovsk
+
+SelectFaction = $RED
+SelectRegion = $Alexandrovsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 0
+  SetName = 7thUkrainian Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Par2
+  SUFlavorName = UkrP. 23|UkrP. 24
+  SetName = 16th Partisans
+  Apply
+
+SelectRegion = $Kremenchuk
+
+SelectFaction = $RED
+SelectRegion = $Kremenchuk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 0
+  SetName = 8thUkrainian Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Par2
+  SUFlavorName = UkrP. 25|UkrP. 26
+  SetName = 17th Partisans
+  Apply
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_SovietUkraine;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_SovietUkraine;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_SovietUkraine
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Support_Communists1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_CommunistParty.png;Title;opt_title_RED_Support_Communists1;MsgString;opt_desc_RED_Support_Communists1;ToolString;opt_hint_RED_Support_Communists1;SubType;RED_Support_Communists1;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Support_Communists1_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;RED_Support_Communists1;=;1
+  EvalEngagementPts = >=;15
+
+Actions
+  ChgFacEngagementPts = -15
+
+SelectFaction = $GER
+SelectRegion = $Germany
+
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 5
+  AddDynGraphic = $Germany;Icon_Communists.png;Icon_Communists.png;NULL;75;150;strCommunists
+
+SelectFaction = $GER
+SelectRegion = $Bavaria
+
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = 5
+  AddDynGraphic = $Bavaria;Icon_Communists.png;Icon_Communists.png;NULL;75;150;strCommunists
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 5
+  AddDynGraphic = $Silesia;Icon_Communists.png;Icon_Communists.png;NULL;75;150;strCommunists
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 5
+  AddDynGraphic = $Kiel;Icon_Communists.png;Icon_Communists.png;NULL;75;150;strCommunists
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 5
+  AddDynGraphic = $Bohemia;Icon_Communists.png;Icon_Communists.png;NULL;75;150;strCommunists
+
+SelectFaction = $GER
+SelectRegion = $Austria
+
+SelectRegion = $Austria
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 5
+  AddDynGraphic = $Austria;Icon_Communists.png;Icon_Communists.png;NULL;75;150;strCommunists
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 5
+  AddDynGraphic = $Hungary;Icon_Communists.png;Icon_Communists.png;NULL;75;150;strCommunists
+
+SelectFaction = $GER
+SelectRegion = $Transylvania
+
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = 5
+  AddDynGraphic = $Transylvania;Icon_Communists.png;Icon_Communists.png;NULL;75;150;strCommunists
+  GenTextMsg  = opt_notify_RED_Support_Communists1;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_CMN_Support_Communists1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_Support_Communists1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Support_Communists1_Regen|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 6;12;18;0
+  ActorDisabled = $gmaOptionPol;RED_Support_Communists1
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_RED_Support_Communists1_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_CommunistParty.png;Title;opt_title_RED_Support_Communists1;MsgString;opt_desc_RED_Support_Communists1;ToolString;opt_hint_RED_Support_Communists1;SubType;RED_Support_Communists1;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Provoke_Strikes_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Strikes1.png;Title;opt_title_RED_Provoke_Strikes;MsgString;opt_desc_RED_Provoke_Strikes;ToolString;opt_hint_RED_Provoke_Strikes;SubType;RED_Provoke_Strikes;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Provoke_Strikes_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;RED_Provoke_Strikes;=;1
+  EvalEngagementPts = >=;25
+  EvalMoney = >=;50
+
+Actions
+  ChgFacEngagementPts = -25
+  ChangeMoneyPool = -50
+
+SelectFaction = $GER
+  ChangeFacMorale = -1
+SelectRegion = $Germany
+
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -2
+
+SelectFaction = $RED
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 2
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = -2
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 2
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = -2
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 2
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = -2
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 2
+
+SelectFaction = $GER
+SelectRegion = $Austria
+
+SelectRegion = $Austria
+  ChangeLoyaltyFac = -2
+
+SelectFaction = $RED
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 2
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = -2
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 2
+
+SelectFaction = $GER
+SelectRegion = $Transylvania
+
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = -2
+
+SelectFaction = $RED
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = 2
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Germany;MaxOccurs;6
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Kiel;MaxOccurs;6
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Silesia;MaxOccurs;6
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Bavaria;MaxOccurs;6
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Bohemia;MaxOccurs;6
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Austria;MaxOccurs;6
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Hungary;MaxOccurs;6
+  GenTextMsg  = opt_notify_RED_Provoke_Strikes;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_CMN_Provoke_Strikes;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_Provoke_Strikes
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Provoke_Strikes_Regen|6|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 6;12;18;0
+  EvalEvent = evt_nam_RED_StrikesTimer_Germany;=;0
+  ActorDisabled = $gmaOptionPol;RED_Provoke_Strikes
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_RED_Provoke_Strikes_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Strikes1.png;Title;opt_title_RED_Provoke_Strikes;MsgString;opt_desc_RED_Provoke_Strikes;ToolString;opt_hint_RED_Provoke_Strikes;SubType;RED_Provoke_Strikes;SParam1;RED
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_HungarianRevolution_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+SelectRegion = $Hungary
+  EvalLoyalty = >;50
+  EvalUnqUnit = Bela Kun;Fixed
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_HungarianRevolution.png;Title;opt_title_RED_HungarianRevolution;MsgString;opt_desc_RED_HungarianRevolution;ToolString;opt_hint_RED_HungarianRevolution;SubType;RED_HungarianRevolution;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_HungarianRevolution_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;RED_HungarianRevolution;=;1
+  EvalEngagementPts = >=;50
+
+Actions
+  ChgFacEngagementPts = -50
+  ChangeFacMorale = 15
+  RemoveUnqUnit = Bela Kun
+  RemoveUnqUnit = Hungarian Volunteers
+
+SelectRegion = $Hungary
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Hungarian Volunteers
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_RED_Bela Kun1
+  FlavorName = Hungarian Volunteers
+  SetName = Bela Kun
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Int
+  FlavorName = Bela Kun
+  SUFlavorName = Hungarian Volunteers
+  SetLevel = 1
+  SetName = 1st Hungarian Volunteers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Int
+  FlavorName = Bela Kun
+  SUFlavorName = Hungarian Volunteers
+  SetLevel = 1
+  SetName = 2nd Hungarian Volunteers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Int
+  FlavorName = Bela Kun
+  SUFlavorName = Hungarian Volunteers
+  SetLevel = 1
+  SetName = 3rd Hungarian Volunteers
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Art1
+  FlavorName = Bela Kun
+  SUFlavorName = Hungarian Volunteers
+  SetLevel = 1
+  SetName = Volunteers Artillery
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Hungarian Soviet Republic
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pol
+  SetName = Budapest Soviet
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SUFlavorName = 1st Budapest Red Guards|2nd Budapest Red Guards
+  SetName = Budapest Red Grds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil5
+  SUFlavorName = 1st Budapest Workers|2nd Budapest Workers|3rd Budapestv Workers
+  SetLevel = 1
+  SetName = Station Workers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil5
+  SUFlavorName = 1st Budapest Workers|2nd Budapest Workers|3rd Budapestv Workers
+  SetLevel = 1
+  SetName = Post Office Workers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SetName = Budapest Bty
+  Apply
+  SelectSubUnits = Region $Hungary;FactionTags RED
+  AlterCuSubUnit = Move In
+  SelectSubUnits = Area $Area_Central_Powers;Models $mdl_HUN_Inf2  $mdl_HUN_Inf3  $mdl_HUN_Inf6  $mdl_HUN_Inf8 $mdl_HUN_Inf9 $mdl_HUN_Lit $mdl_HUN_Cav1
+
+SelectFaction = $GER
+  AlterCuSubUnit = ApplyToList;probability 20;Kill
+SelectRegion = $Bohemia
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Austria
+
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Austria
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 25
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = -25
+
+SelectFaction = $RED
+SelectRegion = $Transylvania
+
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = -5
+  GenTextMsg  = opt_notify_CMN_HungarianRevolution;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_HungarianRevolution;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_HungarianRevolution
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_Moscow_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_Petrograd_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_Tzaritsyn_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;RED_RedVerdun
+
+Actions
+  ChangeOption = $gmaOptionPol;RED_RedVerdun;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;Conscript;40;WSU;10;Morale;1;EP;10;ImageID;Opt_CMN_Fortifications.png;Title;opt_title_RED_RedVerdun;ToolString;opt_hint_RED_RedVerdun;SubType;RED_RedVerdun;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_Check_AI|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;RED_RedVerdun;=;1
+
+CheckAILevel = 1
+
+Actions
+  PayOption = $gmaOptionPol;RED_RedVerdun;ForceSpend
+  SetEvtOccurs = evt_nam_RED_RedVerdun_Chosen;MaxOccurs;1
+  SetEvtOccurs = evt_nam_RED_RedVerdun_Chosen;CuOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_RedVerdun
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NULL
+  CheckOption = $gmaOptionPol;RED_RedVerdun;=;1
+  CanPayOption = $gmaOptionPol;RED_RedVerdun
+
+Actions
+  PayOption = $gmaOptionPol;RED_RedVerdun
+  SetEvtOccurs = evt_nam_RED_RedVerdun_Chosen;MaxOccurs;1
+  SetEvtOccurs = evt_nam_RED_RedVerdun_Chosen;CuOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_RedVerdun
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_Moscow_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_RedVerdun_Chosen;>=;1
+  EvalEvent = evt_nam_WhiteArmyNearMoscow;=;1
+
+EvalRgnOwned = $Moscow
+  NotEnemy = $Moscow
+  EvalRgnStruc = $Moscow;FACALL;STRUCFAM $sfmFort;NOT
+
+Actions
+
+SelectRegion = $Moscow
+
+  CreateStruc
+  SetType = $FORTIFIEDLINE
+  SetName = Lenin Lines
+  Apply
+  SetHealth = 100
+  SetCohesion = 30
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = -999
+  SetName = Lenin Lines
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bal1
+  SUFlavorName = Redoubt Obs Btn
+  SetName = Lenin Lines Obs Btn
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Gar3
+  SetName = Lenin Lines Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Lenin 1st Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Lenin 2nd Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Lenin 3rd Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Lenin 4th Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup2
+  NumCreate = 2
+  SetName = Lenin Lines Magazine
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_CMN_RedVerdun_Moscow;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_RedVerdun_Moscow;1;NULL;NULL;NULL
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_Petrograd_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_RedVerdun_Chosen;>=;1
+  EvalEvent = evt_nam_WhiteArmyNearPetrograd;=;1
+
+EvalRgnOwned = $Petrograd
+  NotEnemy = $Petrograd
+  EvalRgnStruc = $Petrograd;FACALL;STRUCFAM $sfmFort;NOT
+
+Actions
+
+SelectRegion = $Petrograd
+
+  CreateStruc
+  SetType = $FORTIFIEDLINE
+  SetName = Lenin Lines
+  Apply
+  SetHealth = 100
+  SetCohesion = 30
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = -999
+  SetName = Lenin Lines
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bal1
+  SUFlavorName = Redoubt Obs Btn
+  SetName = Lenin Lines Obs Btn
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Gar3
+  SetName = Lenin Lines Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Lenin 1st Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Lenin 2nd Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Lenin 3rd Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Lenin 4th Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup2
+  NumCreate = 2
+  SetName = Lenin Lines Magazine
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_CMN_RedVerdun_Petrograd;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_RedVerdun_Petrograd;1;NULL;NULL;NULL
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_Tzaritsyn_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_RedVerdun_Chosen;>=;1
+  EvalEvent = evt_nam_WhiteArmyNearTzaritsyn;=;1
+
+EvalRgnOwned = $Tzaritsyn
+  NotEnemy = $Tzaritsyn
+  EvalRgnStruc = $Tzaritsyn;FACALL;STRUCFAM $sfmFort;NOT
+
+Actions
+
+SelectRegion = $Tzaritsyn
+
+  CreateStruc
+  SetType = $FORTIFIEDLINE
+  SetName = Lenin Lines
+  Apply
+  SetHealth = 100
+  SetCohesion = 30
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = -999
+  SetName = Lenin Lines
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bal1
+  SUFlavorName = Redoubt Obs Btn
+  SetName = Lenin Lines Obs Btn
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Gar3
+  SetName = Lenin Lines Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Lenin 1st Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Lenin 2nd Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Lenin 3rd Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Lenin 4th Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup2
+  NumCreate = 2
+  SetName = Lenin Lines Magazine
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_CMN_RedVerdun_Tzaritsyn;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_RedVerdun_Tzaritsyn;1;NULL;NULL;NULL
+
+EndEvent
+  NULL = NULL
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_MoveCapital_to_Samara_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_CPArmyNearSamara;=;0
+  EvalEvent = evt_nam_CPArmyNearMoscow;=;1
+
+EvalRgnOwned = $Samara
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;0;ImageID;Option_RED_MoveCapital.png;Title;opt_title_RED_MoveCapital_to_Samara;MsgString;opt_desc_RED_MoveCapital_to_Samara;ToolString;opt_hint_RED_MoveCapital_to_Samara;SubType;RED_MoveCapital_to_Samara;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_MoveCapital_to_Samara_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+EvalRgnOwned = $Samara
+  CheckOption = $gmaOptionPol;RED_MoveCapital_to_Samara;=;1
+
+Actions
+  ChangeFacMorale = -10
+
+SelectFaction = $RED 
+SelectRegion = $Moscow
+
+SelectRegion = $Moscow
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $GER
+SelectRegion = $Moscow
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Theater_Central_Russia;5
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Theater_Central_Russia;-5
+
+SelectFaction = $RED 
+SelectRegion = $Samara
+
+SelectRegion = $Samara
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Samara
+  ChangeLoyaltyFac = -5
+SelectRegion = $Moscow
+  VP = 1
+
+SelectFaction = $RED
+  SetCapitals = $Samara;5
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_CMN_MoveCapital_to_Samara;2;evt_txt_RED_CapitalMoved;Event-img_RED_CapitalMoved;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_MoveCapital_to_Samara;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_MoveCapital_to_Samara
+
+EndEvent

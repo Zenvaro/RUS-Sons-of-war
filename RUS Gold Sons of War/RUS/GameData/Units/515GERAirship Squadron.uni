@@ -1,0 +1,17 @@
+UID = 515
+NationTag = GER
+Name = Airship Squadron
+Alias = uni_GER_Air4
+ForcePool = 2
+ShortName = Airship Squadron
+Text = $uni_GER_Air4_txt
+Color = $colGERRegular 
+SymbolID = symbol_Air.png
+ModelType0 = $mdl_GER_Air4|1
+FamilyType0 = $famAirStratBomber|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = Marine Luftshiff-G1|Marine Luftshiff-G2|Marine Luftshiff-G3|1. Luftshiff-G|2. Luftshiff-G|3.  Luftshiff-G|4. Luftshiff-G|5. Luftshiff-G|6. Luftshiff-G|7. Luftshiff-G|8. Luftshiff-G|9. Luftshiff-G|10. Luftshiff-G|11. Luftshiff-G|12. Luftshiff-G|13. Luftshiff-G|14. Luftshiff-G|15. Luftshiff-G|16. Luftshiff-G|17. Luftshiff-G|18. Luftshiff-G|19. Luftshiff-G|20. Luftshiff-G|21. Luftshiff-G|22. Luftshiff-G|23.  Luftshiff-G|24. Luftshiff-G|25. Luftshiff-G|26. Luftshiff-G|27. Luftshiff-G|28. Luftshiff-G|29. Luftshiff-G|30. Luftshiff-G|

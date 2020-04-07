@@ -1,0 +1,16 @@
+UID = 499
+NationTag = GER
+Name = Army Gr. HQ
+Alias = uni_GER_Hq1
+ForcePool = 10
+ShortName = Army Gr. HQ
+Text = $uni_GER_Hq1_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = AG Nord HauptQuartier|AG Centrum HauptQuartier|AG Sued HauptQuartier|AG A HauptQuartier|AG B HauptQuartier|AG C HauptQuartier|AG Baltikum HauptQuartier|AG Polen HauptQuartier|AG Ukrainien

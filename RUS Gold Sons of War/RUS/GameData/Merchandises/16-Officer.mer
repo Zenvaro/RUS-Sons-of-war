@@ -1,0 +1,9 @@
+UID = 16
+Alias = resOfficer
+Name = $res_nam_Officer
+ShortName = $res_shortnam_Officer
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *OfficerAsset*

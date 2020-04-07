@@ -1,0 +1,10 @@
+UID = 152
+Name = $abi_nam_Insurrectional_Forces
+Alias = Insurrectional_Forces
+Kind = $abiFlavor
+Text = $abi_txt_Insurrectional_Forces
+ImageID = abi_Cruel.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1

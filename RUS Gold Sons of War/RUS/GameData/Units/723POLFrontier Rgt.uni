@@ -1,0 +1,17 @@
+UID = 723
+NationTag = POL
+Name = Frontier Rgt
+Alias = uni_POL_Rgt3
+ForcePool = 10
+ShortName = Inf. Rgt.
+Text = $uni_POL_Rgt3_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_POL_Inf8|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 3
+Area = $Recruit_Poles
+AltArea = $Area_Galicia
+CustomNames = 1st Frontier Rgt|2nd Frontier Rgt|3rd Frontier Rgt|4th Frontier Rgt|5th Frontier Rgt|6th Frontier Rgt|7th Frontier Rgt|8th Frontier Rgt|9th Frontier Rgt|10th Frontier Rgt|11th Frontier Rgt|12th Frontier Rgt|13th Frontier Rgt|14th Frontier Rgt|15th Frontier Rgt|16th Frontier Rgt|17th Frontier Rgt|18th Frontier Rgt|19th Frontier Rgt|20th Frontier Rgt

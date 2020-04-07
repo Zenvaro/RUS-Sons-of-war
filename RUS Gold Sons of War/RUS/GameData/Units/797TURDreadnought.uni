@@ -1,0 +1,16 @@
+UID = 797
+NationTag = TUR
+Name = Dreadnought
+Alias = uni_TUR_BB1
+ForcePool = 5
+ShortName = Dreadnought
+Text = $uni_TUR_BB1_txt
+Color = $colTURNavy
+DoubleLength = 1
+ModelType0 = $mdl_TUR_BB|4
+FamilyType0 = $famHvyWarship|4
+CmdCost = 3
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Battle Sq.|2nd Battle Sq.|3rd Battle Sq.|4th Battle Sq.

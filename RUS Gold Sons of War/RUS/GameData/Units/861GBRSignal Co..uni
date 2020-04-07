@@ -1,0 +1,14 @@
+UID = 861
+NationTag = GBR
+Name = Signal Co.
+Alias = uni_GBR_Sig
+ForcePool = 4
+ShortName = Signal Co.
+Text = $uni_GBR_Sig_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Sig|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1

@@ -1,0 +1,15 @@
+UID = 908
+NationTag = CAU
+Name = Infantry Rgt
+Alias = uni_CAU_Rgt1
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_CAU_Rgt1_txt
+Color = $colCAURegular 
+ModelType0 = $mdl_CAU_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Recruit_Caucasians

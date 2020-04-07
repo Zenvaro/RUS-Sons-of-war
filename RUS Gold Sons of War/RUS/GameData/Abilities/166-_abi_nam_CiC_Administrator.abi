@@ -1,0 +1,12 @@
+UID = 166
+Name = $abi_nam_CiC_Administrator
+Alias = CiC_Army_Administrator
+Kind = $abiCiCModifiers
+Text = $abi_txt_CiC_Administrator
+ImageID = abi_Headquarters.png
+Color = $colAbi_Orange
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCCohRegainLandPerc
+Param1 = 15

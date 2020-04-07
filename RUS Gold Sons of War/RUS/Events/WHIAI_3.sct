@@ -1,0 +1,1305 @@
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_WHI_owning_Kiev_during_winter2|1|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kiev
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Kiev;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_WHI_owning_Kiev_during_winter2NOT|1|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kiev;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_WHI_owningKievduringwinter2cons|999|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Kiev_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Kiev_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Kiev_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Kiev_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Kiev;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_WHI_owning_Kharkov_during_winter2|1|0|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kharkov
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Kharkov;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_WHI_owning_Kharkov_during_winter2NOT|1|0|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kharkov;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_WHI_owningKharkovduringwinter2cons|999|0|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Kharkov_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Kharkov_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Kharkov_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Kharkov_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Kharkov;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Poltava
+
+StartEvent = evt_nam_WHI_owning_Poltava_during_winter2|1|0|NULL|NULL|$Poltava|NULL
+
+Conditions
+
+  EvalRgnOwned = $Poltava
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Poltava;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Poltava
+
+StartEvent = evt_nam_WHI_owning_Poltava_during_winter2NOT|1|0|NULL|NULL|$Poltava|NULL
+
+Conditions
+
+  EvalRgnOwned = $Poltava;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Poltava
+
+StartEvent = evt_nam_WHI_owningPoltavaduringwinter2cons|999|0|NULL|NULL|$Poltava|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Poltava_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Poltava_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Poltava_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Poltava_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Poltava;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_owning_Rostov_during_winter2|1|0|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Rostov
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Rostov;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_owning_Rostov_during_winter2NOT|1|0|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Rostov;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_owningRostovduringwinter2cons|999|0|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Rostov_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Rostov_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Rostov_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Rostov_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Rostov;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Melitopol
+
+StartEvent = evt_nam_WHI_owning_Melitopol_during_winter2|1|0|NULL|NULL|$Melitopol|NULL
+
+Conditions
+
+  EvalRgnOwned = $Melitopol
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Melitopol;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Melitopol
+
+StartEvent = evt_nam_WHI_owning_Melitopol_during_winter2NOT|1|0|NULL|NULL|$Melitopol|NULL
+
+Conditions
+
+  EvalRgnOwned = $Melitopol;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Melitopol
+
+StartEvent = evt_nam_WHI_owningMelitopolduringwinter2cons|999|0|NULL|NULL|$Melitopol|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Melitopol_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Melitopol_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Melitopol_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Melitopol_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Melitopol;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Minsk
+
+StartEvent = evt_nam_WHI_owning_Minsk_during_winter2|1|0|NULL|NULL|$Minsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Minsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Minsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Minsk
+
+StartEvent = evt_nam_WHI_owning_Minsk_during_winter2NOT|1|0|NULL|NULL|$Minsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Minsk;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Minsk
+
+StartEvent = evt_nam_WHI_owningMinskduringwinter2cons|999|0|NULL|NULL|$Minsk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Minsk_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Minsk_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Minsk_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Minsk_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Minsk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Donetsk
+
+StartEvent = evt_nam_WHI_owning_Donetsk_during_winter2|1|0|NULL|NULL|$Donetsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Donetsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Donetsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Donetsk
+
+StartEvent = evt_nam_WHI_owning_Donetsk_during_winter2NOT|1|0|NULL|NULL|$Donetsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Donetsk;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Donetsk
+
+StartEvent = evt_nam_WHI_owningDonetskduringwinter2cons|999|0|NULL|NULL|$Donetsk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Donetsk_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Donetsk_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Donetsk_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Donetsk_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Donetsk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Belgorod
+
+StartEvent = evt_nam_WHI_owning_Belgorod_during_winter2|1|0|NULL|NULL|$Belgorod|NULL
+
+Conditions
+
+  EvalRgnOwned = $Belgorod
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Belgorod;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Belgorod
+
+StartEvent = evt_nam_WHI_owning_Belgorod_during_winter2NOT|1|0|NULL|NULL|$Belgorod|NULL
+
+Conditions
+
+  EvalRgnOwned = $Belgorod;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Belgorod
+
+StartEvent = evt_nam_WHI_owningBelgorodduringwinter2cons|999|0|NULL|NULL|$Belgorod|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Belgorod_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Belgorod_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Belgorod_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Belgorod_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Belgorod;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Voronezh
+
+StartEvent = evt_nam_WHI_owning_Voronezh_during_winter2|1|0|NULL|NULL|$Voronezh|NULL
+
+Conditions
+
+  EvalRgnOwned = $Voronezh
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Voronezh;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Voronezh
+
+StartEvent = evt_nam_WHI_owning_Voronezh_during_winter2NOT|1|0|NULL|NULL|$Voronezh|NULL
+
+Conditions
+
+  EvalRgnOwned = $Voronezh;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Voronezh
+
+StartEvent = evt_nam_WHI_owningVoronezhduringwinter2cons|999|0|NULL|NULL|$Voronezh|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Voronezh_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Voronezh_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Voronezh_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Voronezh_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Voronezh;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tambov
+
+StartEvent = evt_nam_WHI_owning_Tambov_during_winter2|1|0|NULL|NULL|$Tambov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tambov
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Tambov;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tambov
+
+StartEvent = evt_nam_WHI_owning_Tambov_during_winter2NOT|1|0|NULL|NULL|$Tambov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tambov;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tambov
+
+StartEvent = evt_nam_WHI_owningTambovduringwinter2cons|999|0|NULL|NULL|$Tambov|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Tambov_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Tambov_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Tambov_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Tambov_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Tambov;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Balashov
+
+StartEvent = evt_nam_WHI_owning_Balashov_during_winter2|1|0|NULL|NULL|$Balashov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Balashov
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Balashov;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Balashov
+
+StartEvent = evt_nam_WHI_owning_Balashov_during_winter2NOT|1|0|NULL|NULL|$Balashov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Balashov;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Balashov
+
+StartEvent = evt_nam_WHI_owningBalashovduringwinter2cons|999|0|NULL|NULL|$Balashov|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Balashov_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Balashov_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Balashov_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Balashov_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Balashov;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Lipetsk
+
+StartEvent = evt_nam_WHI_owning_Lipetsk_during_winter2|1|0|NULL|NULL|$Lipetsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Lipetsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Lipetsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Lipetsk
+
+StartEvent = evt_nam_WHI_owning_Lipetsk_during_winter2NOT|1|0|NULL|NULL|$Lipetsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Lipetsk;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Lipetsk
+
+StartEvent = evt_nam_WHI_owningLipetskduringwinter2cons|999|0|NULL|NULL|$Lipetsk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Lipetsk_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Lipetsk_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Lipetsk_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Lipetsk_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Lipetsk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ryazan
+
+StartEvent = evt_nam_WHI_owning_Ryazan_during_winter2|1|0|NULL|NULL|$Ryazan|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ryazan
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Ryazan;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ryazan
+
+StartEvent = evt_nam_WHI_owning_Ryazan_during_winter2NOT|1|0|NULL|NULL|$Ryazan|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ryazan;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ryazan
+
+StartEvent = evt_nam_WHI_owningRyazanduringwinter2cons|999|0|NULL|NULL|$Ryazan|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Ryazan_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Ryazan_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Ryazan_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Ryazan_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Ryazan;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tula
+
+StartEvent = evt_nam_WHI_owning_Tula_during_winter2|1|0|NULL|NULL|$Tula|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tula
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Tula;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tula
+
+StartEvent = evt_nam_WHI_owning_Tula_during_winter2NOT|1|0|NULL|NULL|$Tula|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tula;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tula
+
+StartEvent = evt_nam_WHI_owningTuladuringwinter2cons|999|0|NULL|NULL|$Tula|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Tula_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Tula_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Tula_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Tula_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Tula;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Orel
+
+StartEvent = evt_nam_WHI_owning_Orel_during_winter2|1|0|NULL|NULL|$Orel|NULL
+
+Conditions
+
+  EvalRgnOwned = $Orel
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Orel;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Orel
+
+StartEvent = evt_nam_WHI_owning_Orel_during_winter2NOT|1|0|NULL|NULL|$Orel|NULL
+
+Conditions
+
+  EvalRgnOwned = $Orel;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Orel
+
+StartEvent = evt_nam_WHI_owningOrelduringwinter2cons|999|0|NULL|NULL|$Orel|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Orel_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Orel_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Orel_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Orel_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Orel;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kursk
+
+StartEvent = evt_nam_WHI_owning_Kursk_during_winter2|1|0|NULL|NULL|$Kursk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kursk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Kursk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kursk
+
+StartEvent = evt_nam_WHI_owning_Kursk_during_winter2NOT|1|0|NULL|NULL|$Kursk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kursk;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kursk
+
+StartEvent = evt_nam_WHI_owningKurskduringwinter2cons|999|0|NULL|NULL|$Kursk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Kursk_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Kursk_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Kursk_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Kursk_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Kursk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Cherkasy
+
+StartEvent = evt_nam_WHI_owning_Cherkasy_during_winter2|1|0|NULL|NULL|$Cherkasy|NULL
+
+Conditions
+
+  EvalRgnOwned = $Cherkasy
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Cherkasy;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Cherkasy
+
+StartEvent = evt_nam_WHI_owning_Cherkasy_during_winter2NOT|1|0|NULL|NULL|$Cherkasy|NULL
+
+Conditions
+
+  EvalRgnOwned = $Cherkasy;NOT
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Cherkasy
+
+StartEvent = evt_nam_WHI_owningCherkasyduringwinter2cons|999|0|NULL|NULL|$Cherkasy|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WHI_owning_Cherkasy_during_winter2;=;1
+  EvalEvent = evt_nam_WHI_owning_Cherkasy_during_winter2NOT;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_owning_Cherkasy_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_owning_Cherkasy_during_winter2NOT;CuOccurs;0
+  AI.SetLocalInterest = $Cherkasy;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIInfantryTraining|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Inf0
+  AlterCuSubUnit  = ApplyToList;probability 7;Model $mdl_WHI_Inf8;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIInfantryTraining2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Inf5
+  AlterCuSubUnit  = ApplyToList;probability 7;Model $mdl_WHI_Inf1;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIInfantryTraining3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Inf6
+  AlterCuSubUnit  = ApplyToList;probability 7;Model $mdl_WHI_Inf1;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIInfantryTraining4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Inf12
+  AlterCuSubUnit  = ApplyToList;probability 7;Model $mdl_WHI_Inf7;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIInfantryTraining5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Inf18
+  AlterCuSubUnit  = ApplyToList;probability 7;Model $mdl_WHI_Inf3;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHICavalryTraining|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Cav4
+  AlterCuSubUnit  = ApplyToList;probability 7;Model $mdl_WHI_Cav1;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHICavalryTraining2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Cav6
+  AlterCuSubUnit  = ApplyToList;probability 7;Model $mdl_WHI_Cav3;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHICavalryTraining3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Cav9
+  AlterCuSubUnit  = ApplyToList;probability 7;Model $mdl_WHI_Cav2;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIMilitiaTraining|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Mil5
+  AlterCuSubUnit  = ApplyToList;probability 7;Model $mdl_WHI_Inf5;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIMilitiaTraining2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Mil6
+  AlterCuSubUnit  = ApplyToList;probability 7;Model $mdl_WHI_Inf6;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIMilitiaTraining3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Mil7
+  AlterCuSubUnit  = ApplyToList;probability 7;Model $mdl_WHI_Inf5;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIMilitiaTraining4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Mil8
+  AlterCuSubUnit  = ApplyToList;probability 7;Model $mdl_WHI_Inf6;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIMilitiaTraining5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Mil9
+  AlterCuSubUnit  = ApplyToList;probability 5;Model $mdl_WHI_Inf5;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIMilitiaTraining6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WHI_Mil10
+  AlterCuSubUnit  = ApplyToList;probability 7;Model $mdl_WHI_Inf6;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+

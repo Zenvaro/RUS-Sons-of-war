@@ -1,0 +1,12 @@
+UID = 48
+Name = $abi_nam_Medical_Service
+Alias = Medical_Service
+Kind = $abiCohAdjust
+Text = $abi_txt_Medical_Service
+ImageID = abi_Medical.png
+Color = $colAbi_Orange
+Appliance = Group
+Family = 4
+Level = 1
+Param2 = 25
+ListParams3 = $famLine|$famElite|$famLightInf|$famCavalry|$famMilitia|$famRaider|$famHvyVehicle|$famLtVehicle|$famLightArty|$famMedArty|$famHvyArty|$famService|$famEngineer||$famArmoredTrain|$famSupply

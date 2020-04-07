@@ -1,0 +1,17 @@
+UID = 743
+NationTag = POL
+Name = Armored Cars
+Alias = uni_POL_Amc
+ForcePool = 12
+ShortName = Arm. Cars
+Text = $uni_POL_Amc_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_WHI_Amc|1
+FamilyType0 = $famLtVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Poles
+AltArea = $Area_Galicia
+CustomNames = 1st Armored Cars Sqd|2nd Armored Cars Sqd|3rd Armored Cars Sqd|4th Armored Cars Sqd|5th Armored Cars Sqd|6th Armored Cars Sqd|7th Armored Cars Sqd|8th Armored Cars Sqd|9th Armored Cars Sqd|10th Armored Cars Sqd|11th Armored Cars Sqd|12th Armored Cars Sqd|13th Armored Cars Sqd|14th Armored Cars Sqd|15th Armored Cars Sqd|16th Armored Cars Sqd|17th Armored Cars Sqd|18th Armored Cars Sqd|19th Armored Cars Sqd|20th Armored Cars Sqd

@@ -1,0 +1,15 @@
+UID = 265
+NationTag = DON
+Name = Cossacks Rgt (infantry)
+Alias = uni_DON_Inf0
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_DON_Inf0_txt
+Color = $colDONRegular 
+ModelType0 = $mdl_DON_Inf7|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Don

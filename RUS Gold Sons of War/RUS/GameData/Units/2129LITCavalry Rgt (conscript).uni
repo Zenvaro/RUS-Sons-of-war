@@ -1,0 +1,17 @@
+UID = 2129
+NationTag = LIT
+Name = Cavalry Rgt
+Alias = uni_LIT_Cav2
+ForcePool = 6
+ShortName = Cav.
+Text = $uni_BAL_Cav1_txt
+Color = $colLITRegular 
+ModelType0 = $mdl_LIT_Cav3|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Lithuania
+AltArea = $Area_Vilnius
+CustomNames = 1st Cavalry Rgt|2nd Cavalry Rgt|3rd Cavalry Rgt|4th Cavalry Rgt|5th Cavalry Rgt|6th Cavalry Rgt|7th Cavalry Rgt|8th Cavalry Rgt|9th Cavalry Rgt|10th Cavalry Rgt|11th Cavalry Rgt|12th Cavalry Rgt|13th Cavalry Rgt|14th Cavalry Rgt|15th Cavalry Rgt|16th Cavalry Rgt|17th Cavalry Rgt|18th Cavalry Rgt|19th Cavalry Rgt|20th Cavalry Rgt|21st Cavalry Rgt|22nd Cavalry Rgt|23rd Cavalry Rgt|24th Cavalry Rgt|25th Cavalry Rgt|26th Cavalry Rgt|27th Cavalry Rgt|28th Cavalry Rgt|29th Cavalry Rgt|30th Cavalry Rgt|31st Cavalry Rgt|32nd Cavalry Rgt|33rd Cavalry Rgt|34th Cavalry Rgt|35th Cavalry Rgt|36th Cavalry Rgt|37th Cavalry Rgt|38th Cavalry Rgt|39th Cavalry Rgt|40th Cavalry Rgt|41st Cavalry Rgt|42nd Cavalry Rgt|43rd Cavalry Rgt|44th Cavalry Rgt|45th Cavalry Rgt|46th Cavalry Rgt|47th Cavalry Rgt|48th Cavalry Rgt|49th Cavalry Rgt|50th Cavalry Rgt

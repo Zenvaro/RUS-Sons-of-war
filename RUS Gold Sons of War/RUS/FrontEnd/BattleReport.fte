@@ -1,0 +1,252 @@
+UID = 50019
+Bitmap = BR-back.png
+x = 0
+y = 0
+z = 93
+DragDrop = {None}
+Anchor = VCenter HCenter
+GameState = stBattleReport
+Capacity = 0
+
+// note: the x coordinate for captions and sprites are not used when in extended view (auto centered), only in condensed view.
+
+// ** Coordinates **
+
+Caption0 = 024|063|0  // Battle Title (with region name etc.)
+Caption1 = 0          // deprecated
+Caption2 = 0          // deprecated
+Caption3 = 0          // deprecated
+Caption4 = 170|350|0  // Indicators frame
+
+// the various "total" coo
+Caption5 = 460|205|0
+Caption6 = 460|267|0
+Caption7 = 460|332|0
+Caption8 = 494|205|0
+Caption9 = 494|267|0
+Caption10 = 494|332|0
+
+// left and right flag
+Various11 = 20|37|0
+Various12 = 861|41|0
+
+Various13 = 727|380|0  // Weather Image
+
+
+// *** Combat indicators: coordinates of images ***
+Various14 = 035|420|0
+Various15 = 685|420|0
+Various16 = 035|460|0
+Various17 = 685|460|0
+Various18 = 090|420|0
+Various19 = 740|420|0
+Various20 = 090|460|0
+Various21 = 740|460|0
+Various22 = 145|420|0
+Various23 = 795|420|0
+Various24 = 145|460|0
+Various25 = 795|460|0
+// *** Combat indicators: offset of values ***
+Caption26 = 32|8|0
+
+// *** SU symbols: coordinates of images ***
+Various27 = 415|190|0
+Various28 = 415|252|0
+Various29 = 415|314|0
+Various30 = 500|190|0
+Various31 = 500|252|0
+Various32 = 500|314|0
+
+// *** Landscape coordinate ***
+Various33 = 357|430|0
+
+Various34 = 455|158|0		// Casualties, left
+Various35 = 517|158|0		// Casualties, right
+Various36 = 455|108|0		// Initial Forces, left
+Various37 = 520|108|0		// Initial forces, right
+Various38 = 95|420|0
+Various39 = 95|440|0
+
+// *** Commanders Images coordinates ***
+Various40 = 53|74|0
+Various41 = 840|74|0
+
+// *** SU captions (number of SU) ***
+Various42 = 429|168|0
+Various43 = 429|230|0
+Various44 = 429|292|0
+Various45 = 443|143|0
+Various46 = 539|168|0
+Various47 = 539|230|0
+Various48 = 539|292|0
+Various49 = 530|143|0
+
+// *** Localized Battle Report Plate coo ***
+Various50 = 0424|040|0 
+
+// *** Leaders symbols: coordinates of images + crêpes ***
+Various51 = 402|138|0
+Various52 = 497|138|0
+Various53 = 85|70|0
+Various54 = 895|70|0
+
+// *** Commanders Names ***
+Various55 = 130|88|0
+Various56 = 840|88|0
+
+// *** short titles***
+// Initial Forces line1
+Caption57 = 463|175|0
+// Initial Forces line2
+Caption58 = 463|185|0
+// killed by fire line 1
+Caption59 = 463|240|0
+// killed by fire line 2
+Caption60 = 463|250|0
+// killed by assault line 1
+Caption61 = 463|303|0
+// killed by assault line 2
+Caption62 = 463|313|0
+
+// Additional combat indicators: 
+// POW balance
+Various63 = 449|371|0
+// HITS balance
+Various64 = 488|371|0
+// first Coo of Own side indicator
+Various65 = 423|376|0
+// first Coo of Opp side indicator
+Various66 = 528|376|0
+// offset of indic background/to indic
+Various67 = 1|2|0
+
+// Hearts, own killed by fire 
+Various68 = 450|281|0
+// Hearts, own killed assault
+Various69 = 450|344|0
+// Hearts, opp killed by fire 
+Various70 = 510|281|0
+// Hearts, opp killed assault
+Various71 = 510|344|0
+
+// weather label Offset
+Various72 = 450|440|0
+
+// Combats indicators 7-12
+Various73 = 200|420|0
+Various74 = 850|420|0
+Various75 = 200|460|0
+Various76 = 850|460|0
+Various77 = 245|420|0
+Various78 = 905|420|0
+Various79 = .
+Various80 = .
+Various81 = .
+Various82 = .
+Various83 = .
+Various84 = .
+
+// x offset between each SU symbol
+Param0 = 16
+// max nb of chars for the small titles
+Param1 = 10
+// deprecated
+Param2 = 150
+// deprecated
+Param3 = 108
+// deprecated
+Param4 = 22
+// y offset between each SU symbol
+Param5 = 10
+// Additional combat indicators, spacing
+Param6 = 18
+// compressed spacing
+Param7 = 12
+// max nb, for each side, not compressed
+Param8 = 12
+// max nb, compressed
+Param9 = 24
+// # of hits a red heart symbolize
+Param10 = 10
+// Max #of Hearts symbols
+Param11 = 35
+
+// *** Cbt indicators images ***
+StrParam0 = BR-supply_on.bmp
+StrParam1 = BR-supply_off.bmp
+StrParam2 = BR-navalweather_on.bmp
+StrParam3 = BR-navalweather_off.bmp
+StrParam4 = BR-navalsurprise_on.bmp
+StrParam5 = BR-navalsurprise_off.bmp
+StrParam6 = BR-march_on.bmp
+StrParam7 = BR-march_off.bmp
+StrParam8 = BR-entranch_on.bmp
+StrParam9 = BR-entranch_off.bmp
+StrParam10 = BR-ambush_on.bmp
+StrParam11 = BR-ambush_off.bmp
+StrParam12 = BR-city_on.bmp
+StrParam13 = BR-city_off.bmp
+StrParam14 = BR-ammo_on.bmp
+StrParam15 = BR-ammo_off.bmp
+
+// Localized Title plate image
+StrParam16 = .
+StrParam17 = .
+
+// "crêpe" image
+StrParam18 = BR-crepe.png
+
+// localized title image
+StrParam19 = BR-title_fr.bmp
+StrParam20 = BR-title_en.bmp
+
+// Back of the OTAN symbols
+StrParam21 = BR-OTANBack.bmp
+
+// Cross
+StrParam22 = Cross.png
+
+// Indicators frame
+StrParam23 = .
+
+// Red hearts image
+StrParam24 = ModelDetails Hits Red.png
+
+// *** Cbt indicators images 7-12 ***
+StrParam25 = BR-capture_off.bmp
+StrParam26 = BR-capture_on.bmp
+StrParam27 = BR-prisoners_off.bmp
+StrParam28 = BR-prisoners_on.bmp
+StrParam29 = BR-rout_off.bmp
+StrParam30 = BR-rout_on.bmp
+StrParam31 = .
+StrParam32 = .
+StrParam33 = .
+StrParam34 = .
+StrParam35 = .
+StrParam36 = .
+StrParam37 = BR-title_sp.bmp
+
+// Abort btn
+Btn1 = -1|720|30
+
+{ButtonDef}
+Image = Btn_BR_Close_OFF.png
+OverImage = Btn_BR_Close_OVER.png
+DownImage = Btn_BR_Close_ON.png
+Hint = $Close
+UpAction = CancelAction
+ClickSound = $sndTick
+{/ButtonDef}
+
+// Battlelog btn
+Btn2 = -1|765|30
+
+{ButtonDef}
+Image = Btn_BR_Details_OFF.png
+OverImage = Btn_BR_Details_OVER.png
+DownImage = Btn_BR_Details_ON.png
+Hint = $strGUIBRD_ToBattleReportDetails
+UpAction = ToBattleLog
+ClickSound = 113
+{/ButtonDef}

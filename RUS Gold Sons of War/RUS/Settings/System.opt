@@ -1,0 +1,24 @@
+sysGameSimWidth         = 16000  // Map width
+sysGameSimHeight        = 10000  // Map Height
+sysGameSimBorder        = 256    // Map border size
+sysMapBackTexSize       = 512    // Size of map back texture
+sysMenuBackTexSize      = 0      // Size of menu back texture
+sysMaxTexSize           = 2048   // Max size of a region texture
+sysMapCoordinatesCoeff  = 100    // Coeff applied to Rgn Coo loading + Map.ini
+
+sysEnableRegionSearchCache = 0
+sysRegMaxListDepth 		= 6
+Verbosity_Supp 			= 0
+Verbosity_Sounds 		= 0
+
+GameAcronym 			= RUS GOLD
+GameVersion 			= 1.01
+
+sysSimpleUpdate			= 1      // if True, the update button points to a patch link, if False, this is the AutoUpdater system
+sysPatchURL 			= http:\\www.ageod-forum.com/forumdisplay.php?280-Revolution-Under-Siege
+
+// Replay
+inoReplay 				= 1
+
+// Backup turns
+sysBackupNum			= 12

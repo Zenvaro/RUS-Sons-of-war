@@ -1,0 +1,2528 @@
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Khmelnik
+
+StartEvent = evt_nam_RED_Ukrretr|1|0|NULL|NULL|$Khmelnik|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  CheckPowerRatio  = LAND;2;200;<;100;100
+  Probability = 50
+  MinDate = 1918/06/16
+
+Actions
+
+  AI.SetLocalinterest = $Proskurov;5;$Khmelnik;5;$Iziaslav;5;$Ostroh;5;$Novograd;5;$Liubar;5;$Vinnytsia;5;$Berdychev;5;$Balta;5;$Berchad;5;$Ouman;5;$Holta;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan60|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan1Ukrrp;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan1Ukrrp;CuOccurs;-1;
+  AI.SetLocalinterest = $Shostka;5;$Mena;5;$Kozelets;5;$Chernigov;5;$Borzna;5;$Krolevets;5;$Buryn;5;$Bakhmach;5;$Konotop;5;$Nijyn;5;$Nossivka;5;$Brovary;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan61|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan1Ukrrpstep1;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan1Ukrrpstep1;CuOccurs;-1;
+  AI.SetLocalinterest = $Loiev;5;$Tchernobyl;5;$Korosteni;5;$Dymer;5;$Radomir;5;$Zhitomir;5;$Korostychev;5;$Kiev;5;$Kaniv;5;$Bila Tsverka;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan62|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan1Ukrrpstep2;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan1Ukrrpstep2;CuOccurs;-1;
+  AI.SetLocalinterest = $Proskurov;5;$Khmelnik;5;$Iziaslav;5;$Ostroh;5;$Novograd;5;$Liubar;5;$Vinnytsia;5;$Berdychev;5;$Balta;5;$Berchad;5;$Ouman;5;$Holta;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan63|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan1Ukrrpstep2b;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan1Ukrrpstep2b;CuOccurs;-1;
+  AI.SetLocalinterest = $Odessa;5;$Rozdilna;5;$Nikolaiev;5;$Berezvika;5;$Tiraspol;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan64|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan1Ukrrpstep2a2;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan1Ukrrpstep2a2;CuOccurs;-1;
+  AI.SetLocalinterest = $Odessa;5;$Rozdilna;5;$Nikolaiev;5;$Berezvika;5;$Tiraspol;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan65|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan1Ukrrpstep2a;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan1Ukrrpstep2a;CuOccurs;-1;
+  AI.SetLocalinterest = $Korsun;5;$Skvyra;5;$Pomitchna;5;$Cherkasy;5;$Desna Confluent;5;$Prypiat Confluent;5;
+  AI.SetLocalinterest = $Olviopol;5;$Nova Odessa;5;$Ochakov;5;$Kherson;5;$Inulets;5;$Krivoi Rog;5;$Elizavetgrad;5;$Dolynska;5;$Oleksandria;5;$Bug;5;$Snihurivka;5;$Nikopol;5;$Ekaterinoslav;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan66|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan2Ukrrp;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan2Ukrrp;CuOccurs;-1;
+  AI.SetLocalinterest = $Grayvoron;5;$Kolomak;5;$Merefa;5;$Zmiev;5;$Kharkov;5;$Belgorod;5;$Kupiansk;5;$Balaklia;5;$Chuhuiv;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan67|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan2Ukrrpstep2a;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan2Ukrrpstep2a;CuOccurs;-1;
+  AI.SetLocalinterest = $Boryspil;5;$Pryluky;5;$Lokhvitsa;5;$Pereiaslav;5;$Sumy;5;$Lebedyn;5;$Krasnokutsk;5;$Lubny;5;$Kremenchuk;5;$Mahdalynivka;5;$Poltava;5;$Karlivka;5;$Lozova;5;$Novomoskovsk;5;$Psel Confluent;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan68|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan2Ukrrpstep2aa;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan2Ukrrpstep2aa;CuOccurs;-1;
+  AI.SetLocalinterest = $Loiev;5;$Tchernobyl;5;$Korosteni;5;$Dymer;5;$Radomir;5;$Zhitomir;5;$Korostychev;5;$Kiev;5;$Kaniv;5;$Bila Tsverka;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan69|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan2Ukrrpstep2ab;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan2Ukrrpstep2ab;CuOccurs;-1;
+  AI.SetLocalinterest = $Cherkasy;5;$Korsun;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan70|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan2Ukrrpstep2aba;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan2Ukrrpstep2aba;CuOccurs;-1;
+  AI.SetLocalinterest = $Loiev;5;$Tchernobyl;5;$Korosteni;5;$Dymer;5;$Radomir;5;$Zhitomir;5;$Korostychev;5;$Kiev;5;$Kaniv;5;$Bila Tsverka;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan71|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan2Ukrrpstep2abaa;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan2Ukrrpstep2abaa;CuOccurs;-1;
+  AI.SetLocalinterest = $Proskurov;5;$Khmelnik;5;$Iziaslav;5;$Ostroh;5;$Novograd;5;$Liubar;5;$Vinnytsia;5;$Berdychev;5;$Balta;5;$Berchad;5;$Ouman;5;$Holta;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan72|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan2Ukrrpstep2abb;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan2Ukrrpstep2abb;CuOccurs;-1;
+  AI.SetLocalinterest = $Olviopol;5;$Nova Odessa;5;$Ochakov;5;$Kherson;5;$Inulets;5;$Krivoi Rog;5;$Elizavetgrad;5;$Dolynska;5;$Oleksandria;5;$Bug;5;$Snihurivka;5;$Nikopol;5;$Ekaterinoslav;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan73|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan2Ukrrpstep2abba;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan2Ukrrpstep2abba;CuOccurs;-1;
+  AI.SetLocalinterest = $Odessa;5;$Rozdilna;5;$Nikolaiev;5;$Berezvika;5;$Tiraspol;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan74|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan2Ukrrpstep2abbaa;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan2Ukrrpstep2abbaa;CuOccurs;-1;
+  AI.SetLocalinterest = $Proskurov;5;$Khmelnik;5;$Iziaslav;5;$Ostroh;5;$Novograd;5;$Liubar;5;$Vinnytsia;5;$Berdychev;5;$Balta;5;$Berchad;5;$Ouman;5;$Holta;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan75|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan3Ukrrp;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan3Ukrrp;CuOccurs;-1;
+  AI.SetLocalinterest = $Grayvoron;5;$Kolomak;5;$Merefa;5;$Zmiev;5;$Kharkov;5;$Belgorod;5;$Kupiansk;5;$Balaklia;5;$Chuhuiv;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan76|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan3Ukrrpstep2a;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan3Ukrrpstep2a;CuOccurs;-1;
+  AI.SetLocalinterest = $Nikopol;5;$Ekaterinoslav;5;$Pavlograd;5;$Alexandrovsk;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan77|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan3Ukrrpstep3a;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan3Ukrrpstep3a;CuOccurs;-1;
+  AI.SetLocalinterest = $Lyssytchansk;5;$Lugansk;5;$Enakievo;5;$Snejnoie;5;$Donetsk;5;$Makeievka;5;$Dobropole;5;$Shaplino;5;$Volnovakha;5;$Mariupol;5;$Huliaipole;5;$Middle Dnieper;5;$Middle Donets;5;$Orikhiv;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan78|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan3Ukrrpstep3b;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan3Ukrrpstep3b;CuOccurs;-1;
+  AI.SetLocalinterest = $Olviopol;5;$Nova Odessa;5;$Ochakov;5;$Kherson;5;$Inulets;5;$Krivoi Rog;5;$Elizavetgrad;5;$Dolynska;5;$Oleksandria;5;$Bug;5;$Snihurivka;5;$Nikopol;5;$Ekaterinoslav;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan79|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan3Ukrrpstep3ba;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan3Ukrrpstep3ba;CuOccurs;-1;
+  AI.SetLocalinterest = $Odessa;5;$Rozdilna;5;$Nikolaiev;5;$Berezvika;5;$Tiraspol;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan80|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan3Ukrrpstep3baa;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan3Ukrrpstep3baa;CuOccurs;-1;
+  AI.SetLocalinterest = $Proskurov;5;$Khmelnik;5;$Iziaslav;5;$Ostroh;5;$Novograd;5;$Liubar;5;$Vinnytsia;5;$Berdychev;5;$Balta;5;$Berchad;5;$Ouman;5;$Holta;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan81|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan3Ukrrpstep3c;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan3Ukrrpstep3c;CuOccurs;-1;
+  AI.SetLocalinterest = $Boryspil;5;$Pryluky;5;$Lokhvitsa;5;$Pereiaslav;5;$Sumy;5;$Lebedyn;5;$Krasnokutsk;5;$Lubny;5;$Kremenchuk;5;$Mahdalynivka;5;$Poltava;5;$Karlivka;5;$Lozova;5;$Novomoskovsk;5;$Psel Confluent;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan82|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan3Ukrrpstep3ca;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan3Ukrrpstep3ca;CuOccurs;-1;
+  AI.SetLocalinterest = $Olviopol;200;$Nova Odessa;200;$Ochakov;200;$Kherson;200;$Inulets;200;$Krivoi Rog;200;$Elizavetgrad;200;$Dolynska;200;$Oleksandria;200;$Bug;200;$Snihurivka;200;$Nikopol;200;$Ekaterinoslav;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan83|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan3Ukrrpstep3caa;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan3Ukrrpstep3caa;CuOccurs;-1;
+  AI.SetLocalinterest = $Odessa;5;$Rozdilna;5;$Nikolaiev;5;$Berezvika;5;$Tiraspol;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan84|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan4Ukrrp;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan4Ukrrp;CuOccurs;-1;
+  AI.SetLocalinterest = $Berdjiansk;5;$Vasylivka;5;$Melitopol;5;$Kakhovka;5;$Akimovka;5;$Perekop;5;$Klyutchevoie;5;$Skadovsk;5;$Dnieper Estuary;5;$Dnieper;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan85|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan4Ukrrpstep2;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan4Ukrrpstep2;CuOccurs;-1;
+  AI.SetLocalinterest = $Dzhankoi;5;$Eupatoria;5;$Simferopol;5;$Zuya;5;$Sevastopol;5;$Feodosia;5;$Kertch;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan88|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan6Ukrrp;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan6Ukrrp;CuOccurs;-1;
+  AI.SetLocalinterest = $Rowno;5;$Lutsk;5;$Kowel;5;$Volynsky;5;$Kostopil;5;$Rojytche;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan89|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan6Ukrrpstep2;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan6Ukrrpstep2;CuOccurs;-1;
+  AI.SetLocalinterest = $Warsaw;5;$Mlawa;5;$Lomza;5;$Ciechanow;5;$Kaluszyn;5;$Brest Litovsk;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan90|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan7Ukrrp;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan7Ukrrp;CuOccurs;-1;
+  AI.SetLocalinterest = $Rowno;5;$Lutsk;5;$Kowel;5;$Volynsky;5;$Kostopil;5;$Rojytche;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan91|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan7Ukrrpstep2;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan7Ukrrpstep2;CuOccurs;-1;
+  AI.SetLocalinterest = $Sambor;5;$Lwow;5;$Stryj;5;$Ivano-Frankivsk;5;$Chortkiv;5;$Cernowitz;5;$Krasno;5;$Kamenska;5;$Lutsk;5;$Ternopil;5;$Dubno;5;$Kremenetz;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RedrestrpAIeventsplan92|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_REDplan7Ukrrpstep3;=;1;
+  Probability = 60
+  MinDate = 1918/11/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDplan7Ukrrpstep3;CuOccurs;-1;
+  AI.SetLocalinterest = $Lublin;5;$Radom;5;$Kielce;5;$Tomaszow;5;$Lodz;5;$Belzec;5;$Jaroslaw;5;$Stalowa Wola;5;$Tarnow;5;$Warsaw;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan1Ukrrp|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;8;9;12;13;19;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1918/11/01
+
+Actions
+
+  AI.SetLocalinterest = $Shostka;200;$Mena;200;$Kozelets;200;$Chernigov;200;$Borzna;200;$Krolevets;200;$Buryn;200;$Bakhmach;200;$Konotop;200;$Nijyn;200;$Nossivka;200;$Brovary;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan1Ukrrpstep1|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan1Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Konotop
+  EvalRgnOwned = $Chernigov
+  Probability = 75
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Loiev;200;$Tchernobyl;200;$Korosteni;200;$Dymer;200;$Radomir;200;$Zhitomir;200;$Korostychev;200;$Kiev;200;$Kaniv;200;$Bila Tsverka;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan1Ukrrpstep2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan1Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Konotop
+  EvalRgnOwned = $Chernigov
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Zhitomir
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Proskurov;200;$Khmelnik;200;$Iziaslav;200;$Ostroh;200;$Novograd;200;$Liubar;200;$Vinnytsia;200;$Berdychev;200;$Balta;200;$Berchad;200;$Ouman;200;$Holta;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan1Ukrrpstep2b|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan1Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Konotop
+  EvalRgnOwned = $Chernigov
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Zhitomir
+  EvalRgnOwned = $Krivoi Rog
+  EvalRgnOwned = $Kherson
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Odessa;200;$Rozdilna;200;$Nikolaiev;200;$Berezvika;200;$Tiraspol;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan1Ukrrpstep2a2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan1Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Konotop
+  EvalRgnOwned = $Chernigov
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Zhitomir
+  EvalRgnOwned = $Ouman
+  EvalRgnOwned = $Berdychev
+  EvalRgnOwned = $Vinnytsia
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Odessa;200;$Rozdilna;200;$Nikolaiev;200;$Berezvika;200;$Tiraspol;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan1Ukrrpstep2a|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan1Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Konotop
+  EvalRgnOwned = $Chernigov
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Zhitomir
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Korsun;200;$Skvyra;200;$Pomitchna;200;$Cherkasy;200;$Desna Confluent;200;$Prypiat Confluent;200;
+  AI.SetLocalinterest = $Olviopol;200;$Nova Odessa;200;$Ochakov;200;$Kherson;200;$Inulets;200;$Krivoi Rog;200;$Elizavetgrad;200;$Dolynska;200;$Oleksandria;200;$Bug;200;$Snihurivka;200;$Nikopol;200;$Ekaterinoslav;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan2Ukrrp|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;8;9;12;13;19;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Grayvoron;200;$Kolomak;200;$Merefa;200;$Zmiev;200;$Kharkov;200;$Belgorod;200;$Kupiansk;200;$Balaklia;200;$Chuhuiv;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan2Ukrrpstep2a|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan2Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Boryspil;200;$Pryluky;200;$Lokhvitsa;200;$Pereiaslav;200;$Sumy;200;$Lebedyn;200;$Krasnokutsk;200;$Lubny;200;$Kremenchuk;200;$Mahdalynivka;200;$Poltava;200;$Karlivka;200;$Lozova;200;$Novomoskovsk;200;$Psel Confluent;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan2Ukrrpstep2aa|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan2Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Poltava
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Loiev;200;$Tchernobyl;200;$Korosteni;200;$Dymer;200;$Radomir;200;$Zhitomir;200;$Korostychev;200;$Kiev;200;$Kaniv;200;$Bila Tsverka;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan2Ukrrpstep2ab|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan2Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Poltava
+  EvalRgnOwned = $Kremenchuk
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Cherkasy;200;$Korsun;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan2Ukrrpstep2aba|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan2Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Poltava
+  EvalRgnOwned = $Kremenchuk
+  EvalRgnOwned = $Cherkasy
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Loiev;200;$Tchernobyl;200;$Korosteni;200;$Dymer;200;$Radomir;200;$Zhitomir;200;$Korostychev;200;$Kiev;200;$Kaniv;200;$Bila Tsverka;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan2Ukrrpstep2abaa|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan2Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Poltava
+  EvalRgnOwned = $Kremenchuk
+  EvalRgnOwned = $Cherkasy
+  EvalRgnOwned = $Kiev
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Proskurov;200;$Khmelnik;200;$Iziaslav;200;$Ostroh;200;$Novograd;200;$Liubar;200;$Vinnytsia;200;$Berdychev;200;$Balta;200;$Berchad;200;$Ouman;200;$Holta;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan2Ukrrpstep2abaaa|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan2Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Poltava
+  EvalRgnOwned = $Kremenchuk
+  EvalRgnOwned = $Cherkasy
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Ouman
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Odessa;200;$Rozdilna;200;$Nikolaiev;200;$Berezvika;200;$Tiraspol;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan2Ukrrpstep2abb|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan2Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Poltava
+  EvalRgnOwned = $Kremenchuk
+  EvalRgnOwned = $Cherkasy
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Olviopol;200;$Nova Odessa;200;$Ochakov;200;$Kherson;200;$Inulets;200;$Krivoi Rog;200;$Elizavetgrad;200;$Dolynska;200;$Oleksandria;200;$Bug;200;$Snihurivka;200;$Nikopol;200;$Ekaterinoslav;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan2Ukrrpstep2abba|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan2Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Poltava
+  EvalRgnOwned = $Kremenchuk
+  EvalRgnOwned = $Cherkasy
+  EvalRgnOwned = $Kherson
+  EvalRgnOwned = $Krivoi Rog
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Odessa;200;$Rozdilna;200;$Nikolaiev;200;$Berezvika;200;$Tiraspol;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan2Ukrrpstep2abbaa|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan2Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Poltava
+  EvalRgnOwned = $Kremenchuk
+  EvalRgnOwned = $Cherkasy
+  EvalRgnOwned = $Kherson
+  EvalRgnOwned = $Krivoi Rog
+  EvalRgnOwned = $Odessa
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Proskurov;200;$Khmelnik;200;$Iziaslav;200;$Ostroh;200;$Novograd;200;$Liubar;200;$Vinnytsia;200;$Berdychev;200;$Balta;200;$Berchad;200;$Ouman;200;$Holta;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan3Ukrrp|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;8;9;12;13;19;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Grayvoron;200;$Kolomak;200;$Merefa;200;$Zmiev;200;$Kharkov;200;$Belgorod;200;$Kupiansk;200;$Balaklia;200;$Chuhuiv;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan3Ukrrpstep2a|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan3Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Nikopol;200;$Ekaterinoslav;200;$Pavlograd;200;$Alexandrovsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan3Ukrrpstep3a|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan3Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Pavlograd
+  EvalRgnOwned = $Alexandrovsk
+  EvalRgnOwned = $Ekaterinoslav
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Lyssytchansk;200;$Lugansk;200;$Enakievo;200;$Snejnoie;200;$Donetsk;200;$Makeievka;200;$Dobropole;200;$Shaplino;200;$Volnovakha;200;$Mariupol;200;$Huliaipole;200;$Middle Dnieper;200;$Middle Donets;200;$Orikhiv;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan3Ukrrpstep3b|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan3Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Pavlograd
+  EvalRgnOwned = $Alexandrovsk
+  EvalRgnOwned = $Ekaterinoslav
+  Probability = 25
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Olviopol;200;$Nova Odessa;200;$Ochakov;200;$Kherson;200;$Inulets;200;$Krivoi Rog;200;$Elizavetgrad;200;$Dolynska;200;$Oleksandria;200;$Bug;200;$Snihurivka;200;$Nikopol;200;$Ekaterinoslav;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan3Ukrrpstep3ba|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan3Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Pavlograd
+  EvalRgnOwned = $Alexandrovsk
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Kherson
+  EvalRgnOwned = $Krivoi Rog
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Odessa;200;$Rozdilna;200;$Nikolaiev;200;$Berezvika;200;$Tiraspol;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan3Ukrrpstep3baa|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan3Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Pavlograd
+  EvalRgnOwned = $Alexandrovsk
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Kherson
+  EvalRgnOwned = $Krivoi Rog
+  EvalRgnOwned = $Odessa
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Proskurov;200;$Khmelnik;200;$Iziaslav;200;$Ostroh;200;$Novograd;200;$Liubar;200;$Vinnytsia;200;$Berdychev;200;$Balta;200;$Berchad;200;$Ouman;200;$Holta;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan3Ukrrpstep3c|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan3Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Pavlograd
+  EvalRgnOwned = $Alexandrovsk
+  EvalRgnOwned = $Ekaterinoslav
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Boryspil;200;$Pryluky;200;$Lokhvitsa;200;$Pereiaslav;200;$Sumy;200;$Lebedyn;200;$Krasnokutsk;200;$Lubny;200;$Kremenchuk;200;$Mahdalynivka;200;$Poltava;200;$Karlivka;200;$Lozova;200;$Novomoskovsk;200;$Psel Confluent;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan3Ukrrpstep3ca|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan3Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Pavlograd
+  EvalRgnOwned = $Alexandrovsk
+  EvalRgnOwned = $Ekaterinoslav
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Olviopol;200;$Nova Odessa;200;$Ochakov;200;$Kherson;200;$Inulets;200;$Krivoi Rog;200;$Elizavetgrad;200;$Dolynska;200;$Oleksandria;200;$Bug;200;$Snihurivka;200;$Nikopol;200;$Ekaterinoslav;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan3Ukrrpstep3caa|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDplan3Ukrrp;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Pavlograd
+  EvalRgnOwned = $Alexandrovsk
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Kherson
+  EvalRgnOwned = $Krivoi Rog
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Odessa;200;$Rozdilna;200;$Nikolaiev;200;$Berezvika;200;$Tiraspol;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan4Ukrrp|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;8;13;19;
+  EvalRgnOwned = $Pavlograd
+  EvalRgnOwned = $Alexandrovsk
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Kherson
+  EvalRgnOwned = $Krivoi Rog
+  EvalRgnOwned = $Kharkov
+  Probability = 5
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Berdjiansk;200;$Vasylivka;200;$Melitopol;200;$Kakhovka;200;$Akimovka;200;$Perekop;200;$Klyutchevoie;200;$Skadovsk;200;$Dnieper Estuary;200;$Dnieper;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan4Ukrrpstep2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Pavlograd
+  EvalRgnOwned = $Alexandrovsk
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Kherson
+  EvalRgnOwned = $Krivoi Rog
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Perekop
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Dzhankoi;200;$Eupatoria;200;$Simferopol;200;$Zuya;200;$Sevastopol;200;$Feodosia;200;$Kertch;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan6Ukrrp|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Konotop
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Moscow
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Rowno;200;$Lutsk;200;$Kowel;200;$Volynsky;200;$Kostopil;200;$Rojytche;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan6Ukrrpstep2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Konotop
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Moscow
+  EvalRgnOwned = $Rowno
+  EvalRgnOwned = $Kowel
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Warsaw;200;$Mlawa;200;$Lomza;200;$Ciechanow;200;$Kaluszyn;200;$Brest Litovsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan7Ukrrp|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Konotop
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Moscow
+  EvalRgnOwned = $Vinnytsia
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Rowno;200;$Lutsk;200;$Kowel;200;$Volynsky;200;$Kostopil;200;$Rojytche;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan7Ukrrpstep2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Konotop
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Moscow
+  EvalRgnOwned = $Rowno
+  EvalRgnOwned = $Kowel
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Sambor;200;$Lwow;200;$Stryj;200;$Ivano-Frankivsk;200;$Chortkiv;200;$Cernowitz;200;$Krasno;200;$Kamenska;200;$Lutsk;200;$Ternopil;200;$Dubno;200;$Kremenetz;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan7Ukrrpstep3|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Konotop
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Moscow
+  EvalRgnOwned = $Lwow
+  EvalRgnOwned = $Kowel
+  EvalRgnOwned = $Lutsk
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Lublin;200;$Radom;200;$Kielce;200;$Tomaszow;200;$Lodz;200;$Belzec;200;$Jaroslaw;200;$Stalowa Wola;200;$Tarnow;200;$Warsaw;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_REDplan8Ukr|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  EvalRgnOwned = $Tula
+  EvalRgnOwned = $Belgorod
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Poltava
+  EvalRgnOwned = $Kherson
+  EvalRgnOwned = $Krivoi Rog
+  Probability = 25
+  CheckAILevel = 1
+  MinDate = 1920/06/01
+
+Actions
+
+  AI.SetLocalinterest = $Proskurov;200;$Khmelnik;200;$Iziaslav;200;$Ostroh;200;$Novograd;200;$Liubar;200;$Vinnytsia;200;$Berdychev;200;$Balta;200;$Berchad;200;$Ouman;200;$Holta;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Minsk
+
+StartEvent = evt_nam_RED_owningrp_Minsk_during_winter2|1|0|NULL|NULL|$Minsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Minsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Minsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Minsk
+
+StartEvent = evt_nam_POL_owningrp_Minsk_during_winter2|1|0|NULL|NULL|$Minsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Minsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Minsk
+
+StartEvent = evt_nam_RED_owningrpMinskduringwinter2cons|999|0|NULL|NULL|$Minsk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Minsk_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Minsk_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Minsk_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Minsk_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Minsk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Baranavichy
+
+StartEvent = evt_nam_RED_owningrp_Baranavichy_during_winter2|1|0|NULL|NULL|$Baranavichy|NULL
+
+Conditions
+
+  EvalRgnOwned = $Baranavichy
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Baranavichy;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Baranavichy
+
+StartEvent = evt_nam_POL_owningrp_Baranavichy_during_winter2|1|0|NULL|NULL|$Baranavichy|NULL
+
+Conditions
+
+  EvalRgnOwned = $Baranavichy
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Baranavichy
+
+StartEvent = evt_nam_RED_owningrpBaranavichyduringwinter2cons|999|0|NULL|NULL|$Baranavichy|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Baranavichy_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Baranavichy_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Baranavichy_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Baranavichy_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Baranavichy;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Grodno
+
+StartEvent = evt_nam_RED_owningrp_Grodno_during_winter2|1|0|NULL|NULL|$Grodno|NULL
+
+Conditions
+
+  EvalRgnOwned = $Grodno
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Grodno;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Grodno
+
+StartEvent = evt_nam_POL_owningrp_Grodno_during_winter2|1|0|NULL|NULL|$Grodno|NULL
+
+Conditions
+
+  EvalRgnOwned = $Grodno
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Grodno
+
+StartEvent = evt_nam_RED_owningrpGrodnoduringwinter2cons|999|0|NULL|NULL|$Grodno|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Grodno_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Grodno_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Grodno_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Grodno_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Grodno;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Bialystok
+
+StartEvent = evt_nam_RED_owningrp_Bialystok_during_winter2|1|0|NULL|NULL|$Bialystok|NULL
+
+Conditions
+
+  EvalRgnOwned = $Bialystok
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Bialystok;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Bialystok
+
+StartEvent = evt_nam_POL_owningrp_Bialystok_during_winter2|1|0|NULL|NULL|$Bialystok|NULL
+
+Conditions
+
+  EvalRgnOwned = $Bialystok
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Bialystok
+
+StartEvent = evt_nam_RED_owningrpBialystokduringwinter2cons|999|0|NULL|NULL|$Bialystok|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Bialystok_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Bialystok_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Bialystok_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Bialystok_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Bialystok;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Brest Litovsk
+
+StartEvent = evt_nam_RED_owningrp_Brest Litovsk_during_winter2|1|0|NULL|NULL|$Brest Litovsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Brest Litovsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Brest Litovsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Brest Litovsk
+
+StartEvent = evt_nam_POL_owningrp_Brest Litovsk_during_winter2|1|0|NULL|NULL|$Brest Litovsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Brest Litovsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Brest Litovsk
+
+StartEvent = evt_nam_RED_owningrpBrest Litovskduringwinter2cons|999|0|NULL|NULL|$Brest Litovsk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Brest Litovsk_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Brest Litovsk_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Brest Litovsk_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Brest Litovsk_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Brest Litovsk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Warsaw
+
+StartEvent = evt_nam_RED_owningrp_Warsaw_during_winter2|1|0|NULL|NULL|$Warsaw|NULL
+
+Conditions
+
+  EvalRgnOwned = $Warsaw
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Warsaw;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+
+StartEvent = evt_nam_POL_owningrp_Warsaw_during_winter2|1|0|NULL|NULL|$Warsaw|NULL
+
+Conditions
+
+  EvalRgnOwned = $Warsaw
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Warsaw
+
+StartEvent = evt_nam_RED_owningrpWarsawduringwinter2cons|999|0|NULL|NULL|$Warsaw|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Warsaw_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Warsaw_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Warsaw_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Warsaw_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Warsaw;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Modlin
+
+StartEvent = evt_nam_RED_owningrp_Modlin_during_winter2|1|0|NULL|NULL|$Modlin|NULL
+
+Conditions
+
+  EvalRgnOwned = $Modlin
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Modlin;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Modlin
+
+StartEvent = evt_nam_POL_owningrp_Modlin_during_winter2|1|0|NULL|NULL|$Modlin|NULL
+
+Conditions
+
+  EvalRgnOwned = $Modlin
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Modlin
+
+StartEvent = evt_nam_RED_owningrpModlinduringwinter2cons|999|0|NULL|NULL|$Modlin|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Modlin_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Modlin_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Modlin_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Modlin_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Modlin;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Lublin
+
+StartEvent = evt_nam_RED_owningrp_Lublin_during_winter2|1|0|NULL|NULL|$Lublin|NULL
+
+Conditions
+
+  EvalRgnOwned = $Lublin
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Lublin;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Lublin
+
+StartEvent = evt_nam_POL_owningrp_Lublin_during_winter2|1|0|NULL|NULL|$Lublin|NULL
+
+Conditions
+
+  EvalRgnOwned = $Lublin
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Lublin
+
+StartEvent = evt_nam_RED_owningrpLublinduringwinter2cons|999|0|NULL|NULL|$Lublin|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Lublin_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Lublin_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Lublin_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Lublin_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Lublin;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_RED_owningrp_Kiev_during_winter2|1|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kiev
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Kiev;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_POL_owningrp_Kiev_during_winter2|1|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kiev
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_RED_owningrpKievduringwinter2cons|999|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Kiev_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Kiev_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Kiev_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Kiev_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Kiev;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Korosteni
+
+StartEvent = evt_nam_RED_owningrp_Korosteni_during_winter2|1|0|NULL|NULL|$Korosteni|NULL
+
+Conditions
+
+  EvalRgnOwned = $Korosteni
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Korosteni;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Korosteni
+
+StartEvent = evt_nam_POL_owningrp_Korosteni_during_winter2|1|0|NULL|NULL|$Korosteni|NULL
+
+Conditions
+
+  EvalRgnOwned = $Korosteni
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Korosteni
+
+StartEvent = evt_nam_RED_owningrpKorosteniduringwinter2cons|999|0|NULL|NULL|$Korosteni|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Korosteni_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Korosteni_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Korosteni_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Korosteni_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Korosteni;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Zhitomir
+
+StartEvent = evt_nam_RED_owningrp_Zhitomir_during_winter2|1|0|NULL|NULL|$Zhitomir|NULL
+
+Conditions
+
+  EvalRgnOwned = $Zhitomir
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Zhitomir;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Zhitomir
+
+StartEvent = evt_nam_POL_owningrp_Zhitomir_during_winter2|1|0|NULL|NULL|$Zhitomir|NULL
+
+Conditions
+
+  EvalRgnOwned = $Zhitomir
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Zhitomir
+
+StartEvent = evt_nam_RED_owningrpZhitomirduringwinter2cons|999|0|NULL|NULL|$Zhitomir|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Zhitomir_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Zhitomir_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Zhitomir_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Zhitomir_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Zhitomir;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Zlatoust
+
+StartEvent = evt_nam_RED_owningrp_Zlatoust_during_winter2|1|0|NULL|NULL|$Zlatoust|NULL
+
+Conditions
+
+  EvalRgnOwned = $Zlatoust
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Zlatoust;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Vinnytsia
+
+StartEvent = evt_nam_RED_owningrp_Vinnytsia_during_winter2|1|0|NULL|NULL|$Vinnytsia|NULL
+
+Conditions
+
+  EvalRgnOwned = $Vinnytsia
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Vinnytsia;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Vinnytsia
+
+StartEvent = evt_nam_POL_owningrp_Vinnytsia_during_winter2|1|0|NULL|NULL|$Vinnytsia|NULL
+
+Conditions
+
+  EvalRgnOwned = $Vinnytsia
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Vinnytsia
+
+StartEvent = evt_nam_RED_owningrpVinnytsiaduringwinter2cons|999|0|NULL|NULL|$Vinnytsia|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Samara_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Samara_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Samara_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Samara_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Samara;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Lwow
+
+StartEvent = evt_nam_RED_owningrp_Lwow_during_winter2|1|0|NULL|NULL|$Lwow|NULL
+
+Conditions
+
+  EvalRgnOwned = $Lwow
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Lwow;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Lwow
+
+StartEvent = evt_nam_POL_owningrp_Lwow_during_winter2|1|0|NULL|NULL|$Lwow|NULL
+
+Conditions
+
+  EvalRgnOwned = $Lwow
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Lwow
+
+StartEvent = evt_nam_RED_owningrpLwowduringwinter2cons|999|0|NULL|NULL|$Lwow|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Lwow_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Lwow_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Lwow_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Lwow_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Lwow;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Rowno
+
+StartEvent = evt_nam_RED_owningrp_Rowno_during_winter2|1|0|NULL|NULL|$Rowno|NULL
+
+Conditions
+
+  EvalRgnOwned = $Rowno
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Rowno;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Rowno
+
+StartEvent = evt_nam_POL_owningrp_Rowno_during_winter2|1|0|NULL|NULL|$Rowno|NULL
+
+Conditions
+
+  EvalRgnOwned = $Rowno
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Rowno
+
+StartEvent = evt_nam_RED_owningrpRownoduringwinter2cons|999|0|NULL|NULL|$Rowno|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Rowno_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Rowno_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Rowno_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Rowno_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Rowno;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kowel
+
+StartEvent = evt_nam_RED_owningrp_Kowel_during_winter2|1|0|NULL|NULL|$Kowel|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kowel
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Kowel;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Kowel
+
+StartEvent = evt_nam_POL_owningrp_Kowel_during_winter2|1|0|NULL|NULL|$Kowel|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kowel
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kowel
+
+StartEvent = evt_nam_RED_owningrpKowelduringwinter2cons|999|0|NULL|NULL|$Kowel|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Kowel_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Kowel_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Kowel_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Kowel_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Kowel;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Smolensk
+
+StartEvent = evt_nam_RED_owningrp_Smolensk_during_winter2|1|0|NULL|NULL|$Smolensk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Smolensk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalinterest = $Smolensk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Smolensk
+
+StartEvent = evt_nam_POL_owningrp_Smolensk_during_winter2|1|0|NULL|NULL|$Smolensk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Smolensk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Smolensk
+
+StartEvent = evt_nam_RED_owningrpSmolenskduringwinter2cons|999|0|NULL|NULL|$Smolensk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_RED_owningrp_Smolensk_during_winter2;=;1
+  EvalEvent = evt_nam_POL_owningrp_Smolensk_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_RED_owningrp_Smolensk_during_winter2;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_POL_owningrp_Smolensk_during_winter2;CuOccurs;-1
+  AI.SetLocalinterest = $Smolensk;35;
+
+EndEvent
+
+NULL ==========================================================================
+

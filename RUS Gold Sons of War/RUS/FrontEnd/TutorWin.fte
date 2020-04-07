@@ -1,0 +1,58 @@
+UID = 50026
+Bitmap = Win_Paper_512x312.bmp
+x = 0
+y = 100
+z = 110
+DragDrop = {None}
+GameState = stTutorWin
+Capacity = 0
+
+// title coordinate (x centered)
+Caption0 = 0|15|0
+
+// first line of text coordinate
+Caption1 = 17|50|0
+
+// Background image coordinate
+Caption2 = 0|0|0
+
+// offset between each line of text
+Param0 = 12
+// max nb of char for each line of text
+Param1 = 70
+
+// Abort
+Btn1 = -1|477|15
+
+{ButtonDef}
+Image = Btn_Parchment_Close_OFF.png
+OverImage = Btn_Parchment_Close_HL.png
+DownImage = Btn_Parchment_Close_ON.png
+Hint = $Close
+UpAction = CancelAction
+ClickSound = $sndTick
+{/ButtonDef}
+
+// Prev
+Btn2 = -1|35|300
+
+{ButtonDef}
+Image = Arrows_Left_Black_OFF.png
+OverImage = Arrows_Left_Black_OVER.png
+DownImage = Arrows_Left_Black_ON.png
+Hint = $TutorLeft
+UpAction = ScrollLeft
+ClickSound = $sndTick
+{/ButtonDef}
+
+// Next
+Btn3 = -1|450|300
+
+{ButtonDef}
+Image = Arrows_Right_Black_OFF.png
+OverImage = Arrows_Right_Black_OVER.png
+DownImage = Arrows_Right_Black_ON.png
+Hint = $TutorRight
+UpAction = ScrollRight
+ClickSound = $sndTick
+{/ButtonDef}

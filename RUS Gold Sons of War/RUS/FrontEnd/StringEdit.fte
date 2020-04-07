@@ -1,0 +1,30 @@
+UID = 50024
+Bitmap = Dialog_Back.png
+x = 0
+y = 0
+z = 96
+DragDrop = {None}
+Anchor = VCenter HCenter
+GameState = stStringEdit
+Capacity = 0
+
+// Abort
+Btn1 = -1|246|150
+
+{ButtonDef}
+Image = Btn_Close_OFF.png
+OverImage = Btn_Close_HL.png
+DownImage = Btn_Close_ON.png
+Hint = $Cancel
+UpAction = CancelAction
+ClickSound = $sndTick
+{/ButtonDef}
+
+Caption0 = 0|45|0
+Various1 = 110|150|0
+Various2 = 45|80|0
+Various3 = 53|90|0
+Various4 = 35|120|0
+
+StrParam0 = Btn_Validate_OFF.png
+StrParam1 = Dialog_EditBox.bmp

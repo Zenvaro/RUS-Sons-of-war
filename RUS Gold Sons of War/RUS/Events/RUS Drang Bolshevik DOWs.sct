@@ -1,0 +1,1407 @@
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BalticDOW_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEngagementPts = >=;5
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_BalticDOW.png;Title;opt_title_RED_BalticDOWDNO;MsgString;opt_desc_RED_BalticDOWDNO;ToolString;opt_hint_RED_BalticDOWDNO;SubType;RED_BalticDOW;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BalticDOW_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BalticDOW_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionDip;RED_BalticDOW;=;1
+
+Actions
+  ChangeFacMorale = 5
+  GenTextMsg  = opt_notify_RED_BalticDOW;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_BalticDOW;1;NULL;NULL;NULL
+
+  ChgEvtOccurs = evt_nam_GER_FullWar;MaxOccurs;1
+
+  ChgEvtOccurs = evt_nam_GER_BalticJoin_Generate;MaxOccurs;0
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_BalticJoin
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BalticDOW
+
+  ChgEvtOccurs = evt_nam_RED_BalticDOW_Tracker;CuOccurs;1
+
+  ChgEvtOccurs = evt_nam_RED_RigaControlled1921;MaxOccurs;15
+  NULL = NULL
+
+SelectRegion = $Vilnius
+
+SelectFaction = $RED
+SelectRegion = $Vilnius
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Wilno Bolshevik Coup
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 1st Vilnius Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 2nd Vilnius Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 3rd Vilnius Red Guards
+  Apply
+  SelectSubUnits = Region $Vilnius;FactionTags RED
+  AlterCuSubUnit = Move In
+
+SelectRegion = $Riga
+
+SelectFaction = $RED
+SelectRegion = $Riga
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Riga Bolshevik Coup
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 1st Riga Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil4
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 2nd Riga Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil4
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 3rd Riga Red Guards
+  Apply
+  SelectSubUnits = Region $Riga;FactionTags RED
+  AlterCuSubUnit = Move In
+
+SelectRegion = $Tallinn
+
+SelectFaction = $RED
+SelectRegion = $Tallinn
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Tallinn Bolshevik Coup
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 1st Tallinn Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil4
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 2nd Tallinn Red Guards
+  Apply
+  SelectSubUnits = Region $Tallinn;FactionTags RED
+  AlterCuSubUnit = Move In
+  NULL = NULL
+
+SelectFaction = $CMN
+SelectRegion = $Saaremaa
+
+SelectRegion = $Saaremaa
+  SelectRegion = $Saaremaa
+  BlockState = 0
+
+SelectRegion = $Hanila
+  SelectRegion = $Hanila
+  BlockState = 0
+
+SelectRegion = $Parnu
+  SelectRegion = $Parnu
+  BlockState = 0
+
+SelectRegion = $Haademeeste
+  SelectRegion = $Haademeeste
+  BlockState = 0
+
+SelectRegion = $Valga
+  SelectRegion = $Valga
+  BlockState = 0
+
+SelectRegion = $Antsla
+  SelectRegion = $Antsla
+  BlockState = 0
+
+SelectRegion = $Polva
+  SelectRegion = $Polva
+  BlockState = 0
+
+SelectRegion = $Otepaa
+  SelectRegion = $Otepaa
+  BlockState = 0
+
+SelectRegion = $Viljandi
+  SelectRegion = $Viljandi
+  BlockState = 0
+
+SelectRegion = $Tartu
+  SelectRegion = $Tartu
+  BlockState = 0
+
+SelectRegion = $Jogeva
+  SelectRegion = $Jogeva
+  BlockState = 0
+
+SelectRegion = $Paide
+  SelectRegion = $Paide
+  BlockState = 0
+
+SelectRegion = $Haapsalu
+  SelectRegion = $Haapsalu
+  BlockState = 0
+
+SelectRegion = $Tallinn
+  SelectRegion = $Tallinn
+  BlockState = 0
+
+SelectRegion = $Tapa
+  SelectRegion = $Tapa
+  BlockState = 0
+
+SelectRegion = $Rakvere
+  SelectRegion = $Rakvere
+  BlockState = 0
+
+SelectRegion = $Narva
+  SelectRegion = $Narva
+  BlockState = 0
+
+SelectRegion = $Hiumaa
+  SelectRegion = $Hiumaa
+  BlockState = 0
+
+SelectRegion = $Liepaja
+  SelectRegion = $Liepaja
+  BlockState = 0
+
+SelectRegion = $Ventspils
+  SelectRegion = $Ventspils
+  BlockState = 0
+
+SelectRegion = $Dundaga
+  SelectRegion = $Dundaga
+  BlockState = 0
+
+SelectRegion = $Kolka
+  SelectRegion = $Kolka
+  BlockState = 0
+
+SelectRegion = $Talsi
+  SelectRegion = $Talsi
+  BlockState = 0
+
+SelectRegion = $Engure
+  SelectRegion = $Engure
+  BlockState = 0
+
+SelectRegion = $Saldus
+  SelectRegion = $Saldus
+  BlockState = 0
+
+SelectRegion = $Grobin
+  SelectRegion = $Grobin
+  BlockState = 0
+
+SelectRegion = $Jelgava
+  SelectRegion = $Jelgava
+  BlockState = 0
+
+SelectRegion = $Jurmala
+  SelectRegion = $Jurmala
+  BlockState = 0
+
+SelectRegion = $Ogre
+  SelectRegion = $Ogre
+  BlockState = 0
+
+SelectRegion = $Jekabpils
+  SelectRegion = $Jekabpils
+  BlockState = 0
+
+SelectRegion = $Riga
+  SelectRegion = $Riga
+  BlockState = 0
+
+SelectRegion = $Jaunjelgava
+  SelectRegion = $Jaunjelgava
+  BlockState = 0
+
+SelectRegion = $Sigulda
+  SelectRegion = $Sigulda
+  BlockState = 0
+
+SelectRegion = $Saulkrasti
+  SelectRegion = $Saulkrasti
+  BlockState = 0
+
+SelectRegion = $Cesis
+  SelectRegion = $Cesis
+  BlockState = 0
+
+SelectRegion = $Amata
+  SelectRegion = $Amata
+  BlockState = 0
+
+SelectRegion = $Plavinas
+  SelectRegion = $Plavinas
+  BlockState = 0
+
+SelectRegion = $Daugavpils
+  SelectRegion = $Daugavpils
+  BlockState = 0
+
+SelectRegion = $Kraslava
+  SelectRegion = $Kraslava
+  BlockState = 0
+
+SelectRegion = $Rezekne
+  SelectRegion = $Rezekne
+  BlockState = 0
+
+SelectRegion = $Varakjani
+  SelectRegion = $Varakjani
+  BlockState = 0
+
+SelectRegion = $Madona
+  SelectRegion = $Madona
+  BlockState = 0
+
+SelectRegion = $Kapsukas
+  SelectRegion = $Kapsukas
+  BlockState = 0
+
+SelectRegion = $Sejny
+  SelectRegion = $Sejny
+  BlockState = 0
+
+SelectRegion = $Palanga
+  SelectRegion = $Palanga
+  BlockState = 0
+
+SelectRegion = $Kursenai
+  SelectRegion = $Kursenai
+  BlockState = 0
+
+SelectRegion = $Plunge
+  SelectRegion = $Plunge
+  BlockState = 0
+
+SelectRegion = $Tauroggen
+  SelectRegion = $Tauroggen
+  BlockState = 0
+
+SelectRegion = $Kaunas
+  SelectRegion = $Kaunas
+  BlockState = 0
+
+SelectRegion = $Siauliai
+  SelectRegion = $Siauliai
+  BlockState = 0
+
+SelectRegion = $Mazeikiai
+  SelectRegion = $Mazeikiai
+  BlockState = 0
+
+SelectRegion = $Joniskis
+  SelectRegion = $Joniskis
+  BlockState = 0
+
+SelectRegion = $Rokiskis
+  SelectRegion = $Rokiskis
+  BlockState = 0
+
+SelectRegion = $Panevezys
+  SelectRegion = $Panevezys
+  BlockState = 0
+
+SelectRegion = $Zarasai
+  SelectRegion = $Zarasai
+  BlockState = 0
+
+SelectRegion = $Utena
+  SelectRegion = $Utena
+  BlockState = 0
+
+SelectRegion = $Alytus
+  SelectRegion = $Alytus
+  BlockState = 0
+
+SelectRegion = $Olita
+  SelectRegion = $Olita
+  BlockState = 0
+
+SelectRegion = $Salcininkai
+  SelectRegion = $Salcininkai
+  BlockState = 0
+
+SelectRegion = $Ukmerge
+  SelectRegion = $Ukmerge
+  BlockState = 0
+
+SelectRegion = $Vilnius
+  SelectRegion = $Vilnius
+  BlockState = 0
+
+SelectRegion = $Molodechno
+  SelectRegion = $Molodechno
+  BlockState = 0
+
+SelectRegion = $Pastavy
+  SelectRegion = $Pastavy
+  BlockState = 0
+
+SelectRegion = $Dzisna
+  SelectRegion = $Dzisna
+  BlockState = 0
+
+SelectRegion = $Lida
+  SelectRegion = $Lida
+  BlockState = 0
+
+SelectRegion = $Varena
+  SelectRegion = $Varena
+  BlockState = 0
+
+SelectRegion = $Miadzal
+  SelectRegion = $Miadzal
+  BlockState = 0
+
+SelectRegion = $Dziatlava
+  SelectRegion = $Dziatlava
+  BlockState = 0
+
+SelectRegion = $Upper Niemen
+  SelectRegion = $Upper Niemen
+  BlockState = 0
+
+SelectRegion = $Daugava
+  SelectRegion = $Daugava
+  BlockState = 0
+
+SelectRegion = $Upper Daugava
+  SelectRegion = $Upper Daugava
+  BlockState = 0
+
+SelectRegion = $Narva River
+  SelectRegion = $Narva River
+  BlockState = 0
+
+SelectRegion = $Peipus Lake
+  SelectRegion = $Peipus Lake
+  BlockState = 0
+
+SelectFaction = $GER
+  SelectSubUnits = Area $Area_Estonia;FriendAndSelf;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 0
+  SelectSubUnits = Area $Area_Latvia;FriendAndSelf;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 0
+  SelectSubUnits = Area $Area_Lithuania;FriendAndSelf;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 0
+  SelectSubUnits = Area $Area_Vilnius;FriendAndSelf;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 0
+  NULL = NULL
+  ChangeUnitPool = $uni_BAL_Bde0;5
+  ChangeUnitPool = $uni_BAL_Div1;3
+  ChangeUnitPool = $uni_BAL_Cav1;5
+  ChangeUnitPool = $uni_BAL_Art1;5
+  ChangeUnitPool = $uni_BAL_Art2;5
+  ChangeUnitPool = $uni_BAL_Amt2;1
+  ChangeUnitPool = $uni_BAL_Amc1;1
+  ChangeUnitPool = $uni_BAL_Sup1;10
+  ChangeUnitPool = $uni_BAL_GB1;5
+  ChangeUnitPool = $uni_BAL_Mil1;10
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BalticDOW_NoCheck|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex = 10;22
+  EvalEvent = evt_nam_RED_BalticDOW_Tracker;=;0
+
+Actions
+  ChangeFacMorale = -1
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_CMN_BalticDOWNo;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_BalticDOWNo;1;NULL;NULL;NULL
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_FinnishDOW_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEngagementPts = >=;5
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_FinnishDOW.png;Title;opt_title_RED_FinnishDOWDNO;MsgString;opt_desc_RED_FinnishDOWDNO;ToolString;opt_hint_RED_FinnishDOWDNO;SubType;RED_FinnishDOW;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_FinnishDOW_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_FinnishDOW_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionDip;RED_FinnishDOW;=;1
+
+Actions
+  ChangeFacMorale = 2
+  GenTextMsg  = opt_notify_RED_FinnishDOW;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_FinnishDOW;1;NULL;NULL;NULL
+
+  ChgEvtOccurs = evt_nam_GER_FinlandJoin_Generate;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_GER_FullWar;MaxOccurs;1
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_FinlandJoin
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_FinnishDOW
+
+  ChgEvtOccurs = evt_nam_RED_FinnishDOW_Tracker;CuOccurs;1
+
+  ChgEvtOccurs = evt_nam_RED_HelsinkiControlled;MaxOccurs;15
+  NULL = NULL
+
+SelectFaction = $CMN
+SelectRegion = $Turku
+
+SelectRegion = $Turku
+  SelectRegion = $Turku
+  BlockState = 0
+
+SelectRegion = $Salo
+  SelectRegion = $Salo
+  BlockState = 0
+
+SelectRegion = $Espoo
+  SelectRegion = $Espoo
+  BlockState = 0
+
+SelectRegion = $Porvoo
+  SelectRegion = $Porvoo
+  BlockState = 0
+
+SelectRegion = $Loviisa
+  SelectRegion = $Loviisa
+  BlockState = 0
+
+SelectRegion = $Kotka
+  SelectRegion = $Kotka
+  BlockState = 0
+
+SelectRegion = $Viipuri 
+  SelectRegion = $Viipuri 
+  BlockState = 0
+
+SelectRegion = $Terijoki
+  SelectRegion = $Terijoki
+  BlockState = 0
+
+SelectRegion = $Taipala
+  SelectRegion = $Taipala
+  BlockState = 0
+
+SelectRegion = $Lappeenranta
+  SelectRegion = $Lappeenranta
+  BlockState = 0
+
+SelectRegion = $Lake Nasi
+  SelectRegion = $Lake Nasi
+  BlockState = 0
+
+SelectRegion = $Loimaa
+  SelectRegion = $Loimaa
+  BlockState = 0
+
+SelectRegion = $Rauma
+  SelectRegion = $Rauma
+  BlockState = 0
+
+SelectRegion = $Aland Island
+  SelectRegion = $Aland Island
+  BlockState = 0
+
+SelectRegion = $Kakisalmi
+  SelectRegion = $Kakisalmi
+  BlockState = 0
+
+SelectRegion = $Lake Saimaa
+  SelectRegion = $Lake Saimaa
+  BlockState = 0
+
+SelectRegion = $Sortavala
+  SelectRegion = $Sortavala
+  BlockState = 0
+
+SelectRegion = $Imatra
+  SelectRegion = $Imatra
+  BlockState = 0
+
+SelectRegion = $Lake Puruvesi
+  SelectRegion = $Lake Puruvesi
+  BlockState = 0
+
+SelectRegion = $Lake Haukivesi
+  SelectRegion = $Lake Haukivesi
+  BlockState = 0
+
+SelectRegion = $Lake Pielinen
+  SelectRegion = $Lake Pielinen
+  BlockState = 0
+
+SelectRegion = $Merikarvia
+  SelectRegion = $Merikarvia
+  BlockState = 0
+
+SelectRegion = $Narpes
+  SelectRegion = $Narpes
+  BlockState = 0
+
+SelectRegion = $Vaasa
+  SelectRegion = $Vaasa
+  BlockState = 0
+
+SelectRegion = $Valkeala
+  SelectRegion = $Valkeala
+  BlockState = 0
+
+SelectRegion = $Kouvola
+  SelectRegion = $Kouvola
+  BlockState = 0
+
+SelectRegion = $Lake Paijanne
+  SelectRegion = $Lake Paijanne
+  BlockState = 0
+
+SelectRegion = $Tampere
+  SelectRegion = $Tampere
+  BlockState = 0
+
+SelectRegion = $Vammala
+  SelectRegion = $Vammala
+  BlockState = 0
+
+SelectRegion = $Virrat
+  SelectRegion = $Virrat
+  BlockState = 0
+
+SelectRegion = $Seinajoki
+  SelectRegion = $Seinajoki
+  BlockState = 0
+
+SelectRegion = $Lahti
+  SelectRegion = $Lahti
+  BlockState = 0
+
+SelectRegion = $Lappajarvi
+  SelectRegion = $Lappajarvi
+  BlockState = 0
+
+SelectRegion = $Jyvaskyla
+  SelectRegion = $Jyvaskyla
+  BlockState = 0
+
+SelectRegion = $Saarijarvi
+  SelectRegion = $Saarijarvi
+  BlockState = 0
+
+SelectRegion = $Jamsa
+  SelectRegion = $Jamsa
+  BlockState = 0
+
+SelectRegion = $Kivijarvi
+  SelectRegion = $Kivijarvi
+  BlockState = 0
+
+SelectRegion = $Heinola
+  SelectRegion = $Heinola
+  BlockState = 0
+
+SelectRegion = $Mikkeli
+  SelectRegion = $Mikkeli
+  BlockState = 0
+
+SelectRegion = $Haapamaki
+  SelectRegion = $Haapamaki
+  BlockState = 0
+
+SelectRegion = $Helsinki
+  SelectRegion = $Helsinki
+  BlockState = 0
+
+SelectRegion = $Riihimaki
+  SelectRegion = $Riihimaki
+  BlockState = 0
+
+SelectRegion = $Juva
+  SelectRegion = $Juva
+  BlockState = 0
+
+SelectRegion = $Kerimaki
+  SelectRegion = $Kerimaki
+  BlockState = 0
+
+SelectRegion = $Pieksamaki
+  SelectRegion = $Pieksamaki
+  BlockState = 0
+
+SelectRegion = $Lake Kallavesi
+  SelectRegion = $Lake Kallavesi
+  BlockState = 0
+
+SelectRegion = $Varkaus
+  SelectRegion = $Varkaus
+  BlockState = 0
+
+SelectRegion = $Kuopio
+  SelectRegion = $Kuopio
+  BlockState = 0
+
+SelectRegion = $Viitasaari
+  SelectRegion = $Viitasaari
+  BlockState = 0
+
+SelectRegion = $Heinavesi
+  SelectRegion = $Heinavesi
+  BlockState = 0
+
+SelectRegion = $Joensuu
+  SelectRegion = $Joensuu
+  BlockState = 0
+
+SelectRegion = $Rautavaara
+  SelectRegion = $Rautavaara
+  BlockState = 0
+
+SelectRegion = $Kitee
+  SelectRegion = $Kitee
+  BlockState = 0
+
+SelectRegion = $Ilomantsi
+  SelectRegion = $Ilomantsi
+  BlockState = 0
+
+SelectRegion = $Lieksa
+  SelectRegion = $Lieksa
+  BlockState = 0
+
+SelectRegion = $Vyartsilya
+  SelectRegion = $Vyartsilya
+  BlockState = 0
+
+SelectRegion = $Suoyarvi
+  SelectRegion = $Suoyarvi
+  BlockState = 0
+
+SelectRegion = $North Ladoga Lake
+  SelectRegion = $North Ladoga Lake
+  BlockState = 0
+
+SelectRegion = $Pori
+  SelectRegion = $Pori
+  BlockState = 0
+
+SelectRegion = $Alavus
+  SelectRegion = $Alavus
+  BlockState = 0
+
+SelectRegion = $Lapua
+  SelectRegion = $Lapua
+  BlockState = 0
+
+SelectRegion = $Alajarvi
+  SelectRegion = $Alajarvi
+  BlockState = 0
+
+SelectRegion = $Karstula
+  SelectRegion = $Karstula
+  BlockState = 0
+
+SelectRegion = $Leppavirta
+  SelectRegion = $Leppavirta
+  BlockState = 0
+
+SelectRegion = $Kangaslampi
+  SelectRegion = $Kangaslampi
+  BlockState = 0
+
+SelectRegion = $Rautalampi
+  SelectRegion = $Rautalampi
+  BlockState = 0
+
+SelectRegion = $Juuka
+  SelectRegion = $Juuka
+  BlockState = 0
+
+SelectRegion = $Salmi
+  SelectRegion = $Salmi
+  BlockState = 0
+
+SelectRegion = $Pryazha
+  SelectRegion = $Pryazha
+  BlockState = 0
+
+SelectFaction = $GER
+  SelectSubUnits = Area $Area_Finland;FriendAndSelf;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 0
+  SelectSubUnits = Area $Area_Karelia;FriendAndSelf;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 0
+  NULL = NULL
+  ChangeUnitPool = $uni_FIN_Bde1;3
+  ChangeUnitPool = $uni_FIN_Bde2;0
+  ChangeUnitPool = $uni_FIN_Inf4;5
+  ChangeUnitPool = $uni_FIN_Inf6;10
+  ChangeUnitPool = $uni_FIN_Inf7;3
+  ChangeUnitPool = $uni_FIN_Cyc;5
+  ChangeUnitPool = $uni_FIN_Cav1;4
+  ChangeUnitPool = $uni_FIN_Art0;2
+  ChangeUnitPool = $uni_FIN_Art1;5
+  ChangeUnitPool = $uni_FIN_Art2;10
+  ChangeUnitPool = $uni_FIN_Art4;2
+  ChangeUnitPool = $uni_FIN_Sie;1
+  ChangeUnitPool = $uni_FIN_Hq1;0
+  ChangeUnitPool = $uni_FIN_Trs;3
+  ChangeUnitPool = $uni_FIN_Med;3
+  ChangeUnitPool = $uni_FIN_Pio;5
+  ChangeUnitPool = $uni_FIN_Eng;5
+  ChangeUnitPool = $uni_FIN_Amc1;1
+  ChangeUnitPool = $uni_FIN_Amt1;2
+  ChangeUnitPool = $uni_FIN_Amt2;2
+  ChangeUnitPool = $uni_FIN_Sup1;10
+  ChangeUnitPool = $uni_FIN_Tru;1
+  ChangeUnitPool = $uni_FIN_Bas1;1
+  ChangeUnitPool = $uni_FIN_GB1;2
+  ChangeUnitPool = $uni_FIN_TR1;3
+  ChangeUnitPool = $uni_FIN_Mil1;10
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_FinnishDOW_NoCheck|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex = 10;22
+  EvalEvent = evt_nam_RED_FinnishDOW_Tracker;=;0
+
+Actions
+  ChangeFacMorale = -1
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_CMN_FinnishDOWNo;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_FinnishDOWNo;1;NULL;NULL;NULL
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RumanianDOW_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1919/01/01
+  EvalEngagementPts = >=;5
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_RumanianDOW.png;Title;opt_title_RED_RumanianDOWDNO;MsgString;opt_desc_RED_RumanianDOWDNO;ToolString;opt_hint_RED_RumanianDOWDNO;SubType;RED_RumanianDOW;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RumanianDOW_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RumanianDOW_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionDip;RED_RumanianDOW;=;1
+
+Actions
+  ChangeFacMorale = 2
+  GenTextMsg  = opt_notify_RED_RumanianDOW;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_RumanianDOW;1;NULL;NULL;NULL
+
+  ChgEvtOccurs = evt_nam_GER_RumaniaJoin_Generate;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_GER_FullWar;MaxOccurs;1
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_RumaniaJoin
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_RumanianDOW
+
+  ChgEvtOccurs = evt_nam_RED_RumanianDOW_Tracker;CuOccurs;1
+
+  ChgEvtOccurs = evt_nam_RED_BucurestiControlled;MaxOccurs;15
+  NULL = NULL
+
+SelectFaction = $CMN
+SelectRegion = $Wallachia
+
+SelectRegion = $Wallachia
+  SelectRegion = $Wallachia
+  BlockState = 0
+
+SelectRegion = $Constanta
+  SelectRegion = $Constanta
+  BlockState = 0
+
+SelectRegion = $Buzau
+  SelectRegion = $Buzau
+  BlockState = 0
+
+SelectRegion = $Calarasi
+  SelectRegion = $Calarasi
+  BlockState = 0
+
+SelectRegion = $Bucuresti
+  SelectRegion = $Bucuresti
+  BlockState = 0
+
+SelectRegion = $Danube
+  SelectRegion = $Danube
+  BlockState = 0
+
+SelectRegion = $Botosani
+  SelectRegion = $Botosani
+  BlockState = 0
+
+SelectRegion = $Suceava
+  SelectRegion = $Suceava
+  BlockState = 0
+
+SelectRegion = $Iasi
+  SelectRegion = $Iasi
+  BlockState = 0
+
+SelectRegion = $Roman
+  SelectRegion = $Roman
+  BlockState = 0
+
+SelectRegion = $Vaslui
+  SelectRegion = $Vaslui
+  BlockState = 0
+
+SelectRegion = $Bacau
+  SelectRegion = $Bacau
+  BlockState = 0
+
+SelectRegion = $Gheorghe
+  SelectRegion = $Gheorghe
+  BlockState = 0
+
+SelectRegion = $Komrat
+  SelectRegion = $Komrat
+  BlockState = 0
+
+SelectRegion = $Ismail
+  SelectRegion = $Ismail
+  BlockState = 0
+
+SelectRegion = $Kagul
+  SelectRegion = $Kagul
+  BlockState = 0
+
+SelectRegion = $Galati
+  SelectRegion = $Galati
+  BlockState = 0
+
+SelectRegion = $Focsani
+  SelectRegion = $Focsani
+  BlockState = 0
+
+SelectRegion = $Braila
+  SelectRegion = $Braila
+  BlockState = 0
+
+SelectRegion = $Sulina
+  SelectRegion = $Sulina
+  BlockState = 0
+
+SelectRegion = $Tulcea
+  SelectRegion = $Tulcea
+  BlockState = 0
+
+SelectRegion = $Babadag
+  SelectRegion = $Babadag
+  BlockState = 0
+
+SelectRegion = $Zalitch
+  SelectRegion = $Zalitch
+  BlockState = 0
+
+SelectRegion = $Khotyn
+  SelectRegion = $Khotyn
+  BlockState = 0
+
+SelectRegion = $Sarata
+  SelectRegion = $Sarata
+  BlockState = 0
+
+SelectRegion = $Chisinau
+  SelectRegion = $Chisinau
+  BlockState = 0
+
+SelectRegion = $Bilhorod
+  SelectRegion = $Bilhorod
+  BlockState = 0
+
+SelectRegion = $Criuleni
+  SelectRegion = $Criuleni
+  BlockState = 0
+
+SelectRegion = $Orhei
+  SelectRegion = $Orhei
+  BlockState = 0
+
+SelectRegion = $Soroca
+  SelectRegion = $Soroca
+  BlockState = 0
+
+SelectRegion = $Prut Confluent
+  SelectRegion = $Prut Confluent
+  BlockState = 0
+
+SelectRegion = $Danube Estuary
+  SelectRegion = $Danube Estuary
+  BlockState = 0
+
+SelectFaction = $GER
+  SelectSubUnits = Area $Area_Romania ;FriendAndSelf;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 0
+  SelectSubUnits = Area $Area_Wallachia;FriendAndSelf;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 0
+  NULL = NULL
+  ChangeUnitPool = $uni_ROM_Div1;5
+  ChangeUnitPool = $uni_ROM_Cav1;3
+  ChangeUnitPool = $uni_ROM_Art1;5
+  ChangeUnitPool = $uni_ROM_Hq1;0
+  ChangeUnitPool = $uni_ROM_Sup1;10
+  ChangeUnitPool = $uni_ROM_GB1;5
+  ChangeUnitPool = $uni_ROM_TR1;2
+  ChangeUnitPool = $uni_ROM_RT1;3
+  ChangeUnitPool = $uni_ROM_RT2;5
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RumanianDOW_NoCheck|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex = 10;22
+  EvalEvent = evt_nam_RED_RumanianDOW_Tracker;=;0
+
+Actions
+  ChangeFacMorale = -1
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_CMN_RumanianDOWNo;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_RumanianDOWNo;1;NULL;NULL;NULL
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_CaucasianDOW_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEngagementPts = >=;5
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_CaucasianDOW.png;Title;opt_title_RED_CaucasianDOWDNO;MsgString;opt_desc_RED_CaucasianDOWDNO;ToolString;opt_hint_RED_CaucasianDOWDNO;SubType;RED_CaucasianDOW;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_CaucasianDOW_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_CaucasianDOW_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionDip;RED_CaucasianDOW;=;1
+
+Actions
+  ChangeFacMorale = 2
+  GenTextMsg  = opt_notify_RED_CaucasianDOW;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_CaucasianDOW;1;NULL;NULL;NULL
+
+  ChgEvtOccurs = evt_nam_GER_CaucasusJoin_Generate;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_TUR_CaucasusIntervention1;MaxOccurs;1
+
+  ChgEvtOccurs = evt_nam_TUR_CaucasusIntervention2;MaxOccurs;1
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_CaucasusJoin
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_CaucasianDOW
+
+  ChgEvtOccurs = evt_nam_RED_CaucasianDOW_Tracker;CuOccurs;1
+
+  ChgEvtOccurs = evt_nam_RED_TiflisControlled;MaxOccurs;15
+  NULL = NULL
+
+SelectRegion = $Baku
+
+SelectFaction = $RED
+SelectRegion = $Baku
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Baku Bolshevik Coup
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pol
+  SetName = Baku Soviet
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 1st Baku Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 2nd Baku Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 3rd Baku Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SetName = Baku Bty
+  Apply
+
+SelectFaction = $GER
+SelectRegion = $Baku
+  SelectSubUnits = Region $Baku;FactionTags RED
+
+SelectFaction = $RED
+SelectRegion = $Baku
+  AlterCuSubUnit = Move In
+  NULL = NULL
+
+SelectFaction = $CMN
+SelectRegion = $Sukhumi
+
+SelectRegion = $Sukhumi
+  SelectRegion = $Sukhumi
+  BlockState = 0
+
+SelectRegion = $Tyrnyauz
+  SelectRegion = $Tyrnyauz
+  BlockState = 0
+
+SelectRegion = $Oni
+  SelectRegion = $Oni
+  BlockState = 0
+
+SelectRegion = $Kazbek
+  SelectRegion = $Kazbek
+  BlockState = 0
+
+SelectRegion = $Tskhinvali
+  SelectRegion = $Tskhinvali
+  BlockState = 0
+
+SelectRegion = $Sachkere
+  SelectRegion = $Sachkere
+  BlockState = 0
+
+SelectRegion = $Kutaisi
+  SelectRegion = $Kutaisi
+  BlockState = 0
+
+SelectRegion = $Poti
+  SelectRegion = $Poti
+  BlockState = 0
+
+SelectRegion = $Batumi
+  SelectRegion = $Batumi
+  BlockState = 0
+
+SelectRegion = $Ozurgeti
+  SelectRegion = $Ozurgeti
+  BlockState = 0
+
+SelectRegion = $Khulo
+  SelectRegion = $Khulo
+  BlockState = 0
+
+SelectRegion = $Borzhomi
+  SelectRegion = $Borzhomi
+  BlockState = 0
+
+SelectRegion = $Tiflis
+  SelectRegion = $Tiflis
+  BlockState = 0
+
+SelectRegion = $Vale
+  SelectRegion = $Vale
+  BlockState = 0
+
+SelectRegion = $Kareli
+  SelectRegion = $Kareli
+  BlockState = 0
+
+SelectRegion = $Dusheti
+  SelectRegion = $Dusheti
+  BlockState = 0
+
+SelectRegion = $Kaspi
+  SelectRegion = $Kaspi
+  BlockState = 0
+
+SelectRegion = $Telavi
+  SelectRegion = $Telavi
+  BlockState = 0
+
+SelectRegion = $Vanadzor
+  SelectRegion = $Vanadzor
+  BlockState = 0
+
+SelectRegion = $Kvareli
+  SelectRegion = $Kvareli
+  BlockState = 0
+
+SelectRegion = $Gori
+  SelectRegion = $Gori
+  BlockState = 0
+
+SelectRegion = $Elizavetpol
+  SelectRegion = $Elizavetpol
+  BlockState = 0
+
+SelectRegion = $Slavyanka
+  SelectRegion = $Slavyanka
+  BlockState = 0
+
+SelectRegion = $Xanlar
+  SelectRegion = $Xanlar
+  BlockState = 0
+
+SelectRegion = $Goris
+  SelectRegion = $Goris
+  BlockState = 0
+
+SelectRegion = $Kajaran
+  SelectRegion = $Kajaran
+  BlockState = 0
+
+SelectRegion = $Astara
+  SelectRegion = $Astara
+  BlockState = 0
+
+SelectRegion = $Pushkino
+  SelectRegion = $Pushkino
+  BlockState = 0
+
+SelectRegion = $Baku
+  SelectRegion = $Baku
+  BlockState = 0
+
+SelectRegion = $Bidzhov
+  SelectRegion = $Bidzhov
+  BlockState = 0
+
+SelectRegion = $Ivanovka
+  SelectRegion = $Ivanovka
+  BlockState = 0
+
+SelectRegion = $Seki
+  SelectRegion = $Seki
+  BlockState = 0
+
+SelectRegion = $Lenkoran
+  SelectRegion = $Lenkoran
+  BlockState = 0
+
+SelectRegion = $Sabirabad
+  SelectRegion = $Sabirabad
+  BlockState = 0
+
+SelectRegion = $Barda
+  SelectRegion = $Barda
+  BlockState = 0
+
+SelectRegion = $Safaraliyev
+  SelectRegion = $Safaraliyev
+  BlockState = 0
+
+SelectRegion = $Agdam
+  SelectRegion = $Agdam
+  BlockState = 0
+
+SelectRegion = $Goradiz
+  SelectRegion = $Goradiz
+  BlockState = 0
+
+SelectRegion = $Gyumri
+  SelectRegion = $Gyumri
+  BlockState = 0
+
+SelectRegion = $Dilijan
+  SelectRegion = $Dilijan
+  BlockState = 0
+
+SelectRegion = $Erevan
+  SelectRegion = $Erevan
+  BlockState = 0
+
+SelectRegion = $Igdir
+  SelectRegion = $Igdir
+  BlockState = 0
+
+SelectRegion = $Ararat
+  SelectRegion = $Ararat
+  BlockState = 0
+
+SelectRegion = $Sadarak
+  SelectRegion = $Sadarak
+  BlockState = 0
+
+SelectRegion = $Sevan
+  SelectRegion = $Sevan
+  BlockState = 0
+
+SelectRegion = $Nakhitchevan
+  SelectRegion = $Nakhitchevan
+  BlockState = 0
+
+SelectFaction = $GER
+  SelectSubUnits = Area $Area_Georgia ;FriendAndSelf;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 0
+  SelectSubUnits = Area $Area_Armenia;FriendAndSelf;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 0
+  SelectSubUnits = Area $Area_Azerbaijan;FriendAndSelf;OnlyNPermFixed
+  AlterCuSubUnit = AlterCuSubUnit;ApplyToList;SetFixing 0
+  NULL = NULL
+  ChangeUnitPool = $uni_CAU_Rgt1;25
+  ChangeUnitPool = $uni_CAU_Mon;15
+  ChangeUnitPool = $uni_CAU_Cav1;5
+  ChangeUnitPool = $uni_CAU_Art1;5
+  ChangeUnitPool = $uni_CAU_Art2;5
+  ChangeUnitPool = $uni_CAU_Art5;5
+  ChangeUnitPool = $uni_CAU_Sig;1
+  ChangeUnitPool = $uni_CAU_Eng;3
+  ChangeUnitPool = $uni_CAU_Bas1;1
+  ChangeUnitPool = $uni_CAU_Amc;2
+  ChangeUnitPool = $uni_CAU_Amt;5
+  ChangeUnitPool = $uni_CAU_Sup;15
+  ChangeUnitPool = $uni_CAU_Mil1;20
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_CaucasianDOW_NoCheck|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex = 10;22
+  EvalEvent = evt_nam_RED_CaucasianDOW_Tracker;=;0
+
+Actions
+  ChangeFacMorale = -1
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_CMN_CaucasianDOWNo;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_CaucasianDOWNo;1;NULL;NULL;NULL
+
+EndEvent

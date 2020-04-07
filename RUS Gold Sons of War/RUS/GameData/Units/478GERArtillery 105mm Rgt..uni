@@ -1,0 +1,16 @@
+UID = 478
+NationTag = GER
+Name = Artillery 105mm Rgt.
+Alias = uni_GER_Art2
+ForcePool = 6
+ShortName = 105mm Bty.
+Text = $uni_GER_Art2_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Art2|1
+FamilyType0 = $famLightArty|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = 1. FeldArtillerie-Regiment|2. FeldArtillerie-Regiment|3. FeldArtillerie-Regiment|4. FeldArtillerie-Regiment|5. FeldArtillerie-Regiment|6. FeldArtillerie-Regiment|7. FeldArtillerie-Regiment|8. FeldArtillerie-Regiment|9. FeldArtillerie-Regiment|10. FeldArtillerie-Regiment|11. FeldArtillerie-Regiment|12. FeldArtillerie-Regiment|13. FeldArtillerie-Regiment|14. FeldArtillerie-Regiment|15. FeldArtillerie-Regiment|16. FeldArtillerie-Regiment|17. FeldArtillerie-Regiment|18. FeldArtillerie-Regiment|19. FeldArtillerie-Regiment|20. FeldArtillerie-Regiment

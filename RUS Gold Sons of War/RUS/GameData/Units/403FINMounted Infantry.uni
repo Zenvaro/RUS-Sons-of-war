@@ -1,0 +1,16 @@
+UID = 403
+NationTag = FIN
+Name = Mounted Infantry
+Alias = uni_FIN_Inf7
+ForcePool = 2
+ShortName = Mtd. Inf. Rgt.
+Text = $uni_FIN_Inf7_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_FIN_Inf6|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Finns
+CustomNames = Uudenmaa Dragons Rgt|Hameenmaa Dragons Rgt|2nd Karelia Mounted Jagers|3rd Karelia Mounted Jagers

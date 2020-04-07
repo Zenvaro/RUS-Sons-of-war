@@ -1,0 +1,14 @@
+UID = 683
+NationTag = ANA
+Name = Guerrilla warbands
+Alias = uni_ANA_Inf1
+ForcePool = 6
+ShortName = Guerilla Rgt.
+Text = $uni_ANA_Inf1_txt
+Color = $colANARegular 
+ModelType0 = $mdl_ANA_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

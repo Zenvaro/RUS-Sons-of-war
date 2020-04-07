@@ -1,0 +1,17 @@
+UID = 1555
+NationTag = AUS
+Name = S. Boroëvic von Bojna
+Alias = uni_AUS_Boroevic3
+ForcePool = -1
+ShortName = Von Bojna
+Text = $uni_AUS_Boroevic3_txt
+Color = $colAUSRegular 
+ModelType0 = $ldr_AUS_Boroevic3|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,139 @@
+
+SelectFaction = $CMN
+SelectRegion = $Arkhangelsk
+
+SelectFaction = $CMN
+SelectRegion = $Arkhangelsk
+StartEvent = evt_nam_CMN_BritishOutOfRussia|1|1|NULL|NULL|$Arkhangelsk|NULL
+
+Conditions
+  MinDate = 1919/10/20
+  EvalEvent = evt_nam_CMN_BritishEvacuationWarning;=;1
+
+Actions
+
+SelectFaction = $WHI
+  SelectSubUnits = Area $Theater_Southern;Models $mdl_GBR_Sup
+  AlterCuSubUnit = ApplyToList;probability 75;Model $mdl_WHI_Sup
+
+SelectFaction = $WH3
+  SelectSubUnits = Area $Theater_Central_Asia;Models $mdl_GBR_Sup
+  AlterCuSubUnit = ApplyToList;probability 75;Model $mdl_WHI_Sup
+  SelectSubUnits = Area $Theater_Eastern;Models $mdl_GBR_Sup
+  AlterCuSubUnit = ApplyToList;probability 100;Model $mdl_WHI_Sup
+
+SelectFaction = $WHI
+  SelectSubUnits = FactionTags GBR
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+  SelectSubUnits = FactionTags GBR
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+  SelectSubUnits = Area $Theater_Northern;FactionTags FRA
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags FRA
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Area $Theater_Belarus;FactionTags FRA
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Area $Theater_Volga;FactionTags FRA
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Area $Theater_Ural;FactionTags FRA
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Area $Theater_Finland;FactionTags FRA
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $CMN
+SelectRegion = $Persia
+
+SelectRegion = $Persia
+  SelectRegion = $Persia
+  BlockState = 2
+
+SelectFaction = $WH3
+SelectRegion = $Persia
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = RED
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+StartEvent = evt_nam_WHI_47THSquadronGoesWhiteA|1|1|NULL|NULL|$Sevastopol|NULL
+
+Conditions
+  MinDate = 1919/08/15
+  EvalEvent = evt_nam_CMN_BritishOutOfRussia;=;1
+
+EvalRgnOwned = $Sevastopol
+
+Actions
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  SetName = RAF 47th Squadron
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Bas1
+  FlavorName = Major Collishaw
+  SUFlavorName = 47th Squadron Airbase|47th Recon Sqd|47th Fighter Sqd|47th Bomber Sqd
+  SetLevel = 2
+  SetName = 47th Squadron
+  Apply
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Arkhangelsk
+
+SelectFaction = $CMN
+SelectRegion = $Arkhangelsk
+StartEvent = evt_nam_WHI_USLeaveRussia|1|1|NULL|NULL|$Arkhangelsk|NULL
+
+Conditions
+  MinDate = 1919/08/15
+  EvalEvent = evt_nam_CMN_BritishEvacuationWarning;=;1
+
+Actions
+
+SelectFaction = $WHI
+  SelectSubUnits = Area $Theater_Northern;Models $mdl_USA_Sup
+  AlterCuSubUnit = ApplyToList;probability 75;Model $mdl_WHI_Sup
+
+SelectFaction = $WH3
+  SelectSubUnits = Area $Theater_Eastern;Models $mdl_USA_Sup
+  AlterCuSubUnit = ApplyToList;probability 100;Model $mdl_WHI_Sup
+
+SelectFaction = $WHI
+  SelectSubUnits = FactionTags USA
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+  SelectSubUnits = FactionTags USA
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Arkhangelsk
+
+SelectFaction = $CMN
+SelectRegion = $Arkhangelsk
+StartEvent = evt_nam_CMN_BritishEvacuationWarning|1|2|evt_txt_CMN_BritishEvacuationWarning|Event-img_CMN_BritishEvacuation|$Arkhangelsk|NULL
+
+Conditions
+  MinDate = 1919/07/01
+
+Actions
+
+EndEvent
+

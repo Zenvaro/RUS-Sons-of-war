@@ -1,0 +1,10 @@
+UID = 128
+Name = $abi_nam_Caucasian
+Alias = Caucasian
+Kind = $abiIDFlag
+Text = $abi_txt_Caucasian
+ImageID = abi_Armenian.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1

@@ -1,0 +1,10 @@
+UID = 133
+Name = $abi_nam_Naval_Screener
+Alias = Naval_Screener
+Kind = $abiFlavor
+Text = $abi_txt_Naval_Screener
+ImageID = abi_Naval_Screener.png
+Color = $colAbi_Red
+Appliance = Self
+Family = 0
+Level = 1

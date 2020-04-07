@@ -1,0 +1,15 @@
+UID = 72
+NationTag = RED
+Name = Marines
+Alias = uni_RED_Mar
+ForcePool = 20
+ShortName = Marines Rgt.
+Text = $uni_RED_Mar_txt
+Color = $colREDNavy
+ModelType0 = $mdl_RED_Mar|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 1
+Area = $Recruit_Russians

@@ -1,0 +1,14 @@
+UID = 171
+NationTag = WHI
+Name = Junkers Battalion
+Alias = uni_WHI_Rgt0
+ForcePool = 6
+ShortName = Junkers
+Text = $uni_WHI_Rgt0_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Inf11|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

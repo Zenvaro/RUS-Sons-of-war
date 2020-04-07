@@ -1,0 +1,16 @@
+UID = 670
+NationTag = GRN
+Name = Karelian Nationalists
+Alias = uni_GRN_Lit0
+ForcePool = 6
+ShortName = Karelians
+Text = $uni_GRN_Lit0_txt
+Color = $colGRNRegular 
+ModelType0 = $mdl_GRN_Lit0|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Karelia
+CustomNames = Karelian Nationalists

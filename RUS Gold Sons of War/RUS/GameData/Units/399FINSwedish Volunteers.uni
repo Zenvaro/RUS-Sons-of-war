@@ -1,0 +1,15 @@
+UID = 399
+NationTag = FIN
+Name = Swedish Volunteers
+Alias = uni_FIN_Inf3
+ForcePool = 8
+ShortName = Swe. Vol. Rgt.
+Text = $uni_FIN_Inf3_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_FIN_Inf9|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Finns

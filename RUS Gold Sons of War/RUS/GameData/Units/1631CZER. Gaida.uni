@@ -1,0 +1,17 @@
+UID = 1631
+NationTag = WH3
+Name = R. Gaida
+Alias = uni_CZE_Gaida1
+ForcePool = -1
+ShortName = Gaida
+Text = $uni_CZE_Gaida1_txt
+Color = $colWH3Regular 
+ModelType0 = $ldr_CZE_Gaida1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

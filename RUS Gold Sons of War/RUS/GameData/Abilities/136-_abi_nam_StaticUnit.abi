@@ -1,0 +1,10 @@
+UID = 136
+Name = $abi_nam_StaticUnit
+Alias = Static
+Kind = $abiFlavor
+Text = $abi_txt_StaticUnit
+ImageID = abi_nomove.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1

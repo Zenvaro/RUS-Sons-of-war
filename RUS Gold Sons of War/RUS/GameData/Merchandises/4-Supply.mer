@@ -1,0 +1,9 @@
+UID = 4
+Alias = resSupply
+Name = $res_nam_Supply
+ShortName = $res_shortnam_Supply
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *SupplyAsset*

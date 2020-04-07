@@ -1,0 +1,16 @@
+UID = 378
+NationTag = WH5
+Name = Light Infantry Rgt
+Alias = uni_WH5_Lit
+ForcePool = 6
+ShortName = Lt. Inf. Rgt.
+Text = $uni_WH5_Lit_txt
+Color = $colWH5Regular 
+ModelType0 = $mdl_WH5_Bat|1
+FamilyType0 = $famLightInf|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_NorthernWhites
+CustomNames = Shenkursk Special Btn|Special Frontier Btn|Dvina Special Btn|Arkhangelsk Special Btn|Onega Special Btn|Onolets Special Btn|Bereznik Special Btn|Dvinskoy Special Btn|Konocha Special Btn|Nyandoma Special Btn

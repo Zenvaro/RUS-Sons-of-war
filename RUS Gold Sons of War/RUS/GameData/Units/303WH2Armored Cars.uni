@@ -1,0 +1,16 @@
+UID = 303
+NationTag = WH2
+Name = Armored Cars
+Alias = uni_WH2_Amc
+ForcePool = 2
+ShortName = Arm. Cars
+Text = $uni_WH2_Amc_txt
+Color = $colWH2Regular 
+ModelType0 = $mdl_WHI_Amc|1
+FamilyType0 = $famLtVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Komuch
+CustomNames = Simbirsk Armored Platoon|Komuch Armored Platoon|Samara Armored Platoon|Kazan Armored Platoon|Ufa Armored Platoon

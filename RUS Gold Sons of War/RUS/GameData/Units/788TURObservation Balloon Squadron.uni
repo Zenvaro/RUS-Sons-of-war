@@ -1,0 +1,16 @@
+UID = 788
+NationTag = TUR
+Name = Observation Balloon Squadron
+Alias = uni_TUR_Bal1
+ForcePool = 2
+ShortName = Balloon Squadron
+Text = $uni_TUR_Bal1_txt
+Color = $colTURRegular 
+SymbolID = symbol_Air.png
+ModelType0 = $mdl_TUR_Bal|1
+FamilyType0 = $famAirRecon|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Turks

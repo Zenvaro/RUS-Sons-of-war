@@ -1,0 +1,14 @@
+UID = 808
+NationTag = FRA
+Name = Colonial Rgt
+Alias = uni_FRA_Rgt4
+ForcePool = 6
+ShortName = Col. Inf. Rgt.
+Text = $uni_FRA_Rgt4_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_FRA_Inf2|2
+FamilyType0 = $famLine|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 2

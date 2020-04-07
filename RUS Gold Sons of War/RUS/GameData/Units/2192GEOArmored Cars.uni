@@ -1,0 +1,15 @@
+UID = 2192
+NationTag = GEO
+Name = Armored Cars
+Alias = uni_GEO_Amc
+ForcePool = 12
+ShortName = Arm. Cars
+Text = $uni_CAU_Amc_txt
+Color = $colGEORegular 
+ModelType0 = $mdl_CAU_Amc|1
+FamilyType0 = $famLtVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Area_Georgia

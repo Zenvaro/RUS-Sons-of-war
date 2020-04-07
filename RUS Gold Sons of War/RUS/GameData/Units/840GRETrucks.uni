@@ -1,0 +1,14 @@
+UID = 840
+NationTag = GRE
+Name = Trucks
+Alias = uni_GRE_Tru
+ForcePool = 12
+ShortName = Trucks
+Text = $uni_GRE_Tru_txt
+Color = $colGRERegular 
+ModelType0 = $mdl_GRE_Tru|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

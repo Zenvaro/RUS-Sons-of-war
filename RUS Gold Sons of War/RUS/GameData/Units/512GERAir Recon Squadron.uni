@@ -1,0 +1,17 @@
+UID = 512
+NationTag = GER
+Name = Air Recon Squadron
+Alias = uni_GER_Air1
+ForcePool = 2
+ShortName = Rec. Air Sqd.
+Text = $uni_GER_Air1_txt
+Color = $colGERRegular 
+SymbolID = symbol_Air.png
+ModelType0 = $mdl_GER_Air1|2
+FamilyType0 = $famAirRecon|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = 1. Aufklaerunggeschwader|2. Aufklaerunggeschwader|3.  Aufklaerunggeschwader|4. Aufklaerunggeschwader|5. Aufklaerunggeschwader|6. Aufklaerunggeschwader|7. Aufklaerunggeschwader|8. Aufklaerunggeschwader|9. Aufklaerunggeschwader|10. Aufklaerunggeschwader|11. Aufklaerunggeschwader|12. Aufklaerunggeschwader|13. Aufklaerunggeschwader|14. Aufklaerunggeschwader|15. Aufklaerunggeschwader|16. Aufklaerunggeschwader|17. Aufklaerunggeschwader|18. Aufklaerunggeschwader|19. Aufklaerunggeschwader|20. Aufklaerunggeschwader|21. Aufklaerunggeschwader|22. Aufklaerunggeschwader|23.  Aufklaerunggeschwader|24. Aufklaerunggeschwader|25. Aufklaerunggeschwader|26. Aufklaerunggeschwader|27. Aufklaerunggeschwader|28. Aufklaerunggeschwader|29. Aufklaerunggeschwader|30. Aufklaerunggeschwader|

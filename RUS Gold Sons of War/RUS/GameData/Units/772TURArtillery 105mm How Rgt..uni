@@ -1,0 +1,16 @@
+UID = 772
+NationTag = TUR
+Name = Artillery 105mm How Rgt.
+Alias = uni_TUR_Art4
+ForcePool = 4
+ShortName = 105mm How Bty.
+Text = $uni_TUR_Art4_txt
+Color = $colTURRegular 
+ModelType0 = $mdl_TUR_Art4|1
+FamilyType0 = $famMedArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Turks
+CustomNames = 1st Medium Artillery Bty|2nd Medium Artillery Bty|3rd Medium Artillery Bty|4th Medium Artillery Bty|5th Medium Artillery Bty|6th Medium Artillery Bty|7th Medium Artillery Bty|8th Medium Artillery Bty|9th Medium Artillery Bty|10th Medium Artillery Bty|11th Medium Artillery Bty|12th Medium Artillery Bty|13th Medium Artillery Bty|14th Medium Artillery Bty|15th Medium Artillery Bty|16th Medium Artillery Bty|17th Medium Artillery Bty|18th Medium Artillery Bty|19th Medium Artillery Bty|20th Medium Artillery Bty|21st Medium Artillery Bty|22nd Medium Artillery Bty|23rd Medium Artillery Bty|24th Medium Artillery Bty|25th Medium Artillery Bty|26th Medium Artillery Bty|27th Medium Artillery Bty|28th Medium Artillery Bty|29th Medium Artillery Bty|30th Medium Artillery Bty|31st Medium Artillery Bty|32nd Medium Artillery Bty|33rd Medium Artillery Bty|34th Medium Artillery Bty|35th Medium Artillery Bty|36th Medium Artillery Bty|37th Medium Artillery Bty|38th Medium Artillery Bty|39th Medium Artillery Bty|40th Medium Artillery Bty|41st Medium Artillery Bty|42nd Medium Artillery Bty|43rd Medium Artillery Bty|44th Medium Artillery Bty|45th Medium Artillery Bty|46th Medium Artillery Bty|47th Medium Artillery Bty|48th Medium Artillery Bty|49th Medium Artillery Bty|50th Medium Artillery Bty

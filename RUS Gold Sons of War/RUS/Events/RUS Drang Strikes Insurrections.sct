@@ -1,0 +1,1136 @@
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Germany
+
+SelectFaction = $RED
+SelectRegion = $Germany
+StartEvent = evt_nam_RED_StrikesBurstOut_Germany|0|2|evt_txt_RED_StrikesBurstOut_Germany|Event-img_RED_StrikesBurstOut_Germany|$Germany|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  Probability = 50
+
+Actions
+  DescEvent = evt_desc_StrikesBurstOut_Germany
+
+SelectFaction = $RED
+SelectRegion = $Germany
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = German Strikers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Str1
+  SUFlavorName = Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers
+  SetName = German Strikers
+  Apply
+
+SelectFaction = $GER
+  GenTextMsg  = evt_nam_RED_StrikesBurstOut_Germany;2;evt_txt_RED_StrikesBurstOut_Germany;Event-img_RED_StrikesBurstOut_Germany;NULL
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_StrikesTimer_Germany|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_RED_StrikesBurstOut_Germany;>=;1
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_RED_StrikersHindrance1_Germany|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Germany;>=;3
+
+SelectFaction = $RED
+  SelectSubUnits = $Germany;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -3
+SelectRegion = $Germany
+  ChangeAssetsProd = -10;-10;0;-1;-5;-1
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Germany
+StartEvent = evt_nam_RED_StrikersHindrance5_Germany|1|1|NULL|NULL|$Germany|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Germany;>=;7
+
+SelectFaction = $RED
+  SelectSubUnits = $Germany;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -10
+SelectRegion = $Germany
+  ChangeAssetsProd = -20;-20;0;-5;-10;-2
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 10
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Germany
+
+SelectFaction = $GER
+SelectRegion = $Germany
+StartEvent = evt_nam_GER_StrikersReduced1_Germany|1|0|NULL|NULL|$Germany|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance1_Germany;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Germany;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  ChangeAssetsProd = 10;10;0;1;5;1
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Germany;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Germany;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_StrikersReduced5_Germany|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance5_Germany;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Germany;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  ChangeAssetsProd = 20;20;0;5;7;2
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Germany;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Germany;CuOccurs;0
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+StartEvent = evt_nam_RED_StrikesBurstOut_Kiel|0|2|evt_txt_RED_StrikesBurstOut_Kiel|Event-img_RED_StrikesBurstOut_Kiel|$Kiel|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  Probability = 50
+
+Actions
+  DescEvent = evt_desc_StrikesBurstOut_Kiel
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Kiel Strikers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Str1
+  SUFlavorName = Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers
+  SetName = Kiel Strikers
+  Apply
+
+SelectFaction = $GER
+  GenTextMsg  = evt_nam_RED_StrikesBurstOut_Kiel;2;evt_txt_RED_StrikesBurstOut_Kiel;Event-img_RED_StrikesBurstOut_Kiel;NULL
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_StrikesTimer_Kiel|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_RED_StrikesBurstOut_Kiel;>=;1
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_RED_StrikersHindrance1_Kiel|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Kiel;>=;3
+
+SelectFaction = $RED
+  SelectSubUnits = $Kiel;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -3
+SelectRegion = $Kiel
+  ChangeAssetsProd = -10;-10;0;-1;-5;-1
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+StartEvent = evt_nam_RED_StrikersHindrance5_Kiel|1|1|NULL|NULL|$Kiel|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Kiel;>=;7
+
+SelectFaction = $RED
+  SelectSubUnits = $Kiel;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -10
+SelectRegion = $Kiel
+  ChangeAssetsProd = -20;-20;0;-5;-10;-2
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 10
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+StartEvent = evt_nam_GER_StrikersReduced1_Kiel|1|0|NULL|NULL|$Kiel|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance1_Kiel;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Kiel;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+  ChangeAssetsProd = 10;10;0;1;5;1
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Kiel;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Kiel;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_StrikersReduced5_Kiel|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance5_Kiel;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Kiel;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+  ChangeAssetsProd = 20;20;0;5;7;2
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Kiel;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Kiel;CuOccurs;0
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+StartEvent = evt_nam_RED_StrikesBurstOut_Silesia|0|2|evt_txt_RED_StrikesBurstOut_Silesia|Event-img_RED_StrikesBurstOut_Silesia|$Silesia|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  Probability = 50
+
+Actions
+  DescEvent = evt_desc_StrikesBurstOut_Silesia
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Silesian Strikers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Str1
+  SUFlavorName = Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers
+  SetName = Silesian Strikers
+  Apply
+
+SelectFaction = $GER
+  GenTextMsg  = evt_nam_RED_StrikesBurstOut_Silesia;2;evt_txt_RED_StrikesBurstOut_Silesia;Event-img_RED_StrikesBurstOut_Silesia;NULL
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_StrikesTimer_Silesia|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_RED_StrikesBurstOut_Silesia;>=;1
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_RED_StrikersHindrance1_Silesia|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Silesia;>=;3
+
+SelectFaction = $RED
+  SelectSubUnits = $Silesia;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -3
+SelectRegion = $Silesia
+  ChangeAssetsProd = -10;-10;0;-1;-5;-1
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+StartEvent = evt_nam_RED_StrikersHindrance5_Silesia|1|1|NULL|NULL|$Silesia|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Silesia;>=;7
+
+SelectFaction = $RED
+  SelectSubUnits = $Silesia;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -10
+SelectRegion = $Silesia
+  ChangeAssetsProd = -20;-20;0;-5;-10;-2
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 10
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+StartEvent = evt_nam_GER_StrikersReduced1_Silesia|1|0|NULL|NULL|$Silesia|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance1_Silesia;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Silesia;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+  ChangeAssetsProd = 10;10;0;1;5;1
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Silesia;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Silesia;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_StrikersReduced5_Silesia|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance5_Silesia;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Silesia;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+  ChangeAssetsProd = 20;20;0;5;7;2
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Silesia;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Silesia;CuOccurs;0
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Bavaria
+StartEvent = evt_nam_RED_StrikesBurstOut_Bavaria|0|2|evt_txt_RED_StrikesBurstOut_Bavaria|Event-img_RED_StrikesBurstOut_Bavaria|$Bavaria|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  Probability = 50
+
+Actions
+
+SelectFaction = $RED
+SelectRegion = $Bavaria
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Bavarian Strikers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Str1
+  SUFlavorName = Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers
+  SetName = Bavarian Strikers
+  Apply
+
+SelectFaction = $GER
+  GenTextMsg  = evt_nam_RED_StrikesBurstOut_Bavaria;2;evt_txt_RED_StrikesBurstOut_Bavaria;Event-img_RED_StrikesBurstOut_Bavaria;NULL
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_StrikesTimer_Bavaria|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_RED_StrikesBurstOut_Bavaria;>=;1
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_RED_StrikersHindrance1_Bavaria|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Bavaria;>=;3
+
+SelectFaction = $RED
+  SelectSubUnits = $Bavaria;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -3
+SelectRegion = $Bavaria
+  ChangeAssetsProd = -10;-10;0;-1;-5;-1
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Bavaria
+StartEvent = evt_nam_RED_StrikersHindrance5_Bavaria|1|1|NULL|NULL|$Bavaria|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Bavaria;>=;7
+
+SelectFaction = $RED
+  SelectSubUnits = $Bavaria;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -10
+SelectRegion = $Bavaria
+  ChangeAssetsProd = -20;-20;0;-5;-10;-2
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = 10
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Bavaria
+
+SelectFaction = $GER
+SelectRegion = $Bavaria
+StartEvent = evt_nam_GER_StrikersReduced1_Bavaria|1|0|NULL|NULL|$Bavaria|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance1_Bavaria;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Bavaria;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Bavaria
+  ChangeAssetsProd = 10;10;0;1;5;1
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Bavaria;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Bavaria;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_StrikersReduced5_Bavaria|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance5_Bavaria;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Bavaria;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Bavaria
+  ChangeAssetsProd = 20;20;0;5;7;2
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Bavaria;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Bavaria;CuOccurs;0
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+StartEvent = evt_nam_RED_StrikesBurstOut_Bohemia|0|2|evt_txt_RED_StrikesBurstOut_Bohemia|Event-img_RED_StrikesBurstOut_Bohemia|$Bohemia|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  Probability = 50
+
+Actions
+  DescEvent = evt_desc_StrikesBurstOut_Bohemia
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Bohemian Strikers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Str1
+  SUFlavorName = Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers
+  SetName = Bohemian Strikers
+  Apply
+
+SelectFaction = $GER
+  GenTextMsg  = evt_nam_RED_StrikesBurstOut_Bohemia;2;evt_txt_RED_StrikesBurstOut_Bohemia;Event-img_RED_StrikesBurstOut_Bohemia;NULL
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_StrikesTimer_Bohemia|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_RED_StrikesBurstOut_Bohemia;>=;1
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_RED_StrikersHindrance1_Bohemia|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Bohemia;>=;3
+
+SelectFaction = $RED
+  SelectSubUnits = $Bohemia;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -3
+SelectRegion = $Bohemia
+  ChangeAssetsProd = -10;-10;0;-1;-5;-1
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+StartEvent = evt_nam_RED_StrikersHindrance5_Bohemia|1|1|NULL|NULL|$Bohemia|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Bohemia;>=;7
+
+SelectFaction = $RED
+  SelectSubUnits = $Bohemia;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -10
+SelectRegion = $Bohemia
+  ChangeAssetsProd = -20;-20;0;-5;-10;-2
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 10
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+StartEvent = evt_nam_GER_StrikersReduced1_Bohemia|1|0|NULL|NULL|$Bohemia|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance1_Bohemia;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Bohemia;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+  ChangeAssetsProd = 10;10;0;1;5;1
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Bohemia;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Bohemia;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_StrikersReduced5_Bohemia|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance5_Bohemia;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Bohemia;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Bohemia
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Bohemia
+  ChangeAssetsProd = 20;20;0;5;7;2
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Bohemia;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Bohemia;CuOccurs;0
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Austria
+StartEvent = evt_nam_RED_StrikesBurstOut_Austria|0|2|evt_txt_RED_StrikesBurstOut_Austria|Event-img_RED_StrikesBurstOut_Austria|$Austria|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  Probability = 50
+
+Actions
+  DescEvent = evt_desc_StrikesBurstOut_Austria
+
+SelectFaction = $RED
+SelectRegion = $Austria
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = German Strikers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Str1
+  SUFlavorName = Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers
+  SetName = German Strikers
+  Apply
+
+SelectFaction = $GER
+  GenTextMsg  = evt_nam_RED_StrikesBurstOut_Austria;2;evt_txt_RED_StrikesBurstOut_Austria;Event-img_RED_StrikesBurstOut_Austria;NULL
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_StrikesTimer_Austria|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_RED_StrikesBurstOut_Austria;>=;1
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_RED_StrikersHindrance1_Austria|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Austria;>=;3
+
+SelectFaction = $RED
+  SelectSubUnits = $Austria;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -3
+SelectRegion = $Austria
+  ChangeAssetsProd = -10;-10;0;-1;-5;-1
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Austria
+StartEvent = evt_nam_RED_StrikersHindrance5_Austria|1|1|NULL|NULL|$Austria|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Austria;>=;7
+
+SelectFaction = $RED
+  SelectSubUnits = $Austria;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -10
+SelectRegion = $Austria
+  ChangeAssetsProd = -20;-20;0;-5;-10;-2
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 10
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Austria
+
+SelectFaction = $GER
+SelectRegion = $Austria
+StartEvent = evt_nam_GER_StrikersReduced1_Austria|1|0|NULL|NULL|$Austria|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance1_Austria;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Austria;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Austria
+  ChangeAssetsProd = 10;10;0;1;5;1
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Austria;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Austria;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_StrikersReduced5_Austria|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance5_Austria;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Austria;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Austria
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Austria
+  ChangeAssetsProd = 20;20;0;5;7;2
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Austria;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Austria;CuOccurs;0
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+StartEvent = evt_nam_RED_StrikesBurstOut_Hungary|0|2|evt_txt_RED_StrikesBurstOut_Hungary|Event-img_RED_StrikesBurstOut_Hungary|$Hungary|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  Probability = 50
+
+Actions
+  DescEvent = evt_desc_StrikesBurstOut_Hungary
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Hungarian Strikers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Str1
+  SUFlavorName = Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers|Strikers
+  SetName = Hungarian Strikers
+  Apply
+
+SelectFaction = $GER
+  GenTextMsg  = evt_nam_RED_StrikesBurstOut_Hungary;2;evt_txt_RED_StrikesBurstOut_Hungary;Event-img_RED_StrikesBurstOut_Hungary;NULL
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_StrikesTimer_Hungary|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_RED_StrikesBurstOut_Hungary;>=;1
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_RED_StrikersHindrance1_Hungary|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Hungary;>=;3
+
+SelectFaction = $RED
+  SelectSubUnits = $Hungary;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -3
+SelectRegion = $Hungary
+  ChangeAssetsProd = -10;-10;0;-1;-5;-1
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+StartEvent = evt_nam_RED_StrikersHindrance5_Hungary|1|1|NULL|NULL|$Hungary|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikesTimer_Hungary;>=;7
+
+SelectFaction = $RED
+  SelectSubUnits = $Hungary;FactionTags RED
+  EvalSubUnitCount = >=;5
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = -10
+SelectRegion = $Hungary
+  ChangeAssetsProd = -20;-20;0;-5;-10;-2
+  ChangeLoyaltyFac = -10
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 10
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+StartEvent = evt_nam_GER_StrikersReduced1_Hungary|1|0|NULL|NULL|$Hungary|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance1_Hungary;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Hungary;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+  ChangeAssetsProd = 10;10;0;1;5;1
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Hungary;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Hungary;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_StrikersReduced5_Hungary|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_StrikersHindrance5_Hungary;=;1
+
+SelectFaction = $RED
+  SelectSubUnits = $Hungary;FactionTags RED
+  EvalSubUnitCount = <;1
+
+Actions
+
+SelectFaction = $GER
+  ChangeFacMorale = 1
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+  ChangeAssetsProd = 20;20;0;5;7;2
+
+SelectFaction = $RED
+
+  ChgEvtOccurs = evt_nam_RED_StrikesBurstOut_Hungary;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_StrikesTimer_Hungary;CuOccurs;0
+
+EndEvent

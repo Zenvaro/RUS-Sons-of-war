@@ -1,0 +1,15 @@
+UID = 921
+NationTag = CAU
+Name = Store
+Alias = uni_CAU_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_CAU_Sup2_txt
+Color = $colCAURegular 
+ModelType0 = $mdl_CAU_Store|8
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Caucasians

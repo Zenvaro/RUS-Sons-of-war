@@ -1,0 +1,31 @@
+aiRAR_ReconAndRaidActive = 1	        // Recon and Raid algorithm: activate it or not
+aiCTM_ThreatValInFow = 75 // the value of a medium rate unit, generally
+
+// Fitness calculation
+aiGGF_LandGroupTimePen = 35		// Penalty to the fitness of a group toward a given objective, per turn needed to reach it, i.e (with 30%) if 2 turns away, then the fitness would be 0.7 of 0.7 = 0.49 of the normal one
+
+aiGGF_FitDiscardAtk = 55 		// Minimum fitness needed by a group to attack a region we don't own
+aiGGF_FitDiscardDef = 30 		// Same, but we own the region
+
+aiMSG_CounterGroupMaxDistanceInPercTurn = 100 // Max distance in hundredth of turn 
+
+aiCMN_CbtPwrBigLine = 60    // Combat power of a big line, will exclude it from some less important missions
+
+aiCMN_NavComboTransports = 0 // if 1, most of the naval units are also transports ships, so skip the split combat fleet / transport fleet that the code will do otherwise (default is 0, naval units are not'combo')
+
+// AI Affinities for Leaders DB
+
+// # 2 stars Infantry commander 
+AIAffinity0 = $famElite|150|$famLine|250|$famCavalry|25|$famMedArty|125|$famLightInf|150|$famSkirmisher|150|$famService|220 
+// #Militia commander 
+AIAffinity1 = $famElite|25|$famLine|50|$famMilitia|400|$famCavalry|25|$famHvyArty|0|$famMedArty|0 
+// #3 stars leaders 
+AIAffinity2 = $famElite|125|$famLine|125|$famMilitia|50|$famCavalry|0|$famSupply|150|$famHvyArty|300|$famService|220  
+// #Cavalry commander 
+AIAffinity3 = $famElite|0|$famLine|25|$famMilitia|0|$famCavalry|300|$famSupply|0|$famHvyArty|0|$famMedArty|0 
+// #Bad commander 
+AIAffinity4 = $famElite|0|$famLine|25|$famMilitia|50|$famCavalry|0|$famSupply|0|$famHvyArty|0|$famMedArty|0|$famLightInf|0|$famSkirmisher|0 
+// #Raider 
+AIAffinity5 = $famRaider|300|$famLightInf|125|$famSkirmisher|125|$famLine|25|$famMilitia|20|$famCavalry|50|$famSupply|0|$famHvyArty|0|$famMedArty|0|$famElite|0 
+// #Artillerist 
+AIAffinity6 = $famElite|25|$famLine|50|$famMilitia|25|$famCavalry|0|$famHvyArty|300|$famMedArty|300 

@@ -1,0 +1,16 @@
+UID = 2416
+NationTag = WH3
+Name = Military Police
+Alias = uni_WH3_MP
+ForcePool = 100
+ShortName = Military Police. Rgt.
+Text = $uni_WH3_Cka_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_Inf100|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Russians
+CustomNames = 1st Military Police Dcht|2nd Military Police Dcht|3rd Military Police Dcht|4th Military Police Dcht|5th Military Police Dcht|6th Military Police Dcht|7th Military Police Dcht|8th Military Police Dcht|9th Military Police Dcht|10th Military Police Dcht|11th Military Police Dcht|12th Military Police Dcht|13th Military Police Dcht|14th Military Police Dcht|15th Military Police Dcht|16th Military Police Dcht|17th Military Police Dcht|18th Military Police Dcht|19th Military Police Dcht|20th Military Police Dcht|21st Military Police Dcht|22nd Military Police Dcht|23rd Military Police Dcht|24th Military Police Dcht|25th Military Police Dcht|26th Military Police Dcht|27th Military Police Dcht|28th Military Police Dcht|29th Military Police Dcht|30th Military Police Dcht|31st Military Police Dcht|32nd Military Police Dcht|33rd Military Police Dcht|34th Military Police Dcht|35th Military Police Dcht|36th Military Police Dcht|37th Military Police Dcht|38th Military Police Dcht|39th Military Police Dcht|40th Military Police Dcht|41st Military Police Dcht|42nd Military Police Dcht|43rd Military Police Dcht|44th Military Police Dcht|45th Military Police Dcht|46th Military Police Dcht|47th Military Police Dcht|48th Military Police Dcht|49th Military Police Dcht|50th Military Police Dcht

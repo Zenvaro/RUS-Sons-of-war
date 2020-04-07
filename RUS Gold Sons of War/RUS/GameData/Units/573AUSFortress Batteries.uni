@@ -1,0 +1,15 @@
+UID = 573
+NationTag = AUS
+Name = Fortress Batteries
+Alias = uni_AUS_FtG
+ForcePool = -1
+ShortName = Fortress Batteries
+Text = $uni_AUS_FtG_txt
+Color = $colAUSRegular 
+ModelType0 = $mdl_AUS_FtG|2
+FamilyType0 = $famHvyArty|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 2
+Area = $Recruit_Austrians

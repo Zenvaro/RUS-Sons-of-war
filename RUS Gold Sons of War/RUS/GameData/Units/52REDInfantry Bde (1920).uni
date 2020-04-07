@@ -1,0 +1,17 @@
+UID = 52
+NationTag = RED
+Name = Infantry Bde (1920)
+Alias = uni_RED_Bde7
+ForcePool = 50
+ShortName = Inf. Bde.
+Text = $uni_RED_Bde7_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Inf8|2
+ModelType1 = $mdl_RED_Art4|2
+FamilyType0 = $famLine|2
+FamilyType1 = $famMedArty|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Russians

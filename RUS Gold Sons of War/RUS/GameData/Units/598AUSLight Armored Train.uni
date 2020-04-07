@@ -1,0 +1,16 @@
+UID = 598
+NationTag = AUS
+Name = Light Armored Train
+Alias = uni_AUS_Amt1
+ForcePool = 20
+ShortName = Lt. Arm. Train
+Text = $uni_AUS_Amt1_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_AUS_Amt1|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Austrians
+CustomNames = 1. Pz-Zug|2. Pz-Zug|3. Pz-Zug|4. Pz-Zug|5. Pz-Zug|6. Pz-Zug|7. Pz-Zug|8. Pz-Zug|9. Pz-Zug|10. Pz-Zug|11. Pz-Zug|12. Pz-Zug|13. Pz-Zug|14. Pz-Zug|15. Pz-Zug|16. Pz-Zug|17. Pz-Zug|18. Pz-Zug|19. Pz-Zug|20. Pz-Zug|

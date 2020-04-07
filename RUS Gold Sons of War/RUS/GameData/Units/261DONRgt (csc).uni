@@ -1,0 +1,15 @@
+UID = 261
+NationTag = DON
+Name = Rgt (csc)
+Alias = uni_DON_Rgt0
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_DON_Rgt0_txt
+Color = $colDONRegular 
+ModelType0 = $mdl_DON_Cav6|2
+FamilyType0 = $famCavalry|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Don

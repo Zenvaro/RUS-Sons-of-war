@@ -1,0 +1,72 @@
+UID = 50014
+Bitmap = panel messages_bgd.png
+x = 0
+y = 0
+z = 89
+Anchor = {Bottom Left}
+DragDrop = {None}
+Capacity = 6
+MulScrollAmount = 3
+Coo1 = 220|194|0
+Coo2 = 220|208|0
+Coo3 = 220|222|0
+Coo4 = 220|236|0
+Coo5 = 220|250|0
+Coo6 = 220|264|0
+
+Btn1 = -1|960|165
+Btn2 = -1|976|165
+GameState = stMessages
+
+//Slave0 = Msg Panel Bgd.png|36|30
+//Slave1 = MP message Scroll Infos.png|432|115
+
+Various0 = 180|140|0
+Various1 = 205|140|0
+Various2 = 230|140|0
+Various3 = 180|165|0
+Various4 = 205|165|0
+Various5 = 230|165|0
+Various6 = 190|263|0
+Various7 = 215|263|0
+ 
+// Rectractable panel parameters
+Various8 = .                        // Panel
+Various9 = .                        // Up Button
+Various10 = .                       // Down Button
+Various11 = .                       // Activation Button
+Various12 = .                       // Gears Position
+
+// Priority buttons
+Various13 = .
+Various14 = .
+Various15 = .
+
+Various16 = 0|70|0                 // Position bg hosting progressbar
+Various17 = 10|10|0                // Position progressbar
+
+Param0 = 840				// max message width
+StrParam0 = Msg Line 1024.bmp		// Message Support line
+StrParam1 = .                       // Bg Panel
+StrParam2 = .                       // Gears
+
+
+{ButtonDef}
+Image = panel_message_arrow_up.png
+OverImage = panel_message_arrow_up_HL.png
+DownImage = panel_message_arrow_up_ON.png
+DisaImage = panel_message_arrow_up.png
+Hint = $ScrollUp
+UpAction = ScrollLeft
+ClickSound = $sndLever
+{/ButtonDef}
+
+{ButtonDef}
+Image = panel_message_arrow_down.png
+OverImage = panel_message_arrow_down_HL.png
+DownImage = panel_message_arrow_down_ON.png
+DisaImage = panel_message_arrow_down.png
+Hint = $ScrollDown
+UpAction = ScrollRight
+ClickSound = $sndLever
+{/ButtonDef}

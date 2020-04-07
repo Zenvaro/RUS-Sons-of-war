@@ -1,0 +1,17 @@
+UID = 197
+NationTag = WHI
+Name = Cavalry Bde
+Alias = uni_WHI_Cav4
+ForcePool = 4
+ShortName = Cav. Bde.
+Text = $uni_WHI_Cav4_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Cav1|4
+ModelType1 = $mdl_WHI_Art0|1
+FamilyType0 = $famCavalry|4
+FamilyType1 = $famLightArty|1
+CmdCost = 2
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_SouthernWhites

@@ -1,0 +1,11 @@
+UID = 110
+Name = $abi_nam_DoubleCommand4
+Alias = Russian-Finnish
+Kind = $abiMultiNation
+Text = $abi_txt_DoubleCommand4
+ImageID = abi_Finnish.png
+Color = $colAbi_Tan
+Appliance = Group
+Family = 0
+Level = 1
+StrParam0 = FIN|WHI|WH3|WH2|WH4|WH5|RED

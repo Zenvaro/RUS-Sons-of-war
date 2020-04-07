@@ -1,0 +1,99 @@
+UID = 50011
+Bitmap = FilePick.bmp
+x = 0
+y = 0
+z = 92
+DragDrop = {None}
+Capacity = 17
+Anchor = HCenter VCenter
+GameState = stFilePick
+Coo1 = 60|11|0
+Coo2 = 60|28|0
+Coo3 = 60|45|0
+Coo4 = 60|62|0
+Coo5 = 60|79|0
+Coo6 = 60|96|0
+Coo7 = 60|113|0
+Coo8 = 60|130|0
+Coo9 = 60|147|0
+Coo10 = 60|164|0
+Coo11 = 60|181|0
+Coo12 = 60|198|0
+Coo13 = 60|215|0
+Coo14 = 60|232|0
+Coo15 = 60|249|0
+Coo16 = 60|266|0
+Coo17 = 60|283|0
+
+// Abort
+Btn1 = -1|460|271
+// Up
+Btn2 = -1|460|131
+// Down
+Btn3 = -1|460|160
+// AI Files
+Btn4 = -1|460|39
+// Tutorial Files
+Btn5 = -1|460|3
+
+{ButtonDef}
+Image = MainMenu Abort Norm.png
+OverImage = MainMenu Abort Norm.png
+DownImage = MainMenu Abort Down.png
+Hint = $Cancel
+UpAction = CancelAction
+ClickSound = $sndTick
+{/ButtonDef}
+
+{ButtonDef}
+Image = Main Menu UpArrow Norm.png
+OverImage = Main Menu UpArrow Norm.png
+DownImage = Main Menu UpArrow Down.png
+Hint = $ScrollUp
+UpAction = ScrollLeft
+ClickSound = $sndTab
+{/ButtonDef}
+
+{ButtonDef}
+Image = Main Menu DownArrow Norm.png
+OverImage = Main Menu DownArrow Norm.png
+DownImage = Main Menu DownArrow Down.png
+Hint = $ScrollDown
+UpAction = ScrollRight
+ClickSound = $sndTab
+{/ButtonDef}
+
+{ButtonDef}
+Image = FilePick IA Norm.png
+OverImage = FilePick IA Norm.png
+DownImage = FilePick IA Down.png
+Hint = $SeeAIFiles
+UpAction = SeeAIFiles
+ClickSound = $sndTick
+{/ButtonDef}
+
+{ButtonDef}
+Image = FilePick tutorial Norm.png
+OverImage = FilePick tutorial Norm.png
+DownImage = FilePick tutorial Down.png
+Hint = $SeeTutoFiles
+UpAction = SeeTutoFiles
+ClickSound = $sndTick
+{/ButtonDef}
+
+-----------------------------------
+ Captions & various Coordinates, common pool
+-----------------------------------
+Various0 = 553|040	// ScenName Coo (first line displayed)
+Various1 = 022|013	// x offset and y absolute position for Miniflag (Side1/Side2)
+Various2 = 03|00		// offset for the '.vs' string (base is miniflag position)
+
+-----------------------------------
+Integer params, common pool 
+-----------------------------------
+Param0 = 70	// max nb of char per line
+
+-----------------------------------
+String params, common pool 
+-----------------------------------
+StrParam0  = .

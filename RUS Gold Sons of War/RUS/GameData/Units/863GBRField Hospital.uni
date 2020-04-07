@@ -1,0 +1,14 @@
+UID = 863
+NationTag = GBR
+Name = Field Hospital
+Alias = uni_GBR_Med
+ForcePool = 4
+ShortName = Field Hospital
+Text = $uni_GBR_Med_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Med|2
+FamilyType0 = $famService|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1

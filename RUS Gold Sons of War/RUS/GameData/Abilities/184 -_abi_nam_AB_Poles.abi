@@ -1,0 +1,10 @@
+UID = 184
+Name = $abi_nam_AB_Poles
+Alias = AB_Poles
+Kind = $abiFlavor
+Text = $abi_txt_AB_Poles
+ImageID = abi_Polish.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1

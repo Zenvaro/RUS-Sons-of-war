@@ -1,0 +1,16 @@
+UID = 726
+NationTag = POL
+Name = Mountain Infantry Bde
+Alias = uni_POL_Bde2
+ForcePool = 6
+ShortName = Mont. Bde.
+Text = $uni_POL_Bde2_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_POL_Mon|2
+FamilyType0 = $famElite|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Recruit_Poles
+AltArea = $Area_Galicia

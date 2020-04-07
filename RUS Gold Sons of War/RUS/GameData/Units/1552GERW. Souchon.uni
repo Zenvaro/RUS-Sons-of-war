@@ -1,0 +1,17 @@
+UID = 1552
+NationTag = GER
+Name = W. Souchon
+Alias = uni_GER_Souchon1
+ForcePool = -1
+ShortName = Souchon
+Text = $uni_GER_Souchon1_txt
+Color = $colGERNavy
+ModelType0 = $ldr_GER_Souchon1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

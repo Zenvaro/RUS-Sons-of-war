@@ -1,0 +1,9 @@
+UID = 1
+Alias = resCapital
+Name = $res_nam_Capital
+ShortName = $res_shortnam_Capital
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *CapitalAsset*

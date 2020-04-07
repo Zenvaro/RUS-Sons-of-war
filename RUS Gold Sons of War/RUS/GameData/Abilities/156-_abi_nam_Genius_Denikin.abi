@@ -1,0 +1,15 @@
+UID = 156
+Name = $abi_nam_Genius_Denikin
+Alias = Genius_Denikin
+Kind = $abiCollection
+Text = $abi_txt_Genius_Denikin
+ImageID = abi_Genius.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1
+ProgRate = 0
+Param0 = $Superior_Withdrawer
+Param1 = $CiC_Logistics_Master
+Param2 = $CiC_Army_Administrator
+Param3 = $CiC_Strategist

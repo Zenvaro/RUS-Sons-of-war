@@ -1,0 +1,14 @@
+UID = 696
+NationTag = ANA
+Name = Armored Cars
+Alias = uni_ANA_Amc1
+ForcePool = 12
+ShortName = Arm. Cars
+Text = $uni_ANA_Amc1_txt
+Color = $colANARegular 
+ModelType0 = $mdl_WHI_Amc|1
+FamilyType0 = $famLtVehicle|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

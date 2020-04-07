@@ -1,0 +1,16 @@
+UID = 153
+NationTag = RED
+Name = Reds Guards
+Alias = uni_RED_Mil3
+ForcePool = 6
+ShortName = Militia
+Text = $uni_RED_Mil3_txt
+Color = $colREDMilitia
+SymbolID = symbol_militias.png
+ModelType0 = $mdl_RED_Mil2|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Red Guards Dcht|2nd Red Guards Dcht|3rd Red Guards Dcht|4th Red Guards Dcht|5th Red Guards Dcht|6th Red Guards Dcht|7th Red Guards Dcht|8th Red Guards Dcht|9th Red Guards Dcht|10th Red Guards Dcht|11th Red Guards Dcht|12th Red Guards Dcht|13th Red Guards Dcht|14th Red Guards Dcht|15th Red Guards Dcht|16th Red Guards Dcht|17th Red Guards Dcht|18th Red Guards Dcht|19th Red Guards Dcht|20th Red Guards Dcht|21st Red Guards Dcht|22nd Red Guards Dcht|23rd Red Guards Dcht|24th Red Guards Dcht|25th Red Guards Dcht|26th Red Guards Dcht|27th Red Guards Dcht|28th Red Guards Dcht|29th Red Guards Dcht|30th Red Guards Dcht|31st Red Guards Dcht|32nd Red Guards Dcht|33rd Red Guards Dcht|34th Red Guards Dcht|35th Red Guards Dcht|36th Red Guards Dcht|37th Red Guards Dcht|38th Red Guards Dcht|39th Red Guards Dcht|40th Red Guards Dcht|41st Red Guards Dcht|42nd Red Guards Dcht|43rd Red Guards Dcht|44th Red Guards Dcht|45th Red Guards Dcht|46th Red Guards Dcht|47th Red Guards Dcht|48th Red Guards Dcht|49th Red Guards Dcht|50th Red Guards Dcht|51th Red Guards Dcht|52nd Red Guards Dcht|53rd Red Guards Dcht|54th Red Guards Dcht|55th Red Guards Dcht|56th Red Guards Dcht|57th Red Guards Dcht|58th Red Guards Dcht|59th Red Guards Dcht|60th Red Guards Dcht|61st Red Guards Dcht|62nd Red Guards Dcht|63rd Red Guards Dcht|64th Red Guards Dcht|65th Red Guards Dcht|66th Red Guards Dcht|67th Red Guards Dcht|68th Red Guards Dcht|69th Red Guards Dcht|70th Red Guards Dcht|71st Red Guards Dcht|72nd Red Guards Dcht|73rd Red Guards Dcht|74th Red Guards Dcht|75th Red Guards Dcht|76th Red Guards Dcht|77th Red Guards Dcht|78th Red Guards Dcht|79th Red Guards Dcht|80th Red Guards Dcht

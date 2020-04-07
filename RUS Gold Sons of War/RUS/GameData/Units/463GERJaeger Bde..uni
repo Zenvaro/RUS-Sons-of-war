@@ -1,0 +1,17 @@
+UID = 463
+NationTag = GER
+Name = Jaeger Bde.
+Alias = uni_GER_Bde9
+ForcePool = 5
+ShortName = Jaeger Bde
+Text = $uni_GER_Bde9_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Lit|3
+FamilyType0 = $famLeader|1
+FamilyType1 = $famLightInf|3
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 3
+Area = $Recruit_Germans
+CustomNames = 1. Jaeger-Brigade|2. Jaeger-Brigade|3. Jaeger-Brigade|4. Jaeger-Brigade|5. Jaeger-Brigade|6. Jaeger-Brigade|7. Jaeger-Brigade|8. Jaeger-Brigade|9. Jaeger-Brigade|10. Jaeger-Brigade|11. Jaeger-Brigade|12. Jaeger-Brigade|13. Jaeger-Brigade|14. Jaeger-Brigade|15. Jaeger-Brigade|16. Jaeger-Brigade|17. Jaeger-Brigade|18. Jaeger-Brigade|19. Jaeger-Brigade|20. Jaeger-Brigade

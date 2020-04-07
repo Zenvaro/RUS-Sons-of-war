@@ -1,0 +1,2697 @@
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Riga
+
+StartEvent = evt_nam_BAL_BalticArmies|1|2|evt_txt_BAL_BalticArmies|Event-img_CMN_BalticAtWar|$Riga|NULL
+
+Conditions
+
+  MinDate = 1919/01/02
+
+Actions
+
+SelectFaction = $RED
+  ChgRgnDecisionFP = $rgdTcheka;1
+  ChgRgnDecisionFP = $rgdRequisitions;1
+  ChgRgnDecisionFP = $rgdConscriptions;1
+
+SelectFaction = $CMN
+SelectRegion = $Saaremaa
+
+  BlockState = 0
+
+SelectRegion = $Hanila
+
+  BlockState = 0
+
+SelectRegion = $Parnu
+
+  BlockState = 0
+
+SelectRegion = $Haademeeste
+
+  BlockState = 0
+
+SelectRegion = $Valga
+
+  BlockState = 0
+
+SelectRegion = $Antsla
+
+  BlockState = 0
+
+SelectRegion = $Polva
+
+  BlockState = 0
+
+SelectRegion = $Otepaa
+
+  BlockState = 0
+
+SelectRegion = $Viljandi
+
+  BlockState = 0
+
+SelectRegion = $Tartu
+
+  BlockState = 0
+
+SelectRegion = $Jogeva
+
+  BlockState = 0
+
+SelectRegion = $Paide
+
+  BlockState = 0
+
+SelectRegion = $Haapsalu
+
+  BlockState = 0
+
+SelectRegion = $Tallinn
+
+  BlockState = 0
+
+SelectRegion = $Tapa
+
+  BlockState = 0
+
+SelectRegion = $Rakvere
+
+  BlockState = 0
+
+SelectRegion = $Narva
+
+  BlockState = 0
+
+SelectRegion = $Hiumaa
+
+  BlockState = 0
+
+SelectRegion = $Liepaja
+
+  BlockState = 0
+
+SelectRegion = $Ventspils
+
+  BlockState = 0
+
+SelectRegion = $Dundaga
+
+  BlockState = 0
+
+SelectRegion = $Kolka
+
+  BlockState = 0
+
+SelectRegion = $Talsi
+
+  BlockState = 0
+
+SelectRegion = $Engure
+
+  BlockState = 0
+
+SelectRegion = $Saldus
+
+  BlockState = 0
+
+SelectRegion = $Grobin
+
+  BlockState = 0
+
+SelectRegion = $Jelgava
+
+  BlockState = 0
+
+SelectRegion = $Jurmala
+
+  BlockState = 0
+
+SelectRegion = $Ogre
+
+  BlockState = 0
+
+SelectRegion = $Jekabpils
+
+  BlockState = 0
+
+SelectRegion = $Riga
+
+  BlockState = 0
+
+SelectRegion = $Jaunjelgava
+
+  BlockState = 0
+
+SelectRegion = $Sigulda
+
+  BlockState = 0
+
+SelectRegion = $Saulkrasti
+
+  BlockState = 0
+
+SelectRegion = $Cesis
+
+  BlockState = 0
+
+SelectRegion = $Amata
+
+  BlockState = 0
+
+SelectRegion = $Plavinas
+
+  BlockState = 0
+
+SelectRegion = $Daugavpils
+
+  BlockState = 0
+
+SelectRegion = $Kraslava
+
+  BlockState = 0
+
+SelectRegion = $Rezekne
+
+  BlockState = 0
+
+SelectRegion = $Varakjani
+
+  BlockState = 0
+
+SelectRegion = $Madona
+
+  BlockState = 0
+
+SelectRegion = $Kapsukas
+
+  BlockState = 0
+
+SelectRegion = $Sejny
+
+  BlockState = 0
+
+SelectRegion = $Palanga
+
+  BlockState = 0
+
+SelectRegion = $Kursenai
+
+  BlockState = 0
+
+SelectRegion = $Plunge
+
+  BlockState = 0
+
+SelectRegion = $Tauroggen
+
+  BlockState = 0
+
+SelectRegion = $Kaunas
+
+  BlockState = 0
+
+SelectRegion = $Siauliai
+
+  BlockState = 0
+
+SelectRegion = $Mazeikiai
+
+  BlockState = 0
+
+SelectRegion = $Joniskis
+
+  BlockState = 0
+
+SelectRegion = $Rokiskis
+
+  BlockState = 0
+
+SelectRegion = $Panevezys
+
+  BlockState = 0
+
+SelectRegion = $Zarasai
+
+  BlockState = 0
+
+SelectRegion = $Utena
+
+  BlockState = 0
+
+SelectRegion = $Alytus
+
+  BlockState = 0
+
+SelectRegion = $Salcininkai
+
+  BlockState = 0
+
+SelectRegion = $Pastavy
+
+  BlockState = 0
+
+SelectRegion = $Dzisna
+
+  BlockState = 0
+
+SelectRegion = $Molodechno
+
+  BlockState = 0
+
+SelectRegion = $Ukmerge
+
+  BlockState = 0
+
+SelectRegion = $Olita
+
+  BlockState = 0
+
+SelectRegion = $Vilnius
+
+  BlockState = 0
+
+SelectRegion = $Upper Niemen
+
+  BlockState = 0
+
+SelectRegion = $Daugava
+
+  BlockState = 0
+
+SelectRegion = $Upper Daugava
+
+  BlockState = 0
+
+SelectRegion = $Narva River
+
+  BlockState = 0
+
+SelectRegion = $Peipus Lake
+
+  BlockState = 0
+
+SelectFaction = $EST
+SelectRegion = $Saaremaa
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Hanila
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Parnu
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Haademeeste
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Valga
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Antsla
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Polva
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Otepaa
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Viljandi
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tartu
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Jogeva
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Paide
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Haapsalu
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tallinn
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tapa
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Rakvere
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Narva
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Hiumaa
+
+  ChangeRgnOwner = WHI
+
+SelectFaction = $LAT
+SelectRegion = $Liepaja
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ventspils
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dundaga
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kolka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Talsi
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Engure
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Saldus
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Grobin
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Jelgava
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Jurmala
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ogre
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Jekabpils
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Riga
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Jaunjelgava
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sigulda
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Saulkrasti
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Cesis
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Amata
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Plavinas
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Daugavpils
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kraslava
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Rezekne
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Varakjani
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Madona
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kapsukas
+
+  ChangeRgnOwner = WHI
+
+SelectFaction = $LIT
+SelectRegion = $Sejny
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Palanga
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kursenai
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Plunge
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tauroggen
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kaunas
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Siauliai
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Mazeikiai
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Joniskis
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Rokiskis
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Panevezys
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Zarasai
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Utena
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Alytus
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Pastavy
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dzisna
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Molodechno
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ukmerge
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Vilnius
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Upper Niemen
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Daugava
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Upper Daugava
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Narva River
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Peipus Lake
+
+  ChangeRgnOwner = WHI
+
+SelectFaction = $LIT
+
+  ChangeLoyaltyFac = $Area_Vilnius;80
+  ChangeLoyaltyFac = $Area_Lithuania;100
+
+SelectFaction = $RED
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+
+SelectFaction = $WHI
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+
+SelectFaction = $WH3
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+
+SelectFaction = $LIT
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+  Replacement = LIT;$famLine;6
+  Replacement = LIT;$famCavalry;3
+  Replacement = LIT;$famLightArty;3
+  ChangeUnitPool = $uni_LIT_Cav2;4
+  ChangeUnitPool = $uni_LIT_Mil1;12
+  ChangeUnitPool = $uni_LIT_Bde2;5
+  ChangeUnitPool = $uni_LIT_Bde3;1
+  ChangeUnitPool = $uni_LIT_Art0;3
+  ChangeUnitPool = $uni_LIT_Art1;3
+  ChangeUnitPool = $uni_LIT_Art2;3
+  ChangeUnitPool = $uni_LIT_Art3;3
+  ChangeUnitPool = $uni_LIT_Art4;3
+  ChangeUnitPool = $uni_LIT_Eng;5
+  ChangeUnitPool = $uni_LIT_Med;5
+  ChangeUnitPool = $uni_LIT_Sig;5
+  ChangeUnitPool = $uni_LIT_Sup1;20
+  ChangeUnitPool = $uni_LIT_Amt2;2
+  ChangeUnitPool = $uni_LIT_Amc1;1
+  ChangeUnitPool = $uni_LIT_GB1;2
+  ChangeUnitPool = $uni_LIT_Hq2;1
+  ChangeUnitPool = $uni_LIT_MG0;4
+
+SelectFaction = $LAT
+
+  ChangeLoyaltyFac = $Area_Latvia;100
+
+SelectFaction = $LAT
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+  Replacement = LAT;$famLine;6
+  Replacement = LAT;$famCavalry;3
+  Replacement = LAT;$famLightArty;3
+  ChangeUnitPool = $uni_LAT_Cav2;4
+  ChangeUnitPool = $uni_LAT_Mil1;12
+  ChangeUnitPool = $uni_LAT_Bde2;5
+  ChangeUnitPool = $uni_LAT_Bde3;1
+  ChangeUnitPool = $uni_LAT_Art0;3
+  ChangeUnitPool = $uni_LAT_Art1;3
+  ChangeUnitPool = $uni_LAT_Art2;3
+  ChangeUnitPool = $uni_LAT_Art3;3
+  ChangeUnitPool = $uni_LAT_Art4;3
+  ChangeUnitPool = $uni_LAT_Eng;5
+  ChangeUnitPool = $uni_LAT_Med;5
+  ChangeUnitPool = $uni_LAT_Sig;5
+  ChangeUnitPool = $uni_LAT_Sup1;20
+  ChangeUnitPool = $uni_LAT_Amt2;2
+  ChangeUnitPool = $uni_LAT_Amc1;1
+  ChangeUnitPool = $uni_LAT_GB1;2
+  ChangeUnitPool = $uni_LAT_Hq2;1
+  ChangeUnitPool = $uni_LAT_MG0;4
+
+SelectFaction = $EST
+
+  ChangeLoyaltyFac = $Area_Estonia;100
+
+SelectFaction = $EST
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+  Replacement = EST;$famLine;6
+  Replacement = EST;$famCavalry;3
+  Replacement = EST;$famLightArty;3
+  ChangeUnitPool = $uni_EST_Cav2;4
+  ChangeUnitPool = $uni_EST_Mil1;12
+  ChangeUnitPool = $uni_EST_Bde2;5
+  ChangeUnitPool = $uni_EST_Bde3;1
+  ChangeUnitPool = $uni_EST_Art0;3
+  ChangeUnitPool = $uni_EST_Art1;3
+  ChangeUnitPool = $uni_EST_Art2;3
+  ChangeUnitPool = $uni_EST_Art3;3
+  ChangeUnitPool = $uni_EST_Art4;3
+  ChangeUnitPool = $uni_EST_Eng;5
+  ChangeUnitPool = $uni_EST_Med;5
+  ChangeUnitPool = $uni_EST_Sig;5
+  ChangeUnitPool = $uni_EST_Sup1;20
+  ChangeUnitPool = $uni_EST_Amt2;2
+  ChangeUnitPool = $uni_EST_Amc1;1
+  ChangeUnitPool = $uni_EST_GB1;2
+  ChangeUnitPool = $uni_EST_Hq2;1
+  ChangeUnitPool = $uni_EST_MG0;4
+
+SelectFaction = $RED
+
+  SelectSubUnits = Region $Polotsk;FactionTags RED
+  AlterCuSubUnit = ApplyToList;SetFixing 0
+  SelectSubUnits = Region $Velikiye Luki;FactionTags RED
+  AlterCuSubUnit = ApplyToList;SetFixing 0
+  SelectSubUnits = Region $Luga;FactionTags RED
+  AlterCuSubUnit = ApplyToList;SetFixing 0
+  SelectSubUnits = Region $Yamburg;FactionTags RED
+  AlterCuSubUnit = ApplyToList;SetFixing 0
+  SelectSubUnits = Region $Vitebsk;FactionTags RED
+  AlterCuSubUnit = ApplyToList;SetFixing 0
+  SelectSubUnits = Region $Smolensk;FactionTags RED
+  AlterCuSubUnit = ApplyToList;SetFixing 0
+  SelectSubUnits = Region $Mogilev;FactionTags RED
+  AlterCuSubUnit = ApplyToList;SetFixing 0
+  SelectSubUnits = Region $Gomel;FactionTags RED
+  AlterCuSubUnit = ApplyToList;SetFixing 0
+
+SelectFaction = $EST
+SelectRegion = $Tallinn
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    SetName = Estonian Army
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Laidoner2
+    FlavorName = Estonian Army
+    SetName = J. Laidoner
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Lill1
+    SetName = P. Lill
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Amc1
+    SUFlavorName = Armored Cars
+    SetName = Estonian Armored Cars
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Hq2
+    SetName = Estonian HQ
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Air1
+    SetName = Estonian Airfield
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Mil1
+    SUFlavorName = Estonian Militia|Estonian Militia
+    SetName = Tallinn Defense Militia
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = Estonian Supply
+  Apply
+
+SelectFaction = $EST
+SelectRegion = $Tallinn
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    SetName = Finnish Volunteers
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt2
+    FlavorName = Mjr. Eketrom
+    SUFlavorName = Finnish Vols
+    SetLevel = 1
+    SetName = 1st Finnish Vols Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt2
+    FlavorName = Col. Kalm
+    SUFlavorName = Northern Boys
+    SetLevel = 1
+    SetName = Rgt of the Northern Boys
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt3
+    FlavorName = Col. Kalm
+    SUFlavorName = Swedish Vols
+    SetName = Swedish Vols Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Art1
+    FlavorName = Col. Kalm
+    SUFlavorName = Finnish Bty
+    SetName = Finnish Volunteers Bty
+  Apply
+
+
+SelectFaction = $EST
+SelectRegion = $Narva
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Nav
+    Entranch = 0
+    SetName = Peipus Lake Flottilla
+  Apply
+  CreateUnit
+    SetType = $uni_EST_GB1
+    SUFlavorName = Gunboat|Gunboat|Gunboat|Gunboat
+    SetName = Peipus Lake Flottilla
+  Apply
+
+SelectFaction = $EST
+SelectRegion = $Narva
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 1
+    InCS = 0
+    SetName = Estonian Defense League
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Mil1
+    SUFlavorName = Estonian Militia|Estonian Militia
+    SetName = 1st Estonian Defense Group
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Mil1
+    SUFlavorName = Estonian Militia|Estonian Militia
+    SetName = 2nd Estonian Defense Group
+  Apply
+
+
+SelectFaction = $EST
+SelectRegion = $Tartu
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 1
+    InCS = 0
+    SetName = Tartu Defense Group
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Mil1
+    SUFlavorName = Estonian Militia|Estonian Militia
+    SetName = 1st Tartu Defense Group
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Mil1
+    SUFlavorName = Estonian Militia|Estonian Militia
+    SetName = 2nd Tartu Defense Group
+  Apply
+
+
+SelectFaction = $EST
+SelectRegion = $Tallinn
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 1
+    InCS = 0
+    SetName = Tallinn Defense Group
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Mil1
+    SUFlavorName = Estonian Militia|Estonian Militia
+    SetName = 1st Tallinn Defense Group
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Mil1
+    SUFlavorName = Estonian Militia|Estonian Militia
+    SetName = 2nd Tallinn Defense Group
+  Apply
+
+
+SelectFaction = $EST
+SelectRegion = $Jogeva
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 1
+    InCS = 0
+    SetName = Jogeva Defense Group
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Mil1
+    SUFlavorName = Estonian Militia|Estonian Militia
+    SetName = 1st Jogeva Defense Group
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Mil1
+    SUFlavorName = Estonian Militia|Estonian Militia
+    SetName = 2nd Jogeva Defense Group
+  Apply
+
+
+SelectFaction = $EST
+SelectRegion = $Parnu
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 1
+    InCS = 0
+    SetName = Parnu Defense Group
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Mil1
+    SUFlavorName = Estonian Militia|Estonian Militia
+    SetName = 1st Parnu Defense Group
+  Apply
+
+
+SelectFaction = $EST
+SelectRegion = $Valga
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 1
+    InCS = 0
+    SetName = 3rd Estonian Division
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Larka2
+    SetName = A. Larka
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Podder1
+    SetName = E. Podder
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt0
+    SetName = 7th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt0
+    SetName = 8th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt0
+    SetName = 9th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Cav1
+    SetName = 3rd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Art1
+    SetName = 3rd Artillery Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Sup1
+    SetName = Estonian Supply
+  Apply
+
+
+SelectFaction = $EST
+SelectRegion = $Tallinn
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    SetName = Estonian Armored Trains
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Amt2
+    SUFlavorName = 1st Estonian Armored Train
+    SetName = 1st Estonian Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Amt2
+    SUFlavorName = 2nd Estonian Armored Train
+    SetName = 2nd Estonian Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Amt2
+    SUFlavorName = 3rd Estonian Armored Train
+    SetName = 3rd Estonian Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Amt2
+    SUFlavorName = 4th Estonian Armored Train
+    SetName = 4th Estonian Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Amt2
+    SUFlavorName = 5th Estonian Armored Train
+    SetName = 5th Estonian Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Amt2
+    SUFlavorName = 6th Estonian Armored Train
+    SetName = 6th Estonian Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Amt2
+    SUFlavorName = 7th Estonian Armored Train
+    SetName = 7th Estonian Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Amt2
+    SUFlavorName = 8th Estonian Armored Train
+    SetName = 8th Estonian Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Amt2
+    SUFlavorName = 9th Estonian Armored Train
+    SetName = 9th Estonian Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Amt2
+    SUFlavorName = 10th Estonian Armored Train
+    SetName = 10th Estonian Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Amt2
+    SUFlavorName = 11th Estonian Armored Train
+    SetName = 11th Estonian Armored Train
+  Apply
+
+SelectFaction = $EST
+SelectRegion = $Tallinn
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    SetName = 1st Estonian Division
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Tonisson1
+    FlavorName = 1st Estonian Div.
+    SetName = A. Tonisson
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt0
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt0
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt0
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Cav1
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Art1
+    SetName = 1st Artillery Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Sup1
+    SetName = Estonian Supply
+  Apply
+
+
+SelectFaction = $EST
+SelectRegion = $Parnu
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    SetName = 2nd Estonian Div.
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Soots2
+    SetName = J. Soots
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Puskar1
+    FlavorName = 2nd Estonian Div.
+    SetName = V. Puskar
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt0
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt0
+    SetName = 5th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt0
+    SetName = 6th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Cav1
+    SetName = 2nd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Art1
+    SetName = 2nd Artillery Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_EST_Sup1
+    SetName = Estonian Supply
+  Apply
+
+
+SelectFaction = $LAT
+SelectRegion = $Riga
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 1
+    InCS = 1
+    SetName = Latvian Army
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Balodis2
+    FlavorName = Latvian Army
+    SetName = J. Balodis
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Air1
+    SetName = Latvian Airfield
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Hq2
+    SetName = Latvian HQ
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Mil1
+    SUFlavorName = Estonian Militia|Estonian Militia
+    SetName = Riga Defense Militia
+  Apply
+
+
+SelectFaction = $LAT
+SelectRegion = $Riga
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    SetName = 1st Kurzeme Div.
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Zemitans1
+    FlavorName = 1st Kurzeme Div.
+    SetName = J. Zemitans
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt4
+    FlavorName = Col. Gailitis
+    SUFlavorName = 1st Liepaja
+    SetName = 1st Liepaja Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt4
+    SUFlavorName = 2nd Ventspils
+    SetName = 2nd Ventspils Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt4
+    FlavorName = Col. Dombrovskis
+    SUFlavorName = 3rd Jelgava
+    SetName = 3rd Jelgava Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Cav1
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Art1
+    FlavorName = Col. Fogelmanis
+    SUFlavorName = Kurzeme Arty
+    SetName = Kurzeme Artillery
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
+  Apply
+
+SelectFaction = $LAT
+SelectRegion = $Riga
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    SetName = 4th Zemgalsk Div.
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Purins1
+    FlavorName = 4th Zemgalsk Div.
+    SetName = J. Purins
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt4
+    SetName = 10th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt4
+    SetName = 11th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt4
+    SetName = 12th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Cav1
+    SetName = 4th Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Art1
+    SetName = 4th Latvian Artillery
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
+  Apply
+
+SelectFaction = $LAT
+SelectRegion = $Daugavpils
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    SetName = 2nd Vidzemsk Div.
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Simanson2
+    SetName = D.P. Simanson
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Penikis1
+    FlavorName = 2nd Vidzemsk Div.
+    SetName = M. Penikis
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt4
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt4
+    SetName = 5th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt4
+    SetName = 6th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Cav1
+    SetName = 2nd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Art1
+    SetName = 2nd Latvian Artillery
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
+  Apply
+
+SelectFaction = $LAT
+SelectRegion = $Daugavpils
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    SetName = 3rd Latgalsk Div.
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Radzin2
+    SetName = P.K. Radzin
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Berkis1
+    FlavorName = 3rd Latgalsk Div.
+    SetName = K. Berkis
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt4
+    SetName = 7th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt4
+    SetName = 8th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Rgt4
+    SetName = 9th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Cav1
+    SetName = 3rd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Art1
+    SetName = 3rd Latvian Artillery
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
+  Apply
+
+
+SelectFaction = $LIT
+SelectRegion = $Kaunas
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    SetName = Lithuanian Army
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Zukauskas2
+    FlavorName = Lithuanian Army
+    SetName = S. Zukauskas
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Air1
+    SetName = 1st Lithaunian Airfield
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Hq2
+    SetName = Lithuanian HQ
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Air1
+    SetName = 2nd Lithaunian Airfield
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Cav1
+    SetName = Gusars
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Art2
+    SetName = Artillery
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Sig
+    SetName = Sig. Co.
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Eng
+    SetName = Engeneers
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Amt2
+    SUFlavorName = 1st Lithaunian Armored Train
+    SetName = 1st Lithaunian Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Amt2
+    SUFlavorName = 2nd Lithaunian Armored Train
+    SetName = 2nd Lithaunian Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Amt2
+    SUFlavorName = 3rd Lithaunian Armored Train
+    SetName = 3rd Lithaunian Armored Train
+  Apply
+
+SelectFaction = $LIT
+SelectRegion = $Kaunas
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    SetName = 1st Lithuanian Div.
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Ladyga1
+    FlavorName = 1st Lithuanian Div.
+    SetName = K. Ladyga
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Btn
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Btn
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Btn
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Art1
+    SetName = 1st Latvian Artillery
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
+  Apply
+
+SelectFaction = $LIT
+SelectRegion = $Kaunas
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    SetName = 2nd Lithuanian Div.
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Velikis2
+    SetName = M. Velikis
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Kleshinsky1
+    SetName = K.K. Kleshinsky
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Btn
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Btn
+    SetName = 5th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Btn
+    SetName = 6th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Art1
+    SetName = 2nd Latvian Artillery
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
+  Apply
+
+SelectFaction = $LIT
+SelectRegion = $Kaunas
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    SetName = 3rd Lithuanian Div.
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Nastopka2
+    SetName = S. Nastopka
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Variakojis1
+    SetName = J. Variakojis
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Btn
+    SetName = 7th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Btn
+    SetName = 8th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_BAL_Btn
+    SetName = 9th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Art1
+    SetName = 3rd Latvian Artillery
+  Apply
+  CreateUnit
+    SetType = $uni_LIT_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Yamburg
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    SetName = Baltic Red Guard Group
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Mil3
+    SUFlavorName = Red Guards|Red Guards
+    SetName = 1st Baltic Red Guards
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Mil4
+    SUFlavorName = Red Guards|Red Guards
+    SetName = 2nd Baltic Red Guards
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Mil4
+    SUFlavorName = Red Guards|Red Guards
+    SetName = 3rd Baltic Red Guards
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Kaunas
+
+StartEvent = evt_nam_CMN_GER_Attack_BAL|1|2|evt_txt_CMN_GER_Attack_BAL|Event-img_CMN_GermanOccupation|$Kaunas|NULL
+
+Conditions
+
+  MinDate = 1919/06/21
+
+Actions
+
+SelectFaction = $GER
+
+  SetFacRelationships = WHI;-100
+  SetFacRelationships = WH3;-100
+  SetFacRelationships = RED;-100
+  SetFacRelationships = LIT;-100
+  SetFacRelationships = LAT;-100
+  SetFacRelationships = EST;-100
+
+SelectFaction = $GER
+
+  SelectSubUnits = FactionTags GER
+  AlterCuSubUnit = ApplyToList;SetFixing 0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Kaunas
+
+StartEvent = evt_nam_WHI_FreikorpsinBAL2|1|2|evt_txt_WHI_FreikorpsinBAL2|Event-img_CMN_GermanOstSeeIntervention|$Kaunas|NULL
+
+Conditions
+
+  MinDate = 1919/01/05
+
+Actions
+
+SelectFaction = $GER
+
+  SetFacRelationships = WHI;100
+  SetFacRelationships = WH3;100
+  SetFacRelationships = RED;-100
+  SetFacRelationships = LIT;100
+  SetFacRelationships = LAT;100
+  SetFacRelationships = EST;100
+
+SelectFaction = $GER
+SelectRegion = $Jelgava
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 5
+    InCS = 0
+    FixType = 0
+    SetName = Baltikum Korps
+  Apply
+  CreateUnit
+    GMEParam = 3
+    SetType = $uni_GER_Goltz2
+    FlavorName = Baltikum Korps
+    SetName = R. von der Goltz
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Bde2
+    SetName = 3. Guard Reserve Bde
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_GER_Art4
+    SUFlavorName = Guard Arty
+    SetName = BK Artillerie
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sig
+    SetLevel = 1
+    SetName = BK 706. Signal Bn.
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Amc1
+    SetLevel = 1
+    SetName = BK Aufklaer. Bn.
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Eng
+    SetLevel = 1
+    SetName = BK Genie Truppen
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Tru
+    SetLevel = 1
+    SetName = BK Nachsub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Tru
+    SetLevel = 1
+    SetName = BK Nachsub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Bas1
+    NumCreate = 3
+    SUFlavorName = Flugplatz Nr.37|BK Aufklaerunggeschwader|BK Jagdgeschwader
+    SetLevel = 1
+    SetName = Flugplatz Nr.37
+  Apply
+
+
+SelectFaction = $GER
+SelectRegion = $Riga
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 5
+    InCS = 0
+    FixType = 0
+    SetName = Eiserne Division
+  Apply
+  CreateUnit
+    GMEParam = 6
+    SetType = $uni_GER_Bischoff1
+    FlavorName = Eiserne Division
+    SetName = J. Bischoff
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Mil3
+    FlavorName = von Lossow
+    SUFlavorName = 1. Kurland IR|2. Kurland IR|3. Kurland IR|
+    SetLevel = 1
+    SetName = Kurland Bde
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Rgt0
+    FlavorName = von Kleist
+    SUFlavorName = Kurland Jaegers Bn
+    SetLevel = 1
+    SetName = Kurland Jaegers Bn
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Cav0
+    FlavorName = Poensgen
+    SUFlavorName = Kurland KR
+    SetLevel = 1
+    SetName = Kurland KR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Art3
+    SUFlavorName = Kurland FAR
+    SetLevel = 1
+    SetName = Kurland FAR
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_GER_Art4
+    SUFlavorName = Kurland FAR
+    SetLevel = 1
+    SetName = Kurland FAR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetLevel = 1
+    SetName = Eiserne Division Nachsub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetLevel = 1
+    SetName = Eiserne Division Nachsub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetLevel = 1
+    SetName = Eiserne Division Nachsub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetLevel = 1
+    SetName = Eiserne Division Nachsub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetLevel = 1
+    SetName = Eiserne Division Nachsub
+  Apply
+
+
+SelectFaction = $GER
+SelectRegion = $Siauliai
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 5
+    InCS = 0
+    FixType = 0
+    SetName = Baltic Landeswehr
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_GER_Fletcher1
+    FlavorName = Baltic Landeswehr
+    SetName = A. Fletcher
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Mil3
+    SUFlavorName = 1. Deutsch-Balt Bn|2. Deutsch-Balt Bn|3. Deutsch-Balt Bn
+    SetLevel = 1
+    SetName = BK Kampf Bde
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Mil2
+    FlavorName = A. Lieven
+    SUFlavorName = Prince Lieven Dcht
+    SetLevel = 2
+    SetName = Prinz Lieven RD
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Mil2
+    FlavorName = K. Dydorov
+    SUFlavorName = Captain Dydorov Dcht
+    SetLevel = 1
+    SetName = Dydorov RD
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Bde2
+    SetName = Sued Lat. Bde
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Cav0
+    SUFlavorName = Landeswehr DR
+    SetName = Landeswehr DR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Pio
+    SUFlavorName = 3/28. Brandeburg Pionier Bn
+    SetName = 3/28. Brandeburg Pionier Bn
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_GER_Art1
+    SUFlavorName = DB FAR
+    SetLevel = 1
+    SetName = DB FAR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Baltic Landeswehr Nachschub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Baltic Landeswehr Nachschub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Baltic Landeswehr Nachschub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Baltic Landeswehr Nachschub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Baltic Landeswehr Nachschub
+  Apply
+
+
+SelectFaction = $GER
+SelectRegion = $Kaunas
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 5
+    InCS = 0
+    FixType = 0
+    SetName = 1st Guard Res. Div.
+  Apply
+  CreateUnit
+    GMEParam = 9
+    SetType = $uni_GER_Tiede1
+    FlavorName = 1st Guard Res.
+    SetName = P. Tiede
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Rgt0
+    FlavorName = von Shrotter
+    SUFlavorName = 1. Guard Reserve JR
+    SetName = 2. Guard Reserve JR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Bde2
+    FlavorName = von Brederlow
+    SUFlavorName = 1. Gd Reserve IR|2. Gd Reserve IR|64. Gd Reserve IR|70. Gd Reserve IR|Gd Reserve Bat.
+    SetName = 2. Guard Reserve Bde
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Cav1
+    SUFlavorName = Guard Reserve DR
+    SetName = 2. Guard Reserve DR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Cyc
+    SUFlavorName = GR Aufklaer. Bn
+    SetName = GR Aufklaer. Bn
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Pio
+    SUFlavorName = 1/28. Brandeburg Pionier Bn
+    SetName = 1/28. Brandeburg Pionier Bn
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Pio
+    SUFlavorName = 2/28. Brandeburg Pionier Bn
+    SetName = 2/28. Brandeburg Pionier Bn
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Art3
+    FlavorName = von Schmoller
+    SUFlavorName = Guard Reserve FAR
+    SetName = Guard Reserve FAR
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_GER_Art4
+    FlavorName = Wehring
+    SUFlavorName = Guard Reserve S.FAR
+    SetName = Guard Reserve S.FAR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Garde Reserve Nachschub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Garde Reserve Nachschub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Garde Reserve Nachschub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Garde Reserve Nachschub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Garde Reserve Nachschub
+  Apply
+
+SelectFaction = $GER
+SelectRegion = $Kaunas
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 5
+    InCS = 0
+    FixType = 0
+    SetName = 2nd Infantry Bde
+  Apply
+  CreateUnit
+    GMEParam = 9
+    SetType = $uni_GER_Fleischer1
+    FlavorName = 2nd Inf Bde
+    SetName = C. Fleischer
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Rgt0
+    FlavorName = Lt-Cdr Michael
+    SUFlavorName = Michael KG
+    SetName = Michael KG
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Rgt0
+    FlavorName = Cpt. Von Brandis
+    SUFlavorName = von Brandis KG
+    SetName = von Brandis KG
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Rgt5
+    FlavorName = Mjr. Bockelmann
+    SUFlavorName = Baden Sturm Bn
+    SetName = Baden Sturm Bn
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Rgt0
+    FlavorName = Baroon von Maltzan
+    SUFlavorName = Maltzan Bn
+    SetName = Maltzan Bn
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Cav1
+    FlavorName = Mjr. Yorck
+    SUFlavorName = 2. DR
+    SetName = 2. DR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Art3
+    FlavorName = Mjr. Yorck
+    SUFlavorName = 40. FAR
+    SetName = 40. FAR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Art4
+    FlavorName = Mjr. Yorck
+    SUFlavorName = 26. FAR
+    SetName = 26. FAR
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_GER_Art3
+    SUFlavorName = Garde FAR
+    SetName = Garde FAR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = 2. Brigade Nachschub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = 2. Brigade Nachschub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = 2. Brigade Nachschub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = 2. Brigade Nachschub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = 2. Brigade Nachschub
+  Apply
+
+
+SelectFaction = $GER
+SelectRegion = $Narva
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Infanterie-Regiment Nr. 405
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Rgt0
+    SUFlavorName = Infanterie-Regiment Nr. 405
+    SetName = Infanterie-Regiment Nr. 405
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Infanterie-Regiment Nachschub
+  Apply
+
+
+SelectFaction = $GER
+SelectRegion = $Ventspils
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 5
+    InCS = 0
+    FixType = 0
+    SetName = Ventspils Bde
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Mil3
+    SUFlavorName = 1. Deutsch-Balt Bn|2. Deutsch-Balt Bn|3. Deutsch-Balt Bn
+    SetLevel = 1
+    SetName = BK Kampf Bde
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Ventspils Nachschub
+  Apply
+
+
+SelectFaction = $GER
+SelectRegion = $Liepaja
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 5
+    InCS = 0
+    FixType = 0
+    SetName = Liepaja Bde
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Mil3
+    SUFlavorName = 1. Deutsch-Balt Bn|2. Deutsch-Balt Bn|3. Deutsch-Balt Bn
+    SetLevel = 1
+    SetName = BK Kampf Bde
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Liepaja Nachschub
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareJelgava|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Jelgava;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareRiga|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Riga;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareSiaulia|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Siaulia;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareKaunas|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Kaunas;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareVentspils|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Ventspils;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareLiepaja|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Liepaja;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareAlytus|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Alytus;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_Aicaresejny|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Sejny;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareKapsukas|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Kapsukas;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareTauroggen|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Tauroggen;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareKursenai|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Kursenai;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicarePalanga|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Palanga;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareMazeikiai|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Mazeikiai;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareJoniskis|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Joniskis;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareOgre|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Ogre;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareJurmala|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Jurmala;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareSaldus|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Saldus;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareTalsi|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Talsi;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareDundaga|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Dundaga;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_GER_AicareGrobin|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NOT
+  MinDate = 1919/01/01
+
+Actions
+
+  AI.SetLocalInterest = $Grobin;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Riga
+
+StartEvent = evt_nam_Renforts_CMN_GermanBalticWithdrawal|1|2|evt_txt_Renforts_CMN_GermanBalticWithdrawal|Event-img_Renforts_CMN_GermanBalticWithdrawal|$Riga|NULL
+
+Conditions
+
+  MinDate = 1919/11/01
+
+Actions
+
+SelectFaction = $GER
+
+  SelectSubUnits = FactionTags GER
+  AlterCuSubUnit = ApplytoList;Kill
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Riga
+
+StartEvent = evt_nam_CMN_WVA|1|2|evt_txt_CMN_WVA|Event-img_CMN_WVA|$Riga|NULL
+
+Conditions
+
+  MinDate = 1919/11/01
+
+Actions
+
+SelectFaction = $GER
+SelectRegion = $Riga
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Western Volunteer Army
+  Apply
+  CreateUnit
+    GMEParam = P. Bermondt-Avalov
+    SetCommit = 1
+    SetType = $uni_GER_Bermondt-Avalov2
+    SetName = P. Bermondt-Avalov
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Bde4
+    SetName = Plastun Division
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Hq2
+    SetName = Army HQ
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Art4
+    SetName = 1st Artillery Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Art0
+    SetName = Cavalry Art Bty
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Cav1
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Cav1
+    SetName = Keller Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Rgt5
+    SetName = Reserve Battalion
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Eng
+    SetName = Engeneers
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Air3
+    SetName = Avia Sqdn
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Rgt1
+    SetName = 1st Fusilier Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Art2
+    SetName = Artillery Div
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Cav1
+    SetName = Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Sig
+    SetName = Transmission Co.
+  Apply
+  CreateUnit
+    GMEParam = 3
+    SetType = $uni_GER_Goltz2
+    FlavorName = Baltikum Korps
+    SetName = R. von der Goltz
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Bde2
+    SetName = 3. Guard Reserve Bde
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_GER_Art4
+    SUFlavorName = Guard Arty
+    SetName = BK Artillerie
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sig
+    SetLevel = 1
+    SetName = BK 706. Signal Bn.
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Amc1
+    SetLevel = 1
+    SetName = BK Aufklaer. Bn.
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Eng
+    SetLevel = 1
+    SetName = BK Genie Truppen
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Tru
+    SetLevel = 1
+    SetName = BK Nachsub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Tru
+    SetLevel = 1
+    SetName = BK Nachsub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Bas1
+    NumCreate = 3
+    SUFlavorName = Flugplatz Nr.37|BK Aufklaerunggeschwader|BK Jagdgeschwader
+    SetLevel = 1
+    SetName = Flugplatz Nr.37
+  Apply
+  CreateUnit
+    GMEParam = 6
+    SetType = $uni_GER_Bischoff1
+    FlavorName = Eiserne Division
+    SetName = J. Bischoff
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Mil3
+    FlavorName = von Lossow
+    SUFlavorName = 1. Kurland IR|2. Kurland IR|3. Kurland IR|
+    SetLevel = 1
+    SetName = Kurland Bde
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Rgt0
+    FlavorName = von Kleist
+    SUFlavorName = Kurland Jaegers Bn
+    SetLevel = 1
+    SetName = Kurland Jaegers Bn
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Cav0
+    FlavorName = Poensgen
+    SUFlavorName = Kurland KR
+    SetLevel = 1
+    SetName = Kurland KR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Art3
+    SUFlavorName = Kurland FAR
+    SetLevel = 1
+    SetName = Kurland FAR
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_GER_Art4
+    SUFlavorName = Kurland FAR
+    SetLevel = 1
+    SetName = Kurland FAR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetLevel = 1
+    SetName = Eiserne Division Nachsub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetLevel = 1
+    SetName = Eiserne Division Nachsub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetLevel = 1
+    SetName = Eiserne Division Nachsub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetLevel = 1
+    SetName = Eiserne Division Nachsub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetLevel = 1
+    SetName = Eiserne Division Nachsub
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_GER_Fletcher1
+    FlavorName = Baltic Landeswehr
+    SetName = A. Fletcher
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Mil3
+    SUFlavorName = 1. Deutsch-Balt Bn|2. Deutsch-Balt Bn|3. Deutsch-Balt Bn
+    SetLevel = 1
+    SetName = BK Kampf Bde
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Mil2
+    FlavorName = A. Lieven
+    SUFlavorName = Prince Lieven Dcht
+    SetLevel = 2
+    SetName = Prinz Lieven RD
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Mil2
+    FlavorName = K. Dydorov
+    SUFlavorName = Captain Dydorov Dcht
+    SetLevel = 1
+    SetName = Dydorov RD
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Bde2
+    SetName = Sued Lat. Bde
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Cav0
+    SUFlavorName = Landeswehr DR
+    SetName = Landeswehr DR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Pio
+    SUFlavorName = 3/28. Brandeburg Pionier Bn
+    SetName = 3/28. Brandeburg Pionier Bn
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_GER_Art1
+    SUFlavorName = DB FAR
+    SetLevel = 1
+    SetName = DB FAR
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Baltic Landeswehr Nachschub
+  Apply
+  CreateUnit
+    SetType = $uni_GER_Sup1
+    SetName = Baltic Landeswehr Nachschub
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BalticDOW_AIActivate1|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/02
+  CheckIsPlayer = NOT
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+  AI.SetLocalInterest = $Riga;200
+  AI.SetLocalInterest = $Tallinn;200
+  AI.SetLocalInterest = $Kaunas;200
+  AI.SetLocalInterest = $Narva;100
+  AI.SetLocalInterest = $Parnu;100
+  AI.SetLocalInterest = $Tartu;100
+  AI.SetLocalInterest = $Valga;100
+  AI.SetLocalInterest = $Jelgava;100
+  AI.SetLocalInterest = $Daugavpils;100
+  AI.SetLocalInterest = $Rezekne;100
+  AI.SetLocalInterest = $Ventispils;100
+  AI.SetLocalInterest = $Liepaja;100
+  AI.SetLocalInterest = $Vilnius;100
+  AI.SetLocalInterest = $Siauliai;100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_BalticDOW_AIActivate1|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/02
+  CheckIsPlayer = NOT
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+  AI.SetLocalInterest = $Riga;200
+  AI.SetLocalInterest = $Tallinn;200
+  AI.SetLocalInterest = $Kaunas;200
+  AI.SetLocalInterest = $Narva;100
+  AI.SetLocalInterest = $Parnu;100
+  AI.SetLocalInterest = $Tartu;100
+  AI.SetLocalInterest = $Valga;100
+  AI.SetLocalInterest = $Jelgava;100
+  AI.SetLocalInterest = $Daugavpils;100
+  AI.SetLocalInterest = $Rezekne;100
+  AI.SetLocalInterest = $Ventispils;100
+  AI.SetLocalInterest = $Liepaja;100
+  AI.SetLocalInterest = $Vilnius;100
+  AI.SetLocalInterest = $Siauliai;100
+
+EndEvent
+
+NULL ==========================================================================
+

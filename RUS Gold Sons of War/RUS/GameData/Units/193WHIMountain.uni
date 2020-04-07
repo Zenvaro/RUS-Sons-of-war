@@ -1,0 +1,14 @@
+UID = 193
+NationTag = WHI
+Name = Mountain
+Alias = uni_WHI_Mon
+ForcePool = 4
+ShortName = Mountain Rgt.
+Text = $uni_WHI_Mon_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Mon|2
+FamilyType0 = $famElite|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

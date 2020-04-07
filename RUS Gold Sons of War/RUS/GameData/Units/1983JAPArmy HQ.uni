@@ -1,0 +1,15 @@
+UID = 1983
+NationTag = JAP
+Name = Army HQ
+Alias = uni_JAP_Hq2
+ForcePool = 6
+ShortName = Army HQ
+Text = $uni_UKR_Hq_txt
+Color = $colJAPRegular 
+ModelType0 = $mdl_JAP_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 1
+Area = $Recruit_Russians

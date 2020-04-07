@@ -1,0 +1,14 @@
+UID = 1934
+NationTag = WH3
+Name = Sailors
+Alias = uni_WH3_Sai
+ForcePool = 4
+ShortName = Sailors Rgt.
+Text = $uni_WH3_Sai_txt
+Color = $colWH3Navy
+ModelType0 = $mdl_WHI_Sai|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 1

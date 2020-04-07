@@ -1,0 +1,16 @@
+UID = 2422
+NationTag = SEM
+Name = Semirechie Cossacks Rgt (cavalry)
+Alias = uni_SEM_Cav
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_SEM_Cav3_txt
+Color = $colSEMRegular 
+ModelType0 = $mdl_SEM_Cav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Semipalatinsk
+CustomNames = 1st Semirechie Cossacks Rgt|2nd Semirechie Cossacks Rgt|3rd Semirechie Cossacks Rgt|4th Semirechie Cossacks Rgt|5th Semirechie Cossacks Rgt|6th Semirechie Cossacks Rgt|7th Semirechie Cossacks Rgt|8th Semirechie Cossacks Rgt|9th Semirechie Cossacks Rgt|10th Semirechie Cossacks Rgt|11th Semirechie Cossacks Rgt|12th Semirechie Cossacks Rgt|13th Semirechie Cossacks Rgt|14th Semirechie Cossacks Rgt|15th Semirechie Cossacks Rgt|16th Semirechie Cossacks Rgt|17th Semirechie Cossacks Rgt|18th Semirechie Cossacks Rgt|19th Semirechie Cossacks Rgt|20th Semirechie Cossacks Rgt|21st Semirechie Cossacks Rgt|22nd Semirechie Cossacks Rgt|23rd Semirechie Cossacks Rgt|24th Semirechie Cossacks Rgt|25th Semirechie Cossacks Rgt|26th Semirechie Cossacks Rgt|1st Semirechie Cossacks Rgt|2nd Semirechie Cossacks Rgt|3rd Semirechie Cossacks Rgt|4th Semirechie Cossacks Rgt|5th Semirechie Cossacks Rgt|6th Semirechie Cossacks Rgt|7th Semirechie Cossacks Rgt|8th Semirechie Cossacks Rgt|9th Semirechie Cossacks Rgt|10th Semirechie Cossacks Rgt|11th Semirechie Cossacks Rgt|12th Semirechie Cossacks Rgt|27th Semirechie Cossacks Rgt|28th Semirechie Cossacks Rgt|29th Semirechie Cossacks Rgt|30th Semirechie Cossacks Rgt|31st Semirechie Cossacks Rgt|32nd Semirechie Cossacks Rgt|33rd Semirechie Cossacks Rgt|34th Semirechie Cossacks Rgt|35th Semirechie Cossacks Rgt|36th Semirechie Cossacks Rgt|37th Semirechie Cossacks Rgt|38th Semirechie Cossacks Rgt|39th Semirechie Cossacks Rgt|40th Semirechie Cossacks Rgt|13th Semirechie Cossacks Rgt|14th Semirechie Cossacks Rgt|15th Semirechie Cossacks Rgt|16th Semirechie Cossacks Rgt|17th Semirechie Cossacks Rgt|18th Semirechie Cossacks Rgt|19th Semirechie Cossacks Rgt|20th Semirechie Cossacks Rgt|21st Semirechie Cossacks Rgt|22nd Semirechie Cossacks Rgt|23rd Semirechie Cossacks Rgt|24th Semirechie Cossacks Rgt|25th Semirechie Cossacks Rgt|26th Semirechie Cossacks Rgt|27th Semirechie Cossacks Rgt|28th Semirechie Cossacks Rgt|29th Semirechie Cossacks Rgt|30th Semirechie Cossacks Rgt|41st Semirechie Cossacks Rgt|42nd Semirechie Cossacks Rgt|43rd Semirechie Cossacks Rgt|44th Semirechie Cossacks Rgt|45th Semirechie Cossacks Rgt|46th Semirechie Cossacks Rgt|47th Semirechie Cossacks Rgt|48th Semirechie Cossacks Rgt|49th Semirechie Cossacks Rgt|50th Semirechie Cossacks Rgt|51st Semirechie Cossacks Rgt|52nd Semirechie Cossacks Rgt|53rd Semirechie Cossacks Rgt|54th Semirechie Cossacks Rgt|55th Semirechie Cossacks Rgt|56th Semirechie Cossacks Rgt|57th Semirechie Cossacks Rgt|58th Semirechie Cossacks Rgt|59th Semirechie Cossacks Rgt|60th Semirechie Cossacks Rgt|3rd Horse Partisans Rgt|4th Horse Partisans Rgt

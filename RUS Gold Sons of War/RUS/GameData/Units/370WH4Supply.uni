@@ -1,0 +1,15 @@
+UID = 370
+NationTag = WH4
+Name = Supply
+Alias = uni_WH4_Sup1
+ForcePool = 12
+ShortName = Supply
+Text = $uni_WH4_Sup1_txt
+Color = $colWH4Regular 
+ModelType0 = $mdl_WHI_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st North West Supply|2nd North West Supply|3rd North West Supply|4th North West Supply|5th North West Supply|6th North West Supply|7th North West Supply|8th North West Supply|9th North West Supply|10th North West Supply|11th North West Supply|12th North West Supply|13th North West Supply|14th North West Supply|15th North West Supply|16th North West Supply|17th North West Supply|18th North West Supply|19th North West Supply|20th North West Supply|21st North West Supply|22nd North West Supply|23rd North West Supply|24th North West Supply|25th North West Supply|26th North West Supply|27th North West Supply|28th North West Supply|29th North West Supply|30th North West Supply|31st North West Supply|32nd North West Supply|33rd North West Supply|34th North West Supply|35th North West Supply|36th North West Supply|37th North West Supply|38th North West Supply|39th North West Supply|40th North West Supply

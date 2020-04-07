@@ -1,0 +1,15 @@
+UID = 664
+NationTag = CZE
+Name = Armored Cars
+Alias = uni_CZE_Amc
+ForcePool = 12
+ShortName = Arm. Cars
+Text = $uni_CZE_Amc_txt
+Color = $colCZERegular 
+ModelType0 = $mdl_CZE_Amc|1
+FamilyType0 = $famLtVehicle|4
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1st Armored Cars Squadron|2nd Armored Cars Squadron|3rd Armored Cars Squadron|4th Armored Cars Squadron|5th Armored Cars Squadron|6th Armored Cars Squadron

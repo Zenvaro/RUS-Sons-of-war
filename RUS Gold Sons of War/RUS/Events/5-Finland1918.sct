@@ -1,0 +1,1663 @@
+  AI_Finland1918.sct
+  NULL
+  NULL = NULL
+
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+StartEvent = evt_nam_Flavor_FIN_MannerheimInCommand|1|2|evt_txt_Flavor_FIN_MannerheimInCommand|Event-img_Flavor_FIN_MannerheimInCommand|$Helsinki|NULL
+
+Conditions
+  MinDate = 1918/01/16
+
+Actions
+  //DescEvent = evt_desc_Flavor_FIN_MannerheimInCommand
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+StartEvent = evt_nam_Flavor_CMN_FinlandCivilWar|1|2|evt_txt_Flavor_CMN_FinlandCivilWar|Event-img_Flavor_CMN_FinlandCivilWar|$Helsinki|NULL
+
+Conditions
+  MinDate = 1918/01/17
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_FinlandCivilWar
+
+SelectFaction = $FIN
+  ChangeLoyaltyFac = $Theater_Finland;5
+
+SelectFaction = $RED
+  ChangeLoyaltyFac = $Theater_Finland;-5
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_RedArmyCreation|1|2|evt_txt_Flavor_CMN_RedArmyCreation|Event-img_Flavor_CMN_RedArmyCreation|$Petrograd|NULL
+  FixedDate = 1918/01/28
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_RedArmyCreation
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_Calendar|1|1|NULL|NULL|$Petrograd|NULL
+  FixedDate = 1918/01/30
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_Calendar
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_BrestLitovskBroken|1|2|evt_txt_Flavor_CMN_BrestLitovskBroken|Event-img_Flavor_CMN_BrestLitovskBroken|$Petrograd|NULL
+
+Conditions
+  MinDate = 1918/02/10
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_BrestLitovskBroken
+
+SelectFaction = $FIN
+  ChangeLoyaltyFac = $Theater_Finland;5
+
+SelectFaction = $RED
+  ChangeLoyaltyFac = $Theater_Finland;-5
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_SocialismInDanger|1|2|evt_txt_Flavor_CMN_SocialismInDanger|Event-img_Flavor_CMN_SocialismInDanger|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/02/23
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_SocialismInDanger
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+StartEvent = evt_nam_CMN_BrestLitovskSigned|1|2|evt_txt_CMN_BrestLitovskSigned|Event-img_CMN_BrestLitovskSigned|$Helsinki|NULL
+
+Conditions
+  FixedDate = 1918/03/03
+
+Actions
+  //DescEvent = evt_desc_CMN_BrestLitovskSigned
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_KempInMurmansk|1|2|evt_txt_Flavor_CMN_KempInMurmansk|Event-img_Flavor_CMN_KempInMurmansk|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/03/06
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_KempInMurmansk
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_MoscowNewCapital|1|1|NULL|NULL|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/03/12
+
+Actions
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Renforts_CMN_DonCossacksUprising|1|2|evt_txt_Renforts_CMN_DonCossacksUprising|Event-img_Renforts_CMN_DonCossacksUprising|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/04/13
+
+Actions
+  //DescEvent = evt_desc_Renforts_CMN_DonCossacksUprising
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+StartEvent = evt_nam_RED_RedArmyReorganization|1|2|evt_txt_RED_RedArmyReorganization|Event-img_RED_RedArmyReorganization|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/05/08
+
+Actions
+  //DescEvent = evt_desc_RED_RedArmyReorganization
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_CMN_CzechLegionRevolt|1|2|evt_txt_CMN_CzechLegionRevolt|Event-img_CMN_CzechLegionRevolt|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/05/25
+
+Actions
+  //DescEvent = evt_desc_CMN_CzechLegionRevolt
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_LeninAssassination|1|2|evt_txt_CMN_LeninAssassination|Event-img_CMN_LeninAssassination|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/08/30
+
+Actions
+  //DescEvent = evt_desc_CMN_LeninAssassination
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $FIN
+
+SelectFaction = $FIN
+StartEvent = evt_nam_Renforts_FIN_SaviourOfKarelia|1|2|evt_txt_Renforts_FIN_SaviourOfKarelia|Event-img_Renforts_FIN_SaviourOfKarelia|NULL|NULL
+
+Conditions
+  MinDate = 1918/02/01
+
+Actions
+  //DescEvent = evt_desc_Renforts_FIN_SaviourOfKarelia
+  AddToRegList = $Sortavala
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $FIN
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Armored Train
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Amt1
+  SUFlavorName = 'Saviour of Karelia'
+  SetLevel = 1
+  SetName = 'Saviour of Karelia'
+  Apply
+
+SelectFaction = $FIN
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Karelia Supply
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Karelian Supplies
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Renforts_RED_PetrogradCorps|1|1|NULL|NULL|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/02/01
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_PetrogradCorps
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 1
+  FixType = 999
+  SetName = 1st Red Army Corps
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_RED_Kamenev2
+  FlavorName = 1st Red Army Corps
+  SetName = S.S. Kamenev
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div2
+  SUFlavorName = 1st Zaamur|2nd Zaamur|3rd Zaamur|4th Zaamur|1st Red Bty
+  SetName = 5th Zaamur Fusiliers Div
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div2
+  SUFlavorName = 1st Finnish|2nd Finnish|3rd Finnish|4th Finnish|1st Finnish Bty
+  SetName = 12th Finnish Fusiliers Div
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div2
+  SUFlavorName = 5th Fusiliers|6th Fusiliers|7th Fusiliers|8th Fusiliers|48th Division Bty
+  SetName = 48th Fusiliers Division
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Div2
+  SUFlavorName = 1st Latvian|2nd Latvian|3rd Latvian|4th Latvian|1st Latvian Bty
+  SetLevel = 1
+  SetName = Latvian Fusiliers Div
+  Apply
+
+EndEvent
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_Renforts_FIN_SwedishVolunteers|1|1|NULL|NULL|$Vaasa|NULL
+
+Conditions
+  FixedDate = 1918/02/25
+
+Actions
+  //DescEvent = evt_desc_Renforts_FIN_SwedishVolunteers2
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 0
+  SetName = Swedish Brigade
+  Apply
+  CreateUnit
+  GMEParam = 4
+  SetType = $uni_FIN_Mannerheim1
+  FlavorName = Swedish Brigade
+  SetName = C.J. Mannerheim
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf3
+  SUFlavorName = 1st Swedish Vols
+  SetName = 1st Swedish Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf3
+  SUFlavorName = 2nd Swedish Vols
+  SetName = 2nd Swedish Vols Rgt
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_FIN_Art0
+  SUFlavorName = Swedish Bty
+  SetName = Swedish Bty
+  Apply
+
+EndEvent
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_Renforts_FIN_FinnishJagers|1|2|evt_txt_Renforts_FIN_FinnishJagers|Event-img_Renforts_FIN_FinnishJagers|$Vaasa|NULL
+
+Conditions
+  FixedDate = 1918/02/25
+
+Actions
+  //DescEvent = evt_desc_Renforts_FIN_FinnishJagers
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 27th Jager Battalion
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf5
+  SUFlavorName = 1st Co.|2nd Co.|Jagers Bty
+  SetLevel = 2
+  SetName = 27th Jager Btn
+  Apply
+
+EndEvent
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_Renforts_FIN_UusimaaDragoons|1|1|NULL|NULL|$Vaasa|NULL
+
+Conditions
+  FixedDate = 1918/02/25
+
+Actions
+  //DescEvent = evt_desc_Renforts_FIN_UusimaaDragoons
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Uusimaa Dragoons Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf1
+  SUFlavorName = Dragoons
+  SetLevel = 1
+  SetName = Uusimaa Dgns
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_RedArmoredTrain|1|2|evt_txt_Renforts_RED_RedArmoredTrain|Event-img_Renforts_RED_RedArmoredTrain|NULL|NULL
+
+Conditions
+  MinDate = 1918/03/03
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_RedArmoredTrain
+  AddToRegList = $Helsinki;$Viipuri
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Helsinki Trains #1-2
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = Armored Train 1
+  SetName = Armored Train 1
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = Armored Train 2
+  SetName = Armored Train 2
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_Trains3&4|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/03/09
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_Trains3&4
+  AddToRegList = $Helsinki;$Viipuri
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Helsinki Trains #3-4
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = Armored Train 3
+  SetName = Armored Train 3
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = Armored Train 4
+  SetName = Armored Train 4
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+StartEvent = evt_nam_RED_RussianVolunteers|1|1|NULL|NULL|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/03/18
+
+Actions
+  //DescEvent = evt_desc_RED_RussianVolunteers
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Russian Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt2
+  SUFlavorName = Russian Vols
+  SetLevel = 1
+  SetName = Russian Volunteers
+  Apply
+  ChangeConscriptPool = 100
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_Train5|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/03/29
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_Train5
+  AddToRegList = $Helsinki;$Viipuri
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Helsinki Train #5
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = Armored Train 5
+  SetName = Armored Train 5
+  Apply
+
+EndEvent
+
+SelectFaction = $FIN
+
+SelectFaction = $FIN
+StartEvent = evt_nam_Renforts_FIN_NewFinnishJagers|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/04/02
+
+Actions
+  //DescEvent = evt_desc_Renforts_FIN_NewFinnishJagers
+  AddToRegList = $Vaasa
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $FIN
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Jagers Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bde1
+  SUFlavorName = 3rd Jager|4th Jager|1st Jager Bty
+  SetLevel = 1
+  SetName = 1st Jager Bde
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bde1
+  SUFlavorName = 5th Jager|6th Jager|2nd Jager Bty
+  SetLevel = 1
+  SetName = 2nd Jager Bde
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bde1
+  SUFlavorName = 7th Jager|8th Jager|3rd Jager Bty
+  SetLevel = 1
+  SetName = 3rd Jager Bde
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Pio
+  SUFlavorName = Jager Pioneers
+  SetLevel = 1
+  SetName = Jager Pioneers
+  Apply
+
+SelectRegion = $Sortavala
+
+SelectFaction = $FIN
+SelectRegion = $Sortavala
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Karelian Force
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf1
+  SUFlavorName = Karelia Jagers
+  SetName = Karelia Mounted Jagers
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_FinlandAirplanes|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/04/02
+  MaxDate = 1918/10/31
+  Probability = 30
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_FinlandAirplanes
+  AddToRegList = $Helsinki;$Viipuri
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 0
+  SetName = Red Air Force
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bas1
+  NumCreate = 3
+  SUFlavorName = Airbase|Recon Sqd|Fighter Sqd
+  SetName = Red Air Force
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_Train6|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/04/22
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_Train6
+  AddToRegList = $Helsinki;$Viipuri
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Karelian Train
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = Armored Train 6
+  SetName = Armored Train 6
+  Apply
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $FIN
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention_MarchTest|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;0
+  MinDate = 1918/03/01
+  MaxDate = 1918/03/16
+  EvalMorale = <;80
+
+Actions
+
+  ChgEvtOccurs = evt_nam_FIN_GermanOstSee_Intervention;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention_AprilTest|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;0
+  MinDate = 1918/04/01
+  MaxDate = 1918/04/16
+  EvalMorale = <;100
+
+Actions
+
+  ChgEvtOccurs = evt_nam_FIN_GermanOstSee_Intervention;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention_MayTest|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;0
+  MinDate = 1918/05/01
+  MaxDate = 1918/05/16
+  EvalMorale = <;120
+
+Actions
+
+  ChgEvtOccurs = evt_nam_FIN_GermanOstSee_Intervention;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention_JuneTest|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;0
+  MinDate = 1918/06/01
+  MaxDate = 1918/07/16
+  EvalMorale = <;150
+
+Actions
+
+  ChgEvtOccurs = evt_nam_FIN_GermanOstSee_Intervention;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention_JulyON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;0
+  MinDate = 1918/07/01
+  MaxDate = 1918/12/31
+  EvalMorale = <;200
+
+SelectFaction = $RED
+  EvalMorale = <;200
+
+Actions
+
+  ChgEvtOccurs = evt_nam_FIN_GermanOstSee_Intervention;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Kiel
+
+SelectFaction = $CMN
+SelectRegion = $Kiel
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention|0|2|evt_txt_Renforts_CMN_GermanOstSee_Intervention|Event-img_Renforts_CMN_GermanOstSee_Intervention|$Kiel|117
+
+Conditions
+  MinDate = 1918/03/01
+  MaxDate = 1918/12/31
+
+Actions
+  //DescEvent = evt_desc_Renforts_CMN_GermanOstSee_Intervention
+
+EndEvent
+
+SelectFaction = $FIN
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_InterventionA|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/03/01
+  MaxDate = 1918/12/31
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;1
+
+CountVP = esvIntVar0
+  Probability = 100;esvIntVar0;-15
+
+Actions
+
+SelectRegion = $Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Ostsee Division
+  Apply
+  CreateUnit
+  GMEParam = 6
+  SetType = $uni_GER_Goltz2
+  FlavorName = Ostsee Division
+  SetName = R. von der Goltz
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde1
+  FlavorName = Von Tschirscky und Boegendorff
+  SUFlavorName = 1st Guard Uhlans|2nd Guard Uhlans|Saxon Fusiliers
+  SetLevel = 1
+  SetName = 2. Garde-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde2
+  FlavorName = Wolf
+  SUFlavorName = 105th Rgt|106th Rgt|107th Rgt|108th Rgt|Bde Bty
+  SetName = 95. Reserve-Bde
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art3
+  SUFlavorName = 1st Battery|2nd Battery
+  SetLevel = 1
+  SetName = Ostsee FAR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Eng
+  SUFlavorName = Engineers
+  SetLevel = 1
+  SetName = 12. Pionier-Btn
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Cyc
+  SUFlavorName = Cycle Btn
+  SetName = 1st Cycle Infantry Btn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tschirscky1
+  SetName = H. von Tschirscky
+  Apply
+  CreateUnit
+  GMEParam = 3
+  SetType = $uni_GER_Brandenstein1
+  FlavorName = Von Brandenstein Brigade
+  SetName = A. von Brandenstein
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde3
+  SUFlavorName = 201st Rgt|202nd Rgt|203 Rgt|Bde Bty
+  SetLevel = 1
+  SetName = Brandenstein-Bde
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Cyc
+  SUFlavorName = Cycle Btn
+  SetName = 2. Fahrrad-Btn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SUFlavorName = 1st Co.|2nd Co.
+  SetName = Ostsee Nachsub I
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SUFlavorName = 1st Co.|2nd Co.
+  SetName = Ostsee Nachsub II
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SUFlavorName = 1st Co.|2nd Co.
+  SetName = Ostsee Nachsub III
+  Apply
+
+SelectRegion = $Coast of Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Coast of Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Nav
+  Entranch = 0
+  FixType = 0
+  SetName = Meurer Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Meurer1
+  SetName = H. Meurer
+  Apply
+  CreateUnit
+  SetType = $uni_GER_BB1
+  NumCreate = 2
+  SUFlavorName = SMS Westfalen|SMS Posen
+  SetLevel = 1
+  SetName = Schlachtschiff Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_AC1
+  NumCreate = 3
+  SUFlavorName = SMS Prinz Adalbert|SMS Friedrich Carl|SMS Roon
+  SetName = Kreuzer Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_CL1
+  SUFlavorName = SMS Mercur|SMS Grille|SMS Loreley|SMS Nymphe
+  SetName = Leicht Kreuzer Div.
+  Apply
+
+SelectFaction = $FIN
+SelectRegion = $Coast of Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Nav
+  Entranch = 0
+  FixType = 0
+  SetName = Transport Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_TR1
+  SUFlavorName = Eber|Bussard|Seeadler|Condor
+  SetName = 1. Transport Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_TR1
+  NumCreate = 2
+  SUFlavorName = Gefion|Greif
+  SetName = 2. Transport Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_TR1
+  NumCreate = 2
+  SUFlavorName = Transport|Transport
+  SetName = 3. Transport Div.
+  Apply
+  SetEvtOccurs = evt_nam_FIN_GermanOstSee_InterventionB;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_InterventionB|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/03/01
+  MaxDate = 1918/12/31
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;1
+  EvalEvent = evt_nam_FIN_GermanOstSee_InterventionA;=;0
+
+Actions
+
+SelectRegion = $Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Ostsee Division
+  Apply
+  CreateUnit
+  GMEParam = 6
+  SetType = $uni_GER_Goltz2
+  FlavorName = Ostsee Division
+  SetName = R. von der Goltz
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde1
+  FlavorName = Von Tschirscky und Boegendorff
+  SUFlavorName = 1st Guard Uhlans|2nd Guard Uhlans|Saxon Fusiliers
+  SetLevel = 1
+  SetName = 2. Garde-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde2
+  FlavorName = Wolf
+  SUFlavorName = 105th Rgt|106th Rgt|107th Rgt|108th Rgt|Bde Bty
+  SetName = 95. Reserve-Bde
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art3
+  SUFlavorName = 1st Battery|2nd Battery
+  SetLevel = 1
+  SetName = Ostsee FAR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Eng
+  SUFlavorName = Engineers
+  SetLevel = 1
+  SetName = 12. Pionier-Btn
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Cyc
+  SUFlavorName = Cycle Btn
+  SetName = 1st Cycle Infantry Btn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tschirscky1
+  SetName = H. von Tschirscky
+  Apply
+  CreateUnit
+  GMEParam = 3
+  SetType = $uni_GER_Brandenstein1
+  FlavorName = Von Brandenstein Brigade
+  SetName = A. von Brandenstein
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde3
+  SUFlavorName = 201st Rgt|202nd Rgt|203 Rgt|Bde Bty
+  SetLevel = 1
+  SetName = Brandenstein-Bde
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Cyc
+  SUFlavorName = Cycle Btn
+  SetName = 2. Fahrrad-Btn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SUFlavorName = 1st Co.|2nd Co.
+  SetName = Ostsee Nachsub I
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SUFlavorName = 1st Co.|2nd Co.
+  SetName = Ostsee Nachsub II
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SUFlavorName = 1st Co.|2nd Co.
+  SetName = Ostsee Nachsub III
+  Apply
+
+SelectRegion = $Coast of Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Coast of Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Nav
+  Entranch = 0
+  FixType = 0
+  SetName = Meurer Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Meurer1
+  SetName = H. Meurer
+  Apply
+  CreateUnit
+  SetType = $uni_GER_BB1
+  NumCreate = 2
+  SUFlavorName = SMS Westfalen|SMS Posen
+  SetLevel = 1
+  SetName = Schlachtschiff Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_AC1
+  NumCreate = 3
+  SUFlavorName = SMS Prinz Adalbert|SMS Friedrich Carl|SMS Roon
+  SetName = Kreuzer Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_CL1
+  SUFlavorName = SMS Mercur|SMS Grille|SMS Loreley|SMS Nymphe
+  SetName = Leicht Kreuzer Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_TR1
+  SUFlavorName = Eber|Bussard|Seeadler|Condor
+  SetName = 1. Transport Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_TR1
+  NumCreate = 2
+  SUFlavorName = Gefion|Greif
+  SetName = 2. Transport Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_TR1
+  NumCreate = 2
+  SUFlavorName = Transport|Transport
+  SetName = 3. Transport Div.
+  Apply
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention_FIN_MoraleLoss|999|1|NULL|NULL|$Vaasa|NULL
+
+Conditions
+  MinDate = 1918/03/01
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;1
+  SelectSubUnits = Area $Theater_Finland;FactionTags GER;Families $famElite $famLine $famLightInf $famSkirmisher $famRaider $famMilitia $famCavalry $famHvyCavalry $famLtVehicle $famMedVehicle $famHvyVehicle $famSHvyVehicle $famLightArty $famMedArty $famHvyArty $famSHvyArty $famArmoredTrain
+  EvalSubUnitCount = >;0
+
+Actions
+  ChgVPCount = -30
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Supply|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/02/15
+  TurnIndex = 4;8;12;16;23
+
+Actions
+  //DescEvent = evt_desc_RED_Supply
+  AddToRegList = $Helsinki;$Viipuri 
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = _genName
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Red Supplies
+  Apply
+
+EndEvent
+
+SelectFaction = $FIN
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_Supply|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/02/15
+  TurnIndex = 4;8;12;16;23
+
+Actions
+  //DescEvent = evt_desc_FIN_Supply
+  AddToRegList = $Vaasa
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $FIN
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = _genName
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Finn Supplies
+  Apply
+
+EndEvent
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_FIN_FinlandReplacements|999|1|NULL|NULL|$Vaasa|NULL
+
+Conditions
+  MinDate = 1918/03/01
+  TurnIndex = 8;16;21
+
+Actions
+  //DescEvent = evt_desc_FIN_FinlandReplacements
+  Replacement = FIN;$famLine;3
+  Replacement = FIN;$famMilitia;3
+  Replacement = GER;$famLine;3
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Helsinki
+
+SelectFaction = $RED
+SelectRegion = $Helsinki
+StartEvent = evt_nam_RED_FinlandReplacements|999|1|NULL|NULL|$Helsinki|NULL
+
+Conditions
+  MinDate = 1918/03/14
+  TurnIndex = 8;16;21
+
+Actions
+  //DescEvent = evt_desc_RED_FinlandReplacements
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;3
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Helsinki
+StartEvent = evt_nam_CMN_FirstFinlandRemoval|1|1|NULL|NULL|$Helsinki|NULL
+
+Conditions
+  MinDate = 1918/03/04
+
+Actions
+  //DescEvent = evt_desc_CMN_FirstFinlandRemoval
+  SelectSubUnits = Area $Theater_Finland;Models $mdl_RED_Inf16
+  AlterCuSubUnit = ApplyToList;Kill
+  RemoveUnqUnit = 1st Russian Dcht
+  RemoveUnqUnit = 2nd Russian Dcht
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+StartEvent = evt_nam_CMN_SecondFinlandRemoval|1|2|evt_txt_CMN_SecondFinlandRemoval|Event-img_Renforts_FIN_FinnishJagers|$Helsinki|NULL
+
+Conditions
+  MinDate = 1918/03/16
+  Probability = 30
+
+Actions
+  //DescEvent = evt_desc_CMN_SecondFinlandRemoval
+
+SelectFaction = $RED
+  SelectSubUnits = Area $Theater_Finland;Models $mdl_RED_Sai  $mdl_RED_Inf17 
+  AlterCuSubUnit = ApplyToList;Kill
+  RemoveUnqUnit = 106th Russian Div.
+  RemoveUnqUnit = 106th Div. Supply
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_FIN_GermanAid|1|1|NULL|NULL|$Vaasa|NULL
+
+Conditions
+  FixedDate = 1918/02/28
+
+Actions
+  //DescEvent = evt_desc_FIN_GermanAid
+  ChangeWSUPool = 30
+  ChangeMoneyPool = 100
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+StartEvent = evt_nam_CMN_Freedom|1|2|evt_txt_Flavor_CMN_Freedom|Event-img_Flavor_FIN_Freedom|$Helsinki|NULL
+
+Conditions
+  MinDate = 1918/02/01
+
+SelectFaction = $FIN
+
+EvalRgnOwned = $Helsinki
+
+EvalRgnOwned = $Viipuri
+
+EvalRgnOwned = $Vaasa
+
+EvalRgnOwned = $Kuopio
+
+EvalRgnOwned = $Tampere
+
+EvalRgnOwned = $Turku
+
+EvalRgnOwned = $Sortavala
+
+Actions
+  //DescEvent = evt_desc_CMN_Freedom
+  ChangeFacMorale = 200
+  ChgVPCount = 50
+  ChangeLoyaltyFac = $Theater_Finland;10
+
+SelectFaction = $RED
+  ChangeLoyaltyFac = $Theater_Finland;-10
+  ChgVPCount = -50
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+StartEvent = evt_nam_CMN_SovietFinland|1|2|evt_txt_CMN_SovietFinland|Event-img_CMN_AssemblyDissolved (rebaptiser Event-img_CMN_SovietFinland)|$Helsinki|NULL
+
+Conditions
+  MinDate = 1918/02/01
+
+SelectFaction = $RED
+
+EvalRgnOwned = $Helsinki
+
+EvalRgnOwned = $Viipuri
+
+EvalRgnOwned = $Vaasa
+
+EvalRgnOwned = $Kuopio
+
+EvalRgnOwned = $Tampere
+
+EvalRgnOwned = $Turku
+
+EvalRgnOwned = $Sortavala
+
+Actions
+  //DescEvent = evt_desc_CMN_SovietFinland
+  ChangeFacMorale = 200
+  ChgVPCount = 50
+  ChangeLoyaltyFac = $Theater_Finland;5
+
+SelectFaction = $FIN
+  ChangeLoyaltyFac = $Theater_Finland;-5
+  ChgVPCount = -50
+
+EndEvent
+  NULL = NULL
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Rail_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_More_Rail
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_More_Rail;1
+  ChangeMoneyPool = 100
+  ChangeWSUPool = 10
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Rail_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_RED_More_Rail;MsgString;opt_desc_RED_More_Rail;ToolString;opt_hint_RED_More_Rail;SubType;RED_More_Rail;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Rail_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;RED_More_Rail;=;1
+  EvalMoney = >=;100
+  EvalWSU = >=;10
+
+Actions
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -10
+  ChangeRailPool = 200
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_CMN_Rail;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_More_Rail;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_More_Rail
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Rail_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  TurnIndex = 0;6;12;18
+  ActorDisabled = $gmaOptionVar;RED_More_Rail
+
+Actions
+  GenTextMsg  = opt_notify_RED_More_Rail_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_RED_More_Rail;MsgString;opt_desc_RED_More_Rail;ToolString;opt_hint_RED_More_Rail;SubType;RED_More_Rail;SParam1;RED
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $FIN
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_More_Rail_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/01/01
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;FIN_More_Rail
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;FIN_More_Rail;1
+  ChangeMoneyPool = 100
+  ChangeWSUPool = 10
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_More_Rail_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_FIN_More_Rail;MsgString;opt_desc_FIN_More_Rail;ToolString;opt_hint_FIN_More_Rail;SubType;FIN_More_Rail;SParam1;FIN
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_More_Rail_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;FIN_More_Rail;=;1
+
+Actions
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -10
+  ChangeRailPool = 200
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_CMN_Rail;1;NULL;NULL;NULL
+
+SelectFaction = $FIN
+  GenTextMsg  = opt_notify_FIN_More_Rail;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;FIN_More_Rail
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_More_Rail_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;6;12;18
+  ActorDisabled = $gmaOptionVar;FIN_More_Rail
+
+Actions
+  GenTextMsg  = opt_notify_FIN_More_Rail_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_FIN_More_Rail;MsgString;opt_desc_FIN_More_Rail;ToolString;opt_hint_FIN_More_Rail;SubType;FIN_More_Rail;SParam1;FIN
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_InternationalVolunteers_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/01/01
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;FIN_InternationalVolunteers
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;FIN_InternationalVolunteers;1
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_InternationalVolunteers_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_FIN_InternationalVolunteers.png;Title;opt_title_FIN_InternationalVolunteers;MsgString;opt_desc_FIN_InternationalVolunteers;ToolString;opt_hint_FIN_InternationalVolunteers;SubType;FIN_InternationalVolunteers;SParam1;FIN
+
+EndEvent
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_FIN_InternationalVolunteers|1|0|NULL|NULL|$Vaasa|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;FIN_InternationalVolunteers;=;1
+  EvalEngagementPts = >=;4
+
+EvalRgnOwned = $Vaasa
+  MinDate = 1918/01/01
+
+Actions
+  ChgFacEngagementPts = -4
+  ChangeMoneyPool = -10
+  ChangeWSUPool = -2
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 1
+  SetName = Swedish Volunteers
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf3
+  SUFlavorName = Swedish Vols
+  SetLevel = 1
+  SetName = 7th Swedish Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf3
+  SUFlavorName = Swedish Vols
+  SetLevel = 1
+  SetName = 8th Swedish Rgt
+  Apply
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_FINInternationalVolunteers;1;NULL;NULL;NULL
+
+SelectFaction = $FIN
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;FIN_InternationalVolunteers
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = RGD_Remove_Exclusion_Finland_WHI|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1916/11/20
+  MaxDate = 1923/01/01
+
+Actions
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = RGD_Remove_Exclusion_Finland_RED|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1916/11/20
+  MaxDate = 1923/01/01
+
+Actions
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+
+EndEvent
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_WHI_MannerheimHelsinkiGHQ_overrunnedC|99|1|NULL|NULL|$Vaasa|NULL
+
+Conditions
+  MinDate = 1917/06/01
+  SelectSubUnits = Models $ldr_FIN_Mannerheim3;Region $Vaasa
+  EvalSubUnitSel = NOT
+
+Actions
+  SelectSubUnits = Models $ldr_FIN_Mannerheim3
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_WHI_MannerheimHelsinkiGHQ_BackC|99|1|NULL|NULL|$Vaasa|NULL
+
+Conditions
+  MinDate = 1917/06/01
+  EvalEvent = evt_nam_WHI_MannerheimHelsinkiGHQ_overrunnedA;>=;1
+  SelectSubUnits = Models $ldr_FIN_Mannerheim3;Region $Vaasa
+  EvalSubUnitSel = NOT
+
+EvalRgnOwned = $Vaasa
+
+Actions
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Finland Army GHQ
+  Apply
+  CreateUnit
+  GMEParam = C.G. Mannerheim
+  SetCommit = 1
+  SetType = $uni_FIN_Mannerheim3
+  FlavorName = Finland Army
+  SetName = C.G. Mannerheim
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = GHQ Supply
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Helsinki
+
+SelectFaction = $RED
+SelectRegion = $Helsinki
+StartEvent = evt_nam_RED_HaapalainenHelsinkiGHQ_overrunnedA|99|1|NULL|NULL|$Helsinki|NULL
+
+Conditions
+  MinDate = 1917/06/01
+  SelectSubUnits = Models $ldr_RED_Haapalainen3;Region $Helsinki
+  EvalSubUnitSel = NOT
+
+Actions
+  SelectSubUnits = Models $ldr_RED_Haapalainen3
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Helsinki
+StartEvent = evt_nam_RED_HaapalainenHelsinkiGHQ_BackA|99|1|NULL|NULL|$Helsinki|NULL
+
+Conditions
+  MinDate = 1917/06/01
+  EvalEvent = evt_nam_RED_HaapalainenHelsinkiGHQ_overrunnedA;>=;1
+  SelectSubUnits = Models $ldr_RED_Haapalainen3;Region $Helsinki
+  EvalSubUnitSel = NOT
+
+EvalRgnOwned = $Helsinki
+
+Actions
+
+SelectFaction = $RED
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Finnish Socialist Workers GHQ
+  Apply
+  CreateUnit
+  GMEParam = E. Haapalainen
+  SetCommit = 1
+  SetType = $uni_RED_Haapalainen3
+  FlavorName = Haapalainen Div.
+  SetName = E. Haapalainen
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Finland Supply
+  Apply
+
+EndEvent

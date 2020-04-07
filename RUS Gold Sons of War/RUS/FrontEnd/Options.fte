@@ -1,0 +1,103 @@
+UID = 50021
+Bitmap = menu_options.bmp
+x = 0
+y = 0
+z = 92
+DragDrop = {None}
+Anchor = VCenter HCenter
+GameState = stOptions
+Capacity = 10
+
+Coo1 = 65|90|0
+Coo2 = 285|90|0
+Coo3 = 65|130|0
+Coo4 = 285|130|0
+Coo5 = 65|170|0
+Coo6 = 285|170|0
+Coo7 = 65|210|0
+Coo8 = 285|210|0
+Coo9 = 65|250|0
+Coo10 = 285|250|0
+
+// Abort
+Btn1 = -1|460|18
+// tabs x4
+Btn2 = -1|40|18
+Btn3 = -1|130|18
+Btn4 = -1|220|18
+Btn5 = -1|310|18
+
+{ButtonDef}
+Image = Btn_close_options_OFF.png
+OverImage = Btn_close_options_ON.png
+DownImage = Btn_close_options_CLICK.png
+Hint = $Close
+UpAction = CancelAction
+ClickSound = $sndTick
+{/ButtonDef}
+
+// Tabs buttons x4
+{ButtonDef}
+Image = $ImgBtnOptionMediaOFF
+OverImage = $ImgBtnOptionMediaOHL
+DownImage = $ImgBtnOptionMediaON
+Hint = $btnOptionTab0Hint
+UpAction = ChangeOptionTab0
+ClickSound = $sndTab
+CapColor = $LightGold
+FontID = $fntMedBold
+{/ButtonDef}
+
+{ButtonDef} 
+Image = $ImgBtnOptionGameOFF
+OverImage = $ImgBtnOptionGameHL
+DownImage = $ImgBtnOptionGameON
+Hint = $btnOptionTab1Hint
+UpAction = ChangeOptionTab1
+ClickSound = $sndTab
+CapColor= $LightGold
+FontID = $fntMedBold
+{/ButtonDef}
+
+{ButtonDef}
+Image = $ImgBtnOptionAIOFF
+OverImage = $ImgBtnOptionAIHL
+DownImage = $ImgBtnOptionAION
+Hint = $btnOptionTab2Hint
+UpAction = ChangeOptionTab2
+ClickSound = $sndTab
+CapColor= $LightGold
+FontID = $fntMedBold
+{/ButtonDef}
+
+{ButtonDef}
+Image = $ImgBtnOptionSystemOFF
+OverImage = $ImgBtnOptionSystemHL
+DownImage = $ImgBtnOptionSystemON
+Hint = $btnOptionTab3Hint
+UpAction = ChangeOptionTab3
+ClickSound = $sndTab
+CapColor= $LightGold
+FontID = $fntMedBold
+{/ButtonDef}
+
+
+// Main Title
+Caption0 = 0|10|0
+// Prev tab arrow
+Various1 = 405|18|0
+// Next tab arrow
+Various2 = 426|18|0
+// option caption>checkbox offset
+Caption3 = 170|-3|0
+// Option string edit Position
+Various4 = 125|280|0
+
+// *** Images ***
+StrParam0 = CheckBoxOn.bmp
+StrParam1 = CheckBoxOff.bmp
+StrParam2 = Btn_arrow_right_options_OFF.png
+StrParam3 = Btn_arrow_right_options_CLICK.png
+StrParam4 = Btn_arrow_left_options_OFF.png
+StrParam5 = Btn_arrow_left_options_CLICK.png
+StrParam6 = Dialog_EditBox.bmp

@@ -1,0 +1,17 @@
+UID = 530
+NationTag = GER
+Name = Transport Ship
+Alias = uni_GER_TR1
+ForcePool = 10
+ShortName = Transport
+Text = $uni_GER_TR1_txt
+Color = $colGERNavy
+DoubleLength = 1
+ModelType0 = $mdl_GER_Tra|4
+FamilyType0 = $famTransportShip|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+Area = $Recruit_Germans
+CustomNames = 1. Transport. Flot.|2. Transport. Flot.|3. Transport. Flot.|4. Transport. Flot.|5. Transport. Flot.|6. Transport. Flot.|7. Transport. Flot.|8. Transport. Flot.|9. Transport. Flot.|10. Transport. Flot.

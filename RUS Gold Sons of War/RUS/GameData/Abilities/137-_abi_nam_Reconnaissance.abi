@@ -1,0 +1,10 @@
+UID = 137
+Name = $abi_nam_Reconnaissance
+Alias = Reconnaissance
+Kind = $abiFlavor
+Text = $abi_txt_Reconnaissance
+ImageID = abi_SpyBonus.png
+Color = $colAbi_LightYellow
+Appliance = Self
+Family = 0
+Level = 1

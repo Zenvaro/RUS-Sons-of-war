@@ -1,0 +1,16 @@
+UID = 586
+NationTag = AUS
+Name = Supply
+Alias = uni_AUS_Sup1
+ForcePool = 12
+ShortName = Supply
+Text = $uni_AUS_Sup1_txt
+Color = $colAUSRegular 
+ModelType0 = $mdl_AUS_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1
+Area = $Recruit_Austrians
+CustomNames = 1. Nachshub-Regiment|2. Nachshub-Regiment|3.  Nachshub-Regiment|4. Nachshub-Regiment|5. Nachshub-Regiment|6. Nachshub-Regiment|7. Nachshub-Regiment|8. Nachshub-Regiment|9. Nachshub-Regiment|10. Nachshub-Regiment|11. Nachshub-Regiment|12. Nachshub-Regiment|13. Nachshub-Regiment|14. Nachshub-Regiment|15. Nachshub-Regiment|16. Nachshub-Regiment|17. Nachshub-Regiment|18. Nachshub-Regiment|19. Nachshub-Regiment|20. Nachshub-Regiment|21. Nachshub-Regiment|22. Nachshub-Regiment|23.  Nachshub-Regiment|24. Nachshub-Regiment|25. Nachshub-Regiment|26. Nachshub-Regiment|27. Nachshub-Regiment|28. Nachshub-Regiment|29. Nachshub-Regiment|30. Nachshub-Regiment|31. Nachshub-Regiment|32. Nachshub-Regiment|33.  Nachshub-Regiment|34. Nachshub-Regiment|35. Nachshub-Regiment|36. Nachshub-Regiment|37. Nachshub-Regiment|38. Nachshub-Regiment|39. Nachshub-Regiment|40. Nachshub-Regiment|

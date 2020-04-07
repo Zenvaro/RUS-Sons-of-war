@@ -1,0 +1,16 @@
+UID = 29
+Name = $abi_nam_Armored_Support
+Alias = Armored_Support
+Kind = $abiBattleBonus
+Text = $abi_txt_Armored_Support
+ImageID = abi_Offensive.png
+Color = $colAbi_Red
+Appliance = Unit
+Family = 3
+Level = 1
+Param0 = 115
+Param1 = 100
+Param6 = 115
+Param11 = 100
+Param12 = 100
+ListParams3 = $famLine|$famElite|$famLightInf|$famMilitia

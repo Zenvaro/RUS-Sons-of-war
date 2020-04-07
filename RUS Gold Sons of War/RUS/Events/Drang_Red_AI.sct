@@ -1,0 +1,1175 @@
+  NULL
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_allowingRGDReq|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalRgnDecisionDef = $rgdRequisitions;>=;1;
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_allowingRGDSubv|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalRgnDecisionDef = $rgdSubversion;>=;1;
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_allowingRGDGulag|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalRgnDecisionDef = $rgdTcheka;>=;1;
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDRReqreset|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalMoney = <=;150;
+  EvalWSU = <=;100;
+
+Actions
+  SetEvtOccurs = evt_nam_RGDRActReq;CuOccurs;0
+  SetEvtOccurs = evt_nam_RGDRActReq2;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDConscriptsreset|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalConscript = <=;150;
+
+Actions
+  SetEvtOccurs = evt_nam_RGDRActConscripts;CuOccurs;0
+  SetEvtOccurs = evt_nam_RGDRActConscripts2;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDRActReq|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 1;2;4;5;7;8;10;11;13;14;16;17;19;20;22;23;
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_allowingRGDReq;>=;1;
+  Probability = 70
+  AddToRegListFromAreas = $Area_Minsk;$Area_Petrograd;$Area_Novgorod;$Area_Pskov;$Area_Mogilev;$Area_Smolensk;$Area_Tver ;$Area_Tula;$Area_Yaroslavl;$Area_Moskwa;$Area_Kostroma;$Area_Ryazan;$Area_Orel;$Area_Kursk;$Area_Voronezh ;$Area_Nizhniy_Novgorod;$Area_Tambov;$Area_Penza;$Area_Simbirsk;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdSubversion;0
+  EvalRgnDecisionAct  = $rgdTcheka;0
+  IsRgnDecisionActValid = $rgdRequisitions
+
+Actions
+  AddRgnDecisionAct = $rgdRequisitions;CURRENT
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDRActConscripts|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 1;2;4;5;7;8;10;11;13;14;16;17;19;20;22;23;
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_allowingRGDReq;>=;1;
+  Probability = 70
+  AddToRegListFromAreas = $Area_Minsk;$Area_Petrograd;$Area_Novgorod;$Area_Pskov;$Area_Mogilev;$Area_Smolensk;$Area_Tver ;$Area_Tula;$Area_Yaroslavl;$Area_Moskwa;$Area_Kostroma;$Area_Ryazan;$Area_Orel;$Area_Kursk;$Area_Voronezh ;$Area_Nizhniy_Novgorod;$Area_Tambov;$Area_Penza;$Area_Simbirsk;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdSubversion;0
+  EvalRgnDecisionAct  = $rgdTcheka;0
+  IsRgnDecisionActValid = $rgdConscriptions
+
+Actions
+  AddRgnDecisionAct = $rgdConscriptions;CURRENT
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDRActReq2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 1;2;4;5;7;8;10;11;13;14;16;17;19;20;22;23;
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_RGDRActReq;=;0;
+  EvalEvent = evt_nam_RGDRActReqconquest;=;0;
+  AddToRegListFromAreas = $Area_Minsk;$Area_Petrograd;$Area_Novgorod;$Area_Pskov;$Area_Mogilev;$Area_Smolensk;$Area_Tver ;$Area_Tula;$Area_Yaroslavl;$Area_Moskwa;$Area_Kostroma;$Area_Ryazan;$Area_Orel;$Area_Kursk;$Area_Voronezh ;$Area_Nizhniy_Novgorod;$Area_Tambov;$Area_Penza;$Area_Simbirsk;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdSubversion;0
+  EvalRgnDecisionAct  = $rgdTcheka;0
+  IsRgnDecisionActValid = $rgdRequisitions
+
+Actions
+  AddRgnDecisionAct = $rgdRequisitions;CURRENT
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDRActConscripts2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 1;2;4;5;7;8;10;11;13;14;16;17;19;20;22;23;
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_allowingRGDconscripts;>=;1;
+  EvalEvent = evt_nam_RGDRActConscripts;=;0;
+  EvalEvent = evt_nam_RGDRActConscriptsconquest;=;0;
+  AddToRegListFromAreas = $Area_Minsk;$Area_Petrograd;$Area_Novgorod;$Area_Pskov;$Area_Mogilev;$Area_Smolensk;$Area_Tver ;$Area_Tula;$Area_Yaroslavl;$Area_Moskwa;$Area_Kostroma;$Area_Ryazan;$Area_Orel;$Area_Kursk;$Area_Voronezh ;$Area_Nizhniy_Novgorod;$Area_Tambov;$Area_Penza;$Area_Simbirsk;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdSubversion;0
+  EvalRgnDecisionAct  = $rgdTcheka;0
+  IsRgnDecisionActValid = $rgdRequisitions
+
+Actions
+  AddRgnDecisionAct = $rgdConscriptions;CURRENT
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDGulagreset|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+
+Actions
+  SetEvtOccurs = evt_nam_RGDRActGulag;CuOccurs;0
+  SetEvtOccurs = evt_nam_RGDRActGulag2;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDRActGulag|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 3;6;9;12;15;18;21
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_allowingRGDGulag;>=;1;
+  Probability = 70
+  AddToRegListFromAreas = $Area_Minsk;$Area_Petrograd;$Area_Novgorod;$Area_Pskov;$Area_Mogilev;$Area_Smolensk;$Area_Tver ;$Area_Tula;$Area_Yaroslavl;$Area_Moskwa;$Area_Kostroma;$Area_Ryazan;$Area_Orel;$Area_Kursk;$Area_Voronezh ;$Area_Nizhniy_Novgorod;$Area_Tambov;$Area_Penza;$Area_Simbirsk;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLackLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdSubversion;0
+  EvalRgnDecisionAct  = $rgdTcheka;0
+  IsRgnDecisionActValid = $rgdTcheka
+
+Actions
+  AddRgnDecisionAct = $rgdTcheka;CURRENT
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDRActGulag2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 3;6;9;12;15;18;21
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_RGDRActGulag;=;0;
+  EvalEvent = evt_nam_RGDRActGulagconquest;=;0;
+  AddToRegListFromAreas = $Area_Minsk;$Area_Petrograd;$Area_Novgorod;$Area_Pskov;$Area_Mogilev;$Area_Smolensk;$Area_Tver ;$Area_Tula;$Area_Yaroslavl;$Area_Moskwa;$Area_Kostroma;$Area_Ryazan;$Area_Orel;$Area_Kursk;$Area_Voronezh ;$Area_Nizhniy_Novgorod;$Area_Tambov;$Area_Penza;$Area_Simbirsk;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLackLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdSubversion;0
+  EvalRgnDecisionAct  = $rgdTcheka;0
+  IsRgnDecisionActValid = $rgdTcheka
+
+Actions
+  AddRgnDecisionAct = $rgdTcheka;CURRENT
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDSubversionreset|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+
+Actions
+  SetEvtOccurs = evt_nam_RGDRActSubversionUkr;CuOccurs;0
+  SetEvtOccurs = evt_nam_RGDRActSubversionSouth;CuOccurs;0
+  SetEvtOccurs = evt_nam_RGDRActSubversionPol;CuOccurs;0
+  SetEvtOccurs = evt_nam_RGDRActSubversionCauc;CuOccurs;0
+  SetEvtOccurs = evt_nam_RGDRActSubversionBalt;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDRActSubversionUkr|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 3;6;9;12;15;18;21
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_allowingRGDSubv;>=;1;
+  Probability = 25
+  AddToRegListFromAreas = $Area_Kiew;$Area_Podolsk;$Area_Kherson ;$Area_Ekaterinoslav;$Area_Chernigov;$Area_Poltava;$Area_Kharkov;$Area_Taurida;AreaCapitalOnly
+  PickFromRegList = NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLackLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdSubversion;0
+  EvalRgnDecisionAct  = $rgdTcheka;0
+  IsRgnDecisionActValid = $rgdSubversion
+
+Actions
+  AddRgnDecisionAct = $rgdSubversion;CURRENT
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDRActSubversionSouth|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 3;6;9;12;15;18;21
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_allowingRGDSubv;>=;1;
+  EvalEvent = evt_nam_RGDRActSubversionUkr;=;0;
+  Probability = 25
+  AddToRegListFromAreas = $Area_Kuban;$Area_Astrakhan;$Area_Stavropol;$Area_Terek;$Area_Don;AreaCapitalOnly
+  PickFromRegList = NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLackLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdSubversion;0
+  EvalRgnDecisionAct  = $rgdTcheka;0
+  IsRgnDecisionActValid = $rgdSubversion
+
+Actions
+  AddRgnDecisionAct = $rgdSubversion;CURRENT
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDRActSubversionPol|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 3;6;9;12;15;18;21
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_allowingRGDSubv;>=;1;
+  EvalEvent = evt_nam_RGDRActSubversionSouth;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionUral;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionSiberia;=;0;
+  Probability = 25
+  AddToRegListFromAreas = $Area_Galicia;$Area_Mazowia;AreaCapitalOnly
+  PickFromRegList = NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLackLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdSubversion;0
+  EvalRgnDecisionAct  = $rgdTcheka;0
+  IsRgnDecisionActValid = $rgdSubversion
+
+Actions
+  AddRgnDecisionAct = $rgdSubversion;CURRENT
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDRActSubversionCauc|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 3;6;9;12;15;18;21
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_allowingRGDSubv;>=;1;
+  EvalEvent = evt_nam_RGDRActSubversionSouth;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionUral;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionSiberia;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionPol;=;0;
+  Probability = 25
+  AddToRegListFromAreas = $Area_Georgia;$Area_Armenia;$Area_Azerbaijan;AreaCapitalOnly
+  PickFromRegList = NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLackLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdSubversion;0
+  EvalRgnDecisionAct  = $rgdTcheka;0
+  IsRgnDecisionActValid = $rgdSubversion
+
+Actions
+  AddRgnDecisionAct = $rgdSubversion;CURRENT
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDRActSubversionBalt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 3;6;9;12;15;18;21
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_allowingRGDSubv;>=;1;
+  EvalEvent = evt_nam_RGDRActSubversionUkr;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionSouth;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionUral;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionSiberia;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionPol;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionCauc;=;0;
+  Probability = 25
+  AddToRegListFromAreas = $Area_Vilnius;$Area_Lithuania ;$Area_Latvia;$Area_Estonia;AreaCapitalOnly
+  PickFromRegList = NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLackLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdSubversion;0
+  EvalRgnDecisionAct  = $rgdTcheka;0
+  IsRgnDecisionActValid = $rgdSubversion
+
+Actions
+  AddRgnDecisionAct = $rgdSubversion;CURRENT
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RGDRActSubversionUkr2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  TurnIndex  = 3;6;9;12;15;18;21
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_allowingRGDSubv;>=;1;
+  EvalEvent = evt_nam_RGDRActSubversionUkr;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionSouth;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionUral;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionSiberia;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionPol;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionCauc;=;0;
+  EvalEvent = evt_nam_RGDRActSubversionBalt;=;0;
+  AddToRegListFromAreas = $Area_Kiew;$Area_Podolsk;$Area_Kherson ;$Area_Ekaterinoslav;$Area_Chernigov;$Area_Poltava;$Area_Kharkov;$Area_Taurida;AreaCapitalOnly
+  PickFromRegList = NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLackLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdSubversion;0
+  EvalRgnDecisionAct  = $rgdTcheka;0
+  IsRgnDecisionActValid = $rgdSubversion
+
+Actions
+  AddRgnDecisionAct = $rgdSubversion;CURRENT
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Red_PoolAdjust|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+
+Actions
+  AI.SetPoolRatio = $famElite;25
+  AI.SetPoolRatio = $famLine;100
+  AI.SetPoolRatio = $famLightInf;25
+  AI.SetPoolRatio = $famSkirmisher;25
+  AI.SetPoolRatio = $famRaider;10
+  AI.SetPoolRatio = $famMilitia;5
+  AI.SetPoolRatio = $famCavalry;50
+  AI.SetPoolRatio = $famHvyCavalry;25
+  AI.SetPoolRatio = $famLtVehicle;75
+  AI.SetPoolRatio = $famMedVehicle;50
+  AI.SetPoolRatio = $famHvyVehicle;50
+  AI.SetPoolRatio = $famSHvyVehicle;50
+  AI.SetPoolRatio = $famLightArty;50
+  AI.SetPoolRatio = $famMedArty;50
+  AI.SetPoolRatio = $famHvyArty;50
+  AI.SetPoolRatio = $famSHvyArty;50
+  AI.SetPoolRatio = $famArmoredTrain;25
+  AI.SetPoolRatio = $famSupply;75
+  AI.SetPoolRatio = $famGood;0
+  AI.SetPoolRatio = $famService;5
+  AI.SetPoolRatio = $famEngineer;10
+  AI.SetPoolRatio = $famNavalEngineer;5
+  AI.SetPoolRatio = $famHvyWarship;1
+  AI.SetPoolRatio = $famHeavyWarship;1
+  AI.SetPoolRatio = $famLightWarship;1
+  AI.SetPoolRatio = $famLtWarship;1
+  AI.SetPoolRatio = $famRaiderShip;5
+  AI.SetPoolRatio = $famTransportShip;5
+  AI.SetPoolRatio = $famHvyCoastalShip;5
+  AI.SetPoolRatio = $famLitCoastalShip;5
+  AI.SetPoolRatio = $famCarrierShip;1
+  AI.SetPoolRatio = $famSubmarine;10
+  AI.SetPoolRatio = $famSubTransport;1
+  AI.SetPoolRatio = $famAirRecon;10
+  AI.SetPoolRatio = $famAirFighter;10
+  AI.SetPoolRatio = $famAirNavBomber;5
+  AI.SetPoolRatio = $famAirLevelBomber;10
+  AI.SetPoolRatio = $famAirStratBomber;5
+  AI.SetPoolRatio = $famAirTransport;5
+  AI.SetPoolRatio = $famCoastalShip;5
+
+EndEvent
+  NULL = NULL
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_UkraineIncident_AIActivate1|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  MaxDate = 1922/06/30
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaMCEvent;RED_UkraineIncident
+  Probability = 85
+
+Actions
+  ChangeOption = $gmaMCEvent;RED_UkraineIncident;1
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_RED_UltimatumChooseOption1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  SetEvtOccurs = evt_nam_RED_Ukraine21OptionChosen;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_UkraineIncident_AIActivate2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  MaxDate = 1922/06/30
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_RED_UkraineIncident_AIActivate1;=;0
+  ActorEnabled = $gmaMCEvent;RED_UkraineIncident
+
+Actions
+  ChangeOption = $gmaMCEvent;RED_UkraineIncident;2
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_RED_UltimatumChooseOption2;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  SetEvtOccurs = evt_nam_RED_Ukraine21OptionChosen;CuOccurs;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Rail_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;RED_More_Rail
+  Probability = 95
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_More_Rail;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_MurmanskForts_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;RED_MurmanskForts
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_MurmanskForts;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ArkhangelskForts_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;RED_ArkhangelskForts
+  Probability = 95
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_ArkhangelskForts;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PetrogradMines_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;RED_PetrogradMines
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_PetrogradMines;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RostovMines_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;RED_RostovMines
+  Probability = 95
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_RostovMines;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Frunze_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;RED_Frunze
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_Frunze;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Stalin_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;RED_Stalin
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_Stalin;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;RED_More_Money
+  EvalMoney = <;200
+  Probability = 85
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_More_Money;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_TurkestanArmy_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;RED_TurkestanArmy
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_TurkestanArmy;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SiberianTransfer_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;RED_SiberianTransfer
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_SiberianTransfer;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_GeneralMobilization_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;RED_GeneralMobilization
+  EvalMorale = >=;100
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_GeneralMobilization;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilization_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;RED_PartialMobilization
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_PartialMobilization;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BielorussianPartisans_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/05/05
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;RED_BielorussianPartisans
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_BielorussianPartisans;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PrisonnersRecruitment_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;RED_PrisonnersRecruitment
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_PrisonnersRecruitment;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartyMembersJoinArmy_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;RED_PartyMembersJoinArmy
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_PartyMembersJoinArmy;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_InternationalVolunteers_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;RED_InternationalVolunteers
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_InternationalVolunteers;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_CossacksJoin_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionReinf;RED_CossacksJoin
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_CossacksJoin;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ArmoredDivision_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/03/15
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;RED_ArmoredDivision
+  Probability = 35
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_ArmoredDivision;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_IvanovoTankFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1919/06/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;RED_IvanovoTankFactory
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_IvanovoTankFactory;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Nizhniy NovgorodTankFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1919/06/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;RED_Nizhniy NovgorodTankFactory
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_Nizhniy NovgorodTankFactory;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_EkaterinburgFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;RED_EkaterinburgFactory
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_EkaterinburgFactory;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PermFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;RED_PermFactory
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_PermFactory;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ChelyabinskFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;RED_ChelyabinskFactory
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_ChelyabinskFactory;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_UfaFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;RED_UfaFactory
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_UfaFactory;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SamaraFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;RED_SamaraFactory
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_SamaraFactory;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignAlliance_ANA_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;RED_SignAlliance_ANA
+  Probability = 15
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_SignAlliance_ANA;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakAlliance_ANA_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  EvalEvent = evt_nam_RED_AllianceWithAnarchists;>=;1
+  ActorEnabled = $gmaOptionDip;RED_BreakAlliance_ANA
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_BreakAlliance_ANA;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedPropaganda1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  EvalMoney = >=;100
+  ActorEnabled = $gmaOptionPol;RED_RedPropaganda1
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_RedPropaganda1;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SovietUkraine_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;RED_SovietUkraine
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_SovietUkraine;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Support_Communists1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;RED_Support_Communists1
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_Support_Communists1;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Provoke_Strikes_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;RED_Provoke_Strikes
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_Provoke_Strikes;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_HungarianRevolution_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;RED_HungarianRevolution
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_HungarianRevolution;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_Moscow_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;RED_RedVerdun_Moscow
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_RedVerdun_Moscow;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_Petrograd_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;RED_RedVerdun_Petrograd
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_RedVerdun_Petrograd;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RedVerdun_Tzaritsyn_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;RED_RedVerdun_Tzaritsyn
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_RedVerdun_Tzaritsyn;1
+
+EndEvent
+  NULL = NULL
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_MoveCapital_to_Samara_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionPol;RED_MoveCapital_to_Samara
+  Probability = 100
+
+Actions
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_MoveCapital_to_Samara;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BalticDOW_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;RED_BalticDOW
+
+EvalRgnOwned = $Minsk
+
+EvalRgnOwned = $Pskov
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_BalticDOW;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_FinnishDOW_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;RED_FinnishDOW
+
+EvalRgnOwned = $Narva
+
+EvalRgnOwned = $Tallinn
+
+EvalRgnOwned = $Petrograd
+  Probability = 15
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_FinnishDOW;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RumanianDOW_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;RED_RumanianDOW
+
+EvalRgnOwned = $Kiev
+
+EvalRgnOwned = $Kharkov
+
+EvalRgnOwned = $Odessa
+
+EvalRgnOwned = $Sevastopol
+  Probability = 10
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_RumanianDOW;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_CaucasianDOW_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionDip;RED_CaucasianDOW
+
+EvalRgnOwned = $Ekaterinodar
+
+EvalRgnOwned = $Grozny
+
+EvalRgnOwned = $Rostov
+
+EvalRgnOwned = $Astrakhan
+
+EvalRgnOwned = $Tzaritsyn
+  Probability = 35
+
+Actions
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_CaucasianDOW;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_StalinLine1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  CheckIsPlayer = NOT
+  ActorEnabled = $gmaOptionVar;RED_StalinLine1
+
+EvalRgnOwned = $Smolensk;NOT
+
+EvalRgnOwned = $Minsk;NOT
+
+EvalRgnOwned = $Kiev;NOT
+
+SelectFaction = $RED 
+  EvalEngagementPts = >=;20
+  EvalMoney = >=;200
+
+SelectFaction = $GER
+  EvalWSU = >=;150
+  EvalReplacement = RED;$famLine;>=;6
+  Probability = 50
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_StalinLine1;1
+
+EndEvent

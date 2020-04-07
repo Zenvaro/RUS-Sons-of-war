@@ -1,0 +1,15 @@
+UID = 434
+NationTag = FIN
+Name = Rebels
+Alias = uni_FIN_Reb
+ForcePool = 12
+ShortName = Rebels
+Text = $uni_FIN_Reb_txt
+Color = $colFINMilitia
+ModelType0 = $mdl_FIN_Mil3|1
+FamilyType0 = $famMilitia|1
+CmdCost = 0
+Pillage = 60
+BuildRule = $recWild
+BuildWeight = 0
+CustomNames = 1st Rebels|2nd Rebels|3rd Rebels|4th Rebels|5th Rebels|6th Rebels|7th Rebels|8th Rebels|9th Rebels|10th Rebels|11th Rebels|12th Rebels|13th Rebels|14th Rebels|15th Rebels|16th Rebels|17th Rebels|18th Rebels|19th Rebels|20th Rebels|21st Rebels|22nd Rebels|23rd Rebels|24th Rebels|25th Rebels|26th Rebels|27th Rebels|28th Rebels|29th Rebels|30th Rebels|31st Rebels|32nd Rebels|33rd Rebels|34th Rebels|35th Rebels|36th Rebels|37th Rebels|38th Rebels|39th Rebels|40th Rebels|41st Rebels|42nd Rebels|43rd Rebels|44th Rebels|45th Rebels|46th Rebels|47th Rebels|48th Rebels|49th Rebels|50th Rebels|51st Rebels|52nd Rebels|53rd Rebels|54th Rebels|55th Rebels|56th Rebels|57th Rebels|58th Rebels|59th Rebels|60th Rebels|61st Rebels|62nd Rebels|63rd Rebels|64th Rebels|65th Rebels|66th Rebels|67th Rebels|68th Rebels|69th Rebels|70th Rebels

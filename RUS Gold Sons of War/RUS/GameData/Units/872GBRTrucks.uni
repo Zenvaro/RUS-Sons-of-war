@@ -1,0 +1,14 @@
+UID = 872
+NationTag = GBR
+Name = Trucks
+Alias = uni_GBR_Tru
+ForcePool = 12
+ShortName = Trucks
+Text = $uni_GBR_Tru_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Tru|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

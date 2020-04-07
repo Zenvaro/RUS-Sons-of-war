@@ -1,0 +1,16 @@
+UID = 646
+NationTag = BAL
+Name = Baltic Defense Militia
+Alias = uni_BAL_Mil2
+ForcePool = 8
+ShortName = Militia
+Text = $uni_BAL_Mil2_txt
+Color = $colBALMilitia
+ModelType0 = $mdl_BAL_Mil1|2
+FamilyType0 = $famMilitia|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Balts
+CustomNames = 1st Baltic Militia|2nd Baltic Militia|3rd Baltic Militia|4th Baltic Militia|5th Baltic Militia|6th Baltic Militia|7th Baltic Militia|8th Baltic Militia|9th Baltic Militia|10th Baltic Militia|11th Baltic Militia|12th Baltic Militia|13th Baltic Militia|14th Baltic Militia|15th Baltic Militia|16th Baltic Militia|17th Baltic Militia|18th Baltic Militia|19th Baltic Militia|20th Baltic Militia|21st Baltic Militia|22nd Baltic Militia|23rd Baltic Militia|24th Baltic Militia|25th Baltic Militia|26th Baltic Militia|27th Baltic Militia|28th Baltic Militia|29th Baltic Militia|30th Baltic Militia|31st Baltic Militia|32nd Baltic Militia|33rd Baltic Militia|34th Baltic Militia|35th Baltic Militia|36th Baltic Militia|37th Baltic Militia|38th Baltic Militia|39th Baltic Militia|40th Baltic Militia|41st Baltic Militia|42nd Baltic Militia|43rd Baltic Militia|44th Baltic Militia|45th Baltic Militia|46th Baltic Militia|47th Baltic Militia|48th Baltic Militia|49th Baltic Militia|50th Baltic Militia

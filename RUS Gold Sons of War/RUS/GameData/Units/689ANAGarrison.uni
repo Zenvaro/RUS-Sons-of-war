@@ -1,0 +1,16 @@
+UID = 689
+NationTag = ANA
+Name = Garrison
+Alias = uni_ANA_Gar3
+ShortName = Garrison
+Text = $uni_ANA_Gar3_txt
+Color = $colANARegular 
+ModelType0 = $mdl_ANA_Inf1|1
+ModelType1 = $mdl_ANA_Inf2|1
+ModelType2 = $mdl_ANA_Mil1|1
+FamilyType0 = $famLine|2
+FamilyType1 = $famMilitia|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

@@ -1,0 +1,2737 @@
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Riga
+
+StartEvent = evt_nam_RED_BalticDOW_Generate|1|0|NULL|NULL|$Riga|NULL
+
+Conditions
+
+  MinDate = 1919/01/02
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = RGD_Remove_Exclusion_Balt_RED|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_BolshevikDictature;=;0
+  MinDate = 1919/01/02
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = RGD_Remove_Exclusion_Balt_WHI|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_BalticDOW_Tracker;=;1
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = RGD_Remove_Exclusion_Finland_RED2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_BolshevikDictature;=;0
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = RGD_Remove_Exclusion_Finland_WHI2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = RGD_Remove_Exclusion_Caucasus_RED|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Georgia
+  RemRgnDecisionExcl = $Area_Armenia
+  RemRgnDecisionExcl = $Area_Azerbaijan
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = RGD_Remove_Exclusion_Caucasus_WHI|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Georgia
+  RemRgnDecisionExcl = $Area_Armenia
+  RemRgnDecisionExcl = $Area_Azerbaijan
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakAlliance_ANA_Generate|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakAlliance_ANA_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/12/01
+  CheckAILevel = 1
+  EvalEvent = evt_nam_RED_BreakAlliance_ANA_Generate;>=;1
+  ActorEnabled = $gmaOptionDip;RED_BreakAlliance_ANA
+  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
+
+SelectFaction = $WHI
+
+  EvalRgnOwned = $Sevastopol;NOT
+
+SelectFaction = $GRN
+
+  EvalRgnOwned = $Sevastopol;NOT
+
+SelectFaction = $WH3
+
+  EvalRgnOwned = $Sevastopol;NOT
+
+SelectFaction = $POL
+
+  EvalRgnOwned = $Sevastopol;NOT
+
+SelectFaction = $ROM
+
+  EvalRgnOwned = $Sevastopol;NOT
+
+SelectFaction = $UKR
+
+  EvalRgnOwned = $Sevastopol;NOT
+
+Actions
+
+SelectFaction = $ANA
+
+  ChangeOption = $gmaOptionDip;RED_BreakAlliance_ANA;1
+  ChangeFacMorale = -10
+  ChgVPCount = 60
+  SetEvtOccurs = evt_nam_BreakANA_Alliance_Checked;MaxOccurs;1
+  SetEvtOccurs = evt_nam_BreakANA_Alliance_Checked;MaxOccurs;0
+  SelectSubUnits = FactionTags ANA
+  AlterCuSubUnit = ApplytoList;Kill;
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_BreakAlliance_ANA;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakAlliance_ANA
+  SetEvtOccurs = evt_nam_RED_BreakAlliance_ANA_Check;MaxOccurs;0
+  RemRgnDecisionExcl = $Area_Ekaterinoslav
+  RemRgnDecisionExcl = $Area_Taurida
+  RemRgnDecisionExcl = $Area_Kharkov
+  RemRgnDecisionExcl = $Area_Chernigov
+  RemRgnDecisionExcl = $Area_Poltava
+  RemRgnDecisionExcl = $Area_Kherson
+  RemRgnDecisionExcl = $Area_Podolsk
+  RemRgnDecisionExcl = $Area_Kiew
+  RemRgnDecisionExcl = $Area_Volhynian
+  RemRgnDecisionExcl = $Area_Mogilev
+  SetFacRelationships = ANA;-100
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Kharkov;20
+  ChangeLoyaltyFac = $Area_Ekaterinoslav;50
+  ChangeLoyaltyFac = $Area_Taurida;20
+  ChangeLoyaltyFac = $Area_Kherson;30
+  ChangeLoyaltyFac = $Area_Chernigov;10
+  ChangeLoyaltyFac = $Area_Poltava;10
+  ChangeLoyaltyFac = $Area_Podolsk;10
+  ChangeLoyaltyFac = $Area_Kiew;10
+  ChangeLoyaltyFac = $Area_Volhynian;10
+  ChangeLoyaltyFac = $Area_Mogilev;10
+
+SelectFaction = $ANA
+
+  AddRgnDecisionExcl = $Area_Ekaterinoslav
+  AddRgnDecisionExcl = $Area_Taurida
+  ChangeLoyaltyFac = $Area_Ekaterinoslav;100
+  ChangeLoyaltyFac = $Area_Taurida ;100
+  ChangeUnitPool = $uni_ANA_Inf1;6
+  ChangeUnitPool = $uni_ANA_Cav1;12
+  ChangeUnitPool = $uni_ANA_Art0;6
+  ChangeUnitPool = $uni_ANA_MG1;3
+  ChangeUnitPool = $uni_ANA_Cav2;3
+ 
+  ChangeUnitPool = $uni_ANA_Sup;8
+  ChangeUnitPool = $uni_ANA_Amc1;1
+  Replacement = ANA;$famLtVehicle;3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakAlliance_ANA_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_RED_BreakAlliance_ANA_Generate;>=;1
+  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Event-img_CMN_FiringSquad.png;Title;opt_title_RED_BreakAlliance_ANA;MsgString;opt_desc_RED_BreakAlliance_ANA;ToolString;opt_hint_RED_BreakAlliance_ANA;SubType;RED_BreakAlliance_ANA;SParam1;RED
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakAlliance_ANA_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_BreakAlliance_ANA;=;1
+  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
+
+Actions
+
+  ChangeFacMorale = -10
+  ChgVPCount = 60
+  SetEvtOccurs = evt_nam_BreakANA_Alliance_Checked;MaxOccurs;1
+  RemRgnDecisionExcl = $Area_Ekaterinoslav
+  RemRgnDecisionExcl = $Area_Taurida
+  RemRgnDecisionExcl = $Area_Kharkov
+  RemRgnDecisionExcl = $Area_Chernigov
+  RemRgnDecisionExcl = $Area_Poltava
+  RemRgnDecisionExcl = $Area_Kherson
+  RemRgnDecisionExcl = $Area_Podolsk
+  RemRgnDecisionExcl = $Area_Kiew
+  RemRgnDecisionExcl = $Area_Volhynian
+  RemRgnDecisionExcl = $Area_Mogilev
+  SetFacRelationships = ANA;-100
+  SelectSubUnits = FactionTags ANA
+  AlterCuSubUnit = ApplytoList;Kill;
+  ChangeUnitPool = $uni_ANA_Inf1;-15
+  ChangeUnitPool = $uni_ANA_Cav1;-22
+  ChangeUnitPool = $uni_ANA_Art0;-15
+  ChangeUnitPool = $uni_ANA_MG1;-25
+  ChangeUnitPool = $uni_ANA_Cav2;-15
+  ChangeUnitPool = $uni_ANA_Par1;-15
+  ChangeUnitPool = $uni_ANA_Sup;-17
+  ChangeUnitPool = $uni_ANA_Amt1;-4
+  ChangeUnitPool = $uni_ANA_Amc1;-4
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Kharkov;20
+  ChangeLoyaltyFac = $Area_Ekaterinoslav;100
+  ChangeLoyaltyFac = $Area_Taurida;100
+  ChangeLoyaltyFac = $Area_Chernigov;10
+  ChangeLoyaltyFac = $Area_Poltava;10
+  ChangeLoyaltyFac = $Area_Kherson;30
+  ChangeLoyaltyFac = $Area_Podolsk;10
+  ChangeLoyaltyFac = $Area_Kiew;10
+  ChangeLoyaltyFac = $Area_Volhynian;10
+  ChangeLoyaltyFac = $Area_Mogilev;10
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Ekaterinoslav;100
+  ChangeLoyaltyFac = $Area_Taurida ;100
+  ChangeUnitPool = $uni_ANA_Inf1;6
+  ChangeUnitPool = $uni_ANA_Cav1;12
+  ChangeUnitPool = $uni_ANA_Art0;6
+  ChangeUnitPool = $uni_ANA_MG1;3
+  ChangeUnitPool = $uni_ANA_Cav2;3
+ 
+  ChangeUnitPool = $uni_ANA_Sup;8
+  ChangeUnitPool = $uni_ANA_Amc1;1
+  Replacement = ANA;$famLtVehicle;3
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_BreakAlliance_ANA;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakAlliance_ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_BreakANA_Alliance_Checked|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_Renforts_ANA_AIRaidersHuliaipole|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+  MinDate = 1918/11/16
+
+Actions
+
+
+SelectFaction = $ANA
+SelectRegion = $Huliaipole
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 0
+    FixType = 0
+    SetName = Raiders
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Cav1
+    SUFlavorName = Raiders Dcht
+    SetLevel = 1
+    SetName = Raiders Dcht
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Cav1
+    SUFlavorName = Raiders Dcht
+    SetLevel = 1
+    SetName = Raiders Dcht
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Cav1
+    SUFlavorName = Raiders Dcht
+    SetLevel = 1
+    SetName = Raiders Dcht
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Anarchist Dcht
+    SetLevel = 1
+    SetName = Anarchist Dcht
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Anarchist Dcht
+    SetLevel = 1
+    SetName = Anarchist Dcht
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = RGD_AddAgain_Exclusion_Balt_RED|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+
+Actions
+
+  AddRgnDecisionExcl = $Area_Lithuania
+  AddRgnDecisionExcl = $Area_Latvia
+  AddRgnDecisionExcl = $Area_Estonia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = RGD_AddAgain_Exclusion_Balt_WHI|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+
+Actions
+
+  AddRgnDecisionExcl = $Area_Lithuania
+  AddRgnDecisionExcl = $Area_Latvia
+  AddRgnDecisionExcl = $Area_Estonia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = RGD_AddAgain_Exclusion_Fin_RED|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+
+Actions
+
+  AddRgnDecisionExcl = $Area_Finland
+  AddRgnDecisionExcl = $Area_Karelia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = RGD_AddAgain_Exclusion_Fin_WHI|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+
+Actions
+
+  AddRgnDecisionExcl = $Area_Finland
+  AddRgnDecisionExcl = $Area_Karelia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_ANA_TakeControlKiewArea|1|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  SelectSubUnits = Area $Area_Kiew;FactionTags ANA
+  EvalSubUnitCount = >;20
+  EvalRgnOwned = $Kiev
+
+Actions
+
+  AddRgnDecisionExcl = $Area_Kiew
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Kiew;10
+
+SelectFaction = $RED
+
+  ChangeLoyaltyFac = $Area_Kiew;10
+
+SelectFaction = $ANA
+SelectRegion = $Kiev
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 999
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+SelectFaction = $ANA
+
+  ChangeUnitPool = $uni_ANA_Div3;1
+  ChangeUnitPool = $uni_ANA_Div5;1
+  ChangeUnitPool = $uni_ANA_Sai;4
+  ChangeUnitPool = $uni_ANA_Mil6;4
+  ChangeUnitPool = $uni_ANA_Gar3;2
+  ChangeUnitPool = $uni_ANA_Bty;1
+  ChangeUnitPool = $uni_ANA_Cav1;4
+  ChangeUnitPool = $uni_ANA_Art0;1
+  ChangeUnitPool = $uni_ANA_Art1;1
+  ChangeUnitPool = $uni_ANA_Art3;1
+  ChangeUnitPool = $uni_ANA_MG1;2
+  ChangeUnitPool = $uni_ANA_MG0;2
+  ChangeUnitPool = $uni_ANA_Sup;2
+  ChangeUnitPool = $uni_ANA_Amc1;1
+  ChangeUnitPool = $uni_ANA_Amt1;1
+  ChangeUnitPool = $uni_ANA_Amt2;1
+  ChangeUnitPool = $uni_ANA_Hq;1
+  ChangeUnitPool = $uni_ANA_Sig;2
+  ChangeUnitPool = $uni_ANA_Med;2
+
+  Replacement = ANA;$famArmoredTrain;3
+  Replacement = ANA;$famLtVehicle;3
+  ChangeRailPool = 50
+  ChangeConscriptPool = 10
+  ChangeMoneyPool = 70
+  ChangeWSUPool = 20
+  ChgFacEngagementPts = 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_ANA_ReplaceFromKiew|10|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  Probability = 35
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  EvalEvent = evt_nam_ANA_TakeControlKiewArea;=;1
+
+Actions
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Kiew;10
+
+SelectFaction = $RED
+
+  ChangeLoyaltyFac = $Area_Kiew;10
+
+SelectFaction = $ANA
+SelectRegion = $Kiev
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+SelectFaction = $ANA
+
+  Replacement = ANA;$famLine;1
+  Replacement = ANA;$famMilitia;1
+  Replacement = ANA;$famCavalry;1
+  Replacement = ANA;$famSupply;1
+  Replacement = ANA;$famRaider;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Rowno
+
+StartEvent = evt_nam_ANA_TakeControlVolhynianArea|1|1|NULL|NULL|$Rowno|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  SelectSubUnits = Area $Area_Volhynian;FactionTags ANA
+  EvalSubUnitCount = >;20
+
+Actions
+
+  AddRgnDecisionExcl = $Area_Volhynian
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Volhynian;10
+
+SelectFaction = $RED
+
+  ChangeLoyaltyFac = $Area_Volhynian;10
+
+SelectFaction = $ANA
+SelectRegion = $Rowno
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 999
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+SelectFaction = $ANA
+
+  ChangeUnitPool = $uni_ANA_Div3;1
+  ChangeUnitPool = $uni_ANA_Div5;1
+  ChangeUnitPool = $uni_ANA_Sai;4
+  ChangeUnitPool = $uni_ANA_Mil6;4
+  ChangeUnitPool = $uni_ANA_Gar3;2
+  ChangeUnitPool = $uni_ANA_Bty;1
+  ChangeUnitPool = $uni_ANA_Cav1;4
+  ChangeUnitPool = $uni_ANA_Art0;1
+  ChangeUnitPool = $uni_ANA_Art1;1
+  ChangeUnitPool = $uni_ANA_Art3;1
+  ChangeUnitPool = $uni_ANA_MG1;2
+  ChangeUnitPool = $uni_ANA_MG0;2
+  ChangeUnitPool = $uni_ANA_Sup;2
+  ChangeUnitPool = $uni_ANA_Amc1;1
+  ChangeUnitPool = $uni_ANA_Amt1;1
+  ChangeUnitPool = $uni_ANA_Amt2;1
+  ChangeUnitPool = $uni_ANA_Hq;1
+  ChangeUnitPool = $uni_ANA_Sig;2
+  ChangeUnitPool = $uni_ANA_Med;2
+  ChangeRailPool = 30
+  ChangeConscriptPool = 5
+  ChangeMoneyPool = 40
+  ChangeWSUPool = 10
+  ChgFacEngagementPts = 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Rowno
+
+StartEvent = evt_nam_ANA_ReplaceFromVolhynian|10|1|NULL|NULL|$Rowno|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  Probability = 35
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  EvalEvent = evt_nam_ANA_TakeControlVolhynianArea;=;1
+
+Actions
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Volhynian;10
+
+SelectFaction = $RED
+
+  ChangeLoyaltyFac = $Area_Volhynian;10
+
+SelectFaction = $ANA
+SelectRegion = $Rowno
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+SelectFaction = $ANA
+
+  Replacement = ANA;$famLine;1
+  Replacement = ANA;$famMilitia;1
+  Replacement = ANA;$famCavalry;1
+  Replacement = ANA;$famSupply;1
+  Replacement = ANA;$famRaider;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_ANA_ReplaceFromEkaterinoslavTaurida|10|1|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  Probability = 35
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+
+Actions
+
+SelectFaction = $ANA
+
+  Replacement = ANA;$famLine;1
+  Replacement = ANA;$famMilitia;1
+  Replacement = ANA;$famCavalry;1
+  Replacement = ANA;$famSupply;1
+  Replacement = ANA;$famRaider;1
+
+SelectFaction = $ANA
+SelectRegion = $Huliaipole
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+SelectFaction = $RED
+
+  ChangeLoyaltyFac = $Area_Ekaterinoslav;10
+  ChangeLoyaltyFac = $Area_Taurida;10
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Ekaterinoslav;10
+  ChangeLoyaltyFac = $Area_Taurida;10
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_ANA_TakeControlKharkovArea|1|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  SelectSubUnits = Area $Area_Kharkov;FactionTags ANA
+  EvalSubUnitCount = >;20
+
+Actions
+
+  AddRgnDecisionExcl = $Area_Kharkov
+  ChangeLoyaltyFac = $Area_Kharkov;10
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Kharkov;10
+
+SelectFaction = $ANA
+
+  ChangeUnitPool = $uni_ANA_Div3;1
+  ChangeUnitPool = $uni_ANA_Div5;1
+  ChangeUnitPool = $uni_ANA_Sai;4
+  ChangeUnitPool = $uni_ANA_Mil6;4
+  ChangeUnitPool = $uni_ANA_Gar3;2
+  ChangeUnitPool = $uni_ANA_Bty;1
+  ChangeUnitPool = $uni_ANA_Cav1;4
+  ChangeUnitPool = $uni_ANA_Art0;1
+  ChangeUnitPool = $uni_ANA_Art1;1
+  ChangeUnitPool = $uni_ANA_Art3;1
+  ChangeUnitPool = $uni_ANA_MG1;2
+  ChangeUnitPool = $uni_ANA_MG0;2
+  ChangeUnitPool = $uni_ANA_Sup;2
+  ChangeUnitPool = $uni_ANA_Amc1;1
+  ChangeUnitPool = $uni_ANA_Amt1;1
+  ChangeUnitPool = $uni_ANA_Amt2;1
+  ChangeUnitPool = $uni_ANA_Hq;1
+  ChangeUnitPool = $uni_ANA_Sig;2
+  ChangeUnitPool = $uni_ANA_Med;2
+  Replacement = ANA;$famArmoredTrain;3
+  Replacement = ANA;$famLtVehicle;3
+  ChangeRailPool = 50
+  ChangeConscriptPool = 15
+  ChangeMoneyPool = 50
+  ChangeWSUPool = 20
+  ChgFacEngagementPts = 5
+
+SelectFaction = $ANA
+SelectRegion = $Kharkov
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 999
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_ANA_ReplaceFromKharkov|10|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  Probability = 35
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  EvalEvent = evt_nam_ANA_TakeControlKharkovArea;=;1
+
+Actions
+
+  SelectFaction = $ANA
+  Replacement = ANA;$famLine;1
+  Replacement = ANA;$famMilitia;1
+  Replacement = ANA;$famCavalry;1
+  Replacement = ANA;$famSupply;1
+  Replacement = ANA;$famRaider;1
+  ChangeLoyaltyFac = $Area_Kharkov;10
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Kharkov;10
+
+SelectFaction = $ANA
+SelectRegion = $Kharkov
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Chernigov
+
+StartEvent = evt_nam_ANA_TakeControlChernigovArea|1|1|NULL|NULL|$Chernigov|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  SelectSubUnits = Area $Area_Chernigov;FactionTags ANA
+  EvalSubUnitCount = >;20
+
+Actions
+
+  AddRgnDecisionExcl = $Area_Chernigov
+  ChangeLoyaltyFac = $Area_Chernigov;10
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Chernigov;10
+
+SelectFaction = $ANA
+SelectRegion = $Chernigov
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 999
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+SelectFaction = $ANA
+
+  ChangeUnitPool = $uni_ANA_Div3;1
+  ChangeUnitPool = $uni_ANA_Div5;1
+  ChangeUnitPool = $uni_ANA_Sai;4
+  ChangeUnitPool = $uni_ANA_Mil6;4
+  ChangeUnitPool = $uni_ANA_Gar3;2
+  ChangeUnitPool = $uni_ANA_Bty;1
+  ChangeUnitPool = $uni_ANA_Cav1;4
+  ChangeUnitPool = $uni_ANA_Art0;1
+  ChangeUnitPool = $uni_ANA_Art1;1
+  ChangeUnitPool = $uni_ANA_Art3;1
+  ChangeUnitPool = $uni_ANA_MG1;2
+  ChangeUnitPool = $uni_ANA_MG0;2
+  ChangeUnitPool = $uni_ANA_Sup;2
+  ChangeUnitPool = $uni_ANA_Amc1;1
+  ChangeUnitPool = $uni_ANA_Amt1;1
+  ChangeUnitPool = $uni_ANA_Amt2;1
+  ChangeUnitPool = $uni_ANA_Hq;1
+  ChangeUnitPool = $uni_ANA_Sig;2
+  ChangeUnitPool = $uni_ANA_Med;2
+  ChangeRailPool = 30
+  ChangeConscriptPool = 5
+  ChangeMoneyPool = 40
+  ChangeWSUPool = 10
+  ChgFacEngagementPts = 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Chernigov
+
+StartEvent = evt_nam_ANA_ReplaceFromChernigov|10|1|NULL|NULL|$Chernigov|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  Probability = 35
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  EvalEvent = evt_nam_ANA_TakeControlChernigovArea;=;1
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Chernigov;10
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Chernigov;10
+
+SelectFaction = $ANA
+SelectRegion = $Chernigov
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+SelectFaction = $ANA
+
+  Replacement = ANA;$famLine;1
+  Replacement = ANA;$famMilitia;1
+  Replacement = ANA;$famCavalry;1
+  Replacement = ANA;$famSupply;1
+  Replacement = ANA;$famRaider;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Poltava
+
+StartEvent = evt_nam_ANA_TakeControlPoltavaArea|1|1|NULL|NULL|$Poltava|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  SelectSubUnits = Area $Area_Poltava;FactionTags ANA
+  EvalSubUnitCount = >;20
+
+Actions
+
+  AddRgnDecisionExcl = $Area_Poltava
+  ChangeLoyaltyFac = $Area_Poltava;10
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Poltava;10
+
+SelectFaction = $ANA
+SelectRegion = $Poltava
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 999
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+SelectFaction = $ANA
+
+  ChangeUnitPool = $uni_ANA_Div3;1
+  ChangeUnitPool = $uni_ANA_Div5;1
+  ChangeUnitPool = $uni_ANA_Sai;4
+  ChangeUnitPool = $uni_ANA_Mil6;4
+  ChangeUnitPool = $uni_ANA_Gar3;2
+  ChangeUnitPool = $uni_ANA_Bty;1
+  ChangeUnitPool = $uni_ANA_Cav1;4
+  ChangeUnitPool = $uni_ANA_Art0;1
+  ChangeUnitPool = $uni_ANA_Art1;1
+  ChangeUnitPool = $uni_ANA_Art3;1
+  ChangeUnitPool = $uni_ANA_MG1;2
+  ChangeUnitPool = $uni_ANA_MG0;2
+  ChangeUnitPool = $uni_ANA_Sup;2
+  ChangeUnitPool = $uni_ANA_Amc1;1
+  ChangeUnitPool = $uni_ANA_Amt1;1
+  ChangeUnitPool = $uni_ANA_Amt2;1
+  ChangeUnitPool = $uni_ANA_Hq;1
+  ChangeUnitPool = $uni_ANA_Sig;2
+  ChangeUnitPool = $uni_ANA_Med;2
+  ChangeRailPool = 30
+  ChangeConscriptPool = 5
+  ChangeMoneyPool = 40
+  ChangeWSUPool = 10
+  ChgFacEngagementPts = 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Poltava
+
+StartEvent = evt_nam_ANA_ReplaceFromPoltava|10|1|NULL|NULL|$Poltava|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  Probability = 35
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  EvalEvent = evt_nam_ANA_TakeControlPoltavaArea;=;1
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Poltava;10
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Poltava;10
+
+SelectFaction = $ANA
+SelectRegion = $Poltava
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+SelectFaction = $ANA
+
+  Replacement = ANA;$famLine;1
+  Replacement = ANA;$famMilitia;1
+  Replacement = ANA;$famCavalry;1
+  Replacement = ANA;$famSupply;1
+  Replacement = ANA;$famRaider;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kherson
+
+StartEvent = evt_nam_ANA_TakeControlKhersonArea|1|1|NULL|NULL|$Kherson|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  SelectSubUnits = Area $Area_Kherson;FactionTags ANA
+  EvalSubUnitCount = >;20
+
+Actions
+
+  AddRgnDecisionExcl = $Area_Kherson
+  ChangeLoyaltyFac = $Area_Kherson;10
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Kherson;10
+
+SelectFaction = $ANA
+SelectRegion = $Kherson
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 999
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+SelectFaction = $RED
+
+  ChangeUnitPool = $uni_ANA_Div3;1
+  ChangeUnitPool = $uni_ANA_Div5;1
+  ChangeUnitPool = $uni_ANA_Sai;4
+  ChangeUnitPool = $uni_ANA_Mil6;4
+  ChangeUnitPool = $uni_ANA_Gar3;2
+  ChangeUnitPool = $uni_ANA_Bty;1
+  ChangeUnitPool = $uni_ANA_Cav1;4
+  ChangeUnitPool = $uni_ANA_Art0;1
+  ChangeUnitPool = $uni_ANA_Art1;1
+  ChangeUnitPool = $uni_ANA_Art3;1
+  ChangeUnitPool = $uni_ANA_MG1;2
+  ChangeUnitPool = $uni_ANA_MG0;2
+  ChangeUnitPool = $uni_ANA_Sup;2
+  ChangeUnitPool = $uni_ANA_Amc1;1
+  ChangeUnitPool = $uni_ANA_Amt1;1
+  ChangeUnitPool = $uni_ANA_Amt2;1
+  ChangeUnitPool = $uni_ANA_Hq;1
+  ChangeUnitPool = $uni_ANA_Sig;2
+  ChangeUnitPool = $uni_ANA_Med;2
+  Replacement = ANA;$famArmoredTrain;3
+  Replacement = ANA;$famLtVehicle;3
+  ChangeRailPool = 40
+  ChangeConscriptPool = 10
+  ChangeMoneyPool = 50
+  ChangeWSUPool = 20
+  ChgFacEngagementPts = 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kherson
+
+StartEvent = evt_nam_ANA_ReplaceFromKherson|10|1|NULL|NULL|$Kherson|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  Probability = 35
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  EvalEvent = evt_nam_ANA_TakeControlKhersonArea;=;1
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kherson;10
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Kherson;10
+
+SelectFaction = $ANA
+SelectRegion = $Kherson
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+SelectFaction = $ANA
+
+  Replacement = ANA;$famLine;1
+  Replacement = ANA;$famMilitia;1
+  Replacement = ANA;$famCavalry;1
+  Replacement = ANA;$famSupply;1
+  Replacement = ANA;$famRaider;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Vinnytsia
+
+StartEvent = evt_nam_ANA_TakeControlPodolskArea|1|1|NULL|NULL|$Vinnytsia|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  SelectSubUnits = Area $Area_Podolsk;FactionTags ANA
+  EvalSubUnitCount = >;20
+
+Actions
+
+  AddRgnDecisionExcl = $Area_Podolsk
+  ChangeLoyaltyFac = $Area_Podolsk;10
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Podolsk;10
+
+SelectFaction = $ANA
+SelectRegion = $Vinnytsia
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 999
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+SelectFaction = $ANA
+
+  ChangeUnitPool = $uni_ANA_Div3;1
+  ChangeUnitPool = $uni_ANA_Div5;1
+  ChangeUnitPool = $uni_ANA_Sai;4
+  ChangeUnitPool = $uni_ANA_Mil6;4
+  ChangeUnitPool = $uni_ANA_Gar3;2
+  ChangeUnitPool = $uni_ANA_Bty;1
+  ChangeUnitPool = $uni_ANA_Cav1;4
+  ChangeUnitPool = $uni_ANA_Art0;1
+  ChangeUnitPool = $uni_ANA_Art1;1
+  ChangeUnitPool = $uni_ANA_Art3;1
+  ChangeUnitPool = $uni_ANA_MG1;2
+  ChangeUnitPool = $uni_ANA_MG0;2
+  ChangeUnitPool = $uni_ANA_Sup;2
+  ChangeUnitPool = $uni_ANA_Amc1;1
+  ChangeUnitPool = $uni_ANA_Amt1;1
+  ChangeUnitPool = $uni_ANA_Amt2;1
+  ChangeUnitPool = $uni_ANA_Hq;1
+  ChangeUnitPool = $uni_ANA_Sig;2
+  ChangeUnitPool = $uni_ANA_Med;2
+  ChangeRailPool = 30
+  ChangeConscriptPool = 5
+  ChangeMoneyPool = 40
+  ChangeWSUPool = 10
+  ChgFacEngagementPts = 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Vinnytsia
+
+StartEvent = evt_nam_ANA_ReplaceFromPodolsk|10|1|NULL|NULL|$Vinnytsia|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  Probability = 35
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  EvalEvent = evt_nam_ANA_TakeControlPodolskArea;=;1
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Podolsk;10
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Podolsk;10
+
+SelectFaction = $ANA
+SelectRegion = $Vinnytsia
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Autonomous Group
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Inf1
+    SUFlavorName = Autonomous Dcht
+    SetLevel = 1
+    SetName = Autonomous Dcht
+  Apply
+
+SelectFaction = $ANA
+
+  Replacement = ANA;$famLine;1
+  Replacement = ANA;$famMilitia;1
+  Replacement = ANA;$famCavalry;1
+  Replacement = ANA;$famSupply;1
+  Replacement = ANA;$famRaider;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcareOdessa|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Odessa;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcareKherson|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Kherson;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcareNikopol|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Nikopol;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcareEkaterinoslav|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Ekaterinoslav;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcareKrivoiRog|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Krivoi Rog;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcareElizavetgrad|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Elizavetgrad;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcareTiraspol|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Tiraspol;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcareKremenchuk|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Kremenchuk;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcarePoltava|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Poltava;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcareKharkov|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Kharkov;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcareKupiansk|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Kupiansk;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcareDonetsk|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Donetsk;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcareMelitopol|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Melitopol;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_AIcarePerekop|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;1
+
+Actions
+
+  AI.SetLocalInterest = $Perekop;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_ANA_AMTControlKiewArea|1|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  EvalEvent = evt_nam_ANA_TakeControlKiewArea;=;1
+  EvalRgnOwned = $Kiev
+
+Actions
+
+SelectFaction = $ANA
+SelectRegion = $Kiev
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = 'Long Live Anarchy' Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Amt1
+    SUFlavorName = 'Long Live Anarchy'
+    SetLevel = 1
+    SetName = 'Long Live Anarchy'
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_ANA_AMTControlKharkovArea|1|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  EvalEvent = evt_nam_ANA_TakeControlKharkovArea;=;1
+  EvalRgnOwned = $Kharkov
+
+Actions
+
+SelectFaction = $ANA
+SelectRegion = $Kharkov
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName =  Armored Train 'The Liberation of the Workers is the Affair of the Workers Themselves'
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Amt1
+    SUFlavorName = 'The Liberation of the Workers is the Affair of the Workers Themselves'
+    SetLevel = 1
+    SetName = 'The Liberation of the Workers is the Affair of the Workers Themselves' Armored Train
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kherson
+
+StartEvent = evt_nam_ANA_AMTControlKhersonArea|1|1|NULL|NULL|$Kherson|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  EvalEvent = evt_nam_ANA_TakeControlKhersonArea;=;1
+  EvalRgnOwned = $Kherson
+
+Actions
+
+SelectFaction = $ANA
+SelectRegion = $Kherson
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = 'Anarchy is the Mother of Order' Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Amt1
+    SUFlavorName = 'Anarchy is the Mother of Order'
+    SetLevel = 1
+    SetName = 'Anarchy is the Mother of Order'
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Ekaterinoslav
+
+StartEvent = evt_nam_ANA_AMTControlEkaterinoslavArea|1|1|NULL|NULL|$Ekaterinoslav|NULL
+
+Conditions
+
+  MinDate = 1918/12/19
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  EvalEvent = evt_nam_Renforts_CMN_AnarchistWarbands;=;1
+  EvalRgnOwned = $Ekaterinoslav
+
+Actions
+
+SelectFaction = $ANA
+SelectRegion = $Ekaterinoslav
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = 'Power Breeds Parasites' Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_ANA_Amt1
+    SUFlavorName = 'Power Breeds Parasites'
+    SetLevel = 1
+    SetName = 'Power Breeds Parasites'
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tiflis
+
+StartEvent = evt_nam_RED_CaucasusPeace_Generate|1|0|NULL|NULL|$Tiflis|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_CaucasusPeace_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;RED_CaucasusPeace
+  CanPayOption = $gmaOptionDip;RED_CaucasusPeace
+  EvalMorale = <=;50
+  Probability = 75
+
+Actions
+
+  ChangeOption = $gmaOptionDip;RED_CaucasusPeace;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_CaucasusPeace_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_RED_CaucasusPeace_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;VP;100;ImageID;Opt_GER_CaucasusJoin.png;Title;opt_title_RED_Peace_in_the_South;MsgString;opt_desc_RED_Peace_in_the_South;ToolString;opt_hint_RED_Peace_in_the_South;SubType;RED_CaucasusPeace;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_CaucasusPeace_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_CaucasusPeace_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Grozny
+  EvalRgnOwned = $Vladikavkaz
+  EvalRgnOwned = $Derbent
+  EvalRgnOwned = $Sochi
+  CheckOption = $gmaOptionDip;RED_CaucasusPeace;=;1
+  CanPayOption = $gmaOptionDip;RED_CaucasusPeace
+
+Actions
+
+  PayOption = $gmaOptionDip;RED_CaucasusPeace
+  GenTextMsg  = opt_notify_RED_CaucasusPeace;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_CaucasusPeace
+
+SelectFaction = $RED
+
+  SetEvtOccurs = evt_nam_RED_CaucasusPeace_Tracker;CuOccurs;1
+
+SelectFaction = $RED
+
+  SetFacRelationships = GEO;10
+  SetFacRelationships = AZR;10
+  SetFacRelationships = ARM;10
+  ChangeFacMorale = -10
+
+
+SelectFaction = $RED
+  ChgRgnDecisionFP = $rgdTcheka;-1
+  ChgRgnDecisionFP = $rgdRequisitions;-1
+  ChgRgnDecisionFP = $rgdConscriptions;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Riga
+
+StartEvent = evt_nam_RED_BaltPeace_Generate|1|0|NULL|NULL|$Riga|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BaltPeace_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;RED_BaltPeace
+  CanPayOption = $gmaOptionDip;RED_BaltPeace
+  EvalMorale = <=;50
+  Probability = 75
+
+Actions
+
+  ChangeOption = $gmaOptionDip;RED_BaltPeace;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BaltPeace_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_RED_BaltPeace_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;VP;100;ImageID;Opt_RED_BalticDOW.png;Title;opt_title_RED_Peace_in_the_North_West;MsgString;opt_desc_RED_Peace_in_the_North_West;ToolString;opt_hint_RED_Peace_in_the_North_West;SubType;RED_BaltPeace;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BaltPeace_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BaltPeace_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Pskov
+  EvalRgnOwned = $Petrograd
+  EvalRgnOwned = $Novgorod
+  EvalRgnOwned = $Minsk
+  CheckOption = $gmaOptionDip;RED_BaltPeace;=;1
+  CanPayOption = $gmaOptionDip;RED_BaltPeace
+
+Actions
+
+  PayOption = $gmaOptionDip;RED_BaltPeace
+  GenTextMsg  = opt_notify_RED_BaltPeace;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BaltPeace
+
+SelectFaction = $RED
+
+  SetEvtOccurs = evt_nam_RED_BaltPeace_Tracker;CuOccurs;1
+
+SelectFaction = $RED
+
+  SetFacRelationships = LIT;10
+  SetFacRelationships = LAT;10
+  SetFacRelationships = EST;10
+  ChangeFacMorale = -10
+
+SelectFaction = $RED
+  ChgRgnDecisionFP = $rgdTcheka;-1
+  ChgRgnDecisionFP = $rgdRequisitions;-1
+  ChgRgnDecisionFP = $rgdConscriptions;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Helsinki
+
+StartEvent = evt_nam_RED_FinPeace_Generate|1|0|NULL|NULL|$Helsinki|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_FinPeace_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;RED_FinPeace
+  CanPayOption = $gmaOptionDip;RED_FinPeace
+  EvalMorale = <=;50
+  Probability = 75
+
+Actions
+
+  ChangeOption = $gmaOptionDip;RED_FinPeace;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_FinPeace_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_RED_FinPeace_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;VP;100;ImageID;Opt_RED_FinnishDOW.png;Title;opt_title_RED_Peace_in_the_North_West;MsgString;opt_desc_RED_Peace_in_the_North_West;ToolString;opt_hint_RED_Peace_in_the_North_West;SubType;RED_FinPeace;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_FinPeace_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_FinPeace_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Petrograd
+  EvalRgnOwned = $Olonets
+  EvalRgnOwned = $Murmansk
+  EvalRgnOwned = $Novgorod
+  CheckOption = $gmaOptionDip;RED_FinPeace;=;1
+  CanPayOption = $gmaOptionDip;RED_FinPeace
+
+Actions
+
+  PayOption = $gmaOptionDip;RED_FinPeace
+  GenTextMsg  = opt_notify_RED_FinPeace;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_FinPeace
+
+SelectFaction = $RED
+
+  SetEvtOccurs = evt_nam_RED_FinPeace_Tracker;CuOccurs;1
+
+SelectFaction = $RED
+
+  SetFacRelationships = FIN;10
+  ChangeFacMorale = -10
+
+SelectFaction = $RED
+  ChgRgnDecisionFP = $rgdTcheka;-1
+  ChgRgnDecisionFP = $rgdRequisitions;-1
+  ChgRgnDecisionFP = $rgdConscriptions;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Bucuresti
+
+StartEvent = evt_nam_RED_RomPeace_Generate|1|0|NULL|NULL|$Bucuresti|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_RomPeace_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;RED_RomPeace
+  CanPayOption = $gmaOptionDip;RED_RomPeace
+  EvalMorale = <=;50
+  Probability = 75
+
+Actions
+
+  ChangeOption = $gmaOptionDip;RED_RomPeace;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_RomPeace_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  EvalEvent = evt_nam_RED_RomPeace_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;VP;100;ImageID;Opt_RED_RumanianDOW.png;Title;opt_title_RED_Peace_in_the_South_West;MsgString;opt_desc_RED_Peace_in_the_South_West;ToolString;opt_hint_RED_Peace_in_the_South_West;SubType;RED_RomPeace;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_RomPeace_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_RomPeace_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Odessa
+  EvalRgnOwned = $Vinnytsia
+  EvalRgnOwned = $Kiev
+  CheckOption = $gmaOptionDip;RED_RomPeace;=;1
+  CanPayOption = $gmaOptionDip;RED_RomPeace
+
+Actions
+
+  PayOption = $gmaOptionDip;RED_RomPeace
+  GenTextMsg  = opt_notify_RED_RomPeace;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_RomPeace
+
+SelectFaction = $RED
+
+  SetEvtOccurs = evt_nam_RED_RomPeace_Tracker;CuOccurs;1
+
+SelectFaction = $RED
+
+  SetFacRelationships = ROM;10
+  ChangeFacMorale = -10
+
+SelectFaction = $RED
+  ChgRgnDecisionFP = $rgdTcheka;-1
+  ChgRgnDecisionFP = $rgdRequisitions;-1
+  ChgRgnDecisionFP = $rgdConscriptions;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_ANA_Kill_Grigoriev_Generate|1|0|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Kill_Grigoriev_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;ANA_Kill_Grigoriev
+  Probability = 30
+
+Actions
+
+  ChangeOption = $gmaOptionDip;ANA_Kill_Grigoriev;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Kill_Grigoriev_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  EvalEvent = evt_nam_ANA_Kill_Grigoriev_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;10;ImageID;Opt_ANA_Kill_Grigoriev.png;Title;opt_title_ANA_Kill_Grigoriev;MsgString;opt_desc_ANA_Kill_Grigoriev;ToolString;opt_hint_ANA_Kill_Grigoriev;SubType;ANA_Kill_Grigoriev;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Kill_Grigoriev_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Kill_Grigoriev_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;ANA_Kill_Grigoriev;=;1
+  EvalEngagementPts = >=;10
+  EvalEvent = evt_nam_ANA_Kill_Grigoriev_Check;=;0
+
+Actions
+
+  ChgFacEngagementPts = -10
+  GenTextMsg  = opt_notify_ANA_Kill_Grigoriev;1;NULL;NULL;NULL
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Kill_Grigoriev;1;NULL;NULL;NULL
+
+SelectFaction = $ANA
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;ANA_Kill_Grigoriev
+  SetEvtOccurs = evt_nam_ANA_Kill_Grigoriev_Tracker;CuOccurs;1
+
+SelectFaction = $ANA
+
+  ChangeFacMorale = -5
+  Replacement = ANA;$famLine;10
+  Replacement = ANA;$famMilitia;7
+  Replacement = ANA;$famCavalry;5
+  Replacement = ANA;$famSupply;5
+  Replacement = ANA;$famRaider;1
+
+SelectFaction = $GRN
+
+  SelectSubUnits = FactionTags GRN RED WHI UKR ROM POL;Area $Theater_Ukraine
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_ANA_Grigoriev1
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Get_Weapons_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;ANA_Get_Weapons
+  EvalEngagementPts = >=;1
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;ANA_Get_Weapons;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Get_Weapons_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_GetWeapons.png;Title;opt_title_ANA_Get_Weapons;MsgString;opt_desc_ANA_Get_Weapons;ToolString;opt_hint_ANA_Get_Weapons;SubType;ANA_Get_Weapons;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Get_Weapons_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;ANA_Get_Weapons;=;1
+  EvalEngagementPts = >=;1
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+
+Actions
+
+  ChgFacEngagementPts = -1
+  ChangeFacMorale = -2
+  ChangeRailPool = 100
+  ChangeMoneyPool = 20
+  ChangeWSUPool = 50
+  GenTextMsg  = opt_notify_ANA_Get_Weapons;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;ANA_Get_Weapons
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Get_Weapons_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  Probability = 50
+  ActorDisabled = $gmaOptionVar;ANA_Get_Weapons
+  CheckIsPlayer = NULL
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+
+Actions
+
+  GenTextMsg  = opt_notify_ANA_Get_Weapons_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_GetWeapons.png;Title;opt_title_ANA_Get_Weapons;MsgString;opt_desc_ANA_Get_Weapons;ToolString;opt_hint_ANA_Get_Weapons;SubType;ANA_Get_Weapons;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_UKR_Declare_Peace_POL_Generate|1|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Declare_Peace_POL_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;UKR_Declare_Peace_POL
+  EvalRgnOwned = $Kiev;NOT
+  EvalMorale = <=;70
+
+Actions
+
+  ChangeOption = $gmaOptionDip;UKR_Declare_Peace_POL;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Declare_Peace_POL_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;2;ImageID;Opt_UKR_Declare_Peace_POL.png;Title;opt_title_UKR_Declare_Peace_POL;MsgString;opt_desc_UKR_Declare_Peace_POL;ToolString;opt_hint_UKR_Declare_Peace_POL;SubType;UKR_Declare_Peace_POL;SParam1;UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Declare_Peace_POL_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Declare_Peace_POL_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;UKR_Declare_Peace_POL;=;1
+  EvalEngagementPts = >=;2
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Check;=;0
+
+Actions
+
+  ChgFacEngagementPts = -2
+  GenTextMsg  = opt_notify_UKR_Declare_Peace_POL;1;NULL;NULL;NULL
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Declare_Peace_POL;1;NULL;NULL;NULL
+
+SelectFaction = $UKR
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;UKR_Declare_Peace_POL
+  SetEvtOccurs = evt_nam_UKR_Declare_Peace_POL_Tracker;CuOccurs;1
+
+SelectFaction = $UKR
+
+  ChangeFacMorale = -50
+  SetFacRelationships = POL;100
+  SetFacRelationships = ROM;100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_ANA_Declare_Peace_UKR_Generate|1|0|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Declare_Peace_UKR_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;ANA_Declare_Peace_UKR
+
+SelectFaction = $ANA
+
+  EvalRgnOwned = $Huliaipole;NOT
+  EvalRgnOwned = $Sevastopol;NOT
+  EvalRgnOwned = $Ekaterinoslav;NOT
+  EvalRgnOwned = $Alexandrovsk;NOT
+  EvalRgnOwned = $Nikopol;NOT
+  EvalRgnOwned = $Kharkov;NOT
+
+Actions
+
+  ChangeOption = $gmaOptionDip;ANA_Declare_Peace_UKR;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Declare_Peace_UKR_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  EvalEvent = evt_nam_ANA_Declare_Peace_UKR_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;10;ImageID;Opt_ANA_Declare_Peace_UKR.png;Title;opt_title_ANA_Declare_Peace_UKR;MsgString;opt_desc_ANA_Declare_Peace_UKR;ToolString;opt_hint_ANA_Declare_Peace_UKR;SubType;ANA_Declare_Peace_UKR;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Declare_Peace_UKR_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Declare_Peace_UKR_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;ANA_Declare_Peace_UKR;=;1
+  EvalEngagementPts = >=;10
+  EvalEvent = evt_nam_ANA_Declare_Peace_UKR_Check;=;0
+
+Actions
+
+  ChgFacEngagementPts = -10
+  GenTextMsg  = opt_notify_ANA_Declare_Peace_UKR;1;NULL;NULL;NULL
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Declare_Peace_UKR;1;NULL;NULL;NULL
+
+SelectFaction = $ANA
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;ANA_Declare_Peace_UKR
+  SetEvtOccurs = evt_nam_ANA_Declare_Peace_UKR_Tracker;CuOccurs;1
+
+SelectFaction = $ANA
+
+  ChangeFacMorale = -10
+  SetFacRelationships = UKR;0
+  ChangeRailPool = 100
+  ChangeMoneyPool = 30
+  ChangeWSUPool = 100
+  Replacement = ANA;$famLine;2
+  Replacement = ANA;$famMilitia;3
+  Replacement = ANA;$famCavalry;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_ANA_Break_Peace_UKR_Generate|1|0|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  EvalEvent = evt_nam_ANA_Declare_Peace_UKR_Check;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Break_Peace_UKR_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  EvalEvent = evt_nam_ANA_Declare_Peace_UKR_Check;=;1
+
+SelectFaction = $UKR
+
+  EvalRgnOwned = $Kiev;NOT
+
+SelectFaction = $ANA
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;ANA_Break_Peace_UKR
+
+Actions
+
+  ChangeOption = $gmaOptionDip;ANA_Break_Peace_UKR;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Break_Peace_UKR_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  EvalEvent = evt_nam_ANA_Break_Peace_UKR_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;5;ImageID;Opt_ANA_Break_Peace_UKR.png;Title;opt_title_ANA_Break_Peace_UKR;MsgString;opt_desc_ANA_Break_Peace_UKR;ToolString;opt_hint_ANA_Break_Peace_UKR;SubType;ANA_Break_Peace_UKR;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Break_Peace_UKR_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Break_Peace_UKR_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;ANA_Break_Peace_UKR;=;1
+  EvalEngagementPts = >=;5
+  EvalEvent = evt_nam_ANA_Break_Peace_UKR_Check;=;0
+
+Actions
+
+  ChgFacEngagementPts = -5
+  GenTextMsg  = opt_notify_ANA_Break_Peace_UKR;1;NULL;NULL;NULL
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Break_Peace_UKR;1;NULL;NULL;NULL
+
+SelectFaction = $ANA
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;ANA_Break_Peace_UKR
+  SetEvtOccurs = evt_nam_ANA_Break_Peace_UKR_Tracker;CuOccurs;1
+
+SelectFaction = $ANA
+
+  ChangeFacMorale = 5
+  SetFacRelationships = UKR;-100
+
+EndEvent
+
+NULL ==========================================================================
+

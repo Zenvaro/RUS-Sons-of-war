@@ -1,0 +1,17 @@
+UID = 527
+NationTag = GER
+Name = Destroyer
+Alias = uni_GER_DD1
+ForcePool = 15
+ShortName = Destroyer
+Text = $uni_GER_DD1_txt
+Color = $colGERNavy
+DoubleLength = 1
+ModelType0 = $mdl_GER_DD|4
+FamilyType0 = $famLightWarship|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+Area = $Recruit_Germans
+CustomNames = 1. Zerst. Flot.|2. Zerst. Flot.|3. Zerst. Flot.|4. Zerst. Flot.|5. Zerst. Flot.|6. Zerst. Flot.|7. Zerst. Flot.|8. Zerst. Flot.|9. Zerst. Flot.|10. Zerst. Flot.|11. Zerst. Flot.|12. Zerst. Flot.|13. Zerst. Flot.|14. Zerst. Flot.|15. Zerst. Flot.

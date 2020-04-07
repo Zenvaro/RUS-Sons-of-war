@@ -1,0 +1,14 @@
+UID = 860
+NationTag = GBR
+Name = Artillery Bde (Siege)
+Alias = uni_GBR_Art8
+ForcePool = 8
+ShortName = Art. Bde. (Siege)
+Text = $uni_GBR_Art8_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Sie|2
+FamilyType0 = $famHvyArty|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

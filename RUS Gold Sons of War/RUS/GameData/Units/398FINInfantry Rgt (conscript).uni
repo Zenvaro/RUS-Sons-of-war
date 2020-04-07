@@ -1,0 +1,15 @@
+UID = 398
+NationTag = FIN
+Name = Infantry Rgt
+Alias = uni_FIN_Inf2
+ForcePool = 8
+ShortName = Inf. Rgt.
+Text = $uni_FIN_Inf2_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_FIN_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Finns

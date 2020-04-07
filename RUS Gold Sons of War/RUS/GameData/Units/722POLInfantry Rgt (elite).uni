@@ -1,0 +1,16 @@
+UID = 722
+NationTag = POL
+Name = Infantry Rgt (elite)
+Alias = uni_POL_Rgt2
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_POL_Rgt2_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_POL_Inf2|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Recruit_Poles
+AltArea = $Area_Galicia

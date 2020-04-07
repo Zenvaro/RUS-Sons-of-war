@@ -1,0 +1,15 @@
+UID = 775
+NationTag = TUR
+Name = Coastal Artillery
+Alias = uni_TUR_Coa
+ForcePool = -1
+ShortName = Coastal Art.
+Text = $uni_TUR_Coa_txt
+Color = $colTURRegular 
+ModelType0 = $mdl_TUR_Coa|1
+FamilyType0 = $famHvyArty|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 1
+Area = $Recruit_Turks

@@ -1,0 +1,16 @@
+UID = 275
+NationTag = DON
+Name = Light Armored Train
+Alias = uni_DON_Amt1
+ForcePool = 12
+ShortName = Arm. Train
+Text = $uni_DON_Amt1_txt
+Color = $colDONRegular 
+ModelType0 = $mdl_DON_Amt1|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Area_Don
+CustomNames = 'Ataman Kaledin'|'Gundorovets'|'Don Bayan'|'Razdorets'|'Mityakinets'|'Partisan Colonel Chernetsev'|'Ermak'|'Ivan Krug'|'Ataman Orlov'|Kazak Zemlyanukhin'|'Ataman Samsonov'|'Novocherkassk'|'Ataman Platov'

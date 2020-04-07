@@ -1,0 +1,17 @@
+UID = 522
+NationTag = GER
+Name = Dreadnought
+Alias = uni_GER_BB1
+ForcePool = 5
+ShortName = Dreadnought
+Text = $uni_GER_BB1_txt
+Color = $colGERNavy
+DoubleLength = 1
+ModelType0 = $mdl_GER_BB|4
+FamilyType0 = $famHvyWarship|4
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+Area = $Recruit_Germans
+CustomNames = 1. Schlacht Flot.|2. Schlacht Flot.|3. Schlacht Flot.|4. Schlacht Flot.|5. Schlacht Flot.|6. Schlacht Flot.|7. Schlacht Flot.|8. Schlacht Flot.|9. Schlacht Flot.|10. Schlacht Flot.

@@ -1,0 +1,14 @@
+UID = 697
+NationTag = ANA
+Name = Supply
+Alias = uni_ANA_Sup
+ForcePool = 4
+ShortName = Supply
+Text = $uni_ANA_Sup_txt
+Color = $colANARegular 
+ModelType0 = $mdl_ANA_Sup|4
+FamilyType0 = $famService|4
+CmdCost = 0
+Pillage = 60
+BuildRule = $recTown
+BuildWeight = 1

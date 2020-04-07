@@ -1,0 +1,16 @@
+UID = 725
+NationTag = POL
+Name = Infantry Bde
+Alias = uni_POL_Bde1
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_POL_Bde1_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_POL_Inf1|2
+FamilyType0 = $famLine|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Recruit_Poles
+AltArea = $Area_Galicia

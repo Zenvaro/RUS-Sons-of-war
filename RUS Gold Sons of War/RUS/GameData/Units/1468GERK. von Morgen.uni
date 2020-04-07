@@ -1,0 +1,17 @@
+UID = 1468
+NationTag = GER
+Name = K. von Morgen
+Alias = uni_GER_Morgen2
+ForcePool = -1
+ShortName = Von Morgen
+Text = $uni_GER_Morgen2_txt
+Color = $colGERRegular 
+ModelType0 = $ldr_GER_Morgen2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

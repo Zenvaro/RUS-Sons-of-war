@@ -1,0 +1,14 @@
+UID = 855
+NationTag = GBR
+Name = Pioneers
+Alias = uni_GBR_Pio
+ForcePool = 8
+ShortName = Pioneers
+Text = $uni_GBR_Pio_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GBR_Pio|1
+FamilyType0 = $famEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

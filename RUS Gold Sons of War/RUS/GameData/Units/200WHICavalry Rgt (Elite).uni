@@ -1,0 +1,16 @@
+UID = 200
+NationTag = WHI
+Name = Cavalry Rgt (Elite)
+Alias = uni_WHI_Cav7
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WHI_Cav7_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Cav5|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_SouthernWhites
+CustomNames = 1st Officers Cavalry Rgt|2nd Officers Cavalry Rgt|2nd Officers Cavalry Rgt|'Kornilov' Kuban Cavalry Rgt

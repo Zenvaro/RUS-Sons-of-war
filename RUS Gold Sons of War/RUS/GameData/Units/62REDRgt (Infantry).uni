@@ -1,0 +1,15 @@
+UID = 62
+NationTag = RED
+Name = Rgt (Infantry)
+Alias = uni_RED_Rgt7
+ForcePool = 100
+ShortName = Coss. Rgt.
+Text = $uni_RED_Rgt7_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Inf4|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Southern

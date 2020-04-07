@@ -1,0 +1,16 @@
+UID = 2180
+NationTag = GEO
+Name = Militia
+Alias = uni_GEO_Mil1
+ForcePool = 6
+ShortName = Militia
+Text = $uni_CAU_Mil1_txt
+Color = $colGEOMilitia
+ModelType0 = $mdl_GEO_Mil1|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Georgia
+CustomNames = 1st Caucasus Militia|2nd Caucasus Militia|3rd Caucasus Militia|4th Caucasus Militia|5th Caucasus Militia|6th Caucasus Militia|7th Caucasus Militia|8th Caucasus Militia|9th Caucasus Militia|10th Caucasus Militia|11th Caucasus Militia|12th Caucasus Militia|13th Caucasus Militia|14th Caucasus Militia|15th Caucasus Militia|16th Caucasus Militia|17th Caucasus Militia|18th Caucasus Militia|19th Caucasus Militia|20th Caucasus Militia|21st Caucasus Militia|22nd Caucasus Militia|23rd Caucasus Militia|24th Caucasus Militia|25th Caucasus Militia|26th Caucasus Militia|27th Caucasus Militia|28th Caucasus Militia|29th Caucasus Militia|30th Caucasus Militia

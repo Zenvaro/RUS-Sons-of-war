@@ -1,0 +1,15 @@
+UID = 165
+NationTag = RED
+Name = Strikers
+Alias = uni_RED_Str1
+ForcePool = 20
+ShortName = Strikers
+Text = $uni_RED_Str1_txt
+Color = $colREDMilitia
+ModelType0 = $mdl_RED_Str1|10
+FamilyType0 = $famMilitia|10
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+CustomNames = Strikers

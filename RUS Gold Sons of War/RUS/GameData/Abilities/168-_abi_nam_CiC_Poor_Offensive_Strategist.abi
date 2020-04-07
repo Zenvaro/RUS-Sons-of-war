@@ -1,0 +1,12 @@
+UID = 168
+Name = $abi_nam_CiC_Poor_Offensive_Strategist
+Alias = CiC_Poor_Offensive_Strategist
+Kind = $abiCiCModifiers
+Text = $abi_txt_CiC_Poor_Offensive_Strategist
+ImageID = abi_Chair.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCCommandLdrLand
+Param1 = 1

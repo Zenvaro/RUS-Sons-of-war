@@ -1,0 +1,124 @@
+UID = 50007
+Bitmap = top_left_panel_bgd.png
+x = 0
+y = 0
+z = 90
+DragDrop = {None}
+Capacity = 2
+
+Coo1 = 0|0|0 // Faction emblem 
+Coo2 = 0|39|0   // Logo
+
+
+Various0 = 82|28|0 // Landscape
+Various1 = . // Landscape Frame
+Various2 = 420|30|0 // Weather Icon
+Caption3 = 155|28|0 // terrain string
+Caption4 = . // weather string
+Caption5 = . // RailRoad Pool
+Caption6 = . // Riverine Pool
+Caption7 = . // Naval Pool
+Caption8 = .
+Caption9 = .
+
+Various10 = . // pools Tick coo, Rail, 0/3
+Various11 = . // pools Tick coo, Rail, 1/3
+Various12 = . // pools Tick coo, Rail, 2/3
+Various13 = . // pools Tick coo, Rail, 3/3
+Various14 = . // pools Tick coo, River, 0/3
+Various15 = . // pools Tick coo, River, 1/3
+Various16 = . // pools Tick coo, River, 2/3
+Various17 = . // pools Tick coo, River, 3/3
+Various18 = . // pools Tick coo, Naval off
+Various19 = . // pools Tick coo, Naval on
+Various20 = . // active area coo
+Various21 = . // National Morale title
+Various22 = 480|64|0 // Morale value
+Various23 = . // Accumulated VPs title
+Various24 = 560|64|0 // VP value
+Various25 = 640|64|0 // Foreign Help value
+
+
+Various26 = . // Assets blackboard active area
+Various27 = . // Regional caption
+Various28 = 490|24|0  // Money, National DEPREC
+Various29 = 562|24|0  // Money, Regional DEPREC
+Various30 = 634|24|0  // Conscripts DEPREC
+Various31 = 706|24|0  // Conscripts DEPREC
+Various32 = 778|24|0  // WSU DEPREC
+Various33 = 851|24|0  // WSU DEPREC
+Various34 = . // Supply
+Various35 = . // Supply
+Various36 = . // Ammo
+Various37 = . // Ammo
+Various38 = 560|64|0 // VP active area
+Various39 = 480|64|0 // Morale active area
+Various40 = 640|64|0 // Foreign Help active area
+Various41 = . // Assets Board active area
+
+// Assets coordinates (btns then text, max 24)
+Various42 = 590|21|0    // Money
+Various43 = .   		// Capital
+Various44 = .   		// Steel
+Various45 = .  			// Coal
+Various46 = .   		// Goods
+Various47 = .   		// Mineral
+Various48 = .			// Inflation 		
+Various49 = 450|21|0    // VP   
+Various50 = 800|21|0    // Rail Pool
+Various51 = .   		// River Pool
+Various52 = 380|21|0    // Morale 
+Various53 = 660|21|0    // Conscript 
+Various54 = 730|21|0    // War Supply
+Various55 = .   		// FE
+Various56 = .			// Rare
+Various57 = .			// Diplomat
+Various58 = .			// Officer
+Various59 = 520|21|0	// EP 
+Various60 = .			// Day
+Various61 = .   		// PH1
+Various62 = .   		// PH2
+Various63 = .   		// PH3
+Various64 = .			// PH4
+Various65 = .			// PH5
+
+// Text
+Various66 = 615|52|0    // Money
+Various67 = .   		// Capital
+Various68 = .   		// Steel
+Various69 = .  			// Coal
+Various70 = .   		// Goods
+Various71 = .   		// Mineral
+Various72 = .   		// Inflation
+Various73 = 475|52|0	// VP
+Various74 = 825|52|0    // Rail Pool
+Various75 = .			// River Pool
+Various76 = 405|52|0    // Morale 
+Various77 = 685|52|0    // Conscript
+Various78 = 755|52|0    // War Supply
+Various79 = .   		// FE
+Various80 = .			// Rare
+Various81 = .			// Diplomat
+Various82 = .   		// Officer
+Various83 = 545|52|0    // EP
+Various84 = .			// Day 
+Various85 = .   		// PH1
+Various86 = .   		// PH2
+Various87 = .   		// PH3
+Various88 = .			// PH4
+Various89 = .			// PH5
+
+// Image name for the landscape frame
+StrParam0 = .
+StrParam1 = . // Image Name for the Pools Tick
+StrParam2 = . // Name of the Active Area (transport Pool blackboard)
+StrParam3 = . // Name of the Active Area (assets blackboard)
+StrParam4 = ActiveArea.bmp // Name of the Active Area (VP & Morale)
+
+Param0 = 65 // Allowed Width for assets strings
+Param1 = 88 // Layer for landscape
+param2 = 0	// no Logo animation 
+Param3 = 0	// Landscape is attached to Minimap (1) or to MainBar (0)
+Param4 = 0	// Don't have multimode
+Param5 = 1	// Has a clock without overlay on it
+Param6 = 0	// Don't have a weather icon

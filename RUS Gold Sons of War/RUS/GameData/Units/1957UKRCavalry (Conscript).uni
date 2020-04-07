@@ -1,0 +1,15 @@
+UID = 1957
+NationTag = UKR
+Name = Ukrainian Cavalry
+Alias = uni_UKR_Cav4
+ForcePool = 6
+ShortName = Cavalry (Conscript)
+Text = $uni_UKR_Cav4_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_UKR_Cav3|1
+FamilyType0 = $famCavalry|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Ukrainians

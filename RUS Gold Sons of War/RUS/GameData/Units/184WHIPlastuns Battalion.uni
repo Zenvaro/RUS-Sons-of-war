@@ -1,0 +1,16 @@
+UID = 184
+NationTag = WHI
+Name = Plastuns Battalion
+Alias = uni_WHI_Rgt13
+ForcePool = 6
+ShortName = Inf. Bn.
+Text = $uni_WHI_Rgt13_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Lit2|1
+FamilyType0 = $famLightInf|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Kuban
+AltArea = $Area_Terek

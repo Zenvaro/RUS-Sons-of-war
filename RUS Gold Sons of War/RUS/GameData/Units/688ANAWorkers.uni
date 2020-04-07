@@ -1,0 +1,15 @@
+UID = 688
+NationTag = ANA
+Name = Workers
+Alias = uni_ANA_Mil6
+ForcePool = 12
+ShortName = Workers
+Text = $uni_ANA_Mil6_txt
+Color = $colANAMilitia
+ModelType0 = $mdl_ANA_Mil1|1
+FamilyType0 = $famMilitia|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWild
+BuildWeight = 0
+CustomNames = 1st Workers|2nd Workers|3rd Workers|4th Workers|5th Workers|6th Workers|7th Workers|8th Workers|9th Workers|10th Workers|11th Workers|12th Workers|13th Workers|14th Workers|15th Workers|16th Workers|17th Workers|18th Workers|19th Workers|20th Workers|21th Workers|22th Workers|23th Workers|24th Workers|25th Workers|26th Workers|27th Workers|28th Workers|29th Workers|30th Workers|31th Workers|32th Workers|33th Workers|34th Workers|35th Workers|36th Workers|37th Workers|38th Workers|39th Workers|40th Workers|41th Workers|42th Workers|43th Workers|44th Workers|45th Workers|46th Workers|47th Workers|48th Workers|49th Workers|50th Workers|51th Workers|52th Workers|53th Workers|54th Workers|55th Workers|56th Workers|57th Workers|58th Workers|59th Workers|60th Workers|61th Workers|62th Workers|63th Workers|64th Workers|65th Workers|66th Workers|67th Workers|68th Workers|69th Workers|70th Workers|71th Workers

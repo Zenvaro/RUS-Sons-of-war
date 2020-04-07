@@ -1,0 +1,17 @@
+UID = 594
+NationTag = AUS
+Name = Air Support Squadron
+Alias = uni_AUS_Air3
+ForcePool = 2
+ShortName = Bomb. Air Sqd.
+Text = $uni_AUS_Air3_txt
+Color = $colAUSRegular 
+SymbolID = symbol_Air.png
+ModelType0 = $mdl_AUS_Air3|2
+FamilyType0 = $famAirLevelBomber|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1
+Area = $Recruit_Austrians
+CustomNames = 1. Kampfgeschwader|2. Kampfgeschwader|3.  Kampfgeschwader|4. Kampfgeschwader|5. Kampfgeschwader|6. Kampfgeschwader|7. Kampfgeschwader|8. Kampfgeschwader|9. Kampfgeschwader|10. Kampfgeschwader|11. Kampfgeschwader|12. Kampfgeschwader|13. Kampfgeschwader|14. Kampfgeschwader|15. Kampfgeschwader|16. Kampfgeschwader|17. Kampfgeschwader|18. Kampfgeschwader|19. Kampfgeschwader|20. Kampfgeschwader|21. Kampfgeschwader|22. Kampfgeschwader|23.  Kampfgeschwader|24. Kampfgeschwader|25. Kampfgeschwader|26. Kampfgeschwader|27. Kampfgeschwader|28. Kampfgeschwader|29. Kampfgeschwader|30. Kampfgeschwader|

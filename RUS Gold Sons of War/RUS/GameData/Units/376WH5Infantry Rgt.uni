@@ -1,0 +1,15 @@
+UID = 376
+NationTag = WH5
+Name = Infantry Rgt
+Alias = uni_WH5_Rgt1
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WH5_Rgt1_txt
+Color = $colWH5Regular 
+ModelType0 = $mdl_WH5_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_NorthernWhites

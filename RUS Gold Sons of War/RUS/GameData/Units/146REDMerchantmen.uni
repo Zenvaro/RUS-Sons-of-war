@@ -1,0 +1,16 @@
+UID = 146
+NationTag = RED
+Name = Merchantmen
+Alias = uni_RED_Mch
+ForcePool = 12
+ShortName = Merchantmen
+Text = $uni_RED_Mch_txt
+Color = $colREDNavy
+DoubleLength = 1
+ModelType0 = $mdl_RED_Mch|10
+FamilyType0 = $famTransportShip|10
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+Area = $Recruit_Russians

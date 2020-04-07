@@ -1,0 +1,17 @@
+UID = 1221
+NationTag = WHI
+Name = Belsky
+Alias = uni_WHI_Belsky1
+ForcePool = -1
+ShortName = Belsky
+Text = $uni_WHI_Belsky1_txt
+Color = $colWHIRegular 
+ModelType0 = $ldr_WHI_Belsky1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

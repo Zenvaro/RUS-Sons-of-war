@@ -1,0 +1,17 @@
+UID = 387
+NationTag = WH5
+Name = Air Squadron
+Alias = uni_WH5_Air
+ForcePool = 2
+ShortName = Air Squadron
+Text = $uni_WH5_Air_txt
+Color = $colWH5Regular 
+SymbolID = symbol_Air.png
+ModelType0 = $mdl_WHI_Air1|2
+FamilyType0 = $famAirFighter|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_NorthernWhites
+CustomNames = Slavo-British Air Squadron|Northern Air Squadron|2nd Northern Air Squadron|3rd Northern Air Squadron

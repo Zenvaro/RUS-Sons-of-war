@@ -1,0 +1,13 @@
+UID = 50016
+Bitmap = NothingBitmap.bmp
+x = 0
+y = 0
+z = 90
+DragDrop = {None}
+Capacity = 0
+Anchor = Right Bottom
+Slave0 = Details Slides.bmp|50|50
+Slave1 = Downright 2 Panel Bgd.png|6|-73
+
+
+

@@ -1,0 +1,16 @@
+UID = 497
+NationTag = GER
+Name = Railroad Eng.
+Alias = uni_GER_RREng
+ForcePool = 20
+ShortName = Railroad Eng.
+Text = $uni_GER_RREng_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_RREng|1
+FamilyType0 = $famEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = 1. Zug-Batallion|2. Zug-Batallion|3. Zug-Batallion|4. Zug-Batallion|5. Zug-Batallion|6. Zug-Batallion|7. Zug-Batallion|8. Zug-Batallion|9. Zug-Batallion|10. Zug-Batallion|11. Zug-Batallion|12. Zug-Batallion|13. Zug-Batallion|14. Zug-Batallion|15. Zug-Batallion|16. Zug-Batallion|17. Zug-Batallion|18. Zug-Batallion|19. Zug-Batallion|20. Zug-Batallion

@@ -1,0 +1,34 @@
+UID = 50009
+Bitmap = menu_options.bmp
+x = 0
+y = 0
+z = 92
+DragDrop = {None}
+Capacity = 9
+Anchor = HCenter VCenter
+GameState = stFactionPick
+
+Coo1 = 80|50|0
+Coo2 = 220|50|0
+Coo3 = 370|50|0
+Coo4 = 80|140|0
+Coo5 = 220|140|0
+Coo6 = 370|140|0
+Coo7 = 80|230|0
+Coo8 = 220|230|0
+Coo9 = 370|230|0
+
+Various0 = 0|60 // faction name
+Various1 = -1|-1  // Offset for generic Hillight
+Various2 = -1|-1 // vic cond Text Position  - not used
+
+Btn1 = -1|460|18
+{ButtonDef}
+Image = Btn_close_options_OFF.png
+DownImage = Btn_close_options_CLICK.png
+OverImage = Btn_close_options_ON.png
+DisaImage = Btn_close_options_OFF.png
+Hint = $Cancel
+UpAction = CancelAction
+ClickSound = $sndTick
+{/ButtonDef}

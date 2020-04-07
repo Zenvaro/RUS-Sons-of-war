@@ -1,0 +1,16 @@
+UID = 800
+NationTag = TUR
+Name = Destroyer
+Alias = uni_TUR_DD1
+ForcePool = 15
+ShortName = Destroyer
+Text = $uni_TUR_DD1_txt
+Color = $colTURNavy
+DoubleLength = 1
+ModelType0 = $mdl_TUR_DD|4
+FamilyType0 = $famLightWarship|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Destroyer Bde.|2nd Destroyer Bde.|3rd Destroyer Bde.|4th Destroyer Bde.

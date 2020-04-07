@@ -1,0 +1,15 @@
+UID = 630
+NationTag = EST
+Name = Infantry Rgt
+Alias = uni_BAL_Rgt0
+ForcePool = -1
+ShortName = Inf. Rgt.
+Text = $uni_BAL_Rgt0_txt
+Color = $colESTRegular 
+ModelType0 = $mdl_BAL_Inf0|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Estonia

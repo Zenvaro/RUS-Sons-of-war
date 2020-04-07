@@ -1,0 +1,2575 @@
+  NULL = NULL
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Army2_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FullWar;=;1
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_GermanArmy2.png;Title;opt_title_GER_Army2;MsgString;opt_desc_GER_Army2;ToolString;opt_hint_GER_Army2;SubType;GER_Army2;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Army2_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;GER_Army2;=;1
+  EvalEngagementPts = >=;15
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = -5
+  ChangeRailPool = 5
+  ChgVPCount = -25
+SelectRegion = $Germany
+
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED 
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Central_Powers;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Central_Powers;-5
+
+SelectFaction = $GER
+SelectRegion = $Germany
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = II. Armee
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Gronau3
+  FlavorName = II. Armee
+  SetName = H. von Gronau
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Luettwitz2
+  SetName = W. von Lüttwitz
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Sig
+  SetName = 2. Signal-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Eng
+  SetName = 2. Genie-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bal1
+  SetName = 2. Ballon-Bn.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art4
+  SetName = 2. FussArtillerie-Regiment
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_GER_Knoerzer2
+  FlavorName = XIV. Armeekorps
+  SetName = K. von Knoerzer
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div2
+  NumCreate = 6
+  SetName = 28. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div2
+  NumCreate = 5
+  SetName = 29. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art5
+  SetName = 17.Korps Artillery
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Bde5
+  SetName = 17. Stoss Bde
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_GER_EBelow2
+  FlavorName = XV. Armeekorps
+  SetName = E. von Below
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div2
+  NumCreate = 6
+  SetName = 30. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div2
+  NumCreate = 5
+  SetName = 39. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art5
+  SetName = 18.Korps Artillery
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Bde5
+  SetName = 18. Stoss Bde
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Amc1
+  SetName = 2. Aufklärungs-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk2
+  SetName = 2. Panzer-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde2
+  SetName = 2. Reserve-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Cav2
+  SetName = 2. Kavallerie-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Cyc
+  SetName = 2. Fahrrad-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Med
+  SetName = 2. Feld-Krankenhaus
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SetName = 2. Nachshub-Regiment
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SetName = 53. Nachshub-Regiment
+  Apply
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_GER_Army2;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Army2;1;NULL;NULL;NULL
+  ChangeUnitPool = $uni_GER_Sig;1
+  ChangeUnitPool = $uni_GER_Eng;1
+  ChangeUnitPool = $uni_GER_Bal1;1
+  ChangeUnitPool = $uni_GER_Art4;1
+  ChangeUnitPool = $uni_GER_Div2;4
+  ChangeUnitPool = $uni_GER_Art5;2
+  ChangeUnitPool = $uni_GER_Bde5;2
+  ChangeUnitPool = $uni_GER_Amc1;1
+  ChangeUnitPool = $uni_GER_Tnk2;1
+  ChangeUnitPool = $uni_GER_Bde2;1
+  ChangeUnitPool = $uni_GER_Cav2;1
+  ChangeUnitPool = $uni_GER_Cyc;1
+  ChangeUnitPool = $uni_GER_Med;1
+  ChangeUnitPool = $uni_GER_Tru;2
+  SelectSubUnits = Region $Germany;Models $mdl_GER_Inf1
+  AlterCuSubUnit = ApplyToList;probability 15;Model $mdl_GER_Inf4
+  SelectSubUnits = Region $Germany;Models $mdl_GER_Inf2
+  AlterCuSubUnit = ApplyToList;probability 25;Model $mdl_GER_Inf1
+  SelectSubUnits = Region $Germany;Models $mdl_GER_Inf3
+  AlterCuSubUnit = ApplyToList;probability 20;Model $mdl_GER_Inf2
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;GER_Army2
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Army6_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FullWar;=;1
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_GermanArmy6.png;Title;opt_title_GER_Army6;MsgString;opt_desc_GER_Army6;ToolString;opt_hint_GER_Army6;SubType;GER_Army6;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Army6_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;GER_Army6;=;1
+  EvalEngagementPts = >=;10
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = -5
+  ChangeRailPool = 5
+  ChgVPCount = -25
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED 
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Central_Powers;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Central_Powers;-5
+
+SelectFaction = $GER
+SelectRegion = $Germany
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = VI. Armee
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Fuchs3
+  FlavorName = VI. Armee
+  SetName = G. Fuchs
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Gabain2
+  SetName = A. von Gabain
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Sig
+  SetName = 6. Signal-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Eng
+  SetName = 6. Genie-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bal1
+  SetName = 6. Ballon-Bn.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art4
+  SetName = 6. FussArtillerie-Regiment
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_GER_Kosch2
+  FlavorName = XXI. Armeekorps
+  SetName = R. Kosch
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div2
+  NumCreate = 6
+  SetName = 31. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div2
+  NumCreate = 5
+  SetName = 42. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art5
+  SetName = 19.Korps Artillery
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Bde5
+  SetName = 19. Stoss Bde
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_GER_Hoehn2
+  FlavorName = III. Bay.Armeekorps
+  SetName = M. von Höhn
+  Apply
+  CreateUnit
+  SetType = $uni_BAY_Div1
+  NumCreate = 6
+  SetName = 5. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_BAY_Div1
+  NumCreate = 5
+  SetName = 6. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art5
+  SetName = 20.Korps Artillery
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Bde5
+  SetName = 20. Stoss Bde
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Amc1
+  SetName = 6. Aufklärungs-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk2
+  SetName = 6. Panzer-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde2
+  SetName = 6. Reserve-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Cav2
+  SetName = 6. Kavallerie-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Cyc
+  SetName = 6. Fahrrad-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Med
+  SetName = 6. Feld-Krankenhaus
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SetName = 6. Nachshub-Regiment
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SetName = 56. Nachshub-Regiment
+  Apply
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_GER_Army6;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Army6;1;NULL;NULL;NULL
+  ChangeUnitPool = $uni_GER_Sig;1
+  ChangeUnitPool = $uni_GER_Eng;1
+  ChangeUnitPool = $uni_GER_Bal1;1
+  ChangeUnitPool = $uni_GER_Art4;1
+  ChangeUnitPool = $uni_GER_Div2;2
+  ChangeUnitPool = $uni_BAY_Div1;2
+  ChangeUnitPool = $uni_GER_Art5;2
+  ChangeUnitPool = $uni_GER_Bde5;2
+  ChangeUnitPool = $uni_GER_Amc1;1
+  ChangeUnitPool = $uni_GER_Tnk2;1
+  ChangeUnitPool = $uni_GER_Bde2;1
+  ChangeUnitPool = $uni_GER_Cav2;1
+  ChangeUnitPool = $uni_GER_Cyc;1
+  ChangeUnitPool = $uni_GER_Med;1
+  ChangeUnitPool = $uni_GER_Tru;2
+  SelectSubUnits = Region $Germany;Models $mdl_GER_Inf1
+  AlterCuSubUnit = ApplyToList;probability 15;Model $mdl_GER_Inf4
+  SelectSubUnits = Region $Germany;Models $mdl_GER_Inf2
+  AlterCuSubUnit = ApplyToList;probability 25;Model $mdl_GER_Inf1
+  SelectSubUnits = Region $Germany;Models $mdl_GER_Inf3
+  AlterCuSubUnit = ApplyToList;probability 20;Model $mdl_GER_Inf2
+  SelectSubUnits = Region $Germany;Models $mdl_BAY_Inf1
+  AlterCuSubUnit = ApplyToList;probability 15;Model $mdl_BAY_Inf4
+  SelectSubUnits = Region $Germany;Models $mdl_BAY_Inf2
+  AlterCuSubUnit = ApplyToList;probability 20;Model $mdl_BAY_Inf1
+  SelectSubUnits = Region $Germany;Models $mdl_BAY_Inf3
+  AlterCuSubUnit = ApplyToList;probability 25;Model $mdl_BAY_Inf2
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;GER_Army6
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Army13_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FullWar;=;1
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_GermanArmy13.png;Title;opt_title_GER_Army13;MsgString;opt_desc_GER_Army13;ToolString;opt_hint_GER_Army13;SubType;GER_Army13;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Army13_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;GER_Army13;=;1
+  EvalEngagementPts = >=;10
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = -5
+  ChangeRailPool = 5
+  ChgVPCount = -25
+SelectRegion = $Germany
+
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED 
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Central_Powers;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Central_Powers;-5
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = XIII. Armee
+  Apply
+  CreateUnit
+  SetType = $uni_GER_FWVAPreussen3
+  FlavorName = XIII. Armee
+  SetName = F. von Preussen
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Litzmann2
+  SetName = K. Litzmann
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Sig
+  SetName = 13. Signal-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Eng
+  SetName = 13. Genie-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bal1
+  SetName = 13. Ballon-Bn.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art4
+  SetName = 13. FussArtillerie-Regiment
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_GER_Moser2
+  FlavorName = VII. Reservekorps
+  SetName = O. von Moser
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div4
+  NumCreate = 6
+  SetName = 10. Reserve-Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div4
+  NumCreate = 5
+  SetName = 26. Reserve-Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art5
+  SetName = 27. Artillerie-Brigade
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Cav0
+  SetName = 8. Kavallerie-Regiment
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_GER_Endres2
+  FlavorName = VIII. Reservekorps
+  SetName = N. von Endres
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div4
+  NumCreate = 6
+  SetName = 12. Reserve-Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div4
+  NumCreate = 5
+  SetName = 25. Reserve-Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art5
+  SetName = 28. Artillerie-Brigade
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Cav0
+  SetName = 9. Kavallerie-Regiment
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Amc1
+  SetName = 13. Aufklärungs-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk2
+  SetName = 13. Panzer-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde2
+  SetName = 13. Reserve-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Cav2
+  SetName = 13. Kavallerie-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Cyc
+  SetName = 13. Fahrrad-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Med
+  SetName = 13. Feld-Krankenhaus
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SetName = 13. Nachshub-Regiment
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SetName = 73. Nachshub-Regiment
+  Apply
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_GER_Army13;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Army13;1;NULL;NULL;NULL
+  ChangeUnitPool = $uni_GER_Sig;1
+  ChangeUnitPool = $uni_GER_Eng;1
+  ChangeUnitPool = $uni_GER_Bal1;1
+  ChangeUnitPool = $uni_GER_Art4;1
+  ChangeUnitPool = $uni_GER_Div4;4
+  ChangeUnitPool = $uni_GER_Art5;2
+  ChangeUnitPool = $uni_GER_Bde5;2
+  ChangeUnitPool = $uni_GER_Amc1;1
+  ChangeUnitPool = $uni_GER_Tnk2;1
+  ChangeUnitPool = $uni_GER_Bde2;1
+  ChangeUnitPool = $uni_GER_Cav2;1
+  ChangeUnitPool = $uni_GER_Cyc;1
+  ChangeUnitPool = $uni_GER_Med;1
+  ChangeUnitPool = $uni_GER_Tru;2
+  SelectSubUnits = Region $Kiel;Models $mdl_GER_Inf1
+  AlterCuSubUnit = ApplyToList;probability 15;Model $mdl_GER_Inf4
+  SelectSubUnits = Region $Kiel;Models $mdl_GER_Inf2
+  AlterCuSubUnit = ApplyToList;probability 25;Model $mdl_GER_Inf1
+  SelectSubUnits = Region $Kiel;Models $mdl_GER_Inf3
+  AlterCuSubUnit = ApplyToList;probability 20;Model $mdl_GER_Inf2
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;GER_Army13
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Army15_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FullWar;=;1
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_GermanArmy15.png;Title;opt_title_GER_Army15;MsgString;opt_desc_GER_Army15;ToolString;opt_hint_GER_Army15;SubType;GER_Army15;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Army15_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Army15_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;GER_Army15;=;1
+  EvalEngagementPts = >=;10
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = -5
+  ChangeRailPool = 5
+  ChgVPCount = -25
+SelectRegion = $Germany
+
+SelectRegion = $Bucuresti
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED 
+SelectRegion = $Bucuresti
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Romania;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Romania;-5
+
+SelectFaction = $GER
+SelectRegion = $Bucuresti
+
+SelectFaction = $GER
+SelectRegion = $Bucuresti
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = XV. Armee
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Mudra3
+  FlavorName = XV. Armee
+  SetName = B. von Mudra
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Sig
+  SetName = 15. Signal-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Eng
+  SetName = 15. Genie-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bal1
+  SetName = 15. Ballon-Bn.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art4
+  SetName = 15. FussArtillerie-Regiment
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_GER_Riemann2
+  FlavorName = XII. Reservekorps
+  SetName = J. Riemann
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div2
+  NumCreate = 5
+  SetName = 54. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div4
+  NumCreate = 6
+  SetName = 15. Reserve-Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art5
+  SetName = 29.Korps Artillery
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Bde5
+  SetName = 29. Stoss Bde
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_GER_Pannewitz2
+  FlavorName = XIV. Reservekorps
+  SetName = G. von Pannewitz
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div2
+  NumCreate = 6
+  SetName = 30. Infanterie Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Div4
+  NumCreate = 5
+  SetName = 130. Infanterie Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art5
+  SetName = 30.Korps Artillery
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Bde5
+  SetName = 30. Stoss Bde
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Amc1
+  SetName = 15. Aufklärungs-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk2
+  SetName = 15. Panzer-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde2
+  SetName = 15. Reserve-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Cav2
+  SetName = 15. Kavallerie-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Cyc
+  SetName = 15. Fahrrad-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Med
+  SetName = 15. Feld-Krankenhaus
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SetName = 15. Nachshub-Regiment
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SetName = 54. Nachshub-Regiment
+  Apply
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_GER_Army15;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Army15;1;NULL;NULL;NULL
+  ChangeUnitPool = $uni_GER_Sig;1
+  ChangeUnitPool = $uni_GER_Eng;1
+  ChangeUnitPool = $uni_GER_Bal1;1
+  ChangeUnitPool = $uni_GER_Art4;1
+  ChangeUnitPool = $uni_GER_Div2;2
+  ChangeUnitPool = $uni_GER_Div4;2
+  ChangeUnitPool = $uni_GER_Art5;2
+  ChangeUnitPool = $uni_GER_Bde5;2
+  ChangeUnitPool = $uni_GER_Amc1;1
+  ChangeUnitPool = $uni_GER_Tnk2;1
+  ChangeUnitPool = $uni_GER_Bde2;1
+  ChangeUnitPool = $uni_GER_Cav2;1
+  ChangeUnitPool = $uni_GER_Cyc;1
+  ChangeUnitPool = $uni_GER_Med;1
+  ChangeUnitPool = $uni_GER_Tru;2
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;GER_Army15
+  SelectSubUnits = Region $Bucuresti;Models $mdl_GER_Inf1
+  AlterCuSubUnit = ApplyToList;probability 15;Model $mdl_GER_Inf4
+  SelectSubUnits = Region $Bucuresti;Models $mdl_GER_Inf2
+  AlterCuSubUnit = ApplyToList;probability 25;Model $mdl_GER_Inf1
+  SelectSubUnits = Region $Bucuresti;Models $mdl_GER_Inf3
+  AlterCuSubUnit = ApplyToList;probability 20;Model $mdl_GER_Inf2
+
+  ChgEvtOccurs = evt_nam_GER_Army15_Tracker;CuOccurs;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_AUS_Army6_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FullWar;=;1
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_AustrianArmy6.png;Title;opt_title_AUS_Army6;MsgString;opt_desc_AUS_Army6;ToolString;opt_hint_AUS_Army6;SubType;AUS_Army6;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_AUS_Army6_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;AUS_Army6;=;1
+  EvalEngagementPts = >=;10
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = -2
+  ChgVPCount = -25
+SelectRegion = $Transylvania
+
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED 
+SelectRegion = $Transylvania
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Central_Powers;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Central_Powers;-5
+
+SelectFaction = $GER
+SelectRegion = $Transylvania
+
+SelectFaction = $GER
+SelectRegion = $Transylvania
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = 6. Armee
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Krobatin3
+  FlavorName = 6. Armee
+  SetName = A. von Krobatin
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Goiginger2
+  SetName = L. Goiginger
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Sig
+  SetName = 6. Signal-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Eng
+  SetName = 6. Genie-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Bal1
+  SetName = 6. Ballon-Bn.
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Art4
+  SetName = 6. FussArtillerie-Regiment
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_AUS_Kraliszek2
+  FlavorName = 13. Korps
+  SetName = R. Kraliszek
+  Apply
+  CreateUnit
+  SetType = $uni_HUN_Div3
+  NumCreate = 6
+  SetName = 13. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_HUN_Div4
+  NumCreate = 5
+  SetName = 26. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Art5
+  SetName = 23. FussArtillerie-Regiment
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_HUN_Bde5
+  SetName = 13. Stoss-Brigade
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_AUS_Steiner2
+  FlavorName = 14. Korps
+  SetName = R. von Steinstätten
+  Apply
+  CreateUnit
+  SetType = $uni_HUN_Div3
+  NumCreate = 6
+  SetName = 14. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_HUN_Div4
+  NumCreate = 5
+  SetName = 27. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Art5
+  SetName = 24. FussArtillerie-Regiment
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_HUN_Bde5
+  SetName = 14. Stoss-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Amc1
+  SetName = 6. Aufklärungs-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Tnk2
+  SetName = 6. Panzer-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Bde2
+  SetName = 6. Reserve-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_HUN_Cav2
+  SetName = 6. Kavallerie-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Cyc
+  SetName = 6. Fahrrad-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Med
+  SetName = 6. Feld-Krankenhaus
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Tru
+  SetName = 6. Nachshub-Regiment
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Tru
+  SetName = 26. Nachshub-Regiment
+  Apply
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_AUS_Army6;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_AUS_Army6;1;NULL;NULL;NULL
+  ChangeUnitPool = $uni_AUS_Sig;1
+  ChangeUnitPool = $uni_AUS_Eng;1
+  ChangeUnitPool = $uni_AUS_Bal1;1
+  ChangeUnitPool = $uni_AUS_Art4;1
+  ChangeUnitPool = $uni_HUN_Div3;2
+  ChangeUnitPool = $uni_HUN_Div4;2
+  ChangeUnitPool = $uni_AUS_Art5;2
+  ChangeUnitPool = $uni_HUN_Bde5;2
+  ChangeUnitPool = $uni_AUS_Amc1;1
+  ChangeUnitPool = $uni_AUS_Tnk2;1
+  ChangeUnitPool = $uni_AUS_Bde2;1
+  ChangeUnitPool = $uni_HUN_Cav2;1
+  ChangeUnitPool = $uni_AUS_Cyc;1
+  ChangeUnitPool = $uni_AUS_Med;1
+  ChangeUnitPool = $uni_AUS_Tru;2
+  SelectSubUnits = Region $Transylvania;Models $mdl_AUS_Inf1
+  AlterCuSubUnit = ApplyToList;probability 15;Model $mdl_AUS_Inf4
+  SelectSubUnits = Region $Transylvania;Models $mdl_AUS_Inf2
+  AlterCuSubUnit = ApplyToList;probability 20;Model $mdl_AUS_Inf1
+  SelectSubUnits = Region $Transylvania;Models $mdl_AUS_Inf3
+  AlterCuSubUnit = ApplyToList;probability 15;Model $mdl_AUS_Inf2
+  SelectSubUnits = Region $Transylvania;Models $mdl_HUN_Inf1
+  AlterCuSubUnit = ApplyToList;probability 15;Model $mdl_HUN_Inf4
+  SelectSubUnits = Region $Transylvania;Models $mdl_HUN_Inf2
+  AlterCuSubUnit = ApplyToList;probability 20;Model $mdl_HUN_Inf1
+  SelectSubUnits = Region $Transylvania;Models $mdl_HUN_Inf3
+  AlterCuSubUnit = ApplyToList;probability 15;Model $mdl_HUN_Inf2
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;AUS_Army6
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_AUS_ArmyGroupDonau_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FullWar;=;1
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_AustrianArmyGroupDonau.png;Title;opt_title_AUS_ArmyGroupDonau;MsgString;opt_desc_AUS_ArmyGroupDonau;ToolString;opt_hint_AUS_ArmyGroupDonau;SubType;AUS_ArmyGroupDonau;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_AUS_ArmyGroupDonau_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;AUS_ArmyGroupDonau;=;1
+  EvalEngagementPts = >=;30
+
+Actions
+  ChgFacEngagementPts = -30
+  ChangeFacMorale = -2
+  ChgVPCount = -25
+SelectRegion = $Hungary
+
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED 
+SelectRegion = $Hungary
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Central_Powers;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Central_Powers;-5
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+
+SelectFaction = $GER
+SelectRegion = $Hungary
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Armee Gruppe Donau
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Kummer3
+  FlavorName = AG Donau
+  SetName = H. Kummer von Falkenfehd
+  Apply
+  CreateUnit
+  GMEParam = 3
+  SetType = $uni_AUS_Sallagar2
+  SetName = H. Sallagar
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Sig
+  SetName = 11. Signal-Batallion
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_AUS_Hq1
+  SetName = AG Donau
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_AUS_Korda2
+  FlavorName = 12. Korps
+  SetName = I. von Korda
+  Apply
+  CreateUnit
+  SetType = $uni_HUN_Div3
+  NumCreate = 4
+  SetName = 12. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_HUN_Div4
+  NumCreate = 4
+  SetName = 25. Infanterie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Art5
+  SetName = 22. FussArtillerie-Regiment
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_HUN_Bde5
+  SetName = 12. Stoss-Brigade
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_AUS_Roth2
+  FlavorName = AG D. Kav. Korps
+  SetName = J. Roth
+  Apply
+  CreateUnit
+  SetType = $uni_HUN_Cav3
+  SetName = 9. Kavallerie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_HUN_Cav3
+  SetName = 10. Kavallerie-Division
+  Apply
+  CreateUnit
+  SetType = $uni_HUN_Cav2
+  SetName = 11. Kavallerie-Brigade
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_AUS_Art0
+  SetName = 11. ReitendeArtillerie-Regiment
+  Apply
+  CreateUnit
+  GMEParam = 3
+  SetType = $uni_AUS_Scotti2
+  FlavorName = AG D. Genie Truppen
+  SetName = K. Scotti
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Eng
+  SetName = 9. Genie-Batallion
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_AUS_Eng
+  SetName = 10. Genie-Batallion
+  Apply
+  CreateUnit
+  GMEParam = 6
+  SetType = $uni_AUS_Kaiser2
+  FlavorName = AG D. Artilleriekorps
+  SetName = J. Kaiser
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Bal1
+  SetName = 25. Ballon-Bn.
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Art6
+  SetName = 1. Artillerie-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Art6
+  SetName = 2. Artillerie-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Art7
+  SetName = 3. Artillerie-Brigade
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_AUS_Sie
+  SetName = 1. Mörser-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Amc1
+  SetName = 8. Aufklärungs-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Tnk1
+  SetName = 10. Panzer-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Tnk2
+  SetName = 11. Panzer-Batallion
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Bde6
+  SetName = 2. Motorisiert-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Bde10
+  SetName = 2. Reitende-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Med
+  SetName = 8. Feld-Krankenhaus
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Tru
+  SetName = 29. Nachshub-Regiment
+  Apply
+  CreateUnit
+  SetType = $uni_AUS_Tru
+  SetName = 30. Nachshub-Regiment
+  Apply
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_AUS_ArmyGroupDonau;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_AUS_ArmyGroupDonau;1;NULL;NULL;NULL
+  ChangeUnitPool = $uni_AUS_Hq1;1
+  ChangeUnitPool = $uni_AUS_Sig;1
+  ChangeUnitPool = $uni_AUS_Eng;2
+  ChangeUnitPool = $uni_HUN_Div3;1
+  ChangeUnitPool = $uni_HUN_Div4;1
+  ChangeUnitPool = $uni_HUN_Bde5;1
+  ChangeUnitPool = $uni_AUS_Art5;1
+  ChangeUnitPool = $uni_HUN_Cav3;2
+  ChangeUnitPool = $uni_HUN_Cav2;1
+  ChangeUnitPool = $uni_AUS_Art0;1
+  ChangeUnitPool = $uni_AUS_Bal1;1
+  ChangeUnitPool = $uni_AUS_Art6;2
+  ChangeUnitPool = $uni_AUS_Art7;1
+  ChangeUnitPool = $uni_AUS_Sie;1
+  ChangeUnitPool = $uni_AUS_Amc1;1
+  ChangeUnitPool = $uni_AUS_Tnk2;1
+  ChangeUnitPool = $uni_AUS_Bde10;1
+  ChangeUnitPool = $uni_AUS_Bde6;1
+  ChangeUnitPool = $uni_AUS_Med;1
+  ChangeUnitPool = $uni_AUS_Tru;1
+  SelectSubUnits = Region $Hungary;Models $mdl_AUS_Inf1
+  AlterCuSubUnit = ApplyToList;probability 15;Model $mdl_AUS_Inf4
+  SelectSubUnits = Region $Hungary;Models $mdl_AUS_Inf2
+  AlterCuSubUnit = ApplyToList;probability 20;Model $mdl_AUS_Inf1
+  SelectSubUnits = Region $Hungary;Models $mdl_AUS_Inf3
+  AlterCuSubUnit = ApplyToList;probability 15;Model $mdl_AUS_Inf2
+  SelectSubUnits = Region $Hungary;Models $mdl_HUN_Inf1
+  AlterCuSubUnit = ApplyToList;probability 15;Model $mdl_HUN_Inf4
+  SelectSubUnits = Region $Hungary;Models $mdl_HUN_Inf2
+  AlterCuSubUnit = ApplyToList;probability 20;Model $mdl_HUN_Inf1
+  SelectSubUnits = Region $Hungary;Models $mdl_HUN_Inf3
+  AlterCuSubUnit = ApplyToList;probability 15;Model $mdl_HUN_Inf2
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;AUS_ArmyGroupDonau
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Bermondt-Avalov_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/05/05
+
+SelectFaction = $RED
+
+EvalRgnOwned = $Narva
+
+EvalRgnOwned = $Tallinn
+
+EvalRgnOwned = $Riga
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_Bermondt-Avalov.png;Title;opt_title_GER_Bermondt-Avalov;MsgString;opt_desc_GER_Bermondt-Avalov;ToolString;opt_hint_GER_Bermondt-Avalov;SubType;GER_Bermondt-Avalov;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Bermondt-Avalov_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;GER_Bermondt-Avalov;=;1
+  EvalEngagementPts = >=;3
+
+Actions
+  ChgFacEngagementPts = -3
+  ChangeFacMorale = 3
+SelectRegion = $Parnu
+
+SelectRegion = $Parnu
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED 
+SelectRegion = $Parnu
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Estonia;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Estonia;-5
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Latvia;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Latvia;-5
+
+SelectFaction = $GER
+SelectFaction = $GER
+  AddToRegList = $Parnu;$Amata;$Viljandi;$Parnu;$Parnu
+SelectFaction = $GER
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $GER
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 0
+  SetName = B-Avalov Gruppe
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bermondt-Avalov2
+  SetName = P. Bermondt-Avalov
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Mil3
+  SUFlavorName = 1. Deutsch-Balt Bn|2. Deutsch-Balt Bn|3. Deutsch-Balt Bn
+  SetLevel = 1
+  SetName = BA Kampf Bde
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Mil2
+  FlavorName = A. Von Tanz
+  SUFlavorName = Graf von Tanz Dcht
+  SetLevel = 2
+  SetName = Von Tanz RD
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Mil2
+  FlavorName = K. Avalov
+  SUFlavorName = Captain Avalov Dcht
+  SetLevel = 1
+  SetName = Avalov RD
+  Apply
+  CreateUnit
+  SetType = $uni_BAL_Rgt2
+  SetLevel = 1
+  SetName = Finnish Vol.
+  Apply
+  CreateUnit
+  SetType = $uni_BAL_Rgt3
+  SetLevel = 1
+  SetName = Swedish Vol.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Cav0
+  SUFlavorName = Landeswehr DR
+  SetLevel = 1
+  SetName = Landeswehr DR
+  Apply
+  CreateUnit
+  SetType = $uni_BAL_Par1
+  SetLevel = 1
+  SetName = Partisans
+  Apply
+SelectFaction = $GER
+  AddToRegList = $Hanila;$Amata;$Viljandi;$Hanila;$Tapa
+SelectFaction = $GER
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $GER
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 0
+  SetName = Estonian Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_BAL_Par1
+  SetLevel = 1
+  SetName = Amata Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_BAL_Par1
+  SetLevel = 1
+  SetName = Viljandi Partisans
+  Apply
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Bermondt-Avalov;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Bermondt-Avalov;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;GER_Bermondt-Avalov
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PrisonnersRecruitment_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/03
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_ForcedRecruitment.png;Title;opt_title_GER_PrisonnersRecruitment;MsgString;opt_desc_GER_PrisonnersRecruitment;ToolString;opt_hint_GER_PrisonnersRecruitment;SubType;GER_PrisonnersRecruitment;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PrisonnersRecruitment|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;GER_PrisonnersRecruitment;=;1
+  EvalEngagementPts = >=;4
+  EvalPrisoners = XXX;>=;50
+  MinDate = 1921/01/03
+
+Actions
+  ChgFacEngagementPts = -4
+  ChangeMoneyPool = -2
+  ChgPrisoners = XXX;-50
+  ChangeConscriptPool = 50
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;GER_PrisonnersRecruitment
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PrisonnersRecruitment_Regen|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/03
+  TurnIndex = 3;9;
+  ActorDisabled = $gmaOptionReinf;GER_PrisonnersRecruitment
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_GER_PrisonnersRecruitment_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_ForcedRecruitment.png;Title;opt_title_GER_PrisonnersRecruitment;MsgString;opt_desc_GER_PrisonnersRecruitment;ToolString;opt_hint_GER_PrisonnersRecruitment;SubType;GER_PrisonnersRecruitment;SParam1;GER
+  SetEvtOccurs = evt_nam_GER_PrisonnersRecruitment;CuOccurs;0
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BielorussianPartisans_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/05/05
+
+EvalRgnOwned = $Minsk;NOT
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Partisans1.png;Title;opt_title_RED_BielorussianPartisans;MsgString;opt_desc_RED_BielorussianPartisans;ToolString;opt_hint_RED_BielorussianPartisans;SubType;RED_BielorussianPartisans;SParam1;GER
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BielorussianPartisans_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_BielorussianPartisans;=;1
+
+SelectFaction = $GER
+  EvalEngagementPts = >=;2
+
+Actions
+
+SelectFaction = $RED
+  ChgFacEngagementPts = -2
+  ChangeFacMorale = 2
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Theater_Belarus;-5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Theater_Belarus;5
+
+SelectFaction = $RED
+SelectFaction = $RED
+  AddToRegList = $Glusk;$Borisov;$Seversk;$Glusk;$Slawharad;$Glusk
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 3
+  InCS = 0
+  FixType = 0
+  SetName = 1st Bielorussian Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Par1
+  SUFlavorName = Blr.P. 01|Blr.P. 02
+  SetName = 24th Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Par2
+  SUFlavorName = Blr.P. 03|Blr.P. 04
+  SetName = 25th Partisans
+  Apply
+SelectFaction = $RED
+  AddToRegList = $Slawharad;$Borisov;$Seversk;$Glusk;$Slawharad;$Slawharad
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 3
+  InCS = 0
+  FixType = 0
+  SetName = 2nd Bielorussian Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Par1
+  SUFlavorName = Blr.P. 01|Blr.P. 02
+  SetName = 18th Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Par2
+  SUFlavorName = Blr.P. 03|Blr.P. 04
+  SetName = 19th Partisans
+  Apply
+SelectFaction = $RED
+  AddToRegList = $Seversk;$Borisov;$Seversk;$Glusk;$Slawharad;$Seversk
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 3
+  InCS = 0
+  FixType = 0
+  SetName = 3rd Bielorussian Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Par1
+  SUFlavorName = Blr.P. 01|Blr.P. 02
+  SetName = 20th Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Par2
+  SUFlavorName = Blr.P. 03|Blr.P. 04
+  SetName = 21st Partisans
+  Apply
+SelectFaction = $RED
+  AddToRegList = $Borisov;$Borisov;$Seversk;$Glusk;$Borisov;$Glusk
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 3
+  InCS = 0
+  FixType = 0
+  SetName = 4thBielorussian Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Par1
+  SUFlavorName = Blr.P. 01|Blr.P. 02
+  SetName = 22nd Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Par2
+  SUFlavorName = Blr.P. 03|Blr.P. 04
+  SetName = 23rd Partisans
+  Apply
+  GenTextMsg  = opt_notify_RED_BielorussianPartisans;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_RED_BielorussianPartisans;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_BielorussianPartisans
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_TurkestanArmy_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_ArmyReinforce.png;Title;opt_title_RED_TurkestanArmy;MsgString;opt_desc_RED_TurkestanArmy;ToolString;opt_hint_RED_TurkestanArmy;SubType;RED_TurkestanArmy;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_TurkestanArmy_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_TurkestanArmy;=;1
+  EvalEngagementPts = >=;3
+
+Actions
+  ChgFacEngagementPts = -3
+  ChangeFacMorale = 2
+  ChangeRailPool = 5
+  ChgVPCount = -25
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Orenburg;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Orenburg;-5
+
+SelectFaction = $RED
+SelectRegion = $Orenburg
+
+SelectRegion = $Orenburg
+
+SelectFaction = $RED
+SelectRegion = $Orenburg
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Turkestan Red Army
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sytin2
+  FlavorName = Comrade Sytin
+  SetName = Sytin
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pol
+  SetLevel = 1
+  SetName = Turkestan Political Commissars
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div21
+  SetLevel = 1
+  SetName = 1st Turk.Coss. Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div21
+  SetLevel = 1
+  SetName = 2nd Turk.Coss. Division
+  Apply
+  CreateUnit
+  GMEParam = 8
+  SetType = $uni_RED_Berzin1
+  FlavorName = 1st Turkestan Division
+  SetName = Berzin
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt6
+  SUFlavorName = 1st Turkestan Fusiliers 
+  SetLevel = 2
+  SetName = 1st Turkestan Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt6
+  SUFlavorName = 2nd Turkestan Fusiliers 
+  SetLevel = 2
+  SetName = 2nd Turkestan Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt6
+  SUFlavorName = 3rd Turkestan Fusiliers 
+  SetLevel = 2
+  SetName = 3rd Turkestan Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt6
+  SUFlavorName = 4th Turkestan Fusiliers 
+  SetLevel = 2
+  SetName = 4th Turkestan Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt6
+  SUFlavorName = 5th Turkestan Fusiliers 
+  SetLevel = 2
+  SetName = 5th Turkestan Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt6
+  SUFlavorName = 6th Turkestan Fusiliers 
+  SetLevel = 2
+  SetName = 6th Turkestan Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Art4
+  SUFlavorName = 1st Turkestan Bty
+  SetLevel = 1
+  SetName = 1st Turkestan Artillery
+  Apply
+  CreateUnit
+  GMEParam = 8
+  SetType = $uni_RED_Iskritsky1
+  FlavorName = Turkestan Cavalry Division
+  SetName = Iskritsky
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav8
+  SUFlavorName = 1st Turkestan Cavalry 
+  SetLevel = 1
+  SetName = 1st Turkestan Cavalry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav8
+  SUFlavorName = 2nd Turkestan Cavalry 
+  SetLevel = 1
+  SetName = 2nd Turkestan Cavalry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav8
+  SUFlavorName = 3rd Turkestan Cavalry 
+  SetLevel = 1
+  SetName = 3rd Turkestan Cavalry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav8
+  SUFlavorName = 4th Turkestan Cavalry
+  SetLevel = 1
+  SetName = 4th Turkestan Cavalry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav8
+  SUFlavorName = 5th Turkestan Cavalry
+  SetLevel = 1
+  SetName = 5th Turkestan Cavalry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav8
+  SUFlavorName = 6th Turkestan Cavalry
+  SetLevel = 1
+  SetName = 6th Turkestan Cavalry Rgt
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Art0
+  SUFlavorName = 2nd Turkestan Bty
+  SetLevel = 1
+  SetName = 2nd Turkestan Artillery
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art2
+  SUFlavorName = 105mm Arty
+  SetName = 105mm Artillery Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art4
+  SUFlavorName = 105mm How.
+  SetName = 105mm Howitzer Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art6
+  SUFlavorName = 155mm Arty
+  SetName = 155mm Artillery Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 1st Turkestan Army Supply
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 2nd Turkestan Army Supply
+  Apply
+  ChangeUnitPool = $uni_RED_Div21;2
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_TurkestanArmy;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_TurkestanArmy;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_TurkestanArmy
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SiberianTransfer_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_SiberianReinforce.png;Title;opt_title_RED_SiberianTransfer;MsgString;opt_desc_RED_SiberianTransfer;ToolString;opt_hint_RED_SiberianTransfer;SubType;RED_SiberianTransfer;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SiberianTransfer_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_SiberianTransfer;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = 2
+  ChangeRailPool = 5
+  ChgVPCount = -25
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Theater_Siberia;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Theater_Siberia;-5
+
+SelectFaction = $RED
+SelectRegion = $Ekaterinburg
+
+SelectRegion = $Ekaterinburg
+
+SelectFaction = $RED
+SelectRegion = $Ekaterinburg
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = 1st Siberian Front
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Svechnikov2
+  FlavorName = Comrade Svechnikov
+  SetName = Svechnikov
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pol
+  SetLevel = 1
+  SetName = Siberian Political Commissars
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div21
+  SetLevel = 1
+  SetName = 1st Sib.Coss. Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div21
+  SetLevel = 1
+  SetName = 2nd Sib.Coss. Division
+  Apply
+  CreateUnit
+  GMEParam = 4
+  SetType = $uni_RED_Piatakov1
+  FlavorName = 1st Siberian Corps
+  SetName = Piatakov
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div21
+  SetLevel = 1
+  SetName = 1st Sib.Coss. Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div21
+  SetLevel = 1
+  SetName = 2nd Sib.Coss. Division
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Art4
+  SUFlavorName = 5th Turkestan Fusiliers 
+  SetName = 1st Siberian Artillery
+  Apply
+  CreateUnit
+  GMEParam = 4
+  SetType = $uni_RED_Ghai-Khan1
+  FlavorName = Simbirsk Iron Division
+  SetName = Ghai-Khan
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div17
+  SUFlavorName = 1st Simbirsk|2nd Simbirsk|3rd Simbirsk|4th Simbirsk|1st Simbirsk Cavalry|1st Simbirsk Arty
+  SetLevel = 1
+  SetName = 1st Simbirsk Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div17
+  SUFlavorName = 5th Simbirsk|6th Simbirsk|7th Simbirsk|8th Simbirsk|2nd Simbirsk Cavalry|2nd Simbirsk Arty
+  SetLevel = 1
+  SetName = 2nd Simbirsk Division
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Art6
+  SUFlavorName = 5th Turkestan Fusiliers 
+  SetName = Simbirsk Hvy. Art.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art2
+  SUFlavorName = 105mm Arty
+  SetName = 105mm Artillery Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art4
+  SUFlavorName = 105mm How.
+  SetName = 105mm Howitzer Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art6
+  SUFlavorName = 155mm Arty
+  SetName = 155mm Artillery Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 1st Front Supply
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Ekaterinburg
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Amursk Tank Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Stepanov2
+  FlavorName = Comrade Stepanov
+  SetName = Stepanov
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Tnk3
+  SetLevel = 1
+  SetName = 1st Amursk Heavy Tank Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Tnk4
+  SetLevel = 1
+  SetName = 2nd Amursk Light Tank Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amc2
+  SetLevel = 1
+  SetName = 3rd Amursk Recon Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Tru1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 1st Tank Suply
+  Apply
+  ChangeUnitPool = $uni_RED_Div21;2
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_SiberianTransfer;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_SiberianTransfer;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_SiberianTransfer
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilization_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Mobilization2.png;Title;opt_title_RED_PartialMobilization;MsgString;opt_desc_RED_PartialMobilization;ToolString;opt_hint_RED_PartialMobilization;SubType;RED_PartialMobilization;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilizationLowMorale|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_PartialMobilization;=;1
+  EvalEngagementPts = >=;5
+  EvalMorale = <;80
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeMoneyPool = -40
+  ChangeFacMorale = -5
+  Replacement = RED;$famLine;1
+  Replacement = RED;$famMilitia;4
+  Replacement = RED;$famCavalry;1
+  ChangeConscriptPool = 100
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_RedPartialMobilizationLow;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_PartialMobilization
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilizationHighMorale|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_PartialMobilization;=;1
+  EvalEngagementPts = >=;5
+  EvalMorale = >=;120
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeMoneyPool = -40
+  ChangeFacMorale = -5
+  Replacement = RED;$famLine;4
+  Replacement = RED;$famMilitia;10
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famCavalry;3
+  ChangeConscriptPool = 200
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_RedPartialMobilizationHigh;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_PartialMobilization
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilizationMediumMorale|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_PartialMobilization;=;1
+  EvalEngagementPts = >=;5
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeMoneyPool = -40
+  ChangeFacMorale = -5
+  Replacement = RED;$famLine;3
+  Replacement = RED;$famMilitia;5
+  Replacement = RED;$famLightInf;1
+  Replacement = RED;$famCavalry;1
+  ChangeConscriptPool = 150
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_RedPartialMobilizationMedium;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_PartialMobilization
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilization_Regen|8|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 6;18;
+  ActorDisabled = $gmaOptionReinf;RED_PartialMobilization
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_RED_PartialMobilization_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Mobilization2.png;Title;opt_title_RED_PartialMobilization;MsgString;opt_desc_RED_PartialMobilization;ToolString;opt_hint_RED_PartialMobilization;SubType;RED_PartialMobilization;SParam1;RED
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_MurmanskForts_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Fortifications.png;Title;opt_title_RED_MurmanskForts;MsgString;opt_desc_RED_MurmanskForts;ToolString;opt_hint_RED_MurmanskForts;SubType;RED_MurmanskForts;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_MurmanskForts_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_MurmanskForts;=;1
+  EvalEngagementPts = >=;5
+
+EvalRgnOwned = $Murmansk
+  NotEnemy = $Murmansk
+  MinDate = 1921/01/01
+  EvalRgnStruc = $Murmansk;FACALL;STRUCDEF $Fort;NOT
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeWSUPool = -10
+  ChangeMoneyPool = -50
+  ChangeFacMorale = 2
+  ChgVPCount = 5
+
+SelectRegion = $Murmansk
+
+  CreateStruc
+  SetType = $FORTIFIEDLINE
+  SetName = Kirov Redoubt
+  Apply
+  SetHealth = 10
+  SetCohesion = 10
+
+SelectFaction = $RED
+SelectRegion = $Murmansk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Kirov Redoubt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Coa
+  SetName = Kirov Batteries
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bal1
+  SUFlavorName = Murmansk Obs.Bn.
+  SetName = Kirov Redoubt Obs.Bn.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Gar0
+  SUFlavorName = 1st Kirov. Red. Rgt|2nd Kirov. Red. Rgt|3rd Kirov. Red. Rgt|4th Kirov. Red. Rgt
+  SetName = Kirov Redoubt Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup2
+  NumCreate = 2
+  SetName = Kirov Redoubt Magazine
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_MurmanskForts;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_MurmanskForts;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_MurmanskForts
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ArkhangelskForts_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Fortifications.png;Title;opt_title_RED_ArkhangelskForts;MsgString;opt_desc_RED_ArkhangelskForts;ToolString;opt_hint_RED_ArkhangelskForts;SubType;RED_ArkhangelskForts;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ArkhangelskForts_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_ArkhangelskForts;=;1
+  EvalEngagementPts = >=;5
+
+EvalRgnOwned = $Arkhangelsk
+  NotEnemy = $Arkhangelsk
+  MinDate = 1921/01/01
+  EvalRgnStruc = $Arkhangelsk;FACALL;STRUCDEF $Fort;NOT
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeWSUPool = -10
+  ChangeMoneyPool = -50
+  ChangeFacMorale = 2
+  ChgVPCount = 5
+
+SelectRegion = $Arkhangelsk
+
+  CreateStruc
+  SetType = $FORTIFIEDLINE
+  SetName = Makarov Redoubt
+  Apply
+  SetHealth = 10
+  SetCohesion = 10
+
+SelectFaction = $RED
+SelectRegion = $Arkhangelsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Makarov Redoubt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Coa
+  SetName = Makarov Batteries
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bal1
+  SUFlavorName = Arkhangelsk Obs.Bn.
+  SetName = Makarov Redoubt Obs.Bn.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Gar0
+  SUFlavorName = 1st Makarov. Red. Rgt|2nd Makarov. Red. Rgt|3rd Makarov. Red. Rgt|4th Makarov. Red. Rgt
+  SetName = Makarov Redoubt Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup2
+  NumCreate = 2
+  SetName = Makarov Redoubt Magazine
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_ArkhangelskForts;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_ArkhangelskForts;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_ArkhangelskForts
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PetrogradMines_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Mines.png;Title;opt_title_RED_PetrogradMines;MsgString;opt_desc_RED_PetrogradMines;ToolString;opt_hint_RED_PetrogradMines;SubType;RED_PetrogradMines;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PetrogradMines_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PetrogradMines_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_PetrogradMines;=;1
+  EvalEngagementPts = >=;2
+  NotEnemy = $Kronstadt Approaches
+  NotEnemy = $Kronstadt
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -10
+  ChangeFacMorale = 3
+  AddDynGraphic = $Kronstadt Approaches;Icon_NavalMine.png;Icon_NavalMine.png;NULL;30;30;strSeaIsMined
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_PetrogradMines;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_PetrogradMines;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_PetrogradMines
+
+  ChgEvtOccurs = evt_nam_RED_PetrogradMines_Tracker;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RostovMines_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Mines.png;Title;opt_title_RED_RostovMines;MsgString;opt_desc_RED_RostovMines;ToolString;opt_hint_RED_RostovMines;SubType;RED_RostovMines;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RostovMines_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RostovMines_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_RostovMines;=;1
+  EvalEngagementPts = >=;2
+  NotEnemy = $Mouth of the Don
+  NotEnemy = $Rostov
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -10
+  ChangeFacMorale = 3
+  AddDynGraphic = $Mouth of the Don;Icon_NavalMine.png;Icon_NavalMine.png;NULL;240;45;strSeaIsMined
+  AddDynGraphic = $Mouth of the Don;Icon_NavalMine.png;Icon_NavalMine.png;NULL;260;75;strSeaIsMined
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_RostovMines;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_RostovMines;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_RostovMines
+
+  ChgEvtOccurs = evt_nam_RED_RostovMines_Tracker;CuOccurs;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PrisonnersRecruitment_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Event-img_CMN_Gulag;Title;opt_title_RED_PrisonnersRecruitment;MsgString;opt_desc_RED_PrisonnersRecruitment;ToolString;opt_hint_RED_PrisonnersRecruitment;SubType;RED_PrisonnersRecruitment;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PrisonnersRecruitment|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_PrisonnersRecruitment;=;1
+  EvalEngagementPts = >=;4
+  EvalPrisoners = XXX;>=;50
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -4
+  ChangeMoneyPool = -2
+  ChgPrisoners = XXX;-50
+  ChangeConscriptPool = 50
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_RedPrisonnersRecruitment;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_PrisonnersRecruitment
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PrisonnersRecruitment_Regen|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 3;9;
+  ActorDisabled = $gmaOptionReinf;RED_PrisonnersRecruitment
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_RED_PrisonnersRecruitment_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Event-img_CMN_Gulag;Title;opt_title_RED_PrisonnersRecruitment;MsgString;opt_desc_RED_PrisonnersRecruitment;ToolString;opt_hint_RED_PrisonnersRecruitment;SubType;RED_PrisonnersRecruitment;SParam1;RED
+  SetEvtOccurs = evt_nam_RED_PrisonnersRecruitment;CuOccurs;0
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartyMembersJoinArmy_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Event-img_RED_RedArmyReorganization;Title;opt_title_RED_PartyMembersJoinArmy;MsgString;opt_desc_RED_PartyMembersJoinArmy;ToolString;opt_hint_RED_PartyMembersJoinArmy;SubType;RED_PartyMembersJoinArmy;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartyMembersJoinArmy|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_PartyMembersJoinArmy;=;1
+  EvalEngagementPts = >=;2
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -2
+  ChangeFacMorale = -1
+  ChangeConscriptPool = 50
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_RedPartyMembersJoinArmy;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_PartyMembersJoinArmy
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartyMembersJoinArmy_Regen|8|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 6;18;
+  ActorDisabled = $gmaOptionReinf;RED_PartyMembersJoinArmy
+  Probability = 25
+
+Actions
+  GenTextMsg  = opt_notify_RED_PartyMembersJoinArmy_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Event-img_RED_RedArmyReorganization;Title;opt_title_RED_PartyMembersJoinArmy;MsgString;opt_desc_RED_PartyMembersJoinArmy;ToolString;opt_hint_RED_PartyMembersJoinArmy;SubType;RED_PartyMembersJoinArmy;SParam1;RED
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_InternationalVolunteers_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Event-img_RED_InternationalistsShockForces;Title;opt_title_RED_InternationalVolunteers;MsgString;opt_desc_RED_InternationalVolunteers;ToolString;opt_hint_RED_InternationalVolunteers;SubType;RED_InternationalVolunteers;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_InternationalVolunteers|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_InternationalVolunteers;=;1
+  EvalEngagementPts = >=;6
+
+EvalRgnOwned = $Moscow
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -6
+  ChangeMoneyPool = -20
+  ChangeWSUPool = -5
+
+SelectRegion = $Moscow
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 1
+  SetName = 'Karl Marx' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Int
+  SUFlavorName = 'Karl Marx'
+  SetLevel = 1
+  SetName = 'Karl Marx' Rgt
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 1
+  SetName = 'Karl Liebknecht' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Int
+  SUFlavorName = 'Karl Liebknecht'
+  SetLevel = 1
+  SetName = 'Karl Liebknecht' Rgt
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 1
+  SetName = 'Communist Adler' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Int
+  SUFlavorName = 'Communist Adler'
+  SetLevel = 1
+  SetName = 'Communist Adler' Rgt
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 1
+  SetName = 'Rosa Luxemburg' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Int
+  SUFlavorName = 'Rosa Luxemburg'
+  SetLevel = 1
+  SetName = 'Rosa Luxemburg' Rgt
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 1
+  SetName = 'Spartakists' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Int
+  SUFlavorName = 'Spartakists'
+  SetLevel = 1
+  SetName = 'Spartakists' Rgt
+  Apply
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_RedInternationalVolunteers;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_InternationalVolunteers
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_CossacksJoin_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Event-img_RED_ProletarianToHorses.png;Title;opt_title_RED_CossacksJoin;MsgString;opt_desc_RED_CossacksJoin_DNO;ToolString;opt_hint_RED_CossacksJoin_DNO;SubType;RED_CossacksJoin;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_CossacksJoin|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_CossacksJoin;=;1
+  EvalEngagementPts = >=;8
+
+EvalRgnOwned = $Novocherkassk
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -8
+  ChangeMoneyPool = -30
+
+SelectRegion = $Novocherkassk
+
+SelectFaction = $RED
+SelectRegion = $Novocherkassk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Red Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav11
+  SetName = Cossacks Vols
+  Apply
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_RedCossacksJoin_DNO;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_CossacksJoin
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_CossacksJoin_Regen|8|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 6;18;
+  ActorDisabled = $gmaOptionReinf;RED_CossacksJoin
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_RED_CossacksJoin_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Event-img_RED_ProletarianToHorses.png;Title;opt_title_RED_CossacksJoin;MsgString;opt_desc_RED_CossacksJoin_DNO;ToolString;opt_hint_RED_CossacksJoin_DNO;SubType;RED_CossacksJoin;SParam1;RED
+
+EndEvent

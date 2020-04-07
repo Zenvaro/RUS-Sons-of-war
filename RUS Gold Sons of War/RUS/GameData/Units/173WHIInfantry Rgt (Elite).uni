@@ -1,0 +1,14 @@
+UID = 173
+NationTag = WHI
+Name = Infantry Rgt (Elite)
+Alias = uni_WHI_Rgt2
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WHI_Rgt2_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Inf8|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

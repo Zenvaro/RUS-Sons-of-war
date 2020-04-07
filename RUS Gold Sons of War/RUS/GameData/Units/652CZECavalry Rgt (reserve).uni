@@ -1,0 +1,15 @@
+UID = 652
+NationTag = CZE
+Name = Cavalry Rgt (reserve)
+Alias = uni_CZE_Cav0
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_CZE_Cav0_txt
+Color = $colCZERegular 
+ModelType0 = $mdl_CZE_Cav0|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Czech Cavalry Rgt|2nd Czech Cavalry Rgt|3rd Czech Cavalry Rgt|4th Czech Cavalry Rgt|5th Czech Cavalry Rgt|6th Czech Cavalry Rgt|7th Czech Cavalry Rgt|8th Czech Cavalry Rgt|9th Czech Cavalry Rgt|10th Czech Cavalry Rgt

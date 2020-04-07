@@ -1,0 +1,17 @@
+UID = 795
+NationTag = TUR
+Name = Tank Bn (Light)
+Alias = uni_TUR_Tnk2
+ForcePool = 5
+ShortName = Tank Bn.
+Text = $uni_TUR_Tnk2_txt
+Color = $colTURRegular 
+ModelType0 = $mdl_TUR_Tnk2|3
+FamilyType0 = $famLeader|1
+FamilyType1 = $famHvyVehicle|3
+CmdCost = 2
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Turks
+CustomNames = 1st Tank Company|2nd Tank Company|3rd Tank Company|4th Tank Company|5th Tank Company|6th Tank Company|7th Tank Company|8th Tank Company|9th Tank Company|10th Tank Company|11th Tank Company|12th Tank Company|13th Tank Company|14th Tank Company|15th Tank Company|16th Tank Company|17th Tank Company|18th Tank Company|19th Tank Company|20th Tank Company

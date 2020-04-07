@@ -1,0 +1,15 @@
+UID = 308
+NationTag = WH2
+Name = Komuch Militia
+Alias = uni_WH2_Mil0
+ForcePool = 6
+ShortName = Komuch Militia
+Text = $uni_WH2_Mil0_txt
+Color = $colWH2Regular
+ModelType0 = $mdl_WHI_Mil7|2
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = Komuch Militia

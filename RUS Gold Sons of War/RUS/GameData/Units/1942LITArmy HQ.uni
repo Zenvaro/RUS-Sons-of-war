@@ -1,0 +1,15 @@
+UID = 1942
+NationTag = LIT
+Name = Army HQ
+Alias = uni_LIT_Hq2
+ForcePool = 6
+ShortName = Army HQ
+Text = $uni_LIT_Hq2_txt
+Color = $colLITRegular 
+ModelType0 = $mdl_LIT_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 1
+Area = $Recruit_Russians

@@ -1,0 +1,2440 @@
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tomsk
+
+StartEvent = evt_nam_WH3_owning_Tomsk_during_winter2|1|0|NULL|NULL|$Tomsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tomsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Tomsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tomsk
+
+StartEvent = evt_nam_RED_owning_Tomsk_during_winter2|1|0|NULL|NULL|$Tomsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tomsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tomsk
+
+StartEvent = evt_nam_WH3_owningTomskduringwinter2cons|999|0|NULL|NULL|$Tomsk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Tomsk_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Tomsk_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Tomsk_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Tomsk_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Tomsk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Novonikolaievsk
+
+StartEvent = evt_nam_WH3_owning_Novonikolaievsk_during_winter2|1|0|NULL|NULL|$Novonikolaievsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Novonikolaievsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Novonikolaievsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Novonikolaievsk
+
+StartEvent = evt_nam_RED_owning_Novonikolaievsk_during_winter2|1|0|NULL|NULL|$Novonikolaievsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Novonikolaievsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Novonikolaievsk
+
+StartEvent = evt_nam_WH3_owningNovonikolaievskduringwinter2cons|999|0|NULL|NULL|$Novonikolaievsk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Novonikolaievsk_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Novonikolaievsk_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Novonikolaievsk_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Novonikolaievsk_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Novonikolaievsk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tatarsk
+
+StartEvent = evt_nam_WH3_owning_Tatarsk_during_winter2|1|0|NULL|NULL|$Tatarsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tatarsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Tatarsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tatarsk
+
+StartEvent = evt_nam_RED_owning_Tatarsk_during_winter2|1|0|NULL|NULL|$Tatarsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tatarsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tatarsk
+
+StartEvent = evt_nam_WH3_owningTatarskduringwinter2cons|999|0|NULL|NULL|$Tatarsk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Tatarsk_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Tatarsk_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Tatarsk_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Tatarsk_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Tatarsk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_owning_Omsk_during_winter2|1|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Omsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Omsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_RED_owning_Omsk_during_winter2|1|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Omsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_owningOmskduringwinter2cons|999|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Omsk_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Omsk_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Omsk_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Omsk_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Omsk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Ishim
+
+StartEvent = evt_nam_WH3_owning_Ishim_during_winter2|1|0|NULL|NULL|$Ishim|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ishim
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Ishim;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Ishim
+
+StartEvent = evt_nam_RED_owning_Ishim_during_winter2|1|0|NULL|NULL|$Ishim|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ishim
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Ishim
+
+StartEvent = evt_nam_WH3_owningIshimduringwinter2cons|999|0|NULL|NULL|$Ishim|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Ishim_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Ishim_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Ishim_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Ishim_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Ishim;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Petropavolvsk
+
+StartEvent = evt_nam_WH3_owning_Petropavolvsk_during_winter2|1|0|NULL|NULL|$Petropavolvsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Petropavolvsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Petropavolvsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Petropavolvsk
+
+StartEvent = evt_nam_RED_owning_Petropavolvsk_during_winter2|1|0|NULL|NULL|$Petropavolvsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Petropavolvsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Petropavolvsk
+
+StartEvent = evt_nam_WH3_owningPetropavolvskduringwinter2cons|999|0|NULL|NULL|$Petropavolvsk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Petropavolvsk_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Petropavolvsk_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Petropavolvsk_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Petropavolvsk_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Petropavolvsk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Kurgan
+
+StartEvent = evt_nam_WH3_owning_Kurgan_during_winter2|1|0|NULL|NULL|$Kurgan|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kurgan
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Kurgan;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kurgan
+
+StartEvent = evt_nam_RED_owning_Kurgan_during_winter2|1|0|NULL|NULL|$Kurgan|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kurgan
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Kurgan
+
+StartEvent = evt_nam_WH3_owningKurganduringwinter2cons|999|0|NULL|NULL|$Kurgan|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Kurgan_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Kurgan_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Kurgan_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Kurgan_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Kurgan;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tyumen
+
+StartEvent = evt_nam_WH3_owning_Tyumen_during_winter2|1|0|NULL|NULL|$Tyumen|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tyumen
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Tyumen;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tyumen
+
+StartEvent = evt_nam_RED_owning_Tyumen_during_winter2|1|0|NULL|NULL|$Tyumen|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tyumen
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tyumen
+
+StartEvent = evt_nam_WH3_owningTyumenduringwinter2cons|999|0|NULL|NULL|$Tyumen|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Tyumen_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Tyumen_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Tyumen_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Tyumen_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Tyumen;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Chelyabinsk
+
+StartEvent = evt_nam_WH3_owning_Chelyabinsk_during_winter2|1|0|NULL|NULL|$Chelyabinsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Chelyabinsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Chelyabinsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Chelyabinsk
+
+StartEvent = evt_nam_RED_owning_Chelyabinsk_during_winter2|1|0|NULL|NULL|$Chelyabinsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Chelyabinsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Chelyabinsk
+
+StartEvent = evt_nam_WH3_owningChelyabinskduringwinter2cons|999|0|NULL|NULL|$Chelyabinsk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Chelyabinsk_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Chelyabinsk_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Chelyabinsk_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Chelyabinsk_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Chelyabinsk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Ekaterinburg
+
+StartEvent = evt_nam_WH3_owning_Ekaterinburg_during_winter2|1|0|NULL|NULL|$Ekaterinburg|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ekaterinburg
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Ekaterinburg;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Ekaterinburg
+
+StartEvent = evt_nam_RED_owning_Ekaterinburg_during_winter2|1|0|NULL|NULL|$Ekaterinburg|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ekaterinburg
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Ekaterinburg
+
+StartEvent = evt_nam_WH3_owningEkaterinburgduringwinter2cons|999|0|NULL|NULL|$Ekaterinburg|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Ekaterinburg_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Ekaterinburg_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Ekaterinburg_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Ekaterinburg_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Ekaterinburg;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Perm
+
+StartEvent = evt_nam_WH3_owning_Perm_during_winter2|1|0|NULL|NULL|$Perm|NULL
+
+Conditions
+
+  EvalRgnOwned = $Perm
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Perm;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Perm
+
+StartEvent = evt_nam_RED_owning_Perm_during_winter2|1|0|NULL|NULL|$Perm|NULL
+
+Conditions
+
+  EvalRgnOwned = $Perm
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Perm
+
+StartEvent = evt_nam_WH3_owningPermduringwinter2cons|999|0|NULL|NULL|$Perm|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Perm_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Perm_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Perm_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Perm_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Perm;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Sarapul
+
+StartEvent = evt_nam_WH3_owning_Sarapul_during_winter2|1|0|NULL|NULL|$Sarapul|NULL
+
+Conditions
+
+  EvalRgnOwned = $Sarapul
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Sarapul;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Sarapul
+
+StartEvent = evt_nam_RED_owning_Sarapul_during_winter2|1|0|NULL|NULL|$Sarapul|NULL
+
+Conditions
+
+  EvalRgnOwned = $Sarapul
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Sarapul
+
+StartEvent = evt_nam_WH3_owningSarapulduringwinter2cons|999|0|NULL|NULL|$Sarapul|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Sarapul_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Sarapul_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Sarapul_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Sarapul_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Sarapul;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Ufa
+
+StartEvent = evt_nam_WH3_owning_Ufa_during_winter2|1|0|NULL|NULL|$Ufa|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ufa
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Ufa;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Ufa
+
+StartEvent = evt_nam_RED_owning_Ufa_during_winter2|1|0|NULL|NULL|$Ufa|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ufa
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Ufa
+
+StartEvent = evt_nam_WH3_owningUfaduringwinter2cons|999|0|NULL|NULL|$Ufa|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Ufa_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Ufa_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Ufa_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Ufa_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Ufa;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Zlatoust
+
+StartEvent = evt_nam_WH3_owning_Zlatoust_during_winter2|1|0|NULL|NULL|$Zlatoust|NULL
+
+Conditions
+
+  EvalRgnOwned = $Zlatoust
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Zlatoust;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Zlatoust
+
+StartEvent = evt_nam_RED_owning_Zlatoust_during_winter2|1|0|NULL|NULL|$Zlatoust|NULL
+
+Conditions
+
+  EvalRgnOwned = $Zlatoust
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Zlatoust
+
+StartEvent = evt_nam_WH3_owningZlatoustduringwinter2cons|999|0|NULL|NULL|$Zlatoust|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Zlatoust_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Zlatoust_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Zlatoust_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Zlatoust_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Zlatoust;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_WH3_owning_Samara_during_winter2|1|0|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  EvalRgnOwned = $Samara
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Samara;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Samara
+
+StartEvent = evt_nam_RED_owning_Samara_during_winter2|1|0|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  EvalRgnOwned = $Samara
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_WH3_owningSamaraduringwinter2cons|999|0|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Samara_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Samara_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Samara_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Samara_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Samara;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Buguruslan
+
+StartEvent = evt_nam_WH3_owning_Buguruslan_during_winter2|1|0|NULL|NULL|$Buguruslan|NULL
+
+Conditions
+
+  EvalRgnOwned = $Buguruslan
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Buguruslan;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Buguruslan
+
+StartEvent = evt_nam_RED_owning_Buguruslan_during_winter2|1|0|NULL|NULL|$Buguruslan|NULL
+
+Conditions
+
+  EvalRgnOwned = $Buguruslan
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Buguruslan
+
+StartEvent = evt_nam_WH3_owningBuguruslanduringwinter2cons|999|0|NULL|NULL|$Buguruslan|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Buguruslan_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Buguruslan_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Buguruslan_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Buguruslan_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Buguruslan;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Bugulma
+
+StartEvent = evt_nam_WH3_owning_Bugulma_during_winter2|1|0|NULL|NULL|$Bugulma|NULL
+
+Conditions
+
+  EvalRgnOwned = $Bugulma
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Bugulma;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Bugulma
+
+StartEvent = evt_nam_RED_owning_Bugulma_during_winter2|1|0|NULL|NULL|$Bugulma|NULL
+
+Conditions
+
+  EvalRgnOwned = $Bugulma
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Bugulma
+
+StartEvent = evt_nam_WH3_owningBugulmaduringwinter2cons|999|0|NULL|NULL|$Bugulma|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Bugulma_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Bugulma_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Bugulma_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Bugulma_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Bugulma;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Orenburg
+
+StartEvent = evt_nam_WH3_owning_Orenburg_during_winter2|1|0|NULL|NULL|$Orenburg|NULL
+
+Conditions
+
+  EvalRgnOwned = $Orenburg
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Orenburg;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Orenburg
+
+StartEvent = evt_nam_RED_owning_Orenburg_during_winter2|1|0|NULL|NULL|$Orenburg|NULL
+
+Conditions
+
+  EvalRgnOwned = $Orenburg
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Orenburg
+
+StartEvent = evt_nam_WH3_owningOrenburgduringwinter2cons|999|0|NULL|NULL|$Orenburg|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Orenburg_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Orenburg_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Orenburg_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Orenburg_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Orenburg;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Uralsk
+
+StartEvent = evt_nam_WH3_owning_Uralsk_during_winter2|1|0|NULL|NULL|$Uralsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Uralsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Uralsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Uralsk
+
+StartEvent = evt_nam_RED_owning_Uralsk_during_winter2|1|0|NULL|NULL|$Uralsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Uralsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Uralsk
+
+StartEvent = evt_nam_WH3_owningUralskduringwinter2cons|999|0|NULL|NULL|$Uralsk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Uralsk_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Uralsk_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Uralsk_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Uralsk_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Uralsk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Simbirsk
+
+StartEvent = evt_nam_WH3_owning_Simbirsk_during_winter2|1|0|NULL|NULL|$Simbirsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Simbirsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Simbirsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Simbirsk
+
+StartEvent = evt_nam_RED_owning_Simbirsk_during_winter2|1|0|NULL|NULL|$Simbirsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Simbirsk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Simbirsk
+
+StartEvent = evt_nam_WH3_owningSimbirskduringwinter2cons|999|0|NULL|NULL|$Simbirsk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Simbirsk_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Simbirsk_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Simbirsk_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Simbirsk_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Simbirsk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Kazan
+
+StartEvent = evt_nam_WH3_owning_Kazan_during_winter2|1|0|NULL|NULL|$Kazan|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kazan
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Kazan;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kazan
+
+StartEvent = evt_nam_RED_owning_Kazan_during_winter2|1|0|NULL|NULL|$Kazan|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kazan
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Kazan
+
+StartEvent = evt_nam_WH3_owningKazanduringwinter2cons|999|0|NULL|NULL|$Kazan|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Kazan_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Kazan_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Kazan_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Kazan_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Kazan;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Syzran
+
+StartEvent = evt_nam_WH3_owning_Syzran_during_winter2|1|0|NULL|NULL|$Syzran|NULL
+
+Conditions
+
+  EvalRgnOwned = $Syzran
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Syzran;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Syzran
+
+StartEvent = evt_nam_RED_owning_Syzran_during_winter2|1|0|NULL|NULL|$Syzran|NULL
+
+Conditions
+
+  EvalRgnOwned = $Syzran
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Syzran
+
+StartEvent = evt_nam_WH3_owningSyzranduringwinter2cons|999|0|NULL|NULL|$Syzran|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Syzran_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Syzran_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Syzran_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Syzran_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Syzran;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Saratov
+
+StartEvent = evt_nam_WH3_owning_Saratov_during_winter2|1|0|NULL|NULL|$Saratov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Saratov
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Saratov;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Saratov
+
+StartEvent = evt_nam_RED_owning_Saratov_during_winter2|1|0|NULL|NULL|$Saratov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Saratov
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Saratov
+
+StartEvent = evt_nam_WH3_owningSaratovduringwinter2cons|999|0|NULL|NULL|$Saratov|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Saratov_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Saratov_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Saratov_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Saratov_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Saratov;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_WH3_owning_Tzaritsyn_during_winter2|1|0|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tzaritsyn
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Tzaritsyn;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_RED_owning_Tzaritsyn_during_winter2|1|0|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tzaritsyn
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_WH3_owningTzaritsynduringwinter2cons|999|0|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Tzaritsyn_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Tzaritsyn_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Tzaritsyn_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Tzaritsyn_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Tzaritsyn;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Penza
+
+StartEvent = evt_nam_WH3_owning_Penza_during_winter2|1|0|NULL|NULL|$Penza|NULL
+
+Conditions
+
+  EvalRgnOwned = $Penza
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Penza;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Penza
+
+StartEvent = evt_nam_RED_owning_Penza_during_winter2|1|0|NULL|NULL|$Penza|NULL
+
+Conditions
+
+  EvalRgnOwned = $Penza
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Penza
+
+StartEvent = evt_nam_WH3_owningPenzaduringwinter2cons|999|0|NULL|NULL|$Penza|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Penza_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Penza_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Penza_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Penza_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Penza;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Saransk
+
+StartEvent = evt_nam_WH3_owning_Saransk_during_winter2|1|0|NULL|NULL|$Saransk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Saransk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Saransk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Saransk
+
+StartEvent = evt_nam_RED_owning_Saransk_during_winter2|1|0|NULL|NULL|$Saransk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Saransk
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Saransk
+
+StartEvent = evt_nam_WH3_owningSaranskduringwinter2cons|999|0|NULL|NULL|$Saransk|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Saransk_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Saransk_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Saransk_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Saransk_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Saransk;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Arzamas
+
+StartEvent = evt_nam_WH3_owning_Arzamas_during_winter2|1|0|NULL|NULL|$Arzamas|NULL
+
+Conditions
+
+  EvalRgnOwned = $Arzamas
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Arzamas;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Arzamas
+
+StartEvent = evt_nam_RED_owning_Arzamas_during_winter2|1|0|NULL|NULL|$Arzamas|NULL
+
+Conditions
+
+  EvalRgnOwned = $Arzamas
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Arzamas
+
+StartEvent = evt_nam_WH3_owningArzamasduringwinter2cons|999|0|NULL|NULL|$Arzamas|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Arzamas_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Arzamas_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Arzamas_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Arzamas_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Arzamas;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Cheboksary
+
+StartEvent = evt_nam_WH3_owning_Cheboksary_during_winter2|1|0|NULL|NULL|$Cheboksary|NULL
+
+Conditions
+
+  EvalRgnOwned = $Cheboksary
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Cheboksary;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Cheboksary
+
+StartEvent = evt_nam_RED_owning_Cheboksary_during_winter2|1|0|NULL|NULL|$Cheboksary|NULL
+
+Conditions
+
+  EvalRgnOwned = $Cheboksary
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Cheboksary
+
+StartEvent = evt_nam_WH3_owningCheboksaryduringwinter2cons|999|0|NULL|NULL|$Cheboksary|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Cheboksary_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Cheboksary_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Cheboksary_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Cheboksary_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Cheboksary;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tambov
+
+StartEvent = evt_nam_WH3_owning_Tambov_during_winter2|1|0|NULL|NULL|$Tambov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tambov
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Tambov;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tambov
+
+StartEvent = evt_nam_RED_owning_Tambov_during_winter2|1|0|NULL|NULL|$Tambov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tambov
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tambov
+
+StartEvent = evt_nam_WH3_owningTambovduringwinter2cons|999|0|NULL|NULL|$Tambov|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Tambov_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Tambov_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Tambov_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Tambov_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Tambov;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Ryazan
+
+StartEvent = evt_nam_WH3_owning_Ryazan_during_winter2|1|0|NULL|NULL|$Ryazan|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ryazan
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Ryazan;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Ryazan
+
+StartEvent = evt_nam_RED_owning_Ryazan_during_winter2|1|0|NULL|NULL|$Ryazan|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ryazan
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Ryazan
+
+StartEvent = evt_nam_WH3_owningRyazanduringwinter2cons|999|0|NULL|NULL|$Ryazan|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Ryazan_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Ryazan_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Ryazan_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Ryazan_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Ryazan;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Vladimir
+
+StartEvent = evt_nam_WH3_owning_Vladimir_during_winter2|1|0|NULL|NULL|$Vladimir|NULL
+
+Conditions
+
+  EvalRgnOwned = $Vladimir
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Vladimir;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Vladimir
+
+StartEvent = evt_nam_RED_owning_Vladimir_during_winter2|1|0|NULL|NULL|$Vladimir|NULL
+
+Conditions
+
+  EvalRgnOwned = $Vladimir
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Vladimir
+
+StartEvent = evt_nam_WH3_owningVladimirduringwinter2cons|999|0|NULL|NULL|$Vladimir|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Vladimir_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Vladimir_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Vladimir_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Vladimir_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Vladimir;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Yaroslavl
+
+StartEvent = evt_nam_WH3_owning_Yaroslavl_during_winter2|1|0|NULL|NULL|$Yaroslavl|NULL
+
+Conditions
+
+  EvalRgnOwned = $Yaroslavl
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Yaroslavl;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Yaroslavl
+
+StartEvent = evt_nam_RED_owning_Yaroslavl_during_winter2|1|0|NULL|NULL|$Yaroslavl|NULL
+
+Conditions
+
+  EvalRgnOwned = $Yaroslavl
+  Probability = 50
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  MinDate = 1918/09/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Yaroslavl
+
+StartEvent = evt_nam_WH3_owningYaroslavlduringwinter2cons|999|0|NULL|NULL|$Yaroslavl|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  TurnIndex  = 19;20;21;22;23;1;2;3;4;5;6
+  EvalEvent = evt_nam_WH3_owning_Yaroslavl_during_winter2;=;1
+  EvalEvent = evt_nam_RED_owning_Yaroslavl_during_winter2;=;1;
+  MinDate = 1918/09/01
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_owning_Yaroslavl_during_winter2;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_owning_Yaroslavl_during_winter2;CuOccurs;0
+  AI.SetLocalInterest = $Yaroslavl;35;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VolgaTheaterprev|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  Probability = 66
+  MinDate = 1918/06/01
+  MaxDate = 1918/07/01
+
+Actions
+
+  AI.SetTheaPrev = $Theater_Volga;180
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_UralTheaterprev|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/06/01
+  MaxDate = 1918/07/01
+
+Actions
+
+  AI.SetTheaPrev = $Theater_Ural;110
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_UralTheaterprev3|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  Probability = 40
+  MinDate = 1918/06/01
+  MaxDate = 1918/07/01
+
+Actions
+
+  AI.SetTheaPrev = $Theater_Ural;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_UralTheaterprev4|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  Probability = 40
+  MinDate = 1918/06/01
+  MaxDate = 1918/07/01
+
+Actions
+
+  AI.SetTheaPrev = $Theater_Ural;150
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VolgaTheaterprev2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/11/01
+
+Actions
+
+  AI.SetTheaPrev = $Theater_Volga;400
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WH3_UralTheaterprev2endcond|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  EvalRgnOwned = $Orsk
+  EvalRgnOwned = $Ekaterinburg
+  EvalRgnOwned = $Chelyabinsk
+  EvalRgnOwned = $Orenburg
+  EvalRgnOwned = $Zlatoust
+  EvalRgnOwned = $Ufa
+  EvalRgnOwned = $Perm
+  MinDate = 1918/11/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_UralTheaterprev2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WH3_UralTheaterprev2endcond;=;1;
+  MinDate = 1918/06/01
+  Probability = 15
+
+Actions
+
+  AI.SetTheaPrev = $Theater_Ural;100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_UralTheaterprevvariation|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/06/01
+  Probability = 15
+
+Actions
+
+  AI.ChgTheaPrev = $Theater_Ural;100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_UralTheaterprevvariation2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/06/01
+  Probability = 15
+
+Actions
+
+  AI.ChgTheaPrev = $Theater_Ural;-100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_UralTheaterprevvariation3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/06/01
+  Probability = 15
+
+Actions
+
+  AI.ChgTheaPrev = $Theater_Ural;-50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_UralTheaterprevvariation4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/06/01
+  Probability = 15
+
+Actions
+
+  AI.ChgTheaPrev = $Theater_Ural;50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VolgaTheaterprevvariation|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  Probability = 15
+  MinDate = 1918/06/01
+  MaxDate = 1923/07/01
+
+Actions
+
+  AI.ChgTheaPrev = $Theater_Volga;100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VolgaTheaterprevvariation2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  Probability = 15
+  MinDate = 1918/06/01
+  MaxDate = 1923/07/01
+
+Actions
+
+  AI.ChgTheaPrev = $Theater_Volga;-100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VolgaTheaterprevvariation3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  Probability = 15
+  MinDate = 1918/06/01
+  MaxDate = 1923/07/01
+
+Actions
+
+  AI.ChgTheaPrev = $Theater_Volga;-50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VolgaTheaterprevvariation4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  Probability = 15
+  MinDate = 1918/06/01
+  MaxDate = 1923/07/01
+
+Actions
+
+  AI.ChgTheaPrev = $Theater_Volga;50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_CentralrussiaTheaterprev|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  EvalRgnOwned = $Penza
+  EvalRgnOwned = $Saransk
+  EvalRgnOwned = $Cheboksary
+  MinDate = 1918/06/01
+  MaxDate = 1919/12/01
+
+Actions
+
+  AI.SetTheaPrev = $Theater_Central_Russia;400
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WH3_CentralrussiaTheaterprevendcond|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  EvalRgnOwned = $Penza
+  EvalRgnOwned = $Saransk
+  EvalRgnOwned = $Cheboksary
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_CentralrussiaTheaterprevend|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WH3_CentralrussiaTheaterprevendcond;=;1;
+  MinDate = 1918/06/01
+
+Actions
+
+  AI.SetTheaPrev = $Theater_Central_Russia;100
+  SetEvtOccurs = evt_nam_WH3_CentralrussiaTheaterprevendcond;CuOccurs;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_SouthernTheaterprev|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/06/01
+  MaxDate = 1919/12/01
+
+Actions
+
+  AI.SetTheaPrev = $Theater_Southern;50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WH3_SouthernTheaterprevendcond|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  Probability = 4
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_SouthernTheaterprevend|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WH3_SouthernTheaterprevendcond;=;1;
+  MinDate = 1918/06/01
+
+Actions
+
+  AI.SetTheaPrev = $Theater_Southern;80
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3InfantryTraining|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WH3_Inf4
+  AlterCuSubUnit  = ApplyToList;probability 3;Model $mdl_WH3_Inf1;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3InfantryTraining2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WH3_Inf5
+  AlterCuSubUnit  = ApplyToList;probability 3;Model $mdl_WH3_Inf3;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3CavalryTraining|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WH3_Cav7
+  AlterCuSubUnit  = ApplyToList;probability 3;Model $mdl_WH3_Cav1;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3ICavalryTraining2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WH3_Cav8
+  AlterCuSubUnit  = ApplyToList;probability 3;Model $mdl_WH3_Cav2;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3MilitiaTraining|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/01
+
+Actions
+
+  SelectSubUnits = Models $mdl_WH3_Mil1
+  AlterCuSubUnit  = ApplyToList;probability 3;Model $mdl_WH3_Inf4;ChgCohesion 5
+
+EndEvent
+
+NULL ==========================================================================
+

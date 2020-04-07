@@ -1,0 +1,16 @@
+UID = 357
+NationTag = WH4
+Name = Infantry Rgt (early conscripts)
+Alias = uni_WH4_Rgt0
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WH4_Rgt0_txt
+Color = $colWH4Regular 
+ModelType0 = $mdl_WH4_Inf0|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_WesternWhites
+CustomNames = 1st Pskov Volunteers Rgt|53rd Volyn Rgt|3rd Tabalsk Rgt|2nd Ostrov Rgt|1st Revel Rgt|Independant Officers Rgt|3rd Rejitsa Volunteers Rgt|2nd Pskov Fusiliers Rgt|3rd Pskov Fusiliers Rgt|4th Pskov Fusiliers Rgt|5th Pskov Fusiliers Rgt|6th Yamburg Fusiliers Rgt|7th Yamburg Fusiliers Rgt|8th Shimsk Fusiliers Rgt|9th Novgorod Fusiliers Rgt|10th Novgorod Fusiliers Rgt|11th Luga Fusiliers Rgt|12th Velikiye Luki Rgt|13th Velikye Luki Rgt|14th Narva Fusiliers Rgt|15th Narva Fusiliers Rgt|16th Narva Fusiliers Rgt|17th Baltic Fusiliers Rgt|18th Baltic Fusiliers Rgt|19th Baltic Fusiliers Rgt|20th Baltic Fusiliers Rgt

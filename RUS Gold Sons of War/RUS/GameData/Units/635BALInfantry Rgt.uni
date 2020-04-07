@@ -1,0 +1,15 @@
+UID = 635
+NationTag = LIT
+Name = Baltic Infantry
+Alias = uni_BAL_Btn
+ForcePool = -1
+ShortName = Inf. Rgt
+Text = $uni_BAL_Btn_txt
+Color = $colLITRegular 
+ModelType0 = $mdl_BAL_Inf2|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Lithuania

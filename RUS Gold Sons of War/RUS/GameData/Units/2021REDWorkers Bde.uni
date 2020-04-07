@@ -1,0 +1,16 @@
+UID = 2021
+NationTag = RED
+Name = Workers
+Alias = uni_RED_MBde1
+ForcePool = 6
+ShortName = Militia
+Text = $uni_RED_Mil6_txt
+Color = $colREDMilitia
+SymbolID = symbol_DivInf.png
+ModelType0 = $mdl_RED_Mil2|2
+FamilyType0 = $famMilitia|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = Workers

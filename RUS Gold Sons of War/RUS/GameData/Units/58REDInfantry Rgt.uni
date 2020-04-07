@@ -1,0 +1,15 @@
+UID = 58
+NationTag = RED
+Name = Infantry Rgt
+Alias = uni_RED_Rgt3
+ForcePool = 100
+ShortName = Inf. Rgt.
+Text = $uni_RED_Rgt3_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Inf3|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Russians

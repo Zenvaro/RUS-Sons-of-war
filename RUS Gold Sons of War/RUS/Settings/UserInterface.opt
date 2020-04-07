@@ -1,0 +1,222 @@
+// ********************************************************
+// !Miscellaneous
+// ********************************************************
+inoReplaceOverlayFour =0
+inoBattleDelayCoeff = 4
+inoCombatGauge = 2 // latest one with AGE components (no more an hosting scale)
+inoAirModule = 1
+inoHasAGEComponents = 2
+inoNewMilitaryProdScreen = 1
+inoOVLNumber = 24 // Num of overlay
+inoWarmapStrat = 1
+inoWarmapReqs = 1 
+inoDoubleLengthRailMove = 1  // Format of the Army Counter for rail move
+inoDoubleLengthRiverMove = 0  // Format of the Army Counter for river move
+inoMultiChoiceGUI = 1
+inoCanUse3DStuff = 0
+inoShowForeignEntryOption = 0
+inoMaxSubFactionFilterNumber = 16
+inoDetailPanelTwoColumns = 16 // // starting with this number of SU (independently from having an ext panel), display SU without names with 2 columns, if coo correctly entered...
+inoTopBarGUI = 1 // where we see the F1 to F11 buttons
+inoSupplyFilterConcatened = 0 // only one supply crate but with a number coming from file Numbers_Big.png
+
+// ********************************************************
+// Army & Fleet sprites
+// ********************************************************
+
+// PON Style
+inoGroupImageStyle = 1
+
+
+ino3DArmyShiftX = 0 // If not 0 or -999 then use these shifts to place Army/Fleet during setup / of coo of CS
+ino3DArmyShiftY = 0 // -999 in ino3DArmyShiftX disregard all others variables (for old games without these parameters)
+ino2DArmyShiftX = -15
+ino2DArmyShiftY = -35
+ino3DFleetShiftX = 0
+ino3DFleetShiftY = 0
+ino2DFleetShiftX = 0
+ino2DFleetShiftY = 0
+ino2DFleetHarborShiftX = -40
+ino2DFleetHarborShiftY = -20
+
+// for drag & drop =new 120817:
+ino3DArmyDropShiftX = 0 // Use these shifts to place Army/Fleet during drag&drop
+ ino3DArmyDropShiftY = 0 
+ino2DArmyDropShiftX = 0
+ino2DArmyDropShiftY = 0
+ino2DUnitDropShiftX = 0 // Unit is when you take a group of units from a stack and drop it on map, creating a new stack
+ino2DUnitDropShiftY = 0
+ino3DFleetDropShiftX = 0 
+ino3DFleetDropShiftY = 0 
+ino2DFleetDropShiftX = 0 
+ino2DFleetDropShiftY = 0 
+
+
+// ********************************************************
+// Cityscapes Export
+// ********************************************************
+
+inoStructureExportStyle = 2 // Simple Modular style
+
+inoCSE_ZoomNoShow = 30 // zoom level where there is no export at all (this value or under)
+inoCSE_VertOffsetNameZoom40 = -4 // For the name of the CS, the vertical offset to impact on the plate label when in zoom 40 or less
+inoCSE_VertOffsetNameZoom60 = 0 
+inoCSE_VertOffsetNameZoom80 = 2 
+inoCSE_VertOffsetNameZoom100 = 4 
+inoCSE_NameZoomLevelVSmall = 80 // at which zoom (or less) we switch to Very Small font (standard is small font)
+inoCSE_RecenterSprite = 1 // if true, the cityscape/harbor sprite will be shifted by -half its size in height and width
+inoCSE_MaxFortLevel = 3 
+inoCSE_MaxCSStyle = 10 
+inoCSE_MaxCityLvlSize1 = 3 // City of this size uses the size 1 style of city
+inoCSE_MaxCityLvlSize2 = 6 
+inoCSE_MaxCityLvlSize3 = 10 
+inoCSE_MaxCityLvlSize4 = 99 
+inoCSE_HaveHarshStyleCS = 0 // If weather is harsh or worse, use Harsh_ prefix before (beware of the Snow/Sand storm problem)
+inoCSE_SupplyThresoldLow = 50 // for modular if this value or less supply,
+inoCSE_ModDepotLow = CS_supply.png // then use inoCSE_ModDepotLow otherwise DepotNorm
+inoCSE_ModDepotNorm = CS_ammo.png 
+inoCSE_ModDepotBoth = 0 // if true, then above x supply, we show both the low and the norm images
+inoCSE_CityStyleEncode = 0 // 0: Uses gxCityStylesNames, 1: VGN scheme, adv econ
+inoCSE_CSFlagOffsetX = 47 // offset of the CS flag in X / compared to the image of the structure
+inoCSE_CSFlagOffsetY = -5 // offset of the CS flag in Y
+inoCSE_GPIconNoShowZoom = 50 // don't show group indics under this zoom
+inoCSE_GPIconMaxVal = 20 // What is the max number printed on the Group icon
+inoCSE_GPLandIconOffsetX = -30 // offset of the Land GP indic in X / compared to the image of the structure
+inoCSE_GPLandIconOffsetY = 35 // offset of the Land CS indic in Y
+inoCSE_GPNavIconOffsetX = -30 // offset of the Nav GP indic in X / compared to the image of the structure
+inoCSE_GPNavIconOffsetY = 55 // offset of the Nav CS indic in Y
+inoCSE_PlateNameOffsX = 0 // offset of the Plate Name CS indic in X
+inoCSE_PlateNameOffsY = 75 // offset of the Plate Name CS indic in Y
+inoCSE_PlateNameOffsAltX = 40 // Alt offset of the Plate Name CS indic in X (used if the structure has AltPlateNameOffs =1)
+inoCSE_PlateNameOffsAltY = 110 // Alt offset of the Plate Name CS indic in Y
+inoCSE_GenericCapitalImg = Capital.png 
+inoCSE_ObjReceiveImg = Obj Receive.png 
+inoCSE_SmthNotReceiveImg = Smth Not Receive.png 
+inoCSE_UnitBulletNoShowZoom = 50 // don't show units bullets under this zoom
+inoCSE_UnitBulletsPlate = CityBullets_Back.png 
+inoCSE_UnitBulletsStacked = 1 // the 2 bullets serie are stacked above one another, in this case inoCSE_UnitNavBulletsOffsX_ is the offset compared to the first serie
+inoCSE_UnitsPerBullets = 3 // nb of units (but counted in CP! with at least one per unit) to show one bullet
+inoCSE_MaxBulletsNb = 17 
+inoCSE_UnitLandBulletsOffsX = 0 
+inoCSE_UnitLandBulletsOffsY = 96 
+inoCSE_UnitNavBulletsOffsX = 0 
+inoCSE_UnitNavBulletsOffsY = 11 
+inoCSE_StrucLevelOnPlateOffsX = 6 // horizontal offset of the structure level on the plate
+inoCSE_StrucNameOnPlateOffsX = 28 // horizontal offset of the structure name on the plate
+
+
+// ********************************************************
+// Colors
+// ********************************************************
+
+colToolTip         = 255|255|255|255
+colToolTipNb       = 255|0|0|255
+colFileList        = 255|255|255|255
+colTurn            = 0|0|0|255
+colSplashFont_R    = 255
+colSplashFont_G    = 255
+colSplashFont_B    = 255
+
+
+// ********************************************************
+// Credits
+// ********************************************************
+
+
+inoCredits0 = SEP_REDS  	// strCredits2
+inoCredits1 = AGE    	// strCredits3
+inoCredits2 = delphi  	// strCredits4
+inoCredits3 = directx 	// strCredits5
+inoCredits4 = inno  	// strCredits6
+inoCredits5 = LogoVarious  // strCredits7
+inoCredits6 = Publisher   // strCredits8
+
+// ********************************************************
+// Map Alea Sounds
+// ********************************************************
+aleaMinDelayBetweenSounds     = 1500 // 25 FPS x 60 secs = 1 mn delay
+aleaMinDelayMouseOver         = 100 // mouse must be over same region for 100 frames
+
+// ********************************************************
+// Ledger
+// ********************************************************
+
+
+// ***** Ledger, index of pages ****
+ledBookmarkNb 	= 10 
+ledForcesList 	= 0	// F1 key 
+ledMilitaryProd = 1 // F2 key
+ledWMReqs 	= 6 // Warmap where we see requisitions F8
+ledWarmap 	= 7 // Strategic warmap, where we see units at a glance F9
+ledObjectives 	= 8 // F10: obj
+ledBackground 	= 9 // F11: background
+ 
+ledGameOpt1 = 2 // Page for Game Options type 1, Reinforce (F3 key)
+ledGameOpt2 = 3 // Page for Game Options type 2, Politic (F4 key)
+ledGameOpt3 = 4 // Page for Game Options type 3, Diplomacy (F5 key)
+ledGameOpt4 = 5 // Page for Game Options type 4, Various (F6 key)
+ledGameOpt5 = -1 // Page for Game Options type 5
+ledGameOpt6 = -1 // Page for Game Options type 6
+ledGameOpt7 = -1 // Page for Game Options type 7
+ledGameOpt8 = -1 // Page for Game Options type 8
+   
+// Game Option: 
+ledGameOptVal1 = $gmaOptionReinf // Value for Game Options type 1
+ledGameOptVal2 = $gmaOptionPol // Value for Game Options type 2
+ledGameOptVal3 = $gmaOptionDip // Value for Game Options type 3
+ledGameOptVal4 = $gmaOptionVar  // Value for Game Options type 4
+ledGameOptVal5 = -1 // Value for Game Options type 5
+ledGameOptVal6 = -1 // Value for Game Options type 6
+ledGameOptVal7 = -1 // Value for Game Options type 7
+ledGameOptVal8 = -1 // Value for Game Options type 8
+
+// ********************************************************
+// Spec Orders - User Interface buttons display
+// ********************************************************
+  
+
+// Special orders, -1: not possible, 0+: tab #
+  
+  SpecOrder1	= 0		// ToCityScape
+  SpecOrder2	= -1	// Entrench  (DEPRECATED)
+  SpecOrder3	= 2		// BuildFort
+  SpecOrder4	= 2		// BuildDepot
+  SpecOrder5	= -1		// OutCityScape (Sortie)
+  SpecOrder6	= -1	// Assault  (DON'T TOUCH)
+  SpecOrder7	= 0		// ForcedMarch
+  SpecOrder8	= 2		// Ambush
+  SpecOrder9	= 2		// DestroyFort
+  SpecOrder10	= 2		// DestroyStruc
+  SpecOrder11	= -1	// Delay (DON'T TOUCH)
+  SpecOrder12	= 0		// Bombard
+  SpecOrder13	= 0		// SynchMove
+  SpecOrder14	= 0  	// DistUnload
+  SpecOrder15	= -1	// (DEPRECATED)
+  SpecOrder16	= 1		// CreateGHQ (Army in Red)
+  SpecOrder17	= 1		// DismissGHQ 
+  SpecOrder18	= 1		// AttachToGHQ (Corps to Army in Red)
+  SpecOrder19	= 1		// DetachFrGHQ
+  SpecOrder20	= 0		// RailMove
+  SpecOrder21	= -1		// RiverMove
+  SpecOrder22	= 2		// BuildRail
+  SpecOrder23	= 1		// SimpleCombi
+  SpecOrder24	= 1		// Split 
+  SpecOrder25	= -1	// Demote
+  SpecOrder26	= 1		// Promote
+  SpecOrder27	= 2		// DestroyRail
+  SpecOrder28	= -1	// CreateUnit
+  SpecOrder29	= 0		// EvadeFight
+  SpecOrder30	= 1		// Combine
+  SpecOrder31	= -1		// Relocate 
+  SpecOrder32	= 0	    // Intercept (is not 'drop group on another' which is not using spec order but 'jump' on adjacent group (patrol))
+  SpecOrder33	= 2    // Destruct
+  SpecOrder34	= 2    // Surrender
+ 
+// Various
+
+// ------------------------------------- Notes --------------------------------
+// Display summary (for game designer)
+// Tab 0 (left)- troops/march orders: ToCityscape, ForcedMarch, SynchMove, SimpleCombi/Split, EvadeFight
+// Tab 1 (center)- Chain of Command/Generals orders: Create/dismiss Army, Create/dismiss Corps, Promote Gnl, (Brigade) Combine
+// Tab 2 (right)- rare orders / the rest: Build Depot, Destroy Struc, Distant Unload, Surrender/destruct
+

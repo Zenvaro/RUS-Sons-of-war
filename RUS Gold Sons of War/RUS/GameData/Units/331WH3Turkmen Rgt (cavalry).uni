@@ -1,0 +1,16 @@
+UID = 331
+NationTag = WH3
+Name = Turkmen Rgt (cavalry)
+Alias = uni_WH3_Cav4
+ForcePool = 6
+ShortName = Turkmen
+Text = $uni_WH3_Cav4_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_Cav0|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Central_Asia
+CustomNames = 1st Khiva Cavalry Rgt|2nd Khiva Cavalry Rgt|3rd Khiva Cavalry Rgt|1st Bukhara Cavalry Rgt|2nd Bukhara Cavalry Rgt|3rd Bukhara Cavalry Rgt|1st Merv Cavalry Rgt|2nd Merv Cavalry Rgt|1st Samarkand Cavalry Rgt|2nd Samarkand Cavalry Rgt|3rd Samarkand Cavalry Rgt|4th Samarkand Cavalry Rgt|5th Urgench Cavalry Rgt|6th Urgench Cavalry Rgt|7th Kabar Cavalry Rgt|8th Fergana Cavalry Rgt|9th Fergana Cavalry Rgt

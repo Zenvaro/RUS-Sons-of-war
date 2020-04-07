@@ -1,0 +1,11 @@
+UID = 115
+Name = $abi_nam_DoubleCommand9
+Alias = French-Polish
+Kind = $abiMultiNation
+Text = $abi_txt_DoubleCommand9
+ImageID = abi_Polish.png
+Color = $colAbi_Tan
+Appliance = Group
+Family = 0
+Level = 1
+StrParam0 = FRA|POL

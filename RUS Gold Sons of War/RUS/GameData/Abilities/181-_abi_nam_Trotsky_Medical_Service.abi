@@ -1,0 +1,14 @@
+UID = 181
+Name = $abi_nam_Trotsky_Medical_Service
+Alias = Trotsky_Medical_Service
+Kind = $abiCohAdjust
+Text = $abi_txt_Trotsky_Medical_Service
+ImageID = abi_Medical.png
+Color = $colAbi_Orange
+Appliance = Group
+Family = 4
+Level = 1
+Param0 = 0
+Param1 = 100
+Param2 = 50
+ListParams3 = $famLine|$famElite|$famLightInf|$famCavalry|$famMilitia|$famRaider|$famHvyVehicle|$famLtVehicle|$famLightArty|$famMedArty|$famHvyArty|$famService|$famEngineer||$famArmoredTrain|$famSupply

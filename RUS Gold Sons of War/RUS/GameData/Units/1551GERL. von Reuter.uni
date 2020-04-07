@@ -1,0 +1,17 @@
+UID = 1551
+NationTag = GER
+Name = L. von Reuter
+Alias = uni_GER_Reuter3
+ForcePool = -1
+ShortName = Von Reuter
+Text = $uni_GER_Reuter3_txt
+Color = $colGERNavy
+ModelType0 = $ldr_GER_Reuter3|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

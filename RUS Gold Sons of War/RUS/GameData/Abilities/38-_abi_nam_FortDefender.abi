@@ -1,0 +1,13 @@
+UID = 38
+Name = $abi_nam_FortDefender
+Alias = Fort_Defender
+Kind = $abiSiege
+Text = $abi_txt_FortDefender
+ImageID = abi_FortDefense.png
+Color = $colAbi_Red
+Appliance = Group
+Family = 1
+Level = 1
+ProgRate = 3
+Param0 = 0
+Param1 = 1

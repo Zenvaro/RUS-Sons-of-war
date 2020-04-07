@@ -1,0 +1,16 @@
+UID = 300
+NationTag = WH2
+Name = Heavy Armored Train
+Alias = uni_WH2_Amt2
+ForcePool = 12
+ShortName = Arm. Train
+Text = $uni_WH2_Amt2_txt
+Color = $colWH2Regular 
+ModelType0 = $mdl_WHI_Amt2|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Komuch
+CustomNames = 1st Volga Armored Train|2nd Volga Armored Train|3rd Volga Armored Train|4th Volga Armored Train|5th Volga Armored Train|6th Volga Armored Train|7th Volga Armored Train|8th Volga Armored Train|9th Volga Armored Train|10th Volga Armored Train

@@ -1,0 +1,15 @@
+UID = 325
+NationTag = WH3
+Name = Infantry Rgt
+Alias = uni_WH3_Rgt9
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WH3_Rgt9_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_Inf3|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_SiberianWhites

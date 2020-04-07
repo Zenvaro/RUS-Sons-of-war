@@ -1,0 +1,2803 @@
+  NULL
+
+SelectFaction = $WH3
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Southern|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Southern;100
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Southern3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Southern;80
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Southern4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Southern;70
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Southern2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Southern;90
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Southern5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Southern;60
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Southern6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Southern;110
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Southern7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 12
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Southern;120
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Western|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Western;100
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Western3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Western;80
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Western4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Western;70
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Western2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Western;90
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Western5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Western;60
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Western6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Western;110
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Western7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Western;120
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Siberia|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Siberia;100
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Siberia3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Siberia;80
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Siberia4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Siberia;70
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Siberia2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Siberia;90
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Siberia5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Siberia;60
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Siberia6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Siberia;110
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Siberia7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Siberia;120
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ukraine|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ukraine;100
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ukraine3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ukraine;80
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ukraine4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ukraine;70
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ukraine2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ukraine;90
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ukraine5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ukraine;60
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ukraine6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ukraine;110
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ukraine7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 12
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ukraine;120
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Belarus|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Belarus;100
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Belarus3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Belarus;80
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Belarus4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Belarus;70
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Belarus2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Belarus;90
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Belarus5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Belarus;60
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Belarus6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Belarus;110
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Belarus7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Belarus;120
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Finland|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Finland;100
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Finland3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Finland;80
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Finland4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Finland;70
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Finland2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Finland;90
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Finland5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Finland;60
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Finland6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Finland;110
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Finland7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Finland;120
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Northern|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Northern;100
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Northern3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Northern;80
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Northern4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Northern;70
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Northern2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Northern;90
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Northern5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Northern;60
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Northern6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Northern;110
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Northern7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Northern;120
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Russia|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Russia;100
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Russia3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Russia;80
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Russia4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Russia;70
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Russia2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Russia;90
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Russia5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Russia;60
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Russia6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Russia;110
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Russia7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Russia;120
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Volga|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Volga;100
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Volga3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Volga;80
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Volga4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Volga;70
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Volga2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Volga;90
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Volga5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Volga;60
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Volga6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Volga;110
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Volga7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Volga;120
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ural|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ural;100
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ural3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ural;80
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ural4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ural;70
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ural2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ural;90
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ural5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ural;60
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ural6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ural;110
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Ural7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01 
+
+Actions
+  AI.SetAggro = $Theater_Ural;120
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Asia|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Asia;100
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Asia3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Asia;80
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Asia4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Asia;70
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Asia2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Asia;90
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Asia5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Asia;60
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Asia6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Asia;110
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Central_Asia7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Central_Asia;120
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Far_East|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 15
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Asia;100
+  AI.SetAggro = $Theater_Eastern;100
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Far_East3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Asia;80
+  AI.SetAggro = $Theater_Eastern;80
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Far_East4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Asia;70
+  AI.SetAggro = $Theater_Eastern;70
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Far_East2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Asia;90
+  AI.SetAggro = $Theater_Eastern;90
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Far_East5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Asia;60
+  AI.SetAggro = $Theater_Eastern;60
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Far_East6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Asia;110
+  AI.SetAggro = $Theater_Eastern;110
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_aggro1Far_East7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 8
+  CheckIsPlayer = NOT
+  MinDate = 1917/10/01 
+
+Actions
+  AI.SetAggro = $Theater_Asia;120
+  AI.SetAggro = $Theater_Eastern;120
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_WH3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  TurnIndex = 20
+
+Actions
+  AI.SetAggro  = $Theater_Southern;15;$Theater_Western;5;$Theater_Siberia;5;$Theater_Ukraine;15;$Theater_Belarus;5;$Theater_Finland;5;$Theater_Northern;5;$Theater_Central_Russia;15;$Theater_Volga;15;$Theater_Ural;15;$Theater_Central_Asia;5;$Theater_Eastern;5;$Theater_Asia;5;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_B|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  Probability = 50
+
+Actions
+  AI.ChgAggro  = $Theater_Southern;5;$Theater_Western;5;$Theater_Siberia;5;$Theater_Ukraine;5;$Theater_Belarus;5;$Theater_Finland;10;$Theater_Northern;15;$Theater_Central_Russia;15;$Theater_Volga;5;$Theater_Ural;5;$Theater_Central_Asia;5;$Theater_Eastern;5;$Theater_Asia;5;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive1|2|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  Probability = 4
+
+Actions
+  AI.ChgAggro  = $Theater_Southern;50
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive2|2|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  Probability = 4
+
+Actions
+  AI.ChgAggro  = $Theater_Western;50
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive3|2|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  Probability = 4
+
+Actions
+  AI.ChgAggro  = $Theater_Siberia;50;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive4|2|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  Probability = 4
+
+Actions
+  AI.ChgAggro  = $Theater_Ukraine;50
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive5|2|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  Probability = 4
+
+Actions
+  AI.ChgAggro  = $Theater_Belarus;50
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive6|2|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  Probability = 4
+
+Actions
+  AI.ChgAggro  = $Theater_Finland;50;$Theater_Northern;50;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive7|2|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  Probability = 4
+
+Actions
+  AI.ChgAggro  = $Theater_Central_Russia;50
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive8|2|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = ;$Theater_Volga;50
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive9|2|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  Probability = 4
+
+Actions
+  AI.ChgAggro  = $Theater_Ural;50;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive1end|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive1;=;1;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Southern;-50
+
+  ChgEvtOccurs = evt_nam_Winter_offensive1;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive2end|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive2;=;1;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Western;-50
+
+  ChgEvtOccurs = evt_nam_Winter_offensive2;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive3end|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive3;=;1;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Siberia;-50;
+
+  ChgEvtOccurs = evt_nam_Winter_offensive3;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive4end|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive4;=;1;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Ukraine;-50
+
+  ChgEvtOccurs = evt_nam_Winter_offensive4;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive5end|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive5;=;1;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Belarus;-50
+
+  ChgEvtOccurs = evt_nam_Winter_offensive5;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive6end|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive6;=;1;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Finland;-50;$Theater_Northern;-50;
+
+  ChgEvtOccurs = evt_nam_Winter_offensive6;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive7end|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive7;=;1;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Central_Russia;-50
+
+  ChgEvtOccurs = evt_nam_Winter_offensive7;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive8end|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive8;=;1;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = ;$Theater_Volga;-50
+
+  ChgEvtOccurs = evt_nam_Winter_offensive8;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive9end|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive9;=;1;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Ural;-50;
+
+  ChgEvtOccurs = evt_nam_Winter_offensive9;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive1end2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive1;=;2;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Southern;-50
+
+  ChgEvtOccurs = evt_nam_Winter_offensive1;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive2end2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive2;=;2;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Western;-50
+
+  ChgEvtOccurs = evt_nam_Winter_offensive2;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive3end2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive3;=;2;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Siberia;-50;
+
+  ChgEvtOccurs = evt_nam_Winter_offensive3;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive4end2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive4;=;2;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Ukraine;-50
+
+  ChgEvtOccurs = evt_nam_Winter_offensive4;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive5end2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive5;=;2;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Belarus;-50
+
+  ChgEvtOccurs = evt_nam_Winter_offensive5;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive6end2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive6;=;2;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Finland;-50;$Theater_Northern;-50;
+
+  ChgEvtOccurs = evt_nam_Winter_offensive6;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive7end2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive7;=;2;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Central_Russia;-50
+
+  ChgEvtOccurs = evt_nam_Winter_offensive7;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive8end2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive8;=;2;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = ;$Theater_Volga;-50
+
+  ChgEvtOccurs = evt_nam_Winter_offensive8;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Winter_offensive9end2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Winter_offensive9;=;2;
+  CheckIsPlayer = NOT
+  Probability = 10
+
+Actions
+  AI.ChgAggro  = $Theater_Ural;-50;
+
+  ChgEvtOccurs = evt_nam_Winter_offensive9;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Spring|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  TurnIndex = 5
+
+Actions
+  AI.SetAggro  = $Theater_Southern;100;$Theater_Western;100;$Theater_Siberia;100;$Theater_Ukraine;100;$Theater_Belarus;100;$Theater_Finland;100;$Theater_Northern;100;$Theater_Central_Russia;100;$Theater_Volga;100;$Theater_Ural;100;$Theater_Central_Asia;100;$Theater_Eastern;100;$Theater_Asia;100;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_RedchgRGDWH3|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/06/07
+  MaxDate = 1923/01/01
+
+Actions
+  ChgRgnDecisionFP = $rgdReforms;2;
+  ChgRgnDecisionFP = $rgdRequisitions;2;
+  ChgRgnDecisionFP = $rgdConscriptions;2;
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_allowingRGDWH3Req|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalRgnDecisionDef = $rgdRequisitions;>=;1;
+  MinDate = 1917/06/01
+  MaxDate = 1923/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_allowingRGDWH3conscripts|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalRgnDecisionDef = $rgdConscriptions;>=;1;
+  MinDate = 1917/06/01
+  MaxDate = 1923/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_allowingRGDWH3Reform|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalRgnDecisionDef = $rgdReforms;>=;1;
+  MinDate = 1917/06/01
+  MaxDate = 1923/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_RGDWH3RReqreset|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalMoney = <=;150;
+  EvalWSU = <=;100;
+  MinDate = 1917/06/01
+  MaxDate = 1923/01/01
+
+Actions
+  SetEvtOccurs = evt_nam_RGDWH3RActReq;CuOccurs;0
+  SetEvtOccurs = evt_nam_RGDWH3RActReqconquest;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_RGDWH3Conscriptsreset|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  EvalConscript = <=;125;
+  MinDate = 1917/06/01
+  MaxDate = 1923/01/01
+
+Actions
+  SetEvtOccurs = evt_nam_RGDWH3RActConscripts;CuOccurs;0
+  SetEvtOccurs = evt_nam_RGDWH3RActConscriptsconquest;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_RGDWH3RActReq|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/06/01
+  MaxDate = 1923/01/01
+  EvalEvent = evt_nam_allowingRGDWH3Req;>=;1;
+  Probability = 85
+  AddToRegListFromAreas = $Area_Enisey;$Area_Irkutsk;$Area_Zabaikal;$Area_Vladivostock;$Area_Tobolsk;$Area_Turgay;$Area_Tomsk;$Area_Akmolinsk;$Area_Tobolsk;$Area_Perm;$Area_Orenburg;$Area_Samara;;$Area_Uralsk;$Area_Ufa;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdReforms;0
+  IsRgnDecisionActValid = $rgdRequisitions
+
+Actions
+  AddRgnDecisionAct = $rgdRequisitions;CURRENT
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_RGDWH3RActConscripts|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/06/01
+  MaxDate = 1923/01/01
+  EvalEvent = evt_nam_allowingRGDWH3Req;>=;1;
+  Probability = 97
+  AddToRegListFromAreas = $Area_Enisey;$Area_Irkutsk;$Area_Zabaikal;$Area_Vladivostock;$Area_Tobolsk;$Area_Turgay;$Area_Tomsk;$Area_Akmolinsk;$Area_Tobolsk;$Area_Perm;$Area_Orenburg;$Area_Samara;;$Area_Uralsk;$Area_Ufa;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdReforms;0
+  IsRgnDecisionActValid = $rgdConscriptions
+
+Actions
+  AddRgnDecisionAct = $rgdConscriptions;CURRENT
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_RGDWH3RActReqconquest|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/11/01
+  MaxDate = 1923/01/01
+  EvalEvent = evt_nam_allowingRGDWH3Req;>=;1;
+  EvalEvent = evt_nam_RGDWH3RActReq;=;0;
+  Probability = 90
+  AddToRegListFromAreas = $Area_Viatka;$Area_Kazan;$Area_Simbirsk;$Area_Saratov;$Area_Penza;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdReforms;0
+  IsRgnDecisionActValid = $rgdRequisitions
+
+Actions
+  AddRgnDecisionAct = $rgdRequisitions;CURRENT
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_RGDWH3RActConscriptsconquest|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/11/01
+  MaxDate = 1923/01/01
+  EvalEvent = evt_nam_allowingRGDWH3conscripts;>=;1;
+  EvalEvent = evt_nam_RGDWH3RActConscripts;=;0;
+  Probability = 90
+  AddToRegListFromAreas = $Area_Viatka;$Area_Kazan;$Area_Simbirsk;$Area_Saratov;$Area_Penza;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdReforms;0
+  IsRgnDecisionActValid = $rgdRequisitions
+
+Actions
+  AddRgnDecisionAct = $rgdConscriptions;CURRENT
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_RGDWH3Reformreset|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/06/01
+  MaxDate = 1923/01/01
+
+Actions
+  SetEvtOccurs = evt_nam_RGDWH3RActReform;CuOccurs;0
+  SetEvtOccurs = evt_nam_RGDWH3RActReformconquest;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_RGDWH3RActReform|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/06/01
+  MaxDate = 1923/01/01
+  EvalEvent = evt_nam_allowingRGDWH3Reform;>=;1;
+  Probability = 70
+  AddToRegListFromAreas = $Area_Enisey;$Area_Irkutsk;$Area_Zabaikal;$Area_Vladivostock;$Area_Tobolsk;$Area_Turgay;$Area_Tomsk;$Area_Akmolinsk;$Area_Tobolsk;$Area_Perm;$Area_Orenburg;$Area_Samara;;$Area_Uralsk;$Area_Ufa;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLackLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdReforms;0
+  IsRgnDecisionActValid = $rgdReforms
+
+Actions
+  AddRgnDecisionAct = $rgdReforms;CURRENT
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_RGDWH3RActReformconquest|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/11/01
+  MaxDate = 1923/01/01
+  EvalEvent = evt_nam_allowingRGDWH3Reform;>=;1;
+  EvalEvent = evt_nam_RGDWH3RActReform;=;0;
+  Probability = 70
+  AddToRegListFromAreas = $Area_Viatka;$Area_Kazan;$Area_Simbirsk;$Area_Saratov;$Area_Penza;AreaCapitalOnly
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLackLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+  EvalRgnDecisionAct  = $rgdRequisitions;0
+  EvalRgnDecisionAct  = $rgdConscriptions;0
+  EvalRgnDecisionAct  = $rgdReforms;0
+  IsRgnDecisionActValid = $rgdReforms
+
+Actions
+  AddRgnDecisionAct = $rgdReforms;CURRENT
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3Reg|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/06/01
+  MaxDate = 1919/05/01
+  EvalMoney = >=;4
+  EvalConscript = >=;7
+  AddToRegList = $Tomsk;$Omsk;$Ekaterinburg;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+
+Actions
+  ChangeMoneyPool = -4
+  ChangeConscriptPool = -7
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 1
+  SetName = Regiment
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Rgt7
+  SetName = White Rgt
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3Reg2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1919/05/16
+  MaxDate = 1920/02/01
+  EvalMoney = >=;4
+  EvalConscript = >=;7
+  AddToRegList = $Tomsk;$Omsk;$Ekaterinburg;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+
+Actions
+  ChangeMoneyPool = -4
+  ChangeConscriptPool = -7
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 1
+  SetName = Regiment
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Rgt7
+  SetName = White Rgt
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3Reg3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1920/02/16
+  MaxDate = 1923/09/01
+  EvalMoney = >=;4
+  EvalConscript = >=;7
+  AddToRegList = $Tomsk;$Omsk;$Ekaterinburg;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLocalRatio;FavorCityLevel;FavorLoyalty
+  GenMsg
+  EvalRegionSel = NULL
+
+Actions
+  ChangeMoneyPool = -4
+  ChangeConscriptPool = -7
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 1
+  SetName = Regiment
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Rgt7
+  SetName = White Rgt
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_PoolAdjust|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+
+Actions
+  AI.SetPoolRatio = $famElite;25
+  AI.SetPoolRatio = $famLine;100
+  AI.SetPoolRatio = $famLightInf;25
+  AI.SetPoolRatio = $famSkirmisher;25
+  AI.SetPoolRatio = $famRaider;10
+  AI.SetPoolRatio = $famMilitia;5
+  AI.SetPoolRatio = $famCavalry;50
+  AI.SetPoolRatio = $famHvyCavalry;25
+  AI.SetPoolRatio = $famLtVehicle;75
+  AI.SetPoolRatio = $famMedVehicle;50
+  AI.SetPoolRatio = $famHvyVehicle;50
+  AI.SetPoolRatio = $famSHvyVehicle;50
+  AI.SetPoolRatio = $famLightArty;50
+  AI.SetPoolRatio = $famMedArty;50
+  AI.SetPoolRatio = $famHvyArty;50
+  AI.SetPoolRatio = $famSHvyArty;50
+  AI.SetPoolRatio = $famArmoredTrain;25
+  AI.SetPoolRatio = $famSupply;75
+  AI.SetPoolRatio = $famGood;0
+  AI.SetPoolRatio = $famService;5
+  AI.SetPoolRatio = $famEngineer;10
+  AI.SetPoolRatio = $famNavalEngineer;5
+  AI.SetPoolRatio = $famHvyWarship;1
+  AI.SetPoolRatio = $famHeavyWarship;1
+  AI.SetPoolRatio = $famLightWarship;1
+  AI.SetPoolRatio = $famLtWarship;1
+  AI.SetPoolRatio = $famRaiderShip;5
+  AI.SetPoolRatio = $famTransportShip;5
+  AI.SetPoolRatio = $famHvyCoastalShip;5
+  AI.SetPoolRatio = $famLitCoastalShip;5
+  AI.SetPoolRatio = $famCarrierShip;1
+  AI.SetPoolRatio = $famSubmarine;10
+  AI.SetPoolRatio = $famSubTransport;1
+  AI.SetPoolRatio = $famAirRecon;10
+  AI.SetPoolRatio = $famAirFighter;10
+  AI.SetPoolRatio = $famAirNavBomber;5
+  AI.SetPoolRatio = $famAirLevelBomber;10
+  AI.SetPoolRatio = $famAirStratBomber;5
+  AI.SetPoolRatio = $famAirTransport;5
+  AI.SetPoolRatio = $famCoastalShip;5
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonSimbirsk|999|0|Line|NULL|NULL|$Simbirsk
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Simbirsk
+  Probability = 10
+
+Actions
+  AddToRegList = $Simbirsk
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Simbirsk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Simbirsk Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonVladivostok|999|0|Line|NULL|NULL|$Vladivostok
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Vladivostok
+  Probability = 10
+
+Actions
+  AddToRegList = $Vladivostok
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Vladivostok Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Vladivostok Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonIrkutsk|999|0|Line|NULL|NULL|$Irkutsk
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Irkutsk
+  Probability = 10
+
+Actions
+  AddToRegList = $Irkutsk
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Irkutsk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Irkutsk Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonTomsk|999|0|Line|NULL|NULL|$Tomsk
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Tomsk
+  Probability = 10
+
+Actions
+  AddToRegList = $Tomsk
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Tomsk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Tomsk Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonOmsk|999|0|Line|NULL|NULL|$Omsk
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Omsk
+  Probability = 10
+
+Actions
+  AddToRegList = $Omsk
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Omsk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Omsk Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonEkaterinburg|999|0|Line|NULL|NULL|$Ekaterinburg
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Ekaterinburg
+  Probability = 10
+
+Actions
+  AddToRegList = $Ekaterinburg
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Ekaterinburg Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Ekaterinburg Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonPerm|999|0|Line|NULL|NULL|$Perm
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Perm
+  Probability = 10
+
+Actions
+  AddToRegList = $Perm
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Perm Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Perm Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonUfa|999|0|Line|NULL|NULL|$Ufa
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Ufa
+  Probability = 10
+
+Actions
+  AddToRegList = $Ufa
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Ufa Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Ufa Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonSamara|999|0|Line|NULL|NULL|$Samara
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Samara
+  Probability = 10
+
+Actions
+  AddToRegList = $Samara
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Samara Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Samara Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonKurgan|999|0|Line|NULL|NULL|$Kurgan
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Kurgan
+  Probability = 10
+
+Actions
+  AddToRegList = $Kurgan
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Kurgan Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Kurgan Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonTyumen|999|0|Line|NULL|NULL|$Tyumen
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Tyumen
+  Probability = 10
+
+Actions
+  AddToRegList = $Tyumen
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Tyumen Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Tyumen Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonChelyabinsk|999|0|Line|NULL|NULL|$Chelyabinsk
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Chelyabinsk
+  Probability = 10
+
+Actions
+  AddToRegList = $Chelyabinsk
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Chelyabinsk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Chelyabinsk Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonOrenburg|999|0|Line|NULL|NULL|$Orenburg
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Orenburg
+  Probability = 10
+
+Actions
+  AddToRegList = $Orenburg
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Orenburg Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Orenburg Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonSyzran|999|0|Line|NULL|NULL|$Syzran
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Syzran
+  Probability = 10
+
+Actions
+  AddToRegList = $Syzran
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Syzran Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Syzran Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonKazan|999|0|Line|NULL|NULL|$Kazan
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Kazan
+  Probability = 10
+
+Actions
+  AddToRegList = $Kazan
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Kazan Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Kazan Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonSaratov|999|0|Line|NULL|NULL|$Saratov
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Saratov
+  Probability = 10
+
+Actions
+  AddToRegList = $Saratov
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Saratov Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Saratov Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonTzaritsyn|999|0|Line|NULL|NULL|$Tzaritsyn
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Tzaritsyn
+  Probability = 10
+
+Actions
+  AddToRegList = $Tzaritsyn
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Tzaritsyn Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Tzaritsyn Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonPenza|999|0|Line|NULL|NULL|$Penza
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/08/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Penza
+  Probability = 10
+
+Actions
+  AddToRegList = $Penza
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Penza Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Penza Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonTambov|999|0|Line|NULL|NULL|$Tambov
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Tambov
+  Probability = 10
+
+Actions
+  AddToRegList = $Tambov
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Tambov Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Tambov Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonLipetsk|999|0|Line|NULL|NULL|$Lipetsk
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Lipetsk
+  Probability = 10
+
+Actions
+  AddToRegList = $Lipetsk
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Lipetsk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Lipetsk Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonVoronezh|999|0|Line|NULL|NULL|$Voronezh
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Voronezh
+  Probability = 10
+
+Actions
+  AddToRegList = $Voronezh
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Voronezh Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Voronezh Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonKursk|999|0|Line|NULL|NULL|$Kursk
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Kursk
+  Probability = 10
+
+Actions
+  AddToRegList = $Kursk
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Kursk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Kursk Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonOrel|999|0|Line|NULL|NULL|$Orel
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Orel
+  Probability = 10
+
+Actions
+  AddToRegList = $Orel
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Orel Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Orel Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonSaransk|999|0|Line|NULL|NULL|$Saransk
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Saransk
+  Probability = 10
+
+Actions
+  AddToRegList = $Saransk
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Saransk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Saransk Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_Renforts22_WH3_AIGarrisonArzamas|999|0|Line|NULL|NULL|$Arzamas
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/07/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Arzamas
+  Probability = 10
+
+Actions
+  AddToRegList = $Arzamas
+SelectFaction = $WH3
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Arzamas Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_MilAG
+  SetName = Arzamas Sib. Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3InfantryTraining|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/01/01
+  MaxDate = 1922/12/01
+
+Actions
+  SelectSubUnits = Models $mdl_WH3_Inf4
+  AlterCuSubUnit  = ApplyToList;probability 5;Model $mdl_WH3_Inf1;ChgPtsCohesion 5
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3InfantryTraining2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/01/01
+  MaxDate = 1922/12/01
+
+Actions
+  SelectSubUnits = Models $mdl_WH3_Inf5
+  AlterCuSubUnit  = ApplyToList;probability 5;Model $mdl_WH3_Inf3;ChgPtsCohesion 5
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3CavalryTraining|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/01/01
+  MaxDate = 1922/12/01
+
+Actions
+  SelectSubUnits = Models $mdl_WH3_Cav7
+  AlterCuSubUnit  = ApplyToList;probability 5;Model $mdl_WH3_Cav1;ChgPtsCohesion 5
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3ICavalryTraining2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/01/01
+  MaxDate = 1922/12/01
+
+Actions
+  SelectSubUnits = Models $mdl_WH3_Cav8
+  AlterCuSubUnit  = ApplyToList;probability 5;Model $mdl_WH3_Cav2;ChgPtsCohesion 5
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3MilitiaTraining|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckIsPlayer = NOT
+  MinDate = 1917/01/01
+  MaxDate = 1922/12/01
+
+Actions
+  SelectSubUnits = Models $mdl_WH3_Mil1
+  AlterCuSubUnit  = ApplyToList;probability 5;Model $mdl_WH3_Inf4;ChgPtsCohesion 5
+
+EndEvent

@@ -1,0 +1,15 @@
+UID = 910
+NationTag = CAU
+Name = Cavalry Rgt
+Alias = uni_CAU_Cav1
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_CAU_Cav1_txt
+Color = $colCAURegular 
+ModelType0 = $mdl_CAU_Cav1|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Recruit_Caucasians

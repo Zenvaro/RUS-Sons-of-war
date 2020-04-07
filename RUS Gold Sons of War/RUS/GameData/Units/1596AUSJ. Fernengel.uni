@@ -1,0 +1,17 @@
+UID = 1596
+NationTag = AUS
+Name = J. Fernengel
+Alias = uni_AUS_Fernengel2
+ForcePool = -1
+ShortName = Fernengel
+Text = $uni_AUS_Fernengel2_txt
+Color = $colAUSRegular 
+ModelType0 = $ldr_AUS_Fernengel2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

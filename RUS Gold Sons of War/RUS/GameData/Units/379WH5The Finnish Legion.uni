@@ -1,0 +1,15 @@
+UID = 379
+NationTag = WH5
+Name = The Finnish Legion
+Alias = uni_WH5_Fin
+ForcePool = 1
+ShortName = Finns Rgt.
+Text = $uni_WH5_Fin_txt
+Color = $colWH5Regular 
+ModelType0 = $mdl_FIN_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Olonets

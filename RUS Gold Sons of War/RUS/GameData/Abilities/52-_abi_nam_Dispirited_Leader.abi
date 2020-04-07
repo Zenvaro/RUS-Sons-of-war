@@ -1,0 +1,13 @@
+UID = 52
+Name = $abi_nam_Dispirited_Leader
+Alias = Dispirited_Leader
+Kind = $abiCohAdjust
+Text = $abi_txt_Dispirited_Leader
+ImageID = abi_CohesionMalus.png
+Color = $colAbi_Orange
+Appliance = Leader
+Family = 1
+Level = 1
+Param0 = -5
+Param2 = -25
+ListParams3 = $famLine|$famElite|$famLightInf|$famCavalry|$famMilitia|$famRaider|$famHvyVehicle|$famLtVehicle|$famLightArty|$famMedArty|$famHvyArty|$famService|$famEngineer||$famArmoredTrain|$famSupply

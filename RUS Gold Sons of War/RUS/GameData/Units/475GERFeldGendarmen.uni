@@ -1,0 +1,17 @@
+UID = 475
+NationTag = GER
+Name = FeldGendarmen
+Alias = uni_GER_FdG
+ForcePool = 20
+ShortName = FldGen.
+Text = $uni_GER_FdG_txt
+Color = $colGERPolice
+ModelType0 = $mdl_GER_FdG|2
+FamilyType0 = $famLeader|1
+FamilyType1 = $famLine|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = 1. Feldgendarmen|2. Feldgendarmen|3. Feldgendarmen|4. Feldgendarmen|5. Feldgendarmen|6. Feldgendarmen|7. Feldgendarmen|8. Feldgendarmen|9. Feldgendarmen|10. Feldgendarmen|11. Feldgendarmen|12. Feldgendarmen|13. Feldgendarmen|14. Feldgendarmen|15. Feldgendarmen|16. Feldgendarmen|17. Feldgendarmen|18. Feldgendarmen|19. Feldgendarmen|20. Feldgendarmen

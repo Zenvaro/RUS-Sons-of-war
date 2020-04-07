@@ -1,0 +1,15 @@
+UID = 649
+NationTag = CZE
+Name = Reserve Infantry Rgt
+Alias = uni_CZE_Rgt0
+ForcePool = 10
+ShortName = Res. Rgt.
+Text = $uni_CZE_Rgt0_txt
+Color = $colCZERegular 
+ModelType0 = $mdl_CZE_Inf0|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 15th Czech Fusiliers Rgt|16th Czech Fusiliers Rgt|17th Czech Fusiliers Rgt|18th Czech Fusiliers Rgt|19th Czech Fusiliers Rgt|20th Czech Fusiliers Rgt|21st Czech Fusiliers Rgt|22nd Czech Fusiliers Rgt|23rd Czech Fusiliers Rgt|24th Czech Fusiliers Rgt|25th Czech Fusiliers Rgt|26th Czech Fusiliers Rgt|27th Czech Fusiliers Rgt|28th Czech Fusiliers Rgt|29th Czech Fusiliers Rgt|30th Czech Fusiliers Rgt

@@ -1,0 +1,15 @@
+UID = 220
+NationTag = WHI
+Name = Bdeision HQ
+Alias = uni_WHI_Hq1
+ForcePool = 24
+ShortName = Bdeision HQ
+Text = $uni_WHI_Hq1_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 1
+Area = $Recruit_Russians

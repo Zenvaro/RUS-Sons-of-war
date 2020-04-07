@@ -1,0 +1,16 @@
+UID = 414
+NationTag = FIN
+Name = Pioneers
+Alias = uni_FIN_Pio
+ForcePool = 8
+ShortName = Pioneers
+Text = $uni_FIN_Pio_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_FIN_Pio|1
+FamilyType0 = $famEngineer|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Finns
+CustomNames = Jager Pioneers|Swedish Pioneers|1st Guard Pioneers|2nd Guard Pioneers|Karelia Pioneers

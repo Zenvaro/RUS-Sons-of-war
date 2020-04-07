@@ -1,0 +1,11 @@
+UID = 108
+Name = $abi_nam_DoubleCommand2
+Alias = Cossack_Commander2
+Kind = $abiMultiNation
+Text = $abi_txt_DoubleCommand2
+ImageID = abi_Wolf.png
+Color = $colAbi_Tan
+Appliance = Group
+Family = 0
+Level = 1
+StrParam0 = WHI|WH4|WH5|RED

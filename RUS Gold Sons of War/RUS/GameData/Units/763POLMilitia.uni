@@ -1,0 +1,15 @@
+UID = 763
+NationTag = POL
+Name = Militia
+Alias = uni_POL_MilAG
+ForcePool = 6
+ShortName = Militia
+Text = $uni_POL_MilAG_txt
+Color = $colPOLMilitia
+ModelType0 = $mdl_POL_Mil1|1
+FamilyType0 = $famMilitia|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 0
+CustomNames = 1st Polish Militia|2nd Polish Militia|3rd Polish Militia|4th Polish Militia|5th Polish Militia|6th Polish Militia|7th Polish Militia|8th Polish Militia|9th Polish Militia|10th Polish Militia|11th Polish Militia|12th Polish Militia|13th Polish Militia|14th Polish Militia|15th Polish Militia|16th Polish Militia|17th Polish Militia|18th Polish Militia|19th Polish Militia|20th Polish Militia|21st Polish Militia|22nd Polish Militia|23rd Polish Militia|24th Polish Militia|25th Polish Militia|26th Polish Militia|27th Polish Militia|28th Polish Militia|29th Polish Militia|30th Polish Militia|31st Polish Militia|32nd Polish Militia|33rd Polish Militia|34th Polish Militia|35th Polish Militia|36th Polish Militia|37th Polish Militia|38th Polish Militia|39th Polish Militia|40th Polish Militia|41st Polish Militia|42nd Polish Militia|43rd Polish Militia|44th Polish Militia|45th Polish Militia|46th Polish Militia|47th Polish Militia|48th Polish Militia|49th Polish Militia|50th Polish Militia|51st Polish Militia|52nd Polish Militia|53rd Polish Militia|54th Polish Militia|55th Polish Militia|56th Polish Militia|57th Polish Militia|58th Polish Militia|59th Polish Militia|60th Polish Militia|61th Polish Militia|62nd Polish Militia|63rd Polish Militia|64th Polish Militia|65th Polish Militia|66th Polish Militia|67th Polish Militia|68th Polish Militia|69th Polish Militia|70th Polish Militia

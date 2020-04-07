@@ -1,0 +1,16 @@
+UID = 532
+NationTag = GER
+Name = Merchantmen
+Alias = uni_GER_Mch
+ForcePool = 12
+ShortName = Merchantmen
+Text = $uni_GER_Mch_txt
+Color = $colGERNavy
+DoubleLength = 1
+ModelType0 = $mdl_GER_Mch|10
+FamilyType0 = $famTransportShip|10
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+Area = $Recruit_Germans

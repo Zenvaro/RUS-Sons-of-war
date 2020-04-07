@@ -1,0 +1,16 @@
+UID = 561
+NationTag = AUS
+Name = Cycle Battalion
+Alias = uni_AUS_Cyc
+ForcePool = 6
+ShortName = Cycle Bn.
+Text = $uni_AUS_Cyc_txt
+Color = $colAUSRegular 
+ModelType0 = $mdl_AUS_Cyc|1
+FamilyType0 = $famLine|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1
+Area = $Recruit_Austrians
+CustomNames = 1. Fahrrad-Batallion|2. Fahrrad-Batallion|3. Fahrrad-Batallion|4. Fahrrad-Batallion|5. Fahrrad-Batallion|6. Fahrrad-Batallion|7. Fahrrad-Batallion|8. Fahrrad-Batallion|9. Fahrrad-Batallion|10. Fahrrad-Batallion|11. Fahrrad-Batallion|12. Fahrrad-Batallion|13. Fahrrad-Batallion|14. Fahrrad-Batallion|15. Fahrrad-Batallion|16. Fahrrad-Batallion|17. Fahrrad-Batallion|18. Fahrrad-Batallion|19. Fahrrad-Batallion|20. Fahrrad-Batallion

@@ -1,0 +1,15 @@
+UID = 328
+NationTag = WH3
+Name = Cavalry Rgt
+Alias = uni_WH3_Cav1
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WH3_Cav1_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_Cav1|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_SiberianWhites

@@ -1,0 +1,12 @@
+UID = 47
+Name = $abi_nam_Weak_Morale
+Alias = Weak_Morale
+Kind = $abiCohAdjust
+Text = $abi_txt_Weak_Morale
+ImageID = abi_CohesionMalus.png
+Color = $colAbi_Orange
+Appliance = Unit
+Family = 3
+Level = 1
+Param0 = -5
+ListParams3 = $famLine|$famElite|$famLightInf|$famCavalry|$famMilitia|$famRaider|$famHvyVehicle|$famLtVehicle|$famLightArty|$famMedArty|$famHvyArty

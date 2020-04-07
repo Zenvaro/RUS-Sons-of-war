@@ -1,0 +1,14 @@
+UID = 804
+NationTag = FRA
+Name = French Legion
+Alias = uni_FRA_Rgt0
+ForcePool = 6
+ShortName = Legion Rgt.
+Text = $uni_FRA_Rgt0_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_WHI_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

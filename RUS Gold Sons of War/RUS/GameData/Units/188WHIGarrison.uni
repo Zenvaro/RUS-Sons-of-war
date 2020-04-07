@@ -1,0 +1,14 @@
+UID = 188
+NationTag = WHI
+Name = Garrison
+Alias = uni_WHI_Gar1
+ShortName = Garrison
+Text = $uni_WHI_Gar1_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Inf5|1
+FamilyType0 = $famLine|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_SouthernWhites

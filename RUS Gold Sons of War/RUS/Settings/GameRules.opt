@@ -1,0 +1,55 @@
+// **********************************************
+// VARIOUS RULES 						*
+// **********************************************
+
+// Turn off checks for UID = 0 errors
+sysErroneousZero = 0
+
+
+// *** Combat related **********
+// **********************************************
+
+// enable/disable rule to fire on static ships in Offense posture in Shallow water where land units cross water regions.
+// to block the crossing, ships must be in offense ROE
+rulAllowStaticFire = 1     // default:  0 = off // set = 1 to enable rule.
+
+// Ships use replacements and not directly assets to be repaired
+rulShipsUseRepl = 1
+
+// Rail Move allowed
+rulRailMove = 1	
+
+// Simple Air rules
+rulAirRules = 1 
+
+// Advanced auto garrison ON
+rulAutoGarrison = 2
+
+// can fire on passing ships
+rulExtFortFiring = 1
+
+// Forts blocking ship passage: 0: every region can do that (if have guns), 1: needs to have StraitBlock indicated in Exmap in addition
+rulStraitBlockOn = 0
+
+// Assault not allowed without Breach
+rulBreachForAssault = 0
+
+// skip the assault phase that happens on first round
+cbtSkipAssaultFirstRound = 0 
+
+
+// *** Scenario rules & Victory related **********
+// **********************************************
+
+// Victory by morale or objectives (Sudden Death)
+rulNationalMorale = 2 
+
+// Rules are read from settings, and then again from the current game (or scen file) if rulReadFromScen = 1
+rulReadFromScen = 0
+
+// Rules to NOT differentiate the NM effect on combat and on production  - default is false for ROP and true for others.
+rulMoraleUsedSplProd = 0
+
+// GHQ Multinational command rule
+rulCrossNationGHQ = 1
+

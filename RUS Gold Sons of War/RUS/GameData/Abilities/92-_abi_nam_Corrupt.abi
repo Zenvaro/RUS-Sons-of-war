@@ -1,0 +1,12 @@
+UID = 92
+Name = $abi_nam_Corrupt
+Alias = Corrupt
+Kind = $abiSupplyMod
+Text = $abi_txt_Corrupt
+ImageID = abi_Corrupt.png
+Color = $colAbi_LightYellow
+Appliance = Group
+Family = 0
+Level = 1
+Param0 = 25
+Param1 = 100

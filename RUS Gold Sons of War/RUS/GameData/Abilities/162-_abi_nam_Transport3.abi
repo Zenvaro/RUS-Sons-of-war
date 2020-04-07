@@ -1,0 +1,11 @@
+UID = 162
+Name = $abi_nam_Transport3
+Alias = Transport3
+Kind = $abiTransport
+Text = $abi_txt_Transport3
+ImageID = abi_transport1-3.png
+Color = $colAbi_LightYellow
+Appliance = Group
+Family = 0
+Level = 1
+Param0 = 3

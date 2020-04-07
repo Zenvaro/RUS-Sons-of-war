@@ -1,0 +1,9 @@
+UID = 13
+Alias = resFE
+Name = $res_nam_FE
+ShortName = $res_shortnam_FE
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *FEAsset*

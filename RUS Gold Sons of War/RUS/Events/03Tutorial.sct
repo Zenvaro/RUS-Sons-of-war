@@ -1,0 +1,124 @@
+  NULL
+  NULL = Reinforcements
+
+SelectFaction = $FIN
+
+SelectFaction = $FIN
+StartEvent = evt_nam_Renforts_FIN_SaviourOfKarelia|1|2|evt_txt_Renforts_FIN_SaviourOfKarelia|Event-img_Renforts_FIN_SaviourOfKarelia|NULL|NULL
+
+Conditions
+  MinDate = 1918/02/01
+
+Actions
+  AddToRegList = $Sortavala
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $FIN
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Armored Train
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Amt1
+  SUFlavorName = 'Saviour of Karelia'
+  SetLevel = 1
+  SetName = 'Saviour of Karelia'
+  Apply
+
+SelectFaction = $FIN
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Karelia Supply
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Karelian Supplies
+  Apply
+
+EndEvent
+  NULL = Tutorial
+
+SelectFaction = $FIN
+StartEvent = TutorialEvent|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  FixedDate = 1918/02/01
+
+Actions
+  PopUpText = str_nam_Tutorial3T2_02|NULL|2|str_txt_Tutorial3T2_02|NULL|NULL
+  PopUpText = str_nam_Tutorial3T2_01|NULL|2|str_txt_Tutorial3T2_01|NULL|NULL
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = TutorialEvent|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  FixedDate = 1918/02/16
+
+Actions
+  PopUpText = str_nam_Tutorial3T3_04|NULL|2|str_txt_Tutorial3T3_04|NULL|NULL
+  PopUpText = str_nam_Tutorial3T3_03|NULL|2|str_txt_Tutorial3T3_03|NULL|NULL
+  PopUpText = str_nam_Tutorial3T3_02|NULL|2|str_txt_Tutorial3T3_02|NULL|NULL
+  PopUpText = str_nam_Tutorial3T3_01|NULL|2|str_txt_Tutorial3T3_01|NULL|NULL
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = TutorialEvent|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  FixedDate = 1918/03/01
+
+Actions
+  PopUpText = str_nam_Tutorial3T4_05|NULL|2|str_txt_Tutorial3T4_05|NULL|NULL
+  PopUpText = str_nam_Tutorial3T4_04|NULL|2|str_txt_Tutorial3T4_04|NULL|NULL
+  PopUpText = str_nam_Tutorial3T4_03|NULL|2|str_txt_Tutorial3T4_03|NULL|NULL
+  PopUpText = str_nam_Tutorial3T4_02|NULL|2|str_txt_Tutorial3T4_02|NULL|NULL
+  PopUpText = str_nam_Tutorial3T4_01|NULL|2|str_txt_Tutorial3T4_01|NULL|NULL
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = TutorialEvent|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  FixedDate = 1918/03/16
+
+Actions
+  PopUpText = str_nam_Tutorial3T5_01|NULL|2|str_txt_Tutorial3T5_01|NULL|NULL
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = TutorialEvent|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  FixedDate = 1918/04/01
+
+Actions
+  PopUpText = str_nam_Tutorial3T6_01|NULL|2|str_txt_Tutorial3T6_01|NULL|NULL
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = TutorialEvent|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  FixedDate = 1918/04/16
+
+Actions
+  PopUpText = str_nam_Tutorial3T7_02|NULL|2|str_txt_Tutorial3T7_02|NULL|NULL
+  PopUpText = str_nam_Tutorial3T7_01|NULL|2|str_txt_Tutorial3T7_01|NULL|NULL
+
+EndEvent

@@ -1,0 +1,16 @@
+UID = 277
+NationTag = DON
+Name = Armored Cars Bde
+Alias = uni_DON_Amc1
+ForcePool = 12
+ShortName = Arm. Cars
+Text = $uni_DON_Amc1_txt
+Color = $colDONRegular 
+ModelType0 = $mdl_DON_Amc|3
+FamilyType0 = $famLtVehicle|3
+CmdCost = 2
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Area_Don
+CustomNames = Don Armored Cars Bde|1st Armored Cars Sqd|2nd Armored Cars Sqd|3rd Armored Cars Sqd|4th Armored Cars Sqd|5th Armored Cars Sqd|6th Armored Cars Sqd|7th Armored Cars Sqd|8th Armored Cars Sqd|9th Armored Cars Sqd|10th Armored Cars Sqd

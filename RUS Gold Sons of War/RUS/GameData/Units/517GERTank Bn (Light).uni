@@ -1,0 +1,17 @@
+UID = 517
+NationTag = GER
+Name = Tank Bn (Light)
+Alias = uni_GER_Tnk2
+ForcePool = 5
+ShortName = Tank Bn.
+Text = $uni_GER_Tnk2_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Tnk2|3
+FamilyType0 = $famLeader|1
+FamilyType1 = $famHvyVehicle|3
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = 1. Panzer-Batallion|2. Panzer-Batallion|3. Panzer-Batallion|4. Panzer-Batallion|5. Panzer-Batallion|6. Panzer-Batallion|7. Panzer-Batallion|8. Panzer-Batallion|9. Panzer-Batallion|10. Panzer-Batallion|11. Panzer-Batallion|12. Panzer-Batallion|13. Panzer-Batallion|14. Panzer-Batallion|15. Panzer-Batallion|16. Panzer-Batallion|17. Panzer-Batallion|18. Panzer-Batallion|19. Panzer-Batallion|20. Panzer-Batallion|21. Panzer-Batallion|22. Panzer-Batallion|23. Panzer-Batallion|24. Panzer-Batallion|25. Panzer-Batallion|26. Panzer-Batallion|27. Panzer-Batallion|28. Panzer-Batallion|29. Panzer-Batallion|30. Panzer-Batallion|31. Panzer-Batallion|32. Panzer-Batallion|33. Panzer-Batallion|34. Panzer-Batallion|35. Panzer-Batallion|36. Panzer-Batallion|37. Panzer-Batallion|38. Panzer-Batallion|39. Panzer-Batallion|40. Panzer-Batallion

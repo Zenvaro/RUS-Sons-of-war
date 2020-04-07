@@ -1,0 +1,16 @@
+UID = 614
+NationTag = HUN
+Name = Infanterie Bde 
+Alias = uni_HUN_Bde4
+ForcePool = 20
+ShortName = Inf. Bde.
+Text = $uni_HUN_Bde4_txt
+Color = $colHUNRegular 
+ModelType0 = $mdl_HUN_Inf2|3
+FamilyType0 = $famLine|3
+CmdCost = 2
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 3
+Area = $Recruit_Hungarians
+CustomNames = 1. Infanterie-Brigade|2. Infanterie-Brigade|3. Infanterie-Brigade|4. Infanterie-Brigade|5. Infanterie-Brigade|6. Infanterie-Brigade|7. Infanterie-Brigade|8. Infanterie-Brigade|9. Infanterie-Brigade|10. Infanterie-Brigade|11. Infanterie-Brigade|12. Infanterie-Brigade|13. Infanterie-Brigade|14. Infanterie-Brigade|15. Infanterie-Brigade|16. Infanterie-Brigade|17. Infanterie-Brigade|18. Infanterie-Brigade|19. Infanterie-Brigade|20. Infanterie-Brigade

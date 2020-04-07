@@ -1,0 +1,75 @@
+UID = 50002
+Bitmap = inspector_bgd.png
+x = 0
+y = 0
+z = 89
+DragDrop = {SubUnit}
+Capacity = 32
+
+Coo1 = 32|70|0
+Coo2 = 32|85|0
+Coo3 = 32|100|0
+Coo4 = 32|115|0
+Coo5 = 32|130|0
+Coo6 = 32|145|0
+Coo7 = 32|160|0
+Coo8 = 32|175|0
+Coo9 = 32|190|0
+Coo10 = 32|205|0
+Coo11 = 32|220|0
+Coo12 = 32|235|0
+Coo13 = 32|250|0
+Coo14 = 32|265|0
+Coo15 = 32|280|0
+Coo16 = 32|295|0
+Coo17 = 90|70|0
+Coo18 = 90|85|0
+Coo19 = 90|100|0
+Coo20 = 90|115|0
+Coo21 = 90|130|0
+Coo22 = 90|145|0
+Coo23 = 90|160|0
+Coo24 = 90|175|0
+Coo25 = 90|190|0
+Coo26 = 90|205|0
+Coo27 = 90|220|0
+Coo28 = 90|235|0
+Coo29 = 90|250|0
+Coo30 = 90|265|0
+Coo31 = 90|280|0
+Coo32 = 90|295|0
+
+Anchor = Right Bottom
+
+
+// *** Various coo ***
+
+// Inspector background
+Various0 = 0|0|0
+// Parent Unit Name
+Various1 = 50|47|0
+// Offset of the company name / Nato symbol
+Various2 = 18|2|0
+// offset of the health gauge / Nato symbol
+Various3 = 8|1
+// not used in BOA
+Various4 = //
+// Strategic rating (for leader)
+Various5 = 0|20
+// Offensive rating (for leader)
+Various6 = 0|30
+// Defensive rating (for leader)
+Various7 = 0|40
+// Seniority rating (for leader)
+Various8 = 0|50
+Various9 = 0|60   // Politic rating (for leader)
+Various10 = 0|-90 // offset to SUs when Extended Panel is on
+Various11 = 0|-90 // offset of the Extended Panel 
+
+// *** integer params ***
+Param0 = 90 // SU allowed Name in pixels
+Param1 = 11 // Nb of SUs needed to use the extended Detail Panel
+Param2 = 0	// Do we show a background plate under the Parent Unit Name?
+
+// *** string params ***
+StrParam0 = ExtDetailPanel.png // name of the extended detail panel, if many SUs

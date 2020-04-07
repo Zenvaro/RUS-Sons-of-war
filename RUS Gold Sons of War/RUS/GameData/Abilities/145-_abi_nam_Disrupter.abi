@@ -1,0 +1,11 @@
+UID = 145
+Name = $abi_nam_Disrupter
+Alias = Disrupter
+Kind = $abiFlavor
+Text = $abi_txt_Disrupter
+ImageID = abi_SiegeExpert.png
+Color = $colAbi_Red
+Appliance = Self
+Family = 0
+Level = 1
+ProgRate = 0

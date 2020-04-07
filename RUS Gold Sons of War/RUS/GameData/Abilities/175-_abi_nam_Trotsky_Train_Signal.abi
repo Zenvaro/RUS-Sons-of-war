@@ -1,0 +1,13 @@
+UID = 175
+Name = $abi_nam_Trotsky_Train_Signal
+Alias = Trotsky_Train_Signal
+Kind = $abiCmdAdjust
+Text = $abi_txt_Trotsky_Train_Signal
+ImageID = abi_Signal.png
+Color = $colAbi_Blue
+Appliance = Group
+Family = 3
+Level = 1
+Param0 = 2
+Param1 = 0
+Param2 = 0

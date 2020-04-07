@@ -1,0 +1,16 @@
+UID = 262
+NationTag = DON
+Name = Rgt (csc)
+Alias = uni_DON_Rgt1
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_DON_Rgt1_txt
+Color = $colDONRegular 
+ModelType0 = $mdl_DON_Inf12|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Don
+CustomNames = 1st Don Rgt|2nd Composite Rgt|3rd Don Rgt|4th Don Rgt|5th Composite Rgt|6th Don Rgt|7th Don Rgt|8th Don Rgt|9th Don Rgt|10th Don Rgt|11th Composite Rgt|12th Don Rgt|13th Kalmyk Rgt|14th Kalmyk Rgt|15th Don Rgt|16th Don Rgt|17th Don Rgt|18th Don Rgt|19th Don Rgt|20th Don Rgt|21st Don Rgt|22nd Don Rgt|23rd Don Rgt|24th Don Rgt|25th Don Rgt|26th Don Rgt|27th Don Rgt|28th Don Rgt|29th Don Rgt|30th Don Rgt|31st Don Rgt|32nd Don Rgt|33rd Don Rgt|34th Don Rgt|35th Don Rgt|36th Don Rgt|37th Don Rgt|38th Don Rgt|39th Don Rgt|40th Don Rgt|41st Don Rgt|42nd Don Rgt|43rd Don Rgt|44th Don Rgt|45th Don Rgt|46th Don Rgt|47th Don Rgt|48th Don Rgt|49th Don Rgt|50th Don Rgt

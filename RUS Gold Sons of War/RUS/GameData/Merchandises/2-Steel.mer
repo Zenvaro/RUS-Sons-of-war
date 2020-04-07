@@ -1,0 +1,9 @@
+UID = 2
+Alias = resSteel
+Name = $res_nam_Steel
+ShortName = $res_shortnam_Steel
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *SteelAsset*

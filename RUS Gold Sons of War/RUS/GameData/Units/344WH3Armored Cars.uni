@@ -1,0 +1,15 @@
+UID = 344
+NationTag = WH3
+Name = Armored Cars
+Alias = uni_WH3_Amc1
+ForcePool = 12
+ShortName = Arm. Cars
+Text = $uni_WH3_Amc1_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_Amc|1
+FamilyType0 = $famLtVehicle|4
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = Russian Army Armored Cars|Siberia Armored Cars|Zabaikal Armored Cars|Omsk Armored Cars|Ekaterinburg Armored Cars|2nd Siberia Armored Cars|3rd Siberia Armored Cars|4th Siberia Armored Cars

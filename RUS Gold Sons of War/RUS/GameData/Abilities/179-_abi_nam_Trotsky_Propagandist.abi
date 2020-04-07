@@ -1,0 +1,14 @@
+UID = 179
+Name = $abi_nam_Trotsky_Propagandist
+Alias = Trotsky_Propagandist
+Kind = $abiLoyAdjust
+Text = $abi_txt_Trotsky_Propagandist
+ImageID = abi_GoodAdminPop.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = 100
+Param4 = 15
+Param5 = 0
+Param6 = 76

@@ -1,0 +1,15 @@
+UID = 411
+NationTag = FIN
+Name = Army HQ
+Alias = uni_FIN_Hq1
+ForcePool = 4
+ShortName = Front HQ
+Text = $uni_FIN_Hq1_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_FIN_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 1
+Area = $Recruit_Finns

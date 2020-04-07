@@ -1,0 +1,16 @@
+UID = 276
+NationTag = DON
+Name = Heavy Armored Train
+Alias = uni_DON_Amt2
+ForcePool = 12
+ShortName = Arm. Train
+Text = $uni_DON_Amt2_txt
+Color = $colDONRegular 
+ModelType0 = $mdl_DON_Amt2|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Area_Don
+CustomNames = 'Prince Suvorov'|'Ilya Mouromets'|'General Baklanov'|'Ataman Nazarov'|'Buzuluk'|'Khoper'|'General Mamontov'|'Atamanets'

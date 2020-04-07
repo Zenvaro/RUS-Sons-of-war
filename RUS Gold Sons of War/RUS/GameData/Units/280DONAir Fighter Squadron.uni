@@ -1,0 +1,17 @@
+UID = 280
+NationTag = DON
+Name = Air Fighter Squadron
+Alias = uni_DON_Air2
+ForcePool = 2
+ShortName = Fight. Air Sqd.
+Text = $uni_DON_Air2_txt
+Color = $colDONRegular 
+SymbolID = symbol_Air.png
+ModelType0 = $mdl_DON_Air2|2
+FamilyType0 = $famAirFighter|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Area_Don
+CustomNames = 1st Don Air Sqd|2nd Don Air Sqd|3rd Don Air Sqd|4th Don Air Sqd|5th Don Air Sqd|6th Don Air Sqd|7th Don Air Sqd|8th Don Air Sqd|9th Don Air Sqd|10th Don Air Sqd|11th Don Air Sqd|12th Don Air Sqd

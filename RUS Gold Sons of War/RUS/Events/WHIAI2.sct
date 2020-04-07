@@ -1,0 +1,1225 @@
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tula
+
+StartEvent = evt_nam_WHIowningTula|1|0|NULL|NULL|$Tula|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tula
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tula
+
+StartEvent = evt_nam_REDmenacingTula|1|0|NULL|NULL|$Tula|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningTula;=;1
+  SelectSubUnits = Region $Tula;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningTula;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tula
+
+StartEvent = evt_nam_Red_menaceconsTula|1|0|NULL|NULL|$Tula|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingTula;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tula
+
+StartEvent = evt_nam_WHImenacingTulaend|999|0|NULL|NULL|$Tula|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingTula;=;1
+  EvalRgnOwned = $Tula
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingTula;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsTula;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ryazan
+
+StartEvent = evt_nam_WHIowningRyazan|1|0|NULL|NULL|$Ryazan|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ryazan
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ryazan
+
+StartEvent = evt_nam_REDmenacingRyazan|1|0|NULL|NULL|$Ryazan|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningRyazan;=;1
+  SelectSubUnits = Region $Ryazan;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningRyazan;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ryazan
+
+StartEvent = evt_nam_Red_menaceconsRyazan|1|0|NULL|NULL|$Ryazan|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingRyazan;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;$Tula;5;$Kolomna;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ryazan
+
+StartEvent = evt_nam_WHImenacingRyazanend|999|0|NULL|NULL|$Ryazan|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingRyazan;=;1
+  EvalRgnOwned = $Ryazan
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingRyazan;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsRyazan;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ryazhsk
+
+StartEvent = evt_nam_WHIowningRyazhsk|1|0|NULL|NULL|$Ryazhsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ryazhsk
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ryazhsk
+
+StartEvent = evt_nam_REDmenacingRyazhsk|1|0|NULL|NULL|$Ryazhsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningRyazhsk;=;1
+  SelectSubUnits = Region $Ryazhsk;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningRyazhsk;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ryazhsk
+
+StartEvent = evt_nam_Red_menaceconsRyazhsk|1|0|NULL|NULL|$Ryazhsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingRyazhsk;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;$Tula;5;$Kolomna;5;$Ryazan;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ryazhsk
+
+StartEvent = evt_nam_WHImenacingRyazhskend|999|0|NULL|NULL|$Ryazhsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingRyazhsk;=;1
+  EvalRgnOwned = $Ryazhsk
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingRyazhsk;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsRyazhsk;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tambov
+
+StartEvent = evt_nam_WHIowningTambov|1|0|NULL|NULL|$Tambov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tambov
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tambov
+
+StartEvent = evt_nam_REDmenacingTambov|1|0|NULL|NULL|$Tambov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningTambov;=;1
+  SelectSubUnits = Region $Tambov;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningTambov;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tambov
+
+StartEvent = evt_nam_Red_menaceconsTambov|1|0|NULL|NULL|$Tambov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingTambov;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;$Tula;5;$Kolomna;5;$Ryazan;5
+  AI.SetLocalInterest = $Shatsk;5;$Piana;5;$Chaplygin;5;$Lev;5;$Lipetsk;5;$Ertil;5;$Galovonsk;5;$Kozlov;5;$Sosnovka;5;$Morshansk;5;$Shiringushi;5;$Zemetchino;5;$Bashmakovo;5;$Malinovka;5;$Kirsanov;5;$Irgavino;5;$Oka;5;$Blagiye;5
+  AI.SetLocalInterest = $Shatura;5;$Roshal;5;$Anopino;5;$Tuma;5;$Ryazan;5;$Lashma;5;$Spassk;5;$Rizanski;5;$Mikhailov;5;$Volodorsk;5;$Gorbatkva;5;$Ryazhsk;5;$Ukholovo;5;$Sapozhok;5;$Shilovo;5;$Murmino;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tambov
+
+StartEvent = evt_nam_WHImenacingTambovend|999|0|NULL|NULL|$Tambov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingTambov;=;1
+  EvalRgnOwned = $Tambov
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingTambov;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsTambov;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Balashov
+
+StartEvent = evt_nam_WHIowningBalashov|1|0|NULL|NULL|$Balashov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Balashov
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Balashov
+
+StartEvent = evt_nam_REDmenacingBalashov|1|0|NULL|NULL|$Balashov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningBalashov;=;1
+  SelectSubUnits = Region $Balashov;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningBalashov;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Balashov
+
+StartEvent = evt_nam_Red_menaceconsBalashov|1|0|NULL|NULL|$Balashov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingBalashov;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;$Tula;5;$Kolomna;5;$Ryazan;5
+  AI.SetLocalInterest = $Shatsk;5;$Piana;5;$Chaplygin;5;$Lev;5;$Lipetsk;5;$Ertil;5;$Galovonsk;5;$Kozlov;5;$Sosnovka;5;$Morshansk;5;$Shiringushi;5;$Zemetchino;5;$Bashmakovo;5;$Malinovka;5;$Kirsanov;5;$Irgavino;5;$Oka;5;$Blagiye;5
+  AI.SetLocalInterest = $Shatura;5;$Roshal;5;$Anopino;5;$Tuma;5;$Ryazan;5;$Lashma;5;$Spassk;5;$Rizanski;5;$Mikhailov;5;$Volodorsk;5;$Gorbatkva;5;$Ryazhsk;5;$Ukholovo;5;$Sapozhok;5;$Shilovo;5;$Murmino;5;$Tambov;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Balashov
+
+StartEvent = evt_nam_WHImenacingBalashovend|999|0|NULL|NULL|$Balashov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingBalashov;=;1
+  EvalRgnOwned = $Balashov
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingBalashov;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsBalashov;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_WHIowningTzaritsyn|1|0|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tzaritsyn
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_REDmenacingTzaritsyn|1|0|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningTzaritsyn;=;1
+  SelectSubUnits = Region $Tzaritsyn;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningTzaritsyn;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_Red_menaceconsTzaritsyn|1|0|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingTzaritsyn;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;$Tula;5;$Kolomna;5;$Ryazan;5
+  AI.SetLocalInterest = $Shatsk;5;$Piana;5;$Chaplygin;5;$Lev;5;$Lipetsk;5;$Ertil;5;$Galovonsk;5;$Kozlov;5;$Sosnovka;5;$Morshansk;5;$Shiringushi;5;$Zemetchino;5;$Bashmakovo;5;$Malinovka;5;$Kirsanov;5;$Irgavino;5;$Oka;5;$Blagiye;5
+  AI.SetLocalInterest = $Shatura;5;$Roshal;5;$Anopino;5;$Tuma;5;$Ryazan;5;$Lashma;5;$Spassk;5;$Rizanski;5;$Mikhailov;5;$Volodorsk;5;$Gorbatkva;5;$Ryazhsk;5;$Ukholovo;5;$Sapozhok;5;$Shilovo;5;$Murmino;5;$Tambov;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_WHImenacingTzaritsynend|999|0|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingTzaritsyn;=;1
+  EvalRgnOwned = $Tzaritsyn
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingTzaritsyn;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsTzaritsyn;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Voronezh
+
+StartEvent = evt_nam_WHIowningVoronezh|1|0|NULL|NULL|$Voronezh|NULL
+
+Conditions
+
+  EvalRgnOwned = $Voronezh
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Voronezh
+
+StartEvent = evt_nam_REDmenacingVoronezh|1|0|NULL|NULL|$Voronezh|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningVoronezh;=;1
+  SelectSubUnits = Region $Voronezh;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningVoronezh;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Voronezh
+
+StartEvent = evt_nam_Red_menaceconsVoronezh|1|0|NULL|NULL|$Voronezh|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingVoronezh;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;$Tula;5;$Kolomna;5;$Ryazan;5
+  AI.SetLocalInterest = $Shatsk;5;$Piana;5;$Chaplygin;5;$Lev;5;$Lipetsk;5;$Ertil;5;$Galovonsk;5;$Kozlov;5;$Sosnovka;5;$Morshansk;5;$Shiringushi;5;$Zemetchino;5;$Bashmakovo;5;$Malinovka;5;$Kirsanov;5;$Irgavino;5;$Oka;5;$Blagiye;5
+  AI.SetLocalInterest = $Shatura;5;$Roshal;5;$Anopino;5;$Tuma;5;$Ryazan;5;$Lashma;5;$Spassk;5;$Rizanski;5;$Mikhailov;5;$Volodorsk;5;$Gorbatkva;5;$Ryazhsk;5;$Ukholovo;5;$Sapozhok;5;$Shilovo;5;$Murmino;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Voronezh
+
+StartEvent = evt_nam_WHImenacingVoronezhend|999|0|NULL|NULL|$Voronezh|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingVoronezh;=;1
+  EvalRgnOwned = $Voronezh
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingVoronezh;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsVoronezh;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Orel
+
+StartEvent = evt_nam_WHIowningOrel|1|0|NULL|NULL|$Orel|NULL
+
+Conditions
+
+  EvalRgnOwned = $Orel
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Orel
+
+StartEvent = evt_nam_REDmenacingOrel|1|0|NULL|NULL|$Orel|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningOrel;=;1
+  SelectSubUnits = Region $Orel;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningOrel;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Orel
+
+StartEvent = evt_nam_Red_menaceconsOrel|1|0|NULL|NULL|$Orel|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingOrel;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;$Tula;5;$Kolomna;5;$Ryazan;5
+  AI.SetLocalInterest = $Mossalk;5;$Obninsk;5;$Kolomna;5;$Rybnoie;5;$Bobriki;5;$Serpukhov;5;$Kaluga;5;$Tula;5;$Ageevo;5;$Kondrovo;5;$Kozelsk;5;$Bolkhov;5;$Mtsensk;5;$Novossil;5;$Skopin;5;$Pavelets;5;$Volovo;5;$Plavsk;5;$Dankov;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Orel
+
+StartEvent = evt_nam_WHImenacingOrelend|999|0|NULL|NULL|$Orel|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingOrel;=;1
+  EvalRgnOwned = $Orel
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingOrel;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsOrel;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kursk
+
+StartEvent = evt_nam_WHIowningKursk|1|0|NULL|NULL|$Kursk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kursk
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kursk
+
+StartEvent = evt_nam_REDmenacingKursk|1|0|NULL|NULL|$Kursk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningKursk;=;1
+  SelectSubUnits = Region $Kursk;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningKursk;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kursk
+
+StartEvent = evt_nam_Red_menaceconsKursk|1|0|NULL|NULL|$Kursk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingKursk;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;$Tula;5;$Kolomna;5;$Ryazan;5
+  AI.SetLocalInterest = $Mossalk;5;$Obninsk;5;$Kolomna;5;$Rybnoie;5;$Bobriki;5;$Serpukhov;5;$Kaluga;5;$Tula;5;$Ageevo;5;$Kondrovo;5;$Kozelsk;5;$Bolkhov;5;$Mtsensk;5;$Novossil;5;$Skopin;5;$Pavelets;5;$Volovo;5;$Plavsk;5;$Dankov;5
+  AI.SetLocalInterest = $Bryansk;5;$Zhizdra;5;$Navlia;5;$Karachev;5;$Lokot;5;$Orel;5;$Kromy;5;$Verkhove;5;$Pokrovskoye;5;$Kurkino;5;$Efremov;5;$Livny;5;$Lebedyan;5;$Elets;5;$Gremyachee;5;$Znamenka;5;$Shalimovo;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kursk
+
+StartEvent = evt_nam_WHImenacingKurskend|999|0|NULL|NULL|$Kursk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingKursk;=;1
+  EvalRgnOwned = $Kursk
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingKursk;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsKursk;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_WHIowningKharkov|1|0|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kharkov
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_REDmenacingKharkov|1|0|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningKharkov;=;1
+  SelectSubUnits = Region $Kharkov;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningKharkov;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_Red_menaceconsKharkov|1|0|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingKharkov;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;$Tula;5;$Kolomna;5;$Ryazan;5
+  AI.SetLocalInterest = $Mossalk;5;$Obninsk;5;$Kolomna;5;$Rybnoie;5;$Bobriki;5;$Serpukhov;5;$Kaluga;5;$Tula;5;$Ageevo;5;$Kondrovo;5;$Kozelsk;5;$Bolkhov;5;$Mtsensk;5;$Novossil;5;$Skopin;5;$Pavelets;5;$Volovo;5;$Plavsk;5;$Dankov;5
+  AI.SetLocalInterest = $Bryansk;5;$Zhizdra;5;$Navlia;5;$Karachev;5;$Lokot;5;$Orel;5;$Kromy;5;$Verkhove;5;$Pokrovskoye;5;$Kurkino;5;$Efremov;5;$Livny;5;$Lebedyan;5;$Elets;5;$Gremyachee;5;$Znamenka;5;$Shalimovo;5
+  AI.SetLocalInterest = $Karmanovo;5;$Fatezh;5;$Shchigry;5;$Kolpny;5;$Gorshechnoye;5;$Tim;5;$Kursk;5;$Rylsk;5;$Korenovo;5;$Oboyan;5;$Sudhza;5;$Yakovlevo;5;$Guevo;5;$Pristen;5;$Korotcha;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_WHImenacingKharkovend|999|0|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingKharkov;=;1
+  EvalRgnOwned = $Kharkov
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingKharkov;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsKharkov;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Donetsk
+
+StartEvent = evt_nam_WHIowningDonetsk|1|0|NULL|NULL|$Donetsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Donetsk
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Donetsk
+
+StartEvent = evt_nam_REDmenacingDonetsk|1|0|NULL|NULL|$Donetsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningDonetsk;=;1
+  SelectSubUnits = Region $Donetsk;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningDonetsk;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Donetsk
+
+StartEvent = evt_nam_Red_menaceconsDonetsk|1|0|NULL|NULL|$Donetsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingDonetsk;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;$Tula;5;$Kolomna;5;$Ryazan;5
+  AI.SetLocalInterest = $Mossalk;5;$Obninsk;5;$Kolomna;5;$Rybnoie;5;$Bobriki;5;$Serpukhov;5;$Kaluga;5;$Tula;5;$Ageevo;5;$Kondrovo;5;$Kozelsk;5;$Bolkhov;5;$Mtsensk;5;$Novossil;5;$Skopin;5;$Pavelets;5;$Volovo;5;$Plavsk;5;$Dankov;5
+  AI.SetLocalInterest = $Bryansk;5;$Zhizdra;5;$Navlia;5;$Karachev;5;$Lokot;5;$Orel;5;$Kromy;5;$Verkhove;5;$Pokrovskoye;5;$Kurkino;5;$Efremov;5;$Livny;5;$Lebedyan;5;$Elets;5;$Gremyachee;5;$Znamenka;5;$Shalimovo;5
+  AI.SetLocalInterest = $Karmanovo;5;$Fatezh;5;$Shchigry;5;$Kolpny;5;$Gorshechnoye;5;$Tim;5;$Donetsk;5;$Rylsk;5;$Korenovo;5;$Oboyan;5;$Sudhza;5;$Yakovlevo;5;$Guevo;5;$Pristen;5;$Korotcha;5
+  AI.SetLocalInterest = $Staryy Oskol;5;$Novyy Oskol;5;$Ostrogozhsk;5;$Zadonsk;5;$Tchernianka;5;$Aleeksevka;5;$Mitrofanovka;5;$Pavlovsk;5;$Utkino;5;$Usman;5;$Mordovo;5;$Raman;5;$Voronezh;5;$Liski;5;$Bobrov;5;$Kalach;5;$Uryupinsk;5;$Anna;5;$Borshchevo;5;$Uvarovo;5;$Turki;5;$Gribanovskiy;5;$Upper Don;5
+  AI.SetLocalInterest = $Grayvoron;5;$Kolomak;5;$Merefa;5;$Zmiev;5;$Kharkov;5;$Belgorod;5;$Kupiansk;5;$Balaklia;5;$Valuyki;5;$Alekseevka;5;$Millerovo;5;$Sieverodonetsk;5;$Upper Donets;5;$Borovenky;5;$Chuhuiv;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Donetsk
+
+StartEvent = evt_nam_WHImenacingDonetskend|999|0|NULL|NULL|$Donetsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingDonetsk;=;1
+  EvalRgnOwned = $Donetsk
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingDonetsk;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsDonetsk;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+
+StartEvent = evt_nam_WHIowningNovocherkassk1|1|0|NULL|NULL|$Novocherkassk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Novocherkassk
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+
+StartEvent = evt_nam_REDmenacingNovocherkassk1|1|0|NULL|NULL|$Novocherkassk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningNovocherkassk1;=;1
+  SelectSubUnits = Region $Novocherkassk;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningNovocherkassk1;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+
+StartEvent = evt_nam_Red_menaceconsNovocherkassk1|1|0|NULL|NULL|$Novocherkassk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingNovocherkassk1;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;$Tula;5;$Kolomna;5;$Ryazan;5
+  AI.SetLocalInterest = $Mossalk;5;$Obninsk;5;$Kolomna;5;$Rybnoie;5;$Bobriki;5;$Serpukhov;5;$Kaluga;5;$Tula;5;$Ageevo;5;$Kondrovo;5;$Kozelsk;5;$Bolkhov;5;$Mtsensk;5;$Novossil;5;$Skopin;5;$Pavelets;5;$Volovo;5;$Plavsk;5;$Dankov;5
+  AI.SetLocalInterest = $Bryansk;5;$Zhizdra;5;$Navlia;5;$Karachev;5;$Lokot;5;$Orel;5;$Kromy;5;$Verkhove;5;$Pokrovskoye;5;$Kurkino;5;$Efremov;5;$Livny;5;$Lebedyan;5;$Elets;5;$Gremyachee;5;$Znamenka;5;$Shalimovo;5
+  AI.SetLocalInterest = $Karmanovo;5;$Fatezh;5;$Shchigry;5;$Kolpny;5;$Gorshechnoye;5;$Tim;5;$Donetsk;5;$Rylsk;5;$Korenovo;5;$Oboyan;5;$Sudhza;5;$Yakovlevo;5;$Guevo;5;$Pristen;5;$Korotcha;5
+  AI.SetLocalInterest = $Staryy Oskol;5;$Novyy Oskol;5;$Ostrogozhsk;5;$Zadonsk;5;$Tchernianka;5;$Aleeksevka;5;$Mitrofanovka;5;$Pavlovsk;5;$Utkino;5;$Usman;5;$Mordovo;5;$Raman;5;$Voronezh;5;$Liski;5;$Bobrov;5;$Kalach;5;$Uryupinsk;5;$Anna;5;$Borshchevo;5;$Uvarovo;5;$Turki;5;$Gribanovskiy;5;$Upper Don;5
+  AI.SetLocalInterest = $Grayvoron;5;$Kolomak;5;$Merefa;5;$Zmiev;5;$Kharkov;5;$Belgorod;5;$Kupiansk;5;$Balaklia;5;$Valuyki;5;$Alekseevka;5;$Millerovo;5;$Sieverodonetsk;5;$Upper Donets;5;$Borovenky;5;$Chuhuiv;5
+  AI.SetLocalInterest = $Tzaritsyn;5;$Saratov;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+
+StartEvent = evt_nam_WHImenacingNovocherkasskend1|999|0|NULL|NULL|$Novocherkassk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingNovocherkassk1;=;1
+  EvalRgnOwned = $Novocherkassk
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingNovocherkassk1;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsNovocherkassk1;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHIowningRostov1|1|0|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Rostov
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_REDmenacingRostov1|1|0|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningRostov1;=;1
+  SelectSubUnits = Region $Rostov;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningRostov1;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_Red_menaceconsRostov1|1|0|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingRostov1;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;$Tula;5;$Kolomna;5;$Ryazan;5
+  AI.SetLocalInterest = $Mossalk;5;$Obninsk;5;$Kolomna;5;$Rybnoie;5;$Bobriki;5;$Serpukhov;5;$Kaluga;5;$Tula;5;$Ageevo;5;$Kondrovo;5;$Kozelsk;5;$Bolkhov;5;$Mtsensk;5;$Novossil;5;$Skopin;5;$Pavelets;5;$Volovo;5;$Plavsk;5;$Dankov;5
+  AI.SetLocalInterest = $Bryansk;5;$Zhizdra;5;$Navlia;5;$Karachev;5;$Lokot;5;$Orel;5;$Kromy;5;$Verkhove;5;$Pokrovskoye;5;$Kurkino;5;$Efremov;5;$Livny;5;$Lebedyan;5;$Elets;5;$Gremyachee;5;$Znamenka;5;$Shalimovo;5
+  AI.SetLocalInterest = $Karmanovo;5;$Fatezh;5;$Shchigry;5;$Kolpny;5;$Gorshechnoye;5;$Tim;5;$Donetsk;5;$Rylsk;5;$Korenovo;5;$Oboyan;5;$Sudhza;5;$Yakovlevo;5;$Guevo;5;$Pristen;5;$Korotcha;5
+  AI.SetLocalInterest = $Staryy Oskol;5;$Novyy Oskol;5;$Ostrogozhsk;5;$Zadonsk;5;$Tchernianka;5;$Aleeksevka;5;$Mitrofanovka;5;$Pavlovsk;5;$Utkino;5;$Usman;5;$Mordovo;5;$Raman;5;$Voronezh;5;$Liski;5;$Bobrov;5;$Kalach;5;$Uryupinsk;5;$Anna;5;$Borshchevo;5;$Uvarovo;5;$Turki;5;$Gribanovskiy;5;$Upper Don;5
+  AI.SetLocalInterest = $Grayvoron;5;$Kolomak;5;$Merefa;5;$Zmiev;5;$Kharkov;5;$Belgorod;5;$Kupiansk;5;$Balaklia;5;$Valuyki;5;$Alekseevka;5;$Millerovo;5;$Sieverodonetsk;5;$Upper Donets;5;$Borovenky;5;$Chuhuiv;5
+  AI.SetLocalInterest = $Tzaritsyn;5;$Saratov;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHImenacingRostovend1|999|0|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingRostov1;=;1
+  EvalRgnOwned = $Rostov
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingRostov1;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsRostov1;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Donetsk
+
+StartEvent = evt_nam_WHIowningDonetsk1|1|0|NULL|NULL|$Donetsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Donetsk
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Donetsk
+
+StartEvent = evt_nam_REDmenacingDonetsk1|1|0|NULL|NULL|$Donetsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningDonetsk1;=;1
+  SelectSubUnits = Region $Donetsk;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningDonetsk1;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Donetsk
+
+StartEvent = evt_nam_Red_menaceconsDonetsk1|1|0|NULL|NULL|$Donetsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingDonetsk1;=;1
+  EvalEvent = evt_nam_AI_WHICrimeabaseextension;=;0
+  EvalEvent = evt_nam_AI_WHIOdessaabaseextension;=;0
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Dzhankoi;5;$Sevastopol;5;$Feodosia;5;$Kertch;5;$Eupatoria;5;$Simferopol;5;$Zuya;5;$Perekop;5
+  AI.SetLocalInterest = $Berdjiansk;5;$Vasylivka;5;$Melitopol;5;$Kakhovka;5;$Akimovka;5;$Klyutchevoie;5;$Skadovsk;5;$Dnieper Estuary;5;$Dnieper;5
+  AI.SetLocalInterest = $Olviopol;5;$Nova Odessa;5;$Ochakov;5;$Kherson;5;$Inulets;5;$Krivoi Rog;5;$Elizavetgrad;5;$Dolynska;5;$Oleksandria;5;$Bug;5;$Snihurivka;5
+  AI.SetLocalInterest = $Odessa;5;$Rozdilna;5;$Nikolaiev;5;$Berezvika;5;$Tiraspol;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Donetsk
+
+StartEvent = evt_nam_WHImenacingDonetskend1|999|0|NULL|NULL|$Donetsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingDonetsk1;=;1
+  EvalRgnOwned = $Donetsk
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingDonetsk1;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsDonetsk1;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $cherkasy
+
+StartEvent = evt_nam_WHIowningcherkasy1|1|0|NULL|NULL|$cherkasy|NULL
+
+Conditions
+
+  EvalRgnOwned = $cherkasy
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Cherkasy
+
+StartEvent = evt_nam_REDmenacingcherkasy1|1|0|NULL|NULL|$Cherkasy|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningcherkasy1;=;1
+  SelectSubUnits = Region $Cherkasy;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningcherkasy1;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $cherkasy
+
+StartEvent = evt_nam_Red_menaceconscherkasy1|1|0|NULL|NULL|$cherkasy|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingcherkasy1;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Lyssytchansk;5;$Lugansk;5;$Enakievo;5;$Snejnoie;5;$Donetsk;5;$Makeievka;5;$Dobropole;5;$Shaplino;5;$Volnovakha;5;$Middle Dnieper;5;$Middle Donets;5;$Orikhiv;5;$Rostov;5;$Taganrog;5
+  AI.SetLocalInterest = $Gomel;5
+  AI.SetLocalInterest = $Staroslav;5;$Dobruch;5;$Shostka;5;$Mena;5;$Kozelets;5;$Chernigov;5;$Borzna;5;$Krolevets;5;$Buryn;5;$Bakhmach;5;$Konotop;5;$Nijyn;5;$Nossivka;5;$Brovary;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $cherkasy
+
+StartEvent = evt_nam_WHImenacingcherkasyend1|999|0|NULL|NULL|$cherkasy|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingcherkasy1;=;1
+  EvalRgnOwned = $cherkasy
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingcherkasy1;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconscherkasy1;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+

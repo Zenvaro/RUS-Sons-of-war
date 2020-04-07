@@ -1,0 +1,16 @@
+UID = 626
+NationTag = HUN
+Name = Garrison
+Alias = uni_HUN_Gar2
+ShortName = Garrison
+Text = $uni_HUN_Gar2_txt
+Color = $colHUNRegular 
+ModelType0 = $mdl_HUN_Inf1|1
+ModelType1 = $mdl_HUN_Inf2|1
+FamilyType0 = $famLine|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1
+Area = $Recruit_Hungarians
+CustomNames = 1. Garnison-Regiment|2. Garnison-Regiment|3. Garnison-Regiment|4. Garnison-Regiment|5. Garnison-Regiment|6. Garnison-Regiment|7. Garnison-Regiment|8. Garnison-Regiment|9. Garnison-Regiment|10. Garnison-Regiment|11. Garnison-Regiment|12. Garnison-Regiment|13. Garnison-Regiment|14. Garnison-Regiment|15. Garnison-Regiment|16. Garnison-Regiment|17. Garnison-Regiment|18. Garnison-Regiment|19. Garnison-Regiment|20. Garnison-Regiment

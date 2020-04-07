@@ -1,0 +1,11 @@
+UID = 150
+Name = $abi_nam_AB_Asia
+Alias = AB_Asia
+Kind = $abiFlavor
+Text = $abi_txt_AB_Asia
+ImageID = abi_AB_CentralAsian.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1
+Area = $Theater_Central_Asia

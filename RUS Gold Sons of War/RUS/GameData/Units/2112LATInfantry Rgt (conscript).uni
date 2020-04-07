@@ -1,0 +1,15 @@
+UID = 2112
+NationTag = LAT
+Name = Infantry Rgt
+Alias = uni_LAT_Rgt1
+ForcePool = -1
+ShortName = Inf. Rgt.
+Text = $uni_BAL_Rgt0_txt
+Color = $colLATRegular 
+ModelType0 = $mdl_LAT_Inf3|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Latvia

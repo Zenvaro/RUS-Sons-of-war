@@ -1,0 +1,329 @@
+UID = 50022
+Bitmap = Ledger_Back.png
+x = 0
+y = 0
+z = 96
+DragDrop = {None}
+Anchor = VCenter HCenter
+GameState = stLedger
+Capacity = 24
+MulScrollAmount = 12
+Coo1 = 65|120|0
+Coo2 = 65|170|0
+Coo3 = 65|220|0
+Coo4 = 65|270|0
+Coo5 = 65|320|0
+Coo6 = 65|370|0
+Coo7 = 65|420|0
+Coo8 = 65|470|0
+Coo9 = 65|520|0
+Coo10 = 65|570|0
+Coo11 = 65|620|0
+Coo12 = 65|670|0
+
+Coo13 = 534|120|0
+Coo14 = 534|170|0
+Coo15 = 534|220|0
+Coo16 = 534|270|0
+Coo17 = 534|320|0
+Coo18 = 534|370|0
+Coo19 = 534|420|0
+Coo20 = 534|470|0
+Coo21 = 534|520|0
+Coo22 = 534|570|0
+Coo23 = 534|620|0
+Coo24 = 534|670|0
+
+// Abort
+Btn1 = -1|953|20
+
+{ButtonDef}
+Image = Btn_Parchment_Close_OFF.png
+OverImage = Btn_Parchment_Close_OFF.png
+DownImage = Btn_Parchment_Close_ON.png
+Hint = $Close
+UpAction = CancelAction
+ClickSound = $sndTick
+{/ButtonDef}
+
+// *** buttons ***
+
+// Left scroll
+Btn2 = -1|48|732
+{ButtonDef}
+Image = Ledger_LeftArrow.bmp
+OverImage = Ledger_LeftArrow.bmp
+DownImage = Ledger_LeftArrow.bmp
+DisaImage = NothingBitmap.bmp
+UpAction = ScrollLeft
+ClickSound = $sndTab
+{/ButtonDef}
+
+// Right scroll
+Btn3 = -1|925|732
+{ButtonDef}
+Image = Ledger_RightArrow.bmp
+OverImage = Ledger_RightArrow.bmp
+DownImage = Ledger_RightArrow.bmp
+DisaImage = NothingBitmap.bmp
+UpAction = ScrollRight
+ClickSound = $sndTab
+{/ButtonDef}
+
+
+
+// *** Coordinates ***
+
+// bookmarks (must be in sequence)
+
+// bm 0-3, right
+Various4 = 940|142|0
+Various5 = 3|60|0     // 982|218|0
+Various6 = .          // 982|294|0
+Various7 = .          // 982|374|0
+
+// bm 0-3, left
+Various0 = 7|142|0
+Various1 = 3|60|0     // 0|218|0
+Various2 = .          //0|294|0
+Various3 = .          //0|374|0
+
+// left&right arrows
+Various8 = 033|692|0
+Various9 = 945|692|0
+
+// Title (centered)
+Caption10 = 200|65|0
+
+// Sort type (centered)
+Caption11 = 632|65|0
+
+// Strat town title (centered)
+Caption12 = 480|70|0
+
+// VP count, coo of region name
+Caption13 = 550|120|0
+
+// VP page, scenario title
+Caption14 = 75|120|0
+
+// VP page, scenario desc
+Caption15 = 75|150|0
+
+// Background left page
+Caption16 = 70|130|0
+
+// Background right page
+Caption17 = 560|130|0
+
+Various18 = 000|015	// Forces list: offset between each line of data
+Various19 = 190|000	// Forces list: position of 2nd data
+Various20 = 275|000	// Forces list: position of 3rd data
+Various21 = 345|000	// Forces list: position of 4th data
+Various22 = 400|000	// Forces list: NATO jump symbol
+Various23 = .		// Used AGE2
+Various24 = 011|300	// Forces list: NATO Unit Filter symbol	
+Various25 = -06|-02	// Forces list: NATO Unit Filter background, additional offset / Symbol
+Various26 = 30|18  // Flag Offset
+Various27 = 53|722  // Option Button Left
+Various28 = 923|722 // Option Button Right
+Various29 = .
+Various30 = .
+
+// *** integer params ***
+
+// VP region list, x offset of the miniflag
+Param0 = 150
+// VP region list, x offset of the theater name
+Param1 = 220
+// VP region list, y offset between each line
+Param2 = 20
+// VP region list, max nb displayed (to be improved)
+Param3 = 26
+// VP region list, length of the theater rectangle
+Param4 = 175
+// VP region list, x offset of summary string
+Param4 = 175
+
+// line length (in chars), for all pages
+Param5 = 66
+	
+Param6  = 160	// centering width for the page title		
+Param7  = .
+Param8  = .
+Param9  = .
+Param10 = .
+Param11 = .
+Param12 = .
+Param13 = .
+Param14 = .
+Param15 = .
+Param16 = .
+Param17 = .
+Param18 = .
+Param19 = .
+Param20 = 400 	// OBJ - Max title width
+Param21 = -9
+
+-----------------------------------
+String params, common pool 
+-----------------------------------
+
+// bookmarks images (in sequence)
+
+// bm 0-3, left
+StrParam0  = Ledger_bookmark¤_left.png
+StrParam1  = // used BOA
+StrParam2  = // used BOA
+StrParam3  = // used BOA
+
+// bm 0-3, right
+StrParam4  = Ledger_bookmark¤_right.png
+StrParam5  = // used BOA
+StrParam6  = // used BOA
+StrParam7  = // used BOA
+
+// arrows
+StrParam8  = Ledger_LeftArrow.bmp
+StrParam9  = Ledger_RightArrow.bmp
+StrParam10 = LedgerFrame0.bmp		// Frame name for the Forces List
+strParam11 = Ledger_UnitFilter.png	// REINF - Background for the NATO symbol used for Unit Filtering
+StrParam12 = Symbol_switch.png      // REINF - symbol used for Unit Filtering page switch
+
+StrParam13 = .
+StrParam14 = .
+StrParam15 = .
+StrParam16 = .
+StrParam17 = .
+StrParam18 = .
+StrParam19 = .
+StrParam20 = .
+
+
+-----------------------------------
+ Captions & various Coordinates, Game Actors Transaction page
+-----------------------------------
+Various31 = 020|170 // REINF - first GA-Unit position on the page - the base -
+Various32 = 098|098 // REINF & RPL - GA offset (either unit or nato page)
+Various33 = 065|007 // REINF - x/y offset for the NATO symbol of a GA unit
+Various34 = 080|036 // REINF - available GA in pool / for transaction
+Various35 = 080|050 // REINF - same, for already on map
+Various36 = 080|064 // REINF - same, for request GA 
+Various37 = 073|019 // REINF - x/y offset for the combat value of a GA unit
+Various38 = 003|-15 // REINF - Unit Frame offset  /GA-unit
+Various39 = 040|553 // REINF - (not long) expected balance
+Various40 = 040|630 // ALL - First Line, info panel
+Various41 = 040|645 // ALL - Second Line, info panel
+Various42 = 040|665 // ALL - Third Line, info panel
+Various43 = 030|710 // ALL - Unit GA subunit Name pos in info panel
+Various44 = 080|000 // ALL - Unit GA subunit Name offset in info panel
+Various45 = 005|015 // ALL - Unit GA subunit Name offset in info panel
+Various46 = 075|118 // REINF - GA category Tab pos
+Various47 = 001|015 // REINF - GA category Tab caption offset
+Various48 = 065|000 // REINF - GA category Tab offset
+Various49 = 041|192 // RPL - first NATO position on the page - the base - (ofs between each NATO is the same as GA-Unit ofs)
+Various50 = 044|-10 // RPL - Faction Tag ofs 
+Various51 = -17|022 // RPL - requested nb
+Various52 = 022|-08 // REINF - Unit GA Name (in box) offset
+Various53 = 065|014 // REINF - Active area over the unit frame (offset / unit)
+Various54 = -20|-34 // RPL - frame image offset
+Various55 = 056|014 // RPL - available RPL in pool (in stock)
+Various56 = 056|044 // RPL - RPL max nb 
+Various57 = 040|181 // REINF - Long - first GA-Unit position on the page
+Various58 = 141|109 // REINF - Long - X/Y offset
+Various59 = 090|000 // REINF - Long - x/y offset for the NATO symbol of a GA unit
+Various60 = 110|032 // REINF - Long - available GA in pool / for transaction
+Various61 = 110|048 // REINF - Long - same, for already on map
+Various62 = 110|065 // REINF - Long - same, for request GA 
+Various63 = 100|015 // REINF - Long - x/y offset for the combat value of a GA unit
+Various64 = -10|-23 // REINF - Long - Unit Frame offset  /GA-unit
+Various65 = 030|-17 // REINF - Long - Unit GA Name (in box) offset
+Various66 = 089|014 // REINF - Long - Active area over the unit frame (offset / unit)
+Various67 = -10|-27 // REINF - Long - Unit background Frame offset  /GA-unit
+Various68 = -19|-29 // RPL - Family Name ofs  
+Various69 = 003|000 // RPL - Request image offset between each other
+Various70 = 720|200 // ECO - State Name
+Various71 = 720|224 // ECO - dev level requested
+Various72 = 720|271 // ECO - dev level cost
+Various73 = 720|347 // ECO - supply production
+Various74 = 720|362 // ECO - ammo production
+Various75 = 720|377 // ECO - money production
+Various76 = 720|392 // ECO - conscript production
+Various77 = 720|407 // ECO - WSU production
+Various78 = 720|255 // ECO - Title / dev level cost
+Various79 = 720|330 // ECO - Title / production output
+Various80 = 085|710 // ECO/DRAFT - expected balance
+Various81 = 250|450 // ECO - flavor image
+Various82 = 008|008 // ECO - offset between each industrialization icon
+Various83 = 110|140 // OPTIONS - 1
+Various84 = 110|440 // OPTIONS - 2
+Various85 = 570|140        // 110|540 // OPTIONS - 3
+Various86 = 570|440 // OPTIONS - 4
+Various87 = 570|540 // OPTIONS - 5
+Various88 =  // OPTIONS - 6
+Various89 = .
+Various90 = 090|-30 // OPTIONS - offset of 1st element, for a given option (is centered)
+Various91 = -50|000 // OPTIONS - offset of 2nd element, for a given option
+Various92 = 180|065 // OPTIONS - offset of 3rd element, for a given option
+Various93 = 000|000 // OPTIONS - offset of 4th element, for a given option
+Various94 = 300|150 // OPTIONS - offset of 5th element, for a given option
+Various95 = 714|512 // ECO - transport assets
+Various96 = 005|016 // ECO - offset for 'Transport' string
+Various97 = 035|070 // ECO - offset for active zone, rail
+Various98 = 125|070 // ECO - offset for active zone, river
+Various99 = 060|130 // ECO - offset to # of locomotives requested
+Various100= 150|130 // ECO - offset to # of river transports requested
+Various101= -1000|450 // FIN - position of the expenses accounting image
+Various102= 165|490 // FIN - position of the title, First line
+Various103= 290|490 // FIN - position of the value, First line
+Various104= 000|020 // FIN - offset between each line
+Various105= 050|020 // FIN - offset between each value
+Various106= 800|620 // REINF - Minimap position
+Various107= 740|559 // REINF - Minimap position - big one
+Various108= 650|600 // REINF - portrait position
+Various109= 050|600 // REINF - Long - cost subtitle 
+
+-----------------------------------
+Integer params, Game Actors Transaction page
+-----------------------------------
+Param21 = 40 // REINF - max nb of GA per page
+Param22 = 10 // REINF - nb of GA per line
+Param23 = 35 // REINF - Long - max nb of GA per page
+Param24 = 07 // REINF - Long - nb of GA per line
+Param25 = 16 // Max length of unit name before using shortname
+Param26 = 04 // Nb of options per page of ledger
+Param27 = 
+Param28 = 
+Param29 = 
+Param30 = 
+Param31 = 
+Param32 = 
+Param33 = 
+Param34 = 
+Param35 = 
+Param36 = 
+Param37 = 
+Param38 = 
+Param39 = 
+Param40 = 
+-----------------------------------
+String params, Game Actors Transaction page
+-----------------------------------
+StrParam21 = UTI_unit_frame.png		// REINF - Frame around the unit (when nothing bought)
+StrParam22 = ActiveArea32x64.bmp	// REINF - area above the Force Pool/On Map/Requested figures
+StrParam23 = UTI_rpl_frame.png		// RPL - frame for the NATO symbol
+StrParam24 = UTI_ship_back.png		// REINF - back for ship (long unit)
+StrParam25 = UTI_ship_frame.png		// REINF - Frame around the unit, ship (long unit)
+StrParam26 = UTI_rpl_request.png	// RPL - request image		
+StrParam27 = BR-OTANBack.bmp		// RPL - back behind NATO symbol
+StrParam28 = UTI_industry.png		// ECO - industrialization level
+StrParam29 = UTI_liberty1.png		// ECO - full liberty level
+StrParam30 = UTI_liberty2.png		// ECO - restricted liberty level
+StrParam31 = UTI_liberty3.png		// ECO - martial law liberty level
+StrParam32 = UTI_transport.png		// ECO - Transport assets
+StrParam33 = UTI_transport.png		// FIN - Expenses accounting image
+StrParam34 = UTI_back_ships.png		// REINF - bottom paper  for the ship tab
+StrParam35 = Minimap_Back.png		// REINF - Minimap background
+StrParam36 = UTI_minimap200_Back.png	// REINF - Minimap background, 200 pixels 
+StrParam37 = UTI_unit_frameON.png	// REINF - Frame around the unit (when something bought)
+StrParam38 = UTI_ship_frameON.png	// REINF - Frame around the unit, ship (long unit) (when something bought)

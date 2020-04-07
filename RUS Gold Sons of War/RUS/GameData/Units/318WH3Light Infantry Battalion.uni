@@ -1,0 +1,15 @@
+UID = 318
+NationTag = WH3
+Name = Light Infantry Battalion
+Alias = uni_WH3_Rgt2
+ForcePool = 6
+ShortName = Lt. Inf. Bn.
+Text = $uni_WH3_Rgt2_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_Lit|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Light Infantry Rgt|2nd Light Infantry Rgt|3rd Light Infantry Rgt|4th Light Infantry Rgt|5th Light Infantry Rgt|6th Light Infantry Rgt|7th Light Infantry Rgt|8th Light Infantry Rgt|9th Light Infantry Rgt|10th Light Infantry Rgt|11th Light Infantry Rgt|12th Light Infantry Rgt|13th Light Infantry Rgt|14th Light Infantry Rgt|15th Light Infantry Rgt

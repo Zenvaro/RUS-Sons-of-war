@@ -1,0 +1,15 @@
+UID = 397
+NationTag = FIN
+Name = Mounted Infantry
+Alias = uni_FIN_Inf1
+ForcePool = 2
+ShortName = Mtd. Inf. Rgt.
+Text = $uni_FIN_Inf1_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_FIN_Inf5|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Finns

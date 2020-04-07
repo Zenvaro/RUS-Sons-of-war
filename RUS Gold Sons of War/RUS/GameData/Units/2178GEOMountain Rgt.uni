@@ -1,0 +1,15 @@
+UID = 2178
+NationTag = GEO
+Name = Mountain Rgt
+Alias = uni_GEO_Mon
+ForcePool = 6
+ShortName = Mont. Rgt.
+Text = $uni_CAU_Mon_txt
+Color = $colGEORegular 
+ModelType0 = $mdl_CAU_Mon|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Georgia

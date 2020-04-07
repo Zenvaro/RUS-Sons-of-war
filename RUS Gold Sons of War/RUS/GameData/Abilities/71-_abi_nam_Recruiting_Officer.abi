@@ -1,0 +1,12 @@
+UID = 71
+Name = $abi_nam_Recruiting_Officer
+Alias = Recruiting_Officer
+Kind = $abiPatriot
+Text = $abi_txt_Recruiting_Officer
+ImageID = abi_patriot.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 0
+Level = 1
+Param1 = 2
+Param2 = 5

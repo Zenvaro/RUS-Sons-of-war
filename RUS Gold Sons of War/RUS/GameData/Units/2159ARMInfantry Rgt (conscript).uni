@@ -1,0 +1,15 @@
+UID = 2159
+NationTag = ARM
+Name = Infantry Rgt
+Alias = uni_ARM_Rgt1
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_CAU_Rgt1_txt
+Color = $colARMRegular 
+ModelType0 = $mdl_ARM_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Armenia

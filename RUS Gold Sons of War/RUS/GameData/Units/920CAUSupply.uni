@@ -1,0 +1,15 @@
+UID = 920
+NationTag = CAU
+Name = Supply
+Alias = uni_CAU_Sup
+ForcePool = 12
+ShortName = Supply
+Text = $uni_CAU_Sup_txt
+Color = $colCAURegular 
+ModelType0 = $mdl_CAU_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Caucasians

@@ -1,0 +1,78 @@
+UID = 50013
+Bitmap = top_right_panel_bgd.png
+x = 0
+y = 29
+z = 91
+DragDrop = {None}
+Anchor = Right
+
+// *** coordinates parameters ***
+Capacity = 2
+Coo1 = 97|30  // Sundial
+Coo2 = -63|43  // turn string 
+
+Various0 = 0|0
+Various1 = 61|18   // Clock Center
+Various2 = 61|18   // Clock Center
+
+StrParam0 = nothingBitmap.bmp
+StrParam1 = .
+StrParam2 = minutes.png           // Minutes for Clock
+StrParam3 = heures.png            // Hours for Clock
+StrParam4 = .                     // Glass over the Clock
+
+Param0 = 0
+
+
+
+// *** strings parameters ***
+
+Btn1 = -1|4|5
+{ButtonDef}
+Image = Btn_menu_off.png
+OverImage = Btn_menu_over.png
+DownImage = Btn_menu_on.png
+DisaImage = Btn_menu_off.png
+Hint = $ToMainMenu
+UpAction = ToMainMenu
+ClickSound = $sndTab
+{/ButtonDef}
+
+Btn2 = -1|3|32
+{ButtonDef}
+Image = Btn_save_off.png
+OverImage = Btn_save_over.png
+DownImage = Btn_save_on.png
+DisaImage = Btn_save_off.png
+Hint = $SaveYourGame
+UpAction = SaveGame
+ClickSound = $sndTab
+{/ButtonDef}
+
+Btn3 = -1|111|5
+{ButtonDef}
+Image = Btn_NextTurn_off.png
+OverImage = Btn_NextTurn_over.png
+DownImage = Btn_NextTurn_on.png
+DisaImage = Btn_NextTurn_off.png
+Hint = $NextTurn
+UpAction = EndTurn
+ClickSound = $sndTab
+{/ButtonDef}
+
+Btn4 = -1|110|32
+{ButtonDef}
+Image = Btn_replay_off.png
+OverImage = Btn_replay_over.png
+DownImage = Btn_replay_on.png
+DisaImage = Btn_replay_off.png
+Hint = $btnReplay
+UpAction = ToReplay
+ClickSound = $sndTab
+{/ButtonDef}
+
+
+
+
+
+

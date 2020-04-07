@@ -1,0 +1,1587 @@
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Baku
+
+SelectFaction = $RED
+SelectRegion = $Baku
+StartEvent = evt_nam_RED_Baku_Oilfields_Production|999|1|NULL|NULL|$Baku|NULL
+
+Conditions
+  MinDate = 1919/01/01
+  TurnIndex = 3;17
+  Probability = 25
+
+EvalRgnOwned = $Baku
+  EvalRgnStruc = $Baku;FACALL;STRUCDEF $OilField
+
+Actions
+  ChangeWSUPool = 1
+  Replacement = RED;$famSupply;1
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Maikop
+StartEvent = evt_nam_RED_Maikop_Oilfields_Production|999|1|NULL|NULL|$Maikop|NULL
+
+Conditions
+  MinDate = 1919/01/01
+  TurnIndex = 3;17
+  Probability = 25
+
+EvalRgnOwned = $Maikop
+  EvalRgnStruc = $Maikop;FACALL;STRUCDEF $OilField
+
+Actions
+  ChangeWSUPool = 1
+  Replacement = RED;$famSupply;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_Moscow_RecruitingBarracks_Production|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 2;14
+  Probability = 15
+
+EvalRgnOwned = $Moscow
+  EvalRgnStruc = $Moscow;FACALL;STRUCDEF $RecruitingBarracks
+
+Actions
+  ChangeConscriptPool = 15
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+StartEvent = evt_nam_RED_Petrograd_RecruitingBarracks_Production|999|1|NULL|NULL|$Petrograd|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 2;14
+  Probability = 15
+
+EvalRgnOwned = $Petrograd
+  EvalRgnStruc = $Petrograd;FACALL;STRUCDEF $RecruitingBarracks
+
+Actions
+  ChangeConscriptPool = 10
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+StartEvent = evt_nam_RED_Tzaritsyn_RecruitingBarracks_Production|999|1|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 2;14
+  Probability = 15
+
+EvalRgnOwned = $Tzaritsyn
+  EvalRgnStruc = $Tzaritsyn;FACALL;STRUCDEF $RecruitingBarracks
+
+Actions
+  ChangeConscriptPool = 5
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Tashkent
+StartEvent = evt_nam_RED_Tashkent_RecruitingBarracks_Production|999|1|NULL|NULL|$Tashkent|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 2;14
+  Probability = 15
+
+EvalRgnOwned = $Tashkent
+  EvalRgnStruc = $Tashkent;FACALL;STRUCDEF $RecruitingBarracks
+
+Actions
+  ChangeConscriptPool = 5
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+StartEvent = evt_nam_RED_Kiev_RecruitingBarracks_Production|999|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 2;14
+  Probability = 15
+
+EvalRgnOwned = $Kiev
+  EvalRgnStruc = $Kiev;FACALL;STRUCDEF $RecruitingBarracks
+
+Actions
+  ChangeConscriptPool = 10
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_CentralBank_Production|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;6;12;18
+  Probability = 10
+
+EvalRgnOwned = $Moscow
+  EvalRgnStruc = $Moscow;FACALL;STRUCDEF $CentralBank
+
+Actions
+  ChangeMoneyPool = 100
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_Moscow_AviationSchool_RplProduction1|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;12
+  Probability = 35
+
+EvalRgnOwned = $Moscow
+  EvalRgnStruc = $Moscow;FACALL;STRUCDEF $AirSchool
+
+Actions
+  Replacement = RED;$famAirRecon;1
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_Moscow_AviationSchool_RplProduction2|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 6;15
+  Probability = 25
+
+EvalRgnOwned = $Moscow
+  EvalRgnStruc = $Moscow;FACALL;STRUCDEF $AirSchool
+
+Actions
+  Replacement = RED;$famAirFighter;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Perm
+StartEvent = evt_nam_RED_Perm_RiverShipyard_RplProduction|999|1|NULL|NULL|$Perm|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Perm
+  EvalRgnStruc = $Perm;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  ChangeWSUPool = 1
+  Replacement = RED;$famLitCoastalShip;1
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Nizhniy Novgorod
+StartEvent = evt_nam_RED_NizhniyNovogorod_RiverShipyard_RplProduction|999|1|NULL|NULL|$Nizhniy Novgorod|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Nizhniy Novgorod
+  EvalRgnStruc = $Nizhniy Novgorod;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = RED;$famTransportShip;1
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Kazan
+StartEvent = evt_nam_RED_Kazan_RiverShipyard_RplProduction|999|1|NULL|NULL|$Kazan|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Kazan
+  EvalRgnStruc = $Kazan;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = RED;$famLitCoastalShip;1
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Rostov
+StartEvent = evt_nam_RED_Rostov_RiverShipyard_RplProduction|999|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Rostov
+  EvalRgnStruc = $Rostov;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = RED;$famLitCoastalShip;1
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+StartEvent = evt_nam_RED_Tzaritsyn_RiverShipyard_RplProduction|999|1|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Tzaritsyn
+  EvalRgnStruc = $Tzaritsyn;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = RED;$famTransportShip;1
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Astrakhan
+StartEvent = evt_nam_RED_Astrakhan_RiverShipyard_RplProduction|999|1|NULL|NULL|$Astrakhan|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Astrakhan
+  EvalRgnStruc = $Astrakhan;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = RED;$famTransportShip;1
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+StartEvent = evt_nam_RED_Kiev_RiverShipyard_RplProduction|999|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Kiev
+  EvalRgnStruc = $Kiev;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = RED;$famTransportShip;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+SelectRegion = $Riga
+StartEvent = evt_nam_RED_Riga_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Riga|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Riga
+  EvalRgnStruc = $Riga;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Irkutsk
+StartEvent = evt_nam_RED_Irkutsk_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Irkutsk|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Irkutsk
+  EvalRgnStruc = $Irkutsk;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Kazan
+StartEvent = evt_nam_RED_Kazan_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Kazan|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Kazan
+  EvalRgnStruc = $Kazan;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+StartEvent = evt_nam_RED_Kiev_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Kiev
+  EvalRgnStruc = $Kiev;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeWSUPool = 1
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Helsinki
+StartEvent = evt_nam_RED_Helsinki_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Helsinki|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Helsinki
+  EvalRgnStruc = $Helsinki;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Ekaterinburg
+StartEvent = evt_nam_RED_Ekaterinburg_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Ekaterinburg|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Ekaterinburg
+  EvalRgnStruc = $Ekaterinburg;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+StartEvent = evt_nam_RED_Kharkov_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Kharkov
+  EvalRgnStruc = $Kharkov;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Tula
+StartEvent = evt_nam_RED_Tula_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Tula|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Tula
+  EvalRgnStruc = $Tula;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Saratov
+StartEvent = evt_nam_RED_Saratov_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Saratov|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Saratov
+  EvalRgnStruc = $Saratov;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Minsk
+StartEvent = evt_nam_RED_Minsk_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Minsk|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Minsk
+  EvalRgnStruc = $Minsk;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Odessa
+StartEvent = evt_nam_RED_Odessa_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Odessa|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Odessa
+  EvalRgnStruc = $Odessa;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeWSUPool = 1
+  ChangeRailPool = 5
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $CMN
+SelectRegion = $Moscow
+
+SelectFaction = $CMN
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_ChekaCreated1917|1|2|evt_txt_RED_ChekaCreated1917|Event-img_RED_ChekaCreated1917|$Moscow|NULL
+
+Conditions
+  MinDate = 1917/01/01
+
+SelectFaction = $RED
+
+EvalRgnOwned = $Moscow
+
+Actions
+
+  CreateStruc
+  SetType = $CHEKAHQ
+  SetName = Cheka HQ
+  Apply
+  AddDynGraphic = $Moscow;Icon_Cheka.png;Icon_Cheka.png;NULL;190;75;strChekaHQ
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_ChekaHQ_RplProduction|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1917/01/01
+  TurnIndex = 0;4;8;12;16;20
+  Probability = 50
+
+EvalRgnOwned = $Moscow
+  EvalRgnStruc = $Moscow;FACALL;STRUCDEF $SecretServiceAndPolice
+
+Actions
+  ChangeLoyaltyFac = $Area_Moskwa;5
+  ChangeConscriptPool = 1
+
+SelectFaction = $RED 
+  Replacement = RED;$famService;1
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_ChekaHQCaptured|1|2|evt_txt_RED_ChekaHQCaptured|Event-img_RED_ChekaCreated1917|$Moscow|NULL
+
+Conditions
+  MinDate = 1917/01/01
+
+EvalRgnOwned = $Moscow;NOT
+
+Actions
+  RemDynGraphic = $Moscow;Icon_Cheka.png
+
+  ChgEvtOccurs = evt_nam_RED_ChekaHQ_RplProduction;MaxOccurs;0
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $CMN
+SelectRegion = $Moscow
+
+SelectFaction = $CMN
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_FrunzeAcademyCreated1919|1|2|evt_txt_RED_FrunzeAcademyCreated1919|Opt_RED_Frunze|$Moscow|NULL
+
+Conditions
+  MinDate = 1919/10/01
+
+SelectFaction = $RED
+
+EvalRgnOwned = $Moscow
+  Probability = 30
+
+Actions
+
+  CreateStruc
+  SetType = $MILITARYACADEMY
+  SetName = M.V. Frunze Military Academy
+  Apply
+  AddDynGraphic = $Moscow;Icon_RED_Land_Academy.png;Icon_RED_Land_Academy.png;NULL;190;124;strSovietLandAcademy
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_FrunzeAcademy_RplProduction|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1920/06/01
+  EvalEvent = evt_nam_RED_FrunzeAcademyCreated1918;=;1
+  TurnIndex = 0;12
+  Probability = 50
+
+EvalRgnOwned = $Moscow
+  EvalRgnStruc = $Moscow;FACALL;STRUCDEF $MilitaryAcademy
+
+Actions
+
+SelectFaction = $RED 
+  Replacement = RED;$famElite;1
+
+SelectFaction = $RED
+  ChangeConscriptPool = 5
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_FrunzeAcademyCaptured|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1919/10/01
+  EvalEvent = evt_nam_RED_FrunzeAcademyCreated1918;=;1
+
+EvalRgnOwned = $Moscow;NOT
+
+Actions
+  RemDynGraphic = $Moscow;Icon_RED_Land_Academy.png
+
+  ChgEvtOccurs = evt_nam_RED_FrunzeAcademy_RplProduction;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+StartEvent = evt_nam_RED_NavalAcademy_RplProduction|999|1|NULL|NULL|$Petrograd|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  TurnIndex = 0;12
+  Probability = 10
+
+EvalRgnOwned = $Petrograd
+  EvalRgnStruc = $Petrograd;FACALL;STRUCDEF $MilitaryAcademy
+
+Actions
+
+SelectFaction = $RED 
+  Replacement = RED;$famElite;1
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+StartEvent = evt_nam_RED_NavalAcademyCaptured|1|1|NULL|NULL|$Petrograd|NULL
+
+Conditions
+  MinDate = 1918/01/01
+
+EvalRgnOwned = $Petrograd;NOT
+
+Actions
+  RemDynGraphic = $Petrograd;Icon_RUS_Naval_Academy.png
+
+  ChgEvtOccurs = evt_nam_RED_NavalAcademy_RplProduction;MaxOccurs;0
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WHI
+SelectRegion = $Baku
+
+SelectFaction = $WHI
+SelectRegion = $Baku
+StartEvent = evt_nam_WHI_Baku_Oilfields_Production|999|1|NULL|NULL|$Baku|NULL
+
+Conditions
+  MinDate = 1919/01/01
+  TurnIndex = 3;17
+  Probability = 25
+
+EvalRgnOwned = $Baku
+  EvalRgnStruc = $Baku;FACALL;STRUCDEF $OilField
+
+Actions
+  ChangeWSUPool = 1
+  Replacement = WHI;$famSupply;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+StartEvent = evt_nam_WHI_Rostov_RecruitingBarracks_Production|999|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 2;14
+  Probability = 15
+
+EvalRgnOwned = $Rostov
+  EvalRgnStruc = $Rostov;FACALL;STRUCDEF $RecruitingBarracks
+
+Actions
+  ChangeConscriptPool = 15
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Tzaritsyn
+StartEvent = evt_nam_WHI_Tzaritsyn_RecruitingBarracks_Production|999|1|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 2;14
+  Probability = 15
+
+EvalRgnOwned = $Tzaritsyn
+  EvalRgnStruc = $Tzaritsyn;FACALL;STRUCDEF $RecruitingBarracks
+
+Actions
+  ChangeConscriptPool = 5
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Kiev
+StartEvent = evt_nam_WHI_Kiev_RecruitingBarracks_Production|999|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 2;14
+  Probability = 15
+
+EvalRgnOwned = $Kiev
+  EvalRgnStruc = $Kiev;FACALL;STRUCDEF $RecruitingBarracks
+
+Actions
+  ChangeConscriptPool = 10
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WHI
+SelectRegion = $Moscow
+StartEvent = evt_nam_WHI_CentralBank_Production|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;6;12;18
+  Probability = 10
+
+EvalRgnOwned = $Moscow
+  EvalRgnStruc = $Moscow;FACALL;STRUCDEF $CentralBank
+
+Actions
+  ChangeMoneyPool = 100
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WHI
+SelectRegion = $Moscow
+StartEvent = evt_nam_WHI_Moscow_AviationSchool_RplProduction1|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;12
+  Probability = 35
+
+EvalRgnOwned = $Moscow
+  EvalRgnStruc = $Moscow;FACALL;STRUCDEF $AirSchool
+
+Actions
+  Replacement = WHI;$famAirRecon;1
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Moscow
+StartEvent = evt_nam_WHI_Moscow_AviationSchool_RplProduction2|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 6;15
+  Probability = 25
+
+EvalRgnOwned = $Moscow
+  EvalRgnStruc = $Moscow;FACALL;STRUCDEF $AirSchool
+
+Actions
+  Replacement = WHI;$famAirFighter;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WHI
+SelectRegion = $Perm
+StartEvent = evt_nam_WHI_Perm_RiverShipyard_RplProduction|999|1|NULL|NULL|$Perm|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Perm
+  EvalRgnStruc = $Perm;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  ChangeWSUPool = 1
+  Replacement = WHI;$famLitCoastalShip;1
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Nizhniy Novgorod
+StartEvent = evt_nam_WHI_NizhniyNovogorod_RiverShipyard_RplProduction|999|1|NULL|NULL|$Nizhniy Novgorod|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Nizhniy Novgorod
+  EvalRgnStruc = $Nizhniy Novgorod;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = WHI;$famTransportShip;1
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Kazan
+StartEvent = evt_nam_WHI_Kazan_RiverShipyard_RplProduction|999|1|NULL|NULL|$Kazan|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Kazan
+  EvalRgnStruc = $Kazan;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = WHI;$famLitCoastalShip;1
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+StartEvent = evt_nam_WHI_Rostov_RiverShipyard_RplProduction|999|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Rostov
+  EvalRgnStruc = $Rostov;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = WHI;$famLitCoastalShip;1
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Tzaritsyn
+StartEvent = evt_nam_WHI_Tzaritsyn_RiverShipyard_RplProduction|999|1|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Tzaritsyn
+  EvalRgnStruc = $Tzaritsyn;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = WHI;$famTransportShip;1
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Astrakhan
+StartEvent = evt_nam_WHI_Astrakhan_RiverShipyard_RplProduction|999|1|NULL|NULL|$Astrakhan|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Astrakhan
+  EvalRgnStruc = $Astrakhan;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = WHI;$famTransportShip;1
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Kiev
+StartEvent = evt_nam_WHI_Kiev_RiverShipyard_RplProduction|999|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Kiev
+  EvalRgnStruc = $Kiev;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = WHI;$famTransportShip;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WHI
+SelectRegion = $Riga
+StartEvent = evt_nam_WHI_Riga_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Riga|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Riga
+  EvalRgnStruc = $Riga;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Irkutsk
+StartEvent = evt_nam_WHI_Irkutsk_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Irkutsk|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Irkutsk
+  EvalRgnStruc = $Irkutsk;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Kazan
+StartEvent = evt_nam_WHI_Kazan_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Kazan|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Kazan
+  EvalRgnStruc = $Kazan;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Kiev
+StartEvent = evt_nam_WHI_Kiev_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Kiev
+  EvalRgnStruc = $Kiev;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeWSUPool = 1
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Helsinki
+StartEvent = evt_nam_WHI_Helsinki_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Helsinki|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Helsinki
+  EvalRgnStruc = $Helsinki;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinburg
+StartEvent = evt_nam_WHI_Ekaterinburg_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Ekaterinburg|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Ekaterinburg
+  EvalRgnStruc = $Ekaterinburg;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Kharkov
+StartEvent = evt_nam_WHI_Kharkov_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Kharkov
+  EvalRgnStruc = $Kharkov;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Tula
+StartEvent = evt_nam_WHI_Tula_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Tula|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Tula
+  EvalRgnStruc = $Tula;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Saratov
+StartEvent = evt_nam_WHI_Saratov_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Saratov|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Saratov
+  EvalRgnStruc = $Saratov;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Minsk
+StartEvent = evt_nam_WHI_Minsk_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Minsk|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Minsk
+  EvalRgnStruc = $Minsk;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Odessa
+StartEvent = evt_nam_WHI_Odessa_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Odessa|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Odessa
+  EvalRgnStruc = $Odessa;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeWSUPool = 1
+  ChangeRailPool = 5
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $CMN
+SelectRegion = $Taganrog
+
+SelectFaction = $CMN
+SelectRegion = $Taganrog
+StartEvent = evt_nam_WHI_CadetCorpsAcademyCreated1919|1|2|evt_txt_WHI_CadetCorpsAcademyCreated1919|Opt_WHI_CadetCorps|$Taganrog|NULL
+
+Conditions
+  MinDate = 1919/01/01
+
+SelectFaction = $WHI
+
+EvalRgnOwned = $Taganrog
+  Probability = 30
+
+Actions
+
+  CreateStruc
+  SetType = $MILITARYACADEMY
+  SetName = Cadet Corps Academy
+  Apply
+  AddDynGraphic = $Taganrog;Icon_RUS_Land_Academy.png;Icon_RUS_Land_Academy.png;NULL;15;60;strRussianLandAcademy
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+StartEvent = evt_nam_WHI_CadetCorpsAcademy_RplProduction|999|1|NULL|NULL|$Taganrog|NULL
+
+Conditions
+  MinDate = 1919/06/01
+  EvalEvent = evt_nam_WHI_CadetCorpsAcademyCreated1919;=;1
+  TurnIndex = 0;12
+  Probability = 50
+
+EvalRgnOwned = $Taganrog
+  EvalRgnStruc = $Taganrog;FACALL;STRUCDEF $MilitaryAcademy
+
+Actions
+
+SelectFaction = $WHI 
+  Replacement = WHI;$famElite;1
+
+SelectFaction = $WHI
+  ChangeConscriptPool = 5
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+StartEvent = evt_nam_WHI_CadetCorpsAcademyCaptured|1|1|NULL|NULL|$Taganrog|NULL
+
+Conditions
+  MinDate = 1919/05/01
+  EvalEvent = evt_nam_WHI_CadetCorpsAcademyCreated1919;=;1
+
+EvalRgnOwned = $Taganrog;NOT
+
+Actions
+  RemDynGraphic = $Taganrog;Icon_RUS_Land_Academy.png
+
+  ChgEvtOccurs = evt_nam_WHI_CadetCorpsAcademy_RplProduction;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Petrograd
+StartEvent = evt_nam_WHI_NavalAcademy_RplProduction|999|1|NULL|NULL|$Petrograd|NULL
+
+Conditions
+  MinDate = 1919/06/01
+  TurnIndex = 0;12
+  Probability = 10
+
+EvalRgnOwned = $Petrograd
+  EvalRgnStruc = $Petrograd;FACALL;STRUCDEF $MilitaryAcademy
+
+Actions
+
+SelectFaction = $WHI 
+  Replacement = WHI;$famElite;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+StartEvent = evt_nam_WH3_Omsk_RecruitingBarracks_Production|999|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 2;14
+  Probability = 15
+
+EvalRgnOwned = $Omsk
+  EvalRgnStruc = $Omsk;FACALL;STRUCDEF $RecruitingBarracks
+
+Actions
+  ChangeConscriptPool = 15
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Tashkent
+StartEvent = evt_nam_WH3_Tashkent_RecruitingBarracks_Production|999|1|NULL|NULL|$Tashkent|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 2;14
+  Probability = 15
+
+EvalRgnOwned = $Tashkent
+  EvalRgnStruc = $Tashkent;FACALL;STRUCDEF $RecruitingBarracks
+
+Actions
+  ChangeConscriptPool = 5
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WH3
+SelectRegion = $Moscow
+StartEvent = evt_nam_WH3_CentralBank_Production|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;6;12;18
+  Probability = 10
+
+EvalRgnOwned = $Moscow
+  EvalRgnStruc = $Moscow;FACALL;STRUCDEF $CentralBank
+
+Actions
+  ChangeMoneyPool = 100
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WH3
+SelectRegion = $Moscow
+StartEvent = evt_nam_WH3_Moscow_AviationSchool_RplProduction1|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;12
+  Probability = 35
+
+EvalRgnOwned = $Moscow
+  EvalRgnStruc = $Moscow;FACALL;STRUCDEF $AirSchool
+
+Actions
+  Replacement = WH3;$famAirRecon;1
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Moscow
+StartEvent = evt_nam_WH3_Moscow_AviationSchool_RplProduction2|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 6;15
+  Probability = 25
+
+EvalRgnOwned = $Moscow
+  EvalRgnStruc = $Moscow;FACALL;STRUCDEF $AirSchool
+
+Actions
+  Replacement = WH3;$famAirFighter;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WH3
+SelectRegion = $Perm
+StartEvent = evt_nam_WH3_Perm_RiverShipyard_RplProduction|999|1|NULL|NULL|$Perm|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Perm
+  EvalRgnStruc = $Perm;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  ChangeWSUPool = 1
+  Replacement = WH3;$famLitCoastalShip;1
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Nizhniy Novgorod
+StartEvent = evt_nam_WH3_NizhniyNovogorod_RiverShipyard_RplProduction|999|1|NULL|NULL|$Nizhniy Novgorod|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Nizhniy Novgorod
+  EvalRgnStruc = $Nizhniy Novgorod;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = WH3;$famTransportShip;1
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Kazan
+StartEvent = evt_nam_WH3_Kazan_RiverShipyard_RplProduction|999|1|NULL|NULL|$Kazan|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Kazan
+  EvalRgnStruc = $Kazan;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = WH3;$famLitCoastalShip;1
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Tzaritsyn
+StartEvent = evt_nam_WH3_Tzaritsyn_RiverShipyard_RplProduction|999|1|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Tzaritsyn
+  EvalRgnStruc = $Tzaritsyn;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = WH3;$famTransportShip;1
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Astrakhan
+StartEvent = evt_nam_WH3_Astrakhan_RiverShipyard_RplProduction|999|1|NULL|NULL|$Astrakhan|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Astrakhan
+  EvalRgnStruc = $Astrakhan;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  Replacement = WH3;$famTransportShip;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WH3
+SelectRegion = $Irkutsk
+StartEvent = evt_nam_WH3_Irkutsk_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Irkutsk|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Irkutsk
+  EvalRgnStruc = $Irkutsk;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Kazan
+StartEvent = evt_nam_WH3_Kazan_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Kazan|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Kazan
+  EvalRgnStruc = $Kazan;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Ekaterinburg
+StartEvent = evt_nam_WH3_Ekaterinburg_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Ekaterinburg|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Ekaterinburg
+  EvalRgnStruc = $Ekaterinburg;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Kharkov
+StartEvent = evt_nam_WH3_Kharkov_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Kharkov
+  EvalRgnStruc = $Kharkov;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Tula
+StartEvent = evt_nam_WH3_Tula_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Tula|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Tula
+  EvalRgnStruc = $Tula;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Saratov
+StartEvent = evt_nam_WH3_Saratov_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Saratov|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Saratov
+  EvalRgnStruc = $Saratov;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WH3
+SelectRegion = $Warsaw
+StartEvent = evt_nam_POL_Warsaw_RecruitingBarracks_Production|999|1|NULL|NULL|$Warsaw|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 2;14
+  Probability = 15
+
+EvalRgnOwned = $Warsaw
+  EvalRgnStruc = $Warsaw;FACALL;STRUCDEF $RecruitingBarracks
+
+Actions
+  ChangeConscriptPool = 15
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Kiev
+StartEvent = evt_nam_POL_Kiev_RecruitingBarracks_Production|999|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 2;14
+  Probability = 15
+
+EvalRgnOwned = $Kiev
+  EvalRgnStruc = $Kiev;FACALL;STRUCDEF $RecruitingBarracks
+
+Actions
+  ChangeConscriptPool = 5
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WH3
+SelectRegion = $Warsaw
+StartEvent = evt_nam_POL_CentralBank_Production|999|1|NULL|NULL|$Warsaw|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;6;12;18
+  Probability = 10
+
+EvalRgnOwned = $Warsaw
+  EvalRgnStruc = $Warsaw;FACALL;STRUCDEF $CentralBank
+
+Actions
+  ChangeMoneyPool = 100
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WH3
+SelectRegion = $Danzig
+StartEvent = evt_nam_POL_Danzig_RiverShipyard_RplProduction|999|1|NULL|NULL|$Danzig|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 8;18
+  Probability = 50
+
+EvalRgnOwned = $Danzig
+  EvalRgnStruc = $Danzig;FACALL;STRUCDEF $RiverShipyard
+
+Actions
+  ChangeWSUPool = 1
+  Replacement = POL;$famLitCoastalShip;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WH3
+SelectRegion = $Krakow
+StartEvent = evt_nam_POL_Krakow_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Krakow|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Krakow
+  EvalRgnStruc = $Krakow;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Kiev
+StartEvent = evt_nam_POL_Kiev_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;9;15
+  Probability = 50
+
+EvalRgnOwned = $Kiev
+  EvalRgnStruc = $Kiev;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Odessa
+StartEvent = evt_nam_POL_Odessa_RRWorkshop_RailPoolProduction|999|1|NULL|NULL|$Odessa|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  TurnIndex = 0;8;16
+  Probability = 50
+
+EvalRgnOwned = $Odessa
+  EvalRgnStruc = $Odessa;FACALL;STRUCDEF $RailroadWorkshop
+
+Actions
+  ChangeRailPool = 5
+
+EndEvent

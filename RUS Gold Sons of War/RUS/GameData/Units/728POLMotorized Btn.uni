@@ -1,0 +1,16 @@
+UID = 728
+NationTag = POL
+Name = Motorized Btn
+Alias = uni_POL_Btn0
+ForcePool = 10
+ShortName = Mot. Inf. Btn
+Text = $uni_POL_Btn0_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_POL_Inf7|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 3
+Area = $Recruit_Poles
+AltArea = $Area_Galicia

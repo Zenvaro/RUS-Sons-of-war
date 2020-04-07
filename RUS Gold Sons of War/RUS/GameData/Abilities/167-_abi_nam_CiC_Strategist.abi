@@ -1,0 +1,12 @@
+UID = 167
+Name = $abi_nam_CiC_Strategist
+Alias = CiC_Strategist
+Kind = $abiCiCModifiers
+Text = $abi_txt_CiC_Strategist
+ImageID = abi_Bulb.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCCommandLdrLand
+Param1 = 1

@@ -1,0 +1,3511 @@
+NULL ==========================================================================
+
+SelectFaction = $CMN
+
+StartEvent = evt_nam_ResetArmyNearCities|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+SelectFaction = $RED
+
+  SetEvtOccurs = evt_nam_WhiteArmyNearMoscow;CuOccurs;0
+  SetEvtOccurs = evt_nam_WhiteArmyNearPetrograd;CuOccurs;0
+  SetEvtOccurs = evt_nam_WhiteArmyNearTzaritsyn;CuOccurs;0
+  SetEvtOccurs = evt_nam_WhiteArmyNearTula;CuOccurs;0
+  SetEvtOccurs = evt_nam_WhiteArmyNearKharkov;CuOccurs;0
+  SetEvtOccurs = evt_nam_WhiteArmyNearKazan;CuOccurs;0
+
+SelectFaction = $WHI
+
+  SetEvtOccurs = evt_nam_RedArmyNearDzhankoi;CuOccurs;0
+  SetEvtOccurs = evt_nam_RedArmyNearNovorossiysk;CuOccurs;0
+  SetEvtOccurs = evt_nam_RedArmyNearTzaritsyn;CuOccurs;0
+  SetEvtOccurs = evt_nam_RedArmyNearSevastopol;CuOccurs;0
+  SetEvtOccurs = evt_nam_RedArmyNearEkaterinodar;CuOccurs;0
+
+SelectFaction = $WH3
+
+  SetEvtOccurs = evt_nam_RedArmyNearOmsk;CuOccurs;0
+  SetEvtOccurs = evt_nam_RedArmyNearIrkutsk;CuOccurs;0
+  SetEvtOccurs = evt_nam_RedArmyNearEkaterinburg;CuOccurs;0
+
+SelectFaction = $RED
+
+  SetEvtOccurs = evt_nam_WH3ArmyNorthern;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3ArmyCentral_Russia;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3ArmyVolga;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3ArmySouthern;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3ArmyBelarus;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3ArmyUral;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3ArmySiberia;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHIArmyNorthern;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHIArmyCentral_Russia;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHIArmyVolga;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHIArmySouthern;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHIArmyBelarus;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHIArmyUral;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHIArmySiberia;CuOccurs;0
+
+SelectFaction = $WH3
+
+  SetEvtOccurs = evt_nam_RussianArmyNearWarsawWH3;CuOccurs;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_WhiteArmyNearMoscow|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  EvalRgnOwned = $Moscow
+
+SelectFaction = $WHI
+
+  SelectSubUnits = Area $EventArea_Close_to_Moscow;FactionTags WHI WH4 WH5 FIN BAL DON
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+
+StartEvent = evt_nam_WhiteArmyNearPetrograd|1|0|NULL|NULL|$Petrograd|NULL
+
+Conditions
+
+  EvalRgnOwned = $Petrograd
+
+SelectFaction = $WHI
+
+  SelectSubUnits = Area $EventArea_Close_to_Petrograd;FactionTags WHI WH4 WH5 FIN BAL
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_WhiteArmyNearTzaritsyn|1|0|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tzaritsyn
+
+SelectFaction = $WHI
+
+  SelectSubUnits = Area $EventArea_Close_to_Tzaritsyn;FactionTags WHI DON
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tula
+
+StartEvent = evt_nam_WhiteArmyNearTula|1|0|NULL|NULL|$Tula|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tula
+
+SelectFaction = $WHI
+
+  SelectSubUnits = Area $EventArea_Close_to_Tula;FactionTags WHI DON
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_WhiteArmyNearKharkov|1|0|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kharkov
+
+SelectFaction = $WHI
+
+  SelectSubUnits = Area $EventArea_Close_to_Kharkov;FactionTags WHI DON
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kazan
+
+StartEvent = evt_nam_WhiteArmyNearKazan|1|0|NULL|NULL|$Kazan|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kazan
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $EventArea_Close_to_Kazan;FactionTags WH3 WH2
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WH3ArmyNorthern|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Northern;FactionTags WH3 WH2 POL;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WH3ArmyCentral_Russia|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags WH3 WH2 POL;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WH3ArmyVolga|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Volga;FactionTags WH3 WH2 POL;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WH3ArmySouthern|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Southern;FactionTags WH3 WH2 POL;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WH3ArmyBelarus|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Belarus;FactionTags WH3 WH2 POL;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WH3ArmyUral|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Ural;FactionTags WH3 WH2 POL;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WH3ArmySiberia|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Siberia;FactionTags WH3 WH2 POL;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WHIArmyNorthern|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Northern;FactionTags WHI WH4 WH5 FIN BAL DON;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WHIArmyCentral_Russia|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags WHI WH4 WH5 FIN BAL DON;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WHIArmyVolga|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Volga;FactionTags WHI WH4 WH5 FIN BAL DON;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WHIArmySouthern|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Southern;FactionTags WHI WH4 WH5 FIN BAL DON;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WHIArmyBelarus|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Belarus;FactionTags WHI WH4 WH5 FIN BAL DON;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WHIArmyUral|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Ural;FactionTags WHI WH4 WH5 FIN BAL DON;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_WHIArmySiberia|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Siberia;FactionTags WHI WH4 WH5 FIN BAL DON;Families $famLine $famCavalry
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Dzhankoi
+
+StartEvent = evt_nam_RedArmyNearDzhankoi|1|0|NULL|NULL|$Dzhankoi|NULL
+
+Conditions
+
+  EvalRgnOwned = $Dzhankoi
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $EventArea_Close_to_Dzhankoi;FactionTags RED ANA
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novorossiysk
+
+StartEvent = evt_nam_RedArmyNearNovorossiysk|1|0|NULL|NULL|$Novorossiysk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Novorossiysk
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $EventArea_Close_to_Novorossiysk;FactionTags RED ANA
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_RedArmyNearTzaritsyn|1|0|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tzaritsyn
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $EventArea_Close_to_Tzaritsyn;FactionTags RED ANA
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_RedArmyNearSevastopol|1|0|NULL|NULL|$Sevastopol|NULL
+
+Conditions
+
+  EvalRgnOwned = $Sevastopol
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $EventArea_Close_to_Sevastopol;FactionTags RED ANA
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+StartEvent = evt_nam_RedArmyNearEkaterinodar|1|0|NULL|NULL|$Ekaterinodar|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ekaterinodar
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $EventArea_Close_to_Ekaterinodar;FactionTags RED ANA
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_RedArmyNearOmsk|1|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Omsk
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $EventArea_Close_to_Omsk;FactionTags RED
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Irkutsk
+
+StartEvent = evt_nam_RedArmyNearIrkutsk|1|0|NULL|NULL|$Irkutsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Irkutsk
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $EventArea_Close_to_Irkutsk;FactionTags RED
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Ekaterinburg
+
+StartEvent = evt_nam_RedArmyNearEkaterinburg|1|0|NULL|NULL|$Ekaterinburg|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ekaterinburg
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $EventArea_Close_to_Ekaterinburg;FactionTags RED
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_RussianArmyNearWarsawWH3|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Warsaw
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $EventArea_Close_to_Warsaw;FactionTags RED ANA
+  EvalSubUnitCount = >;20
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_AiSetParam_RED|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_AiSetParam_WHI|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;90;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_AiSetParam_WH3|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $COS
+
+StartEvent = evt_nam_AiSetParam_COS|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $KAZ
+
+StartEvent = evt_nam_AiSetParam_KAZ|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $FIN
+
+StartEvent = evt_nam_AiSetParam_FIN|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LIT
+
+StartEvent = evt_nam_AiSetParam_LIT|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LAT
+
+StartEvent = evt_nam_AiSetParam_LAT|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $EST
+
+StartEvent = evt_nam_AiSetParam_EST|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ROM
+
+StartEvent = evt_nam_AiSetParam_ROM|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $AZR
+
+StartEvent = evt_nam_AiSetParam_AZR|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ARM
+
+StartEvent = evt_nam_AiSetParam_ARM|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GEO
+
+StartEvent = evt_nam_AiSetParam_GEO|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $JAP
+
+StartEvent = evt_nam_AiSetParam_JAP|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_AiSetParam_UKR|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_AiSetParam_ANA|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GRN
+
+StartEvent = evt_nam_AiSetParam_GRN|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_AiSetParam_POL|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GER
+
+StartEvent = evt_nam_AiSetParam_GER|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  AI.SetParams = aiLRV_HarborValCoef;80;aiLRV_RailVal;20;aiLRV_DestRailVal;13;aiCLR_WinterQuarters;1
+
+EndEvent
+
+NULL ==========================================================================
+
+ANAAI.sct
+KAZAI.sct
+COSAI.sct
+JAPAI.sct
+ESTAI.sct
+LATAI.sct
+LITAI.sct
+GEOAI.sct
+ARMAI.sct
+AZRAI.sct
+FINAI.sct
+ROMAI.sct
+GRNAI.sct
+UKRAI.sct
+REDPolishrussowar.sct
+REDPolishrussowar2.sct
+AIAggro_WHI.sct
+AIAggro_Red.sct
+AIAggro_WH3.sct
+POLAI.sct
+POLAI_2.sct
+GERAI.sct
+Allies Withdraw.sct
+RUS FlavorEvents.sct
+RUS All Scenarios.sct
+RUS F3 Options Reinforcements.sct
+RUS F4 Options Politics.sct
+RUS F5 Diplomatic Options RED-DOWs.sct
+RUS F5 Diplomatic Options WHI-DOWs.sct
+RUS F6 Options Various.sct
+RUS F6 Options Various RED.sct
+RomaniaSetup.sct
+BalticSetup.sct
+FinlandSetup.sct
+CaucasusSetup.sct
+RUS Poland Auto DOW.sct
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+
+StartEvent = evt_nam_ActivateMapAleas|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+  AddMapAlea = $Area_Black_Sea;$aleWinterSeaStorm;0
+  AddMapAlea = $Area_Baltic_Sea;$aleWinterSeaStorm;0
+  AddMapAlea = $Area_Caspian_Sea;$aleWinterSeaStorm;0
+  AddMapAlea = $Area_Northern_Seas;$aleWinterSeaStorm;0
+  AddMapAlea = $Area_Mediterranean_Sea;$aleWinterSeaStorm;0
+  AddMapAlea = $Area_Black_Sea;$aleSpringFallSeaStorm;0
+  AddMapAlea = $Area_Baltic_Sea;$aleSpringFallSeaStorm;0
+  AddMapAlea = $Area_Caspian_Sea;$aleSpringFallSeaStorm;0
+  AddMapAlea = $Area_Northern_Seas;$aleSpringFallSeaStorm;0
+  AddMapAlea = $Area_Mediterranean_Sea;$aleSpringFallSeaStorm;0
+  AddMapAlea = $Area_Black_Sea;$aleSummerSeaStorm;0
+  AddMapAlea = $Area_Baltic_Sea;$aleSummerSeaStorm;0
+  AddMapAlea = $Area_Caspian_Sea;$aleSummerSeaStorm;0
+  AddMapAlea = $Area_Northern_Seas;$aleSummerSeaStorm;0
+  AddMapAlea = $Area_Mediterranean_Sea;$aleSummerSeaStorm;0
+  AddMapAlea = $area_Weather_Subarctic;$aleStorm;0
+  AddMapAlea = $area_Weather_NorthContinental;$aleStorm;0
+  AddMapAlea = $area_Weather_European;$aleStorm;0
+  AddMapAlea = $area_Weather_SouthContinental;$aleStorm;0
+  AddMapAlea = $area_Weather_Steppe;$aleStorm;0
+  AddMapAlea = $area_Weather_Caucasus;$aleStorm;0
+  AddMapAlea = $area_Weather_DeserticSteppe;$aleSandstorm;0
+  AddMapAlea = $area_Weather_SiberianSteppe;$aleStorm;0
+  AddMapAlea = $area_Weather_EasternSiberian;$aleStorm;0
+  AddMapAlea = $area_Weather_CentralAsian;$aleStorm;0
+  AddMapAlea = $area_Weather_Subarctic;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_NorthContinental;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_European;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_SouthContinental;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_Steppe;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_Caucasus;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_DeserticSteppe;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_SiberianSteppe;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_EasternSiberian;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_CentralAsian;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_Subarctic;$aleMildDisease;0
+  AddMapAlea = $area_Weather_NorthContinental;$aleMildDisease;0
+  AddMapAlea = $area_Weather_European;$aleMildDisease;0
+  AddMapAlea = $area_Weather_SouthContinental;$aleMildDisease;0
+  AddMapAlea = $area_Weather_Steppe;$aleMildDisease;0
+  AddMapAlea = $area_Weather_Caucasus;$aleMildDisease;0
+  AddMapAlea = $area_Weather_DeserticSteppe;$aleMildDisease;0
+  AddMapAlea = $area_Weather_SiberianSteppe;$aleMildDisease;0
+  AddMapAlea = $area_Weather_EasternSiberian;$aleMildDisease;0
+  AddMapAlea = $area_Weather_CentralAsian;$aleMildDisease;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_AIcareTzaritsyn|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Tzaritsyn;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_AIcareRostov|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Rostov;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AIcareSamara|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Samara;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AIcareSaratov|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Saratov;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AIcareUfa|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Ufa;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AIcareChelyabinsk|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Chelyabinsk;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AIcareOmsk|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Omsk;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_AIcareArkhangelsk|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Arkhangelsk;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_AIcareKotlas|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Kotlas;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AIcareViatka|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Viatka;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AIcareSPerm|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Perm;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AIcareEkaterinburg|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Ekaterinburg;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_AIcareMozyr|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Mozyr;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_AIcareKhmelnik|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Khmelnik;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_AIcareRowno|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Rowno;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_AIcareKorosteni|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Korosteni;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_AIcareVinnytsia|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Vinnytsia;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_AIcareBerdychev|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Berdychev;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_AIcareZhitomir|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Zhitomir;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_AIcareKiev|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Kiev;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_BilaTsverka|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Bila Tsverka;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Balta|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Balta;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Ouman|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Ouman;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Cherkasy|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Cherkasy;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Odessa|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Odessa;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Tiraspol|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Tiraspol;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Kherson|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Kherson;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Ekaterinoslav|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Ekaterinoslav;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_KrivoiRog|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Krivoi Rog;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Oleksandria|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Oleksandria;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Oleksandria|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Oleksandria;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Odessa|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Odessa;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Tiraspol|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Tiraspol;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Kherson|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Kherson;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Ekaterinoslav|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Ekaterinoslav;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_KrivoiRog|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Krivoi Rog;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Nikopol|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Nikopol;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Elizavetgrad|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Elizavetgrad;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Lyssytchansk|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Lyssytchansk;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Lugansk|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Lugansk;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Donetsk|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Donetsk;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Makeievka|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Makeievka;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Alexandrovsk|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Alexandrovsk;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Shaplino|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Shaplino;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Mariupol|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Mariupol;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Huliaipole|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Huliaipole;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Sevastopol|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  EvalEvent = evt_nam_RED_BreakAlliance_ANA_Generate;>=;1
+  EvalEvent = evt_nam_BreakANA_Alliance_Checked;=;0
+  MinDate = 1918/01/01
+  MaxDate = 1922/12/25
+
+Actions
+
+  AI.SetLocalInterest = $Sevastopol;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader1|1|1|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  MinDate = 1918/01/01
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH2_Bakich1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader2|1|1|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  MinDate = 1918/01/01
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH2_Kappel1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader3|1|1|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  MinDate = 1918/01/01
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH2_Makhin1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader4|1|1|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  MinDate = 1918/01/01
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH2_Liupov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader5|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/01/01
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH3_Matkovsky1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader6|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/01/01
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH3_Tolstov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader7|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/01/01
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH3_Zhukov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader8|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/01/01
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH3_Ellerts-Ussov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader9|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/01/01
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH3_Sukhin1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader10|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH3_Gulidov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader11|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH3_Voitsekhovski1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader12|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH3_Diterikhs1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader13|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH3_Glolitsyn1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader14|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH3_Panov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader15|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH3_Matsievsky1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader16|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH3_Grivin1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Auto_Corps_Leader17|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH3_Tseretely1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader1|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;0
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;0
+  Probability = 35
+  SelectSubUnits = Models $ldr_DON_Sekretev1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader2|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;0
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;0
+  Probability = 35
+  SelectSubUnits = Models $ldr_DON_Ivanov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader3|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;0
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;0
+  Probability = 35
+  SelectSubUnits = Models $ldr_DON_Mamontov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader4|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Erdeli1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader5|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;0
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;0
+  Probability = 35
+  SelectSubUnits = Models $ldr_DON_Fitskhelaurov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader6|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;0
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;0
+  Probability = 35
+  SelectSubUnits = Models $ldr_DON_Poliakov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader7|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Mai-Maievski1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader8|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH4_Bulak-Balakovich1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader9|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WH5_Skobeltsyn1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader10|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Kutepov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader11|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Ulagai1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader12|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Pokrovsky1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader13|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Udovenko1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader14|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Drozdovsky1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader15|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Wrangel1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader16|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Shilling1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader17|1|1|NULL|NULL|$Sevastopol |NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;0
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;0
+  Probability = 35
+  SelectSubUnits = Models $ldr_DON_Abramov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader18|1|1|NULL|NULL|$Sevastopol |NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Kryzhanovsky1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader19|1|1|NULL|NULL|$Sevastopol |NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Markov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader20|1|1|NULL|NULL|$Sevastopol |NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Shkuro1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader21|1|1|NULL|NULL|$Sevastopol |NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Koshelev1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader22|1|1|NULL|NULL|$Sevastopol |NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Belsky1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader23|1|1|NULL|NULL|$Sevastopol |NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Promtov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader24|1|1|NULL|NULL|$Sevastopol |NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Yuzefovich1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_Auto_Corps_Leader25|1|1|NULL|NULL|$Sevastopol |NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_WHI_Slashev1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader1|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  EvalUnqUnit = V. Grittis;NOT
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader2|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Chervanin1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader3|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Slaven1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader4|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Bliumberg1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader5|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Samoylo1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader6|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Egorov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader7|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Kork1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader8|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Khudiakov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader9|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Matsiletsky1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader10|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Avksentevski1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader11|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Iskritsky1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader12|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Mezheninov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader13|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Fedko1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader14|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Stepanov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader15|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/01/30
+  MaxDate = 1918/10/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Lashevich1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader16|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Liubimov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader17|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Vassiliev1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader18|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Remezov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader19|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/06/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Kniaginsky1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader21|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Gekker1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader22|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Ieremeev1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader23|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Sollogub1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader24|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Khvesin1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader25|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Shorin1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader26|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Budyenny1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader27|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Zhdanov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader28|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  EvalUnqUnit = A. Rzhevsky;NOT
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader29|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1919/06/30
+  MaxDate = 1919/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Ghai-Khan1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader30|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Lazarevich1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader31|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_I.N.Smirnov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader32|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Gorodovikov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader33|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Kirov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader34|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Avtonomov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader35|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Smirnov1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader36|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Sablin1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Auto_Corps_Leader37|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  Probability = 35
+  SelectSubUnits = Models $ldr_RED_Blucher1
+  EvalSubUnitSel = NULL
+
+Actions
+
+  AlterCuSubUnit = ApplyToList;Convert TechUpg
+
+EndEvent
+
+NULL ==========================================================================
+

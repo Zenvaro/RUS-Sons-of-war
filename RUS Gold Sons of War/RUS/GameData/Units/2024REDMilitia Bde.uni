@@ -1,0 +1,16 @@
+UID = 2024
+NationTag = RED
+Name = Militia
+Alias = uni_RED_MBde4
+ForcePool = 6
+ShortName = Militia
+Text = $uni_RED_Mil6_txt
+Color = $colREDMilitia
+SymbolID = symbol_DivMil.png
+ModelType0 = $mdl_RED_Mil1|2
+FamilyType0 = $famMilitia|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = Militia

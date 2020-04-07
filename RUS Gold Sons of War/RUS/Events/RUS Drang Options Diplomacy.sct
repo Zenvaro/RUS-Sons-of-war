@@ -1,0 +1,822 @@
+  NULL = NULL
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_FinlandArmSales1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ArmoredCars5.png;Title;opt_title_GER_FinlandArmSales1;MsgString;opt_desc_GER_FinlandArmSales1;ToolString;opt_hint_GER_FinlandArmSales1;SubType;GER_FinlandArmSales1;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_FinlandArmSales1|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+  NotEnemy = $Helsinki
+  MinDate = 1921/01/01
+  CheckOption = $gmaOptionDip;GER_FinlandArmSales1;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeWSUPool = -10
+  ChangeMoneyPool = 50
+  ChangeFacMorale = 1
+  ChgVPCount = 5
+  SetCohesion = 50
+
+SelectRegion = $Helsinki
+
+SelectFaction = $GER
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = German Vehicles
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Amc1
+  NumCreate = 2
+  SetName = Armored Cars
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Tru
+  NumCreate = 2
+  SetName = Trucks
+  Apply
+  SetCohesion = 100
+  Replacement = FIN;$famLine;3
+  Replacement = FIN;$famLightInf;1
+  Replacement = FIN;$famLightArty;2
+  Replacement = FIN;$famMedArty;2
+  Replacement = FIN;$famLtVehicle;2
+  Replacement = FIN;$famService;2
+  GenTextMsg  = opt_notify_GER_FinlandArmSales1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GER_FinlandArmSales1;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_FinlandArmSales1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_FinlandArmSales1_Regen|6|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 12;0
+  ActorDisabled = $gmaOptionDip;GER_FinlandArmSales1
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_GER_FinlandArmSales1_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ArmoredCars5.png;Title;opt_title_GER_FinlandArmSales1;MsgString;opt_desc_GER_FinlandArmSales1;ToolString;opt_hint_GER_FinlandArmSales1;SubType;GER_FinlandArmSales1;SParam1;GER
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_FinlandAircraftVolunteers_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_GER_Aircrafts.png;Title;opt_title_GER_FinlandAircraftVolunteers;MsgString;opt_desc_GER_FinlandAircraftVolunteers;ToolString;opt_hint_GER_FinlandAircraftVolunteers;SubType;GER_FinlandAircraftVolunteers;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_FinlandAircraftVolunteers|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  NotEnemy = $Helsinki
+  CheckOption = $gmaOptionDip;GER_FinlandAircraftVolunteers;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;15
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -15
+  ChangeFacMorale = 2
+  ChgVPCount = 10
+  SetHealth = 25
+  SetCohesion = 25
+
+SelectFaction = $GER
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 2
+  SetName = German Pilot Volunteers
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bas1
+  SUFlavorName = Volunteers Airfield|7th Finnish Air Sqd.|8th Finnish Air Squadron|9th Finnish Air Squadron
+  SetName = Volunteers Airbase
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+  GenTextMsg  = opt_notify_GER_FinlandAircraftVolunteers;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GER_FinlandAircraftVolunteers;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_FinlandAircraftVolunteers
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BalticArmSales1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ArmoredCars3.png;Title;opt_title_GER_BalticArmSales1;MsgString;opt_desc_GER_BalticArmSales1;ToolString;opt_hint_GER_BalticArmSales1;SubType;GER_BalticArmSales1;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BalticArmSales1|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+  NotEnemy = $Riga
+  CheckOption = $gmaOptionDip;GER_BalticArmSales1;=;1
+  EvalEngagementPts = >=;5
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeWSUPool = -10
+  ChangeMoneyPool = 50
+  ChangeFacMorale = 1
+  ChgVPCount = 5
+  SetCohesion = 50
+
+SelectRegion = $Riga
+
+SelectFaction = $GER
+SelectRegion = $Riga
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = German Vehicles
+  Apply
+  CreateUnit
+  SetType = $uni_BAL_Amc1
+  SetName = Armored Cars
+  Apply
+  SetCohesion = 100
+  Replacement = BAL;$famLine;3
+  Replacement = BAL;$famLightInf;1
+  Replacement = BAL;$famLightArty;2
+  Replacement = BAL;$famMedArty;2
+  Replacement = BAL;$famLtVehicle;2
+  Replacement = BAL;$famService;2
+  GenTextMsg  = opt_notify_GER_BalticArmSales1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GER_BalticArmSales1;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_BalticArmSales1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BalticArmSales1_Regen|6|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 12;0
+  ActorDisabled = $gmaOptionDip;GER_BalticArmSales1
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_GER_BalticArmSales1;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ArmoredCars3.png;Title;opt_title_GER_BalticArmSales1;MsgString;opt_desc_GER_BalticArmSales1;ToolString;opt_hint_GER_BalticArmSales1;SubType;GER_BalticArmSales1;SParam1;GER
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BalticAircraftVolunteers_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Aircrafts.png;Title;opt_title_GER_BalticAircraftVolunteers;MsgString;opt_desc_GER_BalticAircraftVolunteers;ToolString;opt_hint_GER_BalticAircraftVolunteers;SubType;GER_BalticAircraftVolunteers;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BalticAircraftVolunteers|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  NotEnemy = $Riga
+  CheckOption = $gmaOptionDip;GER_BalticAircraftVolunteers;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;15
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -15
+  ChangeFacMorale = 2
+  ChgVPCount = 10
+  SetHealth = 25
+  SetCohesion = 25
+
+SelectFaction = $GER
+SelectRegion = $Riga
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 2
+  SetName = German Pilot Volunteers
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bas1
+  SUFlavorName = Volunteers Airfield|7th Balt Air Sqd.|8th Balt Air Squadron|9th Balt Air Squadron
+  SetName = Volunteers Airbase
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+  GenTextMsg  = opt_notify_GER_BalticAircraftVolunteers;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GER_BalticAircraftVolunteers;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_BalticAircraftVolunteers
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_UkraineArmSales1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ArmoredCars6.png;Title;opt_title_GER_UkraineArmSales1;MsgString;opt_desc_GER_UkraineArmSales1;ToolString;opt_hint_GER_UkraineArmSales1;SubType;GER_UkraineArmSales1;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_UkraineArmSales1|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+  NotEnemy = $Kiev
+  CheckOption = $gmaOptionDip;GER_UkraineArmSales1;=;1
+  EvalEngagementPts = >=;5
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeWSUPool = 5
+  ChangeMoneyPool = 100
+  SetCohesion = 50
+
+SelectRegion = $Kiev
+
+SelectFaction = $GER
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = German Vehicles
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Amc1
+  SetName = Armored Cars
+  Apply
+  SetCohesion = 100
+  Replacement = UKR;$famLine;3
+  Replacement = UKR;$famLightInf;1
+  Replacement = UKR;$famLightArty;2
+  Replacement = UKR;$famMedArty;2
+  Replacement = UKR;$famLtVehicle;2
+  Replacement = UKR;$famService;2
+  GenTextMsg  = opt_notify_GER_UkraineArmSales1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GER_UkraineArmSales1;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_UkraineArmSales1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_UkraineArmSales1_Regen|6|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 12;0
+  ActorDisabled = $gmaOptionDip;GER_UkraineArmSales1
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_GER_UkraineArmSales1;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ArmoredCars6.png;Title;opt_title_GER_UkraineArmSales1;MsgString;opt_desc_GER_UkraineArmSales1;ToolString;opt_hint_GER_UkraineArmSales1;SubType;GER_UkraineArmSales1;SParam1;GER
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_CaucasusArmSales1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ArmoredCars2.png;Title;opt_title_GER_CaucasusArmSales1;MsgString;opt_desc_GER_CaucasusArmSales1;ToolString;opt_hint_GER_CaucasusArmSales1;SubType;GER_CaucasusArmSales1;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_CaucasusArmSales1|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+  NotEnemy = $Tiflis
+  CheckOption = $gmaOptionDip;GER_CaucasusArmSales1;=;1
+  EvalEngagementPts = >=;5
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeWSUPool = -5
+  ChangeMoneyPool = 30
+  SetCohesion = 50
+
+SelectRegion = $Tiflis
+
+SelectFaction = $GER
+SelectRegion = $Tiflis
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = German Vehicles
+  Apply
+  CreateUnit
+  SetType = $uni_CAU_Amc
+  SetName = Armored Cars
+  Apply
+  SetCohesion = 100
+  Replacement = CAU;$famLine;3
+  Replacement = CAU;$famLightInf;1
+  Replacement = CAU;$famLightArty;2
+  Replacement = CAU;$famMedArty;2
+  Replacement = CAU;$famLtVehicle;2
+  Replacement = CAU;$famService;2
+  GenTextMsg  = opt_notify_GER_CaucasusArmSales1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GER_CaucasusArmSales1;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_CaucasusArmSales1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_CaucasusArmSales1_Regen|6|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 12;0
+  ActorDisabled = $gmaOptionDip;GER_CaucasusArmSales1
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_GER_CaucasusArmSales1;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ArmoredCars2.png;Title;opt_title_GER_CaucasusArmSales1;MsgString;opt_desc_GER_CaucasusArmSales1;ToolString;opt_hint_GER_CaucasusArmSales1;SubType;GER_CaucasusArmSales1;SParam1;GER
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_WhitesArmSales1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ArmoredCars4.png;Title;opt_title_GER_WhitesArmSales1;MsgString;opt_desc_GER_WhitesArmSales1;ToolString;opt_hint_GER_WhitesArmSales1;SubType;GER_WhitesArmSales1;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_WhitesArmSales1|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionDip;GER_WhitesArmSales1;=;1
+  EvalEngagementPts = >=;5
+  MinDate = 1921/01/01
+
+SelectFaction = $WHI
+  NotEnemy = $Novorossiysk
+
+Actions
+
+SelectFaction = $GER
+  ChgFacEngagementPts = -5
+  ChangeWSUPool = -5
+  ChangeMoneyPool = 50
+  ChgVPCount = -5
+  SetCohesion = 50
+
+SelectFaction = $WHI
+SelectRegion = $Novorossiysk
+
+SelectRegion = $Novorossiysk
+
+SelectFaction = $WHI
+SelectRegion = $Novorossiysk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = German Vehicles
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Amc1
+  SetName = Armored Cars
+  Apply
+  SetCohesion = 100
+  Replacement = WHI;$famLine;3
+  Replacement = WHI;$famLightInf;1
+  Replacement = WHI;$famLightArty;2
+  Replacement = WHI;$famMedArty;2
+  Replacement = WHI;$famLtVehicle;2
+  Replacement = WHI;$famService;2
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_WhitesArmSales1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GER_WhitesArmSales1;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_WhitesArmSales1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_WhitesArmSales1_Regen|6|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 12;0
+  ActorDisabled = $gmaOptionDip;GER_WhitesArmSales1
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_GER_WhitesArmSales1;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ArmoredCars4.png;Title;opt_title_GER_WhitesArmSales1;MsgString;opt_desc_GER_WhitesArmSales1;ToolString;opt_hint_GER_WhitesArmSales1;SubType;GER_WhitesArmSales1;SParam1;GER
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_NewDivisionFinland_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_GER_FinnishDiv.png;Title;opt_title_GER_NewDivisionFinland;MsgString;opt_desc_GER_NewDivisionFinland;ToolString;opt_hint_GER_NewDivisionFinland;SubType;GER_NewDivisionFinland;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_NewDivisionFinland_Check|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionDip;GER_NewDivisionFinland;=;1
+  EvalEngagementPts = >=;5
+  EvalReplacement = FIN;$famLine;>=;6
+  EvalReplacement = FIN;$famMedArty;>=;2
+  EvalReplacement = FIN;$famEngineer;>=;1
+  NotEnemy = $Helsinki
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = 2
+  Replacement = FIN;$famLine;-6
+  Replacement = FIN;$famMedArty;-2
+  Replacement = FIN;$famEngineer;-1
+  SetCohesion = 50
+
+SelectRegion = $Helsinki
+
+SelectFaction = $GER
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = 6th Division
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Div1
+  SetName = 6th Division
+  Apply
+  SetCohesion = 100
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_NewDivisionFinland;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_NewDivisionFinland;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_NewDivisionFinland
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_NewDivisionBaltics_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_GER_BalticDiv.png;Title;opt_title_GER_NewDivisionBaltics;MsgString;opt_desc_GER_NewDivisionBaltics;ToolString;opt_hint_GER_NewDivisionBaltics;SubType;GER_NewDivisionBaltics;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_NewDivisionBaltics_Check|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionDip;GER_NewDivisionBaltics;=;1
+  EvalEngagementPts = >=;5
+  EvalReplacement = BAL;$famLine;>=;6
+  EvalReplacement = BAL;$famMedArty;>=;2
+  NotEnemy = $Riga
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = 2
+  Replacement = BAL;$famLine;-6
+  Replacement = BAL;$famMedArty;-2
+  Replacement = BAL;$famEngineer;-1
+  SetCohesion = 50
+
+SelectRegion = $Riga
+
+SelectFaction = $GER
+SelectRegion = $Riga
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = 6th Division
+  Apply
+  CreateUnit
+  SetType = $uni_BAL_Div1
+  SetName = 6th Division
+  Apply
+  SetCohesion = 100
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_NewDivisionBaltics;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_NewDivisionBaltics;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_NewDivisionBaltics
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_SignAlliance_WHI_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEngagementPts = >=;10
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Event-img_CMN_YudenichArrives.png;Title;opt_title_GER_SignAlliance_WHI;MsgString;opt_desc_GER_SignAlliance_WHI;ToolString;opt_hint_GER_SignAlliance_WHI;SubType;GER_SignAlliance_WHI;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_SignAlliance_WHI_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionDip;GER_SignAlliance_WHI;=;1
+
+Actions
+  ChangeFacMorale = -10
+  ChgFacEngagementPts = -10
+  ChgVPCount = -25
+
+SelectFaction = $RED
+  ChangeFacMorale = 10
+
+SelectFaction = $GER
+  SetFacRelationships = WHI;40
+  GenTextMsg  = opt_notify_GER_SignAlliance_WHI;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_CMN_SignAlliance_WHI;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  SetEvtOccurs = evt_nam_GER_BreakAlliance_WHI_ON;MaxOccurs;1
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_SignAlliance_WHI
+  SetEvtOccurs = evt_nam_GER_AllianceWithWhites;MaxOccurs;999
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_AllianceWithWhites|0|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+  ChangeFacMorale = -1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BreakAlliance_WHI_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_AllianceWithWhites;>=;1
+  EvalEngagementPts = >=;10
+
+SelectFaction = $WHI
+
+EvalRgnOwned = $Sevastopol
+
+EvalRgnOwned = $Rostov
+
+EvalRgnOwned = $Tzaritsyn
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Event-img_CMN_FiringSquad.png;Title;opt_title_GER_BreakAlliance_WHI;MsgString;opt_desc_GER_BreakAlliance_WHI;ToolString;opt_hint_GER_BreakAlliance_WHI;SubType;GER_BreakAlliance_WHI;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BreakAlliance_WHI_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionDip;GER_BreakAlliance_WHI;=;1
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = 1
+  ChgVPCount = -25
+  GenTextMsg  = opt_notify_GER_BreakAlliance_WHI;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_CMN_BreakAlliance_WHI;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_BreakAlliance_WHI
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;GER_SignAlliance_WHI
+  SetEvtOccurs = evt_nam_GER_AllianceWithWhites;MaxOccurs;0
+  SetEvtOccurs = evt_nam_GER_AllianceWithWhitesBroken;MaxOccurs;1
+  SetFacRelationships = WHI;-100
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_AllianceWithWhitesBroken|0|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+SelectFaction = $RED
+  ChangeFacMorale = 2
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignAlliance_ANA_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEngagementPts = >=;10
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Event-img_Renforts_CMN_AnarchistWarbands.png;Title;opt_title_RED_SignAlliance_ANA;MsgString;opt_desc_RED_SignAlliance_ANA;ToolString;opt_hint_RED_SignAlliance_ANA;SubType;RED_SignAlliance_ANA;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignAlliance_ANA_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionDip;RED_SignAlliance_ANA;=;1
+
+Actions
+  ChangeFacMorale = -10
+  ChgFacEngagementPts = -10
+  SetFacRelationships = ANA;20
+  GenTextMsg  = opt_notify_RED_SignAlliance_ANA;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_CMN_SignAlliance_ANA;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  SetEvtOccurs = evt_nam_RED_BreakAlliance_ANA_ON;MaxOccurs;1
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_SignAlliance_ANA
+  SetEvtOccurs = evt_nam_RED_AllianceWithAnarchists;MaxOccurs;999
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_AllianceWithAnarchists|0|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+  ChangeFacMorale = -1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakAlliance_ANA_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_RED_AllianceWithAnarchists;>=;1
+  EvalEngagementPts = >=;10
+
+Actions
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Event-img_CMN_FiringSquad.png;Title;opt_title_RED_BreakAlliance_ANA_DNO;MsgString;opt_desc_RED_BreakAlliance_ANA_DNO;ToolString;opt_hint_RED_BreakAlliance_ANA_DNO;SubType;RED_BreakAlliance_ANA;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakAlliance_ANA_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionDip;RED_BreakAlliance_ANA;=;1
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = 1
+  GenTextMsg  = opt_notify_RED_BreakAlliance_ANA_DNO;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_CMN_BreakAlliance_ANA_DNO;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakAlliance_ANA
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_SignAlliance_ANA
+  SetFacRelationships = ANA;-100
+  SetEvtOccurs = evt_nam_RED_AllianceWithAnarchists;MaxOccurs;0
+
+EndEvent

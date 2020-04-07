@@ -1,0 +1,10 @@
+UID = 134
+Name = $abi_nam_Retreater
+Alias = Retreater
+Kind = $abiFlavor
+Text = $abi_txt_Retreater
+ImageID = abi_Retreater.png
+Color = $colAbi_Green
+Appliance = Leader
+Family = 0
+Level = 1

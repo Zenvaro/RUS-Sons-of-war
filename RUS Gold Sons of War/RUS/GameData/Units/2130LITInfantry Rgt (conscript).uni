@@ -1,0 +1,16 @@
+UID = 2130
+NationTag = LIT
+Name = Infantry Rgt
+Alias = uni_LIT_Rgt1
+ForcePool = -1
+ShortName = Inf. Rgt.
+Text = $uni_BAL_Rgt0_txt
+Color = $colLITRegular 
+ModelType0 = $mdl_LIT_Inf3|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Lithuania
+AltArea = $Area_Vilnius

@@ -1,0 +1,17 @@
+UID = 67
+NationTag = RED
+Name = ChON
+Alias = uni_RED_Cka
+ForcePool = 100
+ShortName = ChON. Rgt.
+Text = $uni_RED_Cka_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Inf13|1
+ModelType1 = $mdl_RED_Pol|1
+FamilyType0 = $famLine|1
+FamilyType1 = $famNavalEngineer|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st ChON Dcht|2nd ChON Dcht|3rd ChON Dcht|4th ChON Dcht|5th ChON Dcht|6th ChON Dcht|7th ChON Dcht|8th ChON Dcht|9th ChON Dcht|10th ChON Dcht|11th ChON Dcht|12th ChON Dcht|13th ChON Dcht|14th ChON Dcht|15th ChON Dcht|16th ChON Dcht|17th ChON Dcht|18th ChON Dcht|19th ChON Dcht|20th ChON Dcht|21st ChON Dcht|22nd ChON Dcht|23rd ChON Dcht|24th ChON Dcht|25th ChON Dcht|26th ChON Dcht|27th ChON Dcht|28th ChON Dcht|29th ChON Dcht|30th ChON Dcht|31st ChON Dcht|32nd ChON Dcht|33rd ChON Dcht|34th ChON Dcht|35th ChON Dcht|36th ChON Dcht|37th ChON Dcht|38th ChON Dcht|39th ChON Dcht|40th ChON Dcht|41st ChON Dcht|42nd ChON Dcht|43rd ChON Dcht|44th ChON Dcht|45th ChON Dcht|46th ChON Dcht|47th ChON Dcht|48th ChON Dcht|49th ChON Dcht|50th ChON Dcht

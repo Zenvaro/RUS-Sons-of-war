@@ -1,0 +1,17 @@
+UID = 430
+NationTag = FIN
+Name = White Guards
+Alias = uni_FIN_Mil2
+ForcePool = 12
+ShortName = Militia
+Text = $uni_FIN_Mil2_txt
+Color = $colFINMilitia
+SymbolID = symbol_militias.png
+ModelType0 = $mdl_FIN_Mil2|2
+FamilyType0 = $famMilitia|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Finns
+CustomNames = 1st White Guards Dcht|2nd White Guards Dcht|3rd White Guards Dcht|4th White Guards Dcht|5th White Guards Dcht|6th White Guards Dcht|7th White Guards Dcht|8th White Guards Dcht|9th White Guards Dcht|10th White Guards Dcht|11th White Guards Dcht|12th White Guards Dcht|13th White Guards Dcht|14th White Guards Dcht|15th White Guards Dcht|16th White Guards Dcht|17th White Guards Dcht|18th White Guards Dcht|19th White Guards Dcht|20th White Guards Dcht|21st White Guards Dcht|22nd White Guards Dcht|23rd White Guards Dcht|24th White Guards Dcht|25th White Guards Dcht|26th White Guards Dcht|27th White Guards Dcht|28th White Guards Dcht|29th White Guards Dcht|30th White Guards Dcht|31st White Guards Dcht|32nd White Guards Dcht|33rd White Guards Dcht|34th White Guards Dcht|35th White Guards Dcht|36th White Guards Dcht|37th White Guards Dcht|38th White Guards Dcht|39th White Guards Dcht|40th White Guards Dcht|41st White Guards Dcht|42nd White Guards Dcht|43rd White Guards Dcht|44th White Guards Dcht|45th White Guards Dcht|46th White Guards Dcht|47th White Guards Dcht|48th White Guards Dcht|49th White Guards Dcht|50th White Guards Dcht

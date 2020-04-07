@@ -1,0 +1,9 @@
+UID = 12
+Alias = resWSU
+Name = $res_nam_WSU
+ShortName = $res_shortnam_WSU
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *WSUAsset*

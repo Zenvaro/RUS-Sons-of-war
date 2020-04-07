@@ -1,0 +1,15 @@
+UID = 83
+NationTag = RED
+Name = Turkmen Rgt (cavalry)
+Alias = uni_RED_Cav8
+ForcePool = 30
+ShortName = Turk. Cav. Rgt.
+Text = $uni_RED_Cav8_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Cav5|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Central_Asia

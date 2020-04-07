@@ -1,0 +1,14 @@
+UID = 163
+NationTag = RED
+Name = Kulaks
+Alias = uni_RED_Sla
+ShortName = Kulaks
+Text = $uni_RED_Sla_txt
+Color = $colREDMilitia
+ModelType0 = $mdl_RED_Kul|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 60
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Russians

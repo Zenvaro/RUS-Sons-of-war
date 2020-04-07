@@ -1,0 +1,16 @@
+UID = 492
+NationTag = GER
+Name = Fort Garrison
+Alias = uni_GER_Gar0
+ForcePool = -1
+ShortName = Fort Gar.
+Text = $uni_GER_Gar0_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Inf8|3
+FamilyType0 = $famLine|3
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = 1. Festung-Regiment|2. Festung-Regiment|3. Festung-Regiment|4. Festung-Regiment|5. Festung-Regiment|6. Festung-Regiment|7. Festung-Regiment|8. Festung-Regiment|9. Festung-Regiment|10. Festung-Regiment|11. Festung-Regiment|12. Festung-Regiment|13. Festung-Regiment|14. Festung-Regiment|15. Festung-Regiment|16. Festung-Regiment|17. Festung-Regiment|18. Festung-Regiment|19. Festung-Regiment|20. Festung-Regiment

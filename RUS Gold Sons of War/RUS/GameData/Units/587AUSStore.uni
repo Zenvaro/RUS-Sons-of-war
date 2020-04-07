@@ -1,0 +1,15 @@
+UID = 587
+NationTag = AUS
+Name = Store
+Alias = uni_AUS_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_AUS_Sup2_txt
+Color = $colAUSRegular 
+ModelType0 = $mdl_AUS_Store|8
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1
+Area = $Recruit_Austrians

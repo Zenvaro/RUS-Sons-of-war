@@ -1,0 +1,16 @@
+UID = 850
+NationTag = GBR
+Name = Infantry Bde (Guards)
+Alias = uni_GBR_Bde0
+ForcePool = 6
+ShortName = Inf. Bde.
+Text = $uni_GBR_Bde0_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Inf2|4
+ModelType1 = $mdl_GBR_Art4|1
+FamilyType0 = $famElite|4
+FamilyType1 = $famMedArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

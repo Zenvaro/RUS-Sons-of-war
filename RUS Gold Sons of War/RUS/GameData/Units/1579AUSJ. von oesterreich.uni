@@ -1,0 +1,17 @@
+UID = 1579
+NationTag = AUS
+Name = J. von oesterreich
+Alias = uni_AUS_Josef2
+ForcePool = -1
+ShortName = Josef
+Text = $uni_AUS_Josef2_txt
+Color = $colAUSRegular 
+ModelType0 = $ldr_AUS_Josef2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

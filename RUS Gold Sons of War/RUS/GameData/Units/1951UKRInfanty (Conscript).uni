@@ -1,0 +1,15 @@
+UID = 1951
+NationTag = UKR
+Name = Infantry (Conscript)
+Alias = uni_UKR_Inf7
+ForcePool = 6
+ShortName = Infantry (Conscript)
+Text = $uni_UKR_Inf7_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_UKR_Inf7|1
+FamilyType0 = $famLine|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Ukrainians

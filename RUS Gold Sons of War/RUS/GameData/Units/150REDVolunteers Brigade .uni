@@ -1,0 +1,15 @@
+UID = 150
+NationTag = RED
+Name = Volunteers Brigade 
+Alias = uni_RED_VolBde
+ShortName = Vols. Bde. 
+Text = $uni_RED_VolBde_txt
+Color = $colREDMilitia
+ModelType0 = $mdl_RED_Mil1|2
+ModelType1 = $mdl_RED_Lit|1
+FamilyType0 = $famMilitia|2
+FamilyType1 = $famSkirmisher|1
+CmdCost = 2
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2

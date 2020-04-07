@@ -1,0 +1,1506 @@
+  NULL
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_aggro1Finlandfirst turn|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 75
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/01/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;600
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_aggro1Finland|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/02/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;100
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_aggro1Finland3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/03/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;440
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_aggro1Finland4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/04/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;430
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_aggro1Finland2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/03/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;420
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_aggro1Finland5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 7
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/06/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;110
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_aggro1Finland6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/03/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;350
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_aggro1Finlandsecondphase|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+
+CheckAILevel = 1
+  MinDate = 1918/03/31
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;100
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_aggro1Finland3secondphase|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/03/31
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;80
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_aggro1Finland4secondphase|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/03/31
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;70
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_aggro1Finland2secondphase|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/03/31
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;160
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_aggro1Finland5secondphase|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/03/31
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;90
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_aggro1Finland6secondphase|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+
+CheckAILevel = 1
+  MinDate = 1918/03/31
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;450
+
+EndEvent
+
+SelectFaction = $FIN
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_aggro1Finlandfirst turn|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 90
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/01/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;70
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_aggro1Finland|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;80
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_aggro1Finland3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/06/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;100
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_aggro1Finland4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/06/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;90
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_aggro1Finland2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/06/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;60
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_aggro1Finland5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/06/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;75
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_aggro1Finland6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/06/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;50
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_aggro1Finlandsecondphase|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 5
+
+CheckAILevel = 1
+  MinDate = 1918/05/01
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;100
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_aggro1Finland3secondphase|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/05/01
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;105
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_aggro1Finland4secondphase|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/05/01
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;110
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_aggro1Finland2secondphase|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/05/01
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;115
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_aggro1Finland5secondphase|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/05/01
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;120
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_aggro1Finland6secondphase|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+
+CheckAILevel = 1
+  MinDate = 1918/05/01
+  MaxDate = 1918/12/31
+
+Actions
+  AI.ChgAggro = $Theater_Finland;125
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_AI_RED2innerzone|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  FixedDate = 1918/01/16
+
+Actions
+  AI.ChgLocalInterest = $Lieksa;5;$Ilomantsi;5;$Suoyarvi;5; $Vyartsilya;5;$Lake Saimaa;5;$Lake Pielinen;5;$Lake Kallavesi;5;$North Ladoga Lake;5;$Lake Puruvesi;5;$Lake Haukivesi;5;$Rautavaara;5;$Lake Paijanne;5;$Aland Island;5;$Viitasaari;5;$Lake Nasi;5;$Kivijarvi;5;$Lappajarvi;5;$Alajarvi;5;$Karstula;5;$Rautalampi;5;$Kerimaki;5;
+  AI.SetLocalInterest = $Mikkeli;5;$Varkaus;5;$Jyvaskyla ;5;$Vaasa;5
+  AI.SetLocalInterest = $Salo;50;$Rauma ;5;$Merikarvia;5;$Narpes ;5;$Kouvola ;5;$Vammala;5;$Virrat;5;$Seinajoki ;5;$Pieksamaki;5;$Saarijarvi;5;$Jamsa ;5;$Heinola;5;$Haapamaki ;5;$Riihimaki ;5;$Alavus;5;$Lapua ;5;
+  AI.SetLocalInterest = $Kotka ;5;$Terijoki;5;$Taipala;5;$Kakisalmi ;5;$Imatra ;5;$Valkeala ;5;$Juva;5;$Leppavirta ;5;$Heinavesi ;5;$Kitee ;5;$Kangaslampi;5;$Juuka;5;$Sortavala ;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_AI_RED4outerzone|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  FixedDate = 1918/01/16
+
+Actions
+  AI.SetLocalInterest = $Petrograd;200;$Taipala;150;$Terijoki;150;$Viipuri;200;$Kakisalmi;100;$Lappeenranta;150;$Kotka;180;$Valkeala;150;$Loviisa;170;$Kouvola;180;$Lahti;200;
+  AI.SetLocalInterest = $Porvoo;180;$Helsinki;200;$Espoo;200;$Riihimaki;180;$Porvoo;180;$Tampere;200;$Loimaa;180;$Pori;180;$Turku;200;$Kuopio;200;
+
+EndEvent
+
+SelectFaction = $FIN
+
+SelectFaction = $FIN
+StartEvent = evt_nam_AI_FIN2innerzone|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  FixedDate = 1918/01/16
+
+Actions
+  AI.SetLocalInterest = $Mikkeli;190;$Varkaus;200;$Jyvaskyla ;200;$Vaasa;200; $Sortavala ;200
+  AI.SetLocalInterest = $Salo;5;$Rauma ;5;$Merikarvia;5;$Narpes ;5;$Kouvola ;5;$Vammala;5;$Virrat;5;$Seinajoki ;5;$Pieksamaki;5;$Saarijarvi;5;$Jamsa ;5;$Heinola;5;$Haapamaki ;5;$Riihimaki ;5;$Alavus;5;$Lapua ;5;
+  AI.SetLocalInterest = $Kotka ;5;$Terijoki;5;$Taipala;5;$Kakisalmi ;5;$Imatra ;5;$Valkeala ;5;$Juva;5;$Leppavirta ;5;$Heinavesi ;5;$Kitee ;5;$Kangaslampi;5;$Juuka;5;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_AI_FIN4outerzone|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  FixedDate = 1918/01/16
+
+Actions
+  AI.SetLocalInterest = $Petrograd;5;$Taipala;5;$Terijoki;5;$Viipuri;5;$Kakisalmi;5;$Lappeenranta;5;$Kotka;5;$Valkeala;5;$Loviisa;5;$Kouvola;5;$Lahti;5;
+  AI.ChgLocalInterest = $Lieksa;5;$Ilomantsi;5;$Suoyarvi;5; $Vyartsilya;5;$Lake Saimaa;5;$Lake Pielinen;5;$Lake Kallavesi;5;$North Ladoga Lake;5;$Lake Puruvesi;5;$Lake Haukivesi;5;$Rautavaara;5;$Lake Paijanne;5;$Aland Island;5;$Viitasaari;5;$Lake Nasi;5;$Kivijarvi;5;$Lappajarvi;5;$Alajarvi;5;$Karstula;5;$Rautalampi;5;$Kerimaki;5;
+  AI.SetLocalInterest = $Porvoo;5;$Helsinki;5;$Espoo;5;$Riihimaki;5;$Porvoo;5;$Tampere;5;$Loimaa;5;$Pori;5;$Turku;5;$Kuopio;20;
+  AI.SetAggro = $Theater_Northern;1
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_REDplan4alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 50
+
+CheckAILevel = 1
+
+EvalRgnOwned = $Petrograd
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Viipuri;200;$Terijoki;175;$Lappeenranta;170;
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_REDplan4step2alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_REDplan4alt;=;1;
+
+EvalRgnOwned = $Petrograd
+
+EvalRgnOwned = $Viipuri
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Imatra;200;$Sortavala;200
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_REDplan4step3alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_REDplan4alt;=;1;
+
+EvalRgnOwned = $Petrograd
+
+EvalRgnOwned = $Viipuri
+
+EvalRgnOwned = $Sortavala
+
+CheckAILevel = 1
+  Probability = 50
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Joensuu;175;
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_REDplan4step3balt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_REDplan4alt;=;1;
+  EvalEvent = evt_nam_REDplan4step3alt;=;0;
+
+EvalRgnOwned = $Petrograd
+
+EvalRgnOwned = $Viipuri
+
+EvalRgnOwned = $Sortavala
+
+CheckAILevel = 1
+  Probability = 50
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Juva;190;$Varkaus;195;$Mikkeli;200;
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_REDplan1alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 50
+
+CheckAILevel = 1
+
+EvalRgnOwned = $Helsinki
+
+EvalRgnOwned = $Viipuri
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Loviisa;200;$Kouvola;195;$Lahti;200;
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_REDplan1step2alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_REDplan1alt;=;1;
+
+EvalRgnOwned = $Helsinki
+
+EvalRgnOwned = $Lahti
+
+EvalRgnOwned = $Viipuri
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Mikkeli;200;$Varkaus;200
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_REDplan1step3alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_REDplan1alt;=;1;
+
+EvalRgnOwned = $Helsinki
+
+EvalRgnOwned = $Lahti
+
+EvalRgnOwned = $Viipuri
+
+EvalRgnOwned = $Mikkeli
+
+EvalRgnOwned = $Varkaus
+
+CheckAILevel = 1
+  Probability = 50
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Leppavirta;160;$Kuopio;160;
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_REDplan1step4alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_REDplan1alt;=;1;
+
+EvalRgnOwned = $Helsinki
+
+EvalRgnOwned = $Lahti
+
+EvalRgnOwned = $Viipuri
+
+EvalRgnOwned = $Mikkeli
+
+EvalRgnOwned = $Varkaus
+
+EvalRgnOwned = $Kuopio
+
+CheckAILevel = 1
+  Probability = 50
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Joensuu;200;$Heinavesi;195;$Kangaslampi;200;
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_REDplan1step4altalt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_REDplan1alt;=;1;
+
+EvalRgnOwned = $Helsinki
+
+EvalRgnOwned = $Lahti
+
+EvalRgnOwned = $Viipuri
+
+EvalRgnOwned = $Mikkeli
+
+EvalRgnOwned = $Varkaus
+
+EvalRgnOwned = $Kuopio
+
+CheckAILevel = 1
+  Probability = 25
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Pieksamaki;200;$Jyvaskyla;200;$Tampere;200;
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_REDplan2alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 50
+
+CheckAILevel = 1
+
+EvalRgnOwned = $Helsinki
+
+EvalRgnOwned = $Turku
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Riihimaki;200;$Tampere;200;$Loimaa;200;$Pori;200;
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_REDplan2step2alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_REDplan2alt;=;1;
+
+EvalRgnOwned = $Helsinki
+
+EvalRgnOwned = $Turku
+
+EvalRgnOwned = $Tampere
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Haapamaki;200;$Jyvaskyla;200
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_REDplan2step3alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_REDplan2alt;=;1;
+
+EvalRgnOwned = $Helsinki
+
+EvalRgnOwned = $Turku
+
+EvalRgnOwned = $Tampere
+
+EvalRgnOwned = $Jyvaskyla
+
+CheckAILevel = 1
+  Probability = 50
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Alavus;190;$Seinajoki;190;$Vaasa;200;
+
+EndEvent
+
+SelectFaction = $FIN
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan4alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+
+CheckAILevel = 1
+
+EvalRgnOwned = $Sortavala
+
+EvalRgnOwned = $Joensuu
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Imatra;200;$Lappeenranta;200;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan4step2alta|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan4alt;=;1;
+  EvalEvent = evt_nam_FINplan4step2altb;=;0;
+
+EvalRgnOwned = $Sortavala
+
+EvalRgnOwned = $Joensuu
+
+CheckAILevel = 1
+  Probability = 5
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Kuopio;200
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan4step2altb|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan4alt;=;1;
+
+EvalRgnOwned = $Sortavala
+
+EvalRgnOwned = $Joensuu
+
+EvalRgnOwned = $Imatra
+
+EvalRgnOwned = $Lappeenranta
+
+CheckAILevel = 1
+  Probability = 50
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Viipuri;200;$Kotka;175;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan4step3balt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan4alt;=;1;
+
+EvalRgnOwned = $Sortavala
+
+EvalRgnOwned = $Joensuu
+
+EvalRgnOwned = $Imatra
+
+EvalRgnOwned = $Viipuri
+
+CheckAILevel = 1
+  Probability = 50
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Loviisa;190;$Varkaus;195;$Mikkeli;200;$Helsinki;200;$Lahti;200;$Kouvola;195;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan1alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 30
+
+CheckAILevel = 1
+
+EvalRgnOwned = $Vaasa
+
+EvalRgnOwned = $Mikkeli
+  MinDate = 1918/02/01
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Kouvola;195;$Lahti;200;$Varkaus;200
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan1step2alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan1alt;=;1;
+
+EvalRgnOwned = $Vaasa
+
+EvalRgnOwned = $Mikkeli
+
+EvalRgnOwned = $Lahti
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Helsinki;200
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan1step3alta|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan1alt;=;1;
+
+EvalRgnOwned = $Helsinki
+
+EvalRgnOwned = $Vaasa
+
+EvalRgnOwned = $Mikkeli
+
+EvalRgnOwned = $Lahti
+
+CheckAILevel = 1
+  Probability = 50
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Tampere;200;$Riihimaki;170;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan1step3altb|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan1alt;=;1;
+
+EvalRgnOwned = $Helsinki
+
+EvalRgnOwned = $Vaasa
+
+EvalRgnOwned = $Mikkeli
+
+EvalRgnOwned = $Lahti
+
+CheckAILevel = 1
+  Probability = 50
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Turku;200;$Loimaa;195;$Pori;170;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan1step2altb|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan1alt;=;1;
+  EvalEvent = evt_nam_FINplan1step2alt;=;0;
+
+EvalRgnOwned = $Vaasa
+
+EvalRgnOwned = $Mikkeli
+
+EvalRgnOwned = $Lahti
+
+CheckAILevel = 1
+  Probability = 35
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Tampere;200
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan2alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 50
+
+CheckAILevel = 1
+
+EvalRgnOwned = $vaasa
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Alavus;190;$Seinajoki;190;$Tampere;200;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan2step2alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan2alt;=;1;
+
+EvalRgnOwned = $vaasa
+
+EvalRgnOwned = $Tampere
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Riihimaki;200;$Loimaa;200;$Pori;200;$Turku;200;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan2step3alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan2alt;=;1;
+
+EvalRgnOwned = $vaasa
+
+EvalRgnOwned = $Tampere
+
+EvalRgnOwned = $Turku
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Riihimaki;200;$Loimaa;200;$Helsinki;200;$Lahti;200;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan2step2altb|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan2alt;=;1;
+
+EvalRgnOwned = $vaasa
+
+EvalRgnOwned = $Tampere
+  Probability = 70
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Riihimaki;200;$Helsinki;200;$Lahti;200;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan2step3altb|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan2alt;=;1;
+
+EvalRgnOwned = $vaasa
+
+EvalRgnOwned = $Tampere
+
+EvalRgnOwned = $Helsinki
+  Probability = 70
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Pori;200;$Turku;200;$Loimaa;200;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan2step4alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan2alt;=;1;
+
+EvalRgnOwned = $vaasa
+
+EvalRgnOwned = $Tampere
+
+EvalRgnOwned = $Helsinki
+
+EvalRgnOwned = $Turku
+
+CheckAILevel = 1
+  Probability = 50
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Viipuri;200;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan5|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 10
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/03/31
+
+Actions
+  AI.SetLocalInterest = $Kuopio;200
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan5b|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 30
+
+CheckAILevel = 1
+  MinDate = 1918/04/10
+  MaxDate = 1918/06/31
+
+Actions
+  AI.SetLocalInterest = $Kuopio;200
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan5c|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  Probability = 80
+
+CheckAILevel = 1
+  MinDate = 1918/06/10
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Kuopio;200
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan6alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan2alt;=;0;
+  Probability = 50
+
+CheckAILevel = 1
+
+EvalRgnOwned = $vaasa
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Alavus;190;$Seinajoki;190;$Jyvaskyla;200;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan6step2alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan6alt;=;1;
+
+EvalRgnOwned = $vaasa
+
+EvalRgnOwned = $Jyvaskyla
+  Probability = 20
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Varkaus;200;$Mikkeli;200
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan6step3alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan6alt;=;1;
+
+EvalRgnOwned = $vaasa
+
+EvalRgnOwned = $Jyvaskyla
+
+EvalRgnOwned = $Varkaus
+
+EvalRgnOwned = $Mikkeli
+  Probability = 70
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Kouvola;200;$Lahti;200;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan6step2altb|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan6alt;=;1;
+
+EvalRgnOwned = $vaasa
+
+EvalRgnOwned = $Jyvaskyla
+
+EvalRgnOwned = $Varkaus
+
+EvalRgnOwned = $Mikkeli
+
+EvalRgnOwned = $Lahti
+  Probability = 70
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Riihimaki;200;$Helsinki;200;$Lahti;200;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan6step3altb|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan6alt;=;1;
+  EvalEvent = evt_nam_FINplan6step2altb;=;0;
+
+EvalRgnOwned = $vaasa
+
+EvalRgnOwned = $Jyvaskyla
+
+EvalRgnOwned = $Varkaus
+
+EvalRgnOwned = $Mikkeli
+
+EvalRgnOwned = $Lahti
+
+EvalRgnOwned = $Helsinki
+  Probability = 70
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Pori;200;$Turku;200;$Loimaa;200;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan6step3altViipuri|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan6alt;=;1;
+  EvalEvent = evt_nam_FINplan6step3alt;=;0;
+
+EvalRgnOwned = $vaasa
+
+EvalRgnOwned = $Jyvaskyla
+
+EvalRgnOwned = $Varkaus
+
+EvalRgnOwned = $Mikkeli
+  Probability = 30
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Kouvola;200;$Loviisa;200;$Viipuri;200;
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINplan6step3altViipuri2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINplan6step3altViipuri2;=;1;
+  Probability = 15
+
+CheckAILevel = 1
+  MinDate = 1918/01/16
+  MaxDate = 1918/12/31
+
+Actions
+  AI.SetLocalInterest = $Helsinki;200
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Pori
+
+SelectFaction = $RED
+SelectRegion = $Pori
+StartEvent = evt_nam_Renforts_RED_AIGarrisonPori|3|0|NULL|NULL|$Pori|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Pori
+  EvalSubUnitCount = <=;0
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Pori
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Pori Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_MilAG
+  SetName = Pori Red Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Turku
+StartEvent = evt_nam_Renforts_RED_AIGarrisonTurku|3|0|NULL|NULL|$Turku|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Turku
+  EvalSubUnitCount = <=;0
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Turku
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Pori Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_MilAG
+  SetName = Pori Red Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Helsinki
+StartEvent = evt_nam_Renforts_RED_AIGarrisonHelsinki|3|0|NULL|NULL|$Helsinki|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Helsinki
+  EvalSubUnitCount = <=;0
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Helsinki
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Pori Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_MilAG
+  SetName = Pori Red Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Viipuri
+StartEvent = evt_nam_Renforts_RED_AIGarrisonViipuri|3|0|NULL|NULL|$Viipuri|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Viipuri
+  EvalSubUnitCount = <=;0
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Viipuri
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Pori Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_MilAG
+  SetName = Pori Red Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_REDowningHelsinki|1|0|NULL|$Helsinki|NULL|NULL
+
+Conditions
+
+EvalRgnOwned = $Helsinki
+  Probability = 70
+  MinDate = 1917/11/01
+  MaxDate = 1923/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_WHImenacingHelsinki|1|0|NULL|$Helsinki|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_REDowningHelsinki;=;1;
+  SelectSubUnits = Region $Helsinki;Enemy
+  EvalSubUnitCount = >=;2
+  EvalControl = >;51
+  MinDate = 1917/11/01
+  MaxDate = 1923/01/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDowningHelsinki;CuOccurs;-1;
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_WhitemenaceconsHelsinki|1|0|NULL|$Minsk|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_WHImenacingHelsinki;=;1;
+  Probability = 70
+  MinDate = 1917/11/01
+  MaxDate = 1923/01/01
+
+Actions
+  AI.SetLocalInterest = $Helsinki;350
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_WHImenacingHelsinkiend|999|0|NULL|$Helsinki|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_WHImenacingHelsinki;=;1;
+
+EvalRgnOwned = $Helsinki
+
+SelectRegion = $Helsinki
+  EvalControl = >;51
+  MinDate = 1917/11/01
+  MaxDate = 1923/01/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHImenacingHelsinki;CuOccurs;-1;
+
+  ChgEvtOccurs = evt_nam_WhitemenaceconsHelsinki;CuOccurs;-1;
+  AI.SetLocalInterest = $Helsinki;200
+
+EndEvent
+
+SelectFaction = $FIN
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FINowningHelsinki|1|0|NULL|$Helsinki|NULL|NULL
+
+Conditions
+
+EvalRgnOwned = $Helsinki
+  Probability = 60
+  MinDate = 1917/11/01
+  MaxDate = 1923/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_WhiteowningconsHelsinki|1|0|NULL|$Helsinki|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FINowningHelsinki;=;1;
+  Probability = 28
+  MinDate = 1917/11/01
+  MaxDate = 1923/01/01
+
+Actions
+  AI.SetLocalInterest = $Helsinki;200
+
+EndEvent

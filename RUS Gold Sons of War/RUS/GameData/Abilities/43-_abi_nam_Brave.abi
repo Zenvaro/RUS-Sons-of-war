@@ -1,0 +1,13 @@
+UID = 43
+Name = $abi_nam_Brave
+Alias = Brave
+Kind = $abiCohAdjust
+Text = $abi_txt_Brave
+ImageID = abi_Brave.png
+Color = $colAbi_Orange
+Appliance = Unit
+Family = 5
+Level = 1
+ProgRate = 2
+Param0 = 10
+ListParams3 = $famLine|$famElite|$famLightInf|$famCavalry|$famMilitia|$famRaider|$famHvyVehicle|$famLtVehicle|$famLightArty|$famMedArty|$famHvyArty

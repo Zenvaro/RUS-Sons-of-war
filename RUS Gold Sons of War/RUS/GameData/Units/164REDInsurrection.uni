@@ -1,0 +1,15 @@
+UID = 164
+NationTag = RED
+Name = Insurrection
+Alias = uni_RED_Ins1
+ForcePool = 20
+ShortName = Insurrection
+Text = $uni_RED_Ins1_txt
+Color = $colREDMilitia
+ModelType0 = $mdl_RED_Ins1|10
+FamilyType0 = $famMilitia|10
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+CustomNames = Insurrection

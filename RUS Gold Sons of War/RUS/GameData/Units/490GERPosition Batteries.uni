@@ -1,0 +1,16 @@
+UID = 490
+NationTag = GER
+Name = Position Batteries
+Alias = uni_GER_Bty0
+ForcePool = -1
+ShortName = Position Batteries
+Text = $uni_GER_Bty0_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Bty|4
+FamilyType0 = $famHvyArty|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 3
+Area = $Recruit_Germans
+CustomNames = 1. FestungArtillerie-Regiment|2. FestungArtillerie-Regiment|3. FestungArtillerie-Regiment|4. FestungArtillerie-Regiment|5. FestungArtillerie-Regiment|6. FestungArtillerie-Regiment|7. FestungArtillerie-Regiment|8. FestungArtillerie-Regiment|9. FestungArtillerie-Regiment|10. FestungArtillerie-Regiment|11. FestungArtillerie-Regiment|12. FestungArtillerie-Regiment|13. FestungArtillerie-Regiment|14. FestungArtillerie-Regiment|15. FestungArtillerie-Regiment|16. FestungArtillerie-Regiment|17. FestungArtillerie-Regiment|18. FestungArtillerie-Regiment|19. FestungArtillerie-Regiment|20. FestungArtillerie-Regiment

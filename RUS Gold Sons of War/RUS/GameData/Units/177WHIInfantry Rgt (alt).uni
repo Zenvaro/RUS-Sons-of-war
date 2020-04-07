@@ -1,0 +1,14 @@
+UID = 177
+NationTag = WHI
+Name = Infantry Rgt (alt)
+Alias = uni_WHI_Rgt6
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WHI_Rgt6_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Inf3|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

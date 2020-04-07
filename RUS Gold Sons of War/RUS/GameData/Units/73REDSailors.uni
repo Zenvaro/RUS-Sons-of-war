@@ -1,0 +1,15 @@
+UID = 73
+NationTag = RED
+Name = Sailors
+Alias = uni_RED_Sai
+ForcePool = 20
+ShortName = Sailors Rgt.
+Text = $uni_RED_Sai_txt
+Color = $colREDNavy
+ModelType0 = $mdl_RED_Sai|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 1
+CustomNames = Black Sea Sailors Dcht|Baltflot Sailors Dcht|1st Sailors Dcht|2nd Sailors Dcht|3rd Sailors Dcht|4th Sailors Dcht|5th Sailors Dcht|6th Sailors Dcht|7th Sailors Dcht|8th Sailors Dcht|9th Sailors Dcht|10th Sailors Dcht|11th Sailors Dcht|12th Sailors Dcht|13th Sailors Dcht|14th Sailors Dcht|15th Sailors Dcht|16th Sailors Dcht|17th Sailors Dcht|18th Sailors Dcht|19th Sailors Dcht|20th Sailors Dcht|21st Sailors Dcht|22nd Sailors Dcht|23rd Sailors Dcht|24th Sailors Dcht|25th Sailors Dcht|26th Sailors Dcht|27th Sailors Dcht|28th Sailors Dcht|29th Sailors Dcht|30th Sailors Dcht

@@ -1,0 +1,11 @@
+UID = 139
+Name = $abi_nam_Czar
+Alias = Czar
+Kind = $abiFlavor
+Text = $abi_txt_Czar
+ImageID = abi_twoflag4.png
+Color = $colAbi_Yellow
+Appliance = Self
+Family = 0
+Level = 1
+ProgRate = 0

@@ -1,0 +1,16 @@
+UID = 673
+NationTag = GRN
+Name = Turkmen Cavalry
+Alias = uni_GRN_Cav1
+ForcePool = 6
+ShortName = Turkmen Cav.
+Text = $uni_GRN_Cav1_txt
+Color = $colGRNRegular 
+ModelType0 = $mdl_WH3_Cav0|1
+FamilyType0 = $famCavalry|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Central_Asia
+CustomNames = 1st Cavalry|2nd Cavalry|3rd Cavalry|4th Cavalry|5th Cavalry|6th Cavalry|7th Cavalry|8th Cavalry|9th Cavalry|10th Cavalry|11th Cavalry|12th Cavalry|13th Cavalry|14th Cavalry|15th Cavalry|16th Cavalry|17th Cavalry|18th Cavalry|19th Cavalry|20th Cavalry|21st Cavalry|22nd Cavalry|23rd Cavalry|24th Cavalry|25th Cavalry|26th Cavalry|27th Cavalry|28th Cavalry|29th Cavalry|30th Cavalry|31st Cavalry|32nd Cavalry|33rd Cavalry|34th Cavalry|35th Cavalry|36th Cavalry|37th Cavalry|38th Cavalry|39th Cavalry|40th Cavalry|41st Cavalry|42nd Cavalry|43rd Cavalry|44th Cavalry|45th Cavalry|46th Cavalry|47th Cavalry|48th Cavalry|49th Cavalry|50th Cavalry|51st Cavalry|52nd Cavalry|53rd Cavalry|54th Cavalry|55th Cavalry|56th Cavalry|57th Cavalry|58th Cavalry|59th Cavalry|60th Cavalry|61st Cavalry|62nd Cavalry|63rd Cavalry|64th Cavalry|65th Cavalry|66th Cavalry|67th Cavalry|68th Cavalry|69th Cavalry|70th Cavalry|71st Cavalry|72nd Cavalry|73rd Cavalry|74th Cavalry|75th Cavalry|76th Cavalry|77th Cavalry|78th Cavalry|79th Cavalry|80th Cavalry|81st Cavalry|82nd Cavalry|83rd Cavalry|84th Cavalry|85th Cavalry|86th Cavalry|87th Cavalry|88th Cavalry|89th Cavalry|90th Cavalry|91st Cavalry|92nd Cavalry|93rd Cavalry|94th Cavalry|95th Cavalry|96th Cavalry|97th Cavalry|98th Cavalry|99th Cavalry|100th Cavalry

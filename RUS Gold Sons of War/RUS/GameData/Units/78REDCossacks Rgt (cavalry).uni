@@ -1,0 +1,15 @@
+UID = 78
+NationTag = RED
+Name = Cossacks Rgt (cavalry)
+Alias = uni_RED_Cav3
+ForcePool = 30
+ShortName = Cossacks
+Text = $uni_RED_Cav3_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Cav4|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Southern

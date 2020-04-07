@@ -1,0 +1,17 @@
+UID = 282
+NationTag = DON
+Name = Gunboat
+Alias = uni_DON_GB1
+ForcePool = 6
+ShortName = Gunboat
+Text = $uni_DON_GB1_txt
+Color = $colDONNavy
+DoubleLength = 1
+ModelType0 = $mdl_WHI_Gbt|4
+FamilyType0 = $famLitCoastalShip|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 4
+Area = $Area_Don
+CustomNames = 1st Don Gunboat|2nd Don Gunboat|3rd Don Gunboat|4th Don Gunboat|5th Don Gunboat|6th Don Gunboat|7th Don Gunboat|8th Don Gunboat|9th Don Gunboat|10th Don Gunboat|11th Don Gunboat|12th Don Gunboat|13th Don Gunboat|14th Don Gunboat|15th Don Gunboat|16th Don Gunboat|17th Don Gunboat|18th Don Gunboat|19th Don Gunboat|20th Don Gunboat

@@ -1,0 +1,14 @@
+UID = 924
+NationTag = CHI
+Name = Infantry Rgt
+Alias = uni_CHI_Rgt1
+ForcePool = 10
+ShortName = Inf. Rgt.
+Text = $uni_CHI_Rgt1_txt
+Color = $colCHIRegular 
+ModelType0 = $mdl_CHI_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

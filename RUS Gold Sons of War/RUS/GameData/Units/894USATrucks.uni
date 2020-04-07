@@ -1,0 +1,14 @@
+UID = 894
+NationTag = USA
+Name = Trucks
+Alias = uni_USA_Tru
+ForcePool = 12
+ShortName = Trucks
+Text = $uni_USA_Tru_txt
+Color = $colUSARegular 
+ModelType0 = $mdl_USA_Tru|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

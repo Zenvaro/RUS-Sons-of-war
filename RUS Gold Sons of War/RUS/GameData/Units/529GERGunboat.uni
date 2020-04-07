@@ -1,0 +1,17 @@
+UID = 529
+NationTag = GER
+Name = Gunboat
+Alias = uni_GER_GB1
+ForcePool = 20
+ShortName = Gunboat
+Text = $uni_GER_GB1_txt
+Color = $colGERNavy
+DoubleLength = 1
+ModelType0 = $mdl_GER_Gbt|4
+FamilyType0 = $famLitCoastalShip|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 4
+Area = $Recruit_Germans
+CustomNames = 1. Kan. Flot.|2. Kan. Flot.|3. Kan. Flot.|4. Kan. Flot.|5. Kan. Flot.|6. Kan. Flot.|7. Kan. Flot.|8. Kan. Flot.|9. Kan. Flot.|10. Kan. Flot.|11. Kan. Flot.|12. Kan. Flot.|13. Kan. Flot.|14. Kan. Flot.|15. Kan. Flot.|16. Kan. Flot.|17. Kan. Flot.|18. Kan. Flot.|19. Kan. Flot.|20. Kan. Flot

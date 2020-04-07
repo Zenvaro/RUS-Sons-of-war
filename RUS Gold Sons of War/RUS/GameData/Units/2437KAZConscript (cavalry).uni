@@ -1,0 +1,16 @@
+UID = 2437
+NationTag = KAZ
+Name = Basmachi Rgt (cavalry)
+Alias = uni_KAZ_Cav1
+ForcePool = 6
+ShortName = Basmachi
+Text = $uni_KAZ_Cav3_txt
+Color = $colKAZRegular 
+ModelType0 = $mdl_KAZ_Cav3|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Central_Asia
+CustomNames = 1st Basmachi Rgt|2nd Basmachi Rgt|3rd Basmachi Rgt|4th Basmachi Rgt|5th Basmachi Rgt|6th Basmachi Rgt|7th Basmachi Rgt|8th Basmachi Rgt|9th Basmachi Rgt|10th Basmachi Rgt|11th Basmachi Rgt|12th Basmachi Rgt|13th Basmachi Rgt|14th Basmachi Rgt|15th Basmachi Rgt|16th Basmachi Rgt|17th Basmachi Rgt|18th Basmachi Rgt|19th Basmachi Rgt|20th Basmachi Rgt|21st Basmachi Rgt|22nd Basmachi Rgt|23rd Basmachi Rgt|24th Basmachi Rgt|25th Basmachi Rgt|26th Basmachi Rgt|1st Basmachi Rgt|2nd Basmachi Rgt|3rd Basmachi Rgt|4th Basmachi Rgt|5th Basmachi Rgt|6th Basmachi Rgt|7th Basmachi Rgt|8th Basmachi Rgt|9th Basmachi Rgt|10th Basmachi Rgt|11th Basmachi Rgt|12th Basmachi Rgt|27th Basmachi Rgt|28th Basmachi Rgt|29th Basmachi Rgt|30th Basmachi Rgt|31st Basmachi Rgt|32nd Basmachi Rgt|33rd Basmachi Rgt|34th Basmachi Rgt|35th Basmachi Rgt|36th Basmachi Rgt|37th Basmachi Rgt|38th Basmachi Rgt|39th Basmachi Rgt|40th Basmachi Rgt|13th Basmachi Rgt|14th Basmachi Rgt|15th Basmachi Rgt|16th Basmachi Rgt|17th Basmachi Rgt|18th Basmachi Rgt|19th Basmachi Rgt|20th Basmachi Rgt|21st Basmachi Rgt|22nd Basmachi Rgt|23rd Basmachi Rgt|24th Basmachi Rgt|25th Basmachi Rgt|26th Basmachi Rgt|27th Basmachi Rgt|28th Basmachi Rgt|29th Basmachi Rgt|30th Basmachi Rgt|41st Basmachi Rgt|42nd Basmachi Rgt|43rd Basmachi Rgt|44th Basmachi Rgt|45th Basmachi Rgt|46th Basmachi Rgt|47th Basmachi Rgt|48th Basmachi Rgt|49th Basmachi Rgt|50th Basmachi Rgt|51st Basmachi Rgt|52nd Basmachi Rgt|53rd Basmachi Rgt|54th Basmachi Rgt|55th Basmachi Rgt|56th Basmachi Rgt|57th Basmachi Rgt|58th Basmachi Rgt|59th Basmachi Rgt|60th Basmachi Rgt|3rd Horse Partisans Rgt|4th Horse Partisans Rgt

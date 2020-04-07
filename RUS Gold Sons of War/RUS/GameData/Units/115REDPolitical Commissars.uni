@@ -1,0 +1,15 @@
+UID = 115
+NationTag = RED
+Name = Political Commissars
+Alias = uni_RED_Pol
+ForcePool = 50
+ShortName = Pol. Commissars
+Text = $uni_RED_Pol_txt
+Color = $colREDPolice
+ModelType0 = $mdl_RED_Pol|1
+FamilyType0 = $famNavalEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Politkom|2nd Politkom|3rd Politkom|4th Politkom|5th Politkom|6th Politkom|7th Politkom|8th Politkom|9th Politkom|10th Politkom|11th Politkom|12th Politkom|13th Politkom|14th Politkom|15th Politkom|16th Politkom|17th Politkom|18th Politkom|19th Politkom|20th Politkom|21st Politkom|22nd Politkom|23rd Politkom|24th Politkom|25th Politkom|26th Politkom|27th Politkom|28th Politkom|29th Politkom|30th Politkom|31st Politkom|32nd Politkom|33rd Politkom|34th Politkom|35th Politkom|36th Politkom|37th Politkom|38th Politkom|39th Politkom|40th Politkom|41st Politkom|42nd Politkom|43rd Politkom|44th Politkom|45th Politkom|46th Politkom|47th Politkom|48th Politkom|49th Politkom|50th Politkom

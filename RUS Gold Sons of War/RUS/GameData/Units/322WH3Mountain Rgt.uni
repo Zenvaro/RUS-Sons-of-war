@@ -1,0 +1,15 @@
+UID = 322
+NationTag = WH3
+Name = Mountain Rgt
+Alias = uni_WH3_Rgt6
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WH3_Rgt6_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_Inf0|2
+FamilyType0 = $famElite|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 30th Mountain Fusiliers Rgt|31st Mountain Fusiliers Rgt|32nd Mountain Fusiliers Rgt|33rd Mountain Fusiliers Rgt|34th Mountain Fusiliers Rgt|35th Mountain Fusiliers Rgt|36th Mountain Fusiliers Rgt|37th Mountain Fusiliers Rgt|38th Mountain Fusiliers Rgt|39th Mountain Fusiliers Rgt|40th Mountain Fusiliers Rgt

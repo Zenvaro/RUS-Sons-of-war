@@ -1,0 +1,16 @@
+UID = 320
+NationTag = URL
+Name = Ural Cossacks Rgt (Infantry)
+Alias = uni_WH3_Rgt4
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WH3_Rgt4_txt
+Color = $colURLRegular 
+ModelType0 = $mdl_WH3_Inf8|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Uralsk
+CustomNames = 1st Horse Partisans Rgt|2nd Horse Partisans Rgt|1st Ural Cossacks Rgt|2nd Ural Cossacks Rgt|3rd Ural Cossacks Rgt|4th Ural Cossacks Rgt|5th Ural Cossacks Rgt|6th Ural Cossacks Rgt|7th Ural Cossacks Rgt|8th Ural Cossacks Rgt|9th Ural Cossacks Rgt|10th Ural Cossacks Rgt|11th Ural Cossacks Rgt|12th Ural Cossacks Rgt|13th Ural Cossacks Rgt|14th Ural Cossacks Rgt|15th Ural Cossacks Rgt|16th Ural Cossacks Rgt|17th Ural Cossacks Rgt|18th Ural Cossacks Rgt|19th Ural Cossacks Rgt|20th Ural Cossacks Rgt|21st Ural Cossacks Rgt|22nd Ural Cossacks Rgt|23rd Ural Cossacks Rgt|24th Ural Cossacks Rgt|25th Ural Cossacks Rgt|26th Ural Cossacks Rgt|1st Orenburg Cossacks Rgt|2nd Orenburg Cossacks Rgt|3rd Orenburg Cossacks Rgt|4th Orenburg Cossacks Rgt|5th Orenburg Cossacks Rgt|6th Orenburg Cossacks Rgt|7th Orenburg Cossacks Rgt|8th Orenburg Cossacks Rgt|9th Orenburg Cossacks Rgt|10th Orenburg Cossacks Rgt|11th Orenburg Cossacks Rgt|12th Orenburg Cossacks Rgt|27th Ural Cossacks Rgt|28th Ural Cossacks Rgt|29th Ural Cossacks Rgt|30th Ural Cossacks Rgt|31st Ural Cossacks Rgt|32nd Ural Cossacks Rgt|33rd Ural Cossacks Rgt|34th Ural Cossacks Rgt|35th Ural Cossacks Rgt|36th Ural Cossacks Rgt|37th Ural Cossacks Rgt|38th Ural Cossacks Rgt|39th Ural Cossacks Rgt|40th Ural Cossacks Rgt|13th Orenburg Cossacks Rgt|14th Orenburg Cossacks Rgt|15th Orenburg Cossacks Rgt|16th Orenburg Cossacks Rgt|17th Orenburg Cossacks Rgt|18th Orenburg Cossacks Rgt|19th Orenburg Cossacks Rgt|20th Orenburg Cossacks Rgt|21st Orenburg Cossacks Rgt|22nd Orenburg Cossacks Rgt|23rd Orenburg Cossacks Rgt|24th Orenburg Cossacks Rgt|25th Orenburg Cossacks Rgt|26th Orenburg Cossacks Rgt|27th Orenburg Cossacks Rgt|28th Orenburg Cossacks Rgt|29th Orenburg Cossacks Rgt|30th Orenburg Cossacks Rgt|41st Ural Cossacks Rgt|42nd Ural Cossacks Rgt|43rd Ural Cossacks Rgt|44th Ural Cossacks Rgt|45th Ural Cossacks Rgt|46th Ural Cossacks Rgt|47th Ural Cossacks Rgt|48th Ural Cossacks Rgt|49th Ural Cossacks Rgt|50th Ural Cossacks Rgt|51st Ural Cossacks Rgt|52nd Ural Cossacks Rgt|53rd Ural Cossacks Rgt|54th Ural Cossacks Rgt|55th Ural Cossacks Rgt|56th Ural Cossacks Rgt|57th Ural Cossacks Rgt|58th Ural Cossacks Rgt|59th Ural Cossacks Rgt|60th Ural Cossacks Rgt|3rd Horse Partisans Rgt|4th Horse Partisans Rgt

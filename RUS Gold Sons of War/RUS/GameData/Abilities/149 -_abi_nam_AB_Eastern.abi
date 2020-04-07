@@ -1,0 +1,11 @@
+UID = 149
+Name = $abi_nam_AB_Eastern
+Alias = AB_Eastern
+Kind = $abiFlavor
+Text = $abi_txt_AB_Eastern
+ImageID = abi_Asian.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1
+Area = $Theater_Eastern

@@ -1,0 +1,11 @@
+UID = 50004
+Bitmap = NothingBitmap.bmp
+x = 0
+y = 0
+z = 90
+DragDrop = {None}
+Capacity = 0
+Anchor = HCenter VCenter
+
+
+

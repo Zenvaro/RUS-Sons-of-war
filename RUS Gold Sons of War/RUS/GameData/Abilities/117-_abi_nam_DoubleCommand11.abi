@@ -1,0 +1,11 @@
+UID = 117
+Name = $abi_nam_DoubleCommand11
+Alias = German-Bavarian
+Kind = $abiMultiNation
+Text = $abi_txt_DoubleCommand11
+ImageID = abi_Bavarian.png
+Color = $colAbi_Tan
+Appliance = Group
+Family = 0
+Level = 1
+StrParam0 = GER|BAY

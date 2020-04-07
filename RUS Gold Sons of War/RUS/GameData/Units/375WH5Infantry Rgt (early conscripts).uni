@@ -1,0 +1,16 @@
+UID = 375
+NationTag = WH5
+Name = Infantry Rgt (early conscripts)
+Alias = uni_WH5_Rgt0
+ForcePool = 6
+ShortName = Inf. Rgt.(csc)
+Text = $uni_WH5_Rgt0_txt
+Color = $colWH5Regular 
+ModelType0 = $mdl_WH5_Inf0|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_NorthernWhites
+CustomNames = 1st Russian Expedionnary Dcht|2nd Russian Expedionnary Dcht|3rd Russian Expedionnary Dcht|4th Russian Expedionnary Dcht|1st Murmansk Infantry Rgt|2nd Murmansk Infantry Rgt|3rd Murmansk Infantry Rgt|4th Murmansk Infantry Rgt|5th Murmansk Infantry Rgt|6th Murmansk Infantry Rgt|1st Arkhangelgorod Infantry Rgt|2nd Arkhangelgorod Infantry Rgt|3rd Arkhangelgorod Infantry Rgt|1st Olonetsk Volunteers Rgt|2nd Olonetsk Volunteers Rgt|3rd Onega Fusiliers Rgt|4th Onega Fusiliers Rgt|5th Onega Fusiliers Rgt|11th Northern Fusiliers Rgt|12th Northern Fusiliers Rgt|13th Northern Fusiliers Rgt|14th Northern Fusiliers Rgt|15th Northern Fusiliers Rgt|16th Northern Fusiliers Rgt|17th Northern Fusiliers Rgt|18th Northern Fusiliers Rgt|19th Northern Fusiliers Rgt|20th Northern Fusiliers Rgt|21st Northern Fusiliers Rgt|22nd Northern Fusiliers Rgt|23rd Northern Fusiliers Rgt|24th Northern Fusiliers Rgt|25th Northern Fusiliers Rgt|26th Northern Fusiliers Rgt|27th Northern Fusiliers Rgt|28th Northern Fusiliers Rgt|29th Northern Fusiliers Rgt|30th Northern Fusiliers Rgt

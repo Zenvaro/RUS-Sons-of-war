@@ -1,0 +1,15 @@
+UID = 158
+NationTag = RED
+Name = Mounted Partisans
+Alias = uni_RED_Cav21
+ForcePool = 10
+ShortName = Mtd. Partisans
+Text = $uni_RED_Cav21_txt
+Color = $colREDRebels
+ModelType0 = $mdl_RED_Cav7|2
+FamilyType0 = $famRaider|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWild
+BuildWeight = 0
+CustomNames = 1st Mounted Partisans|2nd Mounted Partisans|3rd Mounted Partisans|4th Mounted Partisans|5th Mounted Partisans|6th Mounted Partisans|7th Mounted Partisans|8th Mounted Partisans|9th Mounted Partisans|10th Mounted Partisans|11th Mounted Partisans|12th Mounted Partisans|13th Mounted Partisans|14th Mounted Partisans|15th Mounted Partisans|16th Mounted Partisans|17th Mounted Partisans|18th Mounted Partisans|19th Mounted Partisans|20th Mounted Partisans|21st Mounted Partisans|22nd Mounted Partisans|23rd Mounted Partisans|24th Mounted Partisans|25th Mounted Partisans|26th Mounted Partisans|27th Mounted Partisans|28th Mounted Partisans|29th Mounted Partisans|30th Mounted Partisans|31st Mounted Partisans|32nd Mounted Partisans|33rd Mounted Partisans|34th Mounted Partisans|35th Mounted Partisans|36th Mounted Partisans|37th Mounted Partisans|38th Mounted Partisans|39th Mounted Partisans|40th Mounted Partisans|41st Mounted Partisans|42nd Mounted Partisans|43rd Mounted Partisans|44th Mounted Partisans|45th Mounted Partisans|46th Mounted Partisans|47th Mounted Partisans|48th Mounted Partisans|49th Mounted Partisans|50th Mounted Partisans|51st Mounted Partisans|52nd Mounted Partisans|53rd Mounted Partisans|54th Mounted Partisans|55th Mounted Partisans|56th Mounted Partisans|57th Mounted Partisans|58th Mounted Partisans|59th Mounted Partisans|60th Mounted Partisans|61st Mounted Partisans|62nd Mounted Partisans|63rd Mounted Partisans|64th Mounted Partisans|65th Mounted Partisans|66th Mounted Partisans|67th Mounted Partisans|68th Mounted Partisans|69th Mounted Partisans|70th Mounted Partisans

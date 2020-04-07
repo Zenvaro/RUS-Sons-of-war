@@ -1,0 +1,121 @@
+21:57:09  (Reporting)  User: felik Computer: DESKTOP-NHF0KTC
+21:57:09  (Reporting)  Loading general settings             
+21:57:10  (Reporting)  USettings.LoadSettings                693  settings loaded, out of  7  settings files.
+21:57:10  (Reporting)  Loading Localized Strings            
+21:57:22  (Reporting)  System local strings loaded from      C:\Program Files (x86)\Steam\steamapps\common\RUS Gold Sons of War\RUS\Settings\LocalStrings__AGE.csv
+21:57:22  (Reporting)  Loading Display Options              
+21:57:22  (Reporting)  Entering DirectX Initializations     
+21:57:22  (Reporting)  LocalStrings & Settings 12435 ms
+21:57:22  (Reporting)  Cursors 262 ms
+21:57:22  (Reporting)  DirectX Initializations 800 ms
+21:57:22  (Reporting)  Fonts 47 ms
+21:57:22  (Reporting)  TTerrainDefs.Create                   108  Terrains definitions loaded, out of  54  terrains files.
+21:57:22  (Reporting)  Terrains Definitions 2495 ms
+21:57:22  (Reporting)  Areas Loading 321 ms
+21:57:22  (Reporting)  Areas 322 ms
+21:57:22  (Reporting)  Theaters 1 ms
+21:57:22  (Reporting)  Particles I 0 ms
+21:57:22  (Reporting)  TAbiDefs.Create                       191  Abilities loaded, out of  191  abilities files.
+21:57:22  (Reporting)  Units Abilities 869 ms
+21:57:22  (Reporting)  TStrucDefs.LoadFromFile               18  StrucDef loaded, out of  18  StrucDef files.
+21:57:22  (Reporting)  Structures 336 ms
+21:57:22  (Reporting)  TFactionDefs.LoadFromFile             52  FactionDef loaded, out of  52  FactionDef files.
+21:57:22  (Reporting)  Factions 1200 ms
+21:57:22  (Reporting)  Application.Initialize                OK
+21:57:22  (Reporting)  TSplash.Create                        OK
+21:57:22  (Reporting)  TSplash.Show                          OK
+21:57:22  (Reporting)  TSplash.Repaint                       OK
+21:57:22  (Reporting)  Starting Media Librarian             
+21:57:22  (Reporting)  Game Engine version:                  RUS GOLD 1.01
+21:57:22  (Reporting)  Max Texture size:                     8192 x 8192
+21:57:22  (Reporting)  TAgeAudio                             Initializing Audio Engine
+21:57:22  (Reporting)  TMediaLibrarian.InitializeSounds      210 sounds loaded.
+21:57:22  (Reporting)  TMediaLibrarian.InitializeMusics      101 Musics loaded.
+21:57:22  (Reporting)  TMediaLibrarian.InitializeVoices      4 Voice Languages loaded.
+21:57:22  (Reporting)  Image                                 3044/10284 mainmenuback Post load memory 84578304
+21:57:22  (Reporting)  Image                                 3071/10284 panel messages_bgd Post load memory 87052288
+21:57:22  (Reporting)  Image                                 3270/10284 top_left_panel_bgd Post load memory 88559616
+21:57:22  (Reporting)  Image                                 3286/10284 top_right_panel_bgd Post load memory 88539136
+21:57:22  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: pos_assault , ExImage ignored
+21:57:22  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: pos_assault_on , ExImage ignored
+21:57:22  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: pos_defence , ExImage ignored
+21:57:22  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: pos_defence_on , ExImage ignored
+21:57:22  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: pos_offensive , ExImage ignored
+21:57:22  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: pos_offensive_on , ExImage ignored
+21:57:22  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: pos_passive , ExImage ignored
+21:57:22  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: pos_passive_on , ExImage ignored
+21:57:22  (Reporting)  Image                                 6239/10284 filepick Post load memory 89444352
+21:57:22  (Reporting)  TMediaLibrarian.Create                Finished loading images in 40.547 seconds Memory usage: 629448 kb
+21:57:22  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  splash ru.png
+21:57:22  (Reporting)  Media Librarian 46660 ms
+21:57:22  (Reporting)  TParticlesDef.Create                  4  particles definitions loaded, out of  4  particles files.
+21:57:22  (Reporting)  Particles II 280 ms
+21:57:22  (Reporting)  TDoodadDefs.Create                    0  doodads definitions loaded, out of  0  files.
+21:57:22  (Reporting)  Doodads 0 ms
+22:01:44  (Reporting)  TListRegionDefs.Create                1983  Regions definitions loaded. PolyCount: 44815 TriangleCount: 40835 AdjacencyCount: 40845 JumpLinkCount: 3422
+22:01:44  (Reporting)  Regions Loading 59159 ms
+22:01:44  (Reporting)  Regions(Area) Loading 35 ms
+22:01:44  (Reporting)  TListButtons.Create                   58  buttons definitions loaded, from 26  frontend files.
+22:01:44  (Reporting)  Buttons 554 ms
+22:01:44  (Reporting)  TAgeDxComponentList.Create            16  frontend definitions loaded, from 16  frontend files.
+22:01:44  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  ledger_back
+22:01:44  (Reporting)  TFrontEnd.Create                      26  frontend definitions loaded, from 38  frontend files.
+22:01:44  (Reporting)  Frontends Initializations 11438 ms
+22:01:44  (Reporting)  Starting Game World                  
+22:01:44  (Reporting)  TMerchandises.LoadFromFile            22  Merchandises loaded, from  22  Merchandises files.
+22:01:44  (Reporting)  TModels.Create                        2158  (Cached) Models loaded in 1589 ms
+22:01:44  (Reporting)  TListUnitDefs.Create                  2483  (Cached) Units loaded in 728 ms
+22:01:44  (Reporting)  TWeather.Create                       16  Weathers patterns loaded, from  16 files.
+22:01:44  (Reporting)  TEthnics.LoadFromFile                 0  Ethnics loaded, from  0  Ethnics files.
+22:01:44  (Reporting)  TReligions.LoadFromFile               0  Religions loaded, from  0  Religions files.
+22:01:44  (Reporting)  TAgendaDefs.LoadFromFile              37  AI Agendas loaded from  37  AI Agendas files.
+22:01:44  (Reporting)  TMapAleaDefs.LoadFromFile             8 TMapAleaDef loaded, from  8 files.
+22:01:44  (Reporting)  TAIAgentDefs.LoadFromFile             0 AIAgentDefs loaded, from  0  aia files.
+22:01:44  (Reporting)  TFactionMods.LoadFromFile             0  Faction Modifiers loaded, from  0  files, in 0 ms
+22:01:44  (Reporting)  TFacAttribDefs.LoadFromFile           0  Faction Atttributes loaded from  0  Attributes Definition files.
+22:01:44  (Reporting)  TFacAttribsOverride.LoadFromFile      0  F.A. Overrides loaded from  0  Attributes Definition files.
+22:01:44  (Reporting)  TRgnDecisionDefs.LoadFromFile         6  Region Decisions loaded, from  6  Decisions files.
+22:01:44  (Reporting)  TBattlePlanDefs.LoadFromFile          0  Battle plans loaded, from  0  files.
+22:01:44  (Reporting)  No sprite found to calculate standard
+22:01:44  (Reporting)  Game World & attached DBs 1450 ms
+22:01:44  (Reporting)  Starting Data Parser                 
+22:01:44  (Reporting)  Data Parser 1 ms
+22:01:44  (Reporting)  Starting Renderer                    
+22:01:44  (Reporting)  Rendering Engine 319 ms
+22:01:44  (Reporting)  Starting Game ...                    
+22:01:44  (Reporting)  Global Load Time: 145214 ms
+22:01:44  (Reporting)  TMain, CreateForm                     OK
+22:01:44  (Reporting)  Application.Run                       Starting app... 694828 kb
+22:01:44  (Reporting)  Game Engine version:                  RUS GOLD 1.01
+22:01:44  (Reporting)  TGameSim.OnLoadGame_FilePicked        C:\Program Files (x86)\Steam\steamapps\common\RUS Gold Sons of War\RUS\Saves\Grand Campaign\Grand Campaign~WHI.trn  :Turn file loaded, # of entries: 283398
+22:01:44  (Reporting)  Faction data                          1000001 Белые - Запад loaded in: 962 ms
+22:01:44  (Reporting)  Faction data                          1000002 Белые - Восток loaded in: 660 ms
+22:01:44  (Reporting)  TUnit.CheckConsistency                1001562 N.G. Semenov renamed from UnitDef DB to  N.G. Semenov
+22:01:44  (Reporting)  TUnit.CheckConsistency                1001563 N.G. Semenov renamed from Model DB to  G.N. Semenov
+22:01:44  (Reporting)  Faction data                          1000003 Красные loaded in: 1026 ms
+22:01:44  (Reporting)  Faction data                          1000004 Анархисты loaded in: 823 ms
+22:01:44  (Reporting)  Faction data                          1000005 Украина loaded in: 137 ms
+22:01:44  (Reporting)  Faction data                          1000006 Зеленые loaded in: 414 ms
+22:01:44  (Reporting)  Faction data                          1000007 Казаки сепаратисты loaded in: 384 ms
+22:01:44  (Reporting)  Faction data                          1000008 Басмачи loaded in: 332 ms
+22:01:44  (Reporting)  Faction data                          1000009 Грузия loaded in: 311 ms
+22:01:44  (Reporting)  Faction data                          1000010 Армения loaded in: 296 ms
+22:01:44  (Reporting)  Faction data                          1000011 Азербайджан loaded in: 348 ms
+22:01:44  (Reporting)  Faction data                          1000012 Эстония loaded in: 337 ms
+22:01:44  (Reporting)  Faction data                          1000013 Латвия loaded in: 295 ms
+22:01:44  (Reporting)  Faction data                          1000014 Литва loaded in: 313 ms
+22:01:44  (Reporting)  Faction data                          1000015 Финляндия loaded in: 371 ms
+22:01:44  (Reporting)  Faction data                          1000016 Румыния loaded in: 351 ms
+22:01:44  (Reporting)  Faction data                          1000017 Япония loaded in: 364 ms
+22:01:44  (Reporting)  Faction data                          1000018 Германия loaded in: 405 ms
+22:01:44  (Reporting)  Faction data                          1000019 Польша loaded in: 366 ms
+22:01:44  (Reporting)  Faction data                          1000020 Неопределившиеся loaded in: 112 ms
+22:01:44  (Reporting)  Красные против белых (Основная кампан 1920, дек. (конец) (T: 4104) loaded
+22:01:44  (Reporting)  Gamesim data                          (excluding DBs) loaded in: 10465 ms
+22:01:44  (Reporting)  Faction data                          1000001 Белые - Запад loaded in: 1040 ms
+22:01:44  (Reporting)  TSlaveThing.SetBitmap:                Unable to find MediaInfo for image:  Fixed_Band.png
+22:01:44  (Reporting)  TSlaveThing.SetBitmap:                Unable to find MediaInfo for image:  alt_Fixed_Band.png
+22:01:44  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  none
+22:01:44  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  None
+22:19:13  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  splish_ru
+22:19:13  --- End of Log ---                                

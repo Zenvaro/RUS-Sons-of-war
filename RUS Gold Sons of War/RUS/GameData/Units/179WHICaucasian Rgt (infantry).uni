@@ -1,0 +1,15 @@
+UID = 179
+NationTag = TER
+Name = Caucasian Rgt (infantry)
+Alias = uni_WHI_Rgt8
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WHI_Rgt8_txt
+Color = $colTERRegular 
+ModelType0 = $mdl_WHI_Inf13|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Terek

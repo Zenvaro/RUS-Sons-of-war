@@ -1,0 +1,15 @@
+UID = 191
+NationTag = WHI
+Name = Marines
+Alias = uni_WHI_Mar
+ForcePool = 4
+ShortName = Marines Rgt.
+Text = $uni_WHI_Mar_txt
+Color = $colWHINavy
+ModelType0 = $mdl_WHI_Mar|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 1
+Area = $Recruit_SouthernWhites

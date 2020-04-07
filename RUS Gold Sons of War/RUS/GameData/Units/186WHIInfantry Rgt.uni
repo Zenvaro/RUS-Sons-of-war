@@ -1,0 +1,15 @@
+UID = 186
+NationTag = WHI
+Name = Infantry Rgt
+Alias = uni_WHI_Rgt15
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WHI_Rgt15_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Inf4|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_SouthernWhites

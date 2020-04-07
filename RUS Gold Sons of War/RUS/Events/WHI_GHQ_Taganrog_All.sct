@@ -1,0 +1,746 @@
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Mai-Maievski|1|0|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  SelectSubUnits = Models $ldr_WHI_Mai-Maievski2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Ready;=;1
+
+Actions
+
+  SelectSubUnits = Models $ldr_WHI_Mai-Maievski2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 12
+    SetName = Armed Forces of South Russia GHQ
+  Apply
+  CreateUnit
+    GMEParam = V.Z. Mai-Maeivski
+    SetCommit = 1
+    SetType = $uni_WHI_Mai-Maievski3
+    SetName = V.Z. Mai-Maeivski
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WHI_New_TaganrogGHQ;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_TaganrogGHQ
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Mai-MaievskiOverrunned|1|1|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Mai-Maievski;=;1
+  EvalUnqUnit = V.Z. Mai-Maievski;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Mai-Maievski_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Mai-MaievskiOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WHI_TaganrogGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_TaganrogGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WHI_TaganrogGHQ;MsgString;opt_desc_WHI_TaganrogGHQ;ToolString;opt_hint_WHI_TaganrogGHQ;SubType;WHI_TaganrogGHQ;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Wrangel|1|0|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  SelectSubUnits = Models $ldr_WHI_Wrangel2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Ready;=;1
+
+Actions
+
+  SelectSubUnits = Models $ldr_WHI_Wrangel2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 12
+    SetName = Armed Forces of South Russia GHQ
+  Apply
+  CreateUnit
+    GMEParam = P.N. Wrangel
+    SetCommit = 1
+    SetType = $uni_WHI_Wrangel3
+    SetName = P.N. Wrangel
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WHI_New_TaganrogGHQ;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_TaganrogGHQ
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_WrangelOverrunned|1|1|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Wrangel;=;1
+  EvalUnqUnit = P.N. Wrangel;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Wrangel_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_WrangelOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WHI_TaganrogGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_TaganrogGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WHI_TaganrogGHQ;MsgString;opt_desc_WHI_TaganrogGHQ;ToolString;opt_hint_WHI_TaganrogGHQ;SubType;WHI_TaganrogGHQ;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Drozdovsky|1|0|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  SelectSubUnits = Models $ldr_WHI_Drozdovsky2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Ready;=;1
+
+Actions
+
+  SelectSubUnits = Models $ldr_WHI_Drozdovsky2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 12
+    SetName = Armed Forces of South Russia GHQ
+  Apply
+  CreateUnit
+    GMEParam = M.G. Drozdovsky
+    SetCommit = 1
+    SetType = $uni_WHI_Drozdovsky3
+    SetName = M.G. Drozdovsky
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WHI_New_TaganrogGHQ;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_TaganrogGHQ
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_DrozdovskyOverrunned|1|1|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Drozdovsky;=;1
+  EvalUnqUnit = M.G. Drozdovsky;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Drozdovsky_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_DrozdovskyOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WHI_TaganrogGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_TaganrogGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WHI_TaganrogGHQ;MsgString;opt_desc_WHI_TaganrogGHQ;ToolString;opt_hint_WHI_TaganrogGHQ;SubType;WHI_TaganrogGHQ;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Markov|1|0|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  SelectSubUnits = Models $ldr_WHI_Markov2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Ready;=;1
+
+Actions
+
+  SelectSubUnits = Models $ldr_WHI_Markov2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 12
+    SetName = Armed Forces of South Russia GHQ
+  Apply
+  CreateUnit
+    GMEParam = S.L. Markov
+    SetCommit = 1
+    SetType = $uni_WHI_Markov3
+    SetName = S.L. Markov
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WHI_New_TaganrogGHQ;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_TaganrogGHQ
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_MarkovOverrunned|1|1|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Markov;=;1
+  EvalUnqUnit = S.L. Markov;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Markov_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_MarkovOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WHI_TaganrogGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_TaganrogGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WHI_TaganrogGHQ;MsgString;opt_desc_WHI_TaganrogGHQ;ToolString;opt_hint_WHI_TaganrogGHQ;SubType;WHI_TaganrogGHQ;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Slushov|1|0|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  SelectSubUnits = Models $ldr_WHI_Slushov2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Ready;=;1
+
+Actions
+
+  SelectSubUnits = Models $ldr_WHI_Slushov2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 12
+    SetName = Armed Forces of South Russia GHQ
+  Apply
+  CreateUnit
+    GMEParam = Slushov
+    SetCommit = 1
+    SetType = $uni_WHI_Slushov3
+    SetName = Slushov
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WHI_New_TaganrogGHQ;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_TaganrogGHQ
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_SlushovOverrunned|1|1|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Slushov;=;1
+  EvalUnqUnit = Slushev;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Slushov_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_SlushovOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WHI_TaganrogGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_TaganrogGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WHI_TaganrogGHQ;MsgString;opt_desc_WHI_TaganrogGHQ;ToolString;opt_hint_WHI_TaganrogGHQ;SubType;WHI_TaganrogGHQ;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Belsky|1|0|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  SelectSubUnits = Models $ldr_WHI_Belsky2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Ready;=;1
+
+Actions
+
+  SelectSubUnits = Models $ldr_WHI_Belsky2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 12
+    SetName = Armed Forces of South Russia GHQ
+  Apply
+  CreateUnit
+    GMEParam = Belsky
+    SetCommit = 1
+    SetType = $uni_WHI_Belsky3
+    SetName = Belsky
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WHI_New_TaganrogGHQ;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_TaganrogGHQ
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_BelskyOverrunned|1|1|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Belsky;=;1
+  EvalUnqUnit = Belsky;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Belsky_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_BelskyOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WHI_TaganrogGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_TaganrogGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WHI_TaganrogGHQ;MsgString;opt_desc_WHI_TaganrogGHQ;ToolString;opt_hint_WHI_TaganrogGHQ;SubType;WHI_TaganrogGHQ;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Koshelev|1|0|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  SelectSubUnits = Models $ldr_WHI_Koshelev2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Ready;=;1
+
+Actions
+
+  SelectSubUnits = Models $ldr_WHI_Koshelev2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 12
+    SetName = Armed Forces of South Russia GHQ
+  Apply
+  CreateUnit
+    GMEParam = Koshelev
+    SetCommit = 1
+    SetType = $uni_WHI_Koshelev3
+    SetName = Koshelev
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WHI_New_TaganrogGHQ;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_TaganrogGHQ
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_KoshelevOverrunned|1|1|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Koshelev;=;1
+  EvalUnqUnit = Koshelev;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Koshelev_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_KoshelevOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WHI_TaganrogGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_TaganrogGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WHI_TaganrogGHQ;MsgString;opt_desc_WHI_TaganrogGHQ;ToolString;opt_hint_WHI_TaganrogGHQ;SubType;WHI_TaganrogGHQ;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Cherbachev|1|0|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  SelectSubUnits = Models $ldr_WHI_Cherbachev2
+  EvalSubUnitSel = NULL
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Ready;=;1
+
+Actions
+
+  SelectSubUnits = Models $ldr_WHI_Cherbachev2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    FixType = 12
+    SetName = Armed Forces of South Russia GHQ
+  Apply
+  CreateUnit
+    GMEParam = Cherbachev
+    SetCommit = 1
+    SetType = $uni_WHI_Cherbachev3
+    SetName = Cherbachev
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = GHQ Supply
+  Apply
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_TaganrogGHQ_Ready;CuOccurs;0
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_WHI_New_TaganrogGHQ;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChgFacEngagementPts = -7
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_TaganrogGHQ
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_CherbachevOverrunned|1|1|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_Cherbachev;=;1
+  EvalUnqUnit = Cherbachev;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TaganrogGHQ_Cherbachev_Regen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  EvalEvent = evt_nam_WHI_TaganrogGHQ_CherbachevOverrunned;=;1
+  ActorDisabled = $gmaOptionReinf;WHI_TaganrogGHQ
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_TaganrogGHQ_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WHI_TaganrogGHQ;MsgString;opt_desc_WHI_TaganrogGHQ;ToolString;opt_hint_WHI_TaganrogGHQ;SubType;WHI_TaganrogGHQ;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+

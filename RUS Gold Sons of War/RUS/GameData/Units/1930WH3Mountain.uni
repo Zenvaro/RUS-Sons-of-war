@@ -1,0 +1,14 @@
+UID = 1930
+NationTag = WH3
+Name = Mountain
+Alias = uni_WH3_Mon
+ForcePool = 4
+ShortName = Mountain Rgt.
+Text = $uni_WH3_Mon_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WHI_Mon|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

@@ -1,0 +1,12 @@
+UID = 46
+Name = $abi_nam_Strong_Morale
+Alias = Strong_Morale
+Kind = $abiCohAdjust
+Text = $abi_txt_Strong_Morale
+ImageID = abi_CohesionBonus.png
+Color = $colAbi_Orange
+Appliance = Unit
+Family = 3
+Level = 1
+Param0 = 5
+ListParams3 = $famLine|$famElite|$famLightInf|$famCavalry|$famMilitia|$famRaider|$famHvyVehicle|$famLtVehicle|$famLightArty|$famMedArty|$famHvyArty

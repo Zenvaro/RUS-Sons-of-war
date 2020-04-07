@@ -1,0 +1,14 @@
+UID = 905
+NationTag = JAP
+Name = Store
+Alias = uni_JAP_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_JAP_Sup2_txt
+Color = $colJAPRegular 
+ModelType0 = $mdl_JAP_Store|8
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

@@ -1,0 +1,2586 @@
+  NULL = NULL
+  NULL = NULL
+
+SelectFaction = $GER
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_NoWar_MoraleIncrease_Silent|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FullWar;=;0
+  EvalMoney = <;2000
+  EvalWSU = <;1000
+
+Actions
+  ChangeWSUPool = 5
+  ChangeMoneyPool = 50
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Germany_Mobilization1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FullWar;=;1
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_GER_Germany_Mobilization1;MsgString;opt_desc_GER_Germany_Mobilization1;ToolString;opt_hint_GER_Germany_Mobilization1;SubType;GER_Germany_Mobilization1;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Germany_Mobilization1_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Germany_Mobilization1_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;GER_Germany_Mobilization1;=;1
+  EvalEngagementPts = >=;10
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = -10
+  ChgVPCount = -50
+  ChangeRailPool = 300
+  ChangeWSUPool = 150
+  ChangeMoneyPool = 500
+
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED 
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  ChangeAssetsProd = 10;10;0;5;7;1
+
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED 
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Bavaria
+  ChangeAssetsProd = 10;10;0;5;7;1
+
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED 
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+  ChangeAssetsProd = 5;0;0;0;1;0
+
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED 
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+  ChangeAssetsProd = 5;5;0;0;2;0
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_Germany_Mobilization;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Germany_Mobilization1;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;GER_Germany_Mobilization1
+
+  ChgEvtOccurs = evt_nam_GER_Germany_Mobilization1_Tracker;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Germany_Mobilization2_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FullWar;=;1
+  EvalEvent = evt_nam_GER_Germany_Mobilization1_Tracker;=;1
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry2.png;Title;opt_title_GER_Germany_Mobilization2;MsgString;opt_desc_GER_Germany_Mobilization2;ToolString;opt_hint_GER_Germany_Mobilization2;SubType;GER_Germany_Mobilization2;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_Germany_Mobilization2_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;GER_Germany_Mobilization2;=;1
+  EvalEngagementPts = >=;10
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = -15
+  ChgVPCount = -100
+  ChangeRailPool = 150
+  ChangeWSUPool = 100
+  ChangeMoneyPool = 500
+
+SelectRegion = $Germany
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED 
+SelectRegion = $Germany
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  ChangeAssetsProd = 10;10;0;5;10;1
+
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED 
+SelectRegion = $Bavaria
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Bavaria
+  ChangeAssetsProd = 10;10;0;5;10;1
+
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED 
+SelectRegion = $Kiel
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Kiel
+  ChangeAssetsProd = 5;0;0;0;1;0
+
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED 
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+  ChangeAssetsProd = 5;5;0;0;2;1
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_Germany_Mobilization;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_Germany_Mobilization2;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;GER_Germany_Mobilization2
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_More_Money_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FullWar;=;1
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_GER_Money1.png;Title;opt_title_GER_More_Money;MsgString;opt_desc_GER_More_Money;ToolString;opt_hint_GER_More_Money;SubType;GER_More_Money;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_More_Money_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;GER_More_Money;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = -2
+  ChgVPCount = -25
+  ChangeMoneyPool = 200
+  ChangePriceInc = 1
+  ChangeLoyaltyFac = $Area_Central_Powers;-5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Central_Powers;5
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_CMN_More_MoneyALL;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_More_Money;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;GER_More_Money
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_More_Money_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 0;6;12;18
+  ActorDisabled = $gmaOptionVar;GER_More_Money
+
+Actions
+  GenTextMsg  = opt_notify_GER_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_GER_Money1.png;Title;opt_title_GER_More_Money;MsgString;opt_desc_GER_More_Money;ToolString;opt_hint_GER_More_Money;SubType;GER_More_Money;SParam1;GER
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_More_Rail_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_GER_More_Rail;MsgString;opt_desc_GER_More_Rail;ToolString;opt_hint_GER_More_Rail;SubType;GER_More_Rail;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_More_Rail_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;GER_More_Rail;=;1
+
+Actions
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -10
+  ChangeRailPool = 200
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_CMN_Rail;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_More_Rail;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;GER_More_Rail
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_More_Rail_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 0;6;12;18
+  ActorDisabled = $gmaOptionVar;GER_More_Rail
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_GER_More_Rail_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_GER_More_Rail;MsgString;opt_desc_GER_More_Rail;ToolString;opt_hint_GER_More_Rail;SubType;GER_More_Rail;SParam1;GER
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_FinlandGulfMines_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Mines.png;Title;opt_title_GER_FinlandGulfMines;MsgString;opt_desc_GER_FinlandGulfMines;ToolString;opt_hint_GER_FinlandGulfMines;SubType;GER_FinlandGulfMines;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_FinlandGulfMines_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_FinlandGulfMines_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;GER_FinlandGulfMines;=;1
+  EvalEngagementPts = >=;5
+  NotEnemy = $Gulf of Finland
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeWSUPool = -25
+  ChangeFacMorale = 5
+  AddDynGraphic = $Gulf of Finland;Icon_NavalMine.png;Icon_NavalMine.png;NULL;270;120;strSeaIsMined
+  AddDynGraphic = $Gulf of Finland;Icon_NavalMine.png;Icon_NavalMine.png;NULL;330;140;strSeaIsMined
+  AddDynGraphic = $Gulf of Finland;Icon_NavalMine.png;Icon_NavalMine.png;NULL;360;200;strSeaIsMined
+  AddDynGraphic = $Gulf of Finland;Icon_NavalMine.png;Icon_NavalMine.png;NULL;390;250;strSeaIsMined
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_FinlandGulfMines;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_FinlandGulfMines;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;GER_FinlandGulfMines
+
+  ChgEvtOccurs = evt_nam_GER_FinlandGulfMines_Tracker;CuOccurs;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_FinlandAtWar|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_MannerheimLine1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FinlandAtWar;=;0
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_FIN_Fortifications.png;Title;opt_title_GER_MannerheimLine1;MsgString;opt_desc_GER_MannerheimLine1;ToolString;opt_hint_GER_MannerheimLine1;SubType;GER_MannerheimLine1;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_MannerheimLine1|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  NotEnemy = $Viipuri
+
+EvalRgnOwned = $Viipuri
+  NotEnemy = $Kakisalmi
+
+EvalRgnOwned = $Kakisalmi
+  EvalRgnStruc = $Viipuri;FACALL;STRUCDEF $Fort;NOT
+  EvalRgnStruc = $Kakisalmi;FACALL;STRUCDEF $Fort;NOT
+  CheckOption = $gmaOptionVar;GER_MannerheimLine1;=;1
+
+SelectFaction = $GER 
+  EvalEngagementPts = >=;10
+  EvalMoney = >=;200
+  MinDate = 1921/01/01
+
+Actions
+
+SelectFaction = $GER
+  ChgFacEngagementPts = -10
+  ChangeMoneyPool = -200
+  ChangeWSUPool = -10
+  ChangeFacMorale = 5
+  ChgVPCount = -100
+  SelectFaction = $GER
+
+SelectRegion = $Kakisalmi
+
+  CreateStruc
+  SetType = $FORTIFIEDLINE
+  SetName = Mannerheim Line North
+  Apply
+  SetHealth = 10
+  SetCohesion = 10
+
+SelectFaction = $GER
+SelectRegion = $Kakisalmi
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Mannerheim Line North
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bde1
+  SetName = Mannerheim Line North Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Art4
+  SUFlavorName = 105mm How. Bty
+  SetName = 1/2 Howitzer Battery
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Art2
+  SUFlavorName = 105mm Bty
+  SetName = 1/3 Line Battery
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Eng
+  SUFlavorName = 1 ML Engineers Bn
+  SetName = 1 ML Engineers Bn
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup2
+  NumCreate = 2
+  SetName = North Magazine
+  Apply
+
+SelectRegion = $Viipuri
+
+  CreateStruc
+  SetType = $Fort
+  SetLevel = 1
+  SetName = Mannerheim Line South
+  Apply
+
+SelectFaction = $GER
+SelectRegion = $Viipuri
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Mannerheim Line South
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bde1
+  SetName = Mannerheim Line South Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Trs
+  SUFlavorName = Communication Center
+  SetName = Line Communication Center
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Art4
+  SUFlavorName = 105mm How. Bty
+  SetName = 2/2 Howitzer Battery
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Art2
+  SUFlavorName = 105mm Bty
+  SetName = 2/3 Line Battery
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Art2
+  SUFlavorName = 105mm Bty
+  SetName = 3/3 Line Battery
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Eng
+  SUFlavorName = 2 ML Engineers Bn
+  SetName = 2 ML Engineers Bn
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup2
+  NumCreate = 2
+  SetName = South Magazine
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+SelectFaction = $GER
+SelectRegion = $Viipuri
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Viipuri Airbase
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bas1
+  SUFlavorName = Viipuri Airfield|4th Finnish Air Sqd.|5th Finnish Air Squadron|6th Finnish Air Squadron
+  SetName = Viipuri Airbase
+  Apply
+  GenTextMsg  = opt_notify_GER_MannerheimLine1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GER_MannerheimLine1;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;GER_MannerheimLine1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BaltikumKorps_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_GER_FullWar;=;0
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_GER_Baltikum.png;Title;opt_title_GER_BaltikumKorps;MsgString;opt_desc_GER_BaltikumKorps;ToolString;opt_hint_GER_BaltikumKorps;SubType;GER_BaltikumKorps;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_BaltikumKorps|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  NotEnemy = $Liepaja
+
+EvalRgnOwned = $Liepaja
+  NotEnemy = $Kaunas
+
+EvalRgnOwned = $Kaunas
+  CheckOption = $gmaOptionVar;GER_BaltikumKorps;=;1
+  EvalEngagementPts = >=;10
+  EvalMoney = >=;200
+  MinDate = 1921/01/01
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -5
+  ChangeFacMorale = 5
+  ChgVPCount = -100
+  Replacement = GER;$famMilitia;-10
+  SetCohesion = 75
+
+SelectRegion = $Ventspils
+
+SelectFaction = $GER
+SelectRegion = $Ventspils
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Baltikum Korps
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Goltz2
+  SetName = R. von der Goltz
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Brandenstein1
+  FlavorName = A. von Brandenstein
+  SetName = A. von Brandenstein
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tschirscky1
+  FlavorName = H. von Tschirscky
+  SetName = H. von Tschirscky
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Sig
+  SetLevel = 1
+  SetName = BK Signal Bn.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Amc1
+  SetLevel = 1
+  SetName = BK Aufklär. Bn.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Eng
+  SetLevel = 1
+  SetName = BK Genie Truppen
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art4
+  SUFlavorName = Guard Arty
+  SetName = BK Artillerie
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SetLevel = 1
+  SetName = BK Nachsub
+  Apply
+
+SelectFaction = $GER
+SelectRegion = $Ventspils
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = BK Luftgruppe
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bas1
+  NumCreate = 3
+  SUFlavorName = Flugplatz Nr.20|BK Aufklärunggeschwader|BK Jagdgeschwader
+  SetLevel = 1
+  SetName = Flugplatz Nr.20
+  Apply
+
+SelectFaction = $GER
+SelectRegion = $Ventspils
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Eiserne Division
+  Apply
+  CreateUnit
+  GMEParam = 6
+  SetType = $uni_GER_Bischoff1
+  FlavorName = J. Bischoff
+  SetName = J. Bischoff
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Mil3
+  FlavorName = von Lossow
+  SUFlavorName = 1. Kurland IR|2. Kurland IR|3. Kurland IR|
+  SetLevel = 1
+  SetName = Kurland Bde
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Rgt0
+  SUFlavorName = Kurland Jägers Bn
+  SetLevel = 1
+  SetName = Kurland Jägers Bn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Rgt0
+  SUFlavorName = Kurland KR
+  SetLevel = 1
+  SetName = Kurland KR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art3
+  SUFlavorName = Kurland FAR
+  SetLevel = 1
+  SetName = Kurland FAR
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Art4
+  SUFlavorName = Kurland FAR
+  SetLevel = 1
+  SetName = Kurland FAR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Sup1
+  SetLevel = 1
+  SetName = Eiserne Division Nachsub
+  Apply
+
+SelectRegion = $Liepaja
+
+SelectFaction = $GER
+SelectRegion = $Liepaja
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Baltic Landeswehr
+  Apply
+  CreateUnit
+  GMEParam = 8
+  SetType = $uni_GER_Fletcher1
+  FlavorName = A. Fletcher
+  SetName = A. Fletcher
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Mil3
+  SUFlavorName = 1. Deutsch-Balt Bn|2. Deutsch-Balt Bn|3. Deutsch-Balt Bn
+  SetLevel = 1
+  SetName = BK Kampf Bde
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Mil2
+  FlavorName = A. Lieven
+  SUFlavorName = Prince Lieven Dcht
+  SetLevel = 2
+  SetName = Prinz Lieven RD
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Mil2
+  FlavorName = K. Dydorov
+  SUFlavorName = Captain Dydorov Dcht
+  SetLevel = 1
+  SetName = Dydorov RD
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde0
+  SetName = Süd Lat. Bde
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Cav0
+  SUFlavorName = Landeswehr DR
+  SetName = Landeswehr DR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Pio
+  SUFlavorName = 3/28. Brandeburg Pionier Bn
+  SetName = 3/28. Brandeburg Pionier Bn
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Art1
+  SUFlavorName = DB FAR
+  SetLevel = 1
+  SetName = DB FAR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Sup1
+  SetName = Baltic Landeswehr Nachschub
+  Apply
+
+SelectRegion = $Kaunas
+
+SelectFaction = $GER
+SelectRegion = $Kaunas
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = 2nd Guard Reserve Division
+  Apply
+  CreateUnit
+  GMEParam = 9
+  SetType = $uni_GER_Tiede1
+  FlavorName = P. Tiede
+  SetName = P. Tiede
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Rgt0
+  FlavorName = von Shrotter
+  SUFlavorName = 1. Guard Reserve JR
+  SetName = 2. Guard Reserve JR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde2
+  FlavorName = von Brederlow
+  SUFlavorName = 1. Gd Reserve IR|2. Gd Reserve IR|64. Gd Reserve IR|70. Gd Reserve IR|Gd Reserve Bat.
+  SetName = 2. Guard Reserve Bde
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Cav1
+  SUFlavorName = Guard Reserve DR
+  SetName = 2. Guard Reserve DR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Cyc
+  SUFlavorName = GR Aufklär. Bn
+  SetName = GR Aufklär. Bn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Pio
+  SUFlavorName = 1/28. Brandeburg Pionier Bn
+  SetName = 1/28. Brandeburg Pionier Bn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Pio
+  SUFlavorName = 2/28. Brandeburg Pionier Bn
+  SetName = 2/28. Brandeburg Pionier Bn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art3
+  FlavorName = von Schmoller
+  SUFlavorName = Guard Reserve FAR
+  SetName = Guard Reserve FAR
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Art4
+  FlavorName = Wehring
+  SUFlavorName = Guard Reserve S.FAR
+  SetName = Guard Reserve S.FAR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Sup1
+  SetName = Garde Reserve Nachschub
+  Apply
+
+SelectFaction = $GER
+SelectRegion = $Kaunas
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Combined 2nd Infantry Brigade
+  Apply
+  CreateUnit
+  GMEParam = 9
+  SetType = $uni_GER_Fleischer1
+  FlavorName = Fleischer
+  SetName = C. Fleischer
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Rgt0
+  FlavorName = Lt-Cdr Michael
+  SUFlavorName = Michael KG
+  SetName = Michael KG
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Rgt0
+  FlavorName = Cpt. Von Brandis
+  SUFlavorName = von Brandis KG
+  SetName = von Brandis KG
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Rgt5
+  FlavorName = Mjr. Bockelmann
+  SUFlavorName = Baden Sturm Bn
+  SetName = Baden Sturm Bn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Rgt0
+  FlavorName = Baroon von Maltzan
+  SUFlavorName = Maltzan Bn
+  SetName = Maltzan Bn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Cav1
+  FlavorName = Mjr. Yorck
+  SUFlavorName = 2. DR
+  SetName = 2. DR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art3
+  FlavorName = Mjr. Yorck
+  SUFlavorName = 40. FAR
+  SetName = 40. FAR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art4
+  FlavorName = Mjr. Yorck
+  SUFlavorName = 26. FAR
+  SetName = 26. FAR
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Art3
+  SUFlavorName = Garde FAR
+  SetName = Garde FAR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Sup1
+  SetName = 2. Brigade Nachschub
+  Apply
+  SetCohesion = 100
+  ChangeLoyaltyFac = $Area_Central_Powers;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Central_Powers;-5
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Latvia;10
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Latvia;-10
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Estonia;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Estonia;-5
+
+SelectFaction = $GER
+  ChangeLoyaltyFac = $Area_Lithuania;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Lithuania;-5
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_BaltikumKorps;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GER_BaltikumKorps;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;GER_BaltikumKorps
+
+  ChgEvtOccurs = evt_nam_GER_BaltikumKorpsRaised;CuOccurs;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PanzerWaffe_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/03/15
+  EvalEvent = evt_nam_GER_AchtungPanzer;=;1
+  Probability = 25
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_GER_PanzerWaffe.png;Title;opt_title_GER_PanzerWaffe;MsgString;opt_desc_GER_PanzerWaffe;ToolString;opt_hint_GER_PanzerWaffe;SubType;GER_PanzerWaffe;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PanzerWaffe|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;GER_PanzerWaffe;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;200
+  EvalWSU = >=;100
+  MinDate = 1921/03/15
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -200
+  ChangeWSUPool = -100
+  ChangeFacMorale = 3
+  Replacement = GER;$famLine;-3
+  Replacement = GER;$famLtVehicle;-3
+  Replacement = GER;$famHvyVehicle;-3
+  SetCohesion = 25
+
+SelectRegion = $Germany
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 2
+  SetName = 1. Panzer Division
+  Apply
+  CreateUnit
+  GMEParam = 7
+  SetType = $uni_GER_Guderian1
+  FlavorName = I. Pz.Division
+  SetName = H. Guderian
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk1
+  SetName = Schw.Pz.Bn I.1
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk1
+  SetName = Schw.Pz.Bn I.2
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk2
+  SetName = Leicht.Pz.Bn I.1
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk2
+  SetName = Leicht.Pz.Bn I.2
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Amc1
+  SetName = Aufklär.Bn I.1
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Bde6
+  SetName = Pz.Gren Bde I.1
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SetName = 1. Panzer Div. Nachsub
+  Apply
+  SetCohesion = 100
+  GenTextMsg  = opt_notify_GER_PanzerWaffe;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GER_PanzerWaffe;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  SetEvtOccurs = evt_nam_GER_FirstPanzerDivision;CuOccurs;1
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;GER_PanzerWaffe
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PanzerWaffe2_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/03/15
+  EvalEvent = evt_nam_GER_FirstPanzerDivision;=;1
+  Probability = 35
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_GER_PanzerWaffe.png;Title;opt_title_GER_PanzerWaffe2;MsgString;opt_desc_GER_PanzerWaffe2;ToolString;opt_hint_GER_PanzerWaffe2;SubType;GER_PanzerWaffe2;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PanzerWaffe2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;GER_PanzerWaffe2;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;200
+  EvalWSU = >=;100
+  MinDate = 1921/03/15
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -200
+  ChangeWSUPool = -100
+  ChangeFacMorale = 3
+  Replacement = GER;$famLine;-3
+  Replacement = GER;$famLtVehicle;-3
+  Replacement = GER;$famHvyVehicle;-3
+  SetCohesion = 25
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 2
+  SetName = 2. Panzer Division
+  Apply
+  CreateUnit
+  GMEParam = 7
+  SetType = $uni_GER_Leeb1
+  FlavorName = II. Pz.Division
+  SetName = W. von Leeb
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk1
+  SetName = Schw.Pz.Bn II.1
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk1
+  SetName = Schw.Pz.Bn II.2
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk2
+  SetName = Leicht.Pz.Bn II.1
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk2
+  SetName = Leicht.Pz.Bn II.2
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Amc1
+  SetName = Aufklär.Bn II.1
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Bde6
+  SetName = Pz.Gren Bde II.1
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SetName = 2. Panzer Div. Nachsub
+  Apply
+  SetCohesion = 100
+  GenTextMsg  = opt_notify_GER_PanzerWaffe2;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GER_PanzerWaffe2;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  SetEvtOccurs = evt_nam_GER_SecondPanzerDivision;CuOccurs;1
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;GER_PanzerWaffe2
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PanzerWaffe3_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/03/15
+  EvalEvent = evt_nam_GER_SecondPanzerDivision;=;1
+  Probability = 35
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_GER_PanzerWaffe.png;Title;opt_title_GER_PanzerWaffe3;MsgString;opt_desc_GER_PanzerWaffe3;ToolString;opt_hint_GER_PanzerWaffe3;SubType;GER_PanzerWaffe3;SParam1;GER
+
+EndEvent
+
+SelectFaction = $GER
+StartEvent = evt_nam_GER_PanzerWaffe3|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;GER_PanzerWaffe3;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;200
+  EvalWSU = >=;100
+  MinDate = 1921/03/15
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -200
+  ChangeWSUPool = -100
+  ChangeFacMorale = 3
+  Replacement = GER;$famLine;-3
+  Replacement = GER;$famLtVehicle;-3
+  Replacement = GER;$famHvyVehicle;-3
+  SetCohesion = 25
+
+SelectFaction = $GER
+SelectRegion = $Germany
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 2
+  SetName = 3. Panzer Division
+  Apply
+  CreateUnit
+  GMEParam = 7
+  SetType = $uni_GER_Rundstedt1
+  FlavorName = III. Pz.Division
+  SetName = G. von Rundstedt
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk1
+  SetName = Schw.Pz.Bn III.1
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk1
+  SetName = Schw.Pz.Bn III.2
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk2
+  SetName = Leicht.Pz.Bn III.1
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tnk2
+  SetName = Leicht.Pz.Bn III.2
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Amc1
+  SetName = Aufklär.Bn III.1
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Bde6
+  SetName = Pz.Gren Bde III.1
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SetName = 3. Panzer Div. Nachsub
+  Apply
+  SetCohesion = 100
+  GenTextMsg  = opt_notify_GER_PanzerWaffe3;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_GER_PanzerWaffe3;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;GER_PanzerWaffe3
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ArmoredDivision_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/03/15
+  EvalEvent = evt_nam_GER_FirstPanzerDivision;=;1
+  Probability = 25
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Event-img_WHI_Tankadrome.png;Title;opt_title_RED_ArmoredDivision;MsgString;opt_desc_RED_ArmoredDivision;ToolString;opt_hint_RED_ArmoredDivision;SubType;RED_ArmoredDivision;SParam1;GER
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ArmoredDivision|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;RED_ArmoredDivision;=;1
+
+EvalRgnOwned = $Kazan
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;200
+  EvalWSU = >=;100
+  MinDate = 1921/03/15
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -200
+  ChangeWSUPool = -100
+  ChangeFacMorale = 3
+  Replacement = RED;$famLine;-3
+  Replacement = RED;$famLtVehicle;-3
+  Replacement = RED;$famHvyVehicle;-3
+  SetCohesion = 25
+
+SelectRegion = $Kazan
+
+SelectFaction = $RED
+SelectRegion = $Kazan
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 2
+  SetName = 1st Armored Division
+  Apply
+  CreateUnit
+  GMEParam = 6
+  SetType = $uni_RED_Zhukov3
+  FlavorName = 1st Armored Div.
+  SetName = G.K. Zhukov
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Tnk3
+  SetName = 1st Arm.Hvy.Bde
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Tnk3
+  SetName = 2nd Arm.Hvy.Bde
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Tnk4
+  SetName = 1st Arm.Lt.Bde
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Tnk4
+  SetName = 2nd Arm.Lt.Bde
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Amc2
+  SetName = Recon Bde
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Tru1
+  SetName = Arm.Div.Supply
+  Apply
+  SetCohesion = 100
+  GenTextMsg  = opt_notify_RED_ArmoredDivision;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_RED_ArmoredDivision;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_ArmoredDivision
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Money1.png;Title;opt_title_RED_More_Money;MsgString;opt_desc_RED_More_Money;ToolString;opt_hint_RED_More_Money;SubType;RED_More_Money;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;RED_More_Money;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = -2
+  ChgVPCount = -25
+  ChangeMoneyPool = 200
+  ChangePriceInc = 1
+
+SelectFaction = $GER
+SelectRegion = $Silesia
+
+SelectRegion = $Silesia
+  ChangeLoyaltyFac = $Area_Central_Powers;5
+
+SelectFaction = $RED 
+  ChangeLoyaltyFac = $Area_Central_Powers;-5
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_CMN_More_MoneyRED;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_More_Money;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_More_Money
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 0;6;12;18
+  ActorDisabled = $gmaOptionVar;RED_More_Money
+
+Actions
+  GenTextMsg  = opt_notify_RED_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Money1.png;Title;opt_title_RED_More_Money;MsgString;opt_desc_RED_More_Money;ToolString;opt_hint_RED_More_Money;SubType;RED_More_Money;SParam1;RED
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Rail_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_RED_More_Rail;MsgString;opt_desc_RED_More_Rail;ToolString;opt_hint_RED_More_RailDNO;SubType;RED_More_Rail;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Rail_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;RED_More_Rail;=;1
+
+Actions
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -10
+  ChangeRailPool = 200
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_CMN_Rail;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_More_Rail;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_More_Rail
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Rail_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  TurnIndex = 0;6;12;18
+  ActorDisabled = $gmaOptionVar;RED_More_Rail
+  Probability = 30
+
+Actions
+  GenTextMsg  = opt_notify_RED_More_Rail_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_RED_More_Rail;MsgString;opt_desc_RED_More_Rail;ToolString;opt_hint_RED_More_RailDNO;SubType;RED_More_Rail;SParam1;RED
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_StalinLine1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_FIN_Fortifications.png;Title;opt_title_RED_StalinLine1;MsgString;opt_desc_RED_StalinLine1;ToolString;opt_hint_RED_StalinLine1;SubType;RED_StalinLine1;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_StalinLine1|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  NotEnemy = $Borodino
+
+EvalRgnOwned = $Borodino
+  NotEnemy = $Podolsk
+
+EvalRgnOwned = $Podolsk
+  NotEnemy = $Shatura
+
+EvalRgnOwned = $Shatura
+  NotEnemy = $Odintsovo
+
+EvalRgnOwned = $Odintsovo
+  NotEnemy = $Tver
+
+EvalRgnOwned = $Tver
+  EvalRgnStruc = $Borodino;FACALL;STRUCDEF $Fort;NOT
+  EvalRgnStruc = $Shatura;FACALL;STRUCDEF $Fort;NOT
+  EvalRgnStruc = $Odintsovo;FACALL;STRUCDEF $Fort;NOT
+  CheckOption = $gmaOptionVar;RED_StalinLine1;=;1
+
+SelectFaction = $RED 
+  EvalEngagementPts = >=;20
+  EvalMoney = >=;200
+  EvalWSU = >=;150
+  MinDate = 1921/01/01
+
+Actions
+
+SelectFaction = $RED
+  ChgFacEngagementPts = -20
+  ChangeMoneyPool = -200
+  ChangeWSUPool = -150
+  ChangeFacMorale = 10
+  Replacement = RED;$famLine;-6
+  ChgVPCount = -100
+  SelectFaction = $RED
+  SetHealth = 10
+  SetCohesion = 10
+
+SelectRegion = $Tver
+
+  CreateStruc
+  SetType = $Fort
+  SetLevel = 1
+  SetName = Stalin Line Tver
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Tver
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Stalin Line Tver
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Gar0
+  SetName = SL Tver Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bty
+  SetName = SL Tver Battery
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Trs
+  SetName = SL Communication Center
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art4
+  SetName = Tver How. Bat.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Eng
+  SetName = SL Eng Bn Tver
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup2
+  NumCreate = 2
+  SetName = Tver Magazine
+  Apply
+
+SelectRegion = $Borodino
+
+  CreateStruc
+  SetType = $FORTIFIEDLINE
+  SetName = Stalin Line North
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Borodino
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Stalin Line North
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Gar0
+  SetName = SL North Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bty
+  SetName = SL North Battery
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup2
+  NumCreate = 2
+  SetName = North Magazine
+  Apply
+
+SelectRegion = $Odintsovo
+
+  CreateStruc
+  SetType = $FORTIFIEDLINE
+  SetName = Stalin Line Center
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Odintsovo
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Stalin Line Center
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Gar0
+  SetName = SL Center Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bty
+  SetName = SL Center Battery
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup2
+  NumCreate = 2
+  SetName = Center Magazine
+  Apply
+
+SelectRegion = $Podolsk
+
+  CreateStruc
+  SetType = $Fort
+  SetLevel = 1
+  SetName = Stalin Line Podolsk
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Podolsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Stalin Line Podolsk
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Gar0
+  SetName = SL Podolsk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bty
+  SetName = SL Podolsk Battery
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Trs
+  SetName = SL Communication Center
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art4
+  SetName = Podolsk How. Bat.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Eng
+  SetName = SL Eng Bn Podolsk
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup2
+  NumCreate = 2
+  SetName = Podolsk Magazine
+  Apply
+
+SelectRegion = $Shatura
+
+  CreateStruc
+  SetType = $FORTIFIEDLINE
+  SetName = Stalin Line South
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Shatura
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Stalin Line South
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Gar0
+  SetName = SL South Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bty
+  SetName = SL South Battery
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup2
+  NumCreate = 2
+  SetName = South Magazine
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+SelectRegion = $Tver
+
+SelectFaction = $RED
+SelectRegion = $Tver
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Tver Airbase
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bas1
+  SUFlavorName = Tver Airfield|1st SL Air Sqd.|2nd SL Air Squadron|3rd SL Air Squadron
+  SetName = Tver Airbase
+  Apply
+
+SelectRegion = $Podolsk
+
+SelectFaction = $RED
+SelectRegion = $Podolsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Podolsk Airbase
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bas1
+  SUFlavorName = Podolsk Airfield|1st SL Air Sqd.|2nd SL Air Squadron|3rd SL Air Squadron
+  SetName = Podolsk Airbase
+  Apply
+  GenTextMsg  = opt_notify_RED_StalinLine1;1;NULL;NULL;NULL
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_RED_StalinLine1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_StalinLine1
+
+EndEvent
+  NULL = NULL
+  NULL = NULL
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_IvanovoTankFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1919/06/01
+
+EvalRgnOwned = $Ivanovo
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Event-img_WHI_Tankadrome.png;Title;opt_title_RED_IvanovoTankFactory;MsgString;opt_desc_RED_IvanovoTankFactory;ToolString;opt_hint_RED_IvanovoTankFactory;SubType;RED_IvanovoTankFactory;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_IvanovoTankFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1919/06/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_IvanovoTankFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;RED_IvanovoTankFactory;=;1
+  EvalEngagementPts = >=;15
+  EvalMoney = >=;50
+  EvalWSU = >=;15
+
+EvalRgnOwned = $Ivanovo
+
+Actions
+  ChgFacEngagementPts = -15
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -15
+  AddDynGraphic = $Ivanovo;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_CMN_IvanovoTankFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_IvanovoTankFactory
+
+  ChgEvtOccurs = evt_nam_RED_IvanovoTankFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_IvanovoTankTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_IvanovoTankFactory_Tracker;=;1
+
+Actions
+  ChangeMoneyPool = -5
+  ChangeWSUPool = -2
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Ivanovo
+StartEvent = evt_nam_RED_IvanovoTankFactoryCompleted|1|2|evt_txt_RED_IvanovoTankFactoryCompleted|Event-img_RED_TankFactoryCompleted|$Ivanovo|NULL
+
+Conditions
+  MinDate = 1919/06/01
+
+EvalRgnOwned = $Ivanovo
+  EvalEvent = evt_nam_RED_IvanovoTankTimer;>=;10
+  Probability = 25
+
+Actions
+  DescEvent = evt_desc_RED_IvanovoTankFactoryCompleted
+
+  CreateStruc
+  SetType = $TANKFACTORY
+  SetName = Ivanovo Tanks Combinat
+  Apply
+  RemDynGraphic = $Ivanovo;Icon_IndusConstr.png
+  AddDynGraphic = $Ivanovo;Icon_TankFactory.png;Icon_IndusConstr.png;NULL;150;75;strTankFactory
+  ChangeUnitPool = $uni_RED_Tnk2;6
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Ivanovo
+StartEvent = evt_nam_RED_IvanovoTankFactoryCaptured|1|2|evt_txt_RED_IvanovoTankFactoryCaptured|Event-img_RED_TankFactoryCaptured|$Ivanovo|NULL
+
+Conditions
+  MinDate = 1919/06/01
+
+EvalRgnOwned = $Ivanovo;NOT
+  EvalEvent = evt_nam_RED_IvanovoTankTimer;<;10
+
+Actions
+  DescEvent = evt_desc_RED_IvanovoTankFactoryCaptured
+  RemDynGraphic = $Ivanovo;Icon_IndusConstr.png
+
+  ChgEvtOccurs = evt_nam_RED_IvanovoTankTimer;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_IvanovoTankFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Ivanovo
+StartEvent = evt_nam_RED_IvanovoTankFactory_RplProduction|1|1|NULL|NULL|$Ivanovo|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  TurnIndex = 1;5;9;13;17;21
+
+EvalRgnOwned = $Ivanovo
+  EvalRgnStruc = $Ivanovo;FACALL;STRUCDEF $TankFactory
+
+Actions
+  DescEvent = evt_desc_RED_IvanovoTankFactoryCaptured
+
+SelectFaction = $RED 
+  Replacement = RED;$famHvyVehicle;1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Nizhniy NovgorodTankFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1919/06/01
+
+EvalRgnOwned = $Nizhniy Novgorod
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Event-img_CMN_PolishTanks.png;Title;opt_title_RED_Nizhniy NovgorodTankFactory;MsgString;opt_desc_RED_Nizhniy NovgorodTankFactory;ToolString;opt_hint_RED_Nizhniy NovgorodTankFactory;SubType;RED_Nizhniy NovgorodTankFactory;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Nizhniy NovgorodTankFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1919/06/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Nizhniy NovgorodTankFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;RED_Nizhniy NovgorodTankFactory;=;1
+  EvalEngagementPts = >=;15
+  EvalMoney = >=;50
+  EvalWSU = >=;15
+
+EvalRgnOwned = $Nizhniy Novgorod
+
+Actions
+  ChgFacEngagementPts = -15
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -15
+  AddDynGraphic = $Nizhniy Novgorod;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_CMN_Nizhniy NovgorodTankFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_Nizhniy NovgorodTankFactory
+
+  ChgEvtOccurs = evt_nam_RED_Nizhniy NovgorodTankFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Nizhniy_NovgorodTankTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_Nizhniy NovgorodTankFactory_Tracker;=;1
+
+Actions
+  ChangeMoneyPool = -5
+  ChangeWSUPool = -2
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Nizhniy Novgorod
+StartEvent = evt_nam_RED_Nizhniy NovgorodTankFactoryCompleted|1|2|evt_txt_RED_Nizhniy NovgorodTankFactoryCompleted|Event-img_RED_TankFactoryCompleted|$Nizhniy Novgorod|NULL
+
+Conditions
+  MinDate = 1919/06/01
+
+EvalRgnOwned = $Nizhniy Novgorod
+  EvalEvent = evt_nam_RED_Nizhniy_NovgorodTankTimer;>=;10
+  Probability = 25
+
+Actions
+  DescEvent = evt_desc_RED_Nizhniy NovgorodTankFactoryCompleted
+
+  CreateStruc
+  SetType = $TANKFACTORY
+  SetName = NN Armor Factory
+  Apply
+  RemDynGraphic = $Nizhniy Novgorod;Icon_IndusConstr.png
+  AddDynGraphic = $Nizhniy Novgorod;Icon_TankFactory.png;Icon_IndusConstr.png;NULL;150;75;strTankFactory
+  ChangeUnitPool = $uni_RED_Tnk2;6
+SelectRegion = $Nizhniy Novgorod
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Nizhniy Novgorod
+StartEvent = evt_nam_RED_Nizhniy NovgorodTankFactoryCaptured|1|2|evt_txt_RED_Nizhniy NovgorodTankFactoryCaptured|Event-img_RED_TankFactoryCaptured|$Nizhniy Novgorod|NULL
+
+Conditions
+  MinDate = 1919/06/01
+
+EvalRgnOwned = $Nizhniy Novgorod;NOT
+  EvalEvent = evt_nam_RED_Nizhniy_NovgorodTankTimer;<;10
+
+Actions
+  DescEvent = evt_desc_RED_Nizhniy NovgorodTankFactoryCaptured
+  RemDynGraphic = $Nizhniy Novgorod;Icon_IndusConstr.png
+
+  ChgEvtOccurs = evt_nam_RED_Nizhniy_NovgorodTankTimer;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_Nizhniy NovgorodTankFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Nizhniy Novgorod
+StartEvent = evt_nam_RED_Nizhniy NovgorodTankFactory_RplProduction|1|1|NULL|NULL|$Nizhniy Novgorod|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  TurnIndex = 2;6;10;14;18;22
+
+EvalRgnOwned = $Nizhniy Novgorod
+  EvalRgnStruc = $Nizhniy Novgorod;FACALL;STRUCDEF $TankFactory
+
+Actions
+
+SelectFaction = $RED 
+  Replacement = RED;$famHvyVehicle;1
+
+EndEvent
+  NULL = NULL
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_EkaterinburgFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Ekaterinburg
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Industry1.png;Title;opt_title_RED_EkaterinburgFactory;MsgString;opt_desc_RED_EkaterinburgFactory;ToolString;opt_hint_RED_EkaterinburgFactory;SubType;RED_EkaterinburgFactory;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_EkaterinburgFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_EkaterinburgFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;RED_EkaterinburgFactory;=;1
+  EvalEngagementPts = >=;15
+  EvalMoney = >=;100
+  EvalWSU = >=;25
+
+EvalRgnOwned = $Ekaterinburg
+
+Actions
+  ChgFacEngagementPts = -15
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -25
+  ChangeFacMorale = 5
+  AddDynGraphic = $Ekaterinburg;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_EkaterinburgFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_EkaterinburgFactory;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_EkaterinburgFactory
+
+  ChgEvtOccurs = evt_nam_RED_EkaterinburgFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_EkaterinburgTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_EkaterinburgFactory_Tracker;=;1
+
+Actions
+  ChangeMoneyPool = -5
+  ChangeWSUPool = -2
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Ekaterinburg
+StartEvent = evt_nam_RED_EkaterinburgFactoryCompleted|1|2|evt_txt_RED_EkaterinburgFactoryCompleted|Event-img_RED_FactoryCompleted|$Ekaterinburg|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Ekaterinburg
+  EvalEvent = evt_nam_RED_EkaterinburgTimer;>=;12
+  Probability = 20
+
+Actions
+  DescEvent = evt_desc_RED_EkaterinburgFactoryCompleted
+  ChangeFacMorale = 5
+
+  CreateStruc
+  SetType = $ARMSFACTORY
+  SetName = Red Urals Arms Factory
+  Apply
+  RemDynGraphic = $Ekaterinburg;Icon_IndusConstr.png
+  AddDynGraphic = $Ekaterinburg;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;150;75;strArmsFactory
+SelectRegion = $Ekaterinburg
+  ChangeAssetsProd = 0;0;0;0;5;0
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Ekaterinburg
+StartEvent = evt_nam_RED_EkaterinburgFactoryCaptured|1|2|evt_txt_RED_EkaterinburgFactoryCaptured|Event-img_RED_FactoryCaptured|$Ekaterinburg|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Ekaterinburg;NOT
+  EvalEvent = evt_nam_RED_EkaterinburgTimer;<;12
+
+Actions
+  DescEvent = evt_desc_RED_EkaterinburgFactoryCaptured
+  ChangeFacMorale = -5
+  RemDynGraphic = $Ekaterinburg;Icon_IndusConstr.png
+
+  ChgEvtOccurs = evt_nam_RED_EkaterinburgTimer;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_EkaterinburgFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Ekaterinburg
+
+SelectFaction = $GER
+SelectRegion = $Ekaterinburg
+StartEvent = evt_nam_GER_EkaterinburgFactoryCaptured|1|2|evt_txt_RED_EkaterinburgFactoryCaptured|Event-img_RED_FactoryCaptured|$Ekaterinburg|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_RED_EkaterinburgFactoryCaptured;=;1
+
+Actions
+  DescEvent = evt_desc_GER_EkaterinburgFactoryCaptured
+  ChangeFacMorale = 1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PermFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Perm
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_RED_PermFactory;MsgString;opt_desc_RED_PermFactory;ToolString;opt_hint_RED_PermFactory;SubType;RED_PermFactory;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PermFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PermFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;RED_PermFactory;=;1
+  EvalEngagementPts = >=;15
+  EvalMoney = >=;100
+  EvalWSU = >=;25
+
+EvalRgnOwned = $Perm
+
+Actions
+  ChgFacEngagementPts = -15
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -25
+  ChangeFacMorale = 5
+  AddDynGraphic = $Perm;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_PermFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_PermFactory;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_PermFactory
+
+  ChgEvtOccurs = evt_nam_RED_PermFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PermTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_PermFactory_Tracker;=;1
+
+Actions
+  ChangeMoneyPool = -5
+  ChangeWSUPool = -2
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Perm
+StartEvent = evt_nam_RED_PermFactoryCompleted|1|2|evt_txt_RED_PermFactoryCompleted|Event-img_RED_FactoryCompleted|$Perm|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Perm
+  EvalEvent = evt_nam_RED_PermTimer;>=;12
+  Probability = 20
+
+Actions
+  DescEvent = evt_desc_RED_PermFactoryCompleted
+  ChangeFacMorale = 5
+
+  CreateStruc
+  SetType = $ARMSFACTORY
+  SetName = Perm Artillery Complex
+  Apply
+  RemDynGraphic = $Perm;Icon_IndusConstr.png
+  AddDynGraphic = $Perm;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;150;75;strArmsFactory
+SelectRegion = $Perm
+  ChangeAssetsProd = 0;0;0;0;5;0
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Perm
+StartEvent = evt_nam_RED_PermFactoryCaptured|1|2|evt_txt_RED_PermFactoryCaptured|Event-img_RED_FactoryCaptured|$Perm|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Perm;NOT
+  EvalEvent = evt_nam_RED_PermTimer;<;12
+
+Actions
+  DescEvent = evt_desc_RED_PermFactoryCaptured
+  ChangeFacMorale = -5
+  RemDynGraphic = $Perm;Icon_IndusConstr.png
+
+  ChgEvtOccurs = evt_nam_RED_PermTimer;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_PermFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Perm
+
+SelectFaction = $GER
+SelectRegion = $Perm
+StartEvent = evt_nam_GER_PermFactoryCaptured|1|2|evt_txt_RED_PermFactoryCaptured|Event-img_RED_FactoryCaptured|$Perm|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_RED_PermFactoryCaptured;=;1
+
+Actions
+  DescEvent = evt_desc_GER_PermFactoryCaptured
+  ChangeFacMorale = 1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ChelyabinskFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Chelyabinsk
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry2.png;Title;opt_title_RED_ChelyabinskFactory;MsgString;opt_desc_RED_ChelyabinskFactory;ToolString;opt_hint_RED_ChelyabinskFactory;SubType;RED_ChelyabinskFactory;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ChelyabinskFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ChelyabinskFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;RED_ChelyabinskFactory;=;1
+  EvalEngagementPts = >=;15
+  EvalMoney = >=;100
+  EvalWSU = >=;25
+
+EvalRgnOwned = $Chelyabinsk
+
+Actions
+  ChgFacEngagementPts = -15
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -25
+  ChangeFacMorale = 5
+  AddDynGraphic = $Chelyabinsk;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;100;strIndustryConstruction
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_ChelyabinskFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_ChelyabinskFactory;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_ChelyabinskFactory
+
+  ChgEvtOccurs = evt_nam_RED_ChelyabinskFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ChelyabinskTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_ChelyabinskFactory_Tracker;=;1
+
+Actions
+  ChangeMoneyPool = -5
+  ChangeWSUPool = -2
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Chelyabinsk
+StartEvent = evt_nam_RED_ChelyabinskFactoryCompleted|1|2|evt_txt_RED_ChelyabinskFactoryCompleted|Event-img_RED_FactoryCompleted|$Chelyabinsk|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Chelyabinsk
+  EvalEvent = evt_nam_RED_ChelyabinskTimer;>=;12
+  Probability = 20
+
+Actions
+  DescEvent = evt_desc_RED_ChelyabinskFactoryCompleted
+  ChangeFacMorale = 5
+
+  CreateStruc
+  SetType = $ARMSFACTORY
+  SetName = Chelyabinsk Ammunition Factory
+  Apply
+  RemDynGraphic = $Chelyabinsk;Icon_IndusConstr.png
+  AddDynGraphic = $Chelyabinsk;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;150;75;strArmsFactory
+SelectRegion = $Chelyabinsk
+  ChangeAssetsProd = 0;0;0;0;5;0
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Chelyabinsk
+StartEvent = evt_nam_RED_ChelyabinskFactoryCaptured|1|2|evt_txt_RED_ChelyabinskFactoryCaptured|Event-img_RED_FactoryCaptured|$Chelyabinsk|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Chelyabinsk;NOT
+  EvalEvent = evt_nam_RED_ChelyabinskTimer;<;12
+
+Actions
+  DescEvent = evt_desc_RED_ChelyabinskFactoryCaptured
+  ChangeFacMorale = -5
+  RemDynGraphic = $Chelyabinsk;Icon_IndusConstr.png
+
+  ChgEvtOccurs = evt_nam_RED_ChelyabinskTimer;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_ChelyabinskFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Chelyabinsk
+
+SelectFaction = $GER
+SelectRegion = $Chelyabinsk
+StartEvent = evt_nam_GER_ChelyabinskFactoryCaptured|1|2|evt_txt_RED_ChelyabinskFactoryCaptured|Event-img_RED_FactoryCaptured|$Chelyabinsk|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_RED_ChelyabinskFactoryCaptured;=;1
+
+Actions
+  DescEvent = evt_desc_GER_ChelyabinskFactoryCaptured
+  ChangeFacMorale = 1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_UfaFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Ufa
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Industrialization3.png;Title;opt_title_RED_UfaFactory;MsgString;opt_desc_RED_UfaFactory;ToolString;opt_hint_RED_UfaFactory;SubType;RED_UfaFactory;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_UfaFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_UfaFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;RED_UfaFactory;=;1
+  EvalEngagementPts = >=;15
+  EvalMoney = >=;100
+  EvalWSU = >=;25
+
+EvalRgnOwned = $Ufa
+
+Actions
+  ChgFacEngagementPts = -15
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -25
+  ChangeFacMorale = 5
+  AddDynGraphic = $Ufa;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;100;strIndustryConstruction
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_UfaFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_UfaFactory;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_UfaFactory
+
+  ChgEvtOccurs = evt_nam_RED_UfaFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_UfaTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_UfaFactory_Tracker;=;1
+
+Actions
+  ChangeMoneyPool = -5
+  ChangeWSUPool = -2
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Ufa
+StartEvent = evt_nam_RED_UfaFactoryCompleted|1|2|evt_txt_RED_UfaFactoryCompleted|Event-img_RED_FactoryCompleted|$Ufa|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Ufa
+  EvalEvent = evt_nam_RED_UfaTimer;>=;12
+  Probability = 20
+
+Actions
+  DescEvent = evt_desc_RED_UfaFactoryCompleted
+  ChangeFacMorale = 5
+
+  CreateStruc
+  SetType = $ARMSFACTORY
+  SetName = Ufa Armaments Combinat
+  Apply
+  RemDynGraphic = $Ufa;Icon_IndusConstr.png
+  AddDynGraphic = $Ufa;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;150;75;strArmsFactory
+SelectRegion = $Ufa
+  ChangeAssetsProd = 0;0;0;0;5;0
+  RemDynGraphic = $Ufa;Icon_IndusConstr.png
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Ufa
+StartEvent = evt_nam_RED_UfaFactoryCaptured|1|2|evt_txt_RED_UfaFactoryCaptured|Event-img_RED_FactoryCaptured|$Ufa|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Ufa;NOT
+  EvalEvent = evt_nam_RED_UfaTimer;<;12
+
+Actions
+  DescEvent = evt_desc_RED_UfaFactoryCaptured
+  ChangeFacMorale = -5
+  RemDynGraphic = $Ufa;Icon_IndusConstr.png
+
+  ChgEvtOccurs = evt_nam_RED_UfaTimer;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_UfaFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Ufa
+
+SelectFaction = $GER
+SelectRegion = $Ufa
+StartEvent = evt_nam_GER_UfaFactoryCaptured|1|2|evt_txt_RED_UfaFactoryCaptured|Event-img_RED_FactoryCaptured|$Ufa|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_RED_UfaFactoryCaptured;=;1
+
+Actions
+  DescEvent = evt_desc_GER_UfaFactoryCaptured
+  ChangeFacMorale = 1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SamaraFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Samara
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Industry1.png;Title;opt_title_RED_SamaraFactory;MsgString;opt_desc_RED_SamaraFactory;ToolString;opt_hint_RED_SamaraFactory;SubType;RED_SamaraFactory;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SamaraFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SamaraFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;RED_SamaraFactory;=;1
+  EvalEngagementPts = >=;15
+  EvalMoney = >=;100
+  EvalWSU = >=;25
+
+EvalRgnOwned = $Samara
+
+Actions
+  ChgFacEngagementPts = -15
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -25
+  ChangeFacMorale = 5
+  AddDynGraphic = $Samara;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;130;100;strIndustryConstruction
+
+SelectFaction = $GER
+  GenTextMsg  = opt_notify_GER_SamaraFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_SamaraFactory;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_SamaraFactory
+
+  ChgEvtOccurs = evt_nam_RED_SamaraFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SamaraTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_SamaraFactory_Tracker;=;1
+
+Actions
+  ChangeMoneyPool = -5
+  ChangeWSUPool = -2
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Samara
+StartEvent = evt_nam_RED_SamaraFactoryCompleted|1|2|evt_txt_RED_SamaraFactoryCompleted|Event-img_RED_FactoryCompleted|$Samara|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Samara
+  EvalEvent = evt_nam_RED_SamaraTimer;>=;12
+  Probability = 20
+
+Actions
+  DescEvent = evt_desc_RED_SamaraFactoryCompleted
+  ChangeFacMorale = 5
+
+  CreateStruc
+  SetType = $ARMSFACTORY
+  SetName = Samara Military Complex
+  Apply
+  RemDynGraphic = $Samara;Icon_IndusConstr.png
+  AddDynGraphic = $Samara;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;150;75;strArmsFactory
+SelectRegion = $Samara
+  ChangeAssetsProd = 0;0;0;0;5;0
+  RemDynGraphic = $Samara;Icon_IndusConstr.png
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Samara
+StartEvent = evt_nam_RED_SamaraFactoryCaptured|1|2|evt_txt_RED_SamaraFactoryCaptured|Event-img_RED_FactoryCaptured|$Samara|NULL
+
+Conditions
+  MinDate = 1921/01/01
+
+EvalRgnOwned = $Samara;NOT
+  EvalEvent = evt_nam_RED_SamaraTimer;<;12
+
+Actions
+  DescEvent = evt_desc_RED_SamaraFactoryCaptured
+  ChangeFacMorale = -5
+  RemDynGraphic = $Samara;Icon_IndusConstr.png
+
+  ChgEvtOccurs = evt_nam_RED_SamaraTimer;MaxOccurs;0
+
+  ChgEvtOccurs = evt_nam_RED_SamaraFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $GER
+SelectRegion = $Samara
+
+SelectFaction = $GER
+SelectRegion = $Samara
+StartEvent = evt_nam_GER_SamaraFactoryCaptured|1|2|evt_txt_RED_SamaraFactoryCaptured|Event-img_RED_FactoryCaptured|$Samara|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  EvalEvent = evt_nam_RED_SamaraFactoryCaptured;=;1
+
+Actions
+  DescEvent = evt_desc_GER_SamaraFactoryCaptured
+  ChangeFacMorale = 5
+
+EndEvent

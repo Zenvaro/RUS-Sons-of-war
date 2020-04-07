@@ -1,0 +1,17 @@
+UID = 531
+NationTag = GER
+Name = Riverine Transport
+Alias = uni_GER_RT1
+ForcePool = 12
+ShortName = Riv. Transport
+Text = $uni_GER_RT1_txt
+Color = $colGERNavy
+DoubleLength = 1
+ModelType0 = $mdl_GER_Bat|4
+FamilyType0 = $famTransportShip|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 4
+Area = $Recruit_Germans
+CustomNames = 1. Fluss-Transport. Flot.|2. Fluss-Transport. Flot.|3. Fluss-Transport. Flot.|4. Fluss-Transport. Flot.|5. Fluss-Transport. Flot.|6. Fluss-Transport. Flot.|7. Fluss-Transport. Flot.|8. Fluss-Transport. Flot.|9. Fluss-Transport. Flot.|10. Fluss-Transport. Flot.|11. Fluss-Transport. Flot.|12. Fluss-Transport. Flot.|13. Fluss-Transport. Flot.|14. Fluss-Transport. Flot.|15. Fluss-Transport. Flot.|16. Fluss-Transport. Flot.|17. Fluss-Transport. Flot.|18. Fluss-Transport. Flot.|19. Fluss-Transport. Flot.|20. Fluss-Transport. Flot.|21. Fluss-Transport. Flot.|22. Fluss-Transport. Flot.|23. Fluss-Transport. Flot.|24. Fluss-Transport. Flot.|25. Fluss-Transport. Flot.|26. Fluss-Transport. Flot.|27. Fluss-Transport. Flot.|28. Fluss-Transport. Flot.|29. Fluss-Transport. Flot.|30. Fluss-Transport. Flot.|

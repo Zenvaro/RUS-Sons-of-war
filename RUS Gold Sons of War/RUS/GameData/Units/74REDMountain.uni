@@ -1,0 +1,14 @@
+UID = 74
+NationTag = RED
+Name = Mountain
+Alias = uni_RED_Mon
+ForcePool = 20
+ShortName = Mountain Rgt.
+Text = $uni_RED_Mon_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Mon|2
+FamilyType0 = $famElite|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

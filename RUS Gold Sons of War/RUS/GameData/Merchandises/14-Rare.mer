@@ -1,0 +1,9 @@
+UID = 14
+Alias = resRare
+Name = $res_nam_Rare
+ShortName = $res_shortnam_Rare
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *RareAsset*

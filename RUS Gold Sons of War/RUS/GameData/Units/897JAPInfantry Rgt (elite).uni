@@ -1,0 +1,14 @@
+UID = 897
+NationTag = JAP
+Name = Infantry Rgt (elite)
+Alias = uni_JAP_Rgt2
+ForcePool = 10
+ShortName = Inf. Rgt
+Text = $uni_JAP_Rgt2_txt
+Color = $colJAPRegular 
+ModelType0 = $mdl_JAP_Inf2|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

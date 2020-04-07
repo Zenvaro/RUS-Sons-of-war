@@ -1,0 +1,16 @@
+UID = 374
+NationTag = WH4
+Name = Militia
+Alias = uni_WH4_MilAG
+ForcePool = 12
+ShortName = Militia
+Text = $uni_WH4_MilAG_txt
+Color = $colWH4Militia
+ModelType0 = $mdl_WH4_Mil1|1
+FamilyType0 = $famMilitia|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 0
+Area = $Recruit_WesternWhites
+CustomNames = 1st North West Militia|2nd North West Militia|3rd North West Militia|4th North West Militia|5th North West Militia|6th North West Militia|7th North West Militia|8th North West Militia|9th North West Militia|10th North West Militia|11th North West Militia|12th North West Militia|13th North West Militia|14th North West Militia|15th North West Militia|16th North West Militia|17th North West Militia|18th North West Militia|19th North West Militia|20th North West Militia|21st North West Militia|22nd North West Militia|23rd North West Militia|24th North West Militia|25th North West Militia|26th North West Militia|27th North West Militia|28th North West Militia|29th North West Militia|30th North West Militia|31st North West Militia|32nd North West Militia|33rd North West Militia|34th North West Militia|35th North West Militia|36th North West Militia|37th North West Militia|38th North West Militia|39th North West Militia|40th North West Militia

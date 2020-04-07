@@ -1,0 +1,16 @@
+UID = 202
+NationTag = TER
+Name = Caucasian Rgt (Cavalry)
+Alias = uni_WHI_Cav9
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WHI_Cav9_txt
+Color = $colTERRegular 
+ModelType0 = $mdl_WHI_Cav7|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Terek
+CustomNames = 1st Chechen Cavalry Rgt|2nd Chechen Cavalry Rgt|3rd Chechen Cavalry Rgt|1st Osset Cavalry Rgt|2nd Osset Cavalry Rgt|3rd Osset Cavalry Rgt|4th Osset Cavalry Rgt

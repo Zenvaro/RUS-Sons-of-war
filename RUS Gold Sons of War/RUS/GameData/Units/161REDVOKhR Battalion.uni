@@ -1,0 +1,17 @@
+UID = 161
+NationTag = RED
+Name = VOKhR Battalion
+Alias = uni_RED_VOKhR1
+ForcePool = 12
+ShortName = VOKhR Bn.
+Text = $uni_RED_VOKhR1_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_VOKhR|1
+ModelType1 = $mdl_RED_Pol|1
+FamilyType0 = $famLine|1
+FamilyType1 = $famNavalEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st VOKhR Btn|2nd VOKhR Btn|3rd VOKhRBtn|4th VOKhR Btn|5th VOKhR Btn|6th VOKhR Btn|7th VOKhR Btn|8th VOKhR Btn|9th VOKhR Btn|10th VOKhR Btn|11th VOKhR Btn|12th VOKhR Btn|13th VOKhR Btn|14th VOKhR Btn|15th VOKhR Btn|16th VOKhR Btn|17th VOKhR Btn|18th VOKhR Btn|19th VOKhR Btn|20th VOKhR Btn|21st VOKhR Btn|22nd VOKhR Btn|23rd VOKhR Btn|24th VOKhR Btn|25th VOKhR Btn|26th VOKhR Btn|27th VOKhR Btn|28th VOKhR Btn|29th VOKhR Btn|30th VOKhR Btn

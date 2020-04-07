@@ -1,0 +1,14 @@
+UID = 653
+NationTag = CZE
+Name = Cavalry Rgt
+Alias = uni_CZE_Cav1
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_CZE_Cav1_txt
+Color = $colCZERegular 
+ModelType0 = $mdl_CZE_Cav1|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

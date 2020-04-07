@@ -1,0 +1,10 @@
+UID = 188
+Name = $abi_nam_ArmTrain
+Alias = ArmoredTrain
+Kind = $abiFlavor
+Text = $abi_txt_ArmTrain
+ImageID = abi_areatied.png
+Color = $colAbi_LightYellow
+Appliance = Self
+Family = 1
+Level = 1

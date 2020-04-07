@@ -1,0 +1,11 @@
+UID = 113
+Name = $abi_nam_DoubleCommand7
+Alias = Russian-Balt
+Kind = $abiMultiNation
+Text = $abi_txt_DoubleCommand7
+ImageID = abi_Baltic.png
+Color = $colAbi_Tan
+Appliance = Group
+Family = 0
+Level = 1
+StrParam0 = WHI|WH3|WH2|WH4|WH5|BAL|EST|LET|LIT

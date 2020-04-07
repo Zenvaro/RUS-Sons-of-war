@@ -1,0 +1,14 @@
+UID = 839
+NationTag = GRE
+Name = Store
+Alias = uni_GRE_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_GRE_Sup2_txt
+Color = $colGRERegular 
+ModelType0 = $mdl_GRE_Store|8
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

@@ -1,0 +1,4471 @@
+  ANAAI.sct
+  GRNAI.sct
+  UKRAI.sct
+  NULL = NULL
+  NULL = NULL
+
+SelectFaction = $POL
+
+SelectFaction = $POL
+StartEvent = evt_nam_RussianArmyNearWarsaw|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  SelectSubUnits = Area $EventArea_Close_to_Warsaw;FactionTags RED
+  EvalSubUnitCount = >=;100
+
+Actions
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_AiSetParam_RED|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+  AI.SetParams = aiLRV_HarborValCoef  80;aiLRV_RailVal  20;aiLRV_DestRailVal  13
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WHI
+
+SelectFaction = $WHI
+StartEvent = evt_nam_AiSetParam_WHI|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+  AI.SetParams = aiLRV_HarborValCoef  90;aiLRV_RailVal  20;aiLRV_DestRailVal  13
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WH3
+
+SelectFaction = $WH3
+StartEvent = evt_nam_AiSetParam_WH3|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+  AI.SetParams = aiLRV_HarborValCoef  80;aiLRV_RailVal  20;aiLRV_DestRailVal  13
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $UKR
+
+SelectFaction = $UKR
+StartEvent = evt_nam_AiSetParam_UKR|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+  AI.SetParams = aiLRV_HarborValCoef  80;aiLRV_RailVal  20;aiLRV_DestRailVal  13
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $ANA
+
+SelectFaction = $ANA
+StartEvent = evt_nam_AiSetParam_ANA|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+  AI.SetParams = aiLRV_HarborValCoef  80;aiLRV_RailVal  20;aiLRV_DestRailVal  13
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $GRN
+
+SelectFaction = $GRN
+StartEvent = evt_nam_AiSetParam_GRN|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+  AI.SetParams = aiLRV_HarborValCoef  80;aiLRV_RailVal  20;aiLRV_DestRailVal  13
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $POL
+
+SelectFaction = $POL
+StartEvent = evt_nam_AiSetParam_POL|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+  AI.SetParams = aiLRV_HarborValCoef  80;aiLRV_RailVal  20;aiLRV_DestRailVal  13
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+StartEvent = evt_nam_Renforts_POL_PolishReinforcements1|1|2|evt_txt_Renforts_POL_PolishReinforcements1|Event-img_CMN_FrenchInPoland|$Warsaw|NULL
+
+Conditions
+  MinDate = 1920/04/25
+  MaxDate = 1921/12/30
+  Probability = 30
+
+Actions
+  DescEvent = evt_desc_Renforts_POL_PolishReinforcements1
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = French Military Missions
+  Apply
+  CreateUnit
+  SetType = $uni_FRA_Adv
+  SUFlavorName = Military Advisors
+  SetName = French Military Advisors
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+StartEvent = evt_nam_Renforts_POL_PolishReinforcements2|1|1|NULL|NULL|$Warsaw|NULL
+
+Conditions
+  MinDate = 1920/05/01
+  MaxDate = 1921/12/30
+  Probability = 40
+
+Actions
+  DescEvent = evt_desc_Renforts_POL_PolishReinforcements2
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Reserve Army
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Sosnkowski2
+  SetName = K. Sosnkowski
+  Apply
+  CreateUnit
+  GMEParam = 6
+  SetType = $uni_POL_Jazwinski1
+  FlavorName = 11th Infantry Div.
+  SetName = B. Jazwinski
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Rgt4
+  SUFlavorName = 46th Infantry 
+  SetName = 46th Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Rgt4
+  SUFlavorName = 47th Infantry 
+  SetName = 47th Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Rgt4
+  SUFlavorName = 48th Infantry 
+  SetName = 48th Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Rgt4
+  SUFlavorName = 49th Infantry 
+  SetName = 49th Infantry Rgt
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_POL_Art2
+  SUFlavorName = 11th Division Arty
+  SetName = 11th Division Artillery
+  Apply
+  CreateUnit
+  GMEParam = 6
+  SetType = $uni_POL_Skrzynski1
+  FlavorName = 16th Infantry Div.
+  SetName = S. Skrzynski
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Rgt4
+  SUFlavorName = 63rd Infantry 
+  SetName = 63rd Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Rgt4
+  SUFlavorName = 64th Infantry 
+  SetName = 64th Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Rgt4
+  SUFlavorName = 65th Infantry 
+  SetName = 65th Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Rgt4
+  SUFlavorName = 66th Infantry
+  SetName = 66th Infantry Rgt
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_POL_Art2
+  SUFlavorName = 16th Division Arty
+  SetName = 16th Division Artillery
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetLevel = 1
+  SetName = 11th Division Supply
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetLevel = 1
+  SetName = 16th Division Supply
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 0
+  SetName = Kosciuszko Air Squadron
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Bas1
+  NumCreate = 3
+  SUFlavorName = KAS Airbase|1/1Kosciuszko Sq.|2/1Kosciuszko Sq.
+  SetLevel = 1
+  SetName = Kosciuszko Air Squadron
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_Renforts_RED_TsaristOfficers|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  FixedDate = 1920/05/01
+
+Actions
+  DescEvent = evt_desc_Renforts_RED_TsaristOfficers
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = General Brusilov
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Brusilov3
+  SetName = A.A. Brusilov
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+StartEvent = evt_nam_Renforts_RED_RedReinforcements6|1|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+  MinDate = 1920/05/01
+
+Actions
+  DescEvent = evt_desc_Renforts_RED_RedReinforcements6
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 1st 'Konarmiya'
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Budyenny2
+  FlavorName = 1st 'Konarmiya'
+  SetName = S.M. Budyenny
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav12
+  SetLevel = 1
+  SetName = 4th Cavalry Div.
+  Apply
+  CreateUnit
+  GMEParam = 3
+  SetType = $uni_RED_Timoshenko1
+  FlavorName = 6th Cavalry Div.
+  SetName = S.K. Timoshenko
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav9
+  SetLevel = 1
+  SetName = 1/6th Cavalry Div.
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Cav9
+  SetLevel = 1
+  SetName = 2/6th Cavalry Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav13
+  SetLevel = 1
+  SetName = 11th Cavalry Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav12
+  SetLevel = 1
+  SetName = 14th Cavalry Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_MG1
+  SetLevel = 1
+  SetName = 1st Tachankas Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_MG1
+  SetLevel = 1
+  SetName = 2nd Tachankas Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amc1
+  SUFlavorName = Armored Cars
+  SetLevel = 1
+  SetName = 'Konarmiya' Armored Cars
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = 'In Honor of Nikolai Rudnev'
+  SetLevel = 1
+  SetName = 'In Honor of Nikolai Rudnev'
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = 'Death to the Directory'
+  SetLevel = 1
+  SetName = 'Death to the Directory'
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = 'All Power to the Soviets'
+  SetLevel = 1
+  SetName = 'All Power to the Soviets'
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = 'Zarya'
+  SetLevel = 1
+  SetName = 'Zarya'
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_RedReinforcements3|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/05/01
+  MaxDate = 1921/12/30
+  Probability = 40
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Vitebsk;$Smolensk;$Velikiye Luki;$Bryansk
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+  DescEvent = evt_desc_Renforts_RED_RedReinforcements3
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 15th Fusiliers Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div12
+  SetName = 15th Fusiliers Div.
+  Apply
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 25th Fusiliers Division
+  Apply
+  CreateUnit
+  GMEParam = 2
+  SetType = $uni_RED_Div12
+  FlavorName = 25th Fusiliers Div.
+  SetLevel = 2
+  SetName = 25th Fusiliers Div.
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Kutiakov1
+  SetName = I.S. Kutiakov
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_RedReinforcements1|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/06/01
+  MaxDate = 1921/12/30
+  Probability = 40
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Vitebsk;$Smolensk;$Velikiye Luki;$Bryansk
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+  DescEvent = evt_desc_Renforts_RED_RedReinforcements1
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 3rd Army
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Lazarevich2
+  SetName = V.S. Lazarevich
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div12
+  SetName = 2nd Fusiliers Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div12
+  SetName = 5th Fusiliers Div.
+  Apply
+  CreateUnit
+  GMEParam = 2
+  SetType = $uni_RED_Div12
+  FlavorName = 6th Fusiliers Div.
+  SetLevel = 1
+  SetName = 6th Fusiliers Div.
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Ivanov1
+  SetName = B.N. Ivanov
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div12
+  SetName = 16th Fusiliers Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div12
+  SetLevel = 1
+  SetName = 18h Fusiliers Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div12
+  SetName = 21st Fusiliers Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div12
+  SetName = 27th Fusiliers Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div18
+  SetName = VOKhR Indpt Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav11
+  SetName = Kuban Cavalry Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 1/3rd Army Supply
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 2/3rd Army Supply
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 3/3rd Army Supply
+  Apply
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 4th Army
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sergeyev2
+  SetName = E.N. Sergeyev
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div12
+  SetName = 12th Fusiliers Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div12
+  SetName = 54th Fusiliers Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div12
+  SetName = 55th Fusiliers Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 4th Army Supply
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_RedReinforcements4|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/06/01
+  MaxDate = 1921/12/30
+  Probability = 10
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Vitebsk;$Smolensk;$Velikiye Luki;$Bryansk
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+  DescEvent = evt_desc_Renforts_RED_RedReinforcements4
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = 10th Cavalry Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav12
+  SetLevel = 1
+  SetName = 10th Cavalry Div.
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_RedReinforcements5|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/06/01
+  MaxDate = 1921/12/30
+  Probability = 40
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Vitebsk;$Smolensk;$Velikiye Luki;$Bryansk
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+  DescEvent = evt_desc_Renforts_RED_RedReinforcements5
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 33rd Fusiliers Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div12
+  SetLevel = 1
+  SetName = 33rd Fusiliers Div.
+  Apply
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 24th Fusiliers Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div12
+  SetLevel = 1
+  SetName = 24th Fusiliers Div.
+  Apply
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Artillery Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art2
+  SUFlavorName = 105mm Arty
+  SetName = 105mm Artillery Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art2
+  SUFlavorName = 105mm Arty
+  SetName = 105mm Artillery Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art4
+  SUFlavorName = 105mm How.
+  SetName = 105mm Howitzer Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art4
+  SUFlavorName = 105mm How.
+  SetName = 105mm Howitzer Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art6
+  SUFlavorName = 155mm Arty
+  SetName = 155mm Artillery Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art6
+  SUFlavorName = 155mm Arty
+  SetName = 155mm Artillery Bty
+  Apply
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Armored Trains
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = 'In Memory of Comrade Ivanov'
+  SetName = 'In Memory of Comrade Ivanov'
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = 'Red Hurricane'
+  SetName = 'Red Hurricane'
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_RedReinforcements11|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/06/01
+  MaxDate = 1921/12/30
+  Probability = 20
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Kharkov
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+  DescEvent = evt_desc_Renforts_RED_RedReinforcements11
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 51st Fusiliers Division
+  Apply
+  CreateUnit
+  GMEParam = 3
+  SetType = $uni_RED_Div6
+  FlavorName = 51st Fusiliers Div.
+  SetLevel = 2
+  SetName = 1/51st Infantry Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div6
+  SetLevel = 2
+  SetName = 2/51st Infantry Div.
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Blucher1
+  SetName = V.K. Blucher
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Rostov
+StartEvent = evt_nam_Renforts_RED_RedReinforcements12|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+  MinDate = 1920/06/01
+  MaxDate = 1921/12/30
+  Probability = 50
+
+Actions
+  DescEvent = evt_desc_Renforts_RED_RedReinforcements12
+
+SelectFaction = $RED
+SelectRegion = $Rostov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 2nd 'Konarmiya'
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Zhloba2
+  SetName = D.P. Zhloba
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div13
+  SetName = 77th Fusiliers Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav10
+  SetName = 21st Cavalry Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav13
+  SetName = 22nd Cavalry Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav11
+  SetName = Don Voisko Cavalry Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_MG1
+  SetName = 3rd Tachankas Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = 'Ataman Churkin'
+  SetName = 'Ataman Churkin'
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 2nd Cavalry Army Supply
+  Apply
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+StartEvent = evt_nam_Renforts_WHI_KubanExpedition1|1|2|evt_txt_Renforts_WHI_KubanExpedition1|Event-img_Renforts_WHI_KubanExpedition1|$Ekaterinodar|NULL
+
+Conditions
+  FixedDate = 1920/06/01
+
+Actions
+  DescEvent = evt_desc_Renforts_WHI_KubanExpedition1
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Taman
+StartEvent = evt_nam_Renforts_WHI_KubanExpedition2|1|1|NULL|NULL|$Taman|NULL
+
+Conditions
+  MinDate = 1920/06/01
+  MaxDate = 1921/12/30
+  Probability = 60
+
+EvalRgnOwned = $Taman
+  EvalEvent = evt_nam_Renforts_WHI_KubanExpedition2B;=;0
+  EvalEvent = evt_nam_Renforts_WHI_KubanExpedition2C;=;0
+
+Actions
+  DescEvent = evt_desc_Renforts_WHI_KubanExpedition2
+
+SelectFaction = $WHI
+SelectRegion = $Taman
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Kuban Cossacks Volunteers
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 1st Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 2nd Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 3rd Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 4th Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 5th Kuban Vols Rgt
+  Apply
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Temriuk
+StartEvent = evt_nam_Renforts_WHI_KubanExpedition2B|1|1|NULL|NULL|$Temriuk|NULL
+
+Conditions
+  MinDate = 1920/06/01
+  MaxDate = 1921/12/30
+  Probability = 60
+
+EvalRgnOwned = $Temriuk
+  EvalEvent = evt_nam_Renforts_WHI_KubanExpedition2;=;0
+  EvalEvent = evt_nam_Renforts_WHI_KubanExpedition2C;=;0
+
+Actions
+  DescEvent = evt_desc_Renforts_WHI_KubanExpedition2
+
+SelectFaction = $WHI
+SelectRegion = $Temriuk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Kuban Cossacks Volunteers
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 1st Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 2nd Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 3rd Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 4th Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 5th Kuban Vols Rgt
+  Apply
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Novorossiysk
+StartEvent = evt_nam_Renforts_WHI_KubanExpedition2C|1|1|NULL|NULL|$Novorossiysk|NULL
+
+Conditions
+  MinDate = 1920/06/01
+  MaxDate = 1921/12/30
+  Probability = 60
+
+EvalRgnOwned = $Novorossiysk
+  EvalEvent = evt_nam_Renforts_WHI_KubanExpedition2;=;0
+  EvalEvent = evt_nam_Renforts_WHI_KubanExpedition2B;=;0
+
+Actions
+  DescEvent = evt_desc_Renforts_WHI_KubanExpedition2C
+
+SelectFaction = $WHI
+SelectRegion = $Novorossiysk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Kuban Cossacks Volunteers
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 1st Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 2nd Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 3rd Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 4th Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 5th Kuban Vols Rgt
+  Apply
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_Renforts_WHI_KubanExpedition3|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/06/01
+  MaxDate = 1921/12/30
+  Probability = 60
+
+EvalRgnOwned = $Ekaterinodar
+
+Actions
+SelectFaction = $WHI
+  AddToRegList = $Ekaterinodar
+  DescEvent = evt_desc_Renforts_WHI_KubanExpedition3
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Kuban Cossacks Uprising
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt1
+  SUFlavorName = Ekaterinodar Vols
+  SetName = Ekaterinodar Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt1
+  SUFlavorName = Ekaterinodar Vols
+  SetName = Novorossiysk Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 6th Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 7th Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 8th Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = Kuban Vols
+  SetName = 9th Kuban Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Cav2
+  SUFlavorName = 1st Kuban Cossacks
+  SetName = 1st Kuban Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Cav2
+  SUFlavorName = 2nd Kuban Cossacks
+  SetName = 2nd Kuban Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Cav2
+  SUFlavorName = 3rd Kuban Cossacks
+  SetName = 3rd Kuban Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Cav2
+  SUFlavorName = 4th Kuban Cossacks
+  SetName = 4th Kuban Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Cav2
+  SUFlavorName = 5th Kuban Cossacks
+  SetName = 5th Kuban Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Kuban Supply
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_RedReinforcements7|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/07/01
+  MaxDate = 1921/12/30
+  Probability = 40
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Vitebsk;$Smolensk;$Velikiye Luki;$Bryansk
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+  DescEvent = evt_desc_Renforts_RED_RedReinforcements7
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Air Reinforcement 1
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Air1
+  SUFlavorName = Airbase N.60|61st Air Dcht|62nd Air Dcht|63rd Air Dcht
+  SetName = 60th Air Group
+  Apply
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Air Reinforcement 2
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Air1
+  SUFlavorName = Airbase N.20|21st Air Dcht|22nd Air Dcht|23rd Air Dcht
+  SetName = 61st Air Group
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_RedReinforcements8|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/07/01
+  MaxDate = 1921/12/30
+  Probability = 40
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Vitebsk;$Smolensk;$Velikiye Luki;$Bryansk
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+  DescEvent = evt_desc_Renforts_RED_RedReinforcements8
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Infantry Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bde9
+  SetName = 85th Infantry Bde
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bde9
+  SetName = 86th Infantry Bde
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bde9
+  SetName = 87th Infantry Bde
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Reserve Supply
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Reserve Supply
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Reserve Supply
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Reserve Supply
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_RedReinforcements9|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/07/01
+  MaxDate = 1921/12/30
+  Probability = 40
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Kharkov;$Pavlograd
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+  DescEvent = evt_desc_Renforts_RED_RedReinforcements9
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 2nd Infantry Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bde9
+  SetName = 48th Fusiliers Bde
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bde9
+  SetName = 55th Fusiliers Bde
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+StartEvent = evt_nam_Renforts_POL_PolishReinforcements3|1|1|NULL|NULL|$Warsaw|NULL
+
+Conditions
+  MinDate = 1920/07/01
+  MaxDate = 1921/12/30
+  Probability = 40
+
+Actions
+  DescEvent = evt_desc_Renforts_POL_PolishReinforcements3
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Officers
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Haller3
+  SetName = J. Haller
+  Apply
+  CreateUnit
+  SetType = $uni_POL_S. Haller1
+  SetName = S. Haller
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_RedReinforcements10|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/08/01
+  MaxDate = 1921/12/30
+  Probability = 40
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Vitebsk;$Smolensk;$Velikiye Luki;$Bryansk
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+  DescEvent = evt_desc_Renforts_RED_RedReinforcements10
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 46th Fusiliers Division
+  Apply
+  CreateUnit
+  GMEParam = 2
+  SetType = $uni_RED_Div12
+  FlavorName = 46th Fusiliers Div.
+  SetName = 46th Fusiliers Div.
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Fedko1
+  SetName = I.F. Fedko
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav12
+  SetName = 8th Cavalry Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 46th Fusiliers Div. Supply
+  Apply
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $POL
+SelectRegion = $Kiev
+
+SelectFaction = $POL
+SelectRegion = $Kiev
+StartEvent = evt_nam_Renforts_POL_UkrainianUprising1|1|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1920/05/01
+  MaxDate = 1921/12/30
+  Probability = 20
+
+EvalRgnOwned = $Kiev
+
+Actions
+  DescEvent = evt_desc_Renforts_POL_UkrainianUprising1
+  SetHealth = 90
+  SetCohesion = 10
+
+SelectFaction = $POL
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Ukraine Republic Army GHQ
+  Apply
+  CreateUnit
+  GMEParam = S.V. Petliura
+  SetCommit = 1
+  SetType = $uni_UKR_Petliura3
+  FlavorName = S.V. Petliura
+  SetName = S.V. Petliura
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = GHQ Supply
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Ukraine Republic Army
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Oskilko2
+  SetName = V. Oskilko
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bolbochan1
+  SetName = P. Bolbochan
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Div0
+  SUFlavorName = 1st Zhitomir|2nd Zhitomir|3rd Zhitomir|4th Zhitomir|Artillery Bty
+  SetName = Zhitomir Fusiliers Div.
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Div1
+  SUFlavorName = 1st Kiev|2nd Kiev|3rd Kiev|Artillery Bty
+  SetName = 1st Kiev Division
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Div1
+  SUFlavorName = 4th Kiev|5th Kiev|6th Kiev|Artillery Bty
+  SetName = 2nd Kiev Division
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Div1
+  SUFlavorName = 1st Vinnytsia|2nd Vinnytsia|3rd Vinnytsia|Artillery Bty
+  SetName = Vinnytsia Division
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 1st Kiev Supply
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 2nd Kiev Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts_POL_UkrainianUprising2|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/05/01
+  MaxDate = 1921/12/30
+  Probability = 30
+
+EvalRgnOwned = $Ekaterinoslav
+
+Actions
+  DescEvent = evt_desc_Renforts_POL_UkrainianUprising2
+  SetHealth = 90
+  SetCohesion = 10
+
+SelectRegion = $Ekaterinoslav
+
+SelectFaction = $POL
+SelectRegion = $Ekaterinoslav
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Ekaterinoslav Corps
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Wolf2
+  SetName = A. Wolf
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Grekov1
+  SetName = A. Grekov
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Div1
+  SUFlavorName = 1st Ekaterinoslav|2nd Ekaterinoslav|3rd Ekaterinoslav|Artillery Bty
+  SetName = Ekaterinoslav Div.
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Div1
+  SUFlavorName = 1st Kherson|2nd Kherson|3rd Kherson|Artillery Bty
+  SetName = Kherson Division
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Ekaterinoslav Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Kharkov
+StartEvent = evt_nam_Renforts_POL_UkrainianUprising3|1|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+  MinDate = 1920/05/01
+  MaxDate = 1921/12/30
+
+EvalRgnOwned = $Kharkov
+  Probability = 50
+
+Actions
+  DescEvent = evt_desc_Renforts_POL_UkrainianUprising3
+  SetHealth = 90
+  SetCohesion = 10
+
+SelectFaction = $POL
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Kharkov Corps
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Konovalets1
+  SetName = E. Konovalets
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Div1
+  SUFlavorName = 1st Kharkov|2nd Kharkov|3rd Kharkov|Artillery Bty
+  SetName = Kharkov Division
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Kharkov Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+  NULL = NULL
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilization_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/05/29
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;RED_PartialMobilization
+  EvalConscript = <=;80
+  EvalMorale = <=;70
+  Probability = 20
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_PartialMobilization;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilization_AIActivate2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/05/29
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;RED_PartialMobilization
+  EvalEvent = evt_nam_RED_PartialMobilization_AIActivate;=;0
+  EvalConscript = <=;80
+  EvalMorale = <=;90
+  Probability = 50
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_PartialMobilization;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilization_AIActivate3|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/05/29
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;RED_PartialMobilization
+  EvalEvent = evt_nam_RED_PartialMobilization_AIActivate;=;0
+  EvalEvent = evt_nam_RED_PartialMobilization_AIActivate2;=;0
+  EvalMorale = >=;90
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_PartialMobilization;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilization_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/05/29
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Mobilization2.png;Title;opt_title_RED_PartialMobilization;MsgString;opt_desc_RED_PartialMobilization;ToolString;opt_hint_RED_PartialMobilization;SubType;RED_PartialMobilization;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_PartialMobilizationLowMorale|1|0|NULL|NULL|$Moscow|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_PartialMobilization;=;1
+  EvalEngagementPts = >=;8
+  EvalMorale = <;80
+  MinDate = 1918/05/29
+
+Actions
+  ChgFacEngagementPts = -8
+  ChangeMoneyPool = -30
+  ChangeFacMorale = -1
+  Replacement = RED;$famLine;1
+  Replacement = RED;$famMilitia;4
+  Replacement = RED;$famCavalry;1
+  ChangeConscriptPool = 550
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_RedPartialMobilizationLow;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_PartialMobilization
+  SetEvtOccurs = evt_nam_RED_PartialMobilizationHighMorale;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_PartialMobilizationMediumMorale;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_PartialMobilizationHighMorale|1|0|NULL|NULL|$Moscow|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_PartialMobilization;=;1
+  EvalEngagementPts = >=;8
+  EvalMorale = >=;120
+  MinDate = 1918/05/29
+
+Actions
+  ChgFacEngagementPts = -8
+  ChangeMoneyPool = -30
+  ChangeFacMorale = -1
+  Replacement = RED;$famLine;4
+  Replacement = RED;$famMilitia;10
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famCavalry;3
+  ChangeConscriptPool = 800
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_RedPartialMobilizationHigh;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_PartialMobilization
+  SetEvtOccurs = evt_nam_RED_PartialMobilizationLowMorale;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_PartialMobilizationMediumMorale;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_PartialMobilizationMediumMorale|1|0|NULL|NULL|$Moscow|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_PartialMobilization;=;1
+  EvalEngagementPts = >=;8
+  EvalMorale = >=;80
+  EvalMorale = <;120
+  MinDate = 1918/05/29
+
+Actions
+  ChgFacEngagementPts = -8
+  ChangeMoneyPool = -30
+  ChangeFacMorale = -1
+  Replacement = RED;$famLine;3
+  Replacement = RED;$famMilitia;5
+  Replacement = RED;$famLightInf;1
+  Replacement = RED;$famCavalry;1
+  ChangeConscriptPool = 700
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_RedPartialMobilizationMedium;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_PartialMobilization
+  SetEvtOccurs = evt_nam_RED_PartialMobilizationLowMorale;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_PartialMobilizationHighMorale;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilization_Regen|99|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/05/29
+  TurnIndex = 6;18;
+  ActorDisabled = $gmaOptionReinf;RED_PartialMobilization
+
+Actions
+  GenTextMsg  = opt_notify_RED_PartialMobilization_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Mobilization2.png;Title;opt_title_RED_PartialMobilization;MsgString;opt_desc_RED_PartialMobilization;ToolString;opt_hint_RED_PartialMobilization;SubType;RED_PartialMobilization;SParam1;RED
+  SetEvtOccurs = evt_nam_RED_PartialMobilizationLowMorale;MaxOccurs;1
+  SetEvtOccurs = evt_nam_RED_PartialMobilizationMediumMorale;MaxOccurs;1
+  SetEvtOccurs = evt_nam_RED_PartialMobilizationHighMorale;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilization_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_PartialMobilization_AIActivate;=;1
+  MinDate = 1918/05/29
+
+CheckAILevel = 1
+  SetEvtOccurs = evt_nam_RED_PartialMobilization_AIActivate;CuOccurs;-1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilization_Regen2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_PartialMobilization_AIActivate2;=;1
+  MinDate = 1918/05/29
+
+CheckAILevel = 1
+  SetEvtOccurs = evt_nam_RED_PartialMobilization_AIActivate2;CuOccurs;-1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilization_Regen3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_RED_PartialMobilization_AIActivate3;=;1
+  MinDate = 1918/05/29
+
+CheckAILevel = 1
+  SetEvtOccurs = evt_nam_RED_PartialMobilization_AIActivate3;CuOccurs;-1
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $POL
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_PartialMobilization_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;POL_PartialMobilization
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;POL_PartialMobilization;1
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_PartialMobilization_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_POL_Mobilization.png;Title;opt_title_POL_PartialMobilization;MsgString;opt_desc_POL_PartialMobilization;ToolString;opt_hint_POL_PartialMobilization;SubType;POL_PartialMobilization;SParam1;POL
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_PartialMobilizationLowMorale|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;POL_PartialMobilization;=;1
+  EvalEngagementPts = >=;8
+  EvalMorale = <;80
+  MinDate = 1918/06/01
+
+Actions
+  ChgFacEngagementPts = -8
+  ChangeMoneyPool = -30
+  ChangeFacMorale = -1
+  Replacement = POL;$famLine;1
+  Replacement = POL;$famMilitia;4
+  Replacement = POL;$famCavalry;1
+  ChangeConscriptPool = 250
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_POLPartialMobilizationLow;1;NULL;NULL;NULL
+
+SelectFaction = $POL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;POL_PartialMobilization
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_PartialMobilizationHighMorale|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;POL_PartialMobilization;=;1
+  EvalEngagementPts = >=;8
+  EvalMorale = >=;120
+  MinDate = 1918/06/01
+
+Actions
+  ChgFacEngagementPts = -8
+  ChangeMoneyPool = -30
+  ChangeFacMorale = -1
+  Replacement = POL;$famLine;4
+  Replacement = POL;$famMilitia;10
+  Replacement = POL;$famLightInf;2
+  Replacement = POL;$famCavalry;3
+  ChangeConscriptPool = 350
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_POLPartialMobilizationHigh;1;NULL;NULL;NULL
+
+SelectFaction = $POL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;POL_PartialMobilization
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_PartialMobilizationMediumMorale|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;POL_PartialMobilization;=;1
+  EvalEngagementPts = >=;8
+  EvalMorale = >=;80
+  EvalMorale = <;120
+  MinDate = 1918/06/01
+
+Actions
+  ChgFacEngagementPts = -8
+  ChangeMoneyPool = -30
+  ChangeFacMorale = -1
+  Replacement = POL;$famLine;3
+  Replacement = POL;$famMilitia;5
+  Replacement = POL;$famLightInf;1
+  Replacement = POL;$famCavalry;1
+  ChangeConscriptPool = 300
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_POLPartialMobilizationMedium;1;NULL;NULL;NULL
+
+SelectFaction = $POL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;POL_PartialMobilization
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_PartialMobilization_Regen|99|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  TurnIndex = 6;18;
+  ActorDisabled = $gmaOptionReinf;POL_PartialMobilization
+
+Actions
+  GenTextMsg  = opt_notify_POL_PartialMobilization_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_POL_Mobilization.png;Title;opt_title_POL_PartialMobilization;MsgString;opt_desc_POL_PartialMobilization;ToolString;opt_hint_POL_PartialMobilization;SubType;POL_PartialMobilization;SParam1POL
+
+EndEvent
+  NULL = NULL
+  NULL = NULL
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_VistulaMiracle_Warsaw_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;POL_VistulaMiracle_Warsaw
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;POL_VistulaMiracle_Warsaw;1
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_VistulaMiracle_Warsaw_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+Actions
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Fortifications.png;Title;opt_title_POL_VistulaMiracle_Warsaw;MsgString;opt_desc_POL_VistulaMiracle_Warsaw;ToolString;opt_hint_POL_VistulaMiracle_WarsawB;SubType;POL_VistulaMiracle_Warsaw;SParam1;POL
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_VistulaMiracle_Warsaw_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionPol;POL_VistulaMiracle_Warsaw;=;1
+
+EvalRgnOwned = $Warsaw
+  EvalRgnStruc = $Warsaw;FACALL;STRUCFAM $sfmFort;NOT
+
+Actions
+  ChangeWSUPool = -10
+  ChangeConscriptPool = -20
+  ChgFacEngagementPts = -10
+
+SelectRegion = $Warsaw
+
+  CreateStruc
+  SetType = $FORTIFIEDLINE
+  SetName = Sobieski Lines
+  Apply
+  SetHealth = 100
+  SetCohesion = 30
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Sobieski Lines
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Rgt4
+  SUFlavorName = 6th Warsaw 
+  SetName = 6th Warsaw Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Rgt4
+  SUFlavorName = 7th Warsaw 
+  SetName = 7th Warsaw Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Rgt4
+  SUFlavorName = 8th Warsaw 
+  SetName = 8th Warsaw Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Rgt4
+  SUFlavorName = 9th Warsaw 
+  SetName = 9th Warsaw Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Rgt4
+  SUFlavorName = 10th Warsaw
+  SetName = 10th Warsaw Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Bty
+  SetName = Lines Battery
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Sup2
+  NumCreate = 2
+  SetName = Lines Magazine
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_CMN_VistulaMiracle_Warsaw;1;NULL;NULL;NULL
+
+SelectFaction = $POL
+  GenTextMsg  = opt_notify_POL_VistulaMiracle_Warsaw;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;POL_VistulaMiracle_Warsaw
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_Renforts_RED_StalinInMoscow3|1|2|evt_txt_Renforts_RED_StalinInMoscow3|Event-img_CMN_LeninAnnouncesNEP|$Moscow|NULL
+
+Conditions
+  EvalEvent = evt_nam_Renforts_RED_StalinInKharkov;=;1
+
+EvalRgnOwned = $Moscow
+  EvalUnqUnit = J. Stalin
+  SelectSubUnits = Models $ldr_RED_Stalin3;Region $Kharkov
+  EvalSubUnitSel = NOT
+
+Actions
+  SelUnqSubUnit = J. Stalin
+  RemoveCuSubUnit = NULL
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+StartEvent = evt_nam_Renforts_RED_StalinInKharkov|1|2|evt_txt_Renforts_RED_StalinInKharkov|Event-img_Renforts_RED_StalinInTzaritsyn|$Kharkov|NULL
+
+Conditions
+  MinDate = 1919/10/16
+
+EvalRgnOwned = $Moscow
+
+EvalRgnOwned = $Kharkov
+  EvalUnqUnit = J. Stalin;NOT
+
+Actions
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Commissar Stalin
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Stalin3
+  FlavorName = Commissar Stalin
+  SetName = J. Stalin
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amc1
+  SetName = Stalin Armored Cars
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ForcesMayBeLockedByStalinKharkov3|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  MaxDate = 1920/12/23
+  SelectSubUnits = Models $ldr_RED_Stalin3;Region $Kharkov
+  EvalSubUnitSel = NULL
+
+EvalRgnOwned = $Moscow
+
+EvalRgnOwned = $Kharkov
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED;OnlyNPermFixed;Families $famLeader
+  EvalSubUnitSel = NULL
+  TurnIndex = 0;2;4;6;8;10;12;14;16;18;20;22
+
+Actions
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED;OnlyNPermFixed;Families $famLeader
+  AlterCuSubUnit = ApplyToList;Probability 50;Attempts 7;SetParentGroupFixing 1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ForcesMayBeLockedByStalinKharkov5|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  MaxDate = 1921/12/23
+  SelectSubUnits = Models $ldr_RED_Stalin3;Region $Kharkov
+  EvalSubUnitSel = NULL
+
+EvalRgnOwned = $Moscow
+
+EvalRgnOwned = $Kharkov
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED;OnlyNPermFixed;Families $famLeader
+  EvalSubUnitSel = NULL
+  TurnIndex = 0;2;4;6;8;10;12;14;16;18;20;22
+
+Actions
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED;OnlyNPermFixed;Families $famLeader
+  AlterCuSubUnit = ApplyToList;Probability 50;Attempts 7;SetParentGroupFixing 1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ForcesMayBeLockedByStalinKharkov7|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1919/09/16
+  MaxDate = 1919/12/23
+  SelectSubUnits = Models $ldr_RED_Stalin3;Region $Kharkov
+  EvalSubUnitSel = NULL
+
+EvalRgnOwned = $Moscow
+
+EvalRgnOwned = $Kharkov
+  SelectSubUnits = Area $Area_Galicia;FactionTags RED;OnlyNPermFixed;Families $famLeader
+  EvalSubUnitSel = NULL
+  TurnIndex = 0;2;4;6;8;10;12;14;16;18;20;22
+
+Actions
+  SelectSubUnits = Area $Area_Galicia;FactionTags RED;OnlyNPermFixed;Families $famLeader
+  AlterCuSubUnit = ApplyToList;Probability 50;Attempts 4;SetParentGroupFixing 1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ForcesMayBeLockedByStalinKharkov9|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  MaxDate = 1920/12/23
+  SelectSubUnits = Models $ldr_RED_Stalin3;Region $Kharkov
+  EvalSubUnitSel = NULL
+
+EvalRgnOwned = $Moscow
+
+EvalRgnOwned = $Kharkov
+  SelectSubUnits = Area $Area_Galicia;FactionTags RED;OnlyNPermFixed;Families $famLeader
+  EvalSubUnitSel = NULL
+  TurnIndex = 0;2;4;6;8;10;12;14;16;18;20;22
+
+Actions
+  SelectSubUnits = Area $Area_Galicia;FactionTags RED;OnlyNPermFixed;Families $famLeader
+  AlterCuSubUnit = ApplyToList;Probability 50;Attempts 4;SetParentGroupFixing 1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_ForcesMayBeLockedByStalinKharkov11|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  MaxDate = 1921/12/23
+  SelectSubUnits = Models $ldr_RED_Stalin3;Region $Kharkov
+  EvalSubUnitSel = NULL
+
+EvalRgnOwned = $Moscow
+
+EvalRgnOwned = $Kharkov
+  SelectSubUnits = Area $Area_Galicia;FactionTags RED;OnlyNPermFixed;Families $famLeader
+  EvalSubUnitSel = NULL
+  TurnIndex = 0;2;4;6;8;10;12;14;16;18;20;22
+
+Actions
+  SelectSubUnits = Area $Area_Galicia;FactionTags RED;OnlyNPermFixed;Families $famLeader
+  AlterCuSubUnit = ApplyToList;Probability 50;Attempts 4;SetParentGroupFixing 1
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Kiev
+
+SelectFaction = $CMN
+SelectRegion = $Kiev
+StartEvent = evt_nam_POL_PolesInKiev|999|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+
+SelectFaction = $RED
+
+EvalRgnOwned = $Kiev;NOT
+
+Actions
+  ChangeFacMorale = -1
+  ChgVPCount = -10
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Minsk
+
+SelectFaction = $CMN
+SelectRegion = $Minsk
+StartEvent = evt_nam_POL_PolesInMinsk|999|1|NULL|NULL|$Minsk|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+
+SelectFaction = $RED
+
+EvalRgnOwned = $Minsk;NOT
+
+Actions
+  ChangeFacMorale = -1
+  ChgVPCount = -10
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Ekaterinoslav
+
+SelectFaction = $CMN
+SelectRegion = $Ekaterinoslav
+StartEvent = evt_nam_POL_PolesInEkaterinoslav|999|1|NULL|NULL|$Ekaterinoslav|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+
+SelectFaction = $RED
+
+EvalRgnOwned = $Ekaterinoslav;NOT
+
+Actions
+  ChangeFacMorale = -1
+  ChgVPCount = -10
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Kharkov
+
+SelectFaction = $CMN
+SelectRegion = $Kharkov
+StartEvent = evt_nam_POL_PolesInKharkov|999|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+
+SelectFaction = $RED
+
+EvalRgnOwned = $Kharkov;NOT
+
+Actions
+  ChangeFacMorale = -1
+  ChgVPCount = -10
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Orenburg
+
+SelectFaction = $POL
+SelectRegion = $Orenburg
+StartEvent = evt_nam_POL_NoPOLOutsideAreaA|999|1|NULL|NULL|$Orenburg|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  SelectSubUnits = Area $Theater_Ural;FactionTags POL
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Ural;FactionTags POL
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Omsk
+StartEvent = evt_nam_POL_NoPOLOutsideAreaB|999|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  SelectSubUnits = Area $Theater_Siberia;FactionTags POL
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Siberia;FactionTags POL
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Petrograd
+StartEvent = evt_nam_POL_NoPOLOutsideAreaC|999|1|NULL|NULL|$Petrograd|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  SelectSubUnits = Area $Theater_Northern;FactionTags POL
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Northern;FactionTags POL
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Moscow
+StartEvent = evt_nam_POL_NoPOLOutsideAreaD|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags POL
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags POL
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Tzaritsyn
+StartEvent = evt_nam_POL_NoPOLOutsideAreaE|999|1|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  SelectSubUnits = Area $Theater_Southern;FactionTags POL
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Southern;FactionTags POL
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Samara
+StartEvent = evt_nam_POL_NoPOLOutsideAreaF|999|1|NULL|NULL|$Samara|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  MaxDate = 1921/12/30
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  SelectSubUnits = Area $Theater_Volga;FactionTags POL
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Volga;FactionTags POL
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Rostov
+
+SelectFaction = $RED
+SelectRegion = $Rostov
+StartEvent = evt_nam_RED_NoANAOutsideUkraineA|999|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  MaxDate = 1921/12/30
+  SelectSubUnits = Area $Theater_Southern;FactionTags ANA
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Southern;FactionTags ANA
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Orel
+StartEvent = evt_nam_RED_NoANAOutsideUkraineB|999|1|NULL|NULL|$Orel|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  MaxDate = 1921/12/30
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags ANA
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags ANA
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Orenburg
+StartEvent = evt_nam_RED_NoANAOutsideUkraineC|999|1|NULL|NULL|$Orenburg|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  MaxDate = 1921/12/30
+  SelectSubUnits = Area $Theater_Ural;FactionTags ANA
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Ural;FactionTags ANA
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Bucuresti
+StartEvent = evt_nam_RED_NoANAOutsideUkraineD|999|1|NULL|NULL|$Bucuresti|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  MaxDate = 1921/12/30
+  SelectSubUnits = Area $Theater_Western;FactionTags ANA
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Western;FactionTags ANA
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Minsk
+StartEvent = evt_nam_RED_NoANAOutsideUkraineE|999|1|NULL|NULL|$Minsk|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  MaxDate = 1921/12/30
+  SelectSubUnits = Area $Theater_Belarus;FactionTags ANA
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Belarus;FactionTags ANA
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Samara
+StartEvent = evt_nam_RED_NoANAOutsideUkraineF|999|1|NULL|NULL|$Samara|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  MaxDate = 1921/12/30
+  SelectSubUnits = Area $Theater_Volga;FactionTags ANA
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Volga;FactionTags ANA
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Rostov
+
+SelectFaction = $POL
+SelectRegion = $Rostov
+StartEvent = evt_nam_WH3_NoUKROutsideUkraineA|999|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  MaxDate = 1921/12/30
+  SelectSubUnits = Area $Theater_Southern;FactionTags UKR
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Southern;FactionTags UKR
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Orel
+StartEvent = evt_nam_WH3_NoUKROutsideUkraineB|999|1|NULL|NULL|$Orel|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  MaxDate = 1921/12/30
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags UKR
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags UKR
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Orenburg
+StartEvent = evt_nam_WH3_NoUKROutsideUkraineC|999|1|NULL|NULL|$Orenburg|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  MaxDate = 1921/12/30
+  SelectSubUnits = Area $Theater_Ural;FactionTags UKR
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Ural;FactionTags UKR
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Minsk
+StartEvent = evt_nam_WH3_NoUKROutsideUkraineE|999|1|NULL|NULL|$Minsk|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  MaxDate = 1921/12/30
+  SelectSubUnits = Area $Theater_Belarus;FactionTags UKR
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Belarus;FactionTags UKR
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Samara
+StartEvent = evt_nam_WH3_NoUKROutsideUkraineF|999|1|NULL|NULL|$Samara|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  MaxDate = 1921/12/30
+  SelectSubUnits = Area $Theater_Volga;FactionTags UKR
+  EvalSubUnitSel = NULL
+
+Actions
+  SelectSubUnits = Area $Theater_Volga;FactionTags UKR
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_More_Money
+  EvalMoney = <=;75
+  EvalEngagementPts = >=;5
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_More_Money;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Money1.png;Title;opt_title_RED_More_Money;MsgString;opt_desc_RED_More_Money;ToolString;opt_hint_RED_More_Money;SubType;RED_More_Money;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;RED_More_Money;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = -1
+  ChgVPCount = -15
+  ChangeMoneyPool = 300
+  GenTextMsg  = opt_notify_RED_More_Money;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_More_Money
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_Regen|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  MaxDate = 1918/12/30
+  Probability = 50
+  ActorDisabled = $gmaOptionVar;RED_More_Money
+
+Actions
+  GenTextMsg  = opt_notify_RED_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Money1.png;Title;opt_title_RED_More_Money;MsgString;opt_desc_RED_More_Money;ToolString;opt_hint_RED_More_Money;SubType;RED_More_Money;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_Regen2|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1919/01/01
+  MaxDate = 1919/06/30
+  Probability = 50
+  ActorDisabled = $gmaOptionVar;RED_More_Money
+
+Actions
+  GenTextMsg  = opt_notify_RED_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Money1.png;Title;opt_title_RED_More_Money;MsgString;opt_desc_RED_More_Money;ToolString;opt_hint_RED_More_Money;SubType;RED_More_Money;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_Regen3|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1919/07/01
+  MaxDate = 1919/12/30
+  Probability = 50
+  ActorDisabled = $gmaOptionVar;RED_More_Money
+
+Actions
+  GenTextMsg  = opt_notify_RED_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Money1.png;Title;opt_title_RED_More_Money;MsgString;opt_desc_RED_More_Money;ToolString;opt_hint_RED_More_Money;SubType;RED_More_Money;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_Regen4|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  MaxDate = 1920/06/30
+  Probability = 50
+  ActorDisabled = $gmaOptionVar;RED_More_Money
+
+Actions
+  GenTextMsg  = opt_notify_RED_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Money1.png;Title;opt_title_RED_More_Money;MsgString;opt_desc_RED_More_Money;ToolString;opt_hint_RED_More_Money;SubType;RED_More_Money;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_Regen5|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/07/01
+  MaxDate = 1920/12/30
+  Probability = 50
+  ActorDisabled = $gmaOptionVar;RED_More_Money
+
+Actions
+  GenTextMsg  = opt_notify_RED_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Money1.png;Title;opt_title_RED_More_Money;MsgString;opt_desc_RED_More_Money;ToolString;opt_hint_RED_More_Money;SubType;RED_More_Money;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_Regen6|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  MaxDate = 1921/06/30
+  Probability = 50
+  ActorDisabled = $gmaOptionVar;RED_More_Money
+
+Actions
+  GenTextMsg  = opt_notify_RED_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Money1.png;Title;opt_title_RED_More_Money;MsgString;opt_desc_RED_More_Money;ToolString;opt_hint_RED_More_Money;SubType;RED_More_Money;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_Regen7|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1921/07/01
+  MaxDate = 1921/12/30
+  Probability = 50
+  ActorDisabled = $gmaOptionVar;RED_More_Money
+
+Actions
+  GenTextMsg  = opt_notify_RED_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Money1.png;Title;opt_title_RED_More_Money;MsgString;opt_desc_RED_More_Money;ToolString;opt_hint_RED_More_Money;SubType;RED_More_Money;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_More_Money_Regen8|12|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1922/01/01
+  Probability = 50
+  ActorDisabled = $gmaOptionVar;RED_More_Money
+
+Actions
+  GenTextMsg  = opt_notify_RED_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Money1.png;Title;opt_title_RED_More_Money;MsgString;opt_desc_RED_More_Money;ToolString;opt_hint_RED_More_Money;SubType;RED_More_Money;SParam1;RED
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $POL
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_More_Money_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;POL_More_Money
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;POL_More_Money;1
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_More_Money_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_POL_RaiseMoney.png;Title;opt_title_POL_More_Money;MsgString;opt_desc_POL_More_Money;ToolString;opt_hint_POL_More_Money;SubType;POL_More_Money;SParam1;POL
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_More_Money_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;POL_More_Money;=;1
+  EvalEngagementPts = >=;10
+
+Actions
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = -2
+  ChangeMoneyPool = 200
+  ChangePriceInc = 5
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_CMN_More_MoneyPOL;1;NULL;NULL;NULL
+
+SelectFaction = $POL
+  GenTextMsg  = opt_notify_POL_More_Money;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;POL_More_Money
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_More_Money_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1920/01/01
+  TurnIndex = 6;12;18;24
+  ActorDisabled = $gmaOptionVar;POL_More_Money
+  EvalMoney = <=;25
+
+Actions
+  GenTextMsg  = opt_notify_POL_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_POL_RaiseMoney.png;Title;opt_title_POL_More_Money;MsgString;opt_desc_POL_More_Money;ToolString;opt_hint_POL_More_Money;SubType;POL_More_Money;SParam1;POL
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_More_Rail_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;POL_More_Rail
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;POL_More_Rail;1
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_More_Rail_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+
+Actions
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_POL_More_Rail;MsgString;opt_desc_POL_More_Rail;ToolString;opt_hint_POL_More_Rail;SubType;POL_More_Rail;SParam1;POL
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_More_Rail_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionVar;POL_More_Rail;=;1
+  EvalMoney = >=;100
+  EvalWSU = >=;10
+
+Actions
+  ChangeMoneyPool = -25
+  ChangeWSUPool = -50
+  ChangeRailPool = 200
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_CMN_Rail;1;NULL;NULL;NULL
+
+SelectFaction = $POL
+  GenTextMsg  = opt_notify_POL_More_Rail;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;POL_More_Rail
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_More_Rail_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionVar;POL_More_Rail
+
+Actions
+  GenTextMsg  = opt_notify_POL_More_Rail_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_POL_More_Rail;MsgString;opt_desc_POL_More_Rail;ToolString;opt_hint_POL_More_Rail;SubType;POL_More_Rail;SParam1;POL
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_AIcareKharkov|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1920/01/01
+
+Actions
+  AI.SetLocalInterest = $Kharkov;200
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_AIcareEkaterinoslav|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1920/01/01
+
+Actions
+  AI.SetLocalInterest = $Ekaterinoslav;200
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_AIcareMinsk|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1920/01/01
+
+Actions
+  AI.SetLocalInterest = $Minsk;200
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_AIcareKiev|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1920/01/01
+
+Actions
+  AI.SetLocalInterest = $Kiev;200
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_AIcareKharkov|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1920/01/01
+
+Actions
+  AI.SetLocalInterest = $Kharkov;200
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_AIcareEkaterinoslav|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1920/01/01
+
+Actions
+  AI.SetLocalInterest = $Ekaterinoslav;200
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_AIcareMinsk|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1920/01/01
+
+Actions
+  AI.SetLocalInterest = $Minsk;200
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_AIcareKiev|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1920/01/01
+
+Actions
+  AI.SetLocalInterest = $Kiev;200
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_AIcareAreaMinskUkraine|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1920/01/01
+
+Actions
+  AI.SetAggro = $Theater_Ukraine;200;$Theater_Belarus;200
+
+EndEvent
+
+SelectFaction = $POL
+
+SelectFaction = $POL
+StartEvent = evt_nam_POL_AIcareAreaMinskUkraine|29|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1920/01/01
+
+Actions
+  AI.SetAggro = $Theater_Ukraine;200;$Theater_Belarus;200
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Smolensk
+
+SelectFaction = $RED
+SelectRegion = $Smolensk
+StartEvent = evt_nam_RED_TukhachevskySmolenskGHQ_overrunnedA|99|1|NULL|NULL|$Smolensk|NULL
+
+Conditions
+  MinDate = 1917/06/01
+  SelectSubUnits = Models $ldr_RED_Tukhachevsky3;Region $Smolensk
+  EvalSubUnitSel = NOT
+
+Actions
+  SelectSubUnits = Models $ldr_RED_Tukhachevsky3
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Smolensk
+StartEvent = evt_nam_RED_TukhachevskySmolenskGHQ_BackA|99|1|NULL|NULL|$Smolensk|NULL
+
+Conditions
+  MinDate = 1917/06/01
+  EvalEvent = evt_nam_RED_TukhachevskySmolenskGHQ_overrunnedA;>=;1
+  SelectSubUnits = Models $ldr_RED_Tukhachevsky3;Region $Smolensk
+  EvalSubUnitSel = NOT
+
+EvalRgnOwned = $Smolensk
+
+Actions
+
+SelectFaction = $RED
+SelectRegion = $Smolensk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 999
+  SetName = Western Front GHQ
+  Apply
+  CreateUnit
+  GMEParam = M.N. Tukhachevsky
+  SetCommit = 1
+  SetType = $uni_RED_Tukhachevsky3
+  SetName = M.N. Tukhachevsky
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Western Front Supply
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+StartEvent = evt_nam_RED_EgorovKievGHQ_overrunnedA|99|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1917/06/01
+  SelectSubUnits = Models $ldr_RED_Egorov3;Region $Kiev
+  EvalSubUnitSel = NOT
+
+Actions
+  SelectSubUnits = Models $ldr_RED_Egorov3
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+StartEvent = evt_nam_RED_EgorovKievGHQ_BackA|99|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1917/06/01
+  EvalEvent = evt_nam_RED_EgorovKievGHQ_overrunnedA;>=;1
+  SelectSubUnits = Models $ldr_RED_Egorov3;Region $Kiev
+  EvalSubUnitSel = NOT
+
+EvalRgnOwned = $Kiev
+
+Actions
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = South-Western Front GHQ
+  Apply
+  CreateUnit
+  GMEParam = A.I. Egorov
+  SetCommit = 1
+  SetType = $uni_RED_Egorov3
+  FlavorName = South-Western Front
+  SetName = A.I. Egorov
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Western Front Supply
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Kiev
+
+SelectFaction = $POL
+SelectRegion = $Kiev
+StartEvent = evt_nam_UKR_PetliuraKievGHQ_overrunned|99|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1918/12/21
+  EvalEvent = evt_nam_Renforts_POL_UkrainianUprising1;>=;1
+  SelectSubUnits = Models $ldr_UKR_Petliura3;Region $Kiev
+  EvalSubUnitSel = NOT
+
+Actions
+  SelectSubUnits = Models $ldr_UKR_Petliura3
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+SelectFaction = $POL
+SelectRegion = $Kiev
+StartEvent = evt_nam_UKR_PetliuraKievGHQ_Back|99|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  MinDate = 1918/12/21
+  EvalEvent = evt_nam_UKR_PetliuraKievGHQ_overrunned;>=;1
+  SelectSubUnits = Models $ldr_UKR_Petliura3;Region $Kiev
+  EvalSubUnitSel = NOT
+
+EvalRgnOwned = $Kiev
+
+Actions
+
+SelectFaction = $POL
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Ukraine Republic Army GHQ
+  Apply
+  CreateUnit
+  GMEParam = S.V. Petliura
+  SetCommit = 1
+  SetType = $uni_UKR_Petliura3
+  FlavorName = S.V. Petliura
+  SetName = S.V. Petliura
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = GHQ Supply
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonMinsk|1|0|Line|NULL|NULL|$Minsk
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Minsk
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Minsk
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Minsk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Minsk Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonSmolensk|1|0|Line|NULL|NULL|$Smolensk
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Smolensk
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Smolensk
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Smolensk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Smolensk Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonGrodno|1|0|Line|NULL|NULL|$Grodno
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Grodno
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Grodno
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Grodno Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Grodno Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonBrest Litovsk|1|0|Line|NULL|NULL|$Brest Litovsk
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Brest Litovsk
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Brest Litovsk
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Brest Litovsk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Brest Litovsk Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonLublin|1|0|Line|NULL|NULL|$Lublin
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Lublin
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Lublin
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Lublin Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Lublin Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonRowno|1|0|Line|NULL|NULL|$Rowno
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Rowno
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Rowno
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Rowno Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Rowno Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonLwow|1|0|Line|NULL|NULL|$Lwow
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Lwow
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Lwow
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Lwow Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Lwow Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonBialystok|1|0|Line|NULL|NULL|$Bialystok
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Bialystok
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Bialystok
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Bialystok Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Bialystok Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonBaranavichy|1|0|Line|NULL|NULL|$Baranavichy
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Baranavichy
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Baranavichy
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Baranavichy Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Baranavichy Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonPoltava|1|0|Line|NULL|NULL|$Poltava
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Poltava
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Poltava
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Poltava Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Poltava Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonZhitomir|1|0|Line|NULL|NULL|$Zhitomir
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Zhitomir
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Zhitomir
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Zhitomir Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Zhitomir Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonVitbesk|1|0|Line|NULL|NULL|$Vitebsk
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Vitebsk
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Vitebsk
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Vitbesk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Vitbesk Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonKowel|1|0|Line|NULL|NULL|$Kowel
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Kowel
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Kowel
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Kowel Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Kowel Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonKrakow|1|0|Line|NULL|NULL|$Krakow
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Krakow
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Krakow
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Krakow Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Krakow Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonKiev|1|0|Line|NULL|NULL|$Kiev
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Kiev
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Kiev
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Kiev Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Kiev Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonCherkasy|1|0|Line|NULL|NULL|$Cherkasy
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Cherkasy
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Cherkasy
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Cherkasy Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Cherkasy Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonPoltava|1|0|Line|NULL|NULL|$Poltava
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Poltava
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Poltava
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Poltava Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Poltava Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonOdessa|1|0|Line|NULL|NULL|$Odessa
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Odessa
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Odessa
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Odessa Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Odessa Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonSmolensk|1|0|Line|NULL|NULL|$Smolensk
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Smolensk
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Smolensk
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Smolensk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Smolensk Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonMinsk|1|0|Line|NULL|NULL|$Minsk
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Minsk
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Minsk
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Minsk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Minsk Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonVilnius|1|0|Line|NULL|NULL|$Vilnius
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Vilnius
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Vilnius
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Vilnius Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Vilnius Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonRiga|1|0|Line|NULL|NULL|$Riga
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Riga
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Riga
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Riga Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Riga Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts2_POL_AIGarrisonWarsaw|1|0|Line|NULL|NULL|$Warsaw
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+
+EvalRgnOwned = $Warsaw
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Warsaw
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Warsaw Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_MilAG
+  SetName = Warsaw Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonMinsk|1|0|Line|NULL|NULL|$Minsk
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Minsk
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Minsk
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Minsk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Minsk Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonSmolensk|1|0|Line|NULL|NULL|$Smolensk
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Smolensk
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Smolensk
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Smolensk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Smolensk Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonGrodno|1|0|Line|NULL|NULL|$Grodno
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Grodno
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Grodno
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Grodno Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Grodno Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonBrest Litovsk|1|0|Line|NULL|NULL|$Brest Litovsk
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Brest Litovsk
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Brest Litovsk
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Brest Litovsk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Brest Litovsk Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonLublin|1|0|Line|NULL|NULL|$Lublin
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Lublin
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Lublin
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Lublin Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Lublin Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonRowno|1|0|Line|NULL|NULL|$Rowno
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Rowno
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Rowno
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Rowno Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Rowno Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonLwow|1|0|Line|NULL|NULL|$Lwow
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Lwow
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Lwow
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Lwow Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Lwow Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonBialystok|1|0|Line|NULL|NULL|$Bialystok
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Bialystok
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Bialystok
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Bialystok Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Bialystok Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonBaranavichy|1|0|Line|NULL|NULL|$Baranavichy
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Baranavichy
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Baranavichy
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Baranavichy Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Baranavichy Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonPoltava|1|0|Line|NULL|NULL|$Poltava
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Poltava
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Poltava
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Poltava Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Poltava Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonZhitomir|1|0|Line|NULL|NULL|$Zhitomir
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Zhitomir
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Zhitomir
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Zhitomir Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Zhitomir Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonChelyabinsk|1|0|Line|NULL|NULL|$Chelyabinsk
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Chelyabinsk
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Chelyabinsk
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Chelyabinsk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Chelyabinsk Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonVitbesk|1|0|Line|NULL|NULL|$Vitebsk
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Vitebsk
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Vitebsk
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Vitbesk Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Vitbesk Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonKowel|1|0|Line|NULL|NULL|$Kowel
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Kowel
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Kowel
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Kowel Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Kowel Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonKrakow|1|0|Line|NULL|NULL|$Krakow
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Krakow
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Krakow
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Krakow Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Krakow Polish Gar.
+  Apply
+
+EndEvent
+
+SelectFaction = $POL
+StartEvent = evt_nam_Renforts22_POL_AIGarrisonKiev|1|0|Line|NULL|NULL|$Kiev
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1919/01/01
+  MaxDate = 1922/12/30
+
+EvalRgnOwned = $Kiev
+  Probability = 10
+
+Actions
+SelectFaction = $POL
+  AddToRegList = $Kiev
+SelectFaction = $POL
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $POL
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Kiev Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_POL_Gar1
+  SetName = Kiev Polish Gar.
+  Apply
+
+EndEvent

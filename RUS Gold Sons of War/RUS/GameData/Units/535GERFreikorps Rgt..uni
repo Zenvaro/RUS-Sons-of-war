@@ -1,0 +1,16 @@
+UID = 535
+NationTag = GER
+Name = Freikorps Rgt.
+Alias = uni_GER_Mil1
+ForcePool = -1
+ShortName = Fk. Rgt.
+Text = $uni_GER_Mil1_txt
+Color = $colGERMilitia
+ModelType0 = $mdl_GER_Mil2|1
+FamilyType0 = $famMilitia|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = 1. Freikorps-Regiment|2. Freikorps-Regiment|3. Freikorps-Regiment|4. Freikorps-Regiment|5. Freikorps-Regiment|6. Freikorps-Regiment|7. Freikorps-Regiment|8. Freikorps-Regiment|9. Freikorps-Regiment|10. Freikorps-Regiment|11. Freikorps-Regiment|12. Freikorps-Regiment|13. Freikorps-Regiment|14. Freikorps-Regiment|15. Freikorps-Regiment|16. Freikorps-Regiment|17. Freikorps-Regiment|18. Freikorps-Regiment|19. Freikorps-Regiment|20. Freikorps-Regiment|21. Freikorps-Regiment|22. Freikorps-Regiment|23. Freikorps-Regiment|25. Freikorps-Regiment|26. Freikorps-Regiment|27. Freikorps-Regiment|28. Freikorps-Regiment|29. Freikorps-Regiment|30. Freikorps-Regiment

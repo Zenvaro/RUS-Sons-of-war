@@ -1,0 +1,15 @@
+UID = 1953
+NationTag = UKR
+Name = Cossack Infantry
+Alias = uni_UKR_Inf8
+ForcePool = 6
+ShortName = Cossack Infantry
+Text = $uni_UKR_Inf8_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_UKR_Inf13|1
+FamilyType0 = $famLine|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Ukrainians

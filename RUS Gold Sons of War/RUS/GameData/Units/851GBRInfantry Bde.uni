@@ -1,0 +1,16 @@
+UID = 851
+NationTag = GBR
+Name = Infantry Bde
+Alias = uni_GBR_Bde1
+ForcePool = 6
+ShortName = Inf. Bde.
+Text = $uni_GBR_Bde1_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Bat|6
+ModelType1 = $mdl_GBR_Art3|1
+FamilyType0 = $famLine|6
+FamilyType1 = $famLightArty|1
+CmdCost = 3
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

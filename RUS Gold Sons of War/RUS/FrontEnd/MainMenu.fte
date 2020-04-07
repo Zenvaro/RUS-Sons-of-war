@@ -1,0 +1,130 @@
+UID = 50005
+Bitmap = MainMenuBack.png
+x = 0
+y = 0
+z = 91
+DragDrop = {None}
+Capacity = 0
+Anchor = HCenter VCenter
+
+// new
+Btn1 = -1|472|312
+// Options
+Btn2 = -1|472|775
+// Load
+Btn3 = -1|966|312
+// Save
+Btn4 = -1|1213|312
+// Quit
+Btn5 = -1|1213|775
+// Resume
+Btn6 = -1|719|312
+// Credits
+Btn7 = -1|862|898
+// Update
+Btn8 = -1|966|775
+// Replay
+Btn9 = -1|719|775
+
+GameState = stMainMenu
+
+//Slave0 = Logo.png|256|201
+
+// New
+{ButtonDef}
+Image = $btnImgPngMainMenuNewOff
+OverImage = $btnImgPngMainMenuNewOn
+DownImage = $btnImgPngMainMenuNewOn
+DisaImage = $btnImgPngMainMenuNewOff
+Hint = $NewGame
+UpAction = NewGame
+ClickSound = $sndTab
+{/ButtonDef}
+
+// options
+{ButtonDef}
+Image = $btnImgPngMainMenuOptionsOff
+OverImage = $btnImgPngMainMenuOptionsOn
+DownImage = $btnImgPngMainMenuOptionsOn
+DisaImage = $btnImgPngMainMenuOptionsOff
+Hint = $GeneralOptions
+UpAction = GeneralOptions
+ClickSound = $sndTab
+{/ButtonDef}
+
+// load
+{ButtonDef}
+Image = $btnImgPngMainMenuLoadOff
+OverImage = $btnImgPngMainMenuLoadOn
+DownImage = $btnImgPngMainMenuLoadOn
+DisaImage = $btnImgPngMainMenuLoadOff
+Hint = $LoadGame
+UpAction = LoadGame
+ClickSound = $sndTab
+{/ButtonDef}
+
+// save
+{ButtonDef}
+Image = $btnImgPngMainMenuSaveOff
+OverImage = $btnImgPngMainMenuSaveOn
+DownImage = $btnImgPngMainMenuSaveOn
+DisaImage = $btnImgPngMainMenuSaveOff
+Hint = $SaveGame
+UpAction = SaveGame
+ClickSound = $sndTab
+{/ButtonDef}
+
+// quit
+{ButtonDef}
+Image = $btnImgPngMainMenuQuitOff
+OverImage = $btnImgPngMainMenuQuitOn
+DownImage = $btnImgPngMainMenuQuitOn
+DisaImage = $btnImgPngMainMenuQuitOff
+Hint = $QuitGame
+UpAction = QuitGame
+ClickSound = $sndTab
+{/ButtonDef}
+
+// resume
+{ButtonDef}
+Image = $btnImgPngMainMenuResumeOff
+OverImage = $btnImgPngMainMenuResumeOn
+DownImage = $btnImgPngMainMenuResumeOn
+DisaImage = $btnImgPngMainMenuResumeOff
+Hint = $ContinueGame
+UpAction = ContinueGame
+ClickSound = $sndTab
+{/ButtonDef}
+
+// credits
+{ButtonDef}
+Image = $btnImgPngMainMenuCreditsOff
+OverImage = $btnImgPngMainMenuCreditsOn
+DownImage = $btnImgPngMainMenuCreditsOn
+DisaImage = $btnImgPngMainMenuCreditsOff
+Hint = $btnCredits
+UpAction = Credits
+ClickSound = $sndTab
+{/ButtonDef}
+
+// Update
+{ButtonDef}
+Image = $btnImgPngMainMenuUpdateOff
+OverImage = $btnImgPngMainMenuUpdateOn
+DownImage = $btnImgPngMainMenuUpdateOn
+DisaImage = $btnImgPngMainMenuUpdateOff
+Hint = $btnUpdate
+UpAction = Update
+ClickSound = $sndTab
+{/ButtonDef}
+
+// Replay
+{ButtonDef}
+Image = $btnImgPngMainMenuReplayOff
+OverImage = $btnImgPngMainMenuReplayOn
+DownImage = $btnImgPngMainMenuReplayOn
+DisaImage = $btnImgPngMainMenuReplayOff
+Hint = $btnReplay
+UpAction = Replay
+ClickSound = $sndTab
+{/ButtonDef}

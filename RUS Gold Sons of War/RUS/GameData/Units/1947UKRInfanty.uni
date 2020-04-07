@@ -1,0 +1,15 @@
+UID = 1947
+NationTag = UKR
+Name = UGA Infantry
+Alias = uni_UKR_Inf3
+ForcePool = 6
+ShortName = Infantry
+Text = $uni_UKR_Inf3_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_UKR_Inf3|1
+FamilyType0 = $famLine|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Ukrainians

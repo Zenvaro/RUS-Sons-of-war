@@ -1,0 +1,17 @@
+UID = 312
+NationTag = WH2
+Name = Workers
+Alias = uni_WH2_Wor
+ForcePool = 12
+ShortName = Workers
+Text = $uni_WH2_Wor_txt
+Color = $colWH2Regular
+SymbolID = symbol_militias.png
+ModelType0 = $mdl_WH2_Wor|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Komuch
+CustomNames = Workers

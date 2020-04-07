@@ -1,0 +1,37 @@
+UID = 50025
+Bitmap = scores_background.png
+x = 0
+y = 0
+z = 90
+DragDrop = {None}
+Anchor = VCenter HCenter
+GameState = stScoreWin
+Capacity = 0
+
+// title coordinate (x centered)
+Caption0 = 0|373|0
+
+// first line of text coordinate
+Caption1 = 70|400|0
+
+
+// coordinate of the flavor image, if any, standard event
+Various2 = 160|175|0
+// coordinate of header image
+Various3 = 43|46|0
+
+// max nb of char for each line of text
+Param0 = 65
+
+
+// Abort
+Btn1 = -1|545|50
+
+{ButtonDef}
+Image = Panel_Close_OFF.png
+OverImage = Panel_Close_OVER.png
+DownImage = Panel_Close_ON.png
+Hint = $Close
+UpAction = CancelAction
+ClickSound = $sndTick
+{/ButtonDef}

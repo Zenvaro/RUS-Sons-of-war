@@ -1,0 +1,16 @@
+UID = 489
+NationTag = GER
+Name = Coastal Artillery
+Alias = uni_GER_Coa
+ForcePool = -1
+ShortName = Coastal Art.
+Text = $uni_GER_Coa_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Coa|1
+FamilyType0 = $famHvyArty|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = 1. Kueste-Artillerie-Regiment|2. Kueste-Artillerie-Regiment|3. Kueste-Artillerie-Regiment|4. Kueste-Artillerie-Regiment|5. Kueste-Artillerie-Regiment|6. Kueste-Artillerie-Regiment|7. Kueste-Artillerie-Regiment|8. Kueste-Artillerie-Regiment|9. Kueste-Artillerie-Regiment|10. Kueste-Artillerie-Regiment|11. Kueste-Artillerie-Regiment|12. Kueste-Artillerie-Regiment|13. Kueste-Artillerie-Regiment|14. Kueste-Artillerie-Regiment|15. Kueste-Artillerie-Regiment|16. Kueste-Artillerie-Regiment|17. Kueste-Artillerie-Regiment|18. Kueste-Artillerie-Regiment|19. Kueste-Artillerie-Regiment|20. Kueste-Artillerie-Regiment

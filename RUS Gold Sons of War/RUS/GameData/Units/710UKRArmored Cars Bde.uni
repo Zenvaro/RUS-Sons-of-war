@@ -1,0 +1,16 @@
+UID = 710
+NationTag = UKR
+Name = Armored Cars Bde
+Alias = uni_UKR_Amc1
+ForcePool = 12
+ShortName = Arm. Cars
+Text = $uni_UKR_Amc1_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_UKR_Amc|3
+FamilyType0 = $famLtVehicle|3
+CmdCost = 2
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Ukrainians
+CustomNames = 1st Armored Cars Sq.|2nd Armored Cars Sq.|3rd Armored Cars Sq.|4th Armored Cars Sq.|5th Armored Cars Sq.|6th Armored Cars Sq.|7th Armored Cars Sq.|8th Armored Cars Sq.|9th Armored Cars Sq.|10th Armored Cars Sq.

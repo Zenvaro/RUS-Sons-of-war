@@ -1,0 +1,16 @@
+UID = 329
+NationTag = SIB
+Name = Siberian Cossacks Rgt (cavalry)
+Alias = uni_WH3_Cav2
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_WH3_Cav2_txt
+Color = $colSIBRegular 
+ModelType0 = $mdl_WH3_Cav3|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Siberia
+CustomNames = 1st Siberian Cossacks Rgt|2nd Siberian Cossacks Rgt|3rd Siberian Cossacks Rgt|4th Siberian Cossacks Rgt|5th Siberian Cossacks Rgt|6th Siberian Cossacks Rgt|7th Siberian Cossacks Rgt|8th Siberian Cossacks Rgt|9th Siberian Cossacks Rgt|10th Siberian Cossacks Rgt|11th Siberian Cossacks Rgt|12th Siberian Cossacks Rgt|13th Siberian Cossacks Rgt|14th Siberian Cossacks Rgt|15th Siberian Cossacks Rgt|16th Siberian Cossacks Rgt|17th Siberian Cossacks Rgt|18th Siberian Cossacks Rgt|19th Siberian Cossacks Rgt|20th Siberian Cossacks Rgt|21st Siberian Cossacks Rgt|22nd Siberian Cossacks Rgt|23rd Siberian Cossacks Rgt|24th Siberian Cossacks Rgt|25th Siberian Cossacks Rgt|26th Siberian Cossacks Rgt|27th Siberian Cossacks Rgt|28th Siberian Cossacks Rgt|29th Siberian Cossacks Rgt|30th Siberian Cossacks Rgt|31st  Siberian Cossacks Rgt|32nd Siberian Cossacks Rgt|33rd Siberian Cossacks Rgt|34th Siberian Cossacks Rgt|35th Siberian Cossacks Rgt|36th Siberian Cossacks Rgt|37th Siberian Cossacks Rgt|38th Siberian Cossacks Rgt|39th Siberian Cossacks Rgt|40th Siberian Cossacks Rgt|41st Siberian Cossacks Rgt|42nd Siberian Cossacks Rgt|43rd Siberian Cossacks Rgt|44th Siberian Cossacks Rgt|45th Siberian Cossacks Rgt|46th Siberian Cossacks Rgt|47th Siberian Cossacks Rgt|48th Siberian Cossacks Rgt|49th Siberian Cossacks Rgt|50th Siberian Cossacks Rgt

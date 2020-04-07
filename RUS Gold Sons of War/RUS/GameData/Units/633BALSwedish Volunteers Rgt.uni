@@ -1,0 +1,15 @@
+UID = 633
+NationTag = BAL
+Name = Swedish Volunteers Rgt
+Alias = uni_BAL_Rgt3
+ForcePool = -1
+ShortName = Inf. Rgt.
+Text = $uni_BAL_Rgt3_txt
+Color = $colBALRegular 
+ModelType0 = $mdl_FIN_Inf9|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Balts

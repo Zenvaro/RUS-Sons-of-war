@@ -1,0 +1,16 @@
+UID = 829
+NationTag = FRA
+Name = Aviso Bde.
+Alias = uni_FRA_AV1
+ForcePool = 8
+ShortName = Aviso
+Text = $uni_FRA_AV1_txt
+Color = $colFRANavy
+DoubleLength = 1
+ModelType0 = $mdl_FRA_TB|4
+FamilyType0 = $famLightWarship|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Aviso Sq.|2nd Aviso Sq.|3rd Aviso Sq.|4th Avisos Sq.|5th Aviso Sq.

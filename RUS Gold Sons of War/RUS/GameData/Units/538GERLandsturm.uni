@@ -1,0 +1,16 @@
+UID = 538
+NationTag = GER
+Name = Landsturm
+Alias = uni_GER_Mil4
+ForcePool = 30
+ShortName = Lds
+Text = $uni_GER_Mil4_txt
+Color = $colGERMilitia
+ModelType0 = $mdl_GER_Mil1|1
+FamilyType0 = $famMilitia|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = 1. Landsturm|2. Landsturm|3. Landsturm|4. Landsturm|5. Landsturm|6. Landsturm|7. Landsturm|8. Landsturm|9. Landsturm|10. Landsturm|11. Landsturm|12. Landsturm|13. Landsturm|14. Landsturm|15. Landsturm|16. Landsturm|17. Landsturm|18. Landsturm|19. Landsturm|20. Landsturm|21. Landsturm|22. Landsturm|23. Landsturm|25. Landsturm|26. Landsturm|27. Landsturm|28. Landsturm|29. Landsturm|30. Landsturm

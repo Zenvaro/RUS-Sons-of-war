@@ -1,0 +1,15 @@
+UID = 75
+NationTag = RED
+Name = Sharpshooters 
+Alias = uni_RED_Shp1
+ForcePool = 20
+ShortName = Sharpshooters
+Text = $uni_RED_Shp1_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Lit|1
+FamilyType0 = $famSkirmisher|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Russians

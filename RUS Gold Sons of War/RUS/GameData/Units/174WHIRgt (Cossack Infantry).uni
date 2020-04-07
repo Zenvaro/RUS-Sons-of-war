@@ -1,0 +1,16 @@
+UID = 174
+NationTag = KUB
+Name = Rgt (Infantry)
+Alias = uni_WHI_Rgt3
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WHI_Rgt3_txt
+Color = $colKUBRegular 
+ModelType0 = $mdl_WHI_Inf7|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Kuban
+CustomNames = 1st Kuban Rgt|2nd Kuban Rgt|3rd Kuban Rgt|4th Kuban Rgt|5th Kuban Rgt|6th Kuban Rgt|7th Kuban Rgt|8th Kuban Rgt|9th Kuban Rgt|10th Kuban Rgt|11th Kuban Rgt|12th Kuban Rgt|1st Terek Rgt|2nd Terek Rgt|3rd Terek Rgt|4th Terek Rgt|1st Taman Rgt|2nd Taman Rgt|1st Partisans Rgt|2nd Partisans Rgt|3rd Partisans Rgt|1st Cossack Fusiliers Rgt|2nd Cossack Fusiliers Rgt|3rd Cossack Fusiliers Rgt|4th Cossack Fusiliers Rgt|5th Cossack Fusiliers Rgt|2nd Astrakhan Rgt|3rd Astrakhan Rgt|6th Cossack Fusiliers Rgt|7th Cossack Fusiliers Rgt|8th Cossack Fusiliers Rgt|9th Cossack Fusiliers Rgt|10th Cossack Fusiliers Rgt|11th Cossack Fusiliers Rgt|12th Cossack Fusiliers Rgt

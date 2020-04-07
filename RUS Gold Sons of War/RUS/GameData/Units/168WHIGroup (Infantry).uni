@@ -1,0 +1,16 @@
+UID = 168
+NationTag = WHI
+Name = Group (Infantry)
+Alias = uni_WHI_Div0
+ForcePool = 6
+ShortName = Bde. Inf.
+Text = $uni_WHI_Div0_txt
+Color = $colWHIRegular 
+SymbolID = symbol_DivInf.png
+ModelType0 = $mdl_WHI_Inf1|5
+FamilyType0 = $famLine|5
+CmdCost = 3
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 5
+Area = $Recruit_SouthernWhites

@@ -1,0 +1,9 @@
+UID = 5
+Alias = resAmmo
+Name = $res_nam_Ammo
+ShortName = $res_shortnam_Ammo
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *AmmoAsset*

@@ -1,0 +1,16 @@
+UID = 296
+NationTag = WH2
+Name = Cavalry Rgt (early conscripts)
+Alias = uni_WH2_Cav0
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WH2_Cav0_txt
+Color = $colWH2Regular 
+ModelType0 = $mdl_WH2_Cav0|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Komuch
+CustomNames = 1st Samara Cavalry Rgt|2nd Samara Cavalry Rgt|3rd Stavropol Cavalry Rgt|4th Simbirsk Cavalry Rgt|5th Kazan Cavalry Rgt|6th Saratov Cavalry Rgt|7th Kazan Cavalry Rgt|8th Syzran Cavalry Rgt|9th Penza Cavalry Rgt|10th Buzuluk Cavalry Rgt|12th Christopol Cavalry Rgt|13th Ufa Cavalry Rgt|14th Ufa Cavalry Rgt|1st Viatka Cavalry Rgt

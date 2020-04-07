@@ -1,0 +1,265 @@
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L13|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/09/01
+
+Actions
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Tambov
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Shorin2
+  SetName = V.I. Shorin
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L19|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/08/01
+
+Actions
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Tambov
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mezheninov1
+  SetName = S.A. Mezheninov
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L68|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  FixedDate = 1919/06/21
+  EvalUnqUnit = Y. Sablin;NOT
+  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
+
+Actions
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Tambov
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sablin1
+  SetName = Y. Sablin
+  Apply
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L25|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/08/01
+
+Actions
+  AddToRegList = $Rostov;$Ekaterinodar;$Sevastopol;$Kharkov
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Patrikeev1
+  SetName = Patrikeev
+  Apply
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L26|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/08/02
+
+Actions
+  AddToRegList = $Rostov;$Ekaterinodar;$Sevastopol;$Kharkov
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Ostroukhov1
+  SetName = T. Ostroukhov
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L12|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/08/01
+
+Actions
+  AddToRegList = $Omsk;$Irkutsk;$Ekaterinburg;$Krasnoyarsk
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Baranovsky1
+  SetName = Baranovsky
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L20|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/08/06
+
+Actions
+  AddToRegList = $Omsk;$Irkutsk;$Ekaterinburg;$Krasnoyarsk
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Tarasevich1
+  SetName = Tarasevich
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH2_LeaderReceived_L3|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/07/01
+
+Actions
+  AddToRegList = $Samara;$Ufa;$Saratov
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Komuch Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH2_Timanov1
+  SetName = G. Timanov
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH2_LeaderReceived_L5|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/08/01
+
+Actions
+  AddToRegList = $Samara;$Ufa;$Saratov
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Komuch Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH2_Podriachik1
+  SetName = K. Podriachik
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH2_LeaderReceived_L6|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/11/21
+  EvalUnqUnit = A.P. Perkhurov;NOT
+Actions
+  AddToRegList = $Samara;$Ufa;$Saratov
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Komuch Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH2_Perkhurov1
+  SetName = A.P. Perkhurov
+  Apply
+
+EndEvent

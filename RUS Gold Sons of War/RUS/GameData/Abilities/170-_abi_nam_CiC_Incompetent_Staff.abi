@@ -1,0 +1,12 @@
+UID = 170
+Name = $abi_nam_CiC_Incompetent_Staff
+Alias = CiC_Incompetent_Staff
+Kind = $abiCiCModifiers
+Text = $abi_txt_CiC_Incompetent_Staff
+ImageID = abi_Pawn.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCCommandLdrLand
+Param1 = -2

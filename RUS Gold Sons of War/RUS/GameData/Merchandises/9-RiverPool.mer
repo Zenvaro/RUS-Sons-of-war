@@ -1,0 +1,9 @@
+UID = 9
+Alias = resRiver
+Name = $res_nam_River
+ShortName = $res_shortnam_River
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *TrsptAsset*

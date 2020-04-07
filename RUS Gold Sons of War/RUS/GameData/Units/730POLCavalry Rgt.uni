@@ -1,0 +1,16 @@
+UID = 730
+NationTag = POL
+Name = Cavalry Rgt
+Alias = uni_POL_Cav1
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_POL_Cav1_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_POL_Cav1|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Poles
+AltArea = $Area_Galicia

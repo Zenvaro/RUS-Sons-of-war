@@ -1,0 +1,14 @@
+UID = 221
+NationTag = WHI
+Name = Army HQ
+Alias = uni_WHI_Hq2
+ForcePool = 6
+ShortName = Army HQ
+Text = $uni_WHI_Hq2_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 1

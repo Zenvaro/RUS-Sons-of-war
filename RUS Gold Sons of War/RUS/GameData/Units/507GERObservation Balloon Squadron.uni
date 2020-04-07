@@ -1,0 +1,17 @@
+UID = 507
+NationTag = GER
+Name = Observation Balloon Squadron
+Alias = uni_GER_Bal1
+ForcePool = 2
+ShortName = Balloon Squadron
+Text = $uni_GER_Bal1_txt
+Color = $colGERRegular 
+SymbolID = symbol_Air.png
+ModelType0 = $mdl_GER_Bal|1
+FamilyType0 = $famAirRecon|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = 1. Ballon-Bn.|2. Ballon-Bn.|3.  Ballon-Bn.|4. Ballon-Bn.|5. Ballon-Bn.|6. Ballon-Bn.|7. Ballon-Bn.|8. Ballon-Bn.|9. Ballon-Bn.|10. Ballon-Bn.|11. Ballon-Bn.|12. Ballon-Bn.|13. Ballon-Bn.|14. Ballon-Bn.|15. Ballon-Bn.|16. Ballon-Bn.|17. Ballon-Bn.|18. Ballon-Bn.|19. Ballon-Bn.|20. Ballon-Bn.|21. Ballon-Bn.|22. Ballon-Bn.|23.  Ballon-Bn.|24. Ballon-Bn.|25. Ballon-Bn.|26. Ballon-Bn.|27. Ballon-Bn.|28. Ballon-Bn.|29. Ballon-Bn.|30. Ballon-Bn.|

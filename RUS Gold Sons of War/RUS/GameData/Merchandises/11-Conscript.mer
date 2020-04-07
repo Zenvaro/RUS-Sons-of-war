@@ -1,0 +1,9 @@
+UID = 11
+Alias = resConscript
+Name = $res_nam_Conscript
+ShortName = $res_shortnam_Conscript
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *ConscriptAsset*

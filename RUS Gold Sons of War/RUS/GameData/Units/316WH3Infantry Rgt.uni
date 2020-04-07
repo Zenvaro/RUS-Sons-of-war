@@ -1,0 +1,14 @@
+UID = 316
+NationTag = WH3
+Name = Infantry Rgt
+Alias = uni_WH3_Rgt0
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WH3_Rgt0_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

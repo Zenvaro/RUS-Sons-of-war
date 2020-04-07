@@ -1,0 +1,13 @@
+UID = 44
+Name = $abi_nam_Honour
+Alias = Honour
+Kind = $abiCohAdjust
+Text = $abi_txt_Honour
+ImageID = abi_Brave.png
+Color = $colAbi_Orange
+Appliance = Group
+Family = 5
+Level = 1
+ProgRate = 2
+Param0 = 10
+ListParams3 = $famLine|$famElite|$famLightInf|$famCavalry|$famMilitia|$famRaider|$famHvyVehicle|$famLtVehicle|$famLightArty|$famMedArty|$famHvyArty

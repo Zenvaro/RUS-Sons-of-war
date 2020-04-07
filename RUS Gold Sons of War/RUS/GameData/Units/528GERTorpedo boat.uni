@@ -1,0 +1,17 @@
+UID = 528
+NationTag = GER
+Name = Torpedo boat
+Alias = uni_GER_TB1
+ForcePool = 15
+ShortName = Torpedo Boat
+Text = $uni_GER_TB1_txt
+Color = $colGERNavy
+DoubleLength = 1
+ModelType0 = $mdl_GER_TB|4
+FamilyType0 = $famLightWarship|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 4
+Area = $Recruit_Germans
+CustomNames = 1. Torp. Flot.|2. Torp. Flot.|3. Torp. Flot.|4. Torp. Flot.|5. Torp. Flot.|6. Torp. Flot.|7. Torp. Flot.|8. Torp. Flot.|9. Torp. Flot.|10. Torp. Flot.|11. Torp. Flot.|12. Torp. Flot.|13. Torp. Flot.|14. Torp. Flot.|15. Torp. Flot.

@@ -1,0 +1,15 @@
+UID = 2201
+NationTag = AZR
+Name = Cavalry Rgt
+Alias = uni_AZR_Cav2
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_AZR_Cav1_txt
+Color = $colAZRRegular 
+ModelType0 = $mdl_AZR_Cav3|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Area_Azerbaijan

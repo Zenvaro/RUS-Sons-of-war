@@ -1,0 +1,13 @@
+ScreenWidth      = Default
+ScreenHeight     = Default
+ScreenDepth      = Default
+ScreenFrequency  = Default
+Cursor           = Software
+FullScreen       = 1
+Windowed         = 0
+Borderless       = 0
+
+BrigthnessLevel  = 0
+MapBrigthness    = 0
+SeeAIFiles       = 1
+SeeTutoFiles     = 1

@@ -1,0 +1,15 @@
+UID = 388
+NationTag = WH5
+Name = Supply
+Alias = uni_WH5_Sup1
+ForcePool = 12
+ShortName = Supply
+Text = $uni_WH5_Sup1_txt
+Color = $colWH5Regular 
+ModelType0 = $mdl_WHI_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Northern Supply|2nd Northern Supply|3rd Northern Supply|4th Northern Supply|5th Northern Supply|6th Northern Supply|7th Northern Supply|8th Northern Supply|9th Northern Supply|10th Northern Supply|11th Northern Supply|12th Northern Supply|13th Northern Supply|14th Northern Supply|15th Northern Supply|16th Northern Supply|17th Northern Supply|18th Northern Supply|19th Northern Supply|20th NorthernSupply|21st Northern Supply|22nd Northern Supply|23rd Northern Supply|24th Northern Supply|25th Northern Supply|26th Northern Supply|27th Northern Supply|28th Northern Supply|29th Northern Supply|30th Northern Supply|31st Northern Supply|32nd Northern Supply|33rd Northern Supply|34th Northern Supply|35th Northern Supply|36th Northern Supply|37th Northern Supply|38th Northern Supply|39th NorthernSupply|40th Northern Supply

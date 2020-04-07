@@ -1,0 +1,15 @@
+UID = 631
+NationTag = BAL
+Name = German Rgt
+Alias = uni_BAL_Rgt1
+ForcePool = -1
+ShortName = Inf. Rgt.
+Text = $uni_BAL_Rgt1_txt
+Color = $colBALRegular 
+ModelType0 = $mdl_BAL_Inf5|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Balts

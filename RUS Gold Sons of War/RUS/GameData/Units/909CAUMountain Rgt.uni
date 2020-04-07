@@ -1,0 +1,15 @@
+UID = 909
+NationTag = CAU
+Name = Mountain Rgt
+Alias = uni_CAU_Mon
+ForcePool = 6
+ShortName = Mont. Rgt.
+Text = $uni_CAU_Mon_txt
+Color = $colCAURegular 
+ModelType0 = $mdl_CAU_Mon|2
+FamilyType0 = $famElite|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Recruit_Caucasians

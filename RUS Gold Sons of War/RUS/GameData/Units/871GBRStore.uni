@@ -1,0 +1,14 @@
+UID = 871
+NationTag = GBR
+Name = Store
+Alias = uni_GBR_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_GBR_Sup2_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Store|8
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

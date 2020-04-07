@@ -1,0 +1,16 @@
+UID = 377
+NationTag = WH5
+Name = Marines
+Alias = uni_WH5_Mar
+ForcePool = 4
+ShortName = Marines Rgt.
+Text = $uni_WH5_Mar_txt
+Color = $colWH5Navy
+ModelType0 = $mdl_WHI_Mar|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 1
+Area = $Recruit_NorthernWhites
+CustomNames = 1st Marine Fusiliers Btn|2nd Marine Fusiliers Btn|3rd Marine Fusiliers Btn|4th Marine Fusiliers Btn|5th Marine Fusiliers Btn|6th Marine Fusiliers Btn|7th Marine Fusiliers Btn|8th Marine Fusiliers Btn|9th Marine Fusiliers Btn|10th Marine Fusiliers Btn

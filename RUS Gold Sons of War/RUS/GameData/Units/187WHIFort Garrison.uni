@@ -1,0 +1,14 @@
+UID = 187
+NationTag = WHI
+Name = Fort Garrison
+Alias = uni_WHI_Gar0
+ForcePool = -1
+ShortName = Fort Gar.
+Text = $uni_WHI_Gar0_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Inf10|3
+FamilyType0 = $famElite|3
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

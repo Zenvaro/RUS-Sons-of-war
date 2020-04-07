@@ -1,0 +1,15 @@
+UID = 2477
+NationTag = WH3
+Name = Cavalry Rgt (latest conscripts)
+Alias = uni_WH3_NewCav1
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WH3_Cav6_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_NewCav1|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = Ufa Dragoons Rgt|Ufa Hussars Rgt|Ufa Uhlans Rgt|Tomsk Hussars Rgt|Kazan Dragoons Rgt|Siberia Uhlans Rgt|Ekaterinburg Uhlans Rgt|Black Hussars Rgt|Barnaul Blue Hussars Rgt|1st Syzran Cavalry Rgt|2nd Syzran Cavalry Rgt|Omsk Dragoons Rgt|Omsk Hussars Rgt|Omsk Uhlans Rgt|Irkutsk Dragoons Rgt|Irkutsk Hussars Rgt|Irkutsk Uhlans Rgt|Ekaterinburg Hussars Rgt|Chelyabinsk Dragoons Rgt|Chelyabinsk Hussars Rgt|Chelyabinsk Uhlans Rgt|1st Siberian Cavalry Rgt|2nd Siberian Cavalry Rgt|3rd Siberian Cavalry Rgt|4th Siberian Cavalry Rgt|5th Siberian Cavalry Rgt| 6th Siberian Cavalry Rgt|7th Siberian Cavalry Rgt|8th Siberian Cavalry Rgt|9th Siberian Cavalry Rgt|10th Siberian Cavalry Rgt|11th Siberian Cavalry Rgt|12th Siberian Cavalry Rgt

@@ -1,0 +1,14 @@
+UID = 893
+NationTag = USA
+Name = Store
+Alias = uni_USA_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_USA_Sup2_txt
+Color = $colUSARegular 
+ModelType0 = $mdl_USA_Store|8
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

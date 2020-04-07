@@ -1,0 +1,16 @@
+UID = 488
+NationTag = GER
+Name = Railroad Artillery
+Alias = uni_GER_RRg
+ForcePool = 4
+ShortName = RR Gun
+Text = $uni_GER_RRg_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_RRg|1
+FamilyType0 = $famHvyArty|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Germans
+CustomNames = 1. Schwer-Artillerie-Bn|2. Schwer-Artillerie-Bn|3. Schwer-Artillerie-Bn|4. Schwer-Artillerie-Bn

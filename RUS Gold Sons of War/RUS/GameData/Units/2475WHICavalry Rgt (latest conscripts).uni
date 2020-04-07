@@ -1,0 +1,15 @@
+UID = 2475
+NationTag = WHI
+Name = Cavalry Rgt (latest conscripts)
+Alias = uni_WHI_NewCav1
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WHI_Cav12_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_NewCav1|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Ekaterinodar Cavalry Rgt|2nd Azov Cavalry Rgt|3rd Stavropol Cavalry Rgt|4th Rostov Cavalry Rgt|1st Caucasus Cavalry Rgt|1st Black Sea Cavalry Rgt|1st Frontier Cavalry Rgt|3rd Cavalry Rgt|4th Cavalry Rgt|5th Cavalry Rgt|6th Cavalry Rgt|7th Cavalry Rgt|8th Cavalry Rgt|9th Cavalry Rgt|10th Cavalry Rgt|11th Cavalry Rgt|12th Cavalry Rgt|13th Cavalry Rgt|14th Cavalry Rgt|15th Cavalry Rgt|16th Cavalry Rgt|17th Cavalry Rgt|18th Cavalry Rgt|19th Cavalry Rgt|20th Cavalry Rgt|21st Cavalry Rgt|22nd Cavalry Rgt|23rd Cavalry Rgt|24th Cavalry Rgt|25th Cavalry Rgt|26th Cavalry Rgt|27th Cavalry Rgt|28th Cavalry Rgt|29th Cavalry Rgt|30th Cavalry Rgt|31st Cavalry Rgt|32nd Cavalry Rgt|33rd Cavalry Rgt|34th Cavalry Rgt|35th Cavalry Rgt|36th Cavalry Rgt|37th Cavalry Rgt|38th Cavalry Rgt|39th Cavalry Rgt|40th Cavalry Rgt

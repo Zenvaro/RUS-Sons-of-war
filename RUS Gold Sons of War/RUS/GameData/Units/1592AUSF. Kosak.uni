@@ -1,0 +1,17 @@
+UID = 1592
+NationTag = AUS
+Name = F. Kosak
+Alias = uni_AUS_Kosak2
+ForcePool = -1
+ShortName = Kosak
+Text = $uni_AUS_Kosak2_txt
+Color = $colAUSRegular 
+ModelType0 = $ldr_AUS_Kosak2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

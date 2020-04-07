@@ -1,0 +1,17 @@
+UID = 1265
+NationTag = DON
+Name = I.A. Poliakov
+Alias = uni_DON_Poliakov1
+ForcePool = -1
+ShortName = Poliakov
+Text = $uni_DON_Poliakov1_txt
+Color = $colDONRegular 
+ModelType0 = $ldr_DON_Poliakov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

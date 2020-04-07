@@ -1,0 +1,16 @@
+UID = 304
+NationTag = WH2
+Name = Supply
+Alias = uni_WH2_Sup1
+ForcePool = 12
+ShortName = Supply
+Text = $uni_WH2_Sup1_txt
+Color = $colWH2Regular 
+ModelType0 = $mdl_WHI_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Komuch
+CustomNames = 1st Komuch Supply|2nd Komuch Supply|3rd Komuch Supply|4th Komuch Supply|5th Komuch Supply|6th Komuch Supply|7th Komuch Supply|8th Komuch Supply|9th Komuch Supply|10th Komuch Supply|11th Komuch Supply|12th Komuch Supply|13th Komuch Supply|14th Komuch Supply|15th Komuch Supply|16th Komuch Supply|17th Komuch Supply|18th Komuch Supply|19th Komuch Supply|20th Komuch Supply

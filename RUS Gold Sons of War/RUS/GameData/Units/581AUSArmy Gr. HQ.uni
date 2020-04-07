@@ -1,0 +1,16 @@
+UID = 581
+NationTag = AUS
+Name = Army Gr. HQ
+Alias = uni_AUS_Hq1
+ForcePool = 4
+ShortName = Army Gr. HQ
+Text = $uni_AUS_Hq1_txt
+Color = $colAUSRegular 
+ModelType0 = $mdl_AUS_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 1
+Area = $Recruit_Austrians
+CustomNames = AG Galizien I HauptQuartier|AG Donau II HauptQuartier|AG III HauptQuartier|AG IV HauptQuartier

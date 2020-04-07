@@ -1,0 +1,14 @@
+UID = 68
+Name = $abi_nam_Over_Cautious
+Alias = Over_Cautious
+Kind = $abiCmdAdjust
+Text = $abi_txt_Over_Cautious
+ImageID = abi_BadCmdChain.png
+Color = $colAbi_Blue
+Appliance = Self
+Family = 0
+Level = 1
+Param0 = -1
+Param1 = 0
+Param2 = 0
+Param3 = 1

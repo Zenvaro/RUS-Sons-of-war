@@ -1,0 +1,15 @@
+UID = 360
+NationTag = WH4
+Name = Cavalry Rgt
+Alias = uni_WH4_Cav1
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WH4_Cav1_txt
+Color = $colWH4Regular 
+ModelType0 = $mdl_WH4_Cav1|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_WesternWhites

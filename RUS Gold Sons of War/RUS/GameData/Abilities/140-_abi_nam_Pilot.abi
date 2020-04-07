@@ -1,0 +1,11 @@
+UID = 140
+Name = $abi_nam_Pilot
+Alias = Pilot
+Kind = $abiFlavor
+Text = $abi_txt_Pilot
+ImageID = abi_Pilot.png
+Color = $colAbi_Red
+Appliance = Group
+Family = 0
+Level = 1
+ProgRate = 0

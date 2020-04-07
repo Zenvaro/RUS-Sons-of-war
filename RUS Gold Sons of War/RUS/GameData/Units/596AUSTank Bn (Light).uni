@@ -1,0 +1,17 @@
+UID = 596
+NationTag = AUS
+Name = Tank Bn (Light)
+Alias = uni_AUS_Tnk2
+ForcePool = 5
+ShortName = Tank Bn.
+Text = $uni_AUS_Tnk2_txt
+Color = $colAUSRegular 
+ModelType0 = $mdl_AUS_Tnk2|3
+FamilyType0 = $famLeader|1
+FamilyType1 = $famHvyVehicle|3
+CmdCost = 2
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 3
+Area = $Recruit_Austrians
+CustomNames = 1. Panzer-Batallion|2. Panzer-Batallion|3. Panzer-Batallion|4. Panzer-Batallion|5. Panzer-Batallion|6. Panzer-Batallion|7. Panzer-Batallion|8. Panzer-Batallion|9. Panzer-Batallion|10. Panzer-Batallion|11. Panzer-Batallion|12. Panzer-Batallion|13. Panzer-Batallion|14. Panzer-Batallion|15. Panzer-Batallion|16. Panzer-Batallion|17. Panzer-Batallion|18. Panzer-Batallion|19. Panzer-Batallion|20. Panzer-Batallion

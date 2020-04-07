@@ -1,0 +1,11 @@
+General:
+Each front end file have from 1 to 2 part(s). The first part is mandatory and is a list of keys with associated datas. The second part is an optional list of button records, each depicting one button. Dont put buttons records before the first part, or the program will mess some values.
+
+Naming convention:
+Each front end has an UID, starting from 50000. His name in the code equal the filename, case not sensitive. So dont rename existing frontend.
+
+Adding a frontend:
+You cant add a frontend (well you can, but it wont be used). FrontEnd usage is deeply embedded in the game logic, and the code has to be expanded so to understand how to use the window you defined.
+
+Modifying a frontend:
+With these limitations in mind, modify it as you wish. You can add buttons and bind an event to the button, this event should be known by the program though. Be careful when binding events, very strange things can happen, if your logic is bad. UID is modifiable too.

@@ -1,0 +1,13 @@
+UID = 177
+Name = $abi_nam_Trotsky_GreatStrategist
+Alias = Trotsky_Great_Strategist
+Kind = $abiCmdAdjust
+Text = $abi_txt_Trotsky_GreatStrategist
+ImageID = abi_GoodCmdChain.png
+Color = $colAbi_Blue
+Appliance = Group
+Family = 5
+Level = 1
+ProgRate = 2
+Param0 = 3
+Param1 = 1

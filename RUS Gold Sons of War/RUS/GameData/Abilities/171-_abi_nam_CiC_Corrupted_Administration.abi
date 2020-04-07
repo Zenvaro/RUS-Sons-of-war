@@ -1,0 +1,12 @@
+UID = 171
+Name = $abi_nam_CiC_Corrupted_Administration
+Alias = CiC_Corrupted_Administration
+Kind = $abiCiCModifiers
+Text = $abi_txt_CiC_Corrupted_Administration
+ImageID = abi_Corrupt.png
+Color = $colAbi_Green
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCProgSupplyUseLandPerc
+Param1 = 15

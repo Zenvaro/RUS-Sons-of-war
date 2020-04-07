@@ -1,0 +1,14 @@
+UID = 822
+NationTag = FRA
+Name = Store
+Alias = uni_FRA_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_FRA_Sup2_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_FRA_Store|8
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

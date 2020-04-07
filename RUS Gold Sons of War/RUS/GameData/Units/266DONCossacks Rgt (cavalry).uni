@@ -1,0 +1,15 @@
+UID = 266
+NationTag = DON
+Name = Cossacks Rgt (cavalry)
+Alias = uni_DON_Cav0
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_DON_Cav0_txt
+Color = $colDONRegular 
+ModelType0 = $mdl_DON_Cav3|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Don

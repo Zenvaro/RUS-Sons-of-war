@@ -1,0 +1,3261 @@
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Azov
+
+StartEvent = evt_nam_Azovmenaced|1|0|NULL|NULL|$Azov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Rostov
+  EvalRgnOwned = $Azov
+  SelectSubUnits = Area $Area_Azov;Families $famElite $famLine $famCavalry ;FactionTags RED ANA
+  EvalSubUnitCount = >=; 1
+  CheckPowerRatio = LAND;2;120;<=;50;50
+  MinDate = 1918/08/18
+  Probability = 75
+
+Actions
+
+  AI.SetLocalInterest = $Novocherkassk;450;$Rostov;450;$Azov;450
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Azov
+
+StartEvent = evt_nam_WHIAzovinterest_reset|1|0|NULL|NULL|$Azov|NULL
+
+Conditions
+
+  CheckPowerRatio = LAND;3;300;>=;50;50
+  EvalEvent = evt_nam_Azovmenaced;=;1
+  MinDate = 1918/04/18
+
+Actions
+
+  AI.ChgLocalInterest = $Novocherkassk;-200;$Rostov;-200;$Azov;-200
+  SetEvtOccurs = evt_nam_Azovmenaced;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHIAzovinterest_reset;CuOccurs;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+
+StartEvent = evt_nam_WHIowningNovocherkassk11|1|0|NULL|NULL|$Novocherkassk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Novocherkassk
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+
+StartEvent = evt_nam_REDmenacingNovocherkassk11|1|0|NULL|NULL|$Novocherkassk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningNovocherkassk11;=;1
+  SelectSubUnits = Region $Novocherkassk;Enemy
+  EvalSubUnitCount = >=;20
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningNovocherkassk11;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+
+StartEvent = evt_nam_Red_menaceconsNovocherkassk11|1|0|NULL|NULL|$Novocherkassk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingNovocherkassk11;=;1
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;$Tula;5;$Kolomna;5;$Ryazan;5
+  AI.SetLocalInterest = $Mossalk;5;$Obninsk;5;$Kolomna;5;$Rybnoie;5;$Bobriki;5;$Serpukhov;5;$Kaluga;5;$Tula;5;$Ageevo;5;$Kondrovo;5;$Kozelsk;5;$Bolkhov;5;$Mtsensk;5;$Novossil;5;$Skopin;5;$Pavelets;5;$Volovo;5;$Plavsk;5;$Dankov;5
+  AI.SetLocalInterest = $Bryansk;5;$Zhizdra;5;$Navlia;5;$Karachev;5;$Lokot;5;$Orel;5;$Kromy;5;$Verkhove;5;$Pokrovskoye;5;$Kurkino;5;$Efremov;5;$Livny;5;$Lebedyan;5;$Elets;5;$Gremyachee;5;$Znamenka;5;$Shalimovo;5
+  AI.SetLocalInterest = $Karmanovo;5;$Fatezh;5;$Shchigry;5;$Kolpny;5;$Gorshechnoye;5;$Tim;5;$Donetsk;5;$Rylsk;5;$Korenovo;5;$Oboyan;5;$Sudhza;5;$Yakovlevo;5;$Guevo;5;$Pristen;5;$Korotcha;5
+  AI.SetLocalInterest = $Staryy Oskol;5;$Novyy Oskol;5;$Ostrogozhsk;5;$Zadonsk;5;$Tchernianka;5;$Aleeksevka;5;$Mitrofanovka;5;$Pavlovsk;5;$Utkino;5;$Usman;5;$Mordovo;5;$Raman;5;$Voronezh;5;$Liski;5;$Bobrov;5;$Kalach;5;$Uryupinsk;5;$Anna;5;$Borshchevo;5;$Uvarovo;5;$Turki;5;$Gribanovskiy;5;$Upper Don;5
+  AI.SetLocalInterest = $Grayvoron;5;$Kolomak;5;$Merefa;5;$Zmiev;5;$Kharkov;200;$Belgorod;5;$Kupiansk;5;$Balaklia;5;$Valuyki;5;$Alekseevka;5;$Millerovo;5;$Sieverodonetsk;5;$Upper Donets;5;$Borovenky;5;$Chuhuiv;5
+  AI.SetLocalInterest = $Tzaritsyn;200;$Saratov;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+
+StartEvent = evt_nam_WHImenacingNovocherkasskend11|999|0|NULL|NULL|$Novocherkassk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingNovocherkassk11;=;1
+  EvalRgnOwned = $Novocherkassk
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingNovocherkassk11;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_Red_menaceconsNovocherkassk11;CuOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_InitializingWHIoffensiveplans|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_REDmenacingNovocherkassk11;=;0
+  MinDate = 1918/06/06
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIallowedtoattack;MaxOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIallowedtoattack|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_InitializingWHIoffensiveplans;=;1
+  MinDate = 1918/06/16
+  TurnIndex  = 7;13;19
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_resetting_WHIoffensiveplans|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_InitializingWHIoffensiveplans;=;1
+  MinDate = 1918/06/16
+  TurnIndex  = 8;14
+
+Actions
+
+  ChgEvtOccurs = evt_nam_InitializingWHIoffensiveplans;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_WHIallowedtoattack;CuOccurs;-1
+  ChgEvtOccurs = evt_nam_WHIallowedtoattack;MaxOccurs;-1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan1|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan1july18;=;1
+  Probability = 60
+  MinDate = 1918/11/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan1june18;CuOccurs;-1
+  AI.SetLocalInterest = $Kurganinsk;5;$Eysk;5;$Akhtarsk;5;$Kanevskaya;5;$Temriuk;5;$Korenovsk;5;$Romanovski Khoutor;5;$Taman;5;$Novorossiysk;5;$Gelendzhik;5;$Ekaterinodar;5;$Krymsk;5;$Goriachiy Klyuch;5;$Tikhoretskaya;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan1step2july18;=;1
+  Probability = 60
+  MinDate = 1918/11/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan1step2june18;CuOccurs;-1
+  AI.SetLocalInterest = $Armavir;5;$Elbrus Mountain;5;$Maikop;5;$Solnechnodolsk;5;$Nevynominsk;5;$Essentuki;5;$Tuapse;5;$Mostovskoy;5;$Batalpachinskaya;5;$Teberda;5;$Sochi;5;$Stavropol;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan2july18;=;1
+  Probability = 60
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan2june18;CuOccurs;-1
+  AI.SetLocalInterest = $Manych;5;$Izobilnyy;5;$Svetlograd;5;$Stavropol;5;$Mineralnye Vody;5;$Sviatoy Krest;5;$Gheorgievsk;5;$Kursavka;5;$Elista;150
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan3step2july18;=;1
+  Probability = 60
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan3step2june18;CuOccurs;-1
+  AI.SetLocalInterest = $Kochubey;5;$Terek Desert;5;$Khasavyurt;5;$Petrovsk-Port;5;$Derbent;5;$Kakhib;5;$Buynaksk;5;$Kizlyar;5;$Sukhokumsk;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan2step2july18;=;1
+  Probability = 60
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan2step2june18;CuOccurs;-1
+  AI.SetLocalInterest = $Kurganinsk;5;$Eysk;5;$Akhtarsk;5;$Kanevskaya;5;$Temriuk;5;$Korenovsk;5;$Romanovski Khoutor;5;$Taman;5;$Novorossiysk;5;$Gelendzhik;5;$Ekaterinodar;5;$Krymsk;5;$Goriachiy Klyuch;5;$Armavir;5;$Elbrus Mountain;5;$Maikop;5;$Solnechnodolsk;5;$Nevynominsk;5;$Essentuki;5;$Tuapse;5;$Mostovskoy;5;$Batalpachinskaya;5;$Teberda;5;$Sochi;5;$Tikhoretskaya;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan5b|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan3july18;=;1
+  Probability = 60
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan3june18;CuOccurs;-1
+  AI.SetLocalInterest = $Kislovodsk;5;$Piatigorsk;5;$Nalchik;5;$Nartkala;5;$Malgobek;5;$Mozdok;5;$Vladikavkaz;5;$Grozny;5;$Argun;5;$Sadon;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan4july18;=;1
+  Probability = 60
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan4june18;CuOccurs;-1
+  AI.SetLocalInterest = $Tzaritsyn;5;$Sarepta;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan5fromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan5fromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Lyssytchansk;5;$Lugansk;5;$Enakievo;5;$Snejnoie;5;$Donetsk;5;$Makeievka;5;$Dobropole;5;$Shaplino;5;$Volnovakha;5;$Middle Dnieper;5;$Middle Donets;5;$Orikhiv;5;$Rostov;5;$Taganrog;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan8|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan5step2fromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan5step2fromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Nikopol;5;$Ekaterinoslav;5;$Pavlograd;5;$Alexandrovsk;5;$Huliaipole;5;$Mariupol;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan9|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan6fromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan6fromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Nikopol;5;$Ekaterinoslav;5;$Pavlograd;5;$Alexandrovsk;5;$Huliaipole;5;$Mariupol;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan10|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan6step2fromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan6step2fromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Lyssytchansk;5;$Lugansk;5;$Enakievo;5;$Snejnoie;5;$Donetsk;5;$Makeievka;5;$Dobropole;5;$Shaplino;5;$Volnovakha;5;$Middle Dnieper;5;$Middle Donets;5;$Orikhiv;5;$Rostov;5;$Taganrog;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan11|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan7fromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan7fromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Berdjiansk;5;$Vasylivka;5;$Melitopol;5;$Kakhovka;5;$Akimovka;5;$Klyutchevoie;5;$Skadovsk;5;$Dnieper Estuary;5;$Dnieper;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan12|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan7step2fromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan7step2fromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Dzhankoi;5;$Sevastopol;5;$Feodosia;5;$Kertch;5;$Eupatoria;5;$Simferopol;5;$Zuya;5;$Perekop;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan13|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan8fromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan8fromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Dzhankoi;5;$Sevastopol;5;$Feodosia;5;$Kertch;5;$Eupatoria;5;$Simferopol;5;$Zuya;5;$Perekop;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan14|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan8step2fromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan8step2fromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Berdjiansk;5;$Vasylivka;5;$Melitopol;5;$Kakhovka;5;$Akimovka;5;$Klyutchevoie;5;$Skadovsk;5;$Dnieper Estuary;5;$Dnieper;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan15|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan9step2fromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan9step2fromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Olviopol;5;$Nova Odessa;5;$Ochakov;5;$Kherson;5;$Inulets;5;$Krivoi Rog;5;$Elizavetgrad;5;$Dolynska;5;$Oleksandria;5;$Bug;5;$Snihurivka;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan16|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan9fromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan9fromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Odessa;200;$Rozdilna;200;$Nikolaiev;200;$Berezvika;200;$Tiraspol;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan17|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan10fromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan10fromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Loiev;5;$Tchernobyl;5;$Korosteni;5;$Dymer;5;$Radomir;5;$Zhitomir;5;$Korostychev;5;$Kiev;5;$Kaniv;5;$Bila Tsverka;5;$Korsun;5;$Skvyra;5;$Pomitchna;5;$Cherkasy;5;$Desna Confluent;5;$Prypiat Confluent;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan18|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan11fromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan11fromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Staroslav;5;$Dobruch;5;$Shostka;5;$Mena;5;$Kozelets;5;$Chernigov;5;$Borzna;5;$Krolevets;5;$Buryn;5;$Bakhmach;5;$Konotop;5;$Nijyn;5;$Nossivka;5;$Brovary;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan19|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan11step2afromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan11step2afromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Gomel;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan20|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan11step3afromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan11step3afromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Bryansk;5;$Zhizdra;5;$Navlia;5;$Karachev;5;$Lokot;5;$Orel;5;$Kromy;5;$Verkhove;5;$Pokrovskoye;5;$Kurkino;5;$Efremov;5;$Livny;5;$Lebedyan;5;$Elets;5;$Gremyachee;5;$Znamenka;5;$Shalimovo;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan21|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan11step2bfromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan11step2bfromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Karmanovo;5;$Fatezh;5;$Shchigry;5;$Kolpny;5;$Gorshechnoye;5;$Tim;5;$Kursk;5;$Rylsk;5;$Korenovo;5;$Oboyan;5;$Sudhza;5;$Yakovlevo;5;$Guevo;5;$Pristen;5;$Korotcha;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan22|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan11step2cfromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan11step2cfromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Karmanovo;5;$Fatezh;5;$Shchigry;5;$Kolpny;5;$Gorshechnoye;5;$Tim;5;$Kursk;5;$Rylsk;5;$Korenovo;5;$Oboyan;5;$Sudhza;5;$Yakovlevo;5;$Guevo;5;$Pristen;5;$Korotcha;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan23|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan12fromnov18;=;1
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan12fromnov18;CuOccurs;-1
+  AI.SetLocalInterest = $Grayvoron;5;$Kolomak;5;$Merefa;5;$Zmiev;5;$Kharkov;5;$Belgorod;5;$Kupiansk;5;$Balaklia;5;$Valuyki;5;$Alekseevka;5;$Millerovo;5;$Sieverodonetsk;5;$Upper Donets;5;$Borovenky;5;$Chuhuiv;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan24|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan13fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan13fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Grayvoron;5;$Kolomak;5;$Merefa;5;$Zmiev;5;$Kharkov;5;$Belgorod;5;$Kupiansk;5;$Balaklia;5;$Valuyki;5;$Alekseevka;5;$Millerovo;5;$Sieverodonetsk;5;$Upper Donets;5;$Borovenky;5;$Chuhuiv;5;$Lugansk;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan25|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan12step2fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan12step2fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Karmanovo;5;$Fatezh;5;$Shchigry;5;$Kolpny;5;$Gorshechnoye;5;$Tim;5;$Kursk;5;$Rylsk;5;$Korenovo;5;$Oboyan;5;$Sudhza;5;$Yakovlevo;5;$Guevo;5;$Pristen;5;$Korotcha;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan26|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan13step2fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan13step2fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Karmanovo;5;$Fatezh;5;$Shchigry;5;$Kolpny;5;$Gorshechnoye;5;$Tim;5;$Kursk;5;$Rylsk;5;$Korenovo;5;$Oboyan;5;$Sudhza;5;$Yakovlevo;5;$Guevo;5;$Pristen;5;$Korotcha;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan27|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan12step2afromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan12step2afromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Staryy Oskol;5;$Novyy Oskol;5;$Ostrogozhsk;5;$Zadonsk;5;$Tchernianka;5;$Aleeksevka;5;$Mitrofanovka;5;$Pavlovsk;5;$Utkino;5;$Usman;5;$Mordovo;5;$Raman;5;$Voronezh;5;$Liski;5;$Bobrov;5;$Kalach;5;$Uryupinsk;5;$Anna;5;$Borshchevo;5;$Uvarovo;5;$Turki;5;$Gribanovskiy;5;$Upper Don;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan28|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan13step2afromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan13step2afromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Staryy Oskol;5;$Novyy Oskol;5;$Ostrogozhsk;5;$Zadonsk;5;$Tchernianka;5;$Aleeksevka;5;$Mitrofanovka;5;$Pavlovsk;5;$Utkino;5;$Usman;5;$Mordovo;5;$Raman;5;$Voronezh;5;$Liski;5;$Bobrov;5;$Kalach;5;$Uryupinsk;5;$Anna;5;$Borshchevo;5;$Uvarovo;5;$Turki;5;$Gribanovskiy;5;$Upper Don;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan30|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan12step2bfromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan12step2bfromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Boryspil;5;$Pryluky;5;$Lokhvitsa;5;$Pereiaslav;5;$Sumy;5;$Lebedyn;5;$Krasnokutsk;5;$Lubny;5;$Kremenchuk;5;$Mahdalynivka;5;$Poltava;5;$Karlivka;5;$Lozova;5;$Novomoskovsk;5;$Psel Confluent;5;$Kiev;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan31|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan13step2bfromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan13step2bfromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Boryspil;5;$Pryluky;5;$Lokhvitsa;5;$Pereiaslav;5;$Sumy;5;$Lebedyn;5;$Krasnokutsk;5;$Lubny;5;$Kremenchuk;5;$Mahdalynivka;5;$Poltava;5;$Karlivka;5;$Lozova;5;$Novomoskovsk;5;$Psel Confluent;5;$Kiev;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan32|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan14fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan14fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Boryspil;5;$Pryluky;5;$Lokhvitsa;5;$Pereiaslav;5;$Sumy;5;$Lebedyn;5;$Krasnokutsk;5;$Lubny;5;$Kremenchuk;5;$Mahdalynivka;5;$Poltava;5;$Karlivka;5;$Lozova;5;$Novomoskovsk;5;$Psel Confluent;5;$Kiev;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan33|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan17fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan17fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Staryy Oskol;5;$Novyy Oskol;5;$Ostrogozhsk;5;$Zadonsk;5;$Tchernianka;5;$Aleeksevka;5;$Mitrofanovka;5;$Pavlovsk;5;$Utkino;5;$Usman;5;$Mordovo;5;$Raman;5;$Voronezh;5;$Liski;5;$Bobrov;5;$Kalach;5;$Uryupinsk;5;$Anna;5;$Borshchevo;5;$Uvarovo;5;$Turki;5;$Gribanovskiy;5;$Upper Don;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan34|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan18afromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan18afromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Grayvoron;5;$Kolomak;5;$Merefa;5;$Zmiev;5;$Kharkov;5;$Belgorod;5;$Kupiansk;5;$Balaklia;5;$Valuyki;5;$Alekseevka;5;$Millerovo;5;$Sieverodonetsk;5;$Upper Donets;5;$Borovenky;5;$Chuhuiv;5;$Lugansk;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan35|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan18bfromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan18bfromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Karmanovo;5;$Fatezh;5;$Shchigry;5;$Kolpny;5;$Gorshechnoye;5;$Tim;5;$Kursk;5;$Rylsk;5;$Korenovo;5;$Oboyan;5;$Sudhza;5;$Yakovlevo;5;$Guevo;5;$Pristen;5;$Korotcha;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan37|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan18cfromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan18cfromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Shatsk;5;$Piana;5;$Chaplygin;5;$Lev;5;$Lipetsk;5;$Ertil;5;$Galovonsk;5;$Kozlov;5;$Sosnovka;5;$Morshansk;5;$Shiringushi;5;$Zemetchino;5;$Bashmakovo;5;$Malinovka;5;$Tambov;5;$Kirsanov;5;$Irgavino;5;$Oka;5;$Blagiye;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan38|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan18cstep2fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan18cstep2fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Ryazhsk;5;$Ukholovo;5;$Sapozhok;5;$Rizanski;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan39|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan19fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan19fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Bryansk;5;$Zhizdra;5;$Navlia;5;$Karachev;5;$Lokot;5;$Orel;5;$Kromy;5;$Verkhove;5;$Pokrovskoye;5;$Kurkino;5;$Efremov;5;$Livny;5;$Lebedyan;5;$Elets;5;$Gremyachee;5;$Znamenka;5;$Shalimovo;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan40|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan19step2fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan19step2fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Mossalk;5;$Obninsk;5;$Kolomna;5;$Rybnoie;5;$Bobriki;5;$Serpukhov;5;$Kaluga;5;$Tula;5;$Ageevo;5;$Kondrovo;5;$Kozelsk;5;$Bolkhov;5;$Mtsensk;5;$Novossil;5;$Skopin;5;$Pavelets;5;$Volovo;5;$Plavsk;5;$Dankov;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan41|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan20fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan20fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Shatura;5;$Roshal;5;$Anopino;5;$Tuma;5;$Ryazan;5;$Lashma;5;$Spassk;5;$Rizanski;5;$Mikhailov;5;$Volodorsk;5;$Gorbatkva;5;$Ryazhsk;5;$Ukholovo;5;$Sapozhok;5;$Shilovo;5;$Murmino;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan42|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan20afromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan20afromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Mossalk;5;$Obninsk;5;$Kolomna;5;$Rybnoie;5;$Bobriki;5;$Serpukhov;5;$Kaluga;5;$Tula;5;$Ageevo;5;$Kondrovo;5;$Kozelsk;5;$Bolkhov;5;$Mtsensk;5;$Novossil;5;$Skopin;5;$Pavelets;5;$Volovo;5;$Plavsk;5;$Dankov;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan43|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan20bfromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan20bfromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Mossalk;5;$Obninsk;5;$Kolomna;5;$Rybnoie;5;$Bobriki;5;$Serpukhov;5;$Kaluga;5;$Tula;5;$Ageevo;5;$Kondrovo;5;$Kozelsk;5;$Bolkhov;5;$Mtsensk;5;$Novossil;5;$Skopin;5;$Pavelets;5;$Volovo;5;$Plavsk;5;$Dankov;5;
+  AI.SetLocalInterest = $Shatura;5;$Roshal;5;$Anopino;5;$Tuma;5;$Ryazan;5;$Lashma;5;$Spassk;5;$Rizanski;5;$Mikhailov;5;$Volodorsk;5;$Gorbatkva;5;$Ryazhsk;5;$Ukholovo;5;$Sapozhok;5;$Shilovo;5;$Murmino;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan44|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan21fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan21fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan45|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan22fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan22fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Podolsk;5;$Aprelevka;5;$Borodino;5;$Orekhovo;5;$Sergiev Posad;5;$Bogodorosk;5;$Moscow;5;$Odintsovo;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan50|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan23fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan23fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Tzaritsyn;5;$Sarepta;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan51|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan24fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan24fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Saratov;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan52|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan24afromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan24afromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Shatsk;5;$Piana;5;$Chaplygin;5;$Lev;5;$Lipetsk;5;$Ertil;5;$Galovonsk;5;$Kozlov;5;$Sosnovka;5;$Morshansk;5;$Shiringushi;5;$Zemetchino;5;$Bashmakovo;5;$Malinovka;5;$Tambov;5;$Kirsanov;5;$Irgavino;5;$Oka;5;$Blagiye;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan53|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan24astep2fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan24astep2fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Ryazhsk;5;$Ukholovo;5;$Sapozhok;5;$Rizanski;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan54|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan24astep3fromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan24astep3fromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Shatura;5;$Roshal;5;$Anopino;5;$Tuma;5;$Ryazan;5;$Lashma;5;$Spassk;5;$Rizanski;5;$Mikhailov;5;$Volodorsk;5;$Gorbatkva;5;$Ryazhsk;5;$Ukholovo;5;$Sapozhok;5;$Shilovo;5;$Murmino;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIrestAIeventsplan55|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIplan24astep3afromnov18;=;1;
+  Probability = 60
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIplan24astep3afromnov18;CuOccurs;-1;
+  AI.SetLocalInterest = $Mossalk;5;$Obninsk;5;$Kolomna;5;$Rybnoie;5;$Bobriki;5;$Serpukhov;5;$Kaluga;5;$Tula;5;$Ageevo;5;$Kondrovo;5;$Kozelsk;5;$Bolkhov;5;$Mtsensk;5;$Novossil;5;$Skopin;5;$Pavelets;5;$Volovo;5;$Plavsk;5;$Dankov;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan1july18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Novocherkassk
+  Probability = 85
+  CheckAILevel = 1
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Kurganinsk;200;$Eysk;200;$Akhtarsk;200;$Kanevskaya;200;$Temriuk;200;$Korenovsk;200;$Romanovski Khoutor;200;$Taman;200;$Novorossiysk;200;$Gelendzhik;200;$Ekaterinodar;200;$Krymsk;200;$Goriachiy Klyuch;200;$Tikhoretskaya;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan1altjuly18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan1july18;=;1;
+  Probability = 75
+  CheckAILevel = 1
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Ekaterinodar;300
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan1alt2july18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalEvent = evt_nam_WHIplan1july18;=;1;
+  Probability = 20
+  CheckAILevel = 1
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Novorossiysk;300
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan1step2july18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Novorossiysk
+  Probability = 75
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Armavir;200;$Elbrus Mountain;200;$Maikop;200;$Solnechnodolsk;200;$Nevynominsk;200;$Essentuki;200;$Tuapse;200;$Mostovskoy;200;$Batalpachinskaya;200;$Teberda;200;$Sochi;200;$Stavropol;300;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan2july18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalEvent = evt_nam_WHIplan1july18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  Probability = 15
+  CheckAILevel = 1
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Manych;200;$Izobilnyy;200;$Svetlograd;200;$Stavropol;200;$Mineralnye Vody;200;$Sviatoy Krest;200;$Gheorgievsk;200;$Kursavka;200;$Elista;150;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan2step2july18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIplan2july18;=;1;
+  EvalEvent = evt_nam_WHIplan1july18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Stavropol
+  Probability = 75
+  CheckAILevel = 1
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Kurganinsk;200;$Eysk;200;$Akhtarsk;200;$Kanevskaya;200;$Temriuk;200;$Korenovsk;200;$Romanovski Khoutor;200;$Taman;200;$Novorossiysk;200;$Gelendzhik;200;$Ekaterinodar;200;$Krymsk;200;$Goriachiy Klyuch;200;$Armavir;200;$Elbrus Mountain;200;$Maikop;200;$Solnechnodolsk;200;$Nevynominsk;200;$Essentuki;200;$Tuapse;200;$Mostovskoy;200;$Batalpachinskaya;200;$Teberda;200;$Sochi;200;$Tikhoretskaya;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan3july18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Stavropol
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Kislovodsk;200;$Piatigorsk;200;$Nalchik;200;$Nartkala;200;$Malgobek;200;$Mozdok;200;$Vladikavkaz;200;$Grozny;200;$Argun;200;$Sadon;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan3step2july18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalRgnOwned = $Grozny
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Kochubey;200;$Terek Desert;200;$Khasavyurt;200;$Petrovsk-Port;200;$Derbent;200;$Kakhib;200;$Buynaksk;200;$Kizlyar;200;$Sukhokumsk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan4july18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Novocherkassk
+  Probability = 9
+  CheckAILevel = 1
+  MinDate = 1918/06/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Tzaritsyn;200;$Sarepta;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan5fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Novocherkassk
+  Probability = 55
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Lyssytchansk;200;$Lugansk;200;$Enakievo;200;$Snejnoie;200;$Donetsk;200;$Makeievka;200;$Dobropole;200;$Shaplino;200;$Volnovakha;200;$Middle Dnieper;200;$Middle Donets;200;$Orikhiv;200;$Rostov;200;$Taganrog;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Azov
+
+StartEvent = evt_nam_WHIowningAzov|1|0|NULL|NULL|$Azov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Azov
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Azov
+
+StartEvent = evt_nam_REDmenacingAzov|1|0|NULL|NULL|$Azov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningAzov;=;1;
+  SelectSubUnits = Region $Azov;Enemy
+  EvalSubUnitCount = >=;20
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningAzov;CuOccurs;-1;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Azov
+
+StartEvent = evt_nam_Red_menaceconsAzov|1|0|NULL|NULL|$Azov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingAzov;=;1;
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Kurganinsk;100;$Eysk;100;$Akhtarsk;100;$Kanevskaya;100;$Temriuk;100;$Korenovsk;100;$Romanovski Khoutor;100;$Taman;100;$Novorossiysk;100;$Gelendzhik;100;$Ekaterinodar;200;$Krymsk;100;$Goriachiy Klyuch;100;$Tikhoretskaya;100;
+  AI.SetLocalInterest = $Armavir;100;$Elbrus Mountain;100;$Maikop;100;$Solnechnodolsk;100;$Nevynominsk;100;$Essentuki;100;$Tuapse;100;$Mostovskoy;100;$Batalpachinskaya;100;$Teberda;100;$Sochi;100;$Stavropol;100;
+  AI.SetLocalInterest = $Manych;100;$Izobilnyy;100;$Svetlograd;100;$Stavropol;100;$Mineralnye Vody;100;$Sviatoy Krest;100;$Gheorgievsk;100;$Kursavka;100;$Elista;100;
+  AI.SetLocalInterest = $Kislovodsk;100;$Piatigorsk;100;$Nalchik;100;$Nartkala;100;$Malgobek;100;$Mozdok;100;$Vladikavkaz;100;$Grozny;100;$Argun;100;$Sadon;100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Azov
+
+StartEvent = evt_nam_WHImenacingAzovend|999|0|NULL|NULL|$Azov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingAzov;=;1;
+  EvalRgnOwned = $Azov
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingAzov;CuOccurs;-1;
+  ChgEvtOccurs = evt_nam_Red_menaceconsAzov;CuOccurs;-1;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+StartEvent = evt_nam_WHIowningEkaterinodar|1|0|NULL|NULL|$Ekaterinodar|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ekaterinodar
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+StartEvent = evt_nam_REDmenacingEkaterinodar|1|0|NULL|NULL|$Ekaterinodar|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningEkaterinodar;=;1;
+  SelectSubUnits = Region $Ekaterinodar;Enemy
+  EvalSubUnitCount = >=;10
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningEkaterinodar;CuOccurs;-1;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+StartEvent = evt_nam_Red_menaceconsEkaterinodar|1|0|NULL|NULL|$Ekaterinodar|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingEkaterinodar;=;1;
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Armavir;100;$Elbrus Mountain;100;$Maikop;100;$Solnechnodolsk;100;$Nevynominsk;100;$Essentuki;100;$Tuapse;100;$Mostovskoy;100;$Batalpachinskaya;100;$Teberda;100;$Sochi;100;$Stavropol;100;
+  AI.SetLocalInterest = $Manych;100;$Izobilnyy;100;$Svetlograd;100;$Stavropol;100;$Mineralnye Vody;100;$Sviatoy Krest;100;$Gheorgievsk;100;$Kursavka;100;$Elista;100;
+  AI.SetLocalInterest = $Kislovodsk;100;$Piatigorsk;100;$Nalchik;100;$Nartkala;100;$Malgobek;100;$Mozdok;100;$Vladikavkaz;100;$Grozny;100;$Argun;100;$Sadon;100;$Ekaterinodar;400
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+StartEvent = evt_nam_WHImenacingEkaterinodarend|999|0|NULL|NULL|$Ekaterinodar|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingEkaterinodar;=;1;
+  EvalRgnOwned = $Ekaterinodar
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingEkaterinodar;CuOccurs;-1;
+  ChgEvtOccurs = evt_nam_Red_menaceconsEkaterinodar;CuOccurs;-1;
+  AI.SetLocalInterest = $Ekaterinodar;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Armavir
+
+StartEvent = evt_nam_WHIowningArmavir|1|0|NULL|NULL|$Armavir|NULL
+
+Conditions
+
+  EvalRgnOwned = $Armavir
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Armavir
+
+StartEvent = evt_nam_REDmenacingArmavir|1|0|NULL|NULL|$Armavir|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningArmavir;=;1;
+  SelectSubUnits = Region $Armavir;Enemy
+  EvalSubUnitCount = >=;20
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningArmavir;CuOccurs;-1;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Armavir
+
+StartEvent = evt_nam_Red_menaceconsArmavir|1|0|NULL|NULL|$Armavir|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingArmavir;=;1;
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Manych;100;$Izobilnyy;100;$Svetlograd;100;$Stavropol;100;$Mineralnye Vody;100;$Sviatoy Krest;100;$Gheorgievsk;100;$Kursavka;100;$Elista;100;
+  AI.SetLocalInterest = $Kislovodsk;100;$Piatigorsk;100;$Nalchik;100;$Nartkala;100;$Malgobek;100;$Mozdok;100;$Vladikavkaz;100;$Grozny;100;$Argun;100;$Sadon;100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Armavir
+
+StartEvent = evt_nam_WHImenacingArmavirend|999|0|NULL|NULL|$Armavir|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingArmavir;=;1;
+  EvalRgnOwned = $Armavir
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingArmavir;CuOccurs;-1;
+  ChgEvtOccurs = evt_nam_Red_menaceconsArmavir;CuOccurs;-1;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Piatigorsk
+
+StartEvent = evt_nam_WHIowningPiatigorsk|1|0|NULL|NULL|$Piatigorsk|NULL
+
+Conditions
+
+  EvalRgnOwned = $Piatigorsk
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Piatigorsk
+
+StartEvent = evt_nam_REDmenacingPiatigorsk|1|0|NULL|NULL|$Piatigorsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningPiatigorsk;=;1;
+  SelectSubUnits = Region $Piatigorsk;Enemy
+  EvalSubUnitCount = >=;20
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningPiatigorsk;CuOccurs;-1;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Piatigorsk
+
+StartEvent = evt_nam_Red_menaceconsPiatigorsk|1|0|NULL|NULL|$Piatigorsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingPiatigorsk;=;1;
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Manych;100;$Izobilnyy;100;$Svetlograd;100;$Stavropol;100;$Mineralnye Vody;100;$Sviatoy Krest;100;$Gheorgievsk;100;$Kursavka;100;$Elista;100;
+  AI.SetLocalInterest = $Kislovodsk;100;$Piatigorsk;100;$Nalchik;100;$Nartkala;100;$Malgobek;100;$Mozdok;100;$Vladikavkaz;100;$Grozny;100;$Argun;100;$Sadon;100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Piatigorsk
+
+StartEvent = evt_nam_WHImenacingPiatigorskend|999|0|NULL|NULL|$Piatigorsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingPiatigorsk;=;1;
+  EvalRgnOwned = $Piatigorsk
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingPiatigorsk;CuOccurs;-1;
+  ChgEvtOccurs = evt_nam_Red_menaceconsPiatigorsk;CuOccurs;-1;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Grozny
+
+StartEvent = evt_nam_WHIowningGrozny|1|0|NULL|NULL|$Grozny|NULL
+
+Conditions
+
+  EvalRgnOwned = $Grozny
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Grozny
+
+StartEvent = evt_nam_REDmenacingGrozny|1|0|NULL|NULL|$Grozny|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIowningGrozny;=;1;
+  SelectSubUnits = Region $Grozny;Enemy
+  EvalSubUnitCount = >=;20
+  EvalControl = >;51
+  MinDate = 1918/04/01
+  Probability = 70
+
+Actions
+
+  ChgEvtOccurs = evt_nam_WHIowningGrozny;CuOccurs;-1;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Grozny
+
+StartEvent = evt_nam_Red_menaceconsGrozny|1|0|NULL|NULL|$Grozny|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingGrozny;=;1;
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+  AI.SetLocalInterest = $Petrovsk-Port;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Grozny
+
+StartEvent = evt_nam_WHImenacingGroznyend|999|0|NULL|NULL|$Grozny|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_REDmenacingGrozny;=;1;
+  EvalRgnOwned = $Grozny
+  EvalControl = >;51
+  MinDate = 1918/04/01
+
+Actions
+
+  ChgEvtOccurs = evt_nam_REDmenacingGrozny;CuOccurs;-1;
+  ChgEvtOccurs = evt_nam_Red_menaceconsGrozny;CuOccurs;-1;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan5step2fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalEvent = evt_nam_WHIplan5fromnov18;=;1;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Donetsk
+  Probability = 25
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Nikopol;200;$Ekaterinoslav;200;$Pavlograd;200;$Alexandrovsk;200;$Huliaipole;200;$Mariupol;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan6fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalEvent = evt_nam_WHIplan5fromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Novorossiysk
+  Probability = 55
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Nikopol;200;$Ekaterinoslav;200;$Pavlograd;200;$Alexandrovsk;200;$Huliaipole;200;$Mariupol;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan6step2fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan6fromnov18;=;1;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Huliaipole
+  EvalRgnOwned = $Alexandrovsk
+  Probability = 90
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Lyssytchansk;200;$Lugansk;200;$Enakievo;200;$Snejnoie;200;$Donetsk;200;$Makeievka;200;$Dobropole;200;$Shaplino;200;$Volnovakha;200;$Middle Dnieper;200;$Middle Donets;200;$Orikhiv;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan7fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Donetsk
+  EvalRgnOwned = $Alexandrovsk
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Berdjiansk;200;$Vasylivka;200;$Melitopol;200;$Kakhovka;200;$Akimovka;200;$Klyutchevoie;200;$Skadovsk;200;$Dnieper Estuary;200;$Dnieper;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan7step2fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan7fromnov18;=;1;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Donetsk
+  EvalRgnOwned = $Alexandrovsk
+  EvalRgnOwned = $Melitopol
+  Probability = 85
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Dzhankoi;300;$Sevastopol;300;$Feodosia;300;$Kertch;300;$Eupatoria;300;$Simferopol;300;$Zuya;300;$Perekop;300;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan8fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Novorossiysk
+  Probability = 80
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Dzhankoi;300;$Sevastopol;300;$Feodosia;300;$Kertch;300;$Eupatoria;300;$Simferopol;300;$Zuya;300;$Perekop;300;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan8step2fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan8fromnov18;=;1;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Donetsk
+  EvalRgnOwned = $Simferopol
+  EvalRgnOwned = $Sevastopol
+  EvalRgnOwned = $Kertch
+  Probability = 85
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Berdjiansk;200;$Vasylivka;200;$Melitopol;200;$Kakhovka;200;$Akimovka;200;$Klyutchevoie;200;$Skadovsk;200;$Dnieper Estuary;200;$Dnieper;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan9fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Donetsk
+  EvalRgnOwned = $Ekaterinoslav
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1918/02/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Olviopol;200;$Nova Odessa;200;$Ochakov;200;$Kherson;200;$Inulets;200;$Krivoi Rog;200;$Elizavetgrad;200;$Dolynska;200;$Oleksandria;200;$Bug;200;$Snihurivka;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan9step2fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan9fromnov18;=;1;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Donetsk
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Elizavetgrad
+  EvalRgnOwned = $Kherson
+  Probability = 85
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Odessa;200;$Rozdilna;200;$Nikolaiev;200;$Berezvika;200;$Tiraspol;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan10fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalEvent = evt_nam_WHIplan9fromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Donetsk
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Elizavetgrad
+  Probability = 5
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Loiev;200;$Tchernobyl;200;$Korosteni;200;$Dymer;200;$Radomir;200;$Zhitomir;200;$Korostychev;200;$Kiev;200;$Kaniv;200;$Bila Tsverka;200;$Korsun;200;$Skvyra;200;$Pomitchna;200;$Cherkasy;200;$Desna Confluent;200;$Prypiat Confluent;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan11fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Donetsk
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Elizavetgrad
+  EvalRgnOwned = $Cherkasy
+  EvalRgnOwned = $Kiev
+  Probability = 20
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Staroslav;200;$Dobruch;200;$Shostka;200;$Mena;200;$Kozelets;200;$Chernigov;200;$Borzna;200;$Krolevets;200;$Buryn;200;$Bakhmach;200;$Konotop;200;$Nijyn;200;$Nossivka;200;$Brovary;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan11step2afromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan11fromnov18;=;1;
+  EvalEvent = evt_nam_WHIplan11step2bfromnov18;=;0;
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Donetsk
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Elizavetgrad
+  EvalRgnOwned = $Cherkasy
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Konotop
+  Probability = 20
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Gomel;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan11step3afromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan11fromnov18;=;1;
+  EvalEvent = evt_nam_WHIplan11step2afromnov18;=;1;
+  EvalEvent = evt_nam_WHIplan11step2bfromnov18;=;0;
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Donetsk
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Elizavetgrad
+  EvalRgnOwned = $Cherkasy
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Konotop
+  EvalRgnOwned = $Gomel
+  Probability = 20
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Bryansk;200;$Zhizdra;200;$Navlia;200;$Karachev;200;$Lokot;200;$Orel;200;$Kromy;200;$Verkhove;200;$Pokrovskoye;200;$Kurkino;200;$Efremov;200;$Livny;200;$Lebedyan;200;$Elets;200;$Gremyachee;200;$Znamenka;200;$Shalimovo;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan11step2bfromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalEvent = evt_nam_WHIplan11step2afromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan11step2bfromnov18;=;0;
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Donetsk
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Elizavetgrad
+  EvalRgnOwned = $Cherkasy
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Konotop
+  Probability = 60
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Karmanovo;200;$Fatezh;200;$Shchigry;200;$Kolpny;200;$Gorshechnoye;200;$Tim;200;$Kursk;200;$Rylsk;200;$Korenovo;200;$Oboyan;200;$Sudhza;200;$Yakovlevo;200;$Guevo;200;$Pristen;200;$Korotcha;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan11step2cfromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan11fromnov18;=;1;
+  EvalEvent = evt_nam_WHIplan11step2afromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan11step2bfromnov18;=;0;
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Donetsk
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Elizavetgrad
+  EvalRgnOwned = $Cherkasy
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Konotop
+  Probability = 35
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Karmanovo;200;$Fatezh;200;$Shchigry;200;$Kolpny;200;$Gorshechnoye;200;$Tim;200;$Kursk;200;$Rylsk;200;$Korenovo;200;$Oboyan;200;$Sudhza;200;$Yakovlevo;200;$Guevo;200;$Pristen;200;$Korotcha;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan12fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalEvent = evt_nam_WHIplan13fromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Lugansk
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Grayvoron;200;$Kolomak;200;$Merefa;200;$Zmiev;200;$Kharkov;200;$Belgorod;200;$Kupiansk;200;$Balaklia;200;$Valuyki;200;$Alekseevka;200;$Millerovo;200;$Sieverodonetsk;200;$Upper Donets;200;$Borovenky;200;$Chuhuiv;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan13fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalEvent = evt_nam_WHIplan12fromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  Probability = 70
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Grayvoron;200;$Kolomak;200;$Merefa;200;$Zmiev;200;$Kharkov;200;$Belgorod;200;$Kupiansk;200;$Balaklia;200;$Valuyki;200;$Alekseevka;200;$Millerovo;200;$Sieverodonetsk;200;$Upper Donets;200;$Borovenky;200;$Chuhuiv;200;$Lugansk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan12step2fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan12fromnov18;=;1;
+  EvalEvent = evt_nam_WHIplan13fromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Lugansk
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Belgorod
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Karmanovo;200;$Fatezh;200;$Shchigry;200;$Kolpny;200;$Gorshechnoye;200;$Tim;200;$Kursk;200;$Rylsk;200;$Korenovo;200;$Oboyan;200;$Sudhza;200;$Yakovlevo;200;$Guevo;200;$Pristen;200;$Korotcha;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan13step2fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan13fromnov18;=;1;
+  EvalEvent = evt_nam_WHIplan12fromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Belgorod
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Karmanovo;200;$Fatezh;200;$Shchigry;200;$Kolpny;200;$Gorshechnoye;200;$Tim;200;$Kursk;200;$Rylsk;200;$Korenovo;200;$Oboyan;200;$Sudhza;200;$Yakovlevo;200;$Guevo;200;$Pristen;200;$Korotcha;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan12step2afromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan13fromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan12step2fromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan12fromnov18;=;1;
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Lugansk
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Belgorod
+  Probability = 25
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Staryy Oskol;200;$Novyy Oskol;200;$Ostrogozhsk;200;$Zadonsk;200;$Tchernianka;200;$Aleeksevka;200;$Mitrofanovka;200;$Pavlovsk;200;$Utkino;200;$Usman;200;$Mordovo;200;$Raman;200;$Voronezh;200;$Liski;200;$Bobrov;200;$Kalach;200;$Uryupinsk;200;$Anna;200;$Borshchevo;200;$Uvarovo;200;$Turki;200;$Gribanovskiy;200;$Upper Don;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan13step2afromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan12fromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan13step2fromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan13fromnov18;=;1;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Belgorod
+  Probability = 25
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Staryy Oskol;200;$Novyy Oskol;200;$Ostrogozhsk;200;$Zadonsk;200;$Tchernianka;200;$Aleeksevka;200;$Mitrofanovka;200;$Pavlovsk;200;$Utkino;200;$Usman;200;$Mordovo;200;$Raman;200;$Voronezh;200;$Liski;200;$Bobrov;200;$Kalach;200;$Uryupinsk;200;$Anna;200;$Borshchevo;200;$Uvarovo;200;$Turki;200;$Gribanovskiy;200;$Upper Don;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan12step2bfromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan13fromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan12step2fromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan12step2afromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan12fromnov18;=;1;
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Lugansk
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Belgorod
+  Probability = 15
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Boryspil;200;$Pryluky;200;$Lokhvitsa;200;$Pereiaslav;200;$Sumy;200;$Lebedyn;200;$Krasnokutsk;200;$Lubny;200;$Kremenchuk;200;$Mahdalynivka;200;$Poltava;200;$Karlivka;200;$Lozova;200;$Novomoskovsk;200;$Psel Confluent;200;$Kiev;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan13step2bfromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan12fromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan13step2fromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan13fromnov18;=;1;
+  EvalEvent = evt_nam_WHIplan13step2afromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Kharkov
+  EvalRgnOwned = $Belgorod
+  Probability = 15
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Boryspil;200;$Pryluky;200;$Lokhvitsa;200;$Pereiaslav;200;$Sumy;200;$Lebedyn;200;$Krasnokutsk;200;$Lubny;200;$Kremenchuk;200;$Mahdalynivka;200;$Poltava;200;$Karlivka;200;$Lozova;200;$Novomoskovsk;200;$Psel Confluent;200;$Kiev;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan14fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Donetsk
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Elizavetgrad
+  Probability = 20
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Boryspil;200;$Pryluky;200;$Lokhvitsa;200;$Pereiaslav;200;$Sumy;200;$Lebedyn;200;$Krasnokutsk;200;$Lubny;200;$Kremenchuk;200;$Mahdalynivka;200;$Poltava;200;$Karlivka;200;$Lozova;200;$Novomoskovsk;200;$Psel Confluent;200;$Kiev;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan17fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  Probability = 60
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Staryy Oskol;200;$Novyy Oskol;200;$Ostrogozhsk;200;$Zadonsk;200;$Tchernianka;200;$Aleeksevka;200;$Mitrofanovka;200;$Pavlovsk;200;$Utkino;200;$Usman;200;$Mordovo;200;$Raman;200;$Voronezh;200;$Liski;200;$Bobrov;200;$Kalach;200;$Uryupinsk;200;$Anna;200;$Borshchevo;200;$Uvarovo;200;$Turki;200;$Gribanovskiy;200;$Upper Don;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan18cfromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalEvent = evt_nam_WHIplan18afromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan18bfromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Voronezh
+  EvalRgnOwned = $Novorossiysk
+  Probability = 90
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Shatsk;200;$Piana;200;$Chaplygin;200;$Lev;200;$Lipetsk;200;$Ertil;200;$Galovonsk;200;$Kozlov;200;$Sosnovka;200;$Morshansk;200;$Shiringushi;200;$Zemetchino;200;$Bashmakovo;200;$Malinovka;200;$Tambov;200;$Kirsanov;200;$Irgavino;200;$Oka;200;$Blagiye;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan18afromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalEvent = evt_nam_WHIplan18bfromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan18cfromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Voronezh
+  Probability = 75
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Grayvoron;200;$Kolomak;200;$Merefa;200;$Zmiev;200;$Kharkov;200;$Belgorod;200;$Kupiansk;200;$Balaklia;200;$Valuyki;200;$Alekseevka;200;$Millerovo;200;$Sieverodonetsk;200;$Upper Donets;200;$Borovenky;200;$Chuhuiv;200;$Lugansk;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan18bfromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalEvent = evt_nam_WHIplan18afromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan18cfromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Voronezh
+  EvalRgnOwned = $Novorossiysk
+  Probability = 75
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Karmanovo;200;$Fatezh;200;$Shchigry;200;$Kolpny;200;$Gorshechnoye;200;$Tim;200;$Kursk;200;$Rylsk;200;$Korenovo;200;$Oboyan;200;$Sudhza;200;$Yakovlevo;200;$Guevo;200;$Pristen;200;$Korotcha;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan18cstep2fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan18cfromnov18;=;1;
+  EvalEvent = evt_nam_WHIplan18afromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan18bfromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Voronezh
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnOwned = $Tambov
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Ryazhsk;200;$Ukholovo;200;$Sapozhok;200;$Rizanski;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan19fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Kursk
+  Probability = 70
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Bryansk;200;$Zhizdra;200;$Navlia;200;$Karachev;200;$Lokot;200;$Orel;200;$Kromy;200;$Verkhove;200;$Pokrovskoye;200;$Kurkino;200;$Efremov;200;$Livny;200;$Lebedyan;200;$Elets;200;$Gremyachee;200;$Znamenka;200;$Shalimovo;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan19step2fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan19fromnov18;=;1;
+  EvalRgnOwned = $Kursk
+  EvalRgnOwned = $Orel
+  Probability = 60
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Mossalk;200;$Obninsk;200;$Kolomna;200;$Rybnoie;200;$Bobriki;200;$Serpukhov;200;$Kaluga;200;$Tula;200;$Ageevo;200;$Kondrovo;200;$Kozelsk;200;$Bolkhov;200;$Mtsensk;200;$Novossil;200;$Skopin;200;$Pavelets;200;$Volovo;200;$Plavsk;200;$Dankov;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan20fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalEvent = evt_nam_WHIplan20bfromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan20afromnov18;=;0;
+  EvalRgnOwned = $Ryazhsk
+  EvalRgnOwned = $Tambov
+  Probability = 10
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Shatura;200;$Roshal;200;$Anopino;200;$Tuma;200;$Ryazan;200;$Lashma;200;$Spassk;200;$Rizanski;200;$Mikhailov;200;$Volodorsk;200;$Gorbatkva;200;$Ryazhsk;200;$Ukholovo;200;$Sapozhok;200;$Shilovo;200;$Murmino;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan20afromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalEvent = evt_nam_WHIplan20bfromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan20fromnov18;=;0;
+  EvalRgnOwned = $Ryazhsk
+  EvalRgnOwned = $Tambov
+  Probability = 80
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Mossalk;200;$Obninsk;200;$Kolomna;200;$Rybnoie;200;$Bobriki;200;$Serpukhov;200;$Kaluga;200;$Tula;200;$Ageevo;200;$Kondrovo;200;$Kozelsk;200;$Bolkhov;200;$Mtsensk;200;$Novossil;200;$Skopin;200;$Pavelets;200;$Volovo;200;$Plavsk;200;$Dankov;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan20bfromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan20fromnov18;=;0;
+  EvalEvent = evt_nam_WHIplan20afromnov18;=;0;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Ryazhsk
+  EvalRgnOwned = $Tambov
+  Probability = 80
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Mossalk;200;$Obninsk;200;$Kolomna;200;$Rybnoie;200;$Bobriki;200;$Serpukhov;200;$Kaluga;200;$Tula;200;$Ageevo;200;$Kondrovo;200;$Kozelsk;200;$Bolkhov;200;$Mtsensk;200;$Novossil;200;$Skopin;200;$Pavelets;200;$Volovo;200;$Plavsk;200;$Dankov;200;
+  AI.SetLocalInterest = $Shatura;200;$Roshal;200;$Anopino;200;$Tuma;200;$Ryazan;200;$Lashma;200;$Spassk;200;$Rizanski;200;$Mikhailov;200;$Volodorsk;200;$Gorbatkva;200;$Ryazhsk;200;$Ukholovo;200;$Sapozhok;200;$Shilovo;200;$Murmino;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan21fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tula
+  Probability = 60
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;200;$Aprelevka;200;$Borodino;200;$Orekhovo;200;$Sergiev Posad;200;$Bogodorosk;200;$Moscow;200;$Odintsovo;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan22fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Ryazan
+  Probability = 60
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Podolsk;200;$Aprelevka;200;$Borodino;200;$Orekhovo;200;$Sergiev Posad;200;$Bogodorosk;200;$Moscow;200;$Odintsovo;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan23fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Novocherkassk
+  Probability = 40
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Tzaritsyn;250;$Sarepta;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan24fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHIplan24afromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Tzaritsyn
+  Probability = 50
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Saratov;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan24afromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  TurnIndex  = 7;13;19;
+  EvalEvent = evt_nam_WHIallowedtoattack;=;1;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Tzaritsyn
+  Probability = 75
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Shatsk;200;$Piana;200;$Chaplygin;200;$Lev;200;$Lipetsk;200;$Ertil;200;$Galovonsk;200;$Kozlov;200;$Sosnovka;200;$Morshansk;200;$Shiringushi;200;$Zemetchino;200;$Bashmakovo;200;$Malinovka;200;$Tambov;200;$Kirsanov;200;$Irgavino;200;$Oka;200;$Blagiye;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan24astep2fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  Probability = 75
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Tzaritsyn
+  EvalRgnOwned = $Tambov
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Ryazhsk;200;$Ukholovo;200;$Sapozhok;200;$Rizanski;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan24astep3fromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  Probability = 60
+  EvalEvent = evt_nam_WHIplan24astep3afromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Tzaritsyn
+  EvalRgnOwned = $Tambov
+  EvalRgnOwned = $Ryazhsk
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Shatura;200;$Roshal;200;$Anopino;200;$Tuma;200;$Ryazan;200;$Lashma;200;$Spassk;200;$Rizanski;200;$Mikhailov;200;$Volodorsk;200;$Gorbatkva;200;$Ryazhsk;200;$Ukholovo;200;$Sapozhok;200;$Shilovo;200;$Murmino;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplan24astep3afromnov18|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  Probability = 30
+  EvalEvent = evt_nam_WHIplan24astep3fromnov18;=;0;
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Tzaritsyn
+  EvalRgnOwned = $Tambov
+  EvalRgnOwned = $Ryazhsk
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/12/01
+
+Actions
+
+  AI.SetLocalInterest = $Mossalk;200;$Obninsk;200;$Kolomna;200;$Rybnoie;200;$Bobriki;200;$Serpukhov;200;$Kaluga;200;$Tula;200;$Ageevo;200;$Kondrovo;200;$Kozelsk;200;$Bolkhov;200;$Mtsensk;200;$Novossil;200;$Skopin;200;$Pavelets;200;$Volovo;200;$Plavsk;200;$Dankov;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplanyudenich|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;WHI_YudenichArmy;=;1;
+  EvalEvent = evt_nam_WHIplanyudenichalt;=;0;
+  CheckAILevel = 1
+  Probability = 8
+  MinDate = 1918/09/16
+  MaxDate = 1922/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Pskov;300;$Yamburg;200;$Pechory;200;$Ostrov;200;$Opochka;200;$Novorzhev;200;$Porkhov;200;$Dno;200;$Polna;200;$Plussa;200;$Soltsy;200;$Luga;200;$Serbino;200;$Gdov;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplanyudenichalt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;WHI_YudenichArmy;=;1;
+  CheckAILevel = 1
+  Probability = 8
+  MinDate = 1918/09/16
+  MaxDate = 1922/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Pskov;300;$Yamburg;200;$Pechory;200;$Ostrov;200;$Opochka;200;$Novorzhev;200;$Porkhov;200;$Dno;200;$Novgorod;200;$Shimsk;200;$Chudovo;200;$Oredezh;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplanyudenichstep2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;WHI_YudenichArmy;=;1;
+  EvalRgnOwned = $Luga
+  Probability = 45
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Krasnaya Gorka;200;$Gdov;200;$Serbino;200;$Volosovo;200;$Gatchina;200;$Petergoff;200;$Tsarskoye Selo;200;$Shlisselburg;200;$Petrograd;200;$Novaya Ladoga;200;$Syas;200;$Lyuban;200;$Tosno;200;$Siverskaya;200;$Luga;200;$Soltsy;200;$Plussa;200;$Polna;200;$Kronstadt;200;$Lake Ladoga;200;$Neva;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIplanyudenichstep2alt|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;WHI_YudenichArmy;=;1;
+  EvalRgnOwned = $Novgorod
+  Probability = 45
+  CheckAILevel = 1
+  MinDate = 1918/09/16
+  MaxDate = 1922/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Krasnaya Gorka;200;$Gdov;200;$Serbino;200;$Volosovo;200;$Gatchina;200;$Petergoff;200;$Tsarskoye Selo;200;$Shlisselburg;200;$Petrograd;200;$Novaya Ladoga;200;$Syas;200;$Lyuban;200;$Tosno;200;$Siverskaya;200;$Luga;200;$Soltsy;200;$Plussa;200;$Polna;200;$Kronstadt;200;$Lake Ladoga;200;$Neva;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Luga
+
+StartEvent = evt_nam_WHIowningLuga|1|0|NULL|NULL|$Luga|NULL
+
+Conditions
+
+  EvalRgnOwned = $Luga
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novgorod
+
+StartEvent = evt_nam_WHIowningNovgorod|1|0|NULL|NULL|$Novgorod|NULL
+
+Conditions
+
+  EvalRgnOwned = $Novgorod
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Pskov
+
+StartEvent = evt_nam_WHIowningPskov|1|0|NULL|NULL|$Pskov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Pskov
+  Probability = 70
+  MinDate = 1918/04/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Luga
+
+StartEvent = evt_nam_WHIend1|1|0|NULL|NULL|$Luga|NULL
+
+Conditions
+
+  EvalRgnOwned = $Luga
+  EvalRgnOwned = $Novgorod
+  EvalEvent = evt_nam_WHIowningPskov;=;1;
+  EvalEvent = evt_nam_WHIowningNovgorod;=;0;
+  EvalEvent = evt_nam_WHIowningLuga;=;0;
+  Probability = 70
+  MinDate = 1918/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Pskov;300;$Yamburg;5;$Pechory;5;$Ostrov;5;$Opochka;5;$Novorzhev;5;$Porkhov;5;$Dno;5;$Polna;5;$Plussa;5;$Soltsy;5;$Luga;5;$Serbino;5;$Gdov;5;
+  AI.SetLocalInterest = $Krasnaya Gorka;5;$Gdov;5;$Serbino;5;$Volosovo;5;$Gatchina;5;$Petergoff;5;$Tsarskoye Selo;5;$Shlisselburg;5;$Petrograd;5;$Novaya Ladoga;5;$Syas;5;$Lyuban;5;$Tosno;5;$Siverskaya;5;$Luga;5;$Soltsy;5;$Plussa;5;$Polna;5;$Kronstadt;5;$Lake Ladoga;5;$Neva;5;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIBaltcinwar|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_BalticJoin_TrackerforWHIAIRegionalInterest;>=;1;
+  CheckAILevel = 1
+  MinDate = 1918/12/16
+  MaxDate = 1922/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Liepaja;200;$Ventspils;200;$Dundaga;200;$Kolka;200;$Talsi;200;$Engure;200;$Saldus;200;$Grobin;200;$Jelgava;200;$Jurmala;200;$Ogre;200;$Jekabpils;200;$Riga;200;$Jaunjelgava;200;$Sigulda;200;$Saulkrasti;200;$Cesis;200;$Amata;200;$Plavinas;200;$Daugavpils;200;$Kraslava;200;$Rezekne;200;$Varakjani;200;$Madona;200;
+  AI.SetLocalInterest = $Saaremaa;200;$Hanila;200;$Parnu;200;$Haademeeste;200;$Valga;200;$Antsla;200;$Polva;200;$Otepaa;200;$Viljandi;200;$Tartu;200;$Jogeva;200;$Paide;200;$Haapsalu;200;$Tallinn;200;$Tapa;200;$Rakvere;200;$Narva;200;$Hiumaa;200;$Daugava;200;$Upper Daugava;200;$Narva River;200;$Peipus Lake;200;
+  AI.SetLocalInterest = $Kapsukas;200;$Sejny;200;$Palanga;200;$Kursenai;200;$Plunge;200;$Tauroggen;200;$Kaunas;200;$Siauliai;200;$Mazeikiai;200;$Joniskis;200;$Rokiskis;200;$Panevezys;200;$Zarasai;200;$Utena;200;$Alytus;200;$Upper Niemen;200;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIFinlandinwar|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_FinnishOn;>=;1;
+  CheckAILevel = 1
+  MinDate = 1918/12/16
+  MaxDate = 1922/09/01
+
+Actions
+
+  AI.SetLocalInterest = $Kotka;200;$Viipuri;400;$Terijoki;200;$Taipala;200;$Lappeenranta;200;$Kakisalmi;200;$Lake Saimaa;200;$Sortavala;200;$Imatra;200;$Lake Puruvesi;200;$Lake Haukivesi;200;$Lake Pielinen;200;$Valkeala;200;$Mikkeli;200;$Juva;200;$Kerimaki;200;$Varkaus;200;$Lake Kallavesi;200;$Leppavirta;200;$Kuopio;200;$Heinavesi;200;$Joensuu;200;$Rautavaara;200;$Kitee;200;$Ilomantsi;200;$Lieksa;200;$Vyartsilya;200;$Suoyarvi;200;$North Ladoga Lake;200;$Kangaslampi;200;$Juuka;200;
+  AI.SetLocalInterest = $Turku;200;$Salo;200;$Espoo;200;$Porvoo;200;$Loviisa;200;$Lake Nasi;200;$Loimaa;200;$Rauma;200;$Aland Island;200;$Merikarvia;200;$Narpes;200;$Vaasa;200;$Kouvola;200;$Lake Paijanne;200;$Tampere;200;$Vammala;200;$Virrat;200;$Seinajoki;200;$Lahti;200;$Lappajarvi;200;$Pieksamaki;200;$Saarijarvi;200;$Jamsa;200;$Kivijarvi;200;$Heinola;200;$Haapamaki;200;$Helsinki;400;
+  AI.SetLocalInterest = $Petergoff;200;$Tsarskoye Selo;200;$Shlisselburg;200;$Petrograd;300;$Kronstadt;150;$Lake Ladoga;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHIFinlandinwar1|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_FinnishOn;>=;1;
+  CheckAILevel = 1
+  MinDate = 1918/12/16
+  MaxDate = 1922/09/02
+  Probability = 5
+
+Actions
+
+  AI.SetLocalInterest = $Lake Onega;200;$Ladoga-Onega;200;$Olonets;200;$Lodeynoe Pole;200;$Novinka;200;$Segozerskoye;200;$Petrozavodsk;200;$Podporojie;200;$Medvezhya Gora;200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Novorossiysk_must_fall|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/11/16
+  MaxDate = 1922/09/02
+  EvalRgnOwned = $Novorossiysk;NOT
+
+Actions
+
+  AI.SetLocalInterest = $Novorossiysk;400;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Ekaterinodar_must_fall|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/11/16
+  MaxDate = 1922/09/02
+  EvalRgnOwned = $Ekaterinodar;NOT
+
+Actions
+
+  AI.SetLocalInterest = $Ekaterinodar;400;
+
+EndEvent
+
+NULL ==========================================================================
+

@@ -1,0 +1,16 @@
+UID = 2417
+NationTag = ORE
+Name = Orenburg Cossacks Rgt (Infantry)
+Alias = uni_ORE_Rgt
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WH3_Rgt4_txt
+Color = $colORERegular 
+ModelType0 = $mdl_ORE_Inf|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Orenburg
+CustomNames = 1st Horse Partisans Rgt|2nd Horse Partisans Rgt|1st Orenburg Cossacks Rgt|2nd Orenburg Cossacks Rgt|3rd Orenburg Cossacks Rgt|4th Orenburg Cossacks Rgt|5th Orenburg Cossacks Rgt|6th Orenburg Cossacks Rgt|7th Orenburg Cossacks Rgt|8th Orenburg Cossacks Rgt|9th Orenburg Cossacks Rgt|10th Orenburg Cossacks Rgt|11th Orenburg Cossacks Rgt|12th Orenburg Cossacks Rgt|13th Orenburg Cossacks Rgt|14th Orenburg Cossacks Rgt|15th Orenburg Cossacks Rgt|16th Orenburg Cossacks Rgt|17th Orenburg Cossacks Rgt|18th Orenburg Cossacks Rgt|19th Orenburg Cossacks Rgt|20th Orenburg Cossacks Rgt|21st Orenburg Cossacks Rgt|22nd Orenburg Cossacks Rgt|23rd Orenburg Cossacks Rgt|24th Orenburg Cossacks Rgt|25th Orenburg Cossacks Rgt|26th Orenburg Cossacks Rgt|1st Orenburg Cossacks Rgt|2nd Orenburg Cossacks Rgt|3rd Orenburg Cossacks Rgt|4th Orenburg Cossacks Rgt|5th Orenburg Cossacks Rgt|6th Orenburg Cossacks Rgt|7th Orenburg Cossacks Rgt|8th Orenburg Cossacks Rgt|9th Orenburg Cossacks Rgt|10th Orenburg Cossacks Rgt|11th Orenburg Cossacks Rgt|12th Orenburg Cossacks Rgt|27th Orenburg Cossacks Rgt|28th Orenburg Cossacks Rgt|29th Orenburg Cossacks Rgt|30th Orenburg Cossacks Rgt|31st Orenburg Cossacks Rgt|32nd Orenburg Cossacks Rgt|33rd Orenburg Cossacks Rgt|34th Orenburg Cossacks Rgt|35th Orenburg Cossacks Rgt|36th Orenburg Cossacks Rgt|37th Orenburg Cossacks Rgt|38th Orenburg Cossacks Rgt|39th Orenburg Cossacks Rgt|40th Orenburg Cossacks Rgt|13th Orenburg Cossacks Rgt|14th Orenburg Cossacks Rgt|15th Orenburg Cossacks Rgt|16th Orenburg Cossacks Rgt|17th Orenburg Cossacks Rgt|18th Orenburg Cossacks Rgt|19th Orenburg Cossacks Rgt|20th Orenburg Cossacks Rgt|21st Orenburg Cossacks Rgt|22nd Orenburg Cossacks Rgt|23rd Orenburg Cossacks Rgt|24th Orenburg Cossacks Rgt|25th Orenburg Cossacks Rgt|26th Orenburg Cossacks Rgt|27th Orenburg Cossacks Rgt|28th Orenburg Cossacks Rgt|29th Orenburg Cossacks Rgt|30th Orenburg Cossacks Rgt|41st Orenburg Cossacks Rgt|42nd Orenburg Cossacks Rgt|43rd Orenburg Cossacks Rgt|44th Orenburg Cossacks Rgt|45th Orenburg Cossacks Rgt|46th Orenburg Cossacks Rgt|47th Orenburg Cossacks Rgt|48th Orenburg Cossacks Rgt|49th Orenburg Cossacks Rgt|50th Orenburg Cossacks Rgt|51st Orenburg Cossacks Rgt|52nd Orenburg Cossacks Rgt|53rd Orenburg Cossacks Rgt|54th Orenburg Cossacks Rgt|55th Orenburg Cossacks Rgt|56th Orenburg Cossacks Rgt|57th Orenburg Cossacks Rgt|58th Orenburg Cossacks Rgt|59th Orenburg Cossacks Rgt|60th Orenburg Cossacks Rgt|3rd Horse Partisans Rgt|4th Horse Partisans Rgt

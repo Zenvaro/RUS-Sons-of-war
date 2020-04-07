@@ -1,0 +1,15 @@
+UID = 324
+NationTag = WH3
+Name = Infantry Rgt (late conscript)
+Alias = uni_WH3_Rgt8
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WH3_Rgt8_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_Inf5|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Tomsk Fusiliers Rgt|2nd Tomsk Fusiliers Rgt|3rd Tomsk Fusiliers Rgt|4th Tomsk Fusiliers Rgt|1st Novonikolaevsk Fusiliers Rgt|2nd Novonikolaevsk Fusiliers Rgt|1st Enisey Fusiliers Rgt|5th Syzran Fusiliers Rgt|6th Omsk Fusiliers Rgt|7th Omsk Fusiliers Rgt|8th Volsk Fusiliers Rgt|9th Omsk Fusiliers Rgt|10th Omsk Fusiliers Rgt|11th Omsk Fusiliers Rgt|12th Omsk Fusiliers Rgt|21st Chelyabinsk Rgt|22nd Zlatoust Rgt|27th Kamyshlov Fusiliers Rgt|28th Irbitsko-Bolkhov Fusiliers Rgt|25th Ekaterinburg Fusiliers Rgt|41st Uralsk Fusiliers Rgt|42nd Troitsk Fusiliers Rgt|43rd Verkhneuralsk Fusiliers Rgt|44th Kustanay Fusiliers Rgt|13th Ufa Fusiliers Rgt|14th Ufa Fusiliers Rgt|15th Mikhailov  Fusiliers Rgt|16th Tatarsk Fusiliers Rgt|29th Birsk Fusiliers Rgt|30th Rojdestvensk Fusiliers Rgt|31st Sterlitamak Fusiliers Rgt|32nd Prikamsk Fusiliers Rgt|2nd Barabinsk Fusiliers Rgt|3rd Barnaul Fusiliers Rgt|5th Tomsk Fusiliers Rgt|6th Marininsk Fusiliers Rgt|7th Kuznetsk Fusiliers Rgt|8th Biisk Fusiliers Rgt|9th Tomsk Fusiliers Rgt|57th 'August 17th' Fusiliers Rgt|58th Saiguinsk Fusiliers Rgt|59th 'Pojarski' Fusiliers Rgt|60th 'Allied Forces' Fusiliers Rgt|1st Sarapul Infantry Rgt|2nd Kazan Infantry Rgt|3rd Laichev Infantry Rgt|4th Christopol Infantry Rgt|13th Omsk Fusiliers Rgt|14th Irtych Fusiliers Rgt|15th Kurgan Fusiliers Rgt|16th Ishimsk Fusiliers Rgt|17th Ishimsk Fusiliers Rgt|25th Tobolsk Fusiliers Rgt|26th Tyumen Fusiliers Rgt|27th Verkhotursk Fusiliers Rgt|28th Yarutolovsk Fusiliers Rgt|9th Irkutsk Fusiliers Rgt|10th Baikal Fusiliers Rgt|11th Nizhneudinsk Fusiliers Rgt|12th Verkhneudinsk Fusiliers Rgt|57th Pavlodar Fusiliers Rgt|58th Akmolinsk Fusiliers Rgt|59th Saiansk Fusiliers Rgt|60th Siberian Fusiliers Rgt|61th Siberian Fusiliers Rgt|19th Petropavlovsk Fusiliers Rgt|62nd Siberian Fusiliers Rgt|63rd Siberian Fusiliers Rgt|64th Siberian Fusiliers Rgt|65th Siberian Fusiliers Rgt|66th Siberian Fusiliers Rgt|67th Siberian Fusiliers Rgt|68th Siberian Fusiliers Rgt|69th Siberian Fusiliers Rgt|70th Siberian Fusiliers Rgt

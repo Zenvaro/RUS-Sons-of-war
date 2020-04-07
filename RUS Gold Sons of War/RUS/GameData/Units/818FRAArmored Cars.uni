@@ -1,0 +1,14 @@
+UID = 818
+NationTag = FRA
+Name = Armored Cars
+Alias = uni_FRA_Amc
+ForcePool = 12
+ShortName = Arm. Cars
+Text = $uni_FRA_Amc_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_FRA_Amc|1
+FamilyType0 = $famLtVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

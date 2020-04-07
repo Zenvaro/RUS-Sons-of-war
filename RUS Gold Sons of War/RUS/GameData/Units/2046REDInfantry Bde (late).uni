@@ -1,0 +1,16 @@
+UID = 2046
+NationTag = RED
+Name = Infantry
+Alias = uni_RED_CBde10
+ForcePool = 6
+ShortName = Infantry
+Text = $uni_RED_Mil6_txt
+Color = $colREDRegular
+SymbolID = symbol_DivInf.png
+ModelType0 = $mdl_RED_Inf18|2
+FamilyType0 = $famLine|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = Infantry

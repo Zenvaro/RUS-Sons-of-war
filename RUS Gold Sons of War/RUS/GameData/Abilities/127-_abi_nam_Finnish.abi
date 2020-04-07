@@ -1,0 +1,10 @@
+UID = 127
+Name = $abi_nam_Finnish
+Alias = Finnish
+Kind = $abiIDFlag
+Text = $abi_txt_Finnish
+ImageID = abi_Finnish.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1

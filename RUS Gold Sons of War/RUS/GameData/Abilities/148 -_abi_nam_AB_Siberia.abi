@@ -1,0 +1,11 @@
+UID = 148
+Name = $abi_nam_AB_Siberia
+Alias = AB_Siberia
+Kind = $abiFlavor
+Text = $abi_txt_AB_Siberia
+ImageID = abi_Siberian.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1
+Area = $Theater_Siberia

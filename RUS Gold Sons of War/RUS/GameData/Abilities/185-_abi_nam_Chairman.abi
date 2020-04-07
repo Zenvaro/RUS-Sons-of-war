@@ -1,0 +1,11 @@
+UID = 185
+Name = $abi_nam_Chairman
+Alias = Chairman
+Kind = $abiFlavor
+Text = $abi_txt_Chairman
+ImageID = abi_Polkom.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1
+ProgRate = 0

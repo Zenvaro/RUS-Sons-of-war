@@ -1,0 +1,13 @@
+UID = 159
+Name = $abi_nam_Mountain_Troops
+Alias = Mountain_Troops
+Kind = $abiCollection
+Text = $abi_txt_Mountain_Troops
+ImageID = abi_Mountaineer.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1
+ProgRate = 0
+Param0 = $MountainFighter
+Param1 = $Mountaineer

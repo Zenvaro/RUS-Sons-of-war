@@ -1,0 +1,14 @@
+UID = 192
+NationTag = WHI
+Name = Sailors
+Alias = uni_WHI_Sai
+ForcePool = 4
+ShortName = Sailors Rgt.
+Text = $uni_WHI_Sai_txt
+Color = $colWHINavy
+ModelType0 = $mdl_WHI_Sai|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 1

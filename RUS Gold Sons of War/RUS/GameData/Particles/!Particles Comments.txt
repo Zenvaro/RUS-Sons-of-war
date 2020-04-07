@@ -1,0 +1,1 @@
+Particles should be numbered in sequence, without gaps. Prefix the name of the particle with the UID (is made to speed access to data).

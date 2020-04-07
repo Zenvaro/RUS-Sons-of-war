@@ -1,0 +1,16 @@
+UID = 2037
+NationTag = RED
+Name = Infantry Bde
+Alias = uni_RED_CBde1
+ForcePool = 6
+ShortName = Infantry Bde
+Text = $uni_RED_Mil6_txt
+Color = $colREDRegular
+SymbolID = symbol_DivInf.png
+ModelType0 = $mdl_RED_Inf7|2
+FamilyType0 = $famLine|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = Infantry Bde

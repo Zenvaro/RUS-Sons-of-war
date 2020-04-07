@@ -1,0 +1,15 @@
+UID = 149
+NationTag = RED
+Name = Volunteers Rgt
+Alias = uni_RED_Vol1
+ForcePool = 4
+ShortName = Vol. Rgt.
+Text = $uni_RED_Vol1_txt
+Color = $colREDMilitia
+SymbolID = symbol_militias.png
+ModelType0 = $mdl_RED_Mil1|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

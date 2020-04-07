@@ -1,0 +1,11 @@
+UID = 142
+Name = $abi_nam_Mutinee
+Alias = Mutinee
+Kind = $abiFlavor
+Text = $abi_txt_Mutinee
+ImageID = abi_Mutiny.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1
+ProgRate = 0

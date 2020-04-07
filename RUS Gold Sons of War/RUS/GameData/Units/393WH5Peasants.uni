@@ -1,0 +1,16 @@
+UID = 393
+NationTag = WH5
+Name = Peasants
+Alias = uni_WH5_Mil0
+ForcePool = 6
+ShortName = Peasants
+Text = $uni_WH5_Mil0_txt
+Color = $colWH5Militia
+ModelType0 = $mdl_WH5_Mil1|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_NorthernWhites
+CustomNames = Shenkursk Peasants|1st Arkhangelsk Militia|2nd Arkhangelsk Militia|3rd Arkhangelsk Militia|4th Arkhangelsk Militia|1st Northern Militia|2nd Northern Militia|3rd Northern Militia|4th Northern Militia|5th Northern Militia|6th Northern Militia|7th Northern Militia|8th Northern Militia|9th Northern Militia|10th Northern Militia|11th Northern Militia|12th Northern Militia|13th Northern Militia|14th Northern Militia|15th Northern Militia|16th Northern Militia|17th Northern Militia|18th Northern Militia|19th Northern Militia|20th Northern Militia

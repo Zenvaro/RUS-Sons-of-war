@@ -1,0 +1,15 @@
+UID = 811
+NationTag = FRA
+Name = Cavalry Rgt
+Alias = uni_FRA_Cav1
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_FRA_Cav1_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_FRA_Cav1|1
+FamilyType0 = $famLeader|1
+FamilyType1 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

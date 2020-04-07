@@ -1,0 +1,208 @@
+UID = 50003
+Bitmap = UnitPanel.png
+x = 0
+y = 0
+z = 89
+Anchor = Bottom Left
+DragDrop = {Unit}
+Capacity = 6
+Coo1 = 276|194|0
+Coo2 = 366|194|0
+Coo3 = 456|194|0
+Coo4 = 546|194|0
+Coo5 = 636|194|0
+Coo6 = 726|194|0
+
+// *** Various coo parameters ***
+
+// Army title
+Various0 = 276|166|0
+// Regiment name insert, offset compared to each regiment
+Various1 = 1|66|0
+// Power Value
+Various2 = 77|54|0
+// hit Gauge coo (relative to start of unit)
+Various3 = 60|5|0
+// Selection square, relative to start of unit
+Various4 = -6|-8|0
+// unit subtype coo (NATO symbol), relative to start of unit
+Various5 = 52|1|0
+// experience
+Various6 = 1|4|0, relative to start of unit
+
+// SpecOrder, Slot 1/8
+Various7 = 185|142
+// SpecOrder, Slot 2/8
+Various8 = 220|142
+// SpecOrder, Slot 3/8
+Various9 = 185|175
+// SpecOrder, Slot 4/8
+Various10 = 220|175
+// SpecOrder, Slot 5/8
+Various11 = 185|209
+// SpecOrder, Slot 6/8
+Various12 = 220|209
+
+// the 4 postures
+Various13 = 264|109
+Various14 = 290|109
+Various15 = 315|109
+Various16 = 340|109
+
+// activation/fixation symbol
+Various17 = 707|166|0
+
+// First coordinate and Offset of the various group indicators (supply, ammo, hide value...)
+Various18 = 678|166|0
+Various19 = -27|0|0
+
+// Abilities & level offset
+Various20 = 5|2|0
+Various21 = 17|3|0
+
+// SpecOrder, Slot 7/8
+Various22 = 185|242
+// SpecOrder, Slot 8/8
+Various23 = 220|242
+
+// SO Plate & buttons
+Various24 = unused
+Various25 = 206|111|0
+Various26 = 179|111|0
+Various27 = 232|111|0
+//  Various28 = 210|50 reserved for the 4th button
+Various28 = unused
+
+// group Badge
+Various29 = unused
+// Army Tab, first coo
+Various30 = 370|123
+// offset (horizontal one for a given line, vertical one when changing line)
+Various31 = 69|20
+// Offset of group name on tab
+Various32 = 2|14
+
+// Cohesion Gauge
+Various33 = 0|5|0 // Cohesion Gauge
+// adv Hit gauge
+Various34 = 0|5|0 // Hit gauge
+// horizontal supply gauge
+Various35 = 0|-2|0		// AGE2
+Various36 = 323|120 	// AGE2
+Various37 = 40|-92		// combine units
+Various38 = 064|055		// AGE2
+
+Various39 = 774|59    // Position of the fanion in the badge
+Various40 = 278|90    // Position of the army flag near the name of it
+
+// *** ROE ***
+// the 4 postures
+Various41 = 264|134
+Various42 = 290|134
+Various43 = 315|134
+Various44 = 340|134
+
+// SpecOrder, Slot 9/8
+Various45 = .
+
+// *** strings parameters ***
+
+// Image name for the selection square
+StrParam0 = panel_regiment_selector.png
+//StrParam0 = selection.bmp
+StrParam1 = unit_name_bgd.png
+// Ability number
+StrParam2 = Numbers.png
+StrParam3 = SO_Tab_Army_ON.png
+StrParam4 = SO_Tab_Move_ON.png
+StrParam5 = SO_Tab_Operations_ON.png
+StrParam6 = .				// AGE2
+StrParam7 = SO_Tab_Army_OFF.png
+StrParam8 = SO_Tab_Move_OFF.png
+StrParam9 = SO_Tab_Operations_OFF.png
+StrParam10 = . 				// AGE2
+StrParam11 = unit_name_bgd2.png		               // unit Name plate for higher hierarchical level units
+StrParam12 = unit_name_bgd3.png		               // unit Name plate for combined units
+StrParam13 = unit_name_bgd_¤.png				         // unit Name plate for being built units
+StrParam14 = unit_PowerValue_Plate.bmp
+StrParam15 = fanion2.png
+StrParam16 = fanion1.png
+StrParam17= panel_regiment_selector_Double.png	// double length selector
+
+// integer parameters
+// max length allowed for the unit name
+Param0 = 16
+// Spacing between each ability icon
+Param1 = 14
+// max number of abilities icons that can be displayed
+Param2 = 4
+// Tab number per line
+Param3 = 6
+// length in char for names on tab
+Param4 = 11
+Param5 = 2		// nb of combined unit per line
+
+// *** buttons ***
+
+// *** buttons ***
+
+// Left scroll
+Btn1 = -1|789|166
+{ButtonDef}
+Image = ScrollUnitBWD_OFF.png
+OverImage = ScrollUnitBWD_ON.png
+DownImage = ScrollUnitBWD_CLICK.png
+DisaImage = ScrollUnitBWD_Deactivated.png
+UpAction = ScrollLeft
+ClickSound = $sndLever
+Hint = $ScrollLeft
+{/ButtonDef}
+
+// Right scroll
+Btn2 = -1|822|166
+{ButtonDef}
+Image = ScrollUnitFWD_OFF.png
+OverImage = ScrollUnitFWD_ON.png
+DownImage = ScrollUnitFWD_CLICK.png
+DisaImage = ScrollUnitFWD_Deactivated.png
+UpAction = ScrollRight
+ClickSound = $sndLever
+Hint = $ScrollRight
+{/ButtonDef}
+
+// Prev Group
+Btn3 = -1|773|166
+{ButtonDef}
+Image = ScrollStackBWD_OFF.png
+OverImage = ScrollStackBWD_ON.png
+DownImage = ScrollStackBWD_CLICK.png
+DisaImage = ScrollStackBWD_OFF.png
+UpAction = PrevGroupClick
+ClickSound = $sndLever
+Hint = $strPrevLandGrpHint
+{/ButtonDef}
+
+// Next Group
+Btn4 = -1|839|166
+{ButtonDef}
+Image = ScrollStackFWD_OFF.png
+OverImage = ScrollStackFWD_ON.png
+DownImage = ScrollStackFWD_CLICK.png
+DisaImage = ScrollStackFWD_OFF.png
+UpAction = NextGroupClick
+ClickSound = $sndLever
+Hint = $strNextLandGrpHint
+{/ButtonDef}
+
+// Sentry one turn
+Btn5 = -1|805|166
+{ButtonDef}
+Image = ScrollUnitSTOP_OFF.png
+OverImage = ScrollUnitSTOP_ON.png
+DownImage = ScrollUnitSTOP_CLICK.png
+DisaImage = ScrollUnitSTOP_OFF.png
+UpAction = SentryOneTurn
+ClickSound = $sndLever
+Hint = $strSentryOneTurnHint
+{/ButtonDef}
+

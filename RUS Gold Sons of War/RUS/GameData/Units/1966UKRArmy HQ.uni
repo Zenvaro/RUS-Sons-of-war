@@ -1,0 +1,15 @@
+UID = 1966
+NationTag = UKR
+Name = Army HQ
+Alias = uni_UKR_Hq
+ForcePool = 6
+ShortName = Army HQ
+Text = $uni_UKR_Hq_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_UKR_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 1
+Area = $Recruit_Ukrainians

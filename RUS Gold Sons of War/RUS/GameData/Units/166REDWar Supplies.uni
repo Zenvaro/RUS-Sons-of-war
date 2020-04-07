@@ -1,0 +1,13 @@
+UID = 166
+NationTag = RED
+Name = War Supplies
+Alias = uni_RED_Wsu
+ShortName = War Supplies
+Text = $uni_RED_Wsu_txt
+Color = $colREDMilitia
+ModelType0 = $mdl_RED_Wsu|1
+FamilyType0 = $famGood|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

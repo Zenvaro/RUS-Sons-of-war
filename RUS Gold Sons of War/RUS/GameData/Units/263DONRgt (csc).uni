@@ -1,0 +1,16 @@
+UID = 263
+NationTag = DON
+Name = Rgt (csc)
+Alias = uni_DON_Rgt2
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_DON_Rgt2_txt
+Color = $colDONRegular 
+ModelType0 = $mdl_DON_Cav6|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Don
+CustomNames = 1st Don Cos. Cavalry Rgt|2nd Don Cos. Cavalry Rgt|3rd Don Cos. Cavalry Rgt|4th Composite Cavalry Rgt|5th Don Cos. Cavalry Rgt|6th Don Cos. Cavalry Rgt|7th Composite Rgt|8th Kalmyk Cavalry Rgt|9th Don Cos. Cavalry Rgt|10th Composite Cavalry Rgt|11th Don Cos. Cavalry Rgt|12th Don Cos. Cavalry Rgt|13th Don Cos. Cavalry Rgt|14th Don Cos. Cavalry Rgt|15th Composite Cavalry Rgt|16th Don Cos. Cavalry Rgt|17th Don Cos. Cavalry Rgt|18th Don Cos. Cavalry Rgt|19th Don Cos. Cavalry Rgt|20th Don Cos. Cavalry Rgt|21st Don Cos. Cavalry Rgt|22nd Composite Cavalry Rgt|23rd Don Cos. Cavalry Rgt|24th Don Cos. Cavalry Rgt|25th Don Cos. Cavalry Rgt|26th Don Cos. Cavalry Rgt|27th Don Cos. Cavalry Rgt|28th Don Cos. Cavalry Rgt|29th Don Cos. Cavalry Rgt|30th Don Cos. Cavalry Rgt|31st Don Cos. Cavalry Rgt|32nd Don Cos. Cavalry Rgt|33rd Don Cos. Cavalry Rgt|34th Don Cos. Cavalry Rgt|35th Don Cos. Cavalry Rgt|36th Don Cos. Cavalry Rgt|37th Don Cos. Cavalry Rgt|38th Don Cos. Cavalry Rgt|39th Don Cos. Cavalry Rgt|40th Don Cos. Cavalry Rgt|41st Don Cos. Cavalry Rgt|42nd Don Cos. Cavalry Rgt|43rd Don Cos. Cavalry Rgt|44th Don Cos. Cavalry Rgt|45th Don Cos. Cavalry Rgt|46th Don Cos. Cavalry Rgt|47th Don Cos. Cavalry Rgt|48th Don Cos. Cavalry Rgt|49th Don Cos. Cavalry Rgt|50th Don Cos. Cavalry Rgt|51st Don Cos. Cavalry Rgt|52nd Don Cos. Cavalry Rgt|53rd Don Cos. Cavalry Rgt|54th Don Cos. Cavalry Rgt|55th Don Cos. Cavalry Rgt|56th Don Cos. Cavalry Rgt|57th Don Cos. Cavalry Rgt|58th Don Cos. Cavalry Rgt|59th Don Cos. Cavalry Rgt|60th Don Cos. Cavalry Rgt

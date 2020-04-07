@@ -1,0 +1,12 @@
+UID = 176
+Name = $abi_nam_Trotsky_Train_Logistics
+Alias = Trotsky_Train_Logistics
+Kind = $abiSupplyMod
+Text = $abi_txt_Trotsky_Train_Logistics
+ImageID = abi_supply1.png
+Color = $colAbi_LightYellow
+Appliance = Group
+Family = 0
+Level = 1
+Param0 = -25
+Param1 = 100

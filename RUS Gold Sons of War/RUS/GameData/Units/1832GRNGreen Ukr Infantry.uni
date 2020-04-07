@@ -1,0 +1,15 @@
+UID = 1832
+NationTag = GRN
+Name = Green Infantry
+Alias = uni_GRN_Inf4
+ForcePool = 6
+ShortName = Green Inf.
+Text = $uni_GRN_Inf3_txt
+Color = $colGRNRegular 
+ModelType0 = $mdl_GRN_Inf4|1
+FamilyType0 = $famLine|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Infantry|2nd Infantry|3rd Infantry|4th Infantry|5th Infantry|6th Infantry|7th Infantry|8th Infantry|9th Infantry|10th Infantry|11th Infantry|12th Infantry|13th Infantry|14th Infantry|15th Infantry|16th Infantry|17th Infantry|18th Infantry|19th Infantry|20th Infantry|21st Infantry|22nd Infantry|23rd Infantry|24th Infantry|25th Infantry|26th Infantry|27th Infantry|28th Infantry|29th Infantry|30th Infantry|31st Infantry|32nd Infantry|33rd Infantry|34th Infantry|35th Infantry|36th Infantry|37th Infantry|38th Infantry|39th Infantry|40th Infantry|41st Infantry|42nd Infantry|43rd Infantry|44th Infantry|45th Infantry|46th Infantry|47th Infantry|48th Infantry|49th Infantry|50th Infantry

@@ -1,0 +1,16 @@
+UID = 798
+NationTag = TUR
+Name = Battlecruiser
+Alias = uni_TUR_BC1
+ForcePool = 2
+ShortName = Battlecruiser
+Text = $uni_TUR_BC1_txt
+Color = $colTURNavy
+DoubleLength = 1
+ModelType0 = $mdl_TUR_BC|4
+FamilyType0 = $famHvyWarship|4
+CmdCost = 3
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Battle Sq.|2nd Battle Sq.|3rd Battle Sq.|4th Battle Sq.

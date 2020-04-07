@@ -1,0 +1,261 @@
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tomsk
+
+StartEvent = evt_nam_WH3_TomskFactory_RplProduction|999|1|NULL|NULL|$Tomsk|NULL
+
+Conditions
+
+  MinDate = 1918/10/02
+  Probability = 30
+  EvalRgnOwned = $Tomsk
+  EvalEvent = evt_nam_WH3_TomskFactoryCompleted;=;1
+  EvalEvent = evt_nam_WH3_TomskFactory_RplProduction2;=;0
+
+Actions
+
+  ChangeWSUPool = 20
+  Replacement = WH3;$famLine;2
+  Replacement = WH3;$famMilitia;2
+  Replacement = WH3;$famElite;2
+  Replacement = WH3;$famCavalry;2
+  Replacement = WH3;$famLightInf;2
+  Replacement = WH3;$famRaider;2
+  Replacement = WH3;$famLightArty;2
+  Replacement = WH3;$famMedArty;2
+  Replacement = WH3;$famHvyArty;2
+  Replacement = WH3;$famService;2
+  Replacement = WH3;$famEngineer;2
+  Replacement = WH3;$famNavalEngineer;2
+  Replacement = WH3;$famSupply;2
+  Replacement = WH3;$famLtVehicle;2
+  Replacement = WH3;$famArmoredTrain;2
+
+  ChangeUnitPool = $uni_ORE_Rgt;1
+  ChangeUnitPool = $uni_ORE_Cav;1
+  ChangeUnitPool = $uni_ORE_Div0;1
+  ChangeUnitPool = $uni_ORE_Div1;1
+  ChangeUnitPool = $uni_WH3_MP;2
+  ChangeUnitPool = $uni_WH3_MG0;2
+  ChangeUnitPool = $uni_WH3_Rgt6;1
+  ChangeUnitPool = $uni_WH3_Rgt2;1
+  ChangeUnitPool = $uni_WH3_Rgt3;1
+  ChangeUnitPool = $uni_WH3_Rgt4;1
+  ChangeUnitPool = $uni_WH3_Lit0;1
+  ChangeUnitPool = $uni_WH3_Cav0;1
+  ChangeUnitPool = $uni_WH3_Cav2;1
+  ChangeUnitPool = $uni_WH3_Cav3;1
+  ChangeUnitPool = $uni_WH3_Eng;1
+  ChangeUnitPool = $uni_WH3_Sig;1
+  ChangeUnitPool = $uni_WH3_Med;1
+  ChangeUnitPool = $uni_WH3_Art0;1
+  ChangeUnitPool = $uni_WH3_Art1;1
+  ChangeUnitPool = $uni_WH3_Art2;1
+  ChangeUnitPool = $uni_WH3_Art3;1
+  ChangeUnitPool = $uni_WH3_Art4;1
+  ChangeUnitPool = $uni_WH3_Art5;1
+  ChangeUnitPool = $uni_WH3_Amt1;1
+  ChangeUnitPool = $uni_WH3_Amt2;1
+  ChangeUnitPool = $uni_WH3_Amc1;1
+  ChangeUnitPool = $uni_WH3_Sup1;2
+  ChangeUnitPool = $uni_WH3_GB1;1
+  ChangeUnitPool = $uni_WH3_RT1;1
+  ChangeUnitPool = $uni_WH3_RT2;1
+  ChangeUnitPool = $uni_WH3_Sup2;2
+  ChangeUnitPool = $uni_WH3_Hq2;1
+  ChangeUnitPool = $uni_WH3_Sai;1
+  ChangeUnitPool = $uni_WH3_Gar0;2
+  ChangeUnitPool = $uni_WH3_Div10;1
+  ChangeUnitPool = $uni_WH3_Div11;1
+  ChangeUnitPool = $uni_WH3_Div12;1
+  ChangeUnitPool = $uni_WH3_Div13;1
+  ChangeUnitPool = $uni_WH3_Div14;1
+  ChangeUnitPool = $uni_WH3_Div15;1
+
+  ChangeUnitPool = $uni_WH3_Mil1;4
+  ChangeUnitPool = $uni_WH3_Cav5;4
+  ChangeUnitPool = $uni_WH3_Div0;2
+  ChangeUnitPool = $uni_WH3_Div1;1
+  ChangeUnitPool = $uni_WH3_Bde6;1
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Tomsk
+
+StartEvent = evt_nam_WH3_TomskFactory_RplProduction2|999|1|NULL|NULL|$Tomsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_New1919;=;1
+  EvalEvent = evt_nam_WH3_New1921;=;0
+  Probability = 30
+  EvalRgnOwned = $Tomsk
+  EvalEvent = evt_nam_WH3_TomskFactoryCompleted;=;1
+
+Actions
+
+  Replacement = WH3;$famLine;2
+  Replacement = WH3;$famMilitia;2
+  Replacement = WH3;$famElite;2
+  Replacement = WH3;$famCavalry;2
+  Replacement = WH3;$famLightInf;2
+  Replacement = WH3;$famRaider;2
+  Replacement = WH3;$famLightArty;2
+  Replacement = WH3;$famMedArty;2
+  Replacement = WH3;$famHvyArty;2
+  Replacement = WH3;$famService;2
+  Replacement = WH3;$famEngineer;2
+  Replacement = WH3;$famNavalEngineer;2
+  Replacement = WH3;$famSupply;2
+  Replacement = WH3;$famLtVehicle;2
+  Replacement = WH3;$famArmoredTrain;2
+
+  ChangeUnitPool = $uni_WH3_Cav6;4
+  ChangeUnitPool = $uni_WH3_Bde8;1
+  ChangeUnitPool = $uni_WH3_MilAG;4
+  ChangeUnitPool = $uni_WH3_Bde11;1
+  ChangeUnitPool = $uni_WH3_Bde12;1
+
+  ChangeUnitPool = $uni_ORE_Rgt;1
+  ChangeUnitPool = $uni_ORE_Cav;1
+  ChangeUnitPool = $uni_ORE_Div0;1
+  ChangeUnitPool = $uni_ORE_Div1;1
+  ChangeUnitPool = $uni_WH3_MP;2
+  ChangeUnitPool = $uni_WH3_MG0;2
+  ChangeUnitPool = $uni_WH3_Rgt6;1
+  ChangeUnitPool = $uni_WH3_Rgt2;1
+  ChangeUnitPool = $uni_WH3_Rgt3;1
+  ChangeUnitPool = $uni_WH3_Rgt4;1
+  ChangeUnitPool = $uni_WH3_Lit0;1
+  ChangeUnitPool = $uni_WH3_Cav0;1
+  ChangeUnitPool = $uni_WH3_Cav2;1
+  ChangeUnitPool = $uni_WH3_Cav3;1
+  ChangeUnitPool = $uni_WH3_Eng;1
+  ChangeUnitPool = $uni_WH3_Sig;1
+  ChangeUnitPool = $uni_WH3_Med;1
+  ChangeUnitPool = $uni_WH3_Art0;1
+  ChangeUnitPool = $uni_WH3_Art1;1
+  ChangeUnitPool = $uni_WH3_Art2;1
+  ChangeUnitPool = $uni_WH3_Art3;1
+  ChangeUnitPool = $uni_WH3_Art4;1
+  ChangeUnitPool = $uni_WH3_Art5;1
+  ChangeUnitPool = $uni_WH3_Amt1;1
+  ChangeUnitPool = $uni_WH3_Amt2;1
+  ChangeUnitPool = $uni_WH3_Amc1;1
+  ChangeUnitPool = $uni_WH3_Sup1;2
+  ChangeUnitPool = $uni_WH3_GB1;1
+  ChangeUnitPool = $uni_WH3_RT1;1
+  ChangeUnitPool = $uni_WH3_RT2;1
+  ChangeUnitPool = $uni_WH3_Sup2;2
+  ChangeUnitPool = $uni_WH3_Hq2;1
+  ChangeUnitPool = $uni_WH3_Sai;1
+  ChangeUnitPool = $uni_WH3_Gar0;2
+  ChangeUnitPool = $uni_WH3_Div10;1
+  ChangeUnitPool = $uni_WH3_Div11;1
+  ChangeUnitPool = $uni_WH3_Div12;1
+  ChangeUnitPool = $uni_WH3_Div13;1
+  ChangeUnitPool = $uni_WH3_Div14;1
+  ChangeUnitPool = $uni_WH3_Div15;1
+
+  ChangeUnitPool = $uni_WH3_Mil1;-4
+  ChangeUnitPool = $uni_WH3_Cav5;-4
+  ChangeUnitPool = $uni_WH3_Div0;-1
+  ChangeUnitPool = $uni_WH3_Div1;-1
+  ChangeUnitPool = $uni_WH3_Bde6;-1
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Tomsk
+
+StartEvent = evt_nam_WH3_TomskFactory_RplProduction3|999|1|NULL|NULL|$Tomsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_New1921;=;1
+  Probability = 30
+  EvalRgnOwned = $Tomsk
+  EvalEvent = evt_nam_WH3_TomskFactoryCompleted;=;1
+
+Actions
+
+  Replacement = WH3;$famLine;2
+  Replacement = WH3;$famMilitia;2
+  Replacement = WH3;$famElite;2
+  Replacement = WH3;$famCavalry;2
+  Replacement = WH3;$famLightInf;2
+  Replacement = WH3;$famRaider;2
+  Replacement = WH3;$famLightArty;2
+  Replacement = WH3;$famMedArty;2
+  Replacement = WH3;$famHvyArty;2
+  Replacement = WH3;$famService;2
+  Replacement = WH3;$famEngineer;2
+  Replacement = WH3;$famNavalEngineer;2
+  Replacement = WH3;$famSupply;2
+  Replacement = WH3;$famLtVehicle;2
+  Replacement = WH3;$famArmoredTrain;2
+
+  ChangeUnitPool = $uni_WH3_Cav6;-4
+  ChangeUnitPool = $uni_WH3_Bde8;-1
+  ChangeUnitPool = $uni_WH3_MilAG;-4
+  ChangeUnitPool = $uni_WH3_Bde11;-1
+  ChangeUnitPool = $uni_WH3_Bde12;-1
+
+  ChangeUnitPool = $uni_WH3_Mil3;4
+  ChangeUnitPool = $uni_WH3_DivNewInf1;1
+  ChangeUnitPool = $uni_WH3_DivNewInf2;1
+  ChangeUnitPool = $uni_WH3_NewCav1;4
+  ChangeUnitPool = $uni_WH3_DivNewCav1;1
+
+  ChangeUnitPool = $uni_ORE_Rgt;1
+  ChangeUnitPool = $uni_ORE_Cav;1
+  ChangeUnitPool = $uni_ORE_Div0;1
+  ChangeUnitPool = $uni_ORE_Div1;1
+  ChangeUnitPool = $uni_WH3_MP;2
+  ChangeUnitPool = $uni_WH3_MG0;2
+  ChangeUnitPool = $uni_WH3_Rgt6;1
+  ChangeUnitPool = $uni_WH3_Rgt2;1
+  ChangeUnitPool = $uni_WH3_Rgt3;1
+  ChangeUnitPool = $uni_WH3_Rgt4;1
+  ChangeUnitPool = $uni_WH3_Lit0;1
+  ChangeUnitPool = $uni_WH3_Cav0;1
+  ChangeUnitPool = $uni_WH3_Cav2;1
+  ChangeUnitPool = $uni_WH3_Cav3;1
+  ChangeUnitPool = $uni_WH3_Eng;1
+  ChangeUnitPool = $uni_WH3_Sig;1
+  ChangeUnitPool = $uni_WH3_Med;1
+  ChangeUnitPool = $uni_WH3_Art0;1
+  ChangeUnitPool = $uni_WH3_Art1;1
+  ChangeUnitPool = $uni_WH3_Art2;1
+  ChangeUnitPool = $uni_WH3_Art3;1
+  ChangeUnitPool = $uni_WH3_Art4;1
+  ChangeUnitPool = $uni_WH3_Art5;1
+  ChangeUnitPool = $uni_WH3_Amt1;1
+  ChangeUnitPool = $uni_WH3_Amt2;1
+  ChangeUnitPool = $uni_WH3_Amc1;1
+  ChangeUnitPool = $uni_WH3_Sup1;2
+  ChangeUnitPool = $uni_WH3_GB1;1
+  ChangeUnitPool = $uni_WH3_RT1;1
+  ChangeUnitPool = $uni_WH3_RT2;1
+  ChangeUnitPool = $uni_WH3_Sup2;2
+  ChangeUnitPool = $uni_WH3_Hq2;1
+  ChangeUnitPool = $uni_WH3_Sai;1
+  ChangeUnitPool = $uni_WH3_Gar0;2
+  ChangeUnitPool = $uni_WH3_Div10;1
+  ChangeUnitPool = $uni_WH3_Div11;1
+  ChangeUnitPool = $uni_WH3_Div12;1
+  ChangeUnitPool = $uni_WH3_Div13;1
+  ChangeUnitPool = $uni_WH3_Div14;1
+  ChangeUnitPool = $uni_WH3_Div15;1
+
+  ChangeUnitPool = $uni_WH3_Mil1;-4
+  ChangeUnitPool = $uni_WH3_Cav5;-4
+  ChangeUnitPool = $uni_WH3_Div0;-1
+  ChangeUnitPool = $uni_WH3_Div1;-1
+  ChangeUnitPool = $uni_WH3_Bde6;-1
+
+EndEvent
+
+NULL ==========================================================================

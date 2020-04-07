@@ -1,0 +1,14 @@
+UID = 864
+NationTag = GBR
+Name = Armored Cars
+Alias = uni_GBR_Amc
+ForcePool = 12
+ShortName = Arm. Cars
+Text = $uni_GBR_Amc_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Amc|1
+FamilyType0 = $famLtVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

@@ -1,0 +1,10 @@
+UID = 132
+Name = $abi_nam_Guard
+Alias = Guard
+Kind = $abiFlavor
+Text = $abi_txt_Guard
+ImageID = abi_Guard.png
+Color = $colAbi_Red
+Appliance = Self
+Family = 0
+Level = 1

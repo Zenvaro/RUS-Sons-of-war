@@ -1,0 +1,11 @@
+UID = 116
+Name = $abi_nam_DoubleCommand10
+Alias = German-Balt
+Kind = $abiMultiNation
+Text = $abi_txt_DoubleCommand10
+ImageID = abi_Baltic.png
+Color = $colAbi_Tan
+Appliance = Group
+Family = 0
+Level = 1
+StrParam0 = GER|BAL|EST|LET|LIT

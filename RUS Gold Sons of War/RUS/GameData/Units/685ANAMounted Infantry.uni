@@ -1,0 +1,14 @@
+UID = 685
+NationTag = ANA
+Name = Mounted Infantry
+Alias = uni_ANA_Cav1
+ForcePool = 6
+ShortName = Mtd. Inf.
+Text = $uni_ANA_Cav1_txt
+Color = $colANARegular 
+ModelType0 = $mdl_ANA_Cav1|1
+FamilyType0 = $famCavalry|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWild
+BuildWeight = 0

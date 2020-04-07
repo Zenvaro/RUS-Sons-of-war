@@ -1,0 +1,16 @@
+UID = 364
+NationTag = WH4
+Name = Armored Cars Bde
+Alias = uni_WH4_Amc
+ForcePool = 12
+ShortName = Arm. Cars Bde.
+Text = $uni_WH4_Amc_txt
+Color = $colWH4Regular 
+ModelType0 = $mdl_WHI_Amc|2
+FamilyType0 = $famLtVehicle|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_WesternWhites
+CustomNames = 1st Armored Cars Bde|2nd Armored Cars Bde|3rd Armored Cars Bde|4th Armored Cars Bde|5th Armored Cars Bde|6th Armored Cars Bde|7th Armored Cars Bde|8th Armored Cars Bde|9th Armored Cars Bde|10th Armored Cars Bde|11th Armored Cars Bde|12th Armored Cars Bde|13th Armored Cars Bde|14th Armored Cars Bde|15th Armored Cars Bde|16th Armored Cars Bde|17th Armored Cars Bde|18th Armored Cars Bde|19th Armored Cars Bde|20th Armored Cars Bde|21st Armored Cars Bde|22nd Armored Cars Bde|23rd Armored Cars Bde|24th Armored Cars Bde|25th Armored Cars Bde|

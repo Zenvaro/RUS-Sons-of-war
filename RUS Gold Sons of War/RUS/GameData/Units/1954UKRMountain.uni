@@ -1,0 +1,15 @@
+UID = 1954
+NationTag = UKR
+Name = Mountain
+Alias = uni_UKR_Mon
+ForcePool = 4
+ShortName = Mountain Rgt.
+Text = $uni_UKR_Mon_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_UKR_Mon|2
+FamilyType0 = $famElite|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Ukrainians

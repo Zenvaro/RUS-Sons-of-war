@@ -1,0 +1,13 @@
+UID = 257
+NationTag = WHI
+Name = War Supplies
+Alias = uni_WHI_Wsu
+ShortName = War Supplies
+Text = $uni_WHI_Wsu_txt
+Color = $colWHIMilitia
+ModelType0 = $mdl_WHI_Wsu|1
+FamilyType0 = $famGood|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

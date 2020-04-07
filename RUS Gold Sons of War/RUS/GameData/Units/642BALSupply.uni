@@ -1,0 +1,16 @@
+UID = 642
+NationTag = BAL
+Name = Supply
+Alias = uni_BAL_Sup1
+ForcePool = 12
+ShortName = Supply
+Text = $uni_BAL_Sup1_txt
+Color = $colBALRegular 
+ModelType0 = $mdl_BAL_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Balts
+CustomNames = 1st Baltic Supply|2nd Baltic Supply|3rd Baltic Supply|4th Baltic Supply|5th Baltic Supply|6th Baltic Supply|7th Baltic Supply|8th Baltic Supply|9th Baltic Supply|10th Baltic Supply|11th Baltic Supply|12th Baltic Supply|13th Baltic Supply|14th Baltic Supply|15th Baltic Supply|16th Baltic Supply|17th Baltic Supply|18th Baltic Supply|19th Baltic Supply|20th Baltic Supply|21st Baltic Supply|22nd Baltic Supply|23rd Baltic Supply|24th Baltic Supply|25th Baltic Supply|26th Baltic Supply|27th Baltic Supply|28th Baltic Supply|29th Baltic Supply|30th Baltic Supply|31st Baltic Supply|32nd Baltic Supply|33rd Baltic Supply|34th Baltic Supply|35th Baltic Supply|36th Baltic Supply|37th Baltic Supply|38th Baltic Supply|39th Baltic Supply|40th Baltic Supply

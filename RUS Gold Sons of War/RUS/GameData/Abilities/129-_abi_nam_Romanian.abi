@@ -1,0 +1,10 @@
+UID = 129
+Name = $abi_nam_Romanian
+Alias = Romanian
+Kind = $abiIDFlag
+Text = $abi_txt_Romanian
+ImageID = abi_Rumanian.png
+Color = $colAbi_Tan
+Appliance = Self
+Family = 0
+Level = 1

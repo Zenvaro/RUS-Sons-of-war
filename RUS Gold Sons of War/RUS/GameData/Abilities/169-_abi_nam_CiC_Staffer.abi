@@ -1,0 +1,13 @@
+UID = 169
+Name = $abi_nam_CiC_Staffer
+Alias = CiC_Staffer
+Kind = $abiCiCModifiers
+Text = $abi_txt_CiC_Staffer
+ImageID = abi_Staff.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 0
+Level = 1
+ProgRate = 0
+Param0 = $abiCiCCommandLdrLand
+Param1 = 1

@@ -1,0 +1,16 @@
+UID = 76
+NationTag = RED
+Name = Cavalry Rgt
+Alias = uni_RED_Cav1
+ForcePool = 30
+ShortName = Cav. Rgt.
+Text = $uni_RED_Cav1_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Cav1|1
+FamilyType0 = $famLeader|1
+FamilyType1 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Russians

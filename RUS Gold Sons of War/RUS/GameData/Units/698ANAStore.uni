@@ -1,0 +1,14 @@
+UID = 698
+NationTag = ANA
+Name = Store
+Alias = uni_ANA_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_ANA_Sup2_txt
+Color = $colANARegular 
+ModelType0 = $mdl_ANA_Store|8
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

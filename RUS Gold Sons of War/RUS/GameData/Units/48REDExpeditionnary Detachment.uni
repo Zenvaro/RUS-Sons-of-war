@@ -1,0 +1,15 @@
+UID = 48
+NationTag = RED
+Name = Expeditionnary Detachment
+Alias = uni_RED_Bde3
+ForcePool = 50
+ShortName = Exp. Bde.
+Text = $uni_RED_Bde3_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Lit|2
+FamilyType0 = $famLightInf|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Recruit_Russians

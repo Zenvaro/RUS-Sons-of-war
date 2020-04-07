@@ -1,0 +1,15 @@
+UID = 1909
+NationTag = ROM
+Name = Mountain
+Alias = uni_ROM_Mon
+ForcePool = 4
+ShortName = Mountain Rgt.
+Text = $uni_ROM_Mon_txt
+Color = $colROMRegular 
+ModelType0 = $mdl_ROM_Mon|2
+FamilyType0 = $famElite|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Rumanians

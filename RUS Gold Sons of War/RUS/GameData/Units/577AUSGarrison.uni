@@ -1,0 +1,17 @@
+UID = 577
+NationTag = AUS
+Name = Garrison
+Alias = uni_AUS_Gar3
+ShortName = Garrison
+Text = $uni_AUS_Gar3_txt
+Color = $colAUSRegular 
+ModelType0 = $mdl_AUS_Inf3|1
+ModelType1 = $mdl_AUS_Inf2|1
+ModelType2 = $mdl_AUS_Inf9|1
+FamilyType0 = $famLine|3
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1
+Area = $Recruit_Austrians
+CustomNames = 1. Garnison-Brigade|2. Garnison-Brigade|3. Garnison-Brigade|4. Garnison-Brigade|5. Garnison-Brigade|6. Garnison-Brigade|7. Garnison-Brigade|8. Garnison-Brigade|9. Garnison-Brigade|10. Garnison-Brigade|11. Garnison-Brigade|12. Garnison-Brigade|13. Garnison-Brigade|14. Garnison-Brigade|15. Garnison-Brigade|16. Garnison-Brigade|17. Garnison-Brigade|18. Garnison-Brigade|19. Garnison-Brigade|20. Garnison-Brigade

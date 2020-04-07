@@ -1,0 +1,15 @@
+UID = 2162
+NationTag = ARM
+Name = Cavalry Rgt
+Alias = uni_ARM_Cav2
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_ARM_Cav1_txt
+Color = $colARMRegular 
+ModelType0 = $mdl_CAU_Cav3|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+Area = $Area_Armenia

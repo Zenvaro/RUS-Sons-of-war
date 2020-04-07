@@ -1,0 +1,15 @@
+UID = 121
+NationTag = RED
+Name = Armored Cars Detachment
+Alias = uni_RED_Amc1
+ForcePool = 20
+ShortName = Arm. Cars Det.
+Text = $uni_RED_Amc1_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Amc|1
+FamilyType0 = $famLtVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1st Armored Cars Dcht|2nd Armored Cars Dcht|3rd Armored Cars Dcht|4th Armored Cars Dcht|5th Armored Cars Dcht|6th Armored Cars Dcht|7th Armored Cars Dcht|8th Armored Cars Dcht|9th Armored Cars Dcht|10th Armored Cars Dcht|11th Armored Cars Dcht|12th Armored Cars Dcht|13th Armored Cars Dcht|14th Armored Cars Dcht|15th Armored Cars Dcht|16th Armored Cars Dcht|17th Armored Cars Dcht|18th Armored Cars Dcht|19th Armored Cars Dcht|20th Armored Cars Dcht|21st Armored Cars Dcht|22nd Armored Cars Dcht|23rd Armored Cars Dcht|24th Armored Cars Dcht|25th Armored Cars Dcht|26th Armored Cars Dcht|27th Armored Cars Dcht|28th Armored Cars Dcht|29th Armored Cars Dcht|30th Armored Cars Dcht|31st Armored Cars Dcht|32nd Armored Cars Dcht|33rd Armored Cars Dcht|34th Armored Cars Dcht|35th Armored Cars Dcht|36th Armored Cars Dcht|37th Armored Cars Dcht|38th Armored Cars Dcht|39th Armored Cars Dcht|40th Armored Cars Dcht|41st Armored Cars Dcht|42nd Armored Cars Dcht|43rd Armored Cars Dcht|44th Armored Cars Dcht|45th Armored Cars Dcht|46th Armored Cars Dcht|47th Armored Cars Dcht|48th Armored Cars Dcht|49th Armored Cars Dcht|50th Armored Cars Dcht

@@ -1,0 +1,9 @@
+UID = 20
+Alias = resGoods
+Name = $res_nam_Goods
+ShortName = $res_shortnam_Goods
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *MfgAsset*

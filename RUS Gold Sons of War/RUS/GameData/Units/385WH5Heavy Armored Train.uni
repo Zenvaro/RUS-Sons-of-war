@@ -1,0 +1,16 @@
+UID = 385
+NationTag = WH5
+Name = Heavy Armored Train
+Alias = uni_WH5_Amt2
+ForcePool = 12
+ShortName = Arm. Train
+Text = $uni_WH5_Amt2_txt
+Color = $colWH5Regular 
+ModelType0 = $mdl_WHI_Amt2|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_NorthernWhites
+CustomNames = 'Admiral Kolchak'|'Admiral Nepenin'|'General Denikin'|'Lip'|'Murmansk Defender'

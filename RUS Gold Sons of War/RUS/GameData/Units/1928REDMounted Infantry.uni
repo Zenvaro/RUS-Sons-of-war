@@ -1,0 +1,14 @@
+UID = 1928
+NationTag = RED
+Name = Mounted Infantry
+Alias = uni_RED_MI
+ForcePool = 2
+ShortName = Mtd. Inf. Rgt.
+Text = $uni_RED_Inf10_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Inf10|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

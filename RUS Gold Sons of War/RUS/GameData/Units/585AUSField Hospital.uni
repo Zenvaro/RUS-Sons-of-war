@@ -1,0 +1,16 @@
+UID = 585
+NationTag = AUS
+Name = Field Hospital
+Alias = uni_AUS_Med
+ForcePool = 4
+ShortName = Field Hospital
+Text = $uni_AUS_Med_txt
+Color = $colAUSRegular 
+ModelType0 = $mdl_AUS_Med|2
+FamilyType0 = $famService|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1
+Area = $Recruit_Austrians
+CustomNames = 1. Feld-Krankenhaus|2. Feld-Krankenhaus|3. Feld-Krankenhaus|4. Feld-Krankenhaus|5. Feld-Krankenhaus|6. Feld-Krankenhaus|7. Feld-Krankenhaus|8. Feld-Krankenhaus|9. Feld-Krankenhaus|10. Feld-Krankenhaus|11. Feld-Krankenhaus|12. Feld-Krankenhaus|13. Feld-Krankenhaus|14. Feld-Krankenhaus|15. Feld-Krankenhaus|16. Feld-Krankenhaus|17. Feld-Krankenhaus|18. Feld-Krankenhaus|19. Feld-Krankenhaus|20. Feld-Krankenhaus

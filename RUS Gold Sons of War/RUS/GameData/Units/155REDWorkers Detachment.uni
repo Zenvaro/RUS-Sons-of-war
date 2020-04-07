@@ -1,0 +1,16 @@
+UID = 155
+NationTag = RED
+Name = Workers Detachment
+Alias = uni_RED_Mil5
+ForcePool = 12
+ShortName = Militia
+Text = $uni_RED_Mil5_txt
+Color = $colREDMilitia
+SymbolID = symbol_militias.png
+ModelType0 = $mdl_RED_Wor|3
+FamilyType0 = $famMilitia|3
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 2
+CustomNames = Workers Dcht

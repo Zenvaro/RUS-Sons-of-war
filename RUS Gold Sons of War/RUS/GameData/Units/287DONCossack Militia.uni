@@ -1,0 +1,15 @@
+UID = 287
+NationTag = DON
+Name = Cossack Militia
+Alias = uni_DON_MilAG
+ForcePool = 6
+ShortName = Militia
+Text = $uni_DON_MilAG_txt
+Color = $colDONMilitia 
+ModelType0 = $mdl_DON_Mil1|1
+FamilyType0 = $famMilitia|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 0
+CustomNames = 1st Cossacks Militia|2nd Cossacks Militia|3rd Cossacks Militia|4th Cossacks Militia|5th Cossacks Militia|6th Cossacks Militia|7th Cossacks Militia|8th Cossacks Militia|9th Cossacks Militia|10th Cossacks Militia|11th Cossacks Militia|12th Cossacks Militia|13th Cossacks Militia|14th Cossacks Militia|15th Cossacks Militia|16th Cossacks Militia|17th Cossacks Militia|18th Cossacks Militia|19th Cossacks Militia|20th Cossacks Militia|21st Cossacks Militia|22nd Cossacks Militia|23rd Cossacks Militia|24th Cossacks Militia|25th Cossacks Militia|26th Cossacks Militia|27th Cossacks Militia|28th Cossacks Militia|29th Cossacks Militia|30th Cossacks Militia|31st Cossacks Militia|32nd Cossacks Militia|33rd Cossacks Militia|34th Cossacks Militia|35th Cossacks Militia|36th Cossacks Militia|37th Cossacks Militia|38th Cossacks Militia|39th Cossacks Militia|40th Cossacks Militia

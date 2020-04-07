@@ -1,0 +1,17 @@
+UID = 390
+NationTag = WH5
+Name = Armored Cruiser
+Alias = uni_WH5_AC1
+ForcePool = 5
+ShortName = Arm. Cruiser
+Text = $uni_WH5_AC1_txt
+Color = $colWH5Navy
+DoubleLength = 1
+ModelType0 = $mdl_WHI_AC|1
+FamilyType0 = $famHvyWarship|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+Area = $Recruit_NorthernWhites
+CustomNames = Chesma Sq.
