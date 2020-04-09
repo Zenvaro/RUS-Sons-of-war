@@ -2,7 +2,7 @@ SetAdvRevolt = GRN|60|60|120|10|101|NULL|NULL
 SetAdvRevoltFP = GRN|$uni_GRN_Mil|40|$uni_GRN_Cav2|20|$uni_GRN_Reb|10|$uni_BSH_Rgt|4|$uni_BSH_Cav|2
 
 SetAdvRevolt = WHI|20|20|20|10|100|NULL|NULL
-SetAdvRevoltFP = WHI|$uni_WHI_Mil1|4|$uni_DON_Mil|2|$uni_WH5_Mil0|2|$uni_WH4_Mil1|2|$uni_WHI_Cav0|1
+SetAdvRevoltFP = WHI|$uni_WHI_Mil1|4|$uni_DON_Inf0|2|$uni_WH5_Mil0|2|$uni_WH4_Mil1|2|$uni_WHI_Cav0|1
 
 SetAdvRevolt = WH3|20|20|20|10|100|NULL|NULL
 SetAdvRevoltFP = WH3|$uni_WH3_Mil1|4|$uni_WH2_Wor|2|$uni_WH3_Cav5|1

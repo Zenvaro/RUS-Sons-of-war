@@ -2030,12 +2030,12 @@ SelectRegion = $Serafimovich
     SUFlavorName = Serdobskiy Rgt
   Apply
   CreateUnit
-    SetType = $uni_DON_Mil
+    SetType = $uni_DON_Inf0
     SUFlavorName = Fedoseev Infantry
     SetName = Fedoseev Militia
   Apply
   CreateUnit
-    SetType = $uni_DON_Mil
+    SetType = $uni_DON_Inf0
     SUFlavorName = Upper Don Infantry
     SetName = Upper Don Militia
   Apply

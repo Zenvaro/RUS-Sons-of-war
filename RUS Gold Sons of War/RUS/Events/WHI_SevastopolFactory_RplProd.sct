@@ -127,10 +127,10 @@ Actions
   ChangeUnitPool = $uni_WHI_RT1;1
   ChangeUnitPool = $uni_WHI_RT2;1
 
-  ChangeUnitPool = $uni_DON_Mil;4
-  ChangeUnitPool = $uni_DON_Dct1;1
-  ChangeUnitPool = $uni_DON_Rgt2;4
-  ChangeUnitPool = $uni_DON_Bde1;1
+  ChangeUnitPool = $uni_DON_Inf0;4
+  ChangeUnitPool = $uni_DON_Dct3;1
+  ChangeUnitPool = $uni_DON_Cav0;4
+  ChangeUnitPool = $uni_DON_Bde2;1
 
   ChangeUnitPool = $uni_DON_Art0;1
   ChangeUnitPool = $uni_DON_Art1;1
@@ -319,10 +319,10 @@ Actions
   ChangeUnitPool = $uni_WHI_RT1;1
   ChangeUnitPool = $uni_WHI_RT2;1
 
-  ChangeUnitPool = $uni_DON_Mil;4
-  ChangeUnitPool = $uni_DON_Dct1;1
-  ChangeUnitPool = $uni_DON_Rgt2;4
-  ChangeUnitPool = $uni_DON_Bde1;1
+  ChangeUnitPool = $uni_DON_Inf0;4
+  ChangeUnitPool = $uni_DON_Dct3;1
+  ChangeUnitPool = $uni_DON_Cav0;4
+  ChangeUnitPool = $uni_DON_Bde2;1
 
   ChangeUnitPool = $uni_DON_Art0;1
   ChangeUnitPool = $uni_DON_Art1;1
@@ -516,10 +516,10 @@ Actions
   ChangeUnitPool = $uni_WHI_RT1;1
   ChangeUnitPool = $uni_WHI_RT2;1
 
-  ChangeUnitPool = $uni_DON_Mil;4
-  ChangeUnitPool = $uni_DON_Dct1;1
-  ChangeUnitPool = $uni_DON_Rgt2;4
-  ChangeUnitPool = $uni_DON_Bde1;1
+  ChangeUnitPool = $uni_DON_Inf0;4
+  ChangeUnitPool = $uni_DON_Dct3;1
+  ChangeUnitPool = $uni_DON_Cav0;4
+  ChangeUnitPool = $uni_DON_Bde2;1
 
   ChangeUnitPool = $uni_DON_Art0;1
   ChangeUnitPool = $uni_DON_Art1;1

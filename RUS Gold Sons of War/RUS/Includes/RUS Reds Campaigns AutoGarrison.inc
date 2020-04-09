@@ -15,12 +15,12 @@ SelectFaction = $RED
 
 SelectFaction = $WHI
   AddGarrison = $Theater_Northern;$sfmDepot;$uni_WHI_MilAG;100;x;x;x;x
-  AddGarrison = $Theater_Finland;$sfmDepot;$uni_FIN_MilAG;100;x;x;x;x
+  AddGarrison = $Theater_Finland;$sfmDepot;$uni_WHI_MilAG;100;x;x;x;x
   AddGarrison = $Theater_Central_Russia;$sfmDepot;$uni_WHI_MilAG;100;x;x;x;x
-  AddGarrison = $Theater_Western;$sfmDepot;$uni_BAL_MilAG;100;x;x;x;x
+  AddGarrison = $Theater_Western;$sfmDepot;$uni_WHI_MilAG;100;x;x;x;x
   AddGarrison = $Theater_Belarus;$sfmDepot;$uni_WHI_MilAG;100;x;x;x;x
   AddGarrison = $Theater_Ukraine;$sfmDepot;$uni_WHI_MilAG;100;x;x;x;x
-  AddGarrison = $Theater_Southern;$sfmDepot;$uni_DON_Mil;100;x;x;x;x
+  AddGarrison = $Theater_Southern;$sfmDepot;$uni_DON_Inf0;100;x;x;x;x
 
 SelectFaction = $WH3
   AddGarrison = $Theater_Central_Russia;$sfmDepot;$uni_WH3_MilAG;100;x;x;x;x
@@ -66,7 +66,7 @@ SelectFaction = $WHI
   AddGarrison = $Theater_Western;$sfmRedoubt;$uni_BAL_MilAG;100;x;x;x;x
   AddGarrison = $Theater_Belarus;$sfmRedoubt;$uni_WHI_MilAG;100;x;x;x;x
   AddGarrison = $Theater_Ukraine;$sfmRedoubt;$uni_WHI_MilAG;100;x;x;x;x
-  AddGarrison = $Theater_Southern;$sfmRedoubt;$uni_DON_Mil;100;x;x;x;x
+  AddGarrison = $Theater_Southern;$sfmRedoubt;$uni_DON_Inf0;100;x;x;x;x
 
 SelectFaction = $WH3
   AddGarrison = $Theater_Central_Russia;$sfmRedoubt;$uni_WH3_MilAG;100;x;x;x;x
@@ -112,7 +112,7 @@ SelectFaction = $WHI
   AddGarrison = $Theater_Western;$sfmCity;$uni_BAL_MilAG;50;x;x;x;x
   AddGarrison = $Theater_Belarus;$sfmCity;$uni_WHI_MilAG;50;x;x;x;x
   AddGarrison = $Theater_Ukraine;$sfmCity;$uni_WHI_MilAG;50;x;x;x;x
-  AddGarrison = $Theater_Southern;$sfmCity;$uni_DON_Mil;50;x;x;x;x
+  AddGarrison = $Theater_Southern;$sfmCity;$uni_DON_Inf0;50;x;x;x;x
 
 SelectFaction = $WH3
   AddGarrison = $Theater_Central_Russia;$sfmCity;$uni_WH3_MilAG;50;x;x;x;x
@@ -158,7 +158,7 @@ SelectFaction = $WHI
   AddGarrison = $Theater_Western;$sfmFort;$uni_BAL_MilAG;100;x;x;x;x
   AddGarrison = $Theater_Belarus;$sfmFort;$uni_WHI_MilAG;100;x;x;x;x
   AddGarrison = $Theater_Ukraine;$sfmFort;$uni_WHI_MilAG;100;x;x;x;x
-  AddGarrison = $Theater_Southern;$sfmFort;$uni_DON_Mil;100;x;x;x;x
+  AddGarrison = $Theater_Southern;$sfmFort;$uni_DON_Inf0;100;x;x;x;x
 
 SelectFaction = $WH3
   AddGarrison = $Theater_Central_Russia;$sfmFort;$uni_WH3_MilAG;100;x;x;x;x
@@ -204,7 +204,7 @@ SelectFaction = $WHI
   AddGarrison = $Theater_Western;$sfmHarbor;$uni_BAL_MilAG;10;x;x;x;x
   AddGarrison = $Theater_Belarus;$sfmHarbor;$uni_WHI_MilAG;10;x;x;x;x
   AddGarrison = $Theater_Ukraine;$sfmHarbor;$uni_WHI_MilAG;10;x;x;x;x
-  AddGarrison = $Theater_Southern;$sfmHarbor;$uni_DON_Mil;10;x;x;x;x
+  AddGarrison = $Theater_Southern;$sfmHarbor;$uni_DON_Inf0;10;x;x;x;x
 
 SelectFaction = $WH3
   AddGarrison = $Theater_Central_Russia;$sfmHarbor;$uni_WH3_MilAG;10;x;x;x;x

@@ -53,7 +53,7 @@ SelectFaction = JAP
 
 SelectFaction = COS
   AddGarrison = $Area_Kuban;$sfmCity;$uni_WHI_Rgt3;100;x;x;x;x
-  AddGarrison = $Area_Don;$sfmCity;$uni_DON_MilAG;100;x;x;x;x
+  AddGarrison = $Area_Don;$sfmCity;$uni_DON_Inf0;100;x;x;x;x
   AddGarrison = $Area_Terek;$sfmCity;$uni_WHI_Rgt8;100;x;x;x;x
   AddGarrison = $Area_Uralsk ;$sfmCity;$uni_WH3_Rgt4;100;x;x;x;x
   AddGarrison = $Area_Orenburg;$sfmCity;$uni_ORE_Rgt;100;x;x;x;x
