@@ -83,59 +83,12 @@ NULL ==========================================================================
 
 SelectFaction = $RED
 
-StartEvent = evt_nam_RED_SRUprising_Choice1|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  ActorEnabled = $gmaMCEvent;RED_SRUprising
-  CheckOption = $gmaMCEvent;RED_SRUprising;=;1
-
-Actions
-
-  GenTextMsg  = opt_notify_SRUprising1;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaMCEvent;MaxUse;0;SubType;RED_SRUprising
-  SetEvtOccurs = evt_nam_RED_SRUprisingOptionChosen;CuOccurs;1
-  SetEvtOccurs = evt_nam_RED_UnitedReds;CuOccurs;1
-  SetEvtOccurs = evt_nam_RED_SRUprising_Choice2;MaxOccurs;0
-  SetEvtOccurs = evt_nam_RED_SRUprising_ON;MaxOccurs;0
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
 StartEvent = evt_nam_RED_SRUprising_NoResponse1|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
   MinDate = 1918/06/20
   MaxDate = 1918/07/23
-  Probability = 10
-  EvalEvent = evt_nam_RED_SRUprisingOptionChosen;=;0
-  ActorEnabled = $gmaMCEvent;RED_SRUprising
-
-Actions
-
-  GenTextMsg  = opt_notify_SRUprising1;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaMCEvent;MaxUse;0;SubType;RED_SRUprising
-  SetEvtOccurs = evt_nam_RED_SRUprisingOptionChosen;CuOccurs;1
-  SetEvtOccurs = evt_nam_RED_UnitedReds;CuOccurs;1
-  SetEvtOccurs = evt_nam_RED_SRUprising_Choice2;MaxOccurs;0
-  SetEvtOccurs = evt_nam_RED_SRUprising_ON;MaxOccurs;0
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_SRUprising_Choice2|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  ActorEnabled = $gmaMCEvent;RED_SRUprising
-  CheckOption = $gmaMCEvent;RED_SRUprising;=;2
 
 Actions
 
@@ -143,11 +96,6 @@ Actions
   ChgRgnDecisionFP = $rgdConscriptions;2
   ChgRgnDecisionFP = $rgdTcheka;2
   ChgFacEngagementPts = -15
-  ChangeActorPool = $gmaMCEvent;MaxUse;0;SubType;RED_SRUprising
-  SetEvtOccurs = evt_nam_RED_SRUprisingOptionChosen;CuOccurs;1
-  SetEvtOccurs = evt_nam_RED_BolshevikDictature;CuOccurs;1
-  SetEvtOccurs = evt_nam_RED_SRUprising_Choice1;MaxOccurs;0
-  SetEvtOccurs = evt_nam_RED_SRUprising_ON;MaxOccurs;0
 
 SelectFaction = $WH3
 SelectRegion = $Yaroslavl
@@ -266,193 +214,6 @@ SelectRegion = $Rybinsk
 SelectFaction = $CMN
 
   GenTextMsg  = opt_notify_SRUprising2;1;NULL;NULL;NULL
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_SRUprising_NoResponse2|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/07/23
-  EvalEvent = evt_nam_RED_SRUprising_NoResponse1;=;0
-
-SelectFaction = $CMN
-
-  EvalEvent = evt_nam_CMN_WW1Armistice;=;0
-
-SelectFaction = $RED
-
-  EvalEvent = evt_nam_RED_SRUprisingOptionChosen;=;0
-  ActorEnabled = $gmaMCEvent;RED_SRUprising
-
-Actions
-
-  ChgRgnDecisionFP = $rgdRequisitions;2
-  ChgRgnDecisionFP = $rgdConscriptions;2
-  ChgRgnDecisionFP = $rgdTcheka;2
-  ChgFacEngagementPts = -15
-
-SelectFaction = $WH3
-SelectRegion = $Yaroslavl
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 0
-    SetName = Yaroslavl Uprising
-  Apply
-  CreateUnit
-    SetType = $uni_WH2_Savinkov1
-    SetName = B.V. Savinkov
-  Apply
-  CreateUnit
-    SetType = $uni_WH2_Perkhurov1
-    SetName = A.P. Perkhurov
-  Apply
-  SetHealth = 50
-  SetCohesion = 100
-  CreateUnit
-    SetType = $uni_WH2_Bde4
-    SetName = Yaroslavl Rebels
-  Apply
-  SetHealth = 100
-  SetCohesion = 100
-  CreateUnit
-    SetType = $uni_WH2_Amc
-    SUFlavorName = Yaroslavl rebels
-    SetName = Yaroslavl Rebels Armored Cars
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Amt1
-    SUFlavorName = Yaroslavl Train
-    SetName = Yaroslavl Armored Train
-  Apply
-
-SelectFaction = $GRN
-SelectRegion = $Vologda
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 0
-    SetName = Vologda SR Uprising
-  Apply
-  SetHealth = 50
-  SetCohesion = 50
-  CreateUnit
-    SetType = $uni_WH2_Mil1
-    SUFlavorName = Vologda rebels
-    SetName = Vologda Rebels
-  Apply
-  SetHealth = 100
-  SetCohesion = 100
-
-
-SelectFaction = $WH3
-SelectRegion = $Arzamas
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 0
-    SetName = Arzamas SR Uprising
-  Apply
-  CreateUnit
-    SetType = $uni_WH2_Bde5
-    SetName = Arzamas Rebels
-  Apply
-
-SelectFaction = $WH3
-SelectRegion = $Murom
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 0
-    SetName = Murom SR Uprising
-  Apply
-  SetHealth = 10
-  SetCohesion = 10
-  CreateUnit
-    SetType = $uni_WH2_Mil1
-    SUFlavorName = Murom rebels
-    SetName = Murom Rebels
-  Apply
-  SetHealth = 100
-  SetCohesion = 100
-
-SelectFaction = $WH3
-SelectRegion = $Rybinsk
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 0
-    SetName = Rybinsk SR Uprising
-  Apply
-  CreateUnit
-    SetType = $uni_WH2_Mil0
-    SUFlavorName = Rybinsk rebels
-    SetName = Rybinsk Rebels
-  Apply
-
-SelectFaction = $CMN
-
-  GenTextMsg  = opt_notify_SRUprising2;1;NULL;NULL;NULL
-
-SelectFaction = $RED
-
-  ChangeActorPool = $gmaMCEvent;MaxUse;0;SubType;RED_SRUprising
-  SetEvtOccurs = evt_nam_RED_SRUprisingOptionChosen;CuOccurs;1
-  SetEvtOccurs = evt_nam_RED_BolshevikDictature;CuOccurs;1
-  SetEvtOccurs = evt_nam_RED_SRUprising_Choice1;MaxOccurs;0
-  SetEvtOccurs = evt_nam_RED_SRUprising_ON;MaxOccurs;0
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_SRUprisingOptionChosen|0|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-Actions
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_UnitedReds|0|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-Actions
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_BolshevikDictature|0|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-Actions
 
 EndEvent
 
@@ -461,7 +222,7 @@ NULL ==========================================================================
 SelectFaction = $CMN
 SelectRegion = $Omsk
 
-StartEvent = evt_nam_Flavor_CMN_Directory|1|2|evt_txt_Flavor_CMN_Directory|Event-img_CMN_GermanArmistice|$Omsk|NULL
+DStartEvent = evt_nam_Flavor_CMN_Directory|1|2|evt_txt_Flavor_CMN_Directory|Event-img_CMN_GermanArmistice|$Omsk|NULL
 
 Conditions
 

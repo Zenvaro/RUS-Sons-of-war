@@ -66,20 +66,6 @@ EndEvent
 
 NULL ==========================================================================
 
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_BolshevikDictature|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1917/06/01
-
-Actions
-
-EndEvent
-
-NULL ==========================================================================
-
 SelectFaction = $CMN
 
 StartEvent = evt_nam_Renforts_CMN_JapaneseIntervention2|1|0|NULL|NULL|NULL|NULL
@@ -87,18 +73,6 @@ StartEvent = evt_nam_Renforts_CMN_JapaneseIntervention2|1|0|NULL|NULL|NULL|NULL
 Conditions
 
   MinDate = 1918/11/16
-
-Actions
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_UnitedReds|0|0|NULL|NULL|NULL|NULL
-
-Conditions
 
 Actions
 

@@ -3382,7 +3382,6 @@ StartEvent = RGD_Remove_Exclusion_Poland_RED|1|0|NULL|NULL|NULL|NULL
 Conditions
 
   EvalEvent = evt_nam_POL_PolandAttacks;=;1
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;0
   MinDate = 1917/11/20
 
 Actions

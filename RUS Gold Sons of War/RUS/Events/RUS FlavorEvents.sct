@@ -3460,7 +3460,6 @@ Conditions
 
   MinDate = 1918/06/01
   MaxDate = 1918/10/25
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
 SelectFaction = $RED
 
@@ -3520,7 +3519,6 @@ Conditions
 
   MinDate = 1918/06/01
   MaxDate = 1918/10/25
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
   EvalUnqUnit = Y. Sablin
 
 Actions
@@ -3763,8 +3761,6 @@ Conditions
   MaxDate = 1918/10/14
 
 SelectFaction = $RED
-
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
 Actions
 
@@ -6693,7 +6689,6 @@ Conditions
 
 SelectFaction = $RED
 
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
   EvalRgnOwned = $Stavropol-on-Volga
 
 SelectFaction = $WH3
@@ -12155,11 +12150,9 @@ StartEvent = evt_nam_CMN_KronstadtTambovWarning|1|2|evt_txt_CMN_KronstadtTambovW
 
 Conditions
 
-  MinDate = 1920/09/11
+  MinDate = 1920/08/11
 
 SelectFaction = $RED
-
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
 Actions
 
@@ -12174,7 +12167,8 @@ StartEvent = evt_nam_CMN_TambovSpreading1|1|1|NULL|NULL|$Tzaritsyn|NULL
 
 Conditions
 
-  MinDate = 1920/09/21
+  MinDate = 1920/08/11
+  MaxDate = 1920/11/11
   EvalEvent = evt_nam_CMN_TambovUprising;=;1
 
 SelectFaction = $GRN
@@ -12232,7 +12226,7 @@ SelectFaction = $GRN
     SUFlavorName = Tachankas
     SetName = Insurgents Tachankas
   Apply
-  ChangeLoyaltyFac = $Area_Tambov;20
+  ChangeLoyaltyFac = $Area_Tambov;100
 
 EndEvent
 
@@ -12245,7 +12239,8 @@ StartEvent = evt_nam_CMN_TambovSpreading2|1|1|NULL|NULL|$Saratov|NULL
 
 Conditions
 
-  MinDate = 1920/09/21
+  MinDate = 1920/08/11
+  MaxDate = 1920/11/11
   EvalEvent = evt_nam_CMN_TambovUprising;=;1
 
 SelectFaction = $GRN
@@ -12298,7 +12293,7 @@ SelectFaction = $GRN
     SUFlavorName = Tachankas
     SetName = Insurgents Tachankas
   Apply
-  ChangeLoyaltyFac = $Area_Saratov;20
+  ChangeLoyaltyFac = $Area_Saratov;60
 
 EndEvent
 
@@ -12311,7 +12306,8 @@ StartEvent = evt_nam_CMN_TambovSpreading3|1|1|NULL|NULL|$Samara|NULL
 
 Conditions
 
-  MinDate = 1920/09/21
+  MinDate = 1920/08/11
+  MaxDate = 1920/11/11
   EvalEvent = evt_nam_CMN_TambovUprising;=;1
 
 SelectFaction = $GRN
@@ -12374,7 +12370,7 @@ SelectFaction = $GRN
     SUFlavorName = Tachankas
     SetName = Insurgents Tachankas
   Apply
-  ChangeLoyaltyFac = $Area_Samara;20
+  ChangeLoyaltyFac = $Area_Samara;60
 
 EndEvent
 
@@ -12387,7 +12383,8 @@ StartEvent = evt_nam_CMN_TambovSpreading4|1|1|NULL|NULL|$Astrakhan|NULL
 
 Conditions
 
-  MinDate = 1920/09/21
+  MinDate = 1920/08/11
+  MaxDate = 1920/11/11
   EvalEvent = evt_nam_CMN_TambovUprising;=;1
 
 SelectFaction = $GRN
@@ -12435,7 +12432,7 @@ SelectFaction = $GRN
     SUFlavorName = Partisans|Partisans
     SetName = Insurgents Partisans
   Apply
-  ChangeLoyaltyFac = $Area_Astrakhan;20
+  ChangeLoyaltyFac = $Area_Astrakhan;60
 
 EndEvent
 
@@ -12448,7 +12445,8 @@ StartEvent = evt_nam_CMN_TambovSpreading5|1|1|NULL|NULL|$Tomsk|NULL
 
 Conditions
 
-  MinDate = 1920/09/21
+  MinDate = 1920/08/11
+  MaxDate = 1920/11/11
   EvalEvent = evt_nam_CMN_TambovUprising;=;1
 
 SelectFaction = $GRN
@@ -12505,18 +12503,15 @@ NULL ==========================================================================
 SelectFaction = $CMN
 SelectRegion = $Tambov
 
-SelectFaction = $CMN
-SelectRegion = $Tambov
-
 StartEvent = evt_nam_CMN_TambovUprising|1|2|evt_txt_CMN_TambovUprising|Event-img_CMN_AntonovDies|$Tambov|NULL
 
 Conditions
 
   MinDate = 1920/09/21
+  MaxDate = 1920/09/11
 
 SelectFaction = $RED
 
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
   EvalRgnOwned = $Tambov
   EvalRgnOwned = $Kozlov
   EvalRgnOwned = $Lipetsk
@@ -12860,8 +12855,8 @@ SelectFaction = $RED
 
   EvalRgnOwned = $Kronstadt
   EvalRgnOwned = $Petrograd
-  MinDate = 1921/01/01
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
+  MinDate = 1920/12/01
+  MaxDate = 1921/02/01
 
 Actions
 
@@ -13763,10 +13758,10 @@ Conditions
 
 SelectFaction = $RED
 
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
   EvalRgnOwned = $Birsk
   EvalRgnOwned = $Ufa
-  MinDate = 1920/06/16
+  MinDate = 1920/05/16
+  MaxDate = 1920/07/16
 
 Actions
 
@@ -13946,8 +13941,8 @@ StartEvent = evt_nam_CMN_SapozhkovRevolt|1|2|evt_txt_CMN_SapozhkovRevolt|Event-i
 
 Conditions
 
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
-  MinDate = 1920/07/14
+  MinDate = 1920/06/14
+  MaxDate = 1920/08/16
 
 SelectFaction = $RED
 
@@ -14012,8 +14007,8 @@ StartEvent = evt_nam_CMN_WestSiberiaUprising|1|2|evt_txt_CMN_WestSiberiaUprising
 
 Conditions
 
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
-  MinDate = 1921/02/01
+  MinDate = 1921/01/01
+  MaxDate = 1921/03/01
 
 SelectFaction = $RED
 
@@ -15110,8 +15105,8 @@ StartEvent = evt_nam_CMN_Chuvashi_Uprising|1|2|evt_txt_CMN_Chuvashi_Uprising|Eve
 
 Conditions
 
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
-  MinDate = 1921/01/19
+  MinDate = 1920/12/19
+  MaxDate = 1921/02/19
 
 SelectFaction = $RED
 
@@ -17483,7 +17478,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Samarkand
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
   SelectSubUnits = Area $Area_Samarkand;FactionTags RED
   EvalSubUnitCount = <;10
 
@@ -17505,7 +17499,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Achkhabad
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
   SelectSubUnits = Area $Area_Caspian;FactionTags RED
   EvalSubUnitCount = <;10
@@ -17528,7 +17521,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Tashkent
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
   SelectSubUnits = Area $Area_Syr-Darinsk;FactionTags RED
   EvalSubUnitCount = <;10

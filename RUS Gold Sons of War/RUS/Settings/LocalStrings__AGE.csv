@@ -3069,7 +3069,7 @@ strGUIObj_Title;Scores & Objectives;Scores et Objectifs;Puntuaciones y Objetivos
 strGUIObj_NoCapital;No Capital;Pas de capitale;Sin Capital;Keine Hauptstadt;Нет столицы;Senza capitale
 strGUIObj_VPTally;Total VP: ¤ (+¤ /turn);Total PV: ¤ (+¤/tour);PV Totales: ¤ (+¤ /turno);Summe VP: ¤ (+¤ /Zug);Всего ВО: ¤ (+¤ /ход);Totale PV: ¤ (+¤ /turno)
 strGUIObj_NoFE;No Foreign Entry possible;Pas d'intervention ?trang?re possible;Sin posibilidad de entrada extranjera;Keine Auslandsintervention m?glich;Иностранное вмешательство невозможно;Nessuna possibilit? di entrata straniera
-strGUIObj_PrisonersTitle;Prisoners taken & our losses;Prisonniers et nos pertes;Prisioneros & nuestras bajas;Gefangene Gegner & eigene Verluste;Пленные и наши потери;Prigionieri presi e nostre perdite
+strGUIObj_PrisonersTitle;Prisoners taken & our losses;Prisonniers et nos pertes;Prisioneros & nuestras bajas;Gefangene Gegner & eigene Verluste;Потери и Пленные;Prigionieri presi e nostre perdite
 strGUIObj_ObjBelongs;This objective belongs to the ¤ theater.;Cet objectif fait partie du th??tre ¤.;Este objetivo pertenece al Teatro ¤.;Dieses Ziel geh?rt zum Gebiet/Schauplatz ¤;Эта цель относится к театру ¤.;Questo obiettivo appartiene al teatro operativo ¤.
 strGUIObj_EnemyTitle;Nations comparisons;Comparaisons entre nations;Comp. entre naciones;Nationenvergleich;Противники;Confronti tra nazioni
 strGUIObj_EnemyMorale;Morale;Moral;Moral;Moral;Боевой дух;Morale

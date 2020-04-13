@@ -8825,7 +8825,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Helsinki
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
   SelectSubUnits = Area $Area_Finland;FactionTags RED BSH 
   EvalSubUnitCount = <;10
@@ -8848,7 +8847,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Helsinki
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
   SelectSubUnits = Area $Area_Karelia;FactionTags RED BSH 
   EvalSubUnitCount = <;10
@@ -8871,7 +8869,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Tallinn
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
   SelectSubUnits = Area $Area_Estonia;FactionTags RED BSH 
   EvalSubUnitCount = <;10
@@ -8894,7 +8891,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Riga
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
   SelectSubUnits = Area $Area_Latvia;FactionTags RED BSH 
   EvalSubUnitCount = <;10
@@ -8917,7 +8913,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Kaunas
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
   SelectSubUnits = Area $Area_Lithuania;FactionTags RED BSH 
   EvalSubUnitCount = <;10
@@ -8940,7 +8935,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Baku
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
   SelectSubUnits = Area $Area_Azerbaijan;FactionTags RED BSH 
   EvalSubUnitCount = <;10
@@ -8963,7 +8957,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Erevan
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
   SelectSubUnits = Area $Area_Armenia;FactionTags RED BSH 
   EvalSubUnitCount = <;10
@@ -8986,7 +8979,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Tiflis
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
   SelectSubUnits = Area $Area_Georgia;FactionTags RED BSH 
   EvalSubUnitCount = <;10
@@ -9009,7 +9001,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Bucuresti
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
   SelectSubUnits = Area $Area_Walachia;FactionTags RED BSH 
   EvalSubUnitCount = <;10
@@ -9032,7 +9023,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Warsaw
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
   SelectSubUnits = Area $Area_Wielkopolska;FactionTags RED BSH 
   EvalSubUnitCount = <;10
@@ -9055,7 +9045,6 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Warsaw
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
   SelectSubUnits = Area $Area_Mazowia;FactionTags RED BSH 
   EvalSubUnitCount = <;10

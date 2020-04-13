@@ -3,7 +3,7 @@ object MainForm: TMainForm
   Top = 0
   Caption = 'GUIObjectives'
   ClientHeight = 768
-  ClientWidth = 1024
+  ClientWidth = 1297
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,8 +14,8 @@ object MainForm: TMainForm
   PixelsPerInch = 96
   TextHeight = 13
   object lbTitle: TAgeLabelD
-    Left = 342
-    Top = 3
+    Left = 482
+    Top = 6
     Width = 345
     Height = 13
     Alignment = taCenter
@@ -58,8 +58,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemiesTitle: TAgeLabelD
-    Left = 211
-    Top = 522
+    Left = 516
+    Top = 60
     Width = 167
     Height = 13
     Caption = 'lbEnemiesTitle.........................'
@@ -71,8 +71,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemy1: TAgeLabelD
-    Left = 212
-    Top = 557
+    Left = 516
+    Top = 97
     Width = 210
     Height = 13
     Caption = 'lbEnemy1.........................................'
@@ -84,8 +84,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemy2: TAgeLabelD
-    Left = 211
-    Top = 588
+    Left = 516
+    Top = 130
     Width = 210
     Height = 13
     Caption = 'lbEnemy2.........................................'
@@ -97,8 +97,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemy3: TAgeLabelD
-    Left = 211
-    Top = 619
+    Left = 516
+    Top = 163
     Width = 210
     Height = 13
     Caption = 'lbEnemy3.........................................'
@@ -110,11 +110,193 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemy4: TAgeLabelD
-    Left = 211
-    Top = 650
+    Left = 516
+    Top = 196
     Width = 210
     Height = 13
     Caption = 'lbEnemy4.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy5: TAgeLabelD
+    Left = 516
+    Top = 229
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy5.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy6: TAgeLabelD
+    Left = 516
+    Top = 262
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy6.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy7: TAgeLabelD
+    Left = 516
+    Top = 295
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy7.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy8: TAgeLabelD
+    Left = 516
+    Top = 328
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy8.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy9: TAgeLabelD
+    Left = 516
+    Top = 361
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy9.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy10: TAgeLabelD
+    Left = 516
+    Top = 394
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy10.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy11: TAgeLabelD
+    Left = 516
+    Top = 427
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy11.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy12: TAgeLabelD
+    Left = 516
+    Top = 460
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy12.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy13: TAgeLabelD
+    Left = 516
+    Top = 493
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy13.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy14: TAgeLabelD
+    Left = 516
+    Top = 526
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy14.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy15: TAgeLabelD
+    Left = 516
+    Top = 559
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy15.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy16: TAgeLabelD
+    Left = 516
+    Top = 592
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy16.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy17: TAgeLabelD
+    Left = 516
+    Top = 625
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy17.........................................'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemy18: TAgeLabelD
+    Left = 516
+    Top = 658
+    Width = 210
+    Height = 13
+    Caption = 'lbEnemy18.........................................'
     DataSetIdx = 0
     FontID = 0
     FontColor = '0|0|0|255'
@@ -153,23 +335,23 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbPrisonersLosses: TAgeLabelD
-    Left = 82
-    Top = 317
+    Left = 1166
+    Top = 170
     Width = 284
     Height = 13
     Caption = 
       'lbPrisonersLosses...............................................' +
       '...'
     DataSetIdx = 0
-    FontID = 8
+    FontID = 0
     FontColor = '0|0|0|255'
     Multilines = False
     Emboss = False
     Shadow = False
   end
   object lbPrisoNum1: TAgeLabelD
-    Left = 65
-    Top = 370
+    Left = 1170
+    Top = 222
     Width = 36
     Height = 13
     Caption = '000000'
@@ -181,8 +363,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbPrisoNum2: TAgeLabelD
-    Left = 112
-    Top = 370
+    Left = 1219
+    Top = 222
     Width = 36
     Height = 13
     Caption = '000000'
@@ -194,8 +376,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbPrisoNum3: TAgeLabelD
-    Left = 159
-    Top = 370
+    Left = 1170
+    Top = 255
     Width = 36
     Height = 13
     Caption = '000000'
@@ -207,8 +389,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbPrisoNum4: TAgeLabelD
-    Left = 206
-    Top = 370
+    Left = 1219
+    Top = 255
     Width = 36
     Height = 13
     Caption = '000000'
@@ -220,8 +402,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbPrisoNum5: TAgeLabelD
-    Left = 253
-    Top = 370
+    Left = 1170
+    Top = 288
     Width = 36
     Height = 13
     Caption = '000000'
@@ -233,8 +415,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbPrisoNum6: TAgeLabelD
-    Left = 300
-    Top = 370
+    Left = 1219
+    Top = 288
     Width = 36
     Height = 13
     Caption = '000000'
@@ -246,8 +428,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbPrisoNum7: TAgeLabelD
-    Left = 65
-    Top = 425
+    Left = 1170
+    Top = 321
     Width = 36
     Height = 13
     Caption = '000000'
@@ -259,8 +441,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbPrisoNum8: TAgeLabelD
-    Left = 112
-    Top = 425
+    Left = 1219
+    Top = 321
     Width = 36
     Height = 13
     Caption = '000000'
@@ -272,8 +454,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbPrisoNum9: TAgeLabelD
-    Left = 159
-    Top = 425
+    Left = 1170
+    Top = 354
     Width = 36
     Height = 13
     Caption = '000000'
@@ -285,8 +467,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbPrisoNum10: TAgeLabelD
-    Left = 206
-    Top = 425
+    Left = 1219
+    Top = 354
     Width = 36
     Height = 13
     Caption = '000000'
@@ -298,8 +480,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbPrisoNum11: TAgeLabelD
-    Left = 253
-    Top = 425
+    Left = 1170
+    Top = 387
     Width = 36
     Height = 13
     Caption = '000000'
@@ -311,8 +493,86 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbPrisoNum12: TAgeLabelD
-    Left = 300
-    Top = 425
+    Left = 1219
+    Top = 387
+    Width = 36
+    Height = 13
+    Caption = '000000'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbPrisoNum13: TAgeLabelD
+    Left = 1170
+    Top = 420
+    Width = 36
+    Height = 13
+    Caption = '000000'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbPrisoNum14: TAgeLabelD
+    Left = 1219
+    Top = 420
+    Width = 36
+    Height = 13
+    Caption = '000000'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbPrisoNum15: TAgeLabelD
+    Left = 1170
+    Top = 453
+    Width = 36
+    Height = 13
+    Caption = '000000'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbPrisoNum16: TAgeLabelD
+    Left = 1219
+    Top = 453
+    Width = 36
+    Height = 13
+    Caption = '000000'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbPrisoNum17: TAgeLabelD
+    Left = 1170
+    Top = 486
+    Width = 36
+    Height = 13
+    Caption = '000000'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbPrisoNum18: TAgeLabelD
+    Left = 1219
+    Top = 486
     Width = 36
     Height = 13
     Caption = '000000'
@@ -324,8 +584,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbLosses: TAgeLabelD
-    Left = 355
-    Top = 403
+    Left = 1185
+    Top = 141
     Width = 48
     Height = 13
     Alignment = taCenter
@@ -338,8 +598,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemyMorale1: TAgeLabelD
-    Left = 438
-    Top = 557
+    Left = 743
+    Top = 97
     Width = 52
     Height = 13
     Caption = 'Morale.....'
@@ -351,8 +611,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemyMorale2: TAgeLabelD
-    Left = 438
-    Top = 588
+    Left = 743
+    Top = 130
     Width = 52
     Height = 13
     Caption = 'Morale.....'
@@ -364,8 +624,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemyMorale3: TAgeLabelD
-    Left = 438
-    Top = 619
+    Left = 743
+    Top = 163
     Width = 52
     Height = 13
     Caption = 'Morale.....'
@@ -377,8 +637,190 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemyMorale4: TAgeLabelD
-    Left = 438
-    Top = 650
+    Left = 743
+    Top = 196
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale5: TAgeLabelD
+    Left = 743
+    Top = 229
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale6: TAgeLabelD
+    Left = 743
+    Top = 262
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale7: TAgeLabelD
+    Left = 743
+    Top = 295
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale8: TAgeLabelD
+    Left = 743
+    Top = 328
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale9: TAgeLabelD
+    Left = 743
+    Top = 361
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale10: TAgeLabelD
+    Left = 743
+    Top = 394
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale11: TAgeLabelD
+    Left = 743
+    Top = 427
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale12: TAgeLabelD
+    Left = 743
+    Top = 460
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale13: TAgeLabelD
+    Left = 743
+    Top = 493
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale14: TAgeLabelD
+    Left = 743
+    Top = 526
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale15: TAgeLabelD
+    Left = 743
+    Top = 559
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale16: TAgeLabelD
+    Left = 743
+    Top = 592
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale17: TAgeLabelD
+    Left = 743
+    Top = 625
+    Width = 52
+    Height = 13
+    Caption = 'Morale.....'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyMorale18: TAgeLabelD
+    Left = 743
+    Top = 658
     Width = 52
     Height = 13
     Caption = 'Morale.....'
@@ -390,8 +832,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemyKIA1: TAgeLabelD
-    Left = 778
-    Top = 557
+    Left = 1083
+    Top = 97
     Width = 49
     Height = 13
     Caption = 'KIA........'
@@ -403,8 +845,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemyKIA2: TAgeLabelD
-    Left = 778
-    Top = 588
+    Left = 1083
+    Top = 130
     Width = 49
     Height = 13
     Caption = 'KIA........'
@@ -416,8 +858,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemyKIA3: TAgeLabelD
-    Left = 778
-    Top = 619
+    Left = 1083
+    Top = 163
     Width = 49
     Height = 13
     Caption = 'KIA........'
@@ -429,8 +871,190 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemyKIA4: TAgeLabelD
-    Left = 778
-    Top = 650
+    Left = 1083
+    Top = 196
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA5: TAgeLabelD
+    Left = 1083
+    Top = 229
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA6: TAgeLabelD
+    Left = 1083
+    Top = 262
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA7: TAgeLabelD
+    Left = 1083
+    Top = 295
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA8: TAgeLabelD
+    Left = 1083
+    Top = 328
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA9: TAgeLabelD
+    Left = 1083
+    Top = 361
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA10: TAgeLabelD
+    Left = 1083
+    Top = 394
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA11: TAgeLabelD
+    Left = 1083
+    Top = 427
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA12: TAgeLabelD
+    Left = 1083
+    Top = 460
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA13: TAgeLabelD
+    Left = 1083
+    Top = 493
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA14: TAgeLabelD
+    Left = 1083
+    Top = 526
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA15: TAgeLabelD
+    Left = 1083
+    Top = 559
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA16: TAgeLabelD
+    Left = 1083
+    Top = 592
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA17: TAgeLabelD
+    Left = 1083
+    Top = 625
+    Width = 49
+    Height = 13
+    Caption = 'KIA........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyKIA18: TAgeLabelD
+    Left = 1083
+    Top = 658
     Width = 49
     Height = 13
     Caption = 'KIA........'
@@ -442,8 +1066,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemyPower1: TAgeLabelD
-    Left = 687
-    Top = 557
+    Left = 992
+    Top = 97
     Width = 62
     Height = 13
     Caption = 'Power........'
@@ -455,8 +1079,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemyPower2: TAgeLabelD
-    Left = 687
-    Top = 588
+    Left = 992
+    Top = 130
     Width = 62
     Height = 13
     Caption = 'Power........'
@@ -468,8 +1092,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemyPower3: TAgeLabelD
-    Left = 687
-    Top = 619
+    Left = 992
+    Top = 163
     Width = 62
     Height = 13
     Caption = 'Power........'
@@ -481,8 +1105,190 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbEnemyPower4: TAgeLabelD
-    Left = 687
-    Top = 650
+    Left = 992
+    Top = 196
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower5: TAgeLabelD
+    Left = 992
+    Top = 229
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower6: TAgeLabelD
+    Left = 992
+    Top = 262
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower7: TAgeLabelD
+    Left = 992
+    Top = 295
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower8: TAgeLabelD
+    Left = 992
+    Top = 328
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower9: TAgeLabelD
+    Left = 992
+    Top = 361
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower10: TAgeLabelD
+    Left = 992
+    Top = 394
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower11: TAgeLabelD
+    Left = 992
+    Top = 427
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower12: TAgeLabelD
+    Left = 992
+    Top = 460
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower13: TAgeLabelD
+    Left = 992
+    Top = 493
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower14: TAgeLabelD
+    Left = 992
+    Top = 526
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower15: TAgeLabelD
+    Left = 992
+    Top = 559
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower16: TAgeLabelD
+    Left = 992
+    Top = 592
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower17: TAgeLabelD
+    Left = 992
+    Top = 625
+    Width = 62
+    Height = 13
+    Caption = 'Power........'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbEnemyPower18: TAgeLabelD
+    Left = 992
+    Top = 658
     Width = 62
     Height = 13
     Caption = 'Power........'
@@ -494,8 +1300,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbVPEnemy1: TAgeLabelD
-    Left = 510
-    Top = 557
+    Left = 815
+    Top = 97
     Width = 60
     Height = 13
     Caption = 'VP............'
@@ -507,8 +1313,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbVPEnemy2: TAgeLabelD
-    Left = 510
-    Top = 588
+    Left = 815
+    Top = 130
     Width = 60
     Height = 13
     Caption = 'VP............'
@@ -520,8 +1326,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbVPEnemy3: TAgeLabelD
-    Left = 510
-    Top = 619
+    Left = 815
+    Top = 163
     Width = 60
     Height = 13
     Caption = 'VP............'
@@ -533,8 +1339,190 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbVPEnemy4: TAgeLabelD
-    Left = 510
-    Top = 650
+    Left = 815
+    Top = 196
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy5: TAgeLabelD
+    Left = 815
+    Top = 229
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy6: TAgeLabelD
+    Left = 815
+    Top = 262
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy7: TAgeLabelD
+    Left = 815
+    Top = 295
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy8: TAgeLabelD
+    Left = 815
+    Top = 328
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy9: TAgeLabelD
+    Left = 815
+    Top = 361
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy10: TAgeLabelD
+    Left = 815
+    Top = 394
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy11: TAgeLabelD
+    Left = 815
+    Top = 427
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy12: TAgeLabelD
+    Left = 815
+    Top = 460
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy13: TAgeLabelD
+    Left = 815
+    Top = 493
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy14: TAgeLabelD
+    Left = 815
+    Top = 526
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy15: TAgeLabelD
+    Left = 815
+    Top = 559
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy16: TAgeLabelD
+    Left = 815
+    Top = 592
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy17: TAgeLabelD
+    Left = 815
+    Top = 625
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPEnemy18: TAgeLabelD
+    Left = 815
+    Top = 658
     Width = 60
     Height = 13
     Caption = 'VP............'
@@ -546,8 +1534,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbVPTurnEnemy1: TAgeLabelD
-    Left = 598
-    Top = 557
+    Left = 903
+    Top = 97
     Width = 60
     Height = 13
     Caption = 'VP............'
@@ -559,8 +1547,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbVPTurnEnemy2: TAgeLabelD
-    Left = 598
-    Top = 588
+    Left = 903
+    Top = 130
     Width = 60
     Height = 13
     Caption = 'VP............'
@@ -572,8 +1560,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbVPTurnEnemy3: TAgeLabelD
-    Left = 598
-    Top = 619
+    Left = 903
+    Top = 163
     Width = 60
     Height = 13
     Caption = 'VP............'
@@ -585,8 +1573,190 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbVPTurnEnemy4: TAgeLabelD
-    Left = 598
-    Top = 650
+    Left = 903
+    Top = 196
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy5: TAgeLabelD
+    Left = 903
+    Top = 229
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy6: TAgeLabelD
+    Left = 903
+    Top = 262
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy7: TAgeLabelD
+    Left = 903
+    Top = 295
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy8: TAgeLabelD
+    Left = 903
+    Top = 328
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy9: TAgeLabelD
+    Left = 903
+    Top = 361
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy10: TAgeLabelD
+    Left = 903
+    Top = 394
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy11: TAgeLabelD
+    Left = 903
+    Top = 427
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy12: TAgeLabelD
+    Left = 903
+    Top = 460
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy13: TAgeLabelD
+    Left = 903
+    Top = 493
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy14: TAgeLabelD
+    Left = 903
+    Top = 526
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy15: TAgeLabelD
+    Left = 903
+    Top = 559
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy16: TAgeLabelD
+    Left = 903
+    Top = 592
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy17: TAgeLabelD
+    Left = 903
+    Top = 625
+    Width = 60
+    Height = 13
+    Caption = 'VP............'
+    DataSetIdx = 0
+    FontID = 0
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+  end
+  object lbVPTurnEnemy18: TAgeLabelD
+    Left = 903
+    Top = 658
     Width = 60
     Height = 13
     Caption = 'VP............'
@@ -598,8 +1768,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObjectivesTitle: TAgeLabelD
-    Left = 596
-    Top = 65
+    Left = 91
+    Top = 256
     Width = 307
     Height = 13
     Alignment = taCenter
@@ -614,8 +1784,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj1: TAgeLabelD
-    Left = 512
-    Top = 96
+    Left = 90
+    Top = 290
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -627,8 +1797,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj13: TAgeLabelD
-    Left = 768
-    Top = 96
+    Left = 287
+    Top = 290
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -640,8 +1810,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj2: TAgeLabelD
-    Left = 512
-    Top = 129
+    Left = 90
+    Top = 323
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -653,8 +1823,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj14: TAgeLabelD
-    Left = 768
-    Top = 129
+    Left = 287
+    Top = 323
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -666,8 +1836,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj3: TAgeLabelD
-    Left = 512
-    Top = 162
+    Left = 90
+    Top = 356
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -679,8 +1849,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj15: TAgeLabelD
-    Left = 768
-    Top = 162
+    Left = 287
+    Top = 356
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -692,8 +1862,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj4: TAgeLabelD
-    Left = 512
-    Top = 195
+    Left = 90
+    Top = 389
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -705,8 +1875,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj16: TAgeLabelD
-    Left = 768
-    Top = 195
+    Left = 287
+    Top = 389
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -718,8 +1888,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj5: TAgeLabelD
-    Left = 512
-    Top = 228
+    Left = 90
+    Top = 422
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -731,8 +1901,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj17: TAgeLabelD
-    Left = 768
-    Top = 228
+    Left = 287
+    Top = 422
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -744,8 +1914,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj6: TAgeLabelD
-    Left = 512
-    Top = 261
+    Left = 90
+    Top = 455
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -757,8 +1927,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj18: TAgeLabelD
-    Left = 768
-    Top = 261
+    Left = 287
+    Top = 455
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -770,8 +1940,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj7: TAgeLabelD
-    Left = 512
-    Top = 294
+    Left = 90
+    Top = 488
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -783,8 +1953,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj19: TAgeLabelD
-    Left = 768
-    Top = 294
+    Left = 287
+    Top = 488
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -796,8 +1966,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj8: TAgeLabelD
-    Left = 512
-    Top = 325
+    Left = 90
+    Top = 521
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -809,8 +1979,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj20: TAgeLabelD
-    Left = 768
-    Top = 325
+    Left = 287
+    Top = 521
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -822,8 +1992,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj9: TAgeLabelD
-    Left = 512
-    Top = 360
+    Left = 90
+    Top = 554
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -835,8 +2005,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj21: TAgeLabelD
-    Left = 768
-    Top = 360
+    Left = 287
+    Top = 554
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -848,8 +2018,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj10: TAgeLabelD
-    Left = 512
-    Top = 393
+    Left = 90
+    Top = 587
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -861,8 +2031,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj22: TAgeLabelD
-    Left = 768
-    Top = 393
+    Left = 287
+    Top = 587
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -874,8 +2044,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj11: TAgeLabelD
-    Left = 512
-    Top = 426
+    Left = 90
+    Top = 620
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -887,8 +2057,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj23: TAgeLabelD
-    Left = 768
-    Top = 426
+    Left = 287
+    Top = 620
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -900,8 +2070,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj12: TAgeLabelD
-    Left = 512
-    Top = 459
+    Left = 90
+    Top = 653
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -913,8 +2083,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbObj24: TAgeLabelD
-    Left = 768
-    Top = 459
+    Left = 287
+    Top = 653
     Width = 203
     Height = 13
     Caption = 'lbObj1...........................................'
@@ -956,8 +2126,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbMoraleTitle: TAgeLabelD
-    Left = 428
-    Top = 522
+    Left = 729
+    Top = 62
     Width = 60
     Height = 13
     Alignment = taRightJustify
@@ -970,8 +2140,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbVPTitle: TAgeLabelD
-    Left = 502
-    Top = 522
+    Left = 807
+    Top = 62
     Width = 68
     Height = 13
     Alignment = taRightJustify
@@ -984,8 +2154,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbVPGainTitle: TAgeLabelD
-    Left = 596
-    Top = 522
+    Left = 906
+    Top = 62
     Width = 61
     Height = 13
     Alignment = taRightJustify
@@ -998,8 +2168,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbRelPowerTitle: TAgeLabelD
-    Left = 684
-    Top = 522
+    Left = 989
+    Top = 62
     Width = 73
     Height = 13
     Alignment = taRightJustify
@@ -1012,8 +2182,8 @@ object MainForm: TMainForm
     Shadow = False
   end
   object lbKIATitle: TAgeLabelD
-    Left = 784
-    Top = 522
+    Left = 1075
+    Top = 62
     Width = 65
     Height = 13
     Alignment = taRightJustify
@@ -1028,12 +2198,12 @@ object MainForm: TMainForm
   object AgeGripBar: TAgeGripBarD
     Left = -1
     Top = -6
-    Width = 1024
+    Width = 1297
     Height = 55
     TabOrder = 0
   end
   object btnClose: TAgeButtonD
-    Left = 992
+    Left = 1265
     Top = 8
     Width = 19
     Height = 19
@@ -1061,35 +2231,147 @@ object MainForm: TMainForm
     DataSetIdx = 0
   end
   object imgEnemyFlag1: TAgeImageD
-    Left = 165
-    Top = 557
+    Left = 470
+    Top = 97
     Width = 41
     Height = 25
     TabOrder = 4
     DataSetIdx = 0
   end
   object imgEnemyFlag2: TAgeImageD
-    Left = 165
-    Top = 588
+    Left = 470
+    Top = 130
     Width = 41
     Height = 25
     TabOrder = 5
     DataSetIdx = 0
   end
   object imgEnemyFlag3: TAgeImageD
-    Left = 165
-    Top = 619
+    Left = 470
+    Top = 163
     Width = 41
     Height = 25
     TabOrder = 6
     DataSetIdx = 0
   end
   object imgEnemyFlag4: TAgeImageD
-    Left = 165
-    Top = 650
+    Left = 470
+    Top = 196
     Width = 41
     Height = 25
     TabOrder = 7
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag5: TAgeImageD
+    Left = 470
+    Top = 229
+    Width = 41
+    Height = 25
+    TabOrder = 8
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag6: TAgeImageD
+    Left = 470
+    Top = 262
+    Width = 41
+    Height = 25
+    TabOrder = 9
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag7: TAgeImageD
+    Left = 470
+    Top = 295
+    Width = 41
+    Height = 25
+    TabOrder = 10
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag8: TAgeImageD
+    Left = 470
+    Top = 328
+    Width = 41
+    Height = 25
+    TabOrder = 11
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag9: TAgeImageD
+    Left = 470
+    Top = 361
+    Width = 41
+    Height = 25
+    TabOrder = 12
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag10: TAgeImageD
+    Left = 470
+    Top = 394
+    Width = 41
+    Height = 25
+    TabOrder = 13
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag11: TAgeImageD
+    Left = 470
+    Top = 427
+    Width = 41
+    Height = 25
+    TabOrder = 14
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag12: TAgeImageD
+    Left = 470
+    Top = 460
+    Width = 41
+    Height = 25
+    TabOrder = 15
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag13: TAgeImageD
+    Left = 470
+    Top = 493
+    Width = 41
+    Height = 25
+    TabOrder = 16
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag14: TAgeImageD
+    Left = 470
+    Top = 526
+    Width = 41
+    Height = 25
+    TabOrder = 17
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag15: TAgeImageD
+    Left = 470
+    Top = 559
+    Width = 41
+    Height = 25
+    TabOrder = 18
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag16: TAgeImageD
+    Left = 470
+    Top = 592
+    Width = 41
+    Height = 25
+    TabOrder = 19
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag17: TAgeImageD
+    Left = 470
+    Top = 625
+    Width = 41
+    Height = 25
+    TabOrder = 20
+    DataSetIdx = 0
+  end
+  object imgEnemyFlag18: TAgeImageD
+    Left = 470
+    Top = 658
+    Width = 41
+    Height = 25
+    TabOrder = 21
     DataSetIdx = 0
   end
   object imgCapital: TAgeImageD
@@ -1097,7 +2379,7 @@ object MainForm: TMainForm
     Top = 129
     Width = 25
     Height = 25
-    TabOrder = 8
+    TabOrder = 22
     DataSetIdx = 0
   end
   object imgEP: TAgeImageD
@@ -1105,319 +2387,373 @@ object MainForm: TMainForm
     Top = 230
     Width = 25
     Height = 25
-    TabOrder = 9
+    TabOrder = 23
     DataSetIdx = 0
     Image = 'Icon_Objectives_Lightning.png'
   end
   object imgPriso1: TAgeImageD
-    Left = 65
-    Top = 346
+    Left = 1177
+    Top = 204
     Width = 41
     Height = 25
     Hint = '$strGUIObj_PrisonersHint'
-    TabOrder = 10
+    TabOrder = 24
     DataSetIdx = 0
   end
   object imgPriso2: TAgeImageD
-    Left = 112
-    Top = 346
+    Left = 1226
+    Top = 204
     Width = 41
     Height = 25
     Hint = '$strGUIObj_PrisonersHint'
-    TabOrder = 11
+    TabOrder = 25
     DataSetIdx = 0
   end
   object imgPriso3: TAgeImageD
-    Left = 159
-    Top = 346
+    Left = 1177
+    Top = 239
     Width = 41
     Height = 25
     Hint = '$strGUIObj_PrisonersHint'
-    TabOrder = 12
+    TabOrder = 26
     DataSetIdx = 0
   end
   object imgPriso4: TAgeImageD
-    Left = 206
-    Top = 346
+    Left = 1226
+    Top = 239
     Width = 41
     Height = 25
     Hint = '$strGUIObj_PrisonersHint'
-    TabOrder = 13
+    TabOrder = 27
     DataSetIdx = 0
   end
   object imgPriso5: TAgeImageD
-    Left = 253
-    Top = 346
+    Left = 1177
+    Top = 272
     Width = 41
     Height = 25
     Hint = '$strGUIObj_PrisonersHint'
-    TabOrder = 14
+    TabOrder = 28
     DataSetIdx = 0
   end
   object imgPriso6: TAgeImageD
-    Left = 300
-    Top = 346
+    Left = 1226
+    Top = 272
     Width = 41
     Height = 25
     Hint = '$strGUIObj_PrisonersHint'
-    TabOrder = 15
+    TabOrder = 29
     DataSetIdx = 0
   end
   object imgPriso7: TAgeImageD
-    Left = 65
-    Top = 401
+    Left = 1177
+    Top = 305
     Width = 41
     Height = 25
     Hint = '$strGUIObj_PrisonersHint'
-    TabOrder = 16
+    TabOrder = 30
     DataSetIdx = 0
   end
   object imgPriso8: TAgeImageD
-    Left = 112
-    Top = 401
+    Left = 1226
+    Top = 305
     Width = 41
     Height = 25
     Hint = '$strGUIObj_PrisonersHint'
-    TabOrder = 17
+    TabOrder = 31
     DataSetIdx = 0
   end
   object imgPriso9: TAgeImageD
-    Left = 159
-    Top = 401
+    Left = 1177
+    Top = 338
     Width = 41
     Height = 25
     Hint = '$strGUIObj_PrisonersHint'
-    TabOrder = 18
+    TabOrder = 32
     DataSetIdx = 0
   end
   object imgPriso10: TAgeImageD
-    Left = 206
-    Top = 401
+    Left = 1226
+    Top = 338
     Width = 41
     Height = 25
     Hint = '$strGUIObj_PrisonersHint'
-    TabOrder = 19
+    TabOrder = 33
     DataSetIdx = 0
   end
   object imgPriso11: TAgeImageD
-    Left = 253
-    Top = 401
+    Left = 1177
+    Top = 371
     Width = 41
     Height = 25
     Hint = '$strGUIObj_PrisonersHint'
-    TabOrder = 20
+    TabOrder = 34
     DataSetIdx = 0
   end
   object imgPriso12: TAgeImageD
-    Left = 300
-    Top = 401
+    Left = 1226
+    Top = 371
     Width = 41
     Height = 25
     Hint = '$strGUIObj_PrisonersHint'
-    TabOrder = 21
+    TabOrder = 35
+    DataSetIdx = 0
+  end
+  object imgPriso13: TAgeImageD
+    Left = 1177
+    Top = 404
+    Width = 41
+    Height = 25
+    Hint = '$strGUIObj_PrisonersHint'
+    TabOrder = 36
+    DataSetIdx = 0
+  end
+  object imgPriso14: TAgeImageD
+    Left = 1226
+    Top = 404
+    Width = 41
+    Height = 25
+    Hint = '$strGUIObj_PrisonersHint'
+    TabOrder = 37
+    DataSetIdx = 0
+  end
+  object imgPriso15: TAgeImageD
+    Left = 1177
+    Top = 437
+    Width = 41
+    Height = 25
+    Hint = '$strGUIObj_PrisonersHint'
+    TabOrder = 38
+    DataSetIdx = 0
+  end
+  object imgPriso16: TAgeImageD
+    Left = 1226
+    Top = 437
+    Width = 41
+    Height = 25
+    Hint = '$strGUIObj_PrisonersHint'
+    TabOrder = 39
+    DataSetIdx = 0
+  end
+  object imgPriso17: TAgeImageD
+    Left = 1177
+    Top = 470
+    Width = 41
+    Height = 25
+    Hint = '$strGUIObj_PrisonersHint'
+    TabOrder = 40
+    DataSetIdx = 0
+  end
+  object imgPriso18: TAgeImageD
+    Left = 1226
+    Top = 470
+    Width = 41
+    Height = 25
+    Hint = '$strGUIObj_PrisonersHint'
+    TabOrder = 41
     DataSetIdx = 0
   end
   object imgMonument: TAgeImageD
-    Left = 347
-    Top = 308
+    Left = 1177
+    Top = 43
     Width = 71
     Height = 80
     Hint = '$strGUIObj_OwnKIAHint'
     Caption = 'Monument'
-    TabOrder = 22
+    TabOrder = 42
     DataSetIdx = 0
     Image = 'Obj_Monument.bmp'
   end
   object imgObj1: TAgeImageD
-    Left = 479
-    Top = 97
-    Width = 41
-    Height = 25
-    TabOrder = 23
-    DataSetIdx = 0
-  end
-  object imgObj13: TAgeImageD
-    Left = 735
-    Top = 97
-    Width = 41
-    Height = 25
-    TabOrder = 24
-    DataSetIdx = 0
-  end
-  object imgObj2: TAgeImageD
-    Left = 479
-    Top = 130
-    Width = 41
-    Height = 25
-    TabOrder = 25
-    DataSetIdx = 0
-  end
-  object imgObj14: TAgeImageD
-    Left = 735
-    Top = 130
-    Width = 41
-    Height = 25
-    TabOrder = 26
-    DataSetIdx = 0
-  end
-  object imgObj3: TAgeImageD
-    Left = 479
-    Top = 163
-    Width = 41
-    Height = 25
-    TabOrder = 27
-    DataSetIdx = 0
-  end
-  object imgObj15: TAgeImageD
-    Left = 735
-    Top = 163
-    Width = 41
-    Height = 25
-    TabOrder = 28
-    DataSetIdx = 0
-  end
-  object imgObj4: TAgeImageD
-    Left = 479
-    Top = 196
-    Width = 41
-    Height = 25
-    TabOrder = 29
-    DataSetIdx = 0
-  end
-  object imgObj16: TAgeImageD
-    Left = 735
-    Top = 196
-    Width = 41
-    Height = 25
-    TabOrder = 30
-    DataSetIdx = 0
-  end
-  object imgObj5: TAgeImageD
-    Left = 479
-    Top = 229
-    Width = 41
-    Height = 25
-    TabOrder = 31
-    DataSetIdx = 0
-  end
-  object imgObj17: TAgeImageD
-    Left = 735
-    Top = 229
-    Width = 41
-    Height = 25
-    TabOrder = 32
-    DataSetIdx = 0
-  end
-  object imgObj6: TAgeImageD
-    Left = 479
-    Top = 262
-    Width = 41
-    Height = 25
-    TabOrder = 33
-    DataSetIdx = 0
-  end
-  object imgObj18: TAgeImageD
-    Left = 735
-    Top = 262
-    Width = 41
-    Height = 25
-    TabOrder = 34
-    DataSetIdx = 0
-  end
-  object imgObj7: TAgeImageD
-    Left = 479
-    Top = 295
-    Width = 41
-    Height = 25
-    TabOrder = 35
-    DataSetIdx = 0
-  end
-  object imgObj19: TAgeImageD
-    Left = 735
-    Top = 295
-    Width = 41
-    Height = 25
-    TabOrder = 36
-    DataSetIdx = 0
-  end
-  object imgObj8: TAgeImageD
-    Left = 479
-    Top = 328
-    Width = 41
-    Height = 25
-    TabOrder = 37
-    DataSetIdx = 0
-  end
-  object imgObj20: TAgeImageD
-    Left = 735
-    Top = 328
-    Width = 41
-    Height = 25
-    TabOrder = 38
-    DataSetIdx = 0
-  end
-  object imgObj9: TAgeImageD
-    Left = 479
-    Top = 361
-    Width = 41
-    Height = 25
-    TabOrder = 39
-    DataSetIdx = 0
-  end
-  object imgObj21: TAgeImageD
-    Left = 735
-    Top = 361
-    Width = 41
-    Height = 25
-    TabOrder = 40
-    DataSetIdx = 0
-  end
-  object imgObj10: TAgeImageD
-    Left = 479
-    Top = 394
-    Width = 41
-    Height = 25
-    TabOrder = 41
-    DataSetIdx = 0
-  end
-  object imgObj22: TAgeImageD
-    Left = 735
-    Top = 394
-    Width = 41
-    Height = 25
-    TabOrder = 42
-    DataSetIdx = 0
-  end
-  object imgObj11: TAgeImageD
-    Left = 479
-    Top = 427
+    Left = 58
+    Top = 291
     Width = 41
     Height = 25
     TabOrder = 43
     DataSetIdx = 0
   end
-  object imgObj23: TAgeImageD
-    Left = 735
-    Top = 427
+  object imgObj13: TAgeImageD
+    Left = 255
+    Top = 291
     Width = 41
     Height = 25
     TabOrder = 44
     DataSetIdx = 0
   end
-  object imgObj12: TAgeImageD
-    Left = 479
-    Top = 460
+  object imgObj2: TAgeImageD
+    Left = 58
+    Top = 324
     Width = 41
     Height = 25
     TabOrder = 45
     DataSetIdx = 0
   end
-  object imgObj24: TAgeImageD
-    Left = 735
-    Top = 460
+  object imgObj14: TAgeImageD
+    Left = 255
+    Top = 324
     Width = 41
     Height = 25
     TabOrder = 46
+    DataSetIdx = 0
+  end
+  object imgObj3: TAgeImageD
+    Left = 58
+    Top = 357
+    Width = 41
+    Height = 25
+    TabOrder = 47
+    DataSetIdx = 0
+  end
+  object imgObj15: TAgeImageD
+    Left = 255
+    Top = 357
+    Width = 41
+    Height = 25
+    TabOrder = 48
+    DataSetIdx = 0
+  end
+  object imgObj4: TAgeImageD
+    Left = 58
+    Top = 390
+    Width = 41
+    Height = 25
+    TabOrder = 49
+    DataSetIdx = 0
+  end
+  object imgObj16: TAgeImageD
+    Left = 255
+    Top = 390
+    Width = 41
+    Height = 25
+    TabOrder = 50
+    DataSetIdx = 0
+  end
+  object imgObj5: TAgeImageD
+    Left = 58
+    Top = 423
+    Width = 41
+    Height = 25
+    TabOrder = 51
+    DataSetIdx = 0
+  end
+  object imgObj17: TAgeImageD
+    Left = 255
+    Top = 423
+    Width = 41
+    Height = 25
+    TabOrder = 52
+    DataSetIdx = 0
+  end
+  object imgObj6: TAgeImageD
+    Left = 58
+    Top = 456
+    Width = 41
+    Height = 25
+    TabOrder = 53
+    DataSetIdx = 0
+  end
+  object imgObj18: TAgeImageD
+    Left = 255
+    Top = 456
+    Width = 41
+    Height = 25
+    TabOrder = 54
+    DataSetIdx = 0
+  end
+  object imgObj7: TAgeImageD
+    Left = 58
+    Top = 489
+    Width = 41
+    Height = 25
+    TabOrder = 55
+    DataSetIdx = 0
+  end
+  object imgObj19: TAgeImageD
+    Left = 255
+    Top = 489
+    Width = 41
+    Height = 25
+    TabOrder = 56
+    DataSetIdx = 0
+  end
+  object imgObj8: TAgeImageD
+    Left = 58
+    Top = 522
+    Width = 41
+    Height = 25
+    TabOrder = 57
+    DataSetIdx = 0
+  end
+  object imgObj20: TAgeImageD
+    Left = 255
+    Top = 522
+    Width = 41
+    Height = 25
+    TabOrder = 58
+    DataSetIdx = 0
+  end
+  object imgObj9: TAgeImageD
+    Left = 58
+    Top = 555
+    Width = 41
+    Height = 25
+    TabOrder = 59
+    DataSetIdx = 0
+  end
+  object imgObj21: TAgeImageD
+    Left = 255
+    Top = 555
+    Width = 41
+    Height = 25
+    TabOrder = 60
+    DataSetIdx = 0
+  end
+  object imgObj10: TAgeImageD
+    Left = 58
+    Top = 588
+    Width = 41
+    Height = 25
+    TabOrder = 61
+    DataSetIdx = 0
+  end
+  object imgObj22: TAgeImageD
+    Left = 255
+    Top = 588
+    Width = 41
+    Height = 25
+    TabOrder = 62
+    DataSetIdx = 0
+  end
+  object imgObj11: TAgeImageD
+    Left = 58
+    Top = 621
+    Width = 41
+    Height = 25
+    TabOrder = 63
+    DataSetIdx = 0
+  end
+  object imgObj23: TAgeImageD
+    Left = 255
+    Top = 621
+    Width = 41
+    Height = 25
+    TabOrder = 64
+    DataSetIdx = 0
+  end
+  object imgObj12: TAgeImageD
+    Left = 58
+    Top = 654
+    Width = 41
+    Height = 25
+    TabOrder = 65
+    DataSetIdx = 0
+  end
+  object imgObj24: TAgeImageD
+    Left = 255
+    Top = 654
+    Width = 41
+    Height = 25
+    TabOrder = 66
     DataSetIdx = 0
   end
   object imgMorale: TAgeImageD
@@ -1425,7 +2761,7 @@ object MainForm: TMainForm
     Top = 161
     Width = 25
     Height = 25
-    TabOrder = 47
+    TabOrder = 67
     DataSetIdx = 0
     Image = 'Obj_Objectives_Laurels.png'
   end
@@ -1434,57 +2770,57 @@ object MainForm: TMainForm
     Top = 195
     Width = 25
     Height = 25
-    TabOrder = 48
+    TabOrder = 68
     DataSetIdx = 0
     Image = 'Icon_Objectives_Medal.png'
   end
   object imgMoraleTable: TAgeImageD
-    Left = 399
-    Top = 516
+    Left = 704
+    Top = 58
     Width = 25
     Height = 25
     Hint = '$strGUIObj_EnemyMoraleHint'
-    TabOrder = 49
+    TabOrder = 69
     DataSetIdx = 0
     Image = 'Obj_Objectives_Laurels.png'
   end
   object imgVpTable: TAgeImageD
-    Left = 476
-    Top = 516
+    Left = 781
+    Top = 59
     Width = 25
     Height = 25
     Hint = '$strGUIObj_EnemyVPHint'
-    TabOrder = 50
+    TabOrder = 70
     DataSetIdx = 0
     Image = 'Icon_Objectives_Medal.png'
   end
   object imgVPGainTable: TAgeImageD
-    Left = 565
-    Top = 516
+    Left = 864
+    Top = 59
     Width = 25
     Height = 25
     Hint = '$strGUIObj_EnemyVPGainHint'
-    TabOrder = 51
+    TabOrder = 71
     DataSetIdx = 0
     Image = 'Icon_Objectives_Medal.png'
   end
   object imgPowerTable: TAgeImageD
-    Left = 650
-    Top = 516
+    Left = 955
+    Top = 58
     Width = 25
     Height = 25
     Hint = '$strGUIObj_EnemyCbtPowerHint'
-    TabOrder = 52
+    TabOrder = 72
     DataSetIdx = 0
     Image = 'Obj_Power.png'
   end
   object imgKIATable: TAgeImageD
-    Left = 750
-    Top = 516
+    Left = 1055
+    Top = 58
     Width = 25
     Height = 25
     Hint = '$strGUIObj_EnemyKIAHint'
-    TabOrder = 53
+    TabOrder = 73
     DataSetIdx = 0
     Image = 'Obj_KIA.png'
   end
@@ -1494,7 +2830,7 @@ object MainForm: TMainForm
     Width = 90
     Height = 25
     Caption = 'imgLedgerTab8'
-    TabOrder = 54
+    TabOrder = 74
     DefaultImage = 'Ledger_Tab_OFF.png'
     OverImage = 'Ledger_Tab_ON.png'
     DownImage = 'Ledger_Tab_ON.png'
@@ -1506,7 +2842,7 @@ object MainForm: TMainForm
     Width = 90
     Height = 25
     Caption = 'imgLedgerTab9'
-    TabOrder = 55
+    TabOrder = 75
     DefaultImage = 'Ledger_Tab_OFF.png'
     OverImage = 'Ledger_Tab_ON.png'
     DownImage = 'Ledger_Tab_ON.png'
@@ -1518,7 +2854,7 @@ object MainForm: TMainForm
     Width = 90
     Height = 25
     Caption = 'imgLedgerTab7'
-    TabOrder = 56
+    TabOrder = 76
     DefaultImage = 'Ledger_Tab_OFF.png'
     OverImage = 'Ledger_Tab_ON.png'
     DownImage = 'Ledger_Tab_ON.png'
@@ -1530,7 +2866,7 @@ object MainForm: TMainForm
     Width = 90
     Height = 25
     Caption = 'imgLedgerTab6'
-    TabOrder = 57
+    TabOrder = 77
     DefaultImage = 'Ledger_Tab_OFF.png'
     OverImage = 'Ledger_Tab_ON.png'
     DownImage = 'Ledger_Tab_ON.png'
@@ -1542,7 +2878,7 @@ object MainForm: TMainForm
     Width = 90
     Height = 25
     Caption = 'imgLedgerTab5'
-    TabOrder = 58
+    TabOrder = 78
     DefaultImage = 'Ledger_Tab_OFF.png'
     OverImage = 'Ledger_Tab_ON.png'
     DownImage = 'Ledger_Tab_ON.png'
@@ -1554,7 +2890,7 @@ object MainForm: TMainForm
     Width = 90
     Height = 25
     Caption = 'imgLedgerTab4'
-    TabOrder = 59
+    TabOrder = 79
     DefaultImage = 'Ledger_Tab_OFF.png'
     OverImage = 'Ledger_Tab_ON.png'
     DownImage = 'Ledger_Tab_ON.png'
@@ -1566,7 +2902,7 @@ object MainForm: TMainForm
     Width = 90
     Height = 25
     Caption = 'imgLedgerTab3'
-    TabOrder = 60
+    TabOrder = 80
     DefaultImage = 'Ledger_Tab_OFF.png'
     OverImage = 'Ledger_Tab_ON.png'
     DownImage = 'Ledger_Tab_ON.png'
@@ -1578,7 +2914,7 @@ object MainForm: TMainForm
     Width = 90
     Height = 25
     Caption = 'imgLedgerTab2'
-    TabOrder = 61
+    TabOrder = 81
     DefaultImage = 'Ledger_Tab_OFF.png'
     OverImage = 'Ledger_Tab_ON.png'
     DownImage = 'Ledger_Tab_ON.png'
@@ -1590,7 +2926,7 @@ object MainForm: TMainForm
     Width = 90
     Height = 25
     Caption = 'imgLedgerTab1'
-    TabOrder = 62
+    TabOrder = 82
     DefaultImage = 'Ledger_Tab_OFF.png'
     OverImage = 'Ledger_Tab_ON.png'
     DownImage = 'Ledger_Tab_ON.png'
@@ -1602,7 +2938,7 @@ object MainForm: TMainForm
     Width = 90
     Height = 25
     Caption = 'imgLedgerTab0'
-    TabOrder = 63
+    TabOrder = 83
     DefaultImage = 'Ledger_Tab_OFF.png'
     OverImage = 'Ledger_Tab_ON.png'
     DownImage = 'Ledger_Tab_ON.png'

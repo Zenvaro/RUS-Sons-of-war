@@ -313,7 +313,7 @@ popAdvRevoltModRelPosH = -5 // this hundredth of % as a modifier to RR per pt of
 popAdvRevoltModRelNegH = 3 // this hundredth of % as a modifier to RR per pt of rel < 0  // so for -100 relationship, this adds 3%
 popAdvRevoltModCbtSupprH = -10 // each cbt power point in region change by this amount the RR (in hundredth), so -10 is -1/10 of % to revolt
 popAdvRevoltReinforcePerc = 1 // chance that a primary/secundary revolt get reinforced every turn
-popAdvRevoltCoeffActive = 50 // if a revolt is active, x0.50 chance to get a secondary revolt
+popAdvRevoltCoeffActive = 70 // if a revolt is active, x0.70 chance to get a secondary revolt
 popAdvRevoltMinLoyalty = 51 // if this loyalty (for the revolter!) not reached, no revolt can happen (only in non adv social mode )
 popAdvRevoltMaxDistanceHeur = 6 // max distance between center of revolt and any revolting region - is using sysAvgLandRegionSize_ and sysAvgNavRegionSize_ to get an approximate (heuristic) result
 popAdvRevoltCoeffForCenter = 4 // Center of revolt has x4 chances to be picked when adding units
@@ -410,7 +410,7 @@ terPercCostRealRoad       = 033  // same, roads (major roads in VGN use the road
 terPercCostRealMajorRoad  = 020  // same, major roads (always directional) (there is no major directional road in VGN, but railways instead, directional)
 terPercCostClearTrack     = 150  // coeff to Clear terrain cost (roads in VGN use the track variable)
 terPercCostClearRoad      = 100  // same, roads (major roads in VGN use the road variable)
-terPercCostClearMajorRoad = 066  // same, major roads (always directional) (there is no major directional road in VGN, but railways instead, directional)
+terPercCostClearMajorRoad = 060  // same, major roads (always directional) (there is no major directional road in VGN, but railways instead, directional)
 terPercCostPercUseClear   = 050  // We use 50% of the clear terrain cost formula and 50% of the real terrain cost formula (if terNewRoadCalc = 1)
 
 // ***** TERRAINS - ATTRIBUTES EFFECTS *****

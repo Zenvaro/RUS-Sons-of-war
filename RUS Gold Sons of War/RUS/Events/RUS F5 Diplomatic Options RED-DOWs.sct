@@ -21,7 +21,6 @@ StartEvent = RGD_Remove_Exclusion_Balt_RED|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;0
   MinDate = 1919/01/02
 
 Actions
@@ -62,7 +61,6 @@ StartEvent = RGD_Remove_Exclusion_Finland_RED2|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;0
   MinDate = 1917/11/20
   MaxDate = 1923/01/01
 
@@ -136,7 +134,6 @@ StartEvent = evt_nam_RED_BreakAlliance_ANA_Generate|0|0|NULL|NULL|NULL|NULL
 Conditions
 
   MinDate = 1918/12/16
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
 Actions
 
@@ -154,7 +151,6 @@ Conditions
   CheckAILevel = 1
   EvalEvent = evt_nam_RED_BreakAlliance_ANA_Generate;>=;1
   ActorEnabled = $gmaOptionDip;RED_BreakAlliance_ANA
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
 SelectFaction = $WHI
 
@@ -253,7 +249,6 @@ Conditions
 
   MinDate = 1919/01/01
   EvalEvent = evt_nam_RED_BreakAlliance_ANA_Generate;>=;1
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
 Actions
 
@@ -271,7 +266,6 @@ StartEvent = evt_nam_RED_BreakAlliance_ANA_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionDip;RED_BreakAlliance_ANA;=;1
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;1
 
 Actions
 

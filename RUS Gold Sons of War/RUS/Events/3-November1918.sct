@@ -320,32 +320,6 @@ EndEvent
 
 NULL ==========================================================================
 
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_BolshevikDictature|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1917/06/01
-
-Actions
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_UnitedReds|0|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-Actions
-
-EndEvent
-
-NULL ==========================================================================
-
 SelectFaction = $WH3
 
 StartEvent = evt_nam_WhiteMilitaryDictatorship_AIActivate|999|0|NULL|NULL|NULL|NULL
@@ -1934,20 +1908,6 @@ SelectRegion = $Khoper
     FixType = 0
     SetName = Khoper Partisans
   Apply
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_BolshevikDictature|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1917/11/10
-
-Actions
 
 EndEvent
 

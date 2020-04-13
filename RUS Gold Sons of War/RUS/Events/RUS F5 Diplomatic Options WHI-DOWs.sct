@@ -272,7 +272,6 @@ StartEvent = RGD_Remove_Exclusion_Balt_RED2|1|0|NULL|NULL|NULL|NULL
 Conditions
 
   EvalEvent = evt_nam_WHI_BalticJoin_Tracker;=;1
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;0
   MinDate = 1917/11/20
   MaxDate = 1923/01/01
 
@@ -582,7 +581,6 @@ StartEvent = RGD_Remove_Exclusion_Finland_RED|1|0|NULL|NULL|NULL|NULL
 Conditions
 
   EvalEvent = evt_nam_WHI_FinlandJoin_Tracker;=;1
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;0
   MinDate = 1917/11/20
   MaxDate = 1923/01/01
 
@@ -1061,7 +1059,6 @@ StartEvent = RGD_Remove_Exclusion_Caucasus_RED2|1|0|NULL|NULL|NULL|NULL
 Conditions
 
   EvalEvent = evt_nam_WHI_CaucasusJoin_Tracker;=;1
-  EvalEvent = evt_nam_RED_BolshevikDictature;=;0
   MinDate = 1917/11/20
   MaxDate = 1923/01/01
 
