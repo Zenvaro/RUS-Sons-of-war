@@ -1,0 +1,15 @@
+UID = 1907
+NationTag = ROM
+Name = Cavalry (conscript)
+Alias = uni_ROM_Cav1
+ForcePool = 2
+ShortName = Mtd. Inf. Rgt.
+Text = $uni_ROM_Inf7_txt
+Color = $colROMRegular 
+ModelType0 = $mdl_ROM_Inf3|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Rumanians

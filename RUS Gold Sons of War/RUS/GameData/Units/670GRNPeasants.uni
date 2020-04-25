@@ -1,0 +1,15 @@
+UID = 670
+NationTag = GRN
+Name = Peasants
+Alias = uni_GRN_Par1
+ForcePool = 6
+ShortName = Peasants
+Text = $uni_GRN_Lit0_txt
+Color = $colGRNMilitia 
+ModelType0 = $mdl_GRN_Par1|1
+FamilyType0 = $famRaider|1
+CmdCost = 0
+Pillage = 60
+BuildRule = $recWild
+BuildWeight = 0
+CustomNames = Peasants

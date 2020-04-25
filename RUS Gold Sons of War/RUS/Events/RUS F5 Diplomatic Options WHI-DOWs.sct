@@ -167,15 +167,15 @@ SelectFaction = $WHI
 
 SelectFaction = $WHI
 
-  SetFacRelationships = EST;-200
-  SetFacRelationships = LAT;-200
-  SetFacRelationships = LIT;-200
+  SetFacRelationships = EST;-100
+  SetFacRelationships = LAT;-100
+  SetFacRelationships = LIT;-100
 
 SelectFaction = $WH3
 
-  SetFacRelationships = EST;-200
-  SetFacRelationships = LAT;-200
-  SetFacRelationships = LIT;-200
+  SetFacRelationships = EST;-100
+  SetFacRelationships = LAT;-100
+  SetFacRelationships = LIT;-100
 
 SelectFaction = $WHI
 
@@ -235,15 +235,15 @@ SelectFaction = $WHI
 
 SelectFaction = $WHI
 
-  SetFacRelationships = EST;-200
-  SetFacRelationships = LAT;-200
-  SetFacRelationships = LIT;-200
+  SetFacRelationships = EST;-100
+  SetFacRelationships = LAT;-100
+  SetFacRelationships = LIT;-100
 
 SelectFaction = $WH3
 
-  SetFacRelationships = EST;-200
-  SetFacRelationships = LAT;-200
-  SetFacRelationships = LIT;-200
+  SetFacRelationships = EST;-100
+  SetFacRelationships = LAT;-100
+  SetFacRelationships = LIT;-100
 
 SelectFaction = $WHI
 
@@ -486,11 +486,11 @@ SelectFaction = $WHI
 
 SelectFaction = $WHI
 
-  SetFacRelationships = FIN;-200
+  SetFacRelationships = FIN;-100
 
 SelectFaction = $WH3
 
-  SetFacRelationships = FIN;-200
+  SetFacRelationships = FIN;-100
 
 SelectFaction = $WHI
 
@@ -548,11 +548,11 @@ SelectFaction = $WHI
 
 SelectFaction = $WHI
 
-  SetFacRelationships = FIN;-200
+  SetFacRelationships = FIN;-100
 
 SelectFaction = $WH3
 
-  SetFacRelationships = FIN;-200
+  SetFacRelationships = FIN;-100
 
 SelectFaction = $WHI
 
@@ -751,14 +751,12 @@ Actions
 
 SelectFaction = $WH3
 
-  SetFacRelationships = UKR;50
-  SetFacRelationships = ROM;50
+  SetFacRelationships = UKR;100
 
 SelectFaction = $WHI
 
   PayOption = $gmaOptionDip;WHI_SignAlliance_UKR
-  SetFacRelationships = UKR;50
-  SetFacRelationships = ROM;50
+  SetFacRelationships = UKR;100
 
 SelectFaction = $CMN
 
@@ -789,14 +787,12 @@ Conditions
 
 Actions
 
-  SetFacRelationships = UKR;50
-  SetFacRelationships = ROM;50
+  SetFacRelationships = UKR;100
   PayOption = $gmaOptionDip;WH3_SignAlliance_UKR
 
 SelectFaction = $WHI
 
-  SetFacRelationships = UKR;50
-  SetFacRelationships = ROM;50
+  SetFacRelationships = UKR;100
 
 SelectFaction = $CMN
 
@@ -987,14 +983,14 @@ SelectFaction = $WHI
 
 SelectFaction = $WHI
 
-  SetFacRelationships = GEO;200
-  SetFacRelationships = AZR;200
+  SetFacRelationships = GEO;50
+  SetFacRelationships = AZR;50
   ChangeFacMorale = -10
 
 SelectFaction = $WH3
 
-  SetFacRelationships = GEO;200
-  SetFacRelationships = AZR;200
+  SetFacRelationships = GEO;50
+  SetFacRelationships = AZR;50
   ChangeFacMorale = -10
 
 EndEvent
@@ -1040,13 +1036,13 @@ SelectFaction = $WHI
 
 SelectFaction = $WHI
 
-  SetFacRelationships = GEO;200
-  SetFacRelationships = AZR;200
+  SetFacRelationships = GEO;50
+  SetFacRelationships = AZR;50
 
 SelectFaction = $WH3
 
-  SetFacRelationships = GEO;200
-  SetFacRelationships = AZR;200
+  SetFacRelationships = GEO;50
+  SetFacRelationships = AZR;50
 
 EndEvent
 
@@ -1723,11 +1719,11 @@ SelectFaction = $WHI
 
 SelectFaction = $WHI
 
-  SetFacRelationships = ARM;-200
+  SetFacRelationships = ARM;-100
 
 SelectFaction = $WH3
 
-  SetFacRelationships = ARM;-200
+  SetFacRelationships = ARM;-100
 
 SelectFaction = $WHI
 
@@ -1785,11 +1781,11 @@ SelectFaction = $WHI
 
 SelectFaction = $WHI
 
-  SetFacRelationships = ARM;-200
+  SetFacRelationships = ARM;-100
 
 SelectFaction = $WH3
 
-  SetFacRelationships = ARM;-200
+  SetFacRelationships = ARM;-100
 
 SelectFaction = $WHI
 

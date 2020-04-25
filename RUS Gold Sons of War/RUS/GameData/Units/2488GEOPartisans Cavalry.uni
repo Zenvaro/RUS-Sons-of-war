@@ -1,0 +1,15 @@
+UID = 2488
+NationTag = GEO
+Name = Partisans Cavalry  
+Alias = uni_GEO_Par2
+ForcePool = 6
+ShortName = Cavalry 
+Text = $uni_UKR_Div1_txt
+Color = $colGEOMilitia 
+ModelType0 = $mdl_GEO_Par2|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 60
+BuildRule = $recWild
+BuildWeight = 0
+Area = $Area_Georgia

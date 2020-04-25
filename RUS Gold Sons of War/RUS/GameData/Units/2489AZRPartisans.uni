@@ -1,0 +1,15 @@
+UID = 2489
+NationTag = AZR
+Name = Partisans
+Alias = uni_AZR_Par1
+ForcePool = 6
+ShortName = Partisans
+Text = $uni_AZR_Rgt1_txt
+Color = $colAZRMilitia 
+ModelType0 = $mdl_AZR_Par1|1
+FamilyType0 = $famRaider|1
+CmdCost = 1
+Pillage = 60
+BuildRule = $recWild
+BuildWeight = 0
+Area = $Area_Azerbaijan

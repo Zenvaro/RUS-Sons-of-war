@@ -1875,9 +1875,9 @@ SelectFaction = $RED
 
 SelectFaction = $RED
 
-  SetFacRelationships = GEO;10
-  SetFacRelationships = AZR;10
-  SetFacRelationships = ARM;10
+  SetFacRelationships = GEO;50
+  SetFacRelationships = AZR;50
+  SetFacRelationships = ARM;50
   ChangeFacMorale = -10
 
 
@@ -1986,9 +1986,9 @@ SelectFaction = $RED
 
 SelectFaction = $RED
 
-  SetFacRelationships = LIT;10
-  SetFacRelationships = LAT;10
-  SetFacRelationships = EST;10
+  SetFacRelationships = LIT;50
+  SetFacRelationships = LAT;50
+  SetFacRelationships = EST;50
   ChangeFacMorale = -10
 
 SelectFaction = $RED
@@ -2096,7 +2096,7 @@ SelectFaction = $RED
 
 SelectFaction = $RED
 
-  SetFacRelationships = FIN;10
+  SetFacRelationships = FIN;50
   ChangeFacMorale = -10
 
 SelectFaction = $RED
@@ -2203,7 +2203,7 @@ SelectFaction = $RED
 
 SelectFaction = $RED
 
-  SetFacRelationships = ROM;10
+  SetFacRelationships = ROM;50
   ChangeFacMorale = -10
 
 SelectFaction = $RED
@@ -2503,7 +2503,7 @@ SelectFaction = $UKR
 
   ChangeFacMorale = -50
   SetFacRelationships = POL;100
-  SetFacRelationships = ROM;100
+  SetFacRelationships = ROM;50
 
 EndEvent
 

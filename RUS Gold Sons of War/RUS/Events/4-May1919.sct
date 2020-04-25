@@ -665,6 +665,11 @@ SelectFaction = $WH3
 
   SetFacRelationships = UKR;-100
 
+SelectFaction = $ANA
+
+  SetFacRelationships = UKR;-100
+
+
 SelectFaction = $CMN
 
   GenTextMsg  = opt_notify_WHI_SignAlliance_UKR;1;NULL;NULL;NULL

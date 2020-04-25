@@ -63,7 +63,6 @@ Actions
   ChangeUnitPool = $uni_WH3_RT1;1
   ChangeUnitPool = $uni_WH3_RT2;1
   ChangeUnitPool = $uni_WH3_Sup2;2
-  ChangeUnitPool = $uni_WH3_Hq2;1
   ChangeUnitPool = $uni_WH3_Sai;1
   ChangeUnitPool = $uni_WH3_Gar0;2
   ChangeUnitPool = $uni_WH3_Div10;1
@@ -149,7 +148,6 @@ Actions
   ChangeUnitPool = $uni_WH3_RT1;1
   ChangeUnitPool = $uni_WH3_RT2;1
   ChangeUnitPool = $uni_WH3_Sup2;2
-  ChangeUnitPool = $uni_WH3_Hq2;1
   ChangeUnitPool = $uni_WH3_Sai;1
   ChangeUnitPool = $uni_WH3_Gar0;2
   ChangeUnitPool = $uni_WH3_Div10;1
@@ -240,7 +238,6 @@ Actions
   ChangeUnitPool = $uni_WH3_RT1;1
   ChangeUnitPool = $uni_WH3_RT2;1
   ChangeUnitPool = $uni_WH3_Sup2;2
-  ChangeUnitPool = $uni_WH3_Hq2;1
   ChangeUnitPool = $uni_WH3_Sai;1
   ChangeUnitPool = $uni_WH3_Gar0;2
   ChangeUnitPool = $uni_WH3_Div10;1
@@ -311,7 +308,6 @@ Actions
   ChangeUnitPool = $uni_WH2_FDD;1
   ChangeUnitPool = $uni_WH2_GB1;1
   ChangeUnitPool = $uni_WH2_RT1;1
-  ChangeUnitPool = $uni_WH2_Hq2;1
   ChangeUnitPool = $uni_WH2_Med;1
   ChangeUnitPool = $uni_WH2_Sig;1
 

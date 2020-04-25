@@ -1,0 +1,10 @@
+UID = 190
+Name = $abi_nam_AB_SibAnarchist
+Alias = AB_SibAnarchist
+Kind = $abiFlavor
+Text = $abi_txt_AB_SibAnarchist
+ImageID = abi_UkrainianANA.png
+Color = $colAbi_Red
+Appliance = Self
+Family = 0
+Level = 1

@@ -10,5 +10,5 @@ ModelType0 = $mdl_ANA_Sup|4
 FamilyType0 = $famService|4
 CmdCost = 0
 Pillage = 60
-BuildRule = $recTown
-BuildWeight = 1
+BuildRule = $recWild
+BuildWeight = 0

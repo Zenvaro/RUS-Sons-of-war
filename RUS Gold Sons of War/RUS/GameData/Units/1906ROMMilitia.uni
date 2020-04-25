@@ -1,0 +1,14 @@
+UID = 1906
+NationTag = ROM
+Name = Militia
+Alias = uni_ROM_Mil
+ForcePool = 10
+ShortName = Militia
+Text = $uni_ROM_Rgt2_txt
+Color = $colROMMilitia 
+ModelType0 = $mdl_ROM_Mil|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

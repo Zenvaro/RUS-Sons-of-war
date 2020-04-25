@@ -105,7 +105,6 @@ Actions
   ChangeUnitPool = $uni_WHI_Bty;1
   ChangeUnitPool = $uni_WHI_FtG;1
   ChangeUnitPool = $uni_WHI_Coa;1
-  ChangeUnitPool = $uni_WHI_Hq2;1
   ChangeUnitPool = $uni_WHI_Sie;1
   ChangeUnitPool = $uni_WHI_Sig;2
   ChangeUnitPool = $uni_WHI_Eng;2
@@ -141,7 +140,6 @@ Actions
   ChangeUnitPool = $uni_DON_Amc1;1
   ChangeUnitPool = $uni_DON_Sup1;5
   ChangeUnitPool = $uni_DON_GB1;1
-  ChangeUnitPool = $uni_DON_Hq2;1
   ChangeUnitPool = $uni_DON_MG0;2
 
   ChangeUnitPool = $uni_WH4_Mil1;4
@@ -297,7 +295,6 @@ Actions
   ChangeUnitPool = $uni_WHI_Bty;1
   ChangeUnitPool = $uni_WHI_FtG;1
   ChangeUnitPool = $uni_WHI_Coa;1
-  ChangeUnitPool = $uni_WHI_Hq2;1
   ChangeUnitPool = $uni_WHI_Sie;1
   ChangeUnitPool = $uni_WHI_Sig;2
   ChangeUnitPool = $uni_WHI_Eng;2
@@ -333,7 +330,6 @@ Actions
   ChangeUnitPool = $uni_DON_Amc1;1
   ChangeUnitPool = $uni_DON_Sup1;5
   ChangeUnitPool = $uni_DON_GB1;1
-  ChangeUnitPool = $uni_DON_Hq2;1
   ChangeUnitPool = $uni_DON_MG0;2
 
   ChangeUnitPool = $uni_WH4_Mil1;4
@@ -494,7 +490,6 @@ Actions
   ChangeUnitPool = $uni_WHI_Bty;1
   ChangeUnitPool = $uni_WHI_FtG;1
   ChangeUnitPool = $uni_WHI_Coa;1
-  ChangeUnitPool = $uni_WHI_Hq2;1
   ChangeUnitPool = $uni_WHI_Sie;1
   ChangeUnitPool = $uni_WHI_Sig;2
   ChangeUnitPool = $uni_WHI_Eng;2
@@ -530,7 +525,6 @@ Actions
   ChangeUnitPool = $uni_DON_Amc1;1
   ChangeUnitPool = $uni_DON_Sup1;5
   ChangeUnitPool = $uni_DON_GB1;1
-  ChangeUnitPool = $uni_DON_Hq2;1
   ChangeUnitPool = $uni_DON_MG0;2
 
   ChangeUnitPool = $uni_WH4_Mil1;4

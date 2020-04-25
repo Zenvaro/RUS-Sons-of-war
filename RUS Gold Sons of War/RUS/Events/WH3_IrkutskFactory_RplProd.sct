@@ -63,7 +63,6 @@ Actions
   ChangeUnitPool = $uni_WH3_RT1;1
   ChangeUnitPool = $uni_WH3_RT2;1
   ChangeUnitPool = $uni_WH3_Sup2;2
-  ChangeUnitPool = $uni_WH3_Hq2;1
   ChangeUnitPool = $uni_WH3_Sai;1
   ChangeUnitPool = $uni_WH3_Gar0;2
   ChangeUnitPool = $uni_WH3_Div10;1
@@ -149,7 +148,6 @@ Actions
   ChangeUnitPool = $uni_WH3_RT1;1
   ChangeUnitPool = $uni_WH3_RT2;1
   ChangeUnitPool = $uni_WH3_Sup2;2
-  ChangeUnitPool = $uni_WH3_Hq2;1
   ChangeUnitPool = $uni_WH3_Sai;1
   ChangeUnitPool = $uni_WH3_Gar0;2
   ChangeUnitPool = $uni_WH3_Div10;1
@@ -197,17 +195,23 @@ Actions
   Replacement = WH3;$famLtVehicle;2
   Replacement = WH3;$famArmoredTrain;2
 
-  ChangeUnitPool = $uni_WH3_Cav6;-4
-  ChangeUnitPool = $uni_WH3_Bde8;-1
-  ChangeUnitPool = $uni_WH3_MilAG;-4
-  ChangeUnitPool = $uni_WH3_Bde11;-1
-  ChangeUnitPool = $uni_WH3_Bde12;-1
-
   ChangeUnitPool = $uni_WH3_Mil3;4
   ChangeUnitPool = $uni_WH3_DivNewInf1;1
   ChangeUnitPool = $uni_WH3_DivNewInf2;1
   ChangeUnitPool = $uni_WH3_NewCav1;4
   ChangeUnitPool = $uni_WH3_DivNewCav1;1
+
+  ChangeUnitPool = $uni_WH3_Cav6;-4
+  ChangeUnitPool = $uni_WH3_Bde8;-1
+  ChangeUnitPool = $uni_WH3_MilAG;-4
+  ChangeUnitPool = $uni_WH3_Bde11;-1
+  ChangeUnitPool = $uni_WH3_Bde12;-1
+  
+  ChangeUnitPool = $uni_WH3_Mil1;-4
+  ChangeUnitPool = $uni_WH3_Cav5;-4
+  ChangeUnitPool = $uni_WH3_Div0;-1
+  ChangeUnitPool = $uni_WH3_Div1;-1
+  ChangeUnitPool = $uni_WH3_Bde6;-1
 
   ChangeUnitPool = $uni_ORE_Rgt;1
   ChangeUnitPool = $uni_ORE_Cav;1
@@ -240,7 +244,6 @@ Actions
   ChangeUnitPool = $uni_WH3_RT1;1
   ChangeUnitPool = $uni_WH3_RT2;1
   ChangeUnitPool = $uni_WH3_Sup2;2
-  ChangeUnitPool = $uni_WH3_Hq2;1
   ChangeUnitPool = $uni_WH3_Sai;1
   ChangeUnitPool = $uni_WH3_Gar0;2
   ChangeUnitPool = $uni_WH3_Div10;1
@@ -249,12 +252,6 @@ Actions
   ChangeUnitPool = $uni_WH3_Div13;1
   ChangeUnitPool = $uni_WH3_Div14;1
   ChangeUnitPool = $uni_WH3_Div15;1
-
-  ChangeUnitPool = $uni_WH3_Mil1;-4
-  ChangeUnitPool = $uni_WH3_Cav5;-4
-  ChangeUnitPool = $uni_WH3_Div0;-1
-  ChangeUnitPool = $uni_WH3_Div1;-1
-  ChangeUnitPool = $uni_WH3_Bde6;-1
 
 EndEvent
 

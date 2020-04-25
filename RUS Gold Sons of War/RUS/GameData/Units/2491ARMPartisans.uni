@@ -1,0 +1,15 @@
+UID = 2491
+NationTag = ARM
+Name = Partisans
+Alias = uni_ARM_Par1
+ForcePool = 6
+ShortName = Partisans
+Text = $uni_ARM_Rgt1_txt
+Color = $colARMMilitia 
+ModelType0 = $mdl_ARM_Par1|1
+FamilyType0 = $famRaider|1
+CmdCost = 1
+Pillage = 60
+BuildRule = $recWild
+BuildWeight = 0
+Area = $Area_Armenia

@@ -1681,11 +1681,11 @@ SelectRegion = $Minsk
 
 SelectFaction = $POL
 
-  SetFacRelationships = WHI;-200
-  SetFacRelationships = WH3;-200
-  SetFacRelationships = RED;-200
-  SetFacRelationships = ANA;-200
-  SetFacRelationships = ROM;200
+  SetFacRelationships = WHI;-100
+  SetFacRelationships = WH3;-100
+  SetFacRelationships = RED;-100
+  SetFacRelationships = ANA;-100
+  SetFacRelationships = ROM;50
 
 
 SelectFaction = $POL

@@ -1,20 +1,10 @@
 UID = 183
 Name = $abi_nam_AB_Anarchist
 Alias = AB_Anarchist
-Kind = $abiBattleBonus
-Text = $abi_txt_Irregular_Fighter
-ImageID = abi_indian2.png
+Kind = $abiFlavor
+Text = $abi_txt_AB_Anarchist
+ImageID = abi_UkrainianANA.png
 Color = $colAbi_Red
-Appliance = Group
-Family = 6
+Appliance = Self
+Family = 0
 Level = 1
-ProgRate = 2
-Param0 = 115
-Param1 = 115
-Param4 = 1
-Param5 = 1
-Param6 = 115
-Param11 = 100
-Param12 = 100
-ListParams0 = $Mountain|$Moors|$Marsh|$Bocage|$Wood|$Forest|$Alpine|$Hill|$WoodedHill|$Wilderness|$Swamp
-

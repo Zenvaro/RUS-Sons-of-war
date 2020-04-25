@@ -73,7 +73,6 @@ Actions
   ChangeUnitPool = $uni_RED_Sie;1
   ChangeUnitPool = $uni_RED_Bty;1
   ChangeUnitPool = $uni_RED_Coa;1
-  ChangeUnitPool = $uni_RED_Ghq;1
   ChangeUnitPool = $uni_RED_Med;2
   ChangeUnitPool = $uni_RED_Sup2;2
   ChangeUnitPool = $uni_RED_Tru1;2
@@ -157,7 +156,6 @@ Actions
   ChangeUnitPool = $uni_RED_Sie;1
   ChangeUnitPool = $uni_RED_Bty;1
   ChangeUnitPool = $uni_RED_Coa;1
-  ChangeUnitPool = $uni_RED_Ghq;1
   ChangeUnitPool = $uni_RED_Med;2
   ChangeUnitPool = $uni_RED_Sup2;2
   ChangeUnitPool = $uni_RED_Tru1;2
@@ -246,7 +244,6 @@ Actions
   ChangeUnitPool = $uni_RED_Sie;1
   ChangeUnitPool = $uni_RED_Bty;1
   ChangeUnitPool = $uni_RED_Coa;1
-  ChangeUnitPool = $uni_RED_Ghq;1
   ChangeUnitPool = $uni_RED_Med;2
   ChangeUnitPool = $uni_RED_Sup2;2
   ChangeUnitPool = $uni_RED_Tru1;2

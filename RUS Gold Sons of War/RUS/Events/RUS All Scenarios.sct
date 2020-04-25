@@ -6658,16 +6658,18 @@ SelectFaction = $JAP
   ChangeLoyaltyFac = $Area_Zabaikal;20
   ChangeLoyaltyFac = $Area_Vladivostock;20
 
-  ChangeUnitPool = $uni_WH3_KalCav;30
-  ChangeUnitPool = $uni_WH3_GamInf;30
-  ChangeUnitPool = $uni_WH3_GamCav;30
-  ChangeUnitPool = $uni_WH3_SemInf;30
-  ChangeUnitPool = $uni_WH3_SemCav;30
-  ChangeUnitPool = $uni_WH3_GamInfDiv;30
-  ChangeUnitPool = $uni_WH3_GamCavDiv;30
-  ChangeUnitPool = $uni_WH3_SemInfDiv;30
-  ChangeUnitPool = $uni_WH3_SemCavDiv;30
-  ChangeUnitPool = $uni_WH3_KalCavDiv;30
+  ChangeUnitPool = $uni_WH3_KalInf;8
+  ChangeUnitPool = $uni_WH3_KalCav;8
+  ChangeUnitPool = $uni_WH3_GamInf;8
+  ChangeUnitPool = $uni_WH3_GamCav;8
+  ChangeUnitPool = $uni_WH3_SemInf;16
+  ChangeUnitPool = $uni_WH3_SemCav;16
+  ChangeUnitPool = $uni_WH3_GamInfDiv;2
+  ChangeUnitPool = $uni_WH3_GamCavDiv;2
+  ChangeUnitPool = $uni_WH3_SemInfDiv;4
+  ChangeUnitPool = $uni_WH3_SemCavDiv;4
+  ChangeUnitPool = $uni_WH3_KalInfDiv;2
+  ChangeUnitPool = $uni_WH3_KalCavDiv;2
   ChangeUnitPool = $uni_WH3_Art0;10
   ChangeUnitPool = $uni_WH3_Art1;10
   ChangeUnitPool = $uni_WH3_Amt1;10
@@ -6676,7 +6678,7 @@ SelectFaction = $JAP
 
 SelectFaction = $WH3
 
-  SelectSubUnits = Models $mdl_WH3_KalCav $mdl_WH3_SemCav $mdl_WH3_SemInf $mdl_WH3_GamCav $mdl_WH3_GamInf $mdl_ZAB_Art0 $mdl_ZAB_Art4
+  SelectSubUnits = Models $mdl_WH3_KalInf $mdl_WH3_KalCav $mdl_WH3_SemCav $mdl_WH3_SemInf $mdl_WH3_GamCav $mdl_WH3_GamInf $mdl_ZAB_Art0 $mdl_ZAB_Art4
   AlterCuSubUnit = ApplyToList;Kill
 
   SelectSubUnits = Models $ldr_WH3_Semenov3
