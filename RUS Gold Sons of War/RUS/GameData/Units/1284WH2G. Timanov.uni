@@ -1,9 +1,9 @@
 UID = 1284
 NationTag = WH2
-Name = G. Timanov
+Name = M.I. Timonov
 Alias = uni_WH2_Timanov1
 ForcePool = -1
-ShortName = Timanov
+ShortName = Timonov
 Text = $uni_WH2_Timanov1_txt
 Color = $colWH2Regular 
 ModelType0 = $ldr_WH2_Timanov1|1

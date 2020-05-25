@@ -127,7 +127,7 @@ Conditions
 
 Actions
 
-  AI.SetAggro = $Theater_Western;500
+  AI.SetAggro = $Theater_Romania;500
 
 EndEvent
 
@@ -146,7 +146,7 @@ Conditions
 
 Actions
 
-  AI.SetAggro = $Theater_Western;300
+  AI.SetAggro = $Theater_Romania;300
 
 EndEvent
 
@@ -165,7 +165,7 @@ Conditions
 
 Actions
 
-  AI.SetAggro = $Theater_Western;800
+  AI.SetAggro = $Theater_Romania;800
 
 EndEvent
 
@@ -184,7 +184,7 @@ Conditions
 
 Actions
 
-  AI.SetAggro = $Theater_Western;400
+  AI.SetAggro = $Theater_Romania;400
 
 EndEvent
 
@@ -203,7 +203,7 @@ Conditions
 
 Actions
 
-  AI.SetAggro = $Theater_Western;150
+  AI.SetAggro = $Theater_Romania;150
 
 EndEvent
 
@@ -222,7 +222,7 @@ Conditions
 
 Actions
 
-  AI.SetAggro = $Theater_Western;600
+  AI.SetAggro = $Theater_Romania;600
 
 EndEvent
 
@@ -241,7 +241,7 @@ Conditions
 
 Actions
 
-  AI.SetAggro = $Theater_Western;700
+  AI.SetAggro = $Theater_Romania;700
 
 EndEvent
 
@@ -259,7 +259,7 @@ Conditions
 
 Actions
 
-  AI.ChgAggro = $Theater_Western;100
+  AI.ChgAggro = $Theater_Romania;100
 
 EndEvent
 
@@ -277,7 +277,7 @@ Conditions
 
 Actions
 
-  AI.ChgAggro = $Theater_Western;-100
+  AI.ChgAggro = $Theater_Romania;-100
 
 EndEvent
 
@@ -295,7 +295,7 @@ Conditions
 
 Actions
 
-  AI.ChgAggro = $Theater_Western;50
+  AI.ChgAggro = $Theater_Romania;50
 
 EndEvent
 
@@ -315,7 +315,7 @@ Conditions
 
 Actions
 
-  AI.SetAggro = $Theater_Western;5
+  AI.SetAggro = $Theater_Romania;5
 
 EndEvent
 
@@ -333,7 +333,7 @@ Conditions
 
 Actions
 
-  AI.ChgAggro = $Theater_Western;50
+  AI.ChgAggro = $Theater_Romania;50
 
 EndEvent
 
@@ -352,7 +352,7 @@ Conditions
 
 Actions
 
-  AI.ChgAggro = $Theater_Western;-50
+  AI.ChgAggro = $Theater_Romania;-50
   ChgEvtOccurs = evt_nam_Winter_offensive4ROM;CuOccurs;-1;
 
 EndEvent
@@ -372,7 +372,7 @@ Conditions
 
 Actions
 
-  AI.ChgAggro = $Theater_Western;550
+  AI.ChgAggro = $Theater_Romania;550
 
 EndEvent
 
@@ -392,7 +392,7 @@ Conditions
 
 Actions
 
-  AI.ChgAggro = $Theater_Western;-550
+  AI.ChgAggro = $Theater_Romania;-550
   ChgEvtOccurs = evt_nam_Winter18_offensive4ROM;CuOccurs;-1;
 
 EndEvent
@@ -414,7 +414,7 @@ Conditions
 
 Actions
 
-  AI.SetAggro = $Theater_Western;900
+  AI.SetAggro = $Theater_Romania;900
   SetEvtOccurs = evt_nam_Winter_ROM_Western;CuOccurs;0;
 
 EndEvent

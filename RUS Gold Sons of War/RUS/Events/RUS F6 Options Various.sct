@@ -421,7 +421,6 @@ Actions
   Replacement = WHI;$famArmoredTrain;1
   Replacement = DON;$famArmoredTrain;1
   Replacement = WH4;$famArmoredTrain;1
-  Replacement = WH5;$famArmoredTrain;1
   Replacement = WHI;$famLtVehicle;1
   Replacement = DON;$famLtVehicle;1
   ChangeUnitPool = $uni_WHI_Tnk1;1
@@ -454,7 +453,6 @@ Actions
   Replacement = WHI;$famArmoredTrain;1
   Replacement = DON;$famArmoredTrain;1
   Replacement = WH4;$famArmoredTrain;1
-  Replacement = WH5;$famArmoredTrain;1
   Replacement = WHI;$famLtVehicle;1
   Replacement = DON;$famLtVehicle;1
   ChangeUnitPool = $uni_WHI_Tnk1;1
@@ -486,7 +484,6 @@ Actions
   Replacement = WHI;$famArmoredTrain;1
   Replacement = DON;$famArmoredTrain;1
   Replacement = WH4;$famArmoredTrain;1
-  Replacement = WH5;$famArmoredTrain;1
   Replacement = WHI;$famLtVehicle;1
   Replacement = DON;$famLtVehicle;1
   ChangeUnitPool = $uni_WHI_Tnk1;1
@@ -689,7 +686,6 @@ Actions
   Replacement = WHI;$famArmoredTrain;1
   Replacement = DON;$famArmoredTrain;1
   Replacement = WH4;$famArmoredTrain;1
-  Replacement = WH5;$famArmoredTrain;1
   Replacement = WHI;$famLtVehicle;1
   Replacement = DON;$famLtVehicle;1
   ChangeUnitPool = $uni_WHI_Tnk1;1
@@ -722,7 +718,6 @@ Actions
   Replacement = WHI;$famArmoredTrain;1
   Replacement = DON;$famArmoredTrain;1
   Replacement = WH4;$famArmoredTrain;1
-  Replacement = WH5;$famArmoredTrain;1
   Replacement = WHI;$famLtVehicle;1
   Replacement = DON;$famLtVehicle;1
   ChangeUnitPool = $uni_WHI_Tnk1;1
@@ -754,7 +749,6 @@ Actions
   Replacement = WHI;$famArmoredTrain;1
   Replacement = DON;$famArmoredTrain;1
   Replacement = WH4;$famArmoredTrain;1
-  Replacement = WH5;$famArmoredTrain;1
   Replacement = WHI;$famLtVehicle;1
   Replacement = DON;$famLtVehicle;1
   ChangeUnitPool = $uni_WHI_Tnk1;1
@@ -1845,6 +1839,8 @@ Actions
   ChangeUnitPool = $uni_WH3_Tnk2;1
   Replacement = WH3;$famHvyVehicle;1
   Replacement = WH3;$famArmoredTrain;1
+  Replacement = WH5;$famArmoredTrain;1
+  Replacement = WH5;$famArmoredTrain;1
   Replacement = WH2;$famArmoredTrain;1
   Replacement = CZE;$famArmoredTrain;1
   Replacement = WH3;$famLtVehicle;1
@@ -1876,6 +1872,7 @@ Actions
   ChangeUnitPool = $uni_WH3_Tnk2;1
   Replacement = WH3;$famHvyVehicle;1
   Replacement = WH3;$famArmoredTrain;1
+  Replacement = WH5;$famArmoredTrain;1
   Replacement = WH2;$famArmoredTrain;1
   Replacement = CZE;$famArmoredTrain;1
   Replacement = WH3;$famLtVehicle;1
@@ -1907,6 +1904,7 @@ Actions
   ChangeUnitPool = $uni_WH3_Tnk2;1
   Replacement = WH3;$famHvyVehicle;1
   Replacement = WH3;$famArmoredTrain;1
+  Replacement = WH5;$famArmoredTrain;1
   Replacement = WH2;$famArmoredTrain;1
   Replacement = CZE;$famArmoredTrain;1
   Replacement = WH3;$famLtVehicle;1
@@ -1939,6 +1937,7 @@ Actions
   Replacement = WH3;$famHvyVehicle;1
   Replacement = WH3;$famArmoredTrain;1
   Replacement = WH2;$famArmoredTrain;1
+  Replacement = WH5;$famArmoredTrain;1
   Replacement = CZE;$famArmoredTrain;1
   Replacement = WH3;$famLtVehicle;1
   Replacement = WH2;$famLtVehicle;1

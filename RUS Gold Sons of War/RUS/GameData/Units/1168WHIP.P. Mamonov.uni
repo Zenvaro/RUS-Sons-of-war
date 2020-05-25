@@ -1,12 +1,12 @@
 UID = 1168
 NationTag = WHI
 Name = P.P. Mamonov
-Alias = uni_WHI_Mamontov1
+Alias = uni_WHI_Mamonov1
 ForcePool = -1
-ShortName = Mamontov
-Text = $uni_WHI_Mamontov1_txt
+ShortName = Mamonov
+Text = $uni_WHI_Mamonov1_txt
 Color = $colWHIRegular 
-ModelType0 = $ldr_WHI_Mamontov1|1
+ModelType0 = $ldr_WHI_Mamonov1|1
 FamilyType0 = $famLeader|1
 CmdCost = 0
 Pillage = 0

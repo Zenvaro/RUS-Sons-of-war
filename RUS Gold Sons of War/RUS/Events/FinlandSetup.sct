@@ -596,8 +596,8 @@ SelectFaction = $FIN
   Replacement = FIN;$famLightArty;3
   ChangeUnitPool = $uni_FIN_Hq1;1
   ChangeUnitPool = $uni_FIN_Bde1;1
-  ChangeUnitPool = $uni_FIN_Inf7;8
-  ChangeUnitPool = $uni_FIN_Mil1;24
+  ChangeUnitPool = $uni_FIN_Inf7;10
+  ChangeUnitPool = $uni_FIN_Mil1;30
   ChangeUnitPool = $uni_FIN_Cyc;2
   ChangeUnitPool = $uni_FIN_Bde2;9
   ChangeUnitPool = $uni_FIN_Bde3;2
@@ -935,7 +935,7 @@ SelectRegion = $Helsinki
   SetName = Helsinki Garrison
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = Helsinki Rgt
   SetName = Helsinki Rgt
   Apply
@@ -962,7 +962,7 @@ SelectRegion = $Tampere
   SetName = Tampere Garrison
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = Tampere Rgt
   SetName = Tampere Rgt
   Apply
@@ -980,7 +980,7 @@ SelectRegion = $Vaasa
   SetName = Vaasa Garrison
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = Vaasa Rgt
   SetName = Vaasa Rgt
   Apply
@@ -998,7 +998,7 @@ SelectRegion = $Turku
   SetName = Turku Garrison
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = Turku Rgt
   SetName = Turku Rgt
   Apply
@@ -1016,7 +1016,7 @@ SelectRegion = $Viipuri
   SetName = Viipuri Garrison
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = Viipuri Rgt
   SetName = Viipuri Rgt
   Apply
@@ -1038,7 +1038,7 @@ SelectRegion = $Kotka
   SetName = Kotka Garrison
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = Kotka Rgt
   SetName = Kotka Rgt
   Apply
@@ -1056,7 +1056,7 @@ SelectRegion = $Sortavala
   SetName = Sortavala Garrison
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = Sortavala Rgt
   SetName = Sortavala Rgt
   Apply
@@ -1074,7 +1074,7 @@ SelectRegion = $Mikkeli
   SetName = Mikkeli Defence Force
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = Garrison
   SetName = Mikkeli Garrison
   Apply
@@ -1092,7 +1092,7 @@ SelectRegion = $Kuopio
   SetName = Kuopio Garrison
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = Garrison
   SetName = Kuopio Garrison
   Apply
@@ -1110,7 +1110,7 @@ SelectRegion = $Pori
   SetName = Pori Garrison
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = Garrison
   SetName = Pori Garrison
   Apply
@@ -1128,17 +1128,17 @@ SelectRegion = $Helsinki
   SetName = Helsinki Defence Force
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = 1st Militia
   SetName = 1st Helsinki Militia
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = 2nd Militia
   SetName = 2nd Helsinki Militia
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = 3rd Militia
   SetName = 3rd Helsinki Militia
   Apply
@@ -1156,17 +1156,17 @@ SelectRegion = $Viipuri
   SetName = Viipuri Defence Force
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = 1st Militia
   SetName = 1st Viipuri Militia
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = 2nd Militia
   SetName = 2nd Viipuri Militia
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = 3rd Militia
   SetName = 3rd Viipuri Militia
   Apply
@@ -1184,7 +1184,7 @@ SelectRegion = $Sortavala
   SetName = Sortavala Defence Force
   Apply
   CreateUnit
-  SetType = $uni_FIN_MilAG
+  SetType = $uni_FIN_Mil1
   SUFlavorName = 1st Militia
   SetName = 1st Sortavala Militia
   Apply

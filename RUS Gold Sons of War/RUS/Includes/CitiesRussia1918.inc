@@ -22103,7 +22103,7 @@ CityStyle = $csiNone
 CivLevel = $Wild
 Transport = $NoNetwork
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Murmansk
 BlockState = 0

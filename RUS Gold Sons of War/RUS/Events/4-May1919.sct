@@ -6,6 +6,17 @@ BalticSetup.sct
 
 NULL ==========================================================================
 
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+
+StartEvent = evt_nam_WHI_KrasnovRetires|1|0|NULL|NULL|$Novocherkassk|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
 SelectFaction = $KAZ
 
 StartEvent = evt_nam_KAZ_Loyalty|1|0|NULL|NULL|NULL|NULL
@@ -87,12 +98,6 @@ StartEvent = evt_nam_ANA_SETUP1919|1|0|NULL|NULL|NULL|NULL
 Conditions
 
 Actions
-
-  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Event-img_CMN_FiringSquad.png;Title;opt_title_RED_BreakAlliance_ANA;MsgString;opt_desc_RED_BreakAlliance_ANA;ToolString;opt_hint_RED_BreakAlliance_ANA;SubType;RED_BreakAlliance_ANA;SParam1;RED
-  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  AddRgnDecisionExcl = $Area_Ekaterinoslav
-  AddRgnDecisionExcl = $Area_Taurida
-  ChangeLoyaltyFac = $Area_Ekaterinoslav;10
 
 SelectFaction = $ANA
 
@@ -654,6 +659,7 @@ StartEvent = evt_nam_POL_SignAlliance_UKR_Check|1|0|NULL|NULL|NULL|NULL
 Conditions
 
   EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Check;=;1
 
 Actions
 
@@ -670,10 +676,6 @@ SelectFaction = $ANA
   SetFacRelationships = UKR;-100
 
 
-SelectFaction = $CMN
-
-  GenTextMsg  = opt_notify_WHI_SignAlliance_UKR;1;NULL;NULL;NULL
-
 SelectFaction = $WHI
 
   SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_SignAlliance_UKR
@@ -688,8 +690,6 @@ StartEvent = evt_nam_WH3_KolchakBonusActivateLeader|60|0|NULL|NULL|NULL|NULL
 
 Conditions
 
-  MinDate = 1917/12/01
-  MaxDate = 1920/12/30
   EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
   EvalUnqUnit = A.V. Kolchak
   SelectSubUnits = FactionTags WH3 WH2;Families $famLeader
@@ -699,61 +699,6 @@ Actions
 
   SelectSubUnits = FactionTags WH3 WH2;Families $famLeader
   AlterCuSubUnit = ApplyToList;LeaderActive
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_KolchakBonusActivateLeader|60|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1917/12/01
-  MaxDate = 1920/12/30
-
-SelectFaction = $WH3
-
-  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
-  EvalUnqUnit = A.V. Kolchak
-
-SelectFaction = $WHI
-
-  SelectSubUnits = FactionTags WHI WH4 WH5;Families $famLeader
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = FactionTags WHI WH4 WH5;Families $famLeader
-  AlterCuSubUnit = ApplyToList;LeaderActive
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_KolchakBonusXP|9|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1917/12/01
-
-SelectFaction = $WH3
-
-  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
-  EvalUnqUnit = A.V. Kolchak
-
-SelectFaction = $WHI
-
-  SelectSubUnits = FactionTags WHI WH4 WH5;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = FactionTags WHI WH4 WH5;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
-  AlterCuSubUnit = ApplyToList;ChgXPLevel 1
 
 EndEvent
 
@@ -775,33 +720,6 @@ Actions
 
   SelectSubUnits = FactionTags WH3;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
   AlterCuSubUnit = ApplyToList;ChgXPLevel 1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_KolchakBonusCohesion|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1917/12/01
-
-SelectFaction = $WH3
-
-  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
-  EvalUnqUnit = A.V. Kolchak
-
-SelectFaction = $WHI
-
-  SelectSubUnits = FactionTags WHI WH4 WH5;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = FactionTags WHI WH4 WH5;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
-  AlterCuSubUnit = ApplyToList;Attempts 50;SetCohesionPerc 100
 
 EndEvent
 

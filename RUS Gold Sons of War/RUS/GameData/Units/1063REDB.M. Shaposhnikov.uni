@@ -1,12 +1,12 @@
 UID = 1063
 NationTag = RED
 Name = B.M. Shaposhnikov
-Alias = uni_RED_Shaposhnikov1
+Alias = uni_RED_Shaposhnikov2
 ForcePool = -1
 ShortName = Shaposhnikov
 Text = $uni_RED_Shaposhnikov1_txt
 Color = $colREDRegular 
-ModelType0 = $ldr_RED_Shaposhnikov1|1
+ModelType0 = $ldr_RED_Shaposhnikov2|1
 FamilyType0 = $famLeader|1
 CmdCost = 0
 Pillage = 0

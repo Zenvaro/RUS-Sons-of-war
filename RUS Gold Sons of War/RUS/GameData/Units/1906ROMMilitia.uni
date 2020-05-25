@@ -12,3 +12,4 @@ CmdCost = 1
 Pillage = 0
 BuildRule = $recCity
 BuildWeight = 1
+Area = $Recruit_Rumanians

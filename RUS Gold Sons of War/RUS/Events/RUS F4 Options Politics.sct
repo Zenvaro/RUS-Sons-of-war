@@ -31,7 +31,7 @@ Conditions
 
 Actions
 
-  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;5;Money;35;ImageID;Opt_RED_Propaganda1.png;Title;opt_title_RED_RedPropaganda1;MsgString;opt_desc_RED_RedPropaganda1;ToolString;opt_hint_RED_RedPropaganda1;SubType;RED_RedPropaganda1;SParam1;RED
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;10;Money;35;ImageID;Opt_RED_Propaganda1.png;Title;opt_title_RED_RedPropaganda1;MsgString;opt_desc_RED_RedPropaganda1;ToolString;opt_hint_RED_RedPropaganda1;SubType;RED_RedPropaganda1;SParam1;RED
   GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
 
 EndEvent
@@ -77,7 +77,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_RED_RedPropaganda1_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;5;Money;35;ImageID;Opt_RED_Propaganda1.png;Title;opt_title_RED_RedPropaganda1;MsgString;opt_desc_RED_RedPropaganda1;ToolString;opt_hint_RED_RedPropaganda1;SubType;RED_RedPropaganda1;SParam1;RED
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;10;Money;35;ImageID;Opt_RED_Propaganda1.png;Title;opt_title_RED_RedPropaganda1;MsgString;opt_desc_RED_RedPropaganda1;ToolString;opt_hint_RED_RedPropaganda1;SubType;RED_RedPropaganda1;SParam1;RED
 
 EndEvent
 
@@ -94,7 +94,7 @@ Conditions
   CanPayOption = $gmaOptionPol;WHI_AgrarianReforms1;125
   ActorEnabled = $gmaOptionPol;WHI_AgrarianReforms1
   Probability = 75
-  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalUnqUnit = A.I. Denikin;NOT
 
 Actions
 
@@ -112,11 +112,11 @@ StartEvent = evt_nam_WHI_AgrarianReforms1_ON|1|0|NULL|NULL|NULL|NULL
 Conditions
 
   MinDate = 1918/08/30
-  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalUnqUnit = A.I. Denikin;NOT
 
 Actions
 
-  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;5;Money;35;ImageID;Opt_WHI_RumaniaJoin.png;Title;opt_title_WHI_AgrarianReforms1;MsgString;opt_desc_WHI_AgrarianReforms1;ToolString;opt_hint_WHI_AgrarianReforms1;SubType;WHI_AgrarianReforms1;SParam1;WHI
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;10;Money;35;ImageID;Opt_WHI_Propaganda.png;Title;opt_title_WHI_AgrarianReforms1;MsgString;opt_desc_WHI_AgrarianReforms1;ToolString;opt_hint_WHI_AgrarianReforms1;SubType;WHI_AgrarianReforms1;SParam1;WHI
   GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
 
 EndEvent
@@ -131,7 +131,7 @@ Conditions
 
   CheckOption = $gmaOptionPol;WHI_AgrarianReforms1;=;1
   CanPayOption = $gmaOptionPol;WHI_AgrarianReforms1
-  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalUnqUnit = A.I. Denikin;NOT
 
 Actions
 
@@ -159,12 +159,12 @@ Conditions
   MinDate = 1918/08/30
   EvalMorale = <;91
   ActorDisabled = $gmaOptionPol;WHI_AgrarianReforms1
-  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalUnqUnit = A.I. Denikin;NOT
 
 Actions
 
   GenTextMsg  = opt_notify_WHI_AgrarianReforms1_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;5;Money;35;ImageID;Opt_WHI_RumaniaJoin.png;Title;opt_title_WHI_AgrarianReforms1;MsgString;opt_desc_WHI_AgrarianReforms1;ToolString;opt_hint_WHI_AgrarianReforms1;SubType;WHI_AgrarianReforms1;SParam1;WHI
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;10;Money;35;ImageID;Opt_WHI_Propaganda.png;Title;opt_title_WHI_AgrarianReforms1;MsgString;opt_desc_WHI_AgrarianReforms1;ToolString;opt_hint_WHI_AgrarianReforms1;SubType;WHI_AgrarianReforms1;SParam1;WHI
 
 EndEvent
 
@@ -203,7 +203,7 @@ Conditions
 
 Actions
 
-  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;5;Money;35;ImageID;Opt_WHI_RumaniaJoin.png;Title;opt_title_WH3_AgrarianReforms1;MsgString;opt_desc_WH3_AgrarianReforms1;ToolString;opt_hint_WH3_AgrarianReforms1;SubType;WH3_AgrarianReforms1;SParam1;WH3
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;10;Money;35;ImageID;Opt_WH3_Propaganda.png;Title;opt_title_WH3_AgrarianReforms1;MsgString;opt_desc_WH3_AgrarianReforms1;ToolString;opt_hint_WH3_AgrarianReforms1;SubType;WH3_AgrarianReforms1;SParam1;WH3
   GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
 
 EndEvent
@@ -251,7 +251,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_WH3_AgrarianReforms1_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;5;Money;35;ImageID;Opt_WHI_RumaniaJoin.png;Title;opt_title_WH3_AgrarianReforms1;MsgString;opt_desc_WH3_AgrarianReforms1;ToolString;opt_hint_WH3_AgrarianReforms1;SubType;WH3_AgrarianReforms1;SParam1;WH3
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;10;Money;35;ImageID;Opt_WH3_Propaganda.png;Title;opt_title_WH3_AgrarianReforms1;MsgString;opt_desc_WH3_AgrarianReforms1;ToolString;opt_hint_WH3_AgrarianReforms1;SubType;WH3_AgrarianReforms1;SParam1;WH3
 
 EndEvent
 
@@ -572,8 +572,8 @@ Conditions
 Actions
 
 SelectFaction = $RED
-  ChangeUnitPool = $uni_RED_Div50;4
-  ChangeUnitPool = $uni_RED_Cav30;4
+  ChangeUnitPool = $uni_RED_Div50;2
+  ChangeUnitPool = $uni_RED_Cav30;2
 
 EndEvent
 NULL ==========================================================================
@@ -590,232 +590,8 @@ Conditions
 Actions
 
 SelectFaction = $RED
-  ChangeUnitPool = $uni_RED_Div50;4
-  ChangeUnitPool = $uni_RED_Cav30;4
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_BattleOfChiefs_AIActivate|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/06/21
-  MaxDate = 1918/11/25
-  CheckAILevel = 1
-  ActorEnabled = $gmaOptionPol;WHI_BattleOfChiefs
-
-Actions
-
-  ChangeOption = $gmaOptionPol;WHI_BattleOfChiefs;1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_BattleOfChiefs_ON|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/06/21
-  MaxDate = 1918/10/25
-
-Actions
-
-  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_WHI_BattleOfChiefs.png;Title;opt_title_WHI_BattleOfChiefs;MsgString;opt_desc_WHI_BattleOfChiefs;ToolString;opt_hint_WHI_BattleOfChiefs;SubType;WHI_BattleOfChiefs;SParam1;WHI
-  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-SelectRegion = $Rostov
-
-StartEvent = evt_nam_WHI_BattleOfChiefs_Check|1|0|NULL|NULL|$Rostov|NULL
-
-Conditions
-
-  MinDate = 1918/06/22
-  MaxDate = 1918/11/25
-  CheckOption = $gmaOptionPol;WHI_BattleOfChiefs;=;1
-  EvalRgnOwned = $Tzaritsyn
-  EvalEvent = evt_nam_WHI_BattleOfChiefs_AutoCheck;=;0
-
-Actions
-
-  ChgFacEngagementPts = -10
-  SetEvtOccurs = evt_nam_WHI_BattleOfChiefs_Checked;MaxOccurs;1
-
-SelectFaction = $CMN
-
-  GenTextMsg  = opt_notify_WHI_BattleOfChiefs_Checked;1;NULL;NULL;NULL
-
-SelectFaction = $WHI
-
-  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_BattleOfChiefs
-
-SelectFaction = $WHI
-  ChgRgnDecisionFP = $rgdRequisitions;2
-  ChgRgnDecisionFP = $rgdConscriptions;2
-  ChgRgnDecisionFP = $rgdReforms;4
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-SelectRegion = $Rostov
-
-StartEvent = evt_nam_WHI_BattleOfChiefs_AutoCheck|1|0|NULL|NULL|$Rostov|NULL
-
-Conditions
-
-  MinDate = 1918/11/17
-  MaxDate = 1918/11/25
-  EvalRgnOwned = $Ekaterinodar;NOT
-  EvalRgnOwned = $Novorossiysk;NOT
-  EvalRgnOwned = $Maikop;NOT
-  EvalRgnOwned = $Armavir;NOT
-  EvalEvent = evt_nam_WHI_BattleOfChiefs_Check;=;0
-
-Actions
-
-  SetEvtOccurs = evt_nam_WHI_BattleOfChiefs_Checked;MaxOccurs;1
-
-SelectFaction = $CMN
-
-  GenTextMsg  = opt_notify_WHI_BattleOfChiefs_AutoChecked;1;NULL;NULL;NULL
-
-SelectFaction = $WHI
-
-  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_BattleOfChiefs
-
-SelectFaction = $WHI
-  ChgRgnDecisionFP = $rgdRequisitions;2
-  ChgRgnDecisionFP = $rgdConscriptions;2
-  ChgRgnDecisionFP = $rgdReforms;4
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_BattleOfChiefs_Checked|0|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-Actions
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-SelectRegion = $Rostov
-
-StartEvent = evt_nam_WHI_BattleOfChiefs_NotChecked|1|1|NULL|NULL|$Rostov|NULL
-
-Conditions
-
-  MinDate = 1918/12/11
-  MaxDate = 1919/01/20
-  EvalEvent = evt_nam_WHI_BattleOfChiefs_Checked;=;0
-
-Actions
-
-SelectFaction = $WHI
-
-  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_BattleOfChiefs
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-
-StartEvent = evt_nam_CMN_WHI_WH3_Southterritories_Connected|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-SelectFaction = $RED
-
-  EvalRgnOwned = $Tzaritsyn;NOT
-  EvalRgnOwned = $Rostov;NOT
-  EvalRgnOwned = $Samara;NOT
-  EvalRgnOwned = $Saratov;NOT
-  EvalRgnOwned = $Ufa;NOT
-  EvalRgnOwned = $Chelyabinsk;NOT
-  EvalRgnOwned = $Omsk;NOT
-
-Actions
-
-  SetEvtOccurs = evt_nam_White_territories_Connected;MaxOccurs;1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-
-StartEvent = evt_nam_CMN_WHI_WH3_Northterritories_Connected|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-SelectFaction = $RED
-
-  EvalRgnOwned = $Arkhangelsk;NOT
-  EvalRgnOwned = $Kotlas;NOT
-  EvalRgnOwned = $Viatka;NOT
-  EvalRgnOwned = $Perm;NOT
-  EvalRgnOwned = $Ekaterinburg;NOT
-  EvalRgnOwned = $Omsk;NOT
-
-Actions
-
-  SetEvtOccurs = evt_nam_White_territories_Connected;MaxOccurs;1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-
-StartEvent = evt_nam_White_territories_Connected|0|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-Actions
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-
-StartEvent = evt_nam_White_territories_Connected_Bonus|999|1|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_White_territories_Connected;=;1
-
-Actions
-
-SelectFaction = $WHI
-
-  ChgFacEngagementPts = 5
-  ChangeMoneyPool = 20
-
-SelectFaction = $WH3
-
-  ChgFacEngagementPts = 5
-  ChangeMoneyPool = 20
+  ChangeUnitPool = $uni_RED_Div50;2
+  ChangeUnitPool = $uni_RED_Cav30;2
 
 EndEvent
 
@@ -2817,8 +2593,7 @@ StartEvent = evt_nam_WHI_AutonomyRecognition_Generate|1|0|NULL|NULL|$Rostov|NULL
 
 Conditions
 
-  MinDate = 1919/01/16
-  EvalEvent = evt_nam_WHI_KrasnovRetires;=;0
+  EvalEvent = evt_nam_CMN_WrangelInCommand;=;1
 
 Actions
 
@@ -2849,7 +2624,7 @@ StartEvent = evt_nam_WHI_AutonomyRecognition_AIActivate|999|0|NULL|NULL|NULL|NUL
 
 Conditions
 
-  MinDate = 1918/12/01
+  EvalEvent = evt_nam_CMN_WrangelInCommand;=;1
   CheckAILevel = 1
   ActorEnabled = $gmaOptionPol;WHI_AutonomyRecognition
   CanPayOption = $gmaOptionPol;WHI_AutonomyRecognition;125
@@ -2887,13 +2662,13 @@ StartEvent = evt_nam_WHI_AutonomyRecognition_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
-  MinDate = 1918/12/01
+  EvalEvent = evt_nam_CMN_WrangelInCommand;=;1
   EvalEvent = evt_nam_WHI_AutonomyRecognition_Generate;=;1
 
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  SetActorPool = $gmaOptionPol;MaxUse;1;EP;20;ImageID;Opt_WHI_WH3_Alash-orda.png;Title;opt_title_WHI_AutonomyRecognition;MsgString;opt_desc_WHI_AutonomyRecognition;ToolString;opt_hint_WHI_AutonomyRecognition;SubType;WHI_AutonomyRecognition;SParam1;WHI
+  SetActorPool = $gmaOptionPol;MaxUse;1;EP;20;Morale;10;ImageID;Opt_WHI_WH3_AutonomyRecognition.png;Title;opt_title_WHI_AutonomyRecognition;MsgString;opt_desc_WHI_AutonomyRecognition;ToolString;opt_hint_WHI_AutonomyRecognition;SubType;WHI_AutonomyRecognition;SParam1;WHI
 
 EndEvent
 
@@ -2911,7 +2686,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  SetActorPool = $gmaOptionPol;MaxUse;1;EP;20;ImageID;Opt_WHI_WH3_Alash-orda.png;Title;opt_title_WH3_AutonomyRecognition;MsgString;opt_desc_WH3_AutonomyRecognition;ToolString;opt_hint_WH3_AutonomyRecognition;SubType;WH3_AutonomyRecognition;SParam1;WH3
+  SetActorPool = $gmaOptionPol;MaxUse;1;EP;20;Morale;10;ImageID;Opt_WHI_WH3_AutonomyRecognition.png;Title;opt_title_WH3_AutonomyRecognition;MsgString;opt_desc_WH3_AutonomyRecognition;ToolString;opt_hint_WH3_AutonomyRecognition;SubType;WH3_AutonomyRecognition;SParam1;WH3
 
 EndEvent
 
@@ -2922,8 +2697,6 @@ SelectFaction = $WHI
 StartEvent = evt_nam_WHI_AutonomyRecognition_Tracker|0|0|NULL|NULL|NULL|NULL
 
 Conditions
-
-  MinDate = 1918/12/01
 
 Actions
 
@@ -2951,7 +2724,7 @@ StartEvent = evt_nam_WHI_AutonomyRecognition_Check|999|0|NULL|NULL|NULL|NULL
 
 Conditions
 
-  EvalEvent = evt_nam_WHI_KrasnovRetires;=;0
+  EvalEvent = evt_nam_CMN_WrangelInCommand;=;1
   CheckOption = $gmaOptionPol;WHI_AutonomyRecognition;=;1
   CanPayOption = $gmaOptionPol;WHI_AutonomyRecognition
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Check;=;0
@@ -2972,15 +2745,16 @@ SelectFaction = $WHI
 
 SelectFaction = $WHI
 
-  ChangeLoyaltyFac = $Area_Taurida;15
+  SetFacRelationships = COS;100
   ChangeLoyaltyFac = $Area_Don;15
   ChangeLoyaltyFac = $Area_Kuban;15
   ChangeLoyaltyFac = $Area_Terek;15
   ChangeLoyaltyFac = $Area_Caspian;15
-  AddRgnDecisionExcl = $Area_Taurida
   AddRgnDecisionExcl = $Area_Don
   AddRgnDecisionExcl = $Area_Kuban
   AddRgnDecisionExcl = $Area_Terek
+  AddRgnDecisionExcl = $Area_Samarkand
+  AddRgnDecisionExcl = $Area_Syr-Darinsk
   AddRgnDecisionExcl = $Area_Caspian
 
 AddSubFacRgn = DON;$Novocherkassk
@@ -3104,6 +2878,7 @@ SelectFaction = $RED
 
 SelectFaction = $WH3
 
+  SetFacRelationships = COS;100
   SetActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_AutonomyRecognition
   SetEvtOccurs = evt_nam_WH3_AutonomyRecognition_Tracker;CuOccurs;1
 
@@ -3564,36 +3339,13 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $WHI
-SelectRegion = $Sevastopol
-
-StartEvent = evt_nam_WHI_Autonomy_Taurida|999|1|NULL|NULL|$Sevastopol|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
-  EvalUnqUnit = A.I. Denikin;NOT
-  EvalRgnOwned = $Sevastopol
-
-Actions
-
-  ChangeLoyaltyFac = $Area_Taurida;10
-  ChgFacEngagementPts = 1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
 SelectRegion = $Rostov
 
 StartEvent = evt_nam_WHI_Autonomy_Don|999|1|NULL|NULL|$Rostov|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
-  EvalUnqUnit = A.I. Denikin;NOT
   EvalRgnOwned = $Rostov
 
 Actions
@@ -3612,9 +3364,7 @@ StartEvent = evt_nam_WHI_Autonomy_Kuban|999|1|NULL|NULL|$Ekaterinodar|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
-  EvalUnqUnit = A.I. Denikin;NOT
   EvalRgnOwned = $Ekaterinodar
 
 Actions
@@ -3633,9 +3383,7 @@ StartEvent = evt_nam_WHI_Autonomy_Terek|999|1|NULL|NULL|$Grozny|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
-  EvalUnqUnit = A.I. Denikin;NOT
   EvalRgnOwned = $Grozny
 
 Actions
@@ -3740,9 +3488,7 @@ StartEvent = evt_nam_WHI_Autonomy_Caspian|999|1|NULL|NULL|$Achkhabad|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
-  EvalUnqUnit = A.I. Denikin;NOT
   EvalRgnOwned = $Achkhabad
 
 Actions
@@ -3798,48 +3544,11 @@ NULL ==========================================================================
 
 SelectFaction = $WHI
 
-StartEvent = evt_nam_WHI_Autonomy_troops_Taurida|12|1|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
-  EvalUnqUnit = A.I. Denikin;NOT
-  Probability = 50
-
-Actions
-
-  AddToRegList = $Sevastopol;$Simferopol;$Feodosia;$Kertch;$Eupatoria
-  PickFromRegList = NotEnemy
-  GenMsg
-
-SelectFaction = $WHI
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    SetName = Tatar Autonomist Volunteers
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Rgt3
-    SetName = Tatar Autonomist Volunteers
-  Apply
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
 StartEvent = evt_nam_WHI_Autonomy_troops_Don|12|1|NULL|NULL|NULL|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
-  EvalUnqUnit = A.I. Denikin;NOT
   Probability = 50
 
 Actions
@@ -3872,9 +3581,7 @@ StartEvent = evt_nam_WHI_Autonomy_troops_Kuban|12|1|NULL|NULL|NULL|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
-  EvalUnqUnit = A.I. Denikin;NOT
   Probability = 50
 
 Actions
@@ -3907,9 +3614,7 @@ StartEvent = evt_nam_WHI_Autonomy_troops_Terek|12|1|NULL|NULL|NULL|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
-  EvalUnqUnit = A.I. Denikin;NOT
   Probability = 50
 
 Actions
@@ -4927,6 +4632,7 @@ Conditions
 
 Actions
 
+
 SelectFaction = $WH3
 
   ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_MakeDirectory
@@ -4940,6 +4646,7 @@ StartEvent = evt_nam_WHI_HelpAlly_AIActivate|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   MinDate = 1918/06/10
+  EvalFacRelationships = WH3;=;100
   CheckAILevel = 1
   CanPayOption = $gmaOptionPol;WHI_HelpAlly;200
   ActorEnabled = $gmaOptionPol;WHI_HelpAlly
@@ -4962,6 +4669,7 @@ StartEvent = evt_nam_WHI_HelpAlly_ON|1|0|NULL|NULL|NULL|NULL
 Conditions
 
   MinDate = 1918/06/01
+  EvalFacRelationships = WH3;=;100
 
 Actions
 
@@ -5007,6 +4715,7 @@ StartEvent = evt_nam_WHI_HelpAlly_Regen|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   MinDate = 1918/06/01
+  EvalFacRelationships = WH3;=;100
   ActorDisabled = $gmaOptionPol;WHI_HelpAlly
 
 Actions
@@ -5023,6 +4732,7 @@ StartEvent = evt_nam_WH3_HelpAlly_AIActivate|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   MinDate = 1918/06/10
+  EvalFacRelationships = WHI;=;100
   CheckAILevel = 1
   CanPayOption = $gmaOptionPol;WH3_HelpAlly;200
   ActorEnabled = $gmaOptionPol;WH3_HelpAlly
@@ -5045,6 +4755,7 @@ StartEvent = evt_nam_WH3_HelpAlly_ON|1|0|NULL|NULL|NULL|NULL
 Conditions
 
   MinDate = 1918/06/01
+  EvalFacRelationships = WHI;=;100
 
 Actions
 
@@ -5090,6 +4801,7 @@ StartEvent = evt_nam_WH3_HelpAlly_Regen|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   MinDate = 1918/06/01
+  EvalFacRelationships = WHI;=;100
   ActorDisabled = $gmaOptionPol;WH3_HelpAlly
 
 Actions
@@ -5372,7 +5084,7 @@ Actions
 
 SelectFaction = $WH3
 
-  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;VolgaCorps
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_VolgaCorps
 
 EndEvent
 
@@ -5386,6 +5098,125 @@ Actions
 
 SelectFaction = $WH3
 
-  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;VolgaCorps
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_VolgaCorps
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+StartEvent = evt_nam_WHI_ExpressDistrustToDenikin_Generate|1|0|NULL|NULL|$Ufa|NULL
+
+Conditions
+
+  EvalUnqUnit = A.I. Denikin
+  EvalEvent = evt_nam_WHI_KrasnovRetires;=;1
+
+Actions
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ExpressDistrustToDenikin_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = A.I. Denikin
+  EvalEvent = evt_nam_WHI_KrasnovRetires;=;1
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WHI_ExpressDistrustToDenikin
+  CanPayOption = $gmaOptionPol;WHI_ExpressDistrustToDenikin;125
+  Probability = 5
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WHI_ExpressDistrustToDenikin;1
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ExpressDistrustToDenikin_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_ExpressDistrustToDenikin_Generate;=;1
+  EvalUnqUnit = A.I. Denikin
+  EvalEvent = evt_nam_WHI_KrasnovRetires;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionPol;MaxUse;1;EP;20;Morale;30;ImageID;Opt_WHI_ExpressDistrustToDenikin.png;Title;opt_title_WHI_ExpressDistrustToDenikin;MsgString;opt_desc_WHI_ExpressDistrustToDenikin;ToolString;opt_hint_WHI_ExpressDistrustToDenikin;SubType;WHI_ExpressDistrustToDenikin;SParam1;WHI
+
+EndEvent
+
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ExpressDistrustToDenikin_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ExpressDistrustToDenikin_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = A.I. Denikin
+  EvalEvent = evt_nam_WHI_KrasnovRetires;=;1
+  CheckOption = $gmaOptionPol;WHI_ExpressDistrustToDenikin;=;1
+  CanPayOption = $gmaOptionPol;WHI_ExpressDistrustToDenikin
+  EvalEvent = evt_nam_WHI_ExpressDistrustToDenikin_Check;=;0
+
+Actions
+
+  PayOption = $gmaOptionPol;WHI_ExpressDistrustToDenikin
+  GenTextMsg  = opt_notify_WHI_ExpressDistrustToDenikin;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  GenTextMsg  = opt_notify_WHI_ExpressDistrustToDenikin;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  GenTextMsg  = opt_notify_RED_ExpressDistrustToDenikin;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_ExpressDistrustToDenikin
+
+SelectFaction = $WHI
+
+  SetEvtOccurs = evt_nam_WHI_ExpressDistrustToDenikin_Tracker;CuOccurs;1
+
+SelectFaction = $WHI
+
+SelectFaction = $WHI
+
+  SelUnqSubUnit = A.I. Denikin
+  RemoveCuSubUnit = NULL
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ExpressDistrustToDenikin_Option_Removed|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = A.I. Denikin;NOT
+
+Actions
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_ExpressDistrustToDenikin
 
 EndEvent

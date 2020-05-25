@@ -14,13 +14,13 @@ Actions
 
 SelectFaction = $WHI
   SelectSubUnits = Area $Theater_Southern;Models $mdl_GBR_Sup
-  AlterCuSubUnit = ApplyToList;probability 75;Model $mdl_WHI_Sup
+  AlterCuSubUnit = ApplyToList;Model $mdl_WHI_Sup
 
 SelectFaction = $WH3
   SelectSubUnits = Area $Theater_Central_Asia;Models $mdl_GBR_Sup
-  AlterCuSubUnit = ApplyToList;probability 75;Model $mdl_WHI_Sup
+  AlterCuSubUnit = ApplyToList;Model $mdl_WHI_Sup
   SelectSubUnits = Area $Theater_Eastern;Models $mdl_GBR_Sup
-  AlterCuSubUnit = ApplyToList;probability 100;Model $mdl_WHI_Sup
+  AlterCuSubUnit = ApplyToList;Model $mdl_WHI_Sup
 
 SelectFaction = $WHI
   SelectSubUnits = FactionTags GBR
@@ -31,6 +31,20 @@ SelectFaction = $WH3
   AlterCuSubUnit = ApplyToList;Kill
 
 SelectFaction = $WHI
+  SelectSubUnits = Area $Theater_Northern;FactionTags FRA
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags FRA
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Area $Theater_Belarus;FactionTags FRA
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Area $Theater_Volga;FactionTags FRA
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Area $Theater_Ural;FactionTags FRA
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Area $Theater_Finland;FactionTags FRA
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
   SelectSubUnits = Area $Theater_Northern;FactionTags FRA
   AlterCuSubUnit = ApplyToList;Kill
   SelectSubUnits = Area $Theater_Central_Russia;FactionTags FRA
@@ -105,13 +119,13 @@ Conditions
 
 Actions
 
-SelectFaction = $WHI
+SelectFaction = $WH3
   SelectSubUnits = Area $Theater_Northern;Models $mdl_USA_Sup
-  AlterCuSubUnit = ApplyToList;probability 75;Model $mdl_WHI_Sup
+  AlterCuSubUnit = ApplyToList;Model $mdl_WHI_Sup
 
 SelectFaction = $WH3
   SelectSubUnits = Area $Theater_Eastern;Models $mdl_USA_Sup
-  AlterCuSubUnit = ApplyToList;probability 100;Model $mdl_WHI_Sup
+  AlterCuSubUnit = ApplyToList;Model $mdl_WHI_Sup
 
 SelectFaction = $WHI
   SelectSubUnits = FactionTags USA
@@ -122,9 +136,6 @@ SelectFaction = $WH3
   AlterCuSubUnit = ApplyToList;Kill
 
 EndEvent
-
-SelectFaction = $CMN
-SelectRegion = $Arkhangelsk
 
 SelectFaction = $CMN
 SelectRegion = $Arkhangelsk
@@ -136,4 +147,3 @@ Conditions
 Actions
 
 EndEvent
-

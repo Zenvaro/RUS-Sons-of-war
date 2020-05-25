@@ -322,7 +322,7 @@ SelectRegion = $Wallachia
   ChangeRgnOwner = WHI
 
 SelectFaction = $ROM
-SelectRegion = $Iasi
+SelectRegion = $Chisinau
 
   CreateGroup
     Posture = $Defensive
@@ -352,67 +352,6 @@ SelectRegion = $Iasi
     SetType = $uni_ROM_Negulescu1
     SetName = J. Negulescu
   Apply
-  CreateUnit
-    SetType = $uni_ROM_Cav1
-    SUFlavorName = 1st Cavalry Rgt|2nd Cavalry Rgt|3rd Cavalry Rgt
-    SetLevel = 1
-    SetName = Romanian Cavalry
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Art1
-    SUFlavorName = 1st Artillery Rgt
-    SetLevel = 1
-    SetName = Army Artillery
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = Army Supply
-  Apply
-
-SelectFaction = $ROM
-SelectRegion = $Iasi
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 4
-    InCS = 0
-    SetName = Moldavia Corps
-  Apply
-  CreateUnit
-    GMEParam = 3
-    SetType = $uni_ROM_Grigerescu2
-    FlavorName = Moldavia Corps
-    SetName = Grigerescu
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SUFlavorName = 9th Infantry Rgt|10th Infantry Rgt|11th Infantry Rgt|12th Infantry Rgt|Division Bty
-    SetName = 14th Infantry Division
-  Apply
-  CreateUnit
-    SetCommit = 3
-    SetType = $uni_ROM_Div1
-    SUFlavorName = 13th Infantry Rgt|14th Infantry Rgt|15th Infantry Rgt|16th Infantry Rgt|Division Bty
-    SetName = 15th Infantry Division
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Cav1
-    SUFlavorName = 4th Cavalry Rgt|5th Cavalry Rgt|6th Cavalry Rgt
-    SetName = Moldavia Bde
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Art1
-    SUFlavorName = 2nd Artillery Rgt
-    SetName = Moldavia Artillery
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = Moldavia Supply
-  Apply
-
 
 SelectFaction = $ROM
 SelectRegion = $Chisinau
@@ -420,42 +359,47 @@ SelectRegion = $Chisinau
     Posture = $Defensive
     SetKind = $Land
     Entranch = 4
-    InCS = 0
+    InCS = 1
     SetName = Bessarabia Corps
   Apply
   CreateUnit
-    GMEParam = 3
     SetType = $uni_ROM_Averescu2
-    FlavorName = Bessarabia Corps
     SetName = Averescu
   Apply
   CreateUnit
-    SetType = $uni_ROM_Div1
-    SUFlavorName = 1st Infantry Rgt|2nd Infantry Rgt|3rd Infantry Rgt|4th Infantry Rgt|Division Bty
+    SetType = $uni_ROM_Grigerescu2
+    SetName = Grigerescu
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Div0
     SetName = 8th Infantry Division
   Apply
   CreateUnit
-    SetCommit = 3
     SetType = $uni_ROM_Div1
-    SUFlavorName = 5th Infantry Rgt|6th Infantry Rgt|7th Infantry Rgt|8th Infantry Rgt|Division Bty
-    SetName = 11th Infantry Division
+    SetName = 9th Infantry Division
   Apply
   CreateUnit
-    SetType = $uni_ROM_Cav1
-    SUFlavorName = 7th Cavalry Rgt|8th Cavalry Rgt|9th Cavalry Rgt
-    SetName = Bessarabia Bde
+    SetType = $uni_ROM_Div1
+    SetName = 10th Infantry Division
   Apply
   CreateUnit
-    SetType = $uni_ROM_Art1
-    SUFlavorName = 3rd Artillery Rgt
-    SetName = Bessarabia Artillery
+    SetType = $uni_ROM_Bde1
+    SetName = 1st Cavalry Division
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Bde1
+    SetName = 2nd Cavalry Division
   Apply
   CreateUnit
     SetType = $uni_ROM_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
     SetName = Bessarabia Supply
   Apply
-
+  CreateUnit
+    SetType = $uni_ROM_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = Bessarabia Supply
+  Apply
 
 SelectFaction = $ROM
 SelectRegion = $Bucuresti
@@ -492,31 +436,18 @@ SelectRegion = $Bucuresti
     SetName = Zadik
   Apply
   CreateUnit
-    SetType = $uni_ROM_Div1
-    SUFlavorName = 17th Infantry Rgt|18th Infantry Rgt|19th Infantry Rgt|20th Infantry Rgt|Division Bty
-    SetName = 6th Infantry Division
+    SetType = $uni_ROM_Div0
+    SetName = 1st Infantry Division
   Apply
   CreateUnit
-    SetType = $uni_ROM_Div1
-    SUFlavorName = 21st Infantry Rgt|22nd Infantry Rgt|23rd  Infantry Rgt|24th Infantry Rgt|Division Bty
+    SetType = $uni_ROM_Div0
     SetName = 7th Infantry Division
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Cav1
-    SUFlavorName = 10th Cavalry Rgt|11th Cavalry Rgt|12th Cavalry Rgt
-    SetName = Bucuresti Bde
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Art1
-    SUFlavorName = 4th Artillery Rgt
-    SetName = Bucuresti Artillery
   Apply
   CreateUnit
     SetType = $uni_ROM_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
     SetName = Bucaresti Supply
   Apply
-
 
 SelectFaction = $ROM
 SelectRegion = $Constanta
@@ -538,7 +469,6 @@ SelectRegion = $Constanta
     SUFlavorName = Marmara
     SetName = Transport Squadron
   Apply
-
 
 SelectFaction = $ROM
 SelectRegion = $Ismail
@@ -595,147 +525,6 @@ SelectRegion = $Galati
     SetName = Galati Ferries
   Apply
 
-
-SelectFaction = $ROM
-SelectRegion = $Bucuresti
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 1
-    SetName = Bucuresti Garrison
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SUFlavorName = 25th Infantry Rgt|26th Infantry Rgt|27th Infantry Rgt|28th Infantry Rgt|Division Bty
-    SetName = 9th Division
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SetName = 17th Division
-  Apply
-
-
-SelectFaction = $ROM
-SelectRegion = $Wallachia
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 1
-    SetName = Wallachia Garrison
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SUFlavorName = 33rd Infantry Rgt|34th Infantry Rgt|35th Infantry Rgt|36th Infantry Rgt|Division Bty
-    SetName = 10th Division
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SetName = 16th Division
-  Apply
-
-
-SelectFaction = $ROM
-SelectRegion = $Ismail
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 0
-    SetName = Ismail Garrison
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Bde0
-    SUFlavorName = 37th Infantry Rgt|38th Infantry Rgt|Ismail Bty
-    SetName = Ismail Garrison
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SetName = 12th Division
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SetName = 6th Division
-  Apply
-
-
-SelectFaction = $ROM
-SelectRegion = $Galati
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 1
-    SetName = Galati Garrison
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Bde0
-    SUFlavorName = 37th Infantry Rgt|38th Infantry Rgt|Ismail Bty
-    SetName = Galati Garrison
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SetName = 13th Division
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SetName = 5th Division
-  Apply
-
-
-SelectFaction = $ROM
-SelectRegion = $Braila
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 1
-    SetName = Braila Garrison
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Bde0
-    SUFlavorName = 37th Infantry Rgt|38th Infantry Rgt|Ismail Bty
-    SetName = Braila Garrison
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SetName = 1st Division
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SetName = 4th Division
-  Apply
-
-SelectFaction = $ROM
-SelectRegion = $Constanta
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 0
-    SetName = Constanta Garrison
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Bde0
-    SUFlavorName = 37th Infantry Rgt|38th Infantry Rgt|Ismail Bty
-    SetName = Constanta Garrison
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SetName = 2nd Division
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SetName = 3rd Division
-  Apply
-
 SelectFaction = $ROM
 
   ChgRgnDecisionFP = $rgdTcheka;0
@@ -746,94 +535,30 @@ SelectFaction = $ROM
 
 SelectFaction = $ROM
 
-  ChangeUnitPool = $uni_ROM_MG0;10
-  ChangeUnitPool = $uni_ROM_Div1;10
-  ChangeUnitPool = $uni_ROM_Cav1;2
-  ChangeUnitPool = $uni_ROM_Sup1;30
-  ChangeUnitPool = $uni_ROM_Art1;5
+  ChangeUnitPool = $uni_ROM_Div0;15
+  ChangeUnitPool = $uni_ROM_Bde0;2
+  ChangeUnitPool = $uni_ROM_Mil;20
+  ChangeUnitPool = $uni_ROM_Cav1;5
+  ChangeUnitPool = $uni_ROM_Sup1;20
+  ChangeUnitPool = $uni_ROM_Art1;2
+  ChangeUnitPool = $uni_ROM_Art3;2
+  ChangeUnitPool = $uni_ROM_Art5;2
   ChangeUnitPool = $uni_ROM_Hq1;1
   ChangeUnitPool = $uni_ROM_GB1;2
   ChangeUnitPool = $uni_ROM_TR1;2
   ChangeUnitPool = $uni_ROM_RT1;4
   ChangeUnitPool = $uni_ROM_RT2;5
-  ChangeUnitPool = $uni_ROM_Rgt2;1
-  ChangeUnitPool = $uni_ROM_Cav2;6
-  ChangeUnitPool = $uni_ROM_Gar0;1
-  ChangeUnitPool = $uni_ROM_Mon;6
-  ChangeUnitPool = $uni_ROM_Mar;5
-  ChangeUnitPool = $uni_ROM_Art2;4
-  ChangeUnitPool = $uni_ROM_Art3;3
-  ChangeUnitPool = $uni_ROM_Art4;2
-  ChangeUnitPool = $uni_ROM_Art5;3
+  ChangeUnitPool = $uni_ROM_Mon;8
+  ChangeUnitPool = $uni_ROM_Mar;4
   ChangeUnitPool = $uni_ROM_Bty;1
   ChangeUnitPool = $uni_ROM_Sie;1
   ChangeUnitPool = $uni_ROM_Coa;1
-  ChangeUnitPool = $uni_ROM_Amc1;1
-  ChangeUnitPool = $uni_ROM_Amt1;3
-  ChangeUnitPool = $uni_ROM_Air1;1
-  ChangeUnitPool = $uni_ROM_Air2;1
-  ChangeUnitPool = $uni_ROM_Air3;1
+  ChangeUnitPool = $uni_ROM_Amc1;2
+  ChangeUnitPool = $uni_ROM_Amt1;5
   ChangeUnitPool = $uni_ROM_Sig;2
   ChangeUnitPool = $uni_ROM_Med;2
   ChangeUnitPool = $uni_ROM_Eng;2
   ChangeUnitPool = $uni_ROM_Tnk1;2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $ROM
-SelectRegion = $Bucuresti
-
-StartEvent = evt_nam_Renforts_ROM_RomanianReinforcements|1|1|NULL|NULL|$Bucuresti|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-
-Actions
-
-SelectFaction = $ROM
-SelectRegion = $Bucuresti
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 2
-    InCS = 0
-    FixType = 0
-    SetName = 16th Infantry Division
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Div1
-    SUFlavorName = 29th Infantry Rgt|30th Infantry Rgt|31st Infantry Rgt|32nd Infantry Rgt|Division Bty
-    SetName = 16th Infantry Division
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Cav1
-    SUFlavorName = 13th Cavalry Rgt|14th Cavalry Rgt|15th Cavalry Rgt
-    SetName = Reserve Cavalry
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Art1
-    SUFlavorName = 5th Artillery Rgt
-    SetName = Reserve Artillery
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 16thDivision Supply
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = Reserve Supply
-  Apply
-  CreateUnit
-    SetType = $uni_ROM_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = Reserve Supply
-  Apply
 
 EndEvent
 

@@ -67,7 +67,6 @@ StartEvent = evt_nam_RED_More_Money_Regen|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   MinDate = 1918/06/01
-  Probability = 50
   ActorDisabled = $gmaOptionVar;RED_More_Money
 
 Actions
@@ -298,7 +297,6 @@ Conditions
   ActorEnabled = $gmaOptionVar;RED_IvanovoTankFactory
   EvalMoney = >=;50
   EvalWSU = >=;30
-  Probability = 50
 
 Actions
 
@@ -461,7 +459,6 @@ StartEvent = evt_nam_RED_IvanovoTankFactory_RplProduction|5|1|NULL|NULL|$Ivanovo
 Conditions
 
   MinDate = 1920/01/01
-  Probability = 50
   EvalRgnOwned = $Moscow
   EvalRgnOwned = $Ivanovo
   SelectSubUnits = Models $mdl_RED_Amt4;Region $Moscow
@@ -498,7 +495,6 @@ Conditions
   EvalWSU = >=;30
   CheckAILevel = 1
   ActorEnabled = $gmaOptionVar;RED_Nizhniy_NovgorodTankFactory
-  Probability = 50
 
 Actions
 
@@ -660,7 +656,6 @@ StartEvent = evt_nam_RED_Nizhniy_NovgorodTankFactory_RplProduction|5|1|NULL|NULL
 Conditions
 
   MinDate = 1920/01/01
-  Probability = 50
   EvalRgnOwned = $Moscow
   EvalRgnOwned = $Nizhniy Novgorod
   SelectSubUnits = Models $mdl_RED_Amt4;Region $Moscow

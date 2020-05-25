@@ -59,7 +59,6 @@ SupMovePen = 25
 SupCbtPen = 75
 Ability0 = $Signal_Cmd
 Ability1 = $Artillerist
-Ability2 = $Romanian
 VPValue = 1
 POLValue = 0
 Money = 10

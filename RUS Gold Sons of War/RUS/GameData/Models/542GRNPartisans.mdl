@@ -1,3 +1,4 @@
+
 UID = 542
 NationTag = GRN
 Name = Peasants
@@ -19,8 +20,8 @@ ROF = 1
 Protection = 0
 TQ = 2
 Assault = 1
-Hits = 20
-MenPerHit = 50
+Hits = 5
+MenPerHit = 200
 HorsesPerHit = 0
 VehiclesPerHit = 0
 GunsPerHit = 0
@@ -58,7 +59,7 @@ ShareSupply = 0
 SupHitPen = 10
 SupMovePen = 15
 SupCbtPen = 25
-Attributes = *partisan*|*WeatherResist1* 100
+Attributes = *partisan*|*WeatherResist1* 100|#insurrectionals#
 Ability0 = $Ranger_Survival
 Ability1 = $Insurrectional_Forces
 VPValue = 1

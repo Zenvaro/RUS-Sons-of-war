@@ -11,7 +11,6 @@ Conditions
 
 Actions
 
-
 SelectFaction = $RED
   ChgRgnDecisionFP = $rgdTcheka;1
   ChgRgnDecisionFP = $rgdRequisitions;1
@@ -503,26 +502,6 @@ SelectRegion = $Baku
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
     SetName = 1st Division Supply
   Apply
-  CreateUnit
-    SetType = $uni_AZR_Art1
-    SUFlavorName = 1st Light Artillery Div
-    SetName = 1st Light Artillery Div
-  Apply
-  CreateUnit
-    SetType = $uni_AZR_Art2
-    SUFlavorName = Howitzer Bty
-    SetName = Howitzer Bty
-  Apply
-  CreateUnit
-    SetType = $uni_AZR_Rgt0
-    SUFlavorName = 7th Shirvansk Infantry Rgt
-    SetName = 7th Shirvansk Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_AZR_Rgt0
-    SUFlavorName = 8th Agdamsk Infantry Rgt
-    SetName = 8th Agdamsk Infantry Rgt
-  Apply
 
 SelectFaction = $AZR
 SelectRegion = $Baku
@@ -583,14 +562,14 @@ SelectRegion = $Baku
     SetName = 3rd Giandzha Infantry Rgt
   Apply
   CreateUnit
-    SetType = $uni_AZR_Mil1
-    SUFlavorName = Kurdi Rifle Bty
-    SetName = Kurdi Rifle Bty
+    SetType = $uni_AZR_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
   Apply
   CreateUnit
-    SetType = $uni_AZR_Cav1
-    SUFlavorName = 4th Kurdi Cavalry Rgt
-    SetName = 4th Kurdi Cavalry Rgt
+    SetType = $uni_AZR_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
   Apply
 
 SelectFaction = $AZR
@@ -623,7 +602,11 @@ SelectRegion = $Elizavetpol
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
     SetName = 2nd Division Supply
   Apply
-
+  CreateUnit
+    SetType = $uni_AZR_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 2nd Division Supply
+  Apply
 
 SelectFaction = $ARM
 SelectRegion = $Erevan
@@ -668,6 +651,30 @@ SelectRegion = $Erevan
     SetName = A.S. Ter-Pogosian
   Apply
   CreateUnit
+    SetType = $uni_ARM_Par1
+    SetName = Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Par1
+    SetName = Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Par1
+    SetName = Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Par1
+    SetName = Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Par2
+    SetName = Partisans Cavalry
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Art1
+    SetName = Partisans Artillery
+  Apply
+  CreateUnit
     SetType = $uni_ARM_Rgt0
     SetName = Alahansk Infantry Rgt
   Apply
@@ -696,6 +703,11 @@ SelectRegion = $Erevan
     SetType = $uni_ARM_Mon
     SUFlavorName = 2nd Mountain
     SetName = 2nd Mountain Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ARM_Sup
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = Armenian Supply
   Apply
   CreateUnit
     SetType = $uni_ARM_Sup
@@ -920,11 +932,6 @@ SelectRegion = $Tiflis
     SetName = G. Mazhniashvili
   Apply
   CreateUnit
-    SetType = $uni_RED_Sie
-    SUFlavorName = 1st Georgina Mortir Dvn
-    SetName = 1st Georgian Mortir Dvn
-  Apply
-  CreateUnit
     SetType = $uni_GEO_Rgt0
     SUFlavorName = 1st Georgian Rifle Rgt
     SetName = 1st Georgian Rifle Rgt
@@ -988,40 +995,6 @@ SelectRegion = $Batumi
   Apply
 
 SelectFaction = $GEO
-SelectRegion = $Batumi
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 2
-    InCS = 0
-    FixType = 1
-    SetName = Batumi People's Guard
-  Apply
-  CreateUnit
-    SetType = $uni_GEO_Mil1
-    SUFlavorName = People's Btn|People's Btn
-    SetName = 3rd People's Guard
-  Apply
-
-SelectFaction = $GEO
-SelectRegion = $Sukhumi
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 2
-    InCS = 0
-    FixType = 1
-    SetName = Frontier Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_GEO_Mil1
-    SUFlavorName = 10th Georgian
-    SetName = Sukhumi Frontier Rgt
-  Apply
-
-
-SelectFaction = $GEO
 SelectRegion = $Gori
 
   CreateGroup
@@ -1049,23 +1022,6 @@ SelectRegion = $Gori
   Apply
 
 SelectFaction = $GEO
-SelectRegion = $Gori
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 2
-    InCS = 0
-    FixType = 1
-    SetName = Gori People's Guard
-  Apply
-  CreateUnit
-    SetType = $uni_GEO_Mil1
-    SUFlavorName = People's Btn|People's Btn
-    SetName = 4th People's Guard
-  Apply
-
-SelectFaction = $GEO
 SelectRegion = $Tiflis
   CreateGroup
     Posture = $Defensive
@@ -1081,13 +1037,11 @@ SelectRegion = $Tiflis
     SetName = V. Jugheli
   Apply
   CreateUnit
-    SetType = $uni_GEO_Mil1
-    SUFlavorName = People's Btn|People's Btn
+    SetType = $uni_GEO_Par1
     SetName = 1st People's Guard
   Apply
   CreateUnit
-    SetType = $uni_GEO_Mil1
-    SUFlavorName = People's Btn|People's Btn
+    SetType = $uni_GEO_Par1
     SetName = 2nd People's Guard
   Apply
   CreateUnit
@@ -1135,6 +1089,12 @@ SelectRegion = $Kazbek
     SetName = 3rd Mountain Rgt
   Apply
   CreateUnit
+    SetType = $uni_GEO_Mon
+    SUFlavorName = 4th Mountain
+    SetLevel = 1
+    SetName = 4th Mountain Rgt
+  Apply
+  CreateUnit
     SetType = $uni_GEO_Art5
     SUFlavorName = Mountain Division Arty
     SetLevel = 1
@@ -1154,129 +1114,69 @@ SelectRegion = $Kazbek
 
 SelectFaction = $ARM
 
-  ChangeUnitPool = $uni_ARM_MG0;10
+  ChangeUnitPool = $uni_ARM_MG0;8
   ChangeUnitPool = $uni_ARM_Mon;8
-  ChangeUnitPool = $uni_ARM_Cav2;4
-  ChangeUnitPool = $uni_ARM_Mil1;12
-  ChangeUnitPool = $uni_ARM_Div2;4
+  ChangeUnitPool = $uni_ARM_Cav2;8
+  ChangeUnitPool = $uni_ARM_Mil1;8
+  ChangeUnitPool = $uni_ARM_Div2;2
   ChangeUnitPool = $uni_ARM_Div3;1
-  ChangeUnitPool = $uni_ARM_Art0;3
-  ChangeUnitPool = $uni_ARM_Art1;3
-  ChangeUnitPool = $uni_ARM_Art2;3
-  ChangeUnitPool = $uni_ARM_Art3;3
-  ChangeUnitPool = $uni_ARM_Art4;3
+  ChangeUnitPool = $uni_ARM_Art0;5
+  ChangeUnitPool = $uni_ARM_Art1;5
+  ChangeUnitPool = $uni_ARM_Art2;5
+  ChangeUnitPool = $uni_ARM_Art3;5
+  ChangeUnitPool = $uni_ARM_Art4;5
+  ChangeUnitPool = $uni_ARM_Art5;5
   ChangeUnitPool = $uni_ARM_Eng;5
   ChangeUnitPool = $uni_ARM_Med;5
   ChangeUnitPool = $uni_ARM_Sig;5
   ChangeUnitPool = $uni_ARM_Sup;20
   ChangeUnitPool = $uni_ARM_Amt;2
   ChangeUnitPool = $uni_ARM_Amc;1
-  ChangeUnitPool = $uni_ARM_Bas1;2
-  ChangeUnitPool = $uni_ARM_Air2;2
-  ChangeUnitPool = $uni_ARM_Hq2;2
+  ChangeUnitPool = $uni_ARM_Hq2;1
 
 SelectFaction = $AZR
 
-  ChangeUnitPool = $uni_AZR_MG0;10
+  ChangeUnitPool = $uni_AZR_MG0;8
   ChangeUnitPool = $uni_AZR_Mon;8
-  ChangeUnitPool = $uni_AZR_Cav2;4
-  ChangeUnitPool = $uni_AZR_Mil1;12
-  ChangeUnitPool = $uni_AZR_Div2;4
+  ChangeUnitPool = $uni_AZR_Cav2;8
+  ChangeUnitPool = $uni_AZR_Mil1;8
+  ChangeUnitPool = $uni_AZR_Div2;2
   ChangeUnitPool = $uni_AZR_Div3;1
-  ChangeUnitPool = $uni_AZR_Art0;3
-  ChangeUnitPool = $uni_AZR_Art1;3
-  ChangeUnitPool = $uni_AZR_Art2;3
-  ChangeUnitPool = $uni_AZR_Art3;3
-  ChangeUnitPool = $uni_AZR_Art4;3
+  ChangeUnitPool = $uni_AZR_Art0;5
+  ChangeUnitPool = $uni_AZR_Art1;5
+  ChangeUnitPool = $uni_AZR_Art2;5
+  ChangeUnitPool = $uni_AZR_Art3;5
+  ChangeUnitPool = $uni_AZR_Art4;5
+  ChangeUnitPool = $uni_AZR_Art5;5
   ChangeUnitPool = $uni_AZR_Eng;5
   ChangeUnitPool = $uni_AZR_Med;5
   ChangeUnitPool = $uni_AZR_Sig;5
   ChangeUnitPool = $uni_AZR_Sup;20
   ChangeUnitPool = $uni_AZR_Amt;2
   ChangeUnitPool = $uni_AZR_Amc;1
-  ChangeUnitPool = $uni_AZR_Bas1;2
-  ChangeUnitPool = $uni_AZR_Air2;2
-  ChangeUnitPool = $uni_AZR_Hq2;2
+  ChangeUnitPool = $uni_AZR_Hq2;1
 
 SelectFaction = $GEO
 
-  ChangeUnitPool = $uni_GEO_MG0;10
+  ChangeUnitPool = $uni_GEO_MG0;8
   ChangeUnitPool = $uni_GEO_Mon;8
-  ChangeUnitPool = $uni_GEO_Cav2;4
-  ChangeUnitPool = $uni_GEO_Mil1;14
-  ChangeUnitPool = $uni_GEO_Div2;4
+  ChangeUnitPool = $uni_GEO_Cav2;8
+  ChangeUnitPool = $uni_GEO_Mil1;24
+  ChangeUnitPool = $uni_GEO_Div2;2
   ChangeUnitPool = $uni_GEO_Div3;1
-  ChangeUnitPool = $uni_GEO_Art0;3
-  ChangeUnitPool = $uni_GEO_Art1;3
-  ChangeUnitPool = $uni_GEO_Art2;3
-  ChangeUnitPool = $uni_GEO_Art3;3
-  ChangeUnitPool = $uni_GEO_Art4;3
+  ChangeUnitPool = $uni_GEO_Art0;5
+  ChangeUnitPool = $uni_GEO_Art1;5
+  ChangeUnitPool = $uni_GEO_Art2;5
+  ChangeUnitPool = $uni_GEO_Art3;5
+  ChangeUnitPool = $uni_GEO_Art4;5
+  ChangeUnitPool = $uni_GEO_Art5;5
   ChangeUnitPool = $uni_GEO_Eng;5
   ChangeUnitPool = $uni_GEO_Med;5
   ChangeUnitPool = $uni_GEO_Sig;5
   ChangeUnitPool = $uni_GEO_Sup;20
   ChangeUnitPool = $uni_GEO_Amt;2
   ChangeUnitPool = $uni_GEO_Amc;1
-  ChangeUnitPool = $uni_GEO_Bas1;2
-  ChangeUnitPool = $uni_GEO_Air2;2
-  ChangeUnitPool = $uni_GEO_Hq2;2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-
-StartEvent = evt_nam_Flavor_CMN_JOIN_Azerbaidjan|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/11/06
-
-Actions
-
-SelectFaction = $AZR
-
-  SelectSubUnits = Area $Area_Azerbaijan;FactionTags CAU WHI
-  AlterCuSubUnit = ApplyToList;SetFixing 0
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-
-StartEvent = evt_nam_Flavor_CMN_JOIN_Georgia|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/11/06
-
-Actions
-
-SelectFaction = $GEO
-
-  SelectSubUnits = Area $Area_Georgia;FactionTags CAU WHI
-  AlterCuSubUnit = ApplyToList;SetFixing 0
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-
-StartEvent = evt_nam_Flavor_CMN_JOIN_Armenia|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/11/06
-
-Actions
-
-SelectFaction = $ARM
-
-  SelectSubUnits = Area $Area_Armenia;FactionTags CAU WHI
-  AlterCuSubUnit = ApplyToList;SetFixing 0
+  ChangeUnitPool = $uni_GEO_Hq2;1
 
 EndEvent
 

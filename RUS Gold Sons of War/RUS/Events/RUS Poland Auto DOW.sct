@@ -1685,7 +1685,7 @@ SelectFaction = $POL
   SetFacRelationships = WH3;-100
   SetFacRelationships = RED;-100
   SetFacRelationships = ANA;-100
-  SetFacRelationships = ROM;50
+  SetFacRelationships = ROM;0
 
 
 SelectFaction = $POL
@@ -4387,10 +4387,6 @@ SelectRegion = $Hungary
 
   ChangeRgnOwner = RED
 
-SelectFaction = $RED
-
-  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakAlliance_ANA
-
 SelectFaction = $POL
 
   SelectSubUnits = FactionTags POL
@@ -4457,27 +4453,27 @@ SelectFaction = $RED
 
 SelectFaction = $WHI
 
-  SelectSubUnits = Area $Area_Mogilev;FactionTags WHI WH4 WH5 DON
+  SelectSubUnits = Area $Area_Mogilev;FactionTags WHI WH4 DON
   AlterCuSubUnit = ApplytoList;Move $Haradok
-  SelectSubUnits = Area $Area_Minsk;FactionTags WHI WH4 WH5 DON
+  SelectSubUnits = Area $Area_Minsk;FactionTags WHI WH4 DON
   AlterCuSubUnit = ApplytoList;Move $Haradok
-  SelectSubUnits = Area $Area_Vilnius;FactionTags WHI WH4 WH5 DON
+  SelectSubUnits = Area $Area_Vilnius;FactionTags WHI WH4 DON
   AlterCuSubUnit = ApplytoList;Move $Haradok
-  SelectSubUnits = Area $Area_Kharkov;FactionTags WHI WH4 WH5 DON
+  SelectSubUnits = Area $Area_Kharkov;FactionTags WHI WH4 DON
   AlterCuSubUnit = ApplytoList;Move $Vasylivka
-  SelectSubUnits = Area $Area_Ekaterinoslav;FactionTags WHI WH4 WH5 DON
+  SelectSubUnits = Area $Area_Ekaterinoslav;FactionTags WHI WH4 DON
   AlterCuSubUnit = ApplytoList;Move $Vasylivka
-  SelectSubUnits = Area $Area_Kherson;FactionTags WHI WH4 WH5 DON
+  SelectSubUnits = Area $Area_Kherson;FactionTags WHI WH4 DON
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
-  SelectSubUnits = Area $Area_Chernigov;FactionTags WHI WH4 WH5 DON
+  SelectSubUnits = Area $Area_Chernigov;FactionTags WHI WH4 DON
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
-  SelectSubUnits = Area $Area_Poltava;FactionTags WHI WH4 WH5 DON
+  SelectSubUnits = Area $Area_Poltava;FactionTags WHI WH4 DON
   AlterCuSubUnit = ApplytoList;Move $Vasylivka
-  SelectSubUnits = Area $Area_Podolsk;FactionTags WHI WH4 WH5 DON
+  SelectSubUnits = Area $Area_Podolsk;FactionTags WHI WH4 DON
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
-  SelectSubUnits = Area $Area_Kiew;FactionTags WHI WH4 WH5 DON
+  SelectSubUnits = Area $Area_Kiew;FactionTags WHI WH4 DON
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
-  SelectSubUnits = Area $Area_Volhynian;FactionTags WHI WH4 WH5 DON
+  SelectSubUnits = Area $Area_Volhynian;FactionTags WHI WH4 DON
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
 
 SelectFaction = $ANA

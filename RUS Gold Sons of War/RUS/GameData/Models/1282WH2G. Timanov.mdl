@@ -1,8 +1,8 @@
 UID = 1282
 NationTag = WH2
-Name = G. Timanov
+Name = M.I. Timonov
 Alias = ldr_WH2_Timanov1
-ShortName = Timanov
+ShortName = Timonov
 Text = $ldr_txt_WH_Timanov
 To&E = Pistol
 Family = $famLeader

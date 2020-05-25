@@ -19,20 +19,22 @@ Conditions
 SelectFaction = $WHI
 
   EvalRgnOwned = $Grozny
-  EvalEvent = evt_nam_WHI_DenikinTaganrogGHQ_created;=;1
+  EvalEvent = evt_nam_WHI_KrasnovRetiress;=;1
 
 Actions
 
 SelectFaction = $COS
 
-  SelectSubUnits = FactionTags TER
+  SelectSubUnits = FactionTags TER WHI
   AlterCuSubUnit = ApplyToList;Kill
 
 SelectFaction = $WHI
 
-  Replacement = WHI;$famLine;6
-  Replacement = RED;$famMedArty;4
-  Replacement = RED;$famCavalry;3
+  Replacement = WHI;$famLine;8
+  Replacement = WHI;$famMedArty;4
+  Replacement = WHI;$famCavalry;4
+  Replacement = TER;$famLine;4
+  Replacement = TER;$famCavalry;2
 
 EndEvent
 
@@ -291,12 +293,12 @@ NULL ==========================================================================
 
 SelectFaction = $CMN
 
-StartEvent = evt_nam_POL_SignAlliance_UKR_Check|1|0|NULL|NULL|NULL|NULL
+StartEvent = evt_nam_POL_SignAlliance_UKR_Check|1|1|NULL|NULL|NULL|NULL
 
 Conditions
 
-  EvalEvent = evt_nam_Renforts_CMN_UkrainianArmy;=;1
   EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Check;=;1
 
 Actions
 
@@ -311,10 +313,6 @@ SelectFaction = $WH3
 SelectFaction = $ANA
 
   SetFacRelationships = UKR;-100
-
-SelectFaction = $CMN
-
-  GenTextMsg  = opt_notify_WHI_SignAlliance_UKR;1;NULL;NULL;NULL
 
 SelectFaction = $WHI
 
@@ -493,6 +491,7 @@ SelectFaction = $WH3
 
   ChgRgnDecisionFP = $rgdReforms;-2
   ChgRgnDecisionFP = $rgdTcheka;8
+  SetFacRelationships = COS;-100
 
 SelectFaction = $WH3
 
@@ -959,8 +958,6 @@ StartEvent = evt_nam_WH3_KolchakBonusActivateLeader|60|0|NULL|NULL|NULL|NULL
 
 Conditions
 
-  MinDate = 1917/12/01
-  MaxDate = 1920/12/30
   EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
   EvalUnqUnit = A.V. Kolchak
   SelectSubUnits = FactionTags WH3 WH2;Families $famLeader
@@ -981,9 +978,6 @@ StartEvent = evt_nam_WHI_KolchakBonusActivateLeader|60|0|NULL|NULL|NULL|NULL
 
 Conditions
 
-  MinDate = 1917/12/01
-  MaxDate = 1920/12/30
-
 SelectFaction = $WH3
 
   EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
@@ -991,40 +985,13 @@ SelectFaction = $WH3
 
 SelectFaction = $WHI
 
-  SelectSubUnits = FactionTags WHI WH4 WH5;Families $famLeader
+  SelectSubUnits = FactionTags WHI WH4;Families $famLeader
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags WHI WH4 WH5;Families $famLeader
+  SelectSubUnits = FactionTags WHI WH4;Families $famLeader
   AlterCuSubUnit = ApplyToList;LeaderActive
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_KolchakBonusXP|9|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1917/12/01
-
-SelectFaction = $WH3
-
-  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
-  EvalUnqUnit = A.V. Kolchak
-
-SelectFaction = $WHI
-
-  SelectSubUnits = FactionTags WHI WH4 WH5;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = FactionTags WHI WH4 WH5;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
-  AlterCuSubUnit = ApplyToList;ChgXPLevel 1
 
 EndEvent
 
@@ -1046,33 +1013,6 @@ Actions
 
   SelectSubUnits = FactionTags WH3;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
   AlterCuSubUnit = ApplyToList;ChgXPLevel 1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_KolchakBonusCohesion|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1917/12/01
-
-SelectFaction = $WH3
-
-  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
-  EvalUnqUnit = A.V. Kolchak
-
-SelectFaction = $WHI
-
-  SelectSubUnits = FactionTags WHI WH4 WH5;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = FactionTags WHI WH4 WH5;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
-  AlterCuSubUnit = ApplyToList;Attempts 50;SetCohesionPerc 100
 
 EndEvent
 
@@ -1309,107 +1249,9 @@ Conditions
 
   MinDate = 1919/01/01
   EvalEvent = evt_nam_WHI_KrasnovRetires;=;1
+  EvalUnqUnit = A.I. Denikin
 
 Actions
-
-SelectFaction = $WHI
-
-  SetFacRelationships = COS;-100
-
-RemSubFacRgn = DON;$Novocherkassk
-RemSubFacRgn = DON;$Taganrog
-RemSubFacRgn = DON;$Rostov
-RemSubFacRgn = DON;$Azov
-RemSubFacRgn = DON;$Bataisk
-RemSubFacRgn = DON;$Salsk
-RemSubFacRgn = DON;$Mikhailovka
-RemSubFacRgn = DON;$Balashov
-RemSubFacRgn = DON;$Stefanidinodar
-RemSubFacRgn = DON;$Zernograd
-RemSubFacRgn = DON;$Kugoyeyskaya
-RemSubFacRgn = DON;$Kamenskaya
-RemSubFacRgn = DON;$Rovenki
-RemSubFacRgn = DON;$Glubokiy
-RemSubFacRgn = DON;$Belaya-Kalitva
-RemSubFacRgn = DON;$Maloorlovskiy
-RemSubFacRgn = DON;$Orlovskiy
-RemSubFacRgn = DON;$Zimovniki
-RemSubFacRgn = DON;$Yashalta
-RemSubFacRgn = DON;$Semikarakorski
-RemSubFacRgn = DON;$Solenovskaya
-RemSubFacRgn = DON;$Kotelnikovo
-RemSubFacRgn = DON;$Romashkin
-RemSubFacRgn = DON;$Semkin
-RemSubFacRgn = DON;$Logovskiy
-RemSubFacRgn = DON;$Tikhiy
-RemSubFacRgn = DON;$Kalach-on-Don
-RemSubFacRgn = DON;$Kotovo
-RemSubFacRgn = DON;$Olkhovka
-RemSubFacRgn = DON;$Frolovo
-RemSubFacRgn = DON;$Preobrazheniye
-RemSubFacRgn = DON;$Panfilovo
-RemSubFacRgn = DON;$Khoper
-RemSubFacRgn = DON;$Chertkovo
-RemSubFacRgn = DON;$Perelazovski
-RemSubFacRgn = DON;$Viochenskaya
-RemSubFacRgn = DON;$Chernyshkovskiy
-RemSubFacRgn = DON;$Morozovsk
-RemSubFacRgn = DON;$Tsimlyansk
-RemSubFacRgn = DON;$Shakhty
-RemSubFacRgn = DON;$Surovikino
-RemSubFacRgn = DON;$Kletskiy
-RemSubFacRgn = DON;$Perelazovski
-RemSubFacRgn = DON;$Ilovlya
-RemSubFacRgn = DON;$Golubinskiy
-RemSubFacRgn = DON;$Serafimovich
-RemSubFacRgn = DON;$Nizhniy Chir
-RemSubFacRgn = DON;$Preobrazhenskaya
-
-RemSubFacRgn = KUB;$Kurganinsk
-RemSubFacRgn = KUB;$Eysk
-RemSubFacRgn = KUB;$Akhtarsk
-RemSubFacRgn = KUB;$Kanevskaya
-RemSubFacRgn = KUB;$Temriuk
-RemSubFacRgn = KUB;$Korenovsk
-RemSubFacRgn = KUB;$Romanovski Khoutor
-RemSubFacRgn = KUB;$Taman
-RemSubFacRgn = KUB;$Novorossiysk
-RemSubFacRgn = KUB;$Gelendzhik
-RemSubFacRgn = KUB;$Ekaterinodar
-RemSubFacRgn = KUB;$Krymsk
-RemSubFacRgn = KUB;$Goriachiy Klyuch
-RemSubFacRgn = KUB;$Maikop
-RemSubFacRgn = KUB;$Solnechnodolsk
-RemSubFacRgn = KUB;$Nevynominsk
-RemSubFacRgn = KUB;$Essentuki
-RemSubFacRgn = KUB;$Tuapse
-RemSubFacRgn = KUB;$Mostovskoy
-RemSubFacRgn = KUB;$Batalpachinskaya
-RemSubFacRgn = KUB;$Teberda
-RemSubFacRgn = KUB;$Sochi
-RemSubFacRgn = KUB;$Elbrus Mountain
-RemSubFacRgn = KUB;$Tikhoretskaya
-RemSubFacRgn = KUB;$Armavir
-
-RemSubFacRgn = TER;$Kochubey
-RemSubFacRgn = TER;$Kislovodsk
-RemSubFacRgn = TER;$Piatigorsk
-RemSubFacRgn = TER;$Nalchik
-RemSubFacRgn = TER;$Nartkala
-RemSubFacRgn = TER;$Malgobek
-RemSubFacRgn = TER;$Mozdok
-RemSubFacRgn = TER;$Terek Desert
-RemSubFacRgn = TER;$Khasavyurt
-RemSubFacRgn = TER;$Vladikavkaz
-RemSubFacRgn = TER;$Grozny
-RemSubFacRgn = TER;$Argun
-RemSubFacRgn = TER;$Petrovsk-Port
-RemSubFacRgn = TER;$Sadon
-RemSubFacRgn = TER;$Derbent
-RemSubFacRgn = TER;$Kakhib
-RemSubFacRgn = TER;$Buynaksk
-RemSubFacRgn = TER;$Kizlyar
-RemSubFacRgn = TER;$Sukhokumsk
 
 EndEvent
 
@@ -1424,13 +1266,13 @@ Conditions
 
   MinDate = 1919/01/01
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
   EvalRgnOwned = $Arkhangelsk
 
 Actions
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 SelectRegion = $Arkhangelsk
 
   CreateGroup
@@ -1454,7 +1296,7 @@ SelectRegion = $Arkhangelsk
     SetName = Northern Supply
   Apply
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 SelectRegion = $Arkhangelsk
 
   CreateGroup
@@ -1470,10 +1312,6 @@ SelectRegion = $Arkhangelsk
     SetName = V.V. Marushevsky
   Apply
   CreateUnit
-    SetType = $uni_WH5_Skobeltsyn1
-    SetName = V.S. Skobeltsyn
-  Apply
-  CreateUnit
     SetType = $uni_WH5_Klimenko1
     SetName = V.I. Klimenko
   Apply
@@ -1486,33 +1324,7 @@ SelectRegion = $Arkhangelsk
     SetName = N.A. Durov
   Apply
 
-SelectFaction = $WHI
-SelectRegion = $Murmansk
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 0
-    SetName = Olonetsk Volunteers Army
-  Apply
-  CreateUnit
-    SetType = $uni_WH5_Elvengren1
-    FlavorName = Olonetsk Vols
-    SetName = G.E. Elvengren
-  Apply
-  CreateUnit
-    SetType = $uni_WH5_Rgt1
-    SUFlavorName = 1st Olonetsk Vols
-    SetName = 1st Olonetsk Vols Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_WH5_Rgt1
-    SUFlavorName = 2nd Olonetsk Vols
-    SetName = 2nd Olonetsk Vols Rgt
-  Apply
-
-SelectFaction = $WHI
+SelectFaction = $WH3
 SelectRegion = $Murmansk
 
   CreateGroup
@@ -1559,7 +1371,7 @@ SelectRegion = $Murmansk
     SetName = 4th Artillery Division
   Apply
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 SelectRegion = $Arkhangelsk
   CreateGroup
     Posture = $Defensive
@@ -1574,7 +1386,7 @@ SelectRegion = $Arkhangelsk
     SetName = Arkhangelsk Air Force
   Apply
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 SelectRegion = $Arkhangelsk
 
   CreateGroup
@@ -1595,7 +1407,7 @@ SelectRegion = $Arkhangelsk
     SetName = 2nd Dvina Gunboats
   Apply
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 SelectRegion = $Murmansk
   CreateGroup
     Posture = $Defensive
@@ -1747,35 +1559,21 @@ SelectRegion = $Viochenskaya
 SelectFaction = $WHI
 SelectRegion = $Panfilovo
   CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 1
-    FixType = 0
-    SetName = 3rd Cavalry Division
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 3rd Cavalry Division
   Apply
   CreateUnit
-    SetType = $uni_DON_Egorov1
-    SetName = Egorov
+  SetType = $uni_DON_Bde2
+  SetName = 3rd Cavalry Div.
   Apply
   CreateUnit
-    SetType = $uni_DON_Cav0
-    SUFlavorName = 1st Upper Don
-    SetName = 1st Upper Don Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_DON_Cav0
-    SUFlavorName = 2nd Upper Don
-    SetName = 2nd Upper Don Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_DON_Par1
-    SetName = Partisans Dcht
-  Apply
-  CreateUnit
-    SetType = $uni_DON_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 2nd Upper Don Supply
+  SetType = $uni_DON_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 2nd Upper Don Supply
   Apply
 
 SelectFaction = $WHI
@@ -1787,10 +1585,6 @@ SelectRegion = $Serafimovich
     InCS = 1
     FixType = 0
     SetName = 4th Division
-  Apply
-  CreateUnit
-    SetType = $uni_DON_Medvedev1
-    SetName = K. Medvedev
   Apply
   CreateUnit
     SetType = $uni_DON_Inf0
@@ -1842,10 +1636,6 @@ SelectRegion = $Kalach
     SetName = 5th Cavalry Division
   Apply
   CreateUnit
-    SetType = $uni_DON_Ushakov1
-    SetName = Ushakov
-  Apply
-  CreateUnit
     SetType = $uni_DON_Inf0
     SUFlavorName = Darin's Inf
     SetName = Darin's Inf Rgt
@@ -1881,10 +1671,6 @@ SelectRegion = $Kalach
     InCS = 1
     FixType = 0
     SetName = 1st Cavalry Brigade
-  Apply
-  CreateUnit
-    SetType = $uni_DON_Bogatyrev1
-    SetName = Bogatyrev
   Apply
   CreateUnit
     SetType = $uni_DON_Cav0

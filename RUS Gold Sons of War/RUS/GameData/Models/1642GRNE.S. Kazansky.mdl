@@ -1,5 +1,5 @@
 UID = 1642
-NationTag = GRN
+NationTag = RED
 Name = E.S. Kazansky
 Alias = ldr_GRN_Kazansky1
 ShortName = Kazansky
@@ -7,7 +7,7 @@ Text = $ldr_txt_GRN_Kazansky
 To&E = Pistol
 Family = $famLeader
 ImageID = symbol_general_1.png
-Color = $colGRNRegular
+Color = $colREDRegular
 Sound_FactionTag  = RUS
 Portrait = Unit_GRN_Kazansky.png
 OffFire = 1

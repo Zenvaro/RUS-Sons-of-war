@@ -60,20 +60,6 @@ Actions
   Replacement = WH4;$famSupply;2
   Replacement = WH4;$famLtVehicle;2
   Replacement = WH4;$famArmoredTrain;2
-  Replacement = WH5;$famLine;2
-  Replacement = WH5;$famMilitia;2
-  Replacement = WH5;$famElite;2
-  Replacement = WH5;$famCavalry;2
-  Replacement = WH5;$famLightInf;2
-  Replacement = WH5;$famRaider;2
-  Replacement = WH5;$famLightArty;2
-  Replacement = WH5;$famMedArty;2
-  Replacement = WH5;$famHvyArty;2
-  Replacement = WH5;$famService;2
-  Replacement = WH5;$famEngineer;2
-  Replacement = WH5;$famSupply;2
-  Replacement = WH5;$famLtVehicle;2
-  Replacement = WH5;$famArmoredTrain;2
 
   ChangeUnitPool = $uni_WHI_Mil1;4
   ChangeUnitPool = $uni_WHI_MBde1;2
@@ -161,29 +147,6 @@ Actions
   ChangeUnitPool = $uni_WH4_GB1;1
   ChangeUnitPool = $uni_WH4_MG0;2
 
-  ChangeUnitPool = $uni_WH5_Mil0;4
-  ChangeUnitPool = $uni_WH5_Bde2;1
-  ChangeUnitPool = $uni_WH5_Cav0;4
-  ChangeUnitPool = $uni_WH5_Bde3;1
-
-  ChangeUnitPool = $uni_WH5_Mar;1
-  ChangeUnitPool = $uni_WH5_Lit;1
-  ChangeUnitPool = $uni_WH5_Art1;1
-  ChangeUnitPool = $uni_WH5_Art2;1
-  ChangeUnitPool = $uni_WH5_Art3;1
-  ChangeUnitPool = $uni_WH5_Art4;1
-  ChangeUnitPool = $uni_WH5_Eng;2
-  ChangeUnitPool = $uni_WH5_Med;2
-  ChangeUnitPool = $uni_WH5_Sig;2
-  ChangeUnitPool = $uni_WH5_Amt1;1
-  ChangeUnitPool = $uni_WH5_Amc;1
-  ChangeUnitPool = $uni_WH5_Amt2;1
-  ChangeUnitPool = $uni_WH5_Sup1;5
-  ChangeUnitPool = $uni_WH5_GB1;1
-  ChangeUnitPool = $uni_WH5_AC1;1
-  ChangeUnitPool = $uni_WH5_DD1;1
-  ChangeUnitPool = $uni_WH5_MG0;2
-
 EndEvent
 
 SelectFaction = $WHI
@@ -244,20 +207,6 @@ Actions
   Replacement = WH4;$famSupply;2
   Replacement = WH4;$famLtVehicle;2
   Replacement = WH4;$famArmoredTrain;2
-  Replacement = WH5;$famLine;2
-  Replacement = WH5;$famMilitia;2
-  Replacement = WH5;$famElite;2
-  Replacement = WH5;$famCavalry;2
-  Replacement = WH5;$famLightInf;2
-  Replacement = WH5;$famRaider;2
-  Replacement = WH5;$famLightArty;2
-  Replacement = WH5;$famMedArty;2
-  Replacement = WH5;$famHvyArty;2
-  Replacement = WH5;$famService;2
-  Replacement = WH5;$famEngineer;2
-  Replacement = WH5;$famSupply;2
-  Replacement = WH5;$famLtVehicle;2
-  Replacement = WH5;$famArmoredTrain;2
 
   ChangeUnitPool = $uni_WHI_Vol1;4
   ChangeUnitPool = $uni_WHI_MBde5;1
@@ -351,29 +300,6 @@ Actions
   ChangeUnitPool = $uni_WH4_GB1;1
   ChangeUnitPool = $uni_WH4_MG0;2
 
-  ChangeUnitPool = $uni_WH5_Mil0;4
-  ChangeUnitPool = $uni_WH5_Bde2;1
-  ChangeUnitPool = $uni_WH5_Cav0;4
-  ChangeUnitPool = $uni_WH5_Bde3;1
-
-  ChangeUnitPool = $uni_WH5_Mar;1
-  ChangeUnitPool = $uni_WH5_Lit;1
-  ChangeUnitPool = $uni_WH5_Art1;1
-  ChangeUnitPool = $uni_WH5_Art2;1
-  ChangeUnitPool = $uni_WH5_Art3;1
-  ChangeUnitPool = $uni_WH5_Art4;1
-  ChangeUnitPool = $uni_WH5_Eng;2
-  ChangeUnitPool = $uni_WH5_Med;2
-  ChangeUnitPool = $uni_WH5_Sig;2
-  ChangeUnitPool = $uni_WH5_Amt1;1
-  ChangeUnitPool = $uni_WH5_Amc;1
-  ChangeUnitPool = $uni_WH5_Amt2;1
-  ChangeUnitPool = $uni_WH5_Sup1;5
-  ChangeUnitPool = $uni_WH5_GB1;1
-  ChangeUnitPool = $uni_WH5_AC1;1
-  ChangeUnitPool = $uni_WH5_DD1;1
-  ChangeUnitPool = $uni_WH5_MG0;2
-
 EndEvent
 
 SelectFaction = $WHI
@@ -433,20 +359,6 @@ Actions
   Replacement = WH4;$famSupply;2
   Replacement = WH4;$famLtVehicle;2
   Replacement = WH4;$famArmoredTrain;2
-  Replacement = WH5;$famLine;2
-  Replacement = WH5;$famMilitia;2
-  Replacement = WH5;$famElite;2
-  Replacement = WH5;$famCavalry;2
-  Replacement = WH5;$famLightInf;2
-  Replacement = WH5;$famRaider;2
-  Replacement = WH5;$famLightArty;2
-  Replacement = WH5;$famMedArty;2
-  Replacement = WH5;$famHvyArty;2
-  Replacement = WH5;$famService;2
-  Replacement = WH5;$famEngineer;2
-  Replacement = WH5;$famSupply;2
-  Replacement = WH5;$famLtVehicle;2
-  Replacement = WH5;$famArmoredTrain;2
 
   ChangeUnitPool = $uni_WHI_VolBde;4
   ChangeUnitPool = $uni_WHI_MBde7;1
@@ -545,29 +457,6 @@ Actions
   ChangeUnitPool = $uni_WH4_Sup1;1
   ChangeUnitPool = $uni_WH4_GB1;1
   ChangeUnitPool = $uni_WH4_MG0;2
-
-  ChangeUnitPool = $uni_WH5_Mil0;4
-  ChangeUnitPool = $uni_WH5_Bde2;1
-  ChangeUnitPool = $uni_WH5_Cav0;4
-  ChangeUnitPool = $uni_WH5_Bde3;1
-
-  ChangeUnitPool = $uni_WH5_Mar;1
-  ChangeUnitPool = $uni_WH5_Lit;1
-  ChangeUnitPool = $uni_WH5_Art1;1
-  ChangeUnitPool = $uni_WH5_Art2;1
-  ChangeUnitPool = $uni_WH5_Art3;1
-  ChangeUnitPool = $uni_WH5_Art4;1
-  ChangeUnitPool = $uni_WH5_Eng;2
-  ChangeUnitPool = $uni_WH5_Med;2
-  ChangeUnitPool = $uni_WH5_Sig;2
-  ChangeUnitPool = $uni_WH5_Amt1;1
-  ChangeUnitPool = $uni_WH5_Amc;1
-  ChangeUnitPool = $uni_WH5_Amt2;1
-  ChangeUnitPool = $uni_WH5_Sup1;5
-  ChangeUnitPool = $uni_WH5_GB1;1
-  ChangeUnitPool = $uni_WH5_AC1;1
-  ChangeUnitPool = $uni_WH5_DD1;1
-  ChangeUnitPool = $uni_WH5_MG0;2
 
 EndEvent
 

@@ -1,13 +1,13 @@
 UID = 1998
-NationTag = WHI
+NationTag = DON
 Name = V.I. Morozov
-Alias = ldr_WHI_Morozov1
+Alias = ldr_DON_Morozov1
 ShortName = Morozov 
-Text = $ldr_txt_WHI_Morozov 
+Text = $ldr_txt_DON_Morozov 
 To&E = Pistol
 Family = $famLeader
 ImageID = symbol_general_1.png
-Color = $colWHIRegular
+Color = $colDONRegular
 Sound_FactionTag  = RUS
 Portrait = Unit_WHI_Morozov.png
 OffFire = 1

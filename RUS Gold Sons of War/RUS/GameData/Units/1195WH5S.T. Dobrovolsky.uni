@@ -1,12 +1,12 @@
 UID = 1195
 NationTag = WH5
 Name = S.T. Dobrovolsky
-Alias = uni_WHI_Dobrovolsky1
+Alias = uni_WH5_Dobrovolsky1
 ForcePool = -1
 ShortName = Dobrovolsky
-Text = $uni_WHI_Dobrovolsky1_txt
+Text = $uni_WH5_Dobrovolsky1_txt
 Color = $colWH5Regular 
-ModelType0 = $ldr_WHI_Dobrovolsky1|1
+ModelType0 = $ldr_WH5_Dobrovolsky1|1
 FamilyType0 = $famLeader|1
 CmdCost = 0
 Pillage = 0

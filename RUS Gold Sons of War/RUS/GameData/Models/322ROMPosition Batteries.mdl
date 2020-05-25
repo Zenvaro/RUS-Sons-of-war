@@ -58,7 +58,6 @@ SupHitPen = 25
 SupMovePen = 35
 SupCbtPen = 75
 Ability0 = $Emplaced
-Ability1 = $Romanian
 VPValue = 1
 POLValue = 0
 Money = 11

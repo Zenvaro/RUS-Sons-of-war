@@ -85,4 +85,3 @@ Strategic = 4
 Offensive = 4
 Defensive = 3
 AIAffinity = $AIAff0_inf
-CombatDeathChance = 100

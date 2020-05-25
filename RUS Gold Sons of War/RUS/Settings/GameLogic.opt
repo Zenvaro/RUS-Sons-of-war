@@ -193,7 +193,7 @@ cmdSmallUnit       			= 2		// Estimation of the CP cost of a small unit (average
 cmdMediumUnit       		= 4
 cmdLargeUnit        		= 8
 cbtModelsNb 			= 26		// for Interface Display of elements (unit inspector)
-ldrMaxNbCombiUnits 		= 9 		// Nb Max of Units in a CombinedUnit - Added 14/10 - vers 0.97.4+
+ldrMaxNbCombiUnits 		= 15 		// Nb Max of Units in a CombinedUnit - Added 14/10 - vers 0.97.4+
 
 
 // ***** CONTROL & RETREAT

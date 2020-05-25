@@ -3,40 +3,85 @@
 SelectFaction = $RED
 
 SelectFaction = $RED
-StartEvent = evt_nam_RED_LeaderReceived_L13|1|1|NULL|NULL|NULL|NULL
+StartEvent = evt_nam_RED_Leader_AIActivate|999|0|NULL|NULL|NULL|NULL
 
 Conditions
-  MinDate = 1918/09/01
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;RED_Leader
 
 Actions
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Tambov
-  PickFromRegList = NotEnemy
-  GenMsg
-
-SelectFaction = $RED
-  CreateGroup
-  Posture = $Defensive
-  SetKind = $Land
-  Entranch = 0
-  InCS = 0
-  SetName = Red Officer
-  Apply
-  CreateUnit
-  SetType = $uni_RED_Shorin2
-  SetName = V.I. Shorin
-  Apply
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_Leader;1
 
 EndEvent
 
 SelectFaction = $RED
-StartEvent = evt_nam_RED_LeaderReceived_L19|1|1|NULL|NULL|NULL|NULL
+StartEvent = evt_nam_RED_Leader_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
-  MinDate = 1918/08/01
 
 Actions
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Tambov
-  PickFromRegList = NotEnemy
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Aircrafts.png;Title;opt_title_RED_Leader;MsgString;opt_desc_RED_Leader;ToolString;opt_hint_RED_Leader;SubType;RED_Leader;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Leader_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;RED_Leader;=;1
+  EvalEngagementPts = >=;4
+
+Actions
+
+  ChgFacEngagementPts = -4
+
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_Leader
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Leader_Regen|99|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  ActorDisabled = $gmaOptionReinf;RED_Leader
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_Leader_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Mobilization.png;Title;opt_title_RED_Leader;MsgString;opt_desc_RED_Leader;ToolString;opt_hint_RED_Leader;SubType;RED_Leader;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
 SelectFaction = $RED
@@ -48,9 +93,12 @@ SelectFaction = $RED
   SetName = Red Officer
   Apply
   CreateUnit
-  SetType = $uni_RED_Mezheninov1
-  SetName = S.A. Mezheninov
+  SetType = $uni_RED_Budyenny1
+  SetName = С.М.Буденый
   Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L;MaxOccurs;0
 
 EndEvent
 
@@ -77,58 +125,6 @@ SelectFaction = $RED
   CreateUnit
   SetType = $uni_RED_Sablin1
   SetName = Y. Sablin
-  Apply
-
-EndEvent
-
-SelectFaction = $WHI
-StartEvent = evt_nam_WHI_LeaderReceived_L25|1|1|NULL|NULL|NULL|NULL
-
-Conditions
-  MinDate = 1918/08/01
-
-Actions
-  AddToRegList = $Rostov;$Ekaterinodar;$Sevastopol;$Kharkov
-  PickFromRegList = NotEnemy
-  GenMsg
-
-SelectFaction = $WHI
-  CreateGroup
-  Posture = $Defensive
-  SetKind = $Land
-  Entranch = 0
-  InCS = 0
-  SetName = White Officer
-  Apply
-  CreateUnit
-  SetType = $uni_WHI_Patrikeev1
-  SetName = Patrikeev
-  Apply
-
-EndEvent
-
-SelectFaction = $WHI
-StartEvent = evt_nam_WHI_LeaderReceived_L26|1|1|NULL|NULL|NULL|NULL
-
-Conditions
-  MinDate = 1918/08/02
-
-Actions
-  AddToRegList = $Rostov;$Ekaterinodar;$Sevastopol;$Kharkov
-  PickFromRegList = NotEnemy
-  GenMsg
-
-SelectFaction = $WHI
-  CreateGroup
-  Posture = $Defensive
-  SetKind = $Land
-  Entranch = 0
-  InCS = 0
-  SetName = White Officer
-  Apply
-  CreateUnit
-  SetType = $uni_WHI_Ostroukhov1
-  SetName = T. Ostroukhov
   Apply
 
 EndEvent
@@ -181,32 +177,6 @@ SelectFaction = $WH3
   CreateUnit
   SetType = $uni_WH3_Tarasevich1
   SetName = Tarasevich
-  Apply
-
-EndEvent
-
-SelectFaction = $WH3
-StartEvent = evt_nam_WH2_LeaderReceived_L3|1|1|NULL|NULL|NULL|NULL
-
-Conditions
-  MinDate = 1918/07/01
-
-Actions
-  AddToRegList = $Samara;$Ufa;$Saratov
-  PickFromRegList = NotEnemy
-  GenMsg
-
-SelectFaction = $WH3
-  CreateGroup
-  Posture = $Defensive
-  SetKind = $Land
-  Entranch = 0
-  InCS = 0
-  SetName = Komuch Officer
-  Apply
-  CreateUnit
-  SetType = $uni_WH2_Timanov1
-  SetName = G. Timanov
   Apply
 
 EndEvent

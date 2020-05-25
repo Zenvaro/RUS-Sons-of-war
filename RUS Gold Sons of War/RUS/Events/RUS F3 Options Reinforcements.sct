@@ -21,7 +21,7 @@ SelectFaction = $RED
 StartEvent = evt_nam_RED_RestoreAirForce_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
-  MinDate = 1918/06/01
+  MinDate = 1917/11/11
 
 Actions
   ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Aircrafts.png;Title;opt_title_RED_RestoreAirForce;MsgString;opt_desc_RED_RestoreAirForce;ToolString;opt_hint_RED_RestoreAirForce;SubType;RED_RestoreAirForce;SParam1;RED
@@ -144,7 +144,7 @@ Actions
 
   ChgFacEngagementPts = -8
   ChangeMoneyPool = -30
-  ChangeFacMorale = -5
+  ChangeFacMorale = -2
   ChangeConscriptPool = 300
 
   GenTextMsg  = opt_notify_RED_PartialMobilization;1;NULL;NULL;NULL
@@ -210,7 +210,7 @@ Conditions
 
 Actions
   SelectSubUnits = FactionTags RED;Families $famLine $famMilitia $famCavalry $famLightInf
-  AlterCuSubUnit = ApplyToList;Attempts 20;ChgPtsCohesion -30
+  AlterCuSubUnit = ApplyToList;Attempts 20;ChgPtsCohesion -10
   ChgFacEngagementPts = -1
   ChgPrisoners = XXX;-50
   ChangeConscriptPool = 50
@@ -347,7 +347,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $WHI
-
 StartEvent = evt_nam_WHI_PartialMobilization_Check|999|0|NULL|NULL|NULL|NULL
 
 Conditions
@@ -359,7 +358,7 @@ Actions
 
   ChgFacEngagementPts = -8
   ChangeMoneyPool = -30
-   ChangeFacMorale = -5
+   ChangeFacMorale = -2
   ChangeConscriptPool = 150
 
   GenTextMsg  = opt_notify_WHI_PartialMobilization;1;NULL;NULL;NULL
@@ -434,7 +433,7 @@ Actions
 
   ChgFacEngagementPts = -8
   ChangeMoneyPool = -30
-   ChangeFacMorale = -5
+  ChangeFacMorale = -2
   ChangeConscriptPool = 150
 
   GenTextMsg  = opt_notify_WH3_PartialMobilization;1;NULL;NULL;NULL
@@ -469,7 +468,6 @@ Conditions
   MinDate = 1918/06/01
   CheckAILevel = 1
   ActorEnabled = $gmaOptionReinf;WHI_PrisonnersRecruitment
-  Probability = 75
 
 Actions
   GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
@@ -501,7 +499,7 @@ Conditions
 
 Actions
   SelectSubUnits = FactionTags WHI;Families $famLine $famMilitia $famCavalry $famLightInf
-  AlterCuSubUnit = ApplyToList;Attempts 20;ChgPtsCohesion -30
+  AlterCuSubUnit = ApplyToList;Attempts 20;ChgPtsCohesion -10
   ChgFacEngagementPts = -1
   ChgPrisoners = XXX;-50
   ChangeConscriptPool = 50
@@ -538,7 +536,6 @@ Conditions
   MinDate = 1918/06/01
   CheckAILevel = 1
   ActorEnabled = $gmaOptionReinf;WH3_PrisonnersRecruitment
-  Probability = 75
 
 Actions
   GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
@@ -570,7 +567,7 @@ Conditions
 
 Actions
   SelectSubUnits = FactionTags WH3;Families $famLine $famMilitia $famCavalry $famLightInf
-  AlterCuSubUnit = ApplyToList;Attempts 20;ChgPtsCohesion -30
+  AlterCuSubUnit = ApplyToList;Attempts 20;ChgPtsCohesion -10
   ChgFacEngagementPts = -1
   ChgPrisoners = XXX;-50
   ChangeConscriptPool = 50
@@ -594,290 +591,6 @@ Actions
   GenTextMsg  = opt_notify_WH3_PrisonnersRecruitment_Regen;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ForcedRecruitment.png;Title;opt_title_WH3_PrisonnersRecruitment;MsgString;opt_desc_WH3_PrisonnersRecruitment;ToolString;opt_hint_WH3_PrisonnersRecruitment;SubType;WH3_PrisonnersRecruitment;SParam1;WH3
   SetEvtOccurs = evt_nam_WH3_PrisonnersRecruitment;CuOccurs;0
-
-EndEvent
-
-SelectFaction = $WHI
-StartEvent = evt_nam_WHI_NovocherkasskGHQ_AIActivate|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-  MinDate = 1919/01/01
-  CheckAILevel = 1
-  ActorEnabled = $gmaOptionReinf;WHI_NovocherkasskGHQ
-
-Actions
-  ChangeOption = $gmaOptionReinf;WHI_NovocherkasskGHQ;1
-
-EndEvent
-
-SelectFaction = $WHI
-StartEvent = evt_nam_WHI_NovocherkasskGHQ_ON|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-  MinDate = 1919/01/01
-  EvalUnqUnit = P.N. Krasnov;NOT
-
-Actions
-  GenTextMsg  = opt_notify_WHI_NovocherkasskGHQ_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WHI_NovocherkasskGHQ;MsgString;opt_desc_WHI_NovocherkasskGHQ;ToolString;opt_hint_WHI_NovocherkasskGHQ;SubType;WHI_NovocherkasskGHQ;SParam1;WHI
-
-EndEvent
-
-SelectFaction = $WHI
-StartEvent = evt_nam_WHI_NovocherkasskGHQ_Check|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-  CheckOption = $gmaOptionReinf;WHI_NovocherkasskGHQ;=;1
-  EvalEngagementPts = >=;7
-  MinDate = 1919/01/01
-
-EvalRgnOwned = $Novocherkassk
-
-Actions
-  SetEvtOccurs = evt_nam_WHI_NovocherkasskGHQ_Ready;MaxOccurs;1
-
-EndEvent
-
-SelectFaction = $WHI
-StartEvent = evt_nam_WHI_NovocherkasskGHQ_Ready|0|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-Actions
-
-EndEvent
-
-SelectFaction = $WHI
-SelectRegion = $Novocherkassk
-StartEvent = evt_nam_WHI_NovocherkasskGHQ_Bogaevsky|1|0|NULL|NULL|$Novocherkassk|NULL
-
-Conditions
-  MinDate = 1919/01/01
-
-EvalRgnOwned = $Novocherkassk
-  SelectSubUnits = Models $ldr_WHI_Bogaevsky2
-  EvalSubUnitSel = NULL
-  EvalEvent = evt_nam_WHI_NovocherkasskGHQ_Ready;=;1
-
-Actions
-  SelectSubUnits = Models $ldr_WHI_Bogaevsky2
-  AlterCuSubUnit = ApplyToList;Kill
-
-SelectFaction = $WHI
-SelectRegion = $Novocherkassk
-  CreateGroup
-  Posture = $Defensive
-  SetKind = $Land
-  Entranch = 4
-  InCS = 1
-  FixType = 1
-  SetName = Don Cossack Army
-  Apply
-  CreateUnit
-  GMEParam = A.P. Bogaevsky
-  SetCommit = 1
-  SetType = $uni_DON_Bogaevsky3
-  SetName = A.P. Bogaevsky
-  Apply
-  CreateUnit
-  SetType = $uni_DON_Sup1
-  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-  SetName = GHQ Supply
-  Apply
-  SetEvtOccurs = evt_nam_WHI_NovocherkasskGHQ_Ready;MaxOccurs;0
-  SetEvtOccurs = evt_nam_WHI_NovocherkasskGHQ_Ready;CuOccurs;0
-
-SelectFaction = $CMN
-  GenTextMsg  = opt_notify_WHI_New_NovocherkasskGHQ;1;NULL;NULL;NULL
-
-SelectFaction = $WHI
-  ChgFacEngagementPts = -7
-  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_NovocherkasskGHQ
-
-EndEvent
-
-SelectFaction = $WHI
-SelectRegion = $Novocherkassk
-StartEvent = evt_nam_WHI_NovocherkasskGHQ_BogaevskyOverrunned|1|1|NULL|NULL|$Novocherkassk|NULL
-
-Conditions
-  MinDate = 1919/01/01
-  EvalEvent = evt_nam_WHI_NovocherkasskGHQ_Bogaevsky;=;1
-  EvalUnqUnit = A.P. Bogaevsky;NOT
-
-Actions
-
-EndEvent
-
-SelectFaction = $WHI
-StartEvent = evt_nam_WHI_NovocherkasskGHQ_Bogaevsky_Regen|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-  MinDate = 1919/01/01
-
-EvalRgnOwned = $Novocherkassk
-  EvalEvent = evt_nam_WHI_NovocherkasskGHQ_BogaevskyOverrunned;=;1
-  ActorDisabled = $gmaOptionReinf;WHI_NovocherkasskGHQ
-
-Actions
-  GenTextMsg  = opt_notify_WHI_NovocherkasskGHQ_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WHI_NovocherkasskGHQ;MsgString;opt_desc_WHI_NovocherkasskGHQ;ToolString;opt_hint_WHI_NovocherkasskGHQ;SubType;WHI_NovocherkasskGHQ;SParam1;WHI
-
-EndEvent
-
-SelectFaction = $WHI
-SelectRegion = $Novocherkassk
-StartEvent = evt_nam_WHI_NovocherkasskGHQ_Sidorin|1|0|NULL|NULL|$Novocherkassk|NULL
-
-Conditions
-  MinDate = 1919/01/01
-
-EvalRgnOwned = $Novocherkassk
-  SelectSubUnits = Models $ldr_DON_Sidorin2
-  EvalSubUnitSel = NULL
-  EvalEvent = evt_nam_WHI_NovocherkasskGHQ_Ready;=;1
-
-Actions
-  SelectSubUnits = Models $ldr_DON_Sidorin2
-  AlterCuSubUnit = ApplyToList;Kill
-
-SelectFaction = $WHI
-SelectRegion = $Novocherkassk
-  CreateGroup
-  Posture = $Defensive
-  SetKind = $Land
-  Entranch = 4
-  InCS = 1
-  FixType = 12
-  SetName = Don Cossack Army
-  Apply
-  CreateUnit
-  GMEParam = V.I. Sidorin
-  SetCommit = 1
-  SetType = $uni_DON_Sidorin3
-  SetName = V.I. Sidorin
-  Apply
-  CreateUnit
-  SetType = $uni_DON_Sup1
-  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-  SetName = GHQ Supply
-  Apply
-  SetEvtOccurs = evt_nam_WHI_NovocherkasskGHQ_Ready;MaxOccurs;0
-  SetEvtOccurs = evt_nam_WHI_NovocherkasskGHQ_Ready;CuOccurs;0
-
-SelectFaction = $CMN
-  GenTextMsg  = opt_notify_WHI_New_NovocherkasskGHQ;1;NULL;NULL;NULL
-
-SelectFaction = $WHI
-  ChgFacEngagementPts = -7
-  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_NovocherkasskGHQ
-
-EndEvent
-
-SelectFaction = $WHI
-SelectRegion = $Novocherkassk
-StartEvent = evt_nam_WHI_NovocherkasskGHQ_SidorinOverrunned|1|1|NULL|NULL|$Novocherkassk|NULL
-
-Conditions
-  MinDate = 1919/01/01
-  EvalEvent = evt_nam_WHI_NovocherkasskGHQ_Sidorin;=;1
-  EvalUnqUnit = V.I. Sidorin;NOT
-
-Actions
-
-EndEvent
-
-SelectFaction = $WHI
-StartEvent = evt_nam_WHI_NovocherkasskGHQ_Sidorin_Regen|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-  MinDate = 1919/01/01
-
-EvalRgnOwned = $Novocherkassk
-  EvalEvent = evt_nam_WHI_NovocherkasskGHQ_SidorinOverrunned;=;1
-  ActorDisabled = $gmaOptionReinf;WHI_NovocherkasskGHQ
-
-Actions
-  GenTextMsg  = opt_notify_WHI_NovocherkasskGHQ_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WHI_NovocherkasskGHQ;MsgString;opt_desc_WHI_NovocherkasskGHQ;ToolString;opt_hint_WHI_NovocherkasskGHQ;SubType;WHI_NovocherkasskGHQ;SParam1;WHI
-
-EndEvent
-
-SelectFaction = $WHI
-SelectRegion = $Novocherkassk
-StartEvent = evt_nam_WHI_NovocherkasskGHQ_Ivanov|1|0|NULL|NULL|$Novocherkassk|NULL
-
-Conditions
-  MinDate = 1919/01/01
-
-EvalRgnOwned = $Novocherkassk
-  SelectSubUnits = Models $ldr_DON_Ivanov2
-  EvalSubUnitSel = NULL
-  EvalEvent = evt_nam_WHI_NovocherkasskGHQ_Ready;=;1
-
-Actions
-  SelectSubUnits = Models $ldr_DON_Ivanov2
-  AlterCuSubUnit = ApplyToList;Kill
-
-SelectFaction = $WHI
-SelectRegion = $Novocherkassk
-  CreateGroup
-  Posture = $Defensive
-  SetKind = $Land
-  Entranch = 4
-  InCS = 1
-  FixType = 12
-  SetName = Don Cossack Army
-  Apply
-  CreateUnit
-  GMEParam = M. Ivanov
-  SetCommit = 1
-  SetType = $uni_DON_Ivanov3
-  SetName = M. Ivanov
-  Apply
-  CreateUnit
-  SetType = $uni_DON_Sup1
-  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-  SetName = GHQ Supply
-  Apply
-  SetEvtOccurs = evt_nam_WHI_NovocherkasskGHQ_Ready;MaxOccurs;0
-  SetEvtOccurs = evt_nam_WHI_NovocherkasskGHQ_Ready;CuOccurs;0
-
-SelectFaction = $CMN
-  GenTextMsg  = opt_notify_WHI_New_NovocherkasskGHQ;1;NULL;NULL;NULL
-
-SelectFaction = $WHI
-  ChgFacEngagementPts = -7
-  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_NovocherkasskGHQ
-
-EndEvent
-
-SelectFaction = $WHI
-SelectRegion = $Novocherkassk
-StartEvent = evt_nam_WHI_NovocherkasskGHQ_IvanovOverrunned|1|1|NULL|NULL|$Novocherkassk|NULL
-
-Conditions
-  MinDate = 1919/01/01
-  EvalEvent = evt_nam_WHI_NovocherkasskGHQ_Ivanov;=;1
-  EvalUnqUnit = M. Ivanov;NOT
-
-Actions
-
-EndEvent
-
-SelectFaction = $WHI
-StartEvent = evt_nam_WHI_NovocherkasskGHQ_Ivanov_Regen|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-  MinDate = 1919/01/01
-
-EvalRgnOwned = $Novocherkassk
-  EvalEvent = evt_nam_WHI_NovocherkasskGHQ_IvanovOverrunned;=;1
-  ActorDisabled = $gmaOptionReinf;WHI_NovocherkasskGHQ
-
-Actions
-  GenTextMsg  = opt_notify_WHI_NovocherkasskGHQ_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RUS_Leader2.png;Title;opt_title_WHI_NovocherkasskGHQ;MsgString;opt_desc_WHI_NovocherkasskGHQ;ToolString;opt_hint_WHI_NovocherkasskGHQ;SubType;WHI_NovocherkasskGHQ;SParam1;WHI
 
 EndEvent
 
@@ -931,7 +644,7 @@ Actions
 
   ChgFacEngagementPts = -8
   ChangeMoneyPool = -30
-   ChangeFacMorale = -5
+  ChangeFacMorale = -2
   ChangeConscriptPool = 150
 
   GenTextMsg  = opt_notify_ANA_PartialMobilization;1;NULL;NULL;NULL
@@ -1007,7 +720,7 @@ Actions
 
   ChgFacEngagementPts = -8
   ChangeMoneyPool = -30
-   ChangeFacMorale = -5
+  ChangeFacMorale = -2
   ChangeConscriptPool = 150
 
   GenTextMsg  = opt_notify_UKR_PartialMobilization;1;NULL;NULL;NULL

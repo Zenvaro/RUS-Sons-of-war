@@ -604,18 +604,18 @@ SelectFaction = $LIT
   RemRgnDecisionExcl = $Area_Lithuania
   RemRgnDecisionExcl = $Area_Latvia
   RemRgnDecisionExcl = $Area_Estonia
-  Replacement = LIT;$famLine;6
-  Replacement = LIT;$famCavalry;3
-  Replacement = LIT;$famLightArty;3
-  ChangeUnitPool = $uni_LIT_Cav2;4
-  ChangeUnitPool = $uni_LIT_Mil1;12
-  ChangeUnitPool = $uni_LIT_Bde2;5
-  ChangeUnitPool = $uni_LIT_Bde3;1
+  Replacement = LIT;$famLine;2
+  Replacement = LIT;$famCavalry;1
+  Replacement = LIT;$famLightArty;1
+  ChangeUnitPool = $uni_LIT_Cav2;10
+  ChangeUnitPool = $uni_LIT_Mil1;30
+  ChangeUnitPool = $uni_LIT_Bde2;8
+  ChangeUnitPool = $uni_LIT_Bde3;2
   ChangeUnitPool = $uni_LIT_Art0;3
-  ChangeUnitPool = $uni_LIT_Art1;3
-  ChangeUnitPool = $uni_LIT_Art2;3
-  ChangeUnitPool = $uni_LIT_Art3;3
-  ChangeUnitPool = $uni_LIT_Art4;3
+  ChangeUnitPool = $uni_LIT_Art1;5
+  ChangeUnitPool = $uni_LIT_Art2;5
+  ChangeUnitPool = $uni_LIT_Art3;5
+  ChangeUnitPool = $uni_LIT_Art4;5
   ChangeUnitPool = $uni_LIT_Eng;5
   ChangeUnitPool = $uni_LIT_Med;5
   ChangeUnitPool = $uni_LIT_Sig;5
@@ -624,7 +624,7 @@ SelectFaction = $LIT
   ChangeUnitPool = $uni_LIT_Amc1;1
   ChangeUnitPool = $uni_LIT_GB1;2
   ChangeUnitPool = $uni_LIT_Hq2;1
-  ChangeUnitPool = $uni_LIT_MG0;4
+  ChangeUnitPool = $uni_LIT_MG0;10
 
 SelectFaction = $LAT
 
@@ -636,18 +636,18 @@ SelectFaction = $LAT
   RemRgnDecisionExcl = $Area_Lithuania
   RemRgnDecisionExcl = $Area_Latvia
   RemRgnDecisionExcl = $Area_Estonia
-  Replacement = LAT;$famLine;6
-  Replacement = LAT;$famCavalry;3
-  Replacement = LAT;$famLightArty;3
-  ChangeUnitPool = $uni_LAT_Cav2;4
-  ChangeUnitPool = $uni_LAT_Mil1;12
-  ChangeUnitPool = $uni_LAT_Bde2;5
-  ChangeUnitPool = $uni_LAT_Bde3;1
+  Replacement = LAT;$famLine;2
+  Replacement = LAT;$famCavalry;1
+  Replacement = LAT;$famLightArty;1
+  ChangeUnitPool = $uni_LAT_Cav2;10
+  ChangeUnitPool = $uni_LAT_Mil1;30
+  ChangeUnitPool = $uni_LAT_Bde2;8
+  ChangeUnitPool = $uni_LAT_Bde3;2
   ChangeUnitPool = $uni_LAT_Art0;3
-  ChangeUnitPool = $uni_LAT_Art1;3
-  ChangeUnitPool = $uni_LAT_Art2;3
-  ChangeUnitPool = $uni_LAT_Art3;3
-  ChangeUnitPool = $uni_LAT_Art4;3
+  ChangeUnitPool = $uni_LAT_Art1;5
+  ChangeUnitPool = $uni_LAT_Art2;5
+  ChangeUnitPool = $uni_LAT_Art3;5
+  ChangeUnitPool = $uni_LAT_Art4;5
   ChangeUnitPool = $uni_LAT_Eng;5
   ChangeUnitPool = $uni_LAT_Med;5
   ChangeUnitPool = $uni_LAT_Sig;5
@@ -656,7 +656,7 @@ SelectFaction = $LAT
   ChangeUnitPool = $uni_LAT_Amc1;1
   ChangeUnitPool = $uni_LAT_GB1;2
   ChangeUnitPool = $uni_LAT_Hq2;1
-  ChangeUnitPool = $uni_LAT_MG0;4
+  ChangeUnitPool = $uni_LAT_MG0;10
 
 SelectFaction = $EST
 
@@ -668,18 +668,18 @@ SelectFaction = $EST
   RemRgnDecisionExcl = $Area_Lithuania
   RemRgnDecisionExcl = $Area_Latvia
   RemRgnDecisionExcl = $Area_Estonia
-  Replacement = EST;$famLine;6
-  Replacement = EST;$famCavalry;3
-  Replacement = EST;$famLightArty;3
-  ChangeUnitPool = $uni_EST_Cav2;4
-  ChangeUnitPool = $uni_EST_Mil1;12
-  ChangeUnitPool = $uni_EST_Bde2;5
-  ChangeUnitPool = $uni_EST_Bde3;1
+  Replacement = EST;$famLine;2
+  Replacement = EST;$famCavalry;1
+  Replacement = EST;$famLightArty;1
+  ChangeUnitPool = $uni_EST_Cav2;10
+  ChangeUnitPool = $uni_EST_Mil1;30
+  ChangeUnitPool = $uni_EST_Bde2;8
+  ChangeUnitPool = $uni_EST_Bde3;2
   ChangeUnitPool = $uni_EST_Art0;3
-  ChangeUnitPool = $uni_EST_Art1;3
-  ChangeUnitPool = $uni_EST_Art2;3
-  ChangeUnitPool = $uni_EST_Art3;3
-  ChangeUnitPool = $uni_EST_Art4;3
+  ChangeUnitPool = $uni_EST_Art1;5
+  ChangeUnitPool = $uni_EST_Art2;5
+  ChangeUnitPool = $uni_EST_Art3;5
+  ChangeUnitPool = $uni_EST_Art4;5
   ChangeUnitPool = $uni_EST_Eng;5
   ChangeUnitPool = $uni_EST_Med;5
   ChangeUnitPool = $uni_EST_Sig;5
@@ -688,7 +688,7 @@ SelectFaction = $EST
   ChangeUnitPool = $uni_EST_Amc1;1
   ChangeUnitPool = $uni_EST_GB1;2
   ChangeUnitPool = $uni_EST_Hq2;1
-  ChangeUnitPool = $uni_EST_MG0;4
+  ChangeUnitPool = $uni_EST_MG0;10
 
 SelectFaction = $RED
 
@@ -1073,6 +1073,10 @@ SelectRegion = $Parnu
     SetName = V. Puskar
   Apply
   CreateUnit
+    SetType = $uni_EST_Par1
+    SetName = Partisans
+  Apply
+  CreateUnit
     SetType = $uni_BAL_Rgt0
     SetName = 4th Infantry Rgt
   Apply
@@ -1096,7 +1100,6 @@ SelectRegion = $Parnu
     SetType = $uni_EST_Sup1
     SetName = Estonian Supply
   Apply
-
 
 SelectFaction = $LAT
 SelectRegion = $Riga
@@ -1141,6 +1144,8 @@ SelectRegion = $Riga
     FlavorName = 1st Kurzeme Div.
     SetName = J. Zemitans
   Apply
+  SetHealth = 50
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_BAL_Rgt4
     FlavorName = Col. Gailitis
@@ -1159,15 +1164,13 @@ SelectRegion = $Riga
     SetName = 3rd Jelgava Rgt
   Apply
   CreateUnit
-    SetType = $uni_LAT_Cav1
-    SetName = 1st Cavalry Rgt
-  Apply
-  CreateUnit
     SetType = $uni_LAT_Art1
     FlavorName = Col. Fogelmanis
     SUFlavorName = Kurzeme Arty
     SetName = Kurzeme Artillery
   Apply
+  SetHealth = 100
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_LAT_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
@@ -1234,6 +1237,8 @@ SelectRegion = $Daugavpils
     FlavorName = 2nd Vidzemsk Div.
     SetName = M. Penikis
   Apply
+  SetHealth = 50
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_BAL_Rgt4
     SetName = 4th Infantry Rgt
@@ -1247,13 +1252,11 @@ SelectRegion = $Daugavpils
     SetName = 6th Infantry Rgt
   Apply
   CreateUnit
-    SetType = $uni_LAT_Cav1
-    SetName = 2nd Cavalry Rgt
-  Apply
-  CreateUnit
     SetType = $uni_LAT_Art1
     SetName = 2nd Latvian Artillery
   Apply
+  SetHealth = 100
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_LAT_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
@@ -1279,16 +1282,22 @@ SelectRegion = $Daugavpils
     FlavorName = 3rd Latgalsk Div.
     SetName = K. Berkis
   Apply
+  SetHealth = 30
+  SetCohesion = 100
   CreateUnit
-    SetType = $uni_BAL_Rgt4
+    SetType = $uni_LAT_Par1
     SetName = 7th Infantry Rgt
   Apply
   CreateUnit
-    SetType = $uni_BAL_Rgt4
+    SetType = $uni_LAT_Par1
     SetName = 8th Infantry Rgt
   Apply
   CreateUnit
-    SetType = $uni_BAL_Rgt4
+    SetType = $uni_LAT_Par1
+    SetName = 9th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_LAT_Par1
     SetName = 9th Infantry Rgt
   Apply
   CreateUnit
@@ -1299,12 +1308,13 @@ SelectRegion = $Daugavpils
     SetType = $uni_LAT_Art1
     SetName = 3rd Latvian Artillery
   Apply
+  SetHealth = 100
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_LAT_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
     SetName = 1st Division Supply
   Apply
-
 
 SelectFaction = $LIT
 SelectRegion = $Kaunas
@@ -1379,6 +1389,8 @@ SelectRegion = $Kaunas
     FlavorName = 1st Lithuanian Div.
     SetName = K. Ladyga
   Apply
+  SetHealth = 75
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_BAL_Btn
     SetName = 1st Infantry Rgt
@@ -1395,6 +1407,8 @@ SelectRegion = $Kaunas
     SetType = $uni_LIT_Art1
     SetName = 1st Latvian Artillery
   Apply
+  SetHealth = 100
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_LIT_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
@@ -1419,6 +1433,8 @@ SelectRegion = $Kaunas
     SetType = $uni_LIT_Kleshinsky1
     SetName = K.K. Kleshinsky
   Apply
+  SetHealth = 75
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_BAL_Btn
     SetName = 4th Infantry Rgt
@@ -1435,6 +1451,8 @@ SelectRegion = $Kaunas
     SetType = $uni_LIT_Art1
     SetName = 2nd Latvian Artillery
   Apply
+  SetHealth = 100
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_LIT_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
@@ -1459,6 +1477,8 @@ SelectRegion = $Kaunas
     SetType = $uni_BAL_Variakojis1
     SetName = J. Variakojis
   Apply
+  SetHealth = 75
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_BAL_Btn
     SetName = 7th Infantry Rgt
@@ -1475,6 +1495,8 @@ SelectRegion = $Kaunas
     SetType = $uni_LIT_Art1
     SetName = 3rd Latvian Artillery
   Apply
+  SetHealth = 100
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_LIT_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.

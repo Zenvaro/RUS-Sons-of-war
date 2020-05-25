@@ -1,11 +1,11 @@
 UID = 1645
-NationTag = GRN
+NationTag = RED
 Name = E.S. Kazansky
 Alias = uni_GRN_Kazansky1
 ForcePool = -1
 ShortName = Kazansky
 Text = $uni_GRN_Kazansky1_txt
-Color = $colGRNRegular 
+Color = $colREDRegular 
 ModelType0 = $ldr_GRN_Kazansky1|1
 FamilyType0 = $famLeader|1
 CmdCost = 0
