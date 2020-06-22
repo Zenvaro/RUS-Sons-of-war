@@ -1884,7 +1884,7 @@ SelectRegion = $Kalach
   Apply
   CreateUnit
     SetType = $uni_DON_Bogatyrev1
-    SetName = Bogatyrev
+    SetName = G.M. Bogatyrev
   Apply
   CreateUnit
     SetType = $uni_DON_Cav0

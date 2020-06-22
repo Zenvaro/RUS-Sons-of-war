@@ -56,7 +56,6 @@ ShareSupply = 1
 SupHitPen = 0
 SupMovePen = 0
 SupCbtPen = 0
-Ability0 = $Multinational
 VPValue = 1
 POLValue = 3
 Morale = 0

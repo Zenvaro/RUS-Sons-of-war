@@ -58,7 +58,6 @@ SupMovePen = 0
 SupCbtPen = 0
 Ability0 = $Cavalryman
 Ability1 = $Offensive_School
-Ability2 = $Multinational
 VPValue = 1
 POLValue = 1
 Morale = 0

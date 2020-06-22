@@ -1,12 +1,12 @@
 UID = 1312
 NationTag = URL
 Name = N.A. Savelev
-Alias = uni_WH3_Savelev2
+Alias = uni_WH3_Savelev3
 ForcePool = -1
 ShortName = Savelev
-Text = $uni_WH3_Savelev2_txt
+Text = $uni_WH3_Savelev3_txt
 Color = $colURLRegular 
-ModelType0 = $ldr_WH3_Savelev2|1
+ModelType0 = $ldr_WH3_Savelev3|1
 FamilyType0 = $famLeader|1
 CmdCost = 0
 Pillage = 0

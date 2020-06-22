@@ -296,8 +296,8 @@ omwMinEvadeForRaider = 4 // Minimum evade to be a raider
 
 // ***** RESERVE *****
 
-resBaseChanceOff     = 100 	// Base chance if in Offensive posture 
-resBaseChanceDef     =  100 	// Base chance if in Defensive posture 
+resBaseChanceOff     = 900 	// Base chance if in Offensive posture 
+resBaseChanceDef     =  900 	// Base chance if in Defensive posture 
 resCostPerDay        = 0 	// -10% for each day of marching     
 resCohCostPerDay     = -2 	// -1 cohesion for each day of marching     
 resModAdjGHQ         = 10 	// +10% if adjacent to army HQ       

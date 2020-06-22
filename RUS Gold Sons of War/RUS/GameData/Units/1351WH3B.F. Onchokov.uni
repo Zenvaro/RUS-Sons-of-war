@@ -1,11 +1,11 @@
 UID = 1351
-NationTag = URL
-Name = B.F. Onchokov
+NationTag = ORE
+Name = A.N. Onchokov
 Alias = uni_WH3_Onchokov1
 ForcePool = -1
 ShortName = Onchokov
 Text = $uni_WH3_Onchokov1_txt
-Color = $colURLRegular 
+Color = $colORERegular 
 ModelType0 = $ldr_WH3_Onchokov1|1
 FamilyType0 = $famLeader|1
 CmdCost = 0

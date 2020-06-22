@@ -72,4 +72,4 @@ Promotable = No
 Strategic = 3
 Offensive = 1
 Defensive = 1
-AIAffinity = $AIAff2_inf
+AIAffinity = $AIAff0_inf

@@ -760,11 +760,7 @@ SelectRegion = $Samara
   Apply
   CreateUnit
     SetType = $uni_WH2_Galkin2
-    SetName = Galkin
-  Apply
-  CreateUnit
-    SetType = $uni_WH2_Petrov1
-    SetName = P.P. Petrov
+    SetName = N.A. Galkin
   Apply
   CreateUnit
   SetType = $uni_WH2_Liupov1
@@ -794,10 +790,6 @@ SelectRegion = $Samara
     InCS = 0
     FixType = 0
     SetName = Independent Samara Fusilier Brigade
-  Apply
-  CreateUnit
-  SetType = $uni_WH2_Nechaev1
-  SetName = K.P. Nechaev
   Apply
   CreateUnit
     GMEParam = 2
@@ -837,16 +829,8 @@ SelectRegion = $Samara
     SetName = 1st Samara Fusilier Division
   Apply
   CreateUnit
-  SetType = $uni_WH3_Milovich1
-  SetName = Milovich
-  Apply
-  CreateUnit
   SetType = $uni_WH3_Panov1
-  SetName = Panov
-  Apply
-  CreateUnit
-  SetType = $uni_WH2_Romerov1
-  SetName = I.F. Romerov
+  SetName = F.P. Panov
   Apply
   CreateUnit
   SetType = $uni_WH2_Potapov1
@@ -863,10 +847,6 @@ SelectRegion = $Samara
   CreateUnit
   SetType = $uni_WH2_Bezborodov1
   SetName = N.F. Bezborodov
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Puchkov1
-    SetName = F. Puchkov
   Apply
   CreateUnit
   SetType = $uni_WH2_Imshenetsky1
@@ -5202,6 +5182,30 @@ SelectRegion = $Kiev
   SetType = $uni_UKR_Hq
   SetName = Ukrainian HQ
   Apply
+  CreateUnit
+  SetType = $uni_UKR_Yanchenko1
+  SetName = V.A. Yanchenko
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Krat1
+  SetName = M.N. Krat
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Nikonov1
+  SetName = N.A. Nikonov
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Guly-Gulenko1
+  SetName = A.A. Guly-Gulenko
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Bezruchko1
+  SetName = M.D. Bezruchko
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Burkovsky1
+  SetName = A.O. Burkovsky
+  Apply
   SetHealth = 100
   SetCohesion = 50
   CreateUnit
@@ -5458,6 +5462,10 @@ SelectRegion = $Kharkov
     InCS = 0
     FixType = 0
     SetName = Kharkov Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_UKR_Zagrodsky1
+  SetName = A.A. Zagrodsky
   Apply
   CreateUnit
     SetType = $uni_UKR_Div5
@@ -10360,8 +10368,24 @@ SelectRegion = $Huliaipole
   SetName = V.F. Belash
   Apply
   CreateUnit
+  SetType = $uni_ANA_Khristovoi2
+  SetName = L.O. Khristovoi
+  Apply
+  CreateUnit
+  SetType = $uni_ANA_Dorozh1
+  SetName = M. Dorozh
+  Apply
+  CreateUnit
+  SetType = $uni_ANA_Ishenko1
+  SetName = J. Ishenko
+  Apply
+  CreateUnit
   SetType = $uni_WH2_Popov1
   SetName = D. Popov
+  Apply
+  CreateUnit
+  SetType = $uni_ANA_Brova1
+  SetName = M. Brova
   Apply
   CreateUnit
   SetType = $uni_ANA_Karetnik2
@@ -16738,7 +16762,7 @@ SelectRegion = $Krasnoyarsk
   Apply
   CreateUnit
     SetType = $uni_WH3_Zinevich1
-    SetName = B. Zinevich
+    SetName = B.M. Zinevich
   Apply
   CreateUnit
     SetType = $uni_RED_Gar2
@@ -17756,105 +17780,6 @@ Actions
 
   SelectSubUnits = Models $ldr_WH3_Boldyrev3
   AlterCuSubUnit = ApplyToList;Kill
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-SelectRegion = $Rostov
-
-StartEvent = evt_nam_WHI_GolovinArrives|1|1|NULL|NULL|$Rostov|NULL
-
-Conditions
-
-  MinDate = 1919/07/26
-  MaxDate = 1919/09/26
-
-Actions
-
-SelectFaction = $WHI
-SelectRegion = $Rostov
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 0
-    SetName = White Officer
-  Apply
-  CreateUnit
-  SetType = $uni_WH3_Golovin1
-  SetName = N.N. Golovin
-  Apply
-
-EndEvent
-
-SelectFaction = $WH3
-StartEvent = evt_nam_WH3_LokhvitskyArrives|1|1|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  MaxDate = 1919/03/01
-
-Actions
-  AddToRegList = $Omsk;$Irkutsk;$Ekaterinburg;$Krasnoyarsk
-  PickFromRegList = NotEnemy
-  GenMsg
-
-SelectFaction = $WH3
-  CreateGroup
-  Posture = $Defensive
-  SetKind = $Land
-  Entranch = 0
-  InCS = 0
-  SetName = White Officer
-  Apply
-  CreateUnit
-  SetType = $uni_WH3_Lokhvitsky2
-  SetName = A.N. Lokhvitsky
-  Apply
-
-EndEvent
-
-SelectFaction = $CMN
-SelectRegion = $Ufa
-
-StartEvent = evt_nam_WH3_Rozanov|1|1|NULL|NULL|$Ufa|NULL
-
-Conditions
-
-SelectFaction = $RED
-
-  MinDate = 1918/08/01
-  MaxDate = 1918/10/01
-
-  EvalUnqUnit = S.N. Rozanov
-
-Actions
-
-  SelectSubUnits = Models $ldr_WH3_Rozanov1
-  AlterCuSubUnit = ApplyToList;Kill
-  SelectSubUnits = Models $ldr_WH3_Rozanov2
-  AlterCuSubUnit = ApplyToList;Kill
-
-SelectFaction = $WH3
-SelectRegion = $Ufa
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 0
-    SetName = White Officer
-  Apply
-  CreateUnit
-  SetType = $uni_WH3_Rozanov1
-  SetName = S.N. Rozanov
-  Apply
 
 EndEvent
 
@@ -19872,6 +19797,33 @@ SelectRegion = $Kursk
   CreateUnit
     SetType = $uni_RED_Par2
     SetName = Partisans
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SablinReady|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  FixedDate = 1919/06/21
+  EvalUnqUnit = Y. Sablin;NOT
+
+Actions
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Tambov
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sablin1
+  SetName = Y. Sablin
   Apply
 
 EndEvent

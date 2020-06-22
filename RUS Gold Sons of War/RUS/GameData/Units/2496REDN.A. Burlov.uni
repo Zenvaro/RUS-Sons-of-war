@@ -1,12 +1,12 @@
 UID =  2496
-NationTag = GRN
+NationTag = RED
 Name = N.A. Burlov
-Alias = uni_GRN_Burlov1
+Alias = uni_RED_Burlov1
 ForcePool = -1
 ShortName = Burlov
-Text = $uni_GRN_Burlov2_txt
-Color = $colGRNRegular 
-ModelType0 = $ldr_GRN_Burlov1|1
+Text = $uni_RED_Burlov2_txt
+Color = $colREDRegular 
+ModelType0 = $ldr_RED_Burlov1|1
 FamilyType0 = $famLeader|1
 CmdCost = 0
 Pillage = 0

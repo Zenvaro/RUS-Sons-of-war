@@ -1,11 +1,11 @@
 UID = 1303
-NationTag = URL
+NationTag = ORE
 Name = G. Zhukov
 Alias = uni_WH3_Zhukov2
 ForcePool = -1
 ShortName = Zhukov
 Text = $uni_WH3_Zhukov2_txt
-Color = $colURLRegular 
+Color = $colORERegular 
 ModelType0 = $ldr_WH3_Zhukov2|1
 FamilyType0 = $famLeader|1
 CmdCost = 0

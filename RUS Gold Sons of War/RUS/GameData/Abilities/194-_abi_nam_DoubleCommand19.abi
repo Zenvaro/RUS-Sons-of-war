@@ -1,0 +1,11 @@
+UID = 194
+Name = $abi_nam_DoubleCommand19
+Alias = Basmachi_Commander
+Kind = $abiMultiNation
+Text = $abi_txt_DoubleCommand19
+ImageID = abi_CentralAsian.png
+Color = $colAbi_Tan
+Appliance = Group
+Family = 0
+Level = 1
+StrParam0 = KAZ|TUK|BUK|TUR|GRN|TEC

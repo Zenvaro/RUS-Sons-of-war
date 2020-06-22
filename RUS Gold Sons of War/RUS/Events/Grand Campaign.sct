@@ -2275,16 +2275,16 @@ SelectRegion = $Arkhangelsk
     SetName = V.V. Marushevsky
   Apply
   CreateUnit
+    SetType = $uni_WH5_Dilaktorsky1
+    SetName = P.A. Dilaktorsky
+  Apply
+  CreateUnit
     SetType = $uni_WH5_Klimenko1
     SetName = V.I. Klimenko
   Apply
   CreateUnit
     SetType = $uni_WH5_Muruzi1
     SetName = A.A. Muruzi
-  Apply
-  CreateUnit
-    SetType = $uni_WH5_Durov1
-    SetName = N.A. Durov
   Apply
 
 SelectFaction = $WH3

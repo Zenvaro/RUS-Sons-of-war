@@ -1,6 +1,6 @@
 UID = 1258
 NationTag = DON
-Name = Bogatyrev
+Name = G.M. Bogatyrev
 Alias = ldr_DON_Bogatyrev1
 ShortName = Bogatyrev
 Text = $ldr_txt_DON_Bogatyrev
@@ -58,7 +58,7 @@ SupMovePen = 0
 SupCbtPen = 0
 Ability0 = $Multinational
 Ability1 = $Honour
-Ability2 = $Pilot
+Ability2 = $Partisan
 Ability3 = $Ranger_Survival
 VPValue = 1
 POLValue = 1

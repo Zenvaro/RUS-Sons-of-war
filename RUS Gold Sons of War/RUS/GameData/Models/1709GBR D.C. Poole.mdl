@@ -59,7 +59,6 @@ SupCbtPen = 0
 Ability0 = $Over_Cautious
 Ability1 = $Diplomat
 Ability2 = $Artillerist
-Ability3 = $Multinational
 VPValue = 1
 POLValue = 3
 Morale = 0

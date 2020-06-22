@@ -57,7 +57,6 @@ SupHitPen = 0
 SupMovePen = 0
 SupCbtPen = 0
 Ability0 = $Infantryman
-Ability1 = $Multinational
 Ability2 = $Training_Officer
 VPValue = 1
 POLValue = 5

@@ -1,7 +1,7 @@
 NULL ==========================================================================
 
 RUS All Includes.sct
-RUS F3 Options Leaders Reinforcements.sct
+RUS F3 Options Leaders Reinforcements November18.sct
 RED_GHQ_Omsk_Nov18.sct
 RED_GHQ_Irkutsk_Nov18.sct
 WH3_GHQ_Ekaterinburg_Nov18.sct
@@ -1320,8 +1320,8 @@ SelectRegion = $Arkhangelsk
     SetName = A.A. Muruzi
   Apply
   CreateUnit
-    SetType = $uni_WH5_Durov1
-    SetName = N.A. Durov
+    SetType = $uni_WH5_Dilaktorsky1
+    SetName = P.A. Dilaktorsky
   Apply
 
 SelectFaction = $WH3

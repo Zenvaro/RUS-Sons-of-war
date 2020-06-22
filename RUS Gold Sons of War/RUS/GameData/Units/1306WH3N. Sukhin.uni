@@ -1,12 +1,12 @@
 UID = 1306
 NationTag = ORE
-Name = N. Sukhin
-Alias = uni_WH3_Sukhin2
+Name = N.T. Sukin
+Alias = uni_WH3_Sukin2
 ForcePool = -1
-ShortName = Sukhin
-Text = $uni_WH3_Sukhin2_txt
+ShortName = Sukin
+Text = $uni_WH3_Sukin2_txt
 Color = $colORERegular 
-ModelType0 = $ldr_WH3_Sukhin2|1
+ModelType0 = $ldr_WH3_Sukin2|1
 FamilyType0 = $famLeader|1
 CmdCost = 0
 Pillage = 0

@@ -1,0 +1,11 @@
+UID = 191
+Name = $abi_nam_DoubleCommand16
+Alias = Romanian_Commander
+Kind = $abiMultiNation
+Text = $abi_txt_DoubleCommand16
+ImageID = abi_Rumanian.png
+Color = $colAbi_Tan
+Appliance = Group
+Family = 0
+Level = 1
+StrParam0 = ROM|GRN|TEC

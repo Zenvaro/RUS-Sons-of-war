@@ -57,7 +57,6 @@ SupHitPen = 0
 SupMovePen = 0
 SupCbtPen = 0
 Ability0 = $Arrogant
-Ability1 = $Multinational
 VPValue = 1
 POLValue = 3
 Morale = 0
