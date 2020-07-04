@@ -47,7 +47,6 @@ ProgRate = 20
 Police = 0
 Patrol = 1
 Evasion = 1
-TrainUpg = $mdl_GRN_Art4
 CapturePerc = 12
 IsSupport = 1
 SupplyUsage = 0

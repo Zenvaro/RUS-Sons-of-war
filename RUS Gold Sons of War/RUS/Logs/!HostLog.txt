@@ -1,0 +1,19 @@
+5:22:38  (Reporting)  AltWeatherCalc True
+5:22:38  (Reporting)  weaUniqueDiceRoll False
+5:22:38  (Reporting)  Weather severity dice for area 96 Субарктическая зона : 7
+5:22:38  (Reporting)  Weather severity dice for area 100 Степная зона : 73
+5:22:38  (Reporting)  Weather severity dice for area 99 Южная континентальная зона : 1
+5:22:38  (Reporting)  Weather severity dice for area 104 Зона сибирской степи : 51
+5:22:38  (Reporting)  Weather severity dice for area 97 Северная континентальная зона : 47
+5:22:38  (Reporting)  Weather severity dice for area 107 Горная зона : 17
+5:22:38  (Reporting)  Weather severity dice for area 101 Средиземноморская зона : 45
+5:22:38  (Reporting)  Weather severity dice for area 98 Европейская зона : 44
+5:22:38  (Reporting)  Weather severity dice for area 105 Восточносибирская зона : 86
+5:22:38  (Reporting)  Weather severity dice for area 103 Зона пустынной степи : 88
+5:22:38  (Reporting)  Weather severity dice for area 106 Центральноазиатская зона : 53
+5:22:38  (Reporting)  Weather severity dice for area 102 Кавказская зона : 38
+5:22:38  (Reporting)  Weather severity dice for area 109 Черноморско-Каспийская зона : 86
+5:22:38  (Reporting)  Weather severity dice for area 108 Балтийская зона : 99
+5:22:38  (Reporting)  Weather severity dice for area 110 Зона теплых морей : 84
+5:22:38  (Reporting)  Weather severity dice for area 111 Зона муссонов : 54
+5:22:38  --- End of Log ---                                

@@ -1217,7 +1217,7 @@ SelectRegion = $Baranavichy
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 2nd Lithuanian-Belarus Div.
   Apply
   CreateUnit
@@ -1229,7 +1229,7 @@ SelectRegion = $Baranavichy
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 10th Infantry Div.
   Apply
   CreateUnit
@@ -1292,7 +1292,7 @@ SelectRegion = $Minsk
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 8th Infantry Div. 
   Apply
   CreateUnit
@@ -1304,7 +1304,7 @@ SelectRegion = $Minsk
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 17th Infantry Div.
   Apply
   CreateUnit
@@ -1316,7 +1316,7 @@ SelectRegion = $Minsk
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 1st Lithuanian-Belarus Div.
   Apply
   CreateUnit
@@ -1360,7 +1360,7 @@ SelectRegion = $Vilnius
   Apply
   CreateUnit
     SetType = $uni_POL_Cav2
-    SetLevel = 1
+    SetLevel = 2
     SetName = 2nd Cavalry Brigade
   Apply
   CreateUnit
@@ -1372,7 +1372,7 @@ SelectRegion = $Vilnius
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 6th Infantry Div.
   Apply
   CreateUnit
@@ -1384,7 +1384,7 @@ SelectRegion = $Vilnius
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 2nd Legion Div.
   Apply
   CreateUnit
@@ -1396,7 +1396,7 @@ SelectRegion = $Vilnius
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 14th Poznan Div.
   Apply
   CreateUnit
@@ -1493,29 +1493,29 @@ SelectRegion = $Warsaw
   SetCohesion = 100
   CreateUnit
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = Reserve Division
   Apply
   SetHealth = 100
   SetCohesion = 100
   CreateUnit
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 3rd Legion Division
   Apply
   CreateUnit
     SetType = $uni_POL_Cav2
-    SetLevel = 1
+    SetLevel = 2
     SetName = SE Recon Div.
   Apply
   CreateUnit
     SetType = $uni_POL_Cav2
-    SetLevel = 1
+    SetLevel = 2
     SetName = 8th Cavalry Brigade
   Apply
   CreateUnit
     SetType = $uni_POL_Cav2
-    SetLevel = 1
+    SetLevel = 2
     SetName = Brest Cavalry Reserve
   Apply
   CreateUnit
@@ -1563,7 +1563,7 @@ SelectRegion = $Kowel
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 7th Infantry Div.
   Apply
   CreateUnit
@@ -1575,7 +1575,7 @@ SelectRegion = $Kowel
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 1st Legion Div.
   Apply
   CreateUnit
@@ -1587,7 +1587,7 @@ SelectRegion = $Kowel
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 9th Infantry Div.
   Apply
   CreateUnit
@@ -1599,7 +1599,7 @@ SelectRegion = $Kowel
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 4th Infantry Div.
   Apply
   CreateUnit
@@ -1610,13 +1610,13 @@ SelectRegion = $Kowel
   Apply
   CreateUnit
     SetType = $uni_POL_Cav2
-    SetLevel = 1
+    SetLevel = 2
     SetName = 6th Jaegers Bde.
   Apply
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Cav2
-    SetLevel = 1
+    SetLevel = 2
     SetName = 1st Jaegers Bde.
   Apply
   CreateUnit
@@ -1690,7 +1690,7 @@ SelectRegion = $Lwow
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 13th Infantry Div.
   Apply
   CreateUnit
@@ -1702,7 +1702,7 @@ SelectRegion = $Lwow
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 15th Infantry Div.
   Apply
   CreateUnit
@@ -1711,49 +1711,49 @@ SelectRegion = $Lwow
   Apply
   CreateUnit
     SetType = $uni_POL_Cav2
-    SetLevel = 1
+    SetLevel = 2
     SetName = 10th Cavalry Brigade
   Apply
   CreateUnit
     SetType = $uni_POL_Amc
     SUFlavorName = 1st Armored Cars
-    SetLevel = 1
+    SetLevel = 2
     SetName = 1st Armored Cars Sqd
   Apply
   CreateUnit
     SetType = $uni_POL_Amt
     SUFlavorName = 1st Heavy Armored Train
-    SetLevel = 1
+    SetLevel = 2
     SetName = 1st Heavy Armored Train
   Apply
   CreateUnit
     SetType = $uni_POL_Amt
     SUFlavorName = 2nd Heavy Armored Train
-    SetLevel = 1
+    SetLevel = 2
     SetName = 2nd Heavy Armored Train
   Apply
   CreateUnit
     SetType = $uni_POL_Amt
     SUFlavorName = 2nd Heavy Armored Train
-    SetLevel = 1
+    SetLevel = 2
     SetName = 3rd Heavy Armored Train
   Apply
   CreateUnit
     SetType = $uni_POL_Amt
     SUFlavorName = 2nd Heavy Armored Train
-    SetLevel = 1
+    SetLevel = 2
     SetName = 4th Heavy Armored Train
   Apply
   CreateUnit
     SetType = $uni_POL_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetLevel = 1
+    SetLevel = 2
     SetName = 15th Division Supply
   Apply
   CreateUnit
     SetType = $uni_POL_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetLevel = 1
+    SetLevel = 2
     SetName = 13th Division Supply
   Apply
 
@@ -1806,7 +1806,7 @@ SelectRegion = $Kremenetz
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 5th Infantry Div.
   Apply
   CreateUnit
@@ -1818,7 +1818,7 @@ SelectRegion = $Kremenetz
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 12th Infantry Div.
   Apply
   CreateUnit
@@ -1830,7 +1830,7 @@ SelectRegion = $Kremenetz
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 18th Infantry Div.
   Apply
   CreateUnit
@@ -1894,7 +1894,7 @@ SelectRegion = $Danzig
   CreateUnit
     SetType = $uni_POL_Bde3
     SUFlavorName = 1st Sailors|2nd Sailors|Sailors Bty
-    SetLevel = 1
+    SetLevel = 2
     SetName = Sailors Brigade
   Apply
 
@@ -2179,13 +2179,13 @@ SelectRegion = $Lwow
   CreateUnit
     SetType = $uni_POL_Tnk
     SUFlavorName = 1st Platoon|2nd Platoon|3rd Tank Platoon
-    SetLevel = 1
+    SetLevel = 2
     SetName = 3rd Tank Company
   Apply
   CreateUnit
     SetType = $uni_POL_Tnk
     SUFlavorName = 1st Platoon|2nd Platoon|3rd Platoon
-    SetLevel = 1
+    SetLevel = 2
     SetName = 4th Tank Company
   Apply
   CreateStruc
@@ -2357,7 +2357,7 @@ SelectRegion = $Warsaw
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 11th Infantry Div.
   Apply
   CreateUnit
@@ -2369,19 +2369,19 @@ SelectRegion = $Warsaw
   CreateUnit
     SetCommit = 3
     SetType = $uni_POL_Bde1
-    SetLevel = 1
+    SetLevel = 2
     SetName = 16th Infantry Div.
   Apply
   CreateUnit
     SetType = $uni_POL_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetLevel = 1
+    SetLevel = 2
     SetName = 11th Division Supply
   Apply
   CreateUnit
     SetType = $uni_POL_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetLevel = 1
+    SetLevel = 2
     SetName = 16th Division Supply
   Apply
 
@@ -2501,62 +2501,62 @@ SelectRegion = $Ternopil
   Apply
   CreateUnit
     SetType = $uni_UKR_Bde0
-    SetLevel = 1
+    SetLevel = 2
     SetName = 1st Galicia Div
   Apply
   CreateUnit
     SetType = $uni_UKR_Bde0
-    SetLevel = 1
+    SetLevel = 2
     SetName = 2nd Galicia Div
   Apply
   CreateUnit
     SetType = $uni_UKR_Bde0
-    SetLevel = 1
+    SetLevel = 2
     SetName = 3rd Galicia Div
   Apply
   CreateUnit
     SetType = $uni_UKR_Bde0
-    SetLevel = 1
+    SetLevel = 2
     SetName = 4th Galicia Div
   Apply
   CreateUnit
     SetType = $uni_UKR_Bde0
-    SetLevel = 1
+    SetLevel = 2
     SetName = 5th Galicia Div
   Apply
   CreateUnit
     SetType = $uni_UKR_Bde0
-    SetLevel = 1
+    SetLevel = 2
     SetName = 6th Galicia Div
   Apply
   CreateUnit
     SetType = $uni_UKR_Art5
-    SetLevel = 1
+    SetLevel = 2
     SetName = 1st Galicia Artillery
   Apply
   CreateUnit
     SetType = $uni_UKR_Art5
-    SetLevel = 1
+    SetLevel = 2
     SetName = 2nd Galicia Artillery
   Apply
   CreateUnit
     SetType = $uni_UKR_Trs
-    SetLevel = 1
+    SetLevel = 2
     SetName = Transmission Co.
   Apply
   CreateUnit
     SetType = $uni_UKR_Med
-    SetLevel = 1
+    SetLevel = 2
     SetName = Medical Co.
   Apply
   CreateUnit
     SetType = $uni_UKR_Eng
-    SetLevel = 1
+    SetLevel = 2
     SetName = Engineers Co.
   Apply
   CreateUnit
     SetType = $uni_UKR_Hq
-    SetLevel = 1
+    SetLevel = 2
     SetName = Galicia HQ
   Apply
   CreateUnit

@@ -1,6 +1,6 @@
 UID = 107
 Name = $abi_nam_DoubleCommand1
-Alias = Cossack_Commander
+Alias = Cossack_Commander1
 Kind = $abiMultiNation
 Text = $abi_txt_DoubleCommand1
 ImageID = abi_Hungarian.png

@@ -46,7 +46,6 @@ ProgRate = 10
 Police = 0
 Patrol = 1
 Evasion = 30
-TechUpg = $ldr_WHI_Koshelev2
 CapturePerc = 0
 IsSupport = 1
 SupplyUsage = 0

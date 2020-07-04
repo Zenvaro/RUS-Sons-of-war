@@ -10,7 +10,7 @@ ThirdLanguage   = 4
 
 
 3. *** Games Rules (some are for debug only) ***
-FoWActivated     = 0
+FoWActivated     = 1
 RetreatRule      	= 1 // is retreat rule On (default 1)
 AlwaysActivable  	= 0
 CountrySideSupply 	= 1 // CountrySide provides supply (default 1)
@@ -70,4 +70,4 @@ DelayedCommit    = 0
 rulUIExtForcePool  = 0
 NoWinterBitmaps  = 0
 RegionsBorders   = 0
-LastPlayedGame   = D:\Repositories\RUS-Sons-of-war\RUS Gold Sons of War\RUS\Saves\Grand Campaign\Grand Campaign~WHI.trn
+LastPlayedGame   = D:\Repositories\RUS-Sons-of-war\RUS Gold Sons of War\RUS\Scens\Grand Campaign.scn
