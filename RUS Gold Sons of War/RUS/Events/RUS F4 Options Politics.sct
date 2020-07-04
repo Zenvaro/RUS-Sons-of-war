@@ -454,7 +454,7 @@ Conditions
 Actions
 
   ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_CossacksJoin
-  SelectSubUnits = FactionTags COS
+  SelectSubUnits = Models $mdl_RED_Inf14 $mdl_RED_Cav4 
   AlterCuSubUnit = ApplyToList;Kill
 
 EndEvent
@@ -4953,7 +4953,7 @@ Conditions
   EvalUnqUnit = V.O. Kappel
   MinDate = 1919/02/27
 
-  SelectSubUnits = Models $mdl_WH2_Inf2 $mdl_WH2_KapCav1 $mdl_WH2_KapArt0 $mdl_WH2_KapArt4
+  SelectSubUnits = Models $mdl_WH2_Inf2 $mdl_WH2_KapCav1 
   EvalSubUnitSel = NULL
 
 Actions
@@ -4986,7 +4986,7 @@ Conditions
 
   MinDate = 1919/02/27
   EvalEvent = evt_nam_WH3_VolgaCorps_Generate;=;1
-  SelectSubUnits = Models $mdl_WH2_Inf2 $mdl_WH2_KapCav1 $mdl_WH2_KapArt0 $mdl_WH2_KapArt4
+  SelectSubUnits = Models $mdl_WH2_Inf2 $mdl_WH2_KapCav1 
   EvalSubUnitSel = NULL
 
 Actions
@@ -5016,7 +5016,7 @@ StartEvent = evt_nam_WH3_VolgaCorps_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   EvalUnqUnit = V.O. Kappel
-  SelectSubUnits = Models $mdl_WH2_Inf2 $mdl_WH2_KapCav1 $mdl_WH2_KapArt0 $mdl_WH2_KapArt4
+  SelectSubUnits = Models $mdl_WH2_Inf2 $mdl_WH2_KapCav1
   EvalSubUnitSel = NULL
   CheckOption = $gmaOptionPol;WH3_VolgaCorps;=;1
   CanPayOption = $gmaOptionPol;WH3_VolgaCorps
@@ -5034,8 +5034,7 @@ SelectFaction = $WH3
 
   SetEvtOccurs = evt_nam_WH3_VolgaCorps_Tracker;CuOccurs;1
 
-  SelectSubUnits = Models $mdl_WH2_Inf2 $mdl_WH2_KapCav1 $mdl_WH2_KapArt0 $mdl_WH2_KapArt4
-  AlterCuSubUnit = ApplyToList;Kill
+  RemoveUnqUnit = Samara Fusilier Bde
 
 SelectFaction = $WH3
 SelectRegion = $Omsk
@@ -5218,5 +5217,108 @@ Actions
 SelectFaction = $WHI
 
   ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_ExpressDistrustToDenikin
+
+EndEvent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_IntroduceNEP_Generate|1|0|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1921/03/21
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_IntroduceNEP_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1921/03/21
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;RED_IntroduceNEP
+  CanPayOption = $gmaOptionPol;RED_IntroduceNEP;125
+  Probability = 70
+
+Actions
+
+  ChangeOption = $gmaOptionPol;RED_IntroduceNEP;1
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_IntroduceNEP_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1921/03/21
+  EvalEvent = evt_nam_RED_IntroduceNEP_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionPol;MaxUse;1;Morale;20;EP;50;Money;100;ImageID;Opt_RED_IntroduceNEP.png;Title;opt_title_RED_IntroduceNEP;MsgString;opt_desc_RED_IntroduceNEP;ToolString;opt_hint_RED_IntroduceNEP;SubType;RED_IntroduceNEP;SParam1;RED
+
+EndEvent
+
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_IntroduceNEP_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_IntroduceNEP_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1921/03/21
+  CheckOption = $gmaOptionPol;RED_IntroduceNEP;=;1
+  CanPayOption = $gmaOptionPol;RED_IntroduceNEP
+
+Actions
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_RED_IntroduceNEP;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  PayOption = $gmaOptionPol;RED_IntroduceNEP
+  SetActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_IntroduceNEP
+
+SelectFaction = $RED
+  SetEvtOccurs = evt_nam_RED_IntroduceNEP_Tracker;CuOccurs;1
+
+SelectFaction = $RED
+  ChangeVPCount = 300
+  ChgRgnDecisionFP = $rgdRequisitions;-9
 
 EndEvent

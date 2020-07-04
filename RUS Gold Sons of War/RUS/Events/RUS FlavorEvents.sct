@@ -27,8 +27,9 @@ Actions
 
 SelectFaction = $WH3
 
-  SelectSubUnits = FactionTags UKR
-  AlterCuSubUnit = ApplyToList;Kill
+  RemoveUnqUnit = 1st Ukrainian Far-East Dcht
+  RemoveUnqUnit = 2nd Ukrainian Far-East Dcht
+  RemoveUnqUnit = 3rd Ukrainian Far-East Dcht
 
 SelectFaction = $RED
 SelectRegion = $Kazan
@@ -44,6 +45,16 @@ SelectRegion = $Kazan
   CreateUnit
     SetType = $uni_UKR_SibInfDiv
     SetName = 1st Ukrainian Far-East Dcht
+  Apply
+  SetHealth = 10
+  SetCohesion = 10
+  CreateUnit
+    SetType = $uni_UKR_SibInfDiv
+    SetName = 2nd Ukrainian Far-East Dcht
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_SibInfDiv
+    SetName = 3rd Ukrainian Far-East Dcht
   Apply
 
 EndEvent
@@ -123,7 +134,7 @@ SelectRegion = $Kamenski
   SetCohesion = 100
   CreateUnit
     SetType = $uni_RED_Sapozhkov1
-    SetName = Sapozhkov
+    SetName = A.P. Sapozhkov
   Apply
   CreateUnit
     SetType = $uni_RED_Sup1
@@ -169,7 +180,11 @@ SelectRegion = $Tzaritsyn
     SetName = Tzaritsyn Lines Garrison
   Apply
   CreateUnit
-    SetType = $uni_RED_MBde3
+    SetType = $uni_RED_MBde2
+    SetName = Tzaritsyn Gar
+  Apply
+  CreateUnit
+    SetType = $uni_RED_MBde2
     SetName = Tzaritsyn Gar
   Apply
   CreateUnit
@@ -604,8 +619,8 @@ SelectFaction = $RED
 
   SelectSubUnits = Models $ldr_GRN_Monstrov1
   AlterCuSubUnit = ApplyToList;Kill
-  SelectSubUnits = FactionTags KAZ
-  AlterCuSubUnit = ApplyToList;Kill
+  RemoveUnqUnit = 1st Djalal-Abad Dtch
+  RemoveUnqUnit = 2nd Djalal-Abad Dtch
 
 SelectFaction = $KAZ
 SelectRegion = $Khuzdand
@@ -663,7 +678,7 @@ SelectFaction = $RED
 
 SelectFaction = $WH3
 
-  SelectSubUnits = Area $Area_Semipalatinsk;FactionTags GRN
+  SelectSubUnits = Area $Area_Semipalatinsk;FactionTags GRN TEC
   AlterCuSubUnit = ApplyToList;Kill
   RemoveUnqUnit = Alash Orda Cavalry Rgt
   SelectSubUnits = Models $ldr_GRN_Bukeikhanov1
@@ -1049,6 +1064,10 @@ SelectRegion = $Omsk
     SetName = Polish 5th Siberian Rifle Division
   Apply
   CreateUnit
+    SetType = $uni_POL_Chuma1
+    SetName = V. Chuma
+  Apply
+  CreateUnit
     SetType = $uni_POL_Rgt2
     SetName = 1st Kostyushko Inf Rgt
   Apply
@@ -1106,7 +1125,7 @@ SelectRegion = $Votkinsk
 
 SelectFaction = $RED
 
-  SelectSubUnits = Region $Arkhangelsk;FactionTags RED
+  SelectSubUnits = Region $Arkhangelsk;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move Out
 
 SelectFaction = $WH3
@@ -1884,7 +1903,7 @@ SelectFaction = $WH3
 
 SelectFaction = $RED
 
-  SelectSubUnits = Region $Arkhangelsk;FactionTags RED
+  SelectSubUnits = Region $Arkhangelsk;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Obozerskaya
 
 SelectFaction = $WH3
@@ -2614,9 +2633,9 @@ Actions
 
 SelectFaction = $RED
 
-  SelectSubUnits = Region $Bikin;FactionTags RED
+  SelectSubUnits = Region $Bikin;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Khor
-  SelectSubUnits = Region $Spasskoye;FactionTags RED
+  SelectSubUnits = Region $Spasskoye;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Khor
 
 SelectFaction = $JAP
@@ -3545,21 +3564,21 @@ Conditions
 
 Actions
 
-  SelectSubUnits = Region $Polotsk;FactionTags RED
+  SelectSubUnits = Region $Polotsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Velikiye Luki;FactionTags RED
+  SelectSubUnits = Region $Velikiye Luki;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Luga;FactionTags RED
+  SelectSubUnits = Region $Luga;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Yamburg;FactionTags RED
+  SelectSubUnits = Region $Yamburg;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Vitebsk;FactionTags RED
+  SelectSubUnits = Region $Vitebsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Smolensk;FactionTags RED
+  SelectSubUnits = Region $Smolensk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Mogilev;FactionTags RED
+  SelectSubUnits = Region $Mogilev;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Gomel;FactionTags RED
+  SelectSubUnits = Region $Gomel;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
 
 EndEvent
@@ -3582,21 +3601,21 @@ Conditions
 
 Actions
 
-  SelectSubUnits = Region $Polotsk;FactionTags RED
+  SelectSubUnits = Region $Polotsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Velikiye Luki;FactionTags RED
+  SelectSubUnits = Region $Velikiye Luki;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Luga;FactionTags RED
+  SelectSubUnits = Region $Luga;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Yamburg;FactionTags RED
+  SelectSubUnits = Region $Yamburg;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Vitebsk;FactionTags RED
+  SelectSubUnits = Region $Vitebsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Smolensk;FactionTags RED
+  SelectSubUnits = Region $Smolensk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Mogilev;FactionTags RED
+  SelectSubUnits = Region $Mogilev;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Gomel;FactionTags RED
+  SelectSubUnits = Region $Gomel;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
 
 EndEvent
@@ -3619,21 +3638,21 @@ Conditions
 
 Actions
 
-  SelectSubUnits = Region $Polotsk;FactionTags RED
+  SelectSubUnits = Region $Polotsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Velikiye Luki;FactionTags RED
+  SelectSubUnits = Region $Velikiye Luki;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Luga;FactionTags RED
+  SelectSubUnits = Region $Luga;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Yamburg;FactionTags RED
+  SelectSubUnits = Region $Yamburg;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Vitebsk;FactionTags RED
+  SelectSubUnits = Region $Vitebsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Smolensk;FactionTags RED
+  SelectSubUnits = Region $Smolensk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Mogilev;FactionTags RED
+  SelectSubUnits = Region $Mogilev;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Gomel;FactionTags RED
+  SelectSubUnits = Region $Gomel;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
 
 EndEvent
@@ -3656,21 +3675,21 @@ Conditions
 
 Actions
 
-  SelectSubUnits = Region $Polotsk;FactionTags RED
+  SelectSubUnits = Region $Polotsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Velikiye Luki;FactionTags RED
+  SelectSubUnits = Region $Velikiye Luki;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Luga;FactionTags RED
+  SelectSubUnits = Region $Luga;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Yamburg;FactionTags RED
+  SelectSubUnits = Region $Yamburg;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Vitebsk;FactionTags RED
+  SelectSubUnits = Region $Vitebsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Smolensk;FactionTags RED
+  SelectSubUnits = Region $Smolensk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Mogilev;FactionTags RED
+  SelectSubUnits = Region $Mogilev;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Gomel;FactionTags RED
+  SelectSubUnits = Region $Gomel;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
 
 EndEvent
@@ -3694,21 +3713,21 @@ Conditions
 
 Actions
 
-  SelectSubUnits = Region $Polotsk;FactionTags RED
+  SelectSubUnits = Region $Polotsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Velikiye Luki;FactionTags RED
+  SelectSubUnits = Region $Velikiye Luki;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Luga;FactionTags RED
+  SelectSubUnits = Region $Luga;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Yamburg;FactionTags RED
+  SelectSubUnits = Region $Yamburg;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Vitebsk;FactionTags RED
+  SelectSubUnits = Region $Vitebsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Smolensk;FactionTags RED
+  SelectSubUnits = Region $Smolensk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Mogilev;FactionTags RED
+  SelectSubUnits = Region $Mogilev;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Gomel;FactionTags RED
+  SelectSubUnits = Region $Gomel;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
 
 EndEvent
@@ -3732,21 +3751,21 @@ Conditions
 
 Actions
 
-  SelectSubUnits = Region $Polotsk;FactionTags RED
+  SelectSubUnits = Region $Polotsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Velikiye Luki;FactionTags RED
+  SelectSubUnits = Region $Velikiye Luki;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Luga;FactionTags RED
+  SelectSubUnits = Region $Luga;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Yamburg;FactionTags RED
+  SelectSubUnits = Region $Yamburg;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Vitebsk;FactionTags RED
+  SelectSubUnits = Region $Vitebsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Smolensk;FactionTags RED
+  SelectSubUnits = Region $Smolensk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Mogilev;FactionTags RED
+  SelectSubUnits = Region $Mogilev;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Gomel;FactionTags RED
+  SelectSubUnits = Region $Gomel;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
 
 EndEvent
@@ -3770,21 +3789,21 @@ Conditions
 
 Actions
 
-  SelectSubUnits = Region $Polotsk;FactionTags RED
+  SelectSubUnits = Region $Polotsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Velikiye Luki;FactionTags RED
+  SelectSubUnits = Region $Velikiye Luki;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Luga;FactionTags RED
+  SelectSubUnits = Region $Luga;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Yamburg;FactionTags RED
+  SelectSubUnits = Region $Yamburg;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Vitebsk;FactionTags RED
+  SelectSubUnits = Region $Vitebsk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Smolensk;FactionTags RED
+  SelectSubUnits = Region $Smolensk;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Mogilev;FactionTags RED
+  SelectSubUnits = Region $Mogilev;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
-  SelectSubUnits = Region $Gomel;FactionTags RED
+  SelectSubUnits = Region $Gomel;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
 
 EndEvent
@@ -4015,7 +4034,7 @@ SelectFaction = $RED
   SelectSubUnits = Models $ldr_ANA_Grigoriev1
   AlterCuSubUnit = ApplyToList;Kill
   SelectSubUnits = FactionTags GRN
-  AlterCuSubUnit = ApplyToList;Kill
+  AlterCuSubUnit = ApplyToList;ChgCohesionPerc -70;ChgHealthPerc -70
 
 SelectFaction = $GRN
 SelectRegion = $Elizavetgrad
@@ -9310,7 +9329,7 @@ SelectFaction = $JAP
 
 SelectFaction = $RED
 
-  SelectSubUnits = Area $EventArea_JapaneseIntervention2;FactionTags RED
+  SelectSubUnits = Area $EventArea_JapaneseIntervention2;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Shilka
 
 SelectFaction = $JAP
@@ -10579,27 +10598,27 @@ SelectRegion = $Nova Odessa
   CreateUnit
     SetType = $uni_GRN_Cav0
     SetLevel = 1
-    SetName = Grigoriev Cav Dcht
+    SetName = 1st Grigoriev Cav Dcht
   Apply
   CreateUnit
     SetType = $uni_GRN_Par2
     SetLevel = 1
-    SetName = Grigoriev Dcht
+    SetName = 1st Grigoriev Dcht
   Apply
   CreateUnit
     SetType = $uni_GRN_Par2
     SetLevel = 1
-    SetName = Grigoriev Dcht
+    SetName = 2nd Grigoriev Dcht
   Apply
   CreateUnit
     SetType = $uni_GRN_Par2
     SetLevel = 1
-    SetName = Grigoriev Dcht
+    SetName = 3rd Grigoriev Dcht
   Apply
   CreateUnit
     SetType = $uni_GRN_Par2
     SetLevel = 1
-    SetName = Grigoriev Dcht
+    SetName = 4th Grigoriev Dcht
   Apply
   CreateUnit
     SetType = $uni_GRN_MG0
@@ -14578,11 +14597,11 @@ Conditions
 
 SelectFaction = $RED
 
-  EvalUnqUnit = V. Sapozhkov
+  EvalUnqUnit = A.P. Sapozhkov
 
 Actions
 
-  SelUnqSubUnit = V. Sapozhkov
+  SelUnqSubUnit = A.P. Sapozhkov
   RemoveCuSubUnit = NULL
 
 SelectFaction = $GRN
@@ -14598,7 +14617,7 @@ SelectRegion = $Buzuluk
   Apply
   CreateUnit
     SetType = $uni_RED_Sapozhkov1
-    SetName = V. Sapozhkov
+    SetName = A.P. Sapozhkov
     SetHealth = 50
   Apply
   CreateUnit
@@ -16663,14 +16682,18 @@ SelectRegion = $Krasnoyarsk
     FixType = 0
     SetName = Krasnoyarsk Uprising
   Apply
+  SetHealth = 50
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_WH3_Gulidov1
     SetName = V.P. Gulidov
   Apply
   CreateUnit
-    SetType = $uni_WH3_Rgt0
-    SetName = Krasnyarsk Rebels
+    SetType = $uni_WH3_Div16
+    SetName = 5th Siberian Div.
   Apply
+  SetHealth = 100
+  SetCohesion = 100
 
 EndEvent
 
@@ -17370,7 +17393,7 @@ SelectFaction = $WHI
 
   ChangeUnitPool = $uni_WHI_VolBde;16
   ChangeUnitPool = $uni_WHI_MBde7;8
-  ChangeUnitPool = $uni_WHI_MBde8;2
+  ChangeUnitPool = $uni_WHI_MBde8;8
   ChangeUnitPool = $uni_WHI_NewCav1;16
   ChangeUnitPool = $uni_WHI_DivNewCav1;8
 
@@ -17391,7 +17414,7 @@ SelectFaction = $WH3
 
   ChangeUnitPool = $uni_WH3_MilAG;16
   ChangeUnitPool = $uni_WH3_Bde11;8
-  ChangeUnitPool = $uni_WH3_Bde12;2
+  ChangeUnitPool = $uni_WH3_Bde12;4
   ChangeUnitPool = $uni_WH3_Cav6;16
   ChangeUnitPool = $uni_WH3_Bde8;8
 
@@ -17413,7 +17436,7 @@ SelectFaction = $WH3
 
   ChangeUnitPool = $uni_WH3_Mil3;16
   ChangeUnitPool = $uni_WH3_DivNewInf1;8
-  ChangeUnitPool = $uni_WH3_DivNewInf2;2
+  ChangeUnitPool = $uni_WH3_DivNewInf2;4
   ChangeUnitPool = $uni_WH3_NewCav1;16
   ChangeUnitPool = $uni_WH3_DivNewCav1;8
 
@@ -17434,7 +17457,7 @@ SelectFaction = $RED
 
   ChangeUnitPool = $uni_RED_Mil1;32
   ChangeUnitPool = $uni_RED_MBde5;8
-  ChangeUnitPool = $uni_RED_MBde6;4
+  ChangeUnitPool = $uni_RED_MBde6;8
   ChangeUnitPool = $uni_RED_Cav20;16
   ChangeUnitPool = $uni_RED_Cav18;4
 
@@ -17462,7 +17485,7 @@ SelectFaction = $RED
 
   ChangeUnitPool = $uni_RED_Mil4;32
   ChangeUnitPool = $uni_RED_MBde11;8
-  ChangeUnitPool = $uni_RED_MBde12;4
+  ChangeUnitPool = $uni_RED_MBde12;8
   ChangeUnitPool = $uni_RED_NewCav1;16
   ChangeUnitPool = $uni_RED_DivNewCav1;4
 
@@ -18677,8 +18700,9 @@ Actions
 
 SelectFaction = $WH3
 
-  SelectSubUnits = Models $mdl_BSH_Inf $mdl_BSH_Cav $mdl_BSH_Art0 $mdl_BSH_Art4
-  AlterCuSubUnit = ApplyToList;Kill
+  RemoveUnqUnit = 1st Bashkir Infantry Bde
+  RemoveUnqUnit = 2nd Bashkir Infantry Bde
+  RemoveUnqUnit = 1st Bashkir Cavalry Bde
 
 SelectFaction = $RED
 
@@ -18984,6 +19008,10 @@ SelectFaction = $COS
   ChangeLoyaltyFac = $Area_Semipalatinsk;50
 
 SelectFaction = $WH3
+
+  RemoveUnqUnit = Annenkov Partisans
+  RemoveUnqUnit = Annenkov's Infantry
+  RemoveUnqUnit = Annenkov's Cavalry
 
   SelectSubUnits = FactionTags SEM
   AlterCuSubUnit = ApplyToList;Kill

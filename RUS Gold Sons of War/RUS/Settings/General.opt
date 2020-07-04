@@ -21,8 +21,8 @@ ActivationLevel  = 0
 OMBHandling      = 0
 
 4. *** System, Editing & debug options ***
-EditorMode       	= 0
-FullDebug        = 1
+EditorMode       	= 1
+FullDebug        	= 1
 LogBatch         	= 10 	// how many log lines should be written at once. Can slow down significatively the app & hosting if below 10.
 MemUsage         	= 75 	// How much of the physical memory % we allow to be used before cache is checked for old textures
 CPUSleepMode     	= 1

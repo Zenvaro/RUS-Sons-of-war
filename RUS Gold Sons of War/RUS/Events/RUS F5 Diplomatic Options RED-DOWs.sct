@@ -6336,7 +6336,7 @@ SelectFaction = $ANA
 
 SelectFaction = $GRN
 
-  SelectSubUnits = FactionTags GRN RED WHI UKR ROM POL;Area $Theater_Ukraine
+  SelectSubUnits = FactionTags GRN RED WHI UKR ROM POL TEC;Area $Theater_Ukraine
   AlterCuSubUnit = ApplyToList;Kill
   SelectSubUnits = Models $ldr_ANA_Grigoriev1
   AlterCuSubUnit = ApplyToList;Kill

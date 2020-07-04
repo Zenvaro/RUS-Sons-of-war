@@ -124,7 +124,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Area_Kuban;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Kuban;FactionTags COS KUB;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -145,7 +145,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneKuban;=;1
-  SelectSubUnits = area $Area_Kuban;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Kuban;FactionTags COS KUB;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -167,7 +167,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Area_Don;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Don;FactionTags COS DON;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -188,7 +188,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneDon;=;1
-  SelectSubUnits = area $Area_Don;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Don;FactionTags COS DON;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -210,7 +210,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Area_Uralsksk;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Uralsksk;FactionTags COS URL;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -231,7 +231,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneUralsksk;=;1
-  SelectSubUnits = area $Area_Uralsksk;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Uralsksk;FactionTags COS URL;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -253,7 +253,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Area_Orenburg;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Orenburg;FactionTags COS ORE;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -274,7 +274,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneOrenburg;=;1
-  SelectSubUnits = area $Area_Orenburg;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Orenburg;FactionTags COS ORE;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -296,7 +296,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Area_Akmolinsk;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Akmolinsk;FactionTags COS SIB;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -317,7 +317,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneAkmolinsk;=;1
-  SelectSubUnits = area $Area_Akmolinsk;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Akmolinsk;FactionTags COS SIB;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -340,7 +340,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Area_Zabaikal;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Zabaikal;FactionTags COS ZAB;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -361,7 +361,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneZaibakal;=;1
-  SelectSubUnits = area $Area_Zabaikal;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Zabaikal;FactionTags COS ZAB;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -383,7 +383,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Area_Vladivostock;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Vladivostock;FactionTags COS ZAB;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -404,7 +404,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneVladivostok;=;1
-  SelectSubUnits = area $Area_Vladivostock;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Vladivostock;FactionTags COS ZAB;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -426,7 +426,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Area_Semipalatinsk;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Semipalatinsk;FactionTags COS SEM;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -447,7 +447,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneSemipalatinsk;=;1
-  SelectSubUnits = area $Area_Semipalatinsk;FactionTags COS;Domains $Land
+  SelectSubUnits = area $Area_Semipalatinsk;FactionTags COS SEM;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions

@@ -22129,7 +22129,7 @@ ChangeAssetsProd = 40|0|0|0|0|0
 CivLevel = $Civilized
 Transport = $Railroad
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Aleksandrovsk
 BlockState = 0
@@ -22144,7 +22144,7 @@ CityStyle = $csiNone
 CivLevel = $Wild
 Transport = $NoNetwork
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Severomorsk
 BlockState = 0

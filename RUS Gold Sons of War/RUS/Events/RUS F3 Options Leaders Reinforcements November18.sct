@@ -3053,7 +3053,7 @@ EndEvent
 
 SelectFaction = $WHI
 
-StartEvent = evt_nam_WHI_COS_Leader_Regen|17|0|NULL|NULL|NULL|NULL
+StartEvent = evt_nam_WHI_COS_Leader_Regen|16|0|NULL|NULL|NULL|NULL
 
 Conditions
 
@@ -3270,39 +3270,6 @@ SelectFaction = $WHI
   SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
   SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
   SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L14;MaxOccurs;0
-
-EndEvent
-
-SelectFaction = $WHI
-StartEvent = evt_nam_WHI_COS_LeaderReceived_L15|999|1|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
-
-Actions
-
-SelectFaction = $WHI
-  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
-  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
-  GenMsg
-
-SelectFaction = $WHI
-  CreateGroup
-  Posture = $Defensive
-  SetKind = $Land
-  Entranch = 0
-  InCS = 0
-  SetName = Cossack Officer
-  Apply
-  CreateUnit
-  SetType = $uni_DON_Golubintsev1
-  SetName = A.V. Golubintsev
-  Apply
-  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
-  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
-  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L15;MaxOccurs;0
 
 EndEvent
 

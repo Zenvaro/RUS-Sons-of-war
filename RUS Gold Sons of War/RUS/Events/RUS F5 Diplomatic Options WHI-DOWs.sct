@@ -14659,7 +14659,7 @@ Actions
 
 SelectFaction = $JAP
 
-  SelectSubUnits = FactionTags JAP ZAB WH3
+  SelectSubUnits = FactionTags JAP ZAB WH3 TEC
   AlterCuSubUnit = ApplyToList;Kill
 
 SelectFaction = $RED
@@ -15364,8 +15364,27 @@ Conditions
 
   EvalEvent = evt_nam_KAZ_FreeFrom_WHI;=;1
   EvalEvent = evt_nam_WHI_Attack_Basmachi_Tracker;=;0
+  EvalEvent = evt_nam_WHI_Attack_Basmachi_Options_Removed2;=;0
 
 Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_Attack_Basmachi
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_Attack_Basmachi_Options_Removed2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_Flavor_CMN_TurkyInvadeCaucasus;=;1
+  EvalEvent = evt_nam_WHI_Attack_Basmachi_Tracker;=;0
+  EvalEvent = evt_nam_WHI_Attack_Basmachi_Options_Removed;=;0
+
+Actions
+
+SelectFaction = $WHI
+  SetFacRelationships = KAZ;-100
 
   ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_Attack_Basmachi
 
@@ -15378,8 +15397,27 @@ Conditions
 
   EvalEvent = evt_nam_KAZ_FreeFrom_WH3;=;1
   EvalEvent = evt_nam_WH3_Attack_Basmachi_Tracker;=;0
+  EvalEvent = evt_nam_WH3_Attack_Basmachi_Options_Removed2;=;0
 
 Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_Attack_Basmachi
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_Attack_Basmachi_Options_Removed2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_Flavor_CMN_TurkyInvadeCaucasus;=;1
+  EvalEvent = evt_nam_WH3_Attack_Basmachi_Tracker;=;0
+  EvalEvent = evt_nam_WH3_Attack_Basmachi_Options_Removed;=;0
+
+Actions
+
+SelectFaction = $WH3
+  SetFacRelationships = KAZ;-100
 
   ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;WH3_Attack_Basmachi
 

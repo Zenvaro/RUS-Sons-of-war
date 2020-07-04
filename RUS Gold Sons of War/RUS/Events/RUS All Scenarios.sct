@@ -18,17 +18,17 @@ SelectFaction = $WHI
 
 SelectFaction = $WH3
 
-  SelectSubUnits = Area $Theater_Central_Russia;FactionTags WH3 WH2 ORE WH5 ZAB SEM BSH URL SIB CZE POL GRN;Families $famLine $famCavalry
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags WH3 WH5 WH2 ORE ZAB SEM BSH URL SIB CZE POL GRN;Families $famLine $famCavalry
   EvalSubUnitCount = <=;25
 
 SelectFaction = $RED
 
-  SelectSubUnits = FactionTags RED;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
+  SelectSubUnits = FactionTags RED TEC;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags RED
+  SelectSubUnits = FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -20
 
 EndEvent
@@ -42,12 +42,12 @@ Conditions
 
   MinDate = 1917/09/01
 
-  SelectSubUnits = Area $Area_Manchuria;FactionTags RED
+  SelectSubUnits = Area $Area_Manchuria;FactionTags RED TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Manchuria;FactionTags RED
+  SelectSubUnits = Area $Area_Manchuria;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;ChgCohesionPerc -90
 
 EndEvent
@@ -61,12 +61,12 @@ Conditions
 
   MaxDate = 1920/01/01
 
-  SelectSubUnits = Area $Area_Mongolia;FactionTags RED
+  SelectSubUnits = Area $Area_Mongolia;FactionTags RED TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Mongolia;FactionTags RED
+  SelectSubUnits = Area $Area_Mongolia;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;ChgCohesionPerc -90
 
 EndEvent
@@ -85,11 +85,11 @@ Conditions
 
 Actions
 
-  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;Attempts 30;ChgCohesionPerc -80;ChgHealthPerc -15
-  SelectSubUnits = Area $Theater_Siberia;FactionTags RED
+  SelectSubUnits = Area $Theater_Siberia;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;Attempts 30;ChgCohesionPerc -80;ChgHealthPerc -15
-  SelectSubUnits = Area $Theater_Eastern;FactionTags RED
+  SelectSubUnits = Area $Theater_Eastern;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;Attempts 30;ChgCohesionPerc -80;ChgHealthPerc -15
 
 EndEvent
@@ -107,12 +107,12 @@ Conditions
   MinDate = 1918/12/01
   MaxDate = 1923/12/30
   Probability = 35
-  SelectSubUnits = FactionTags WHI DON KUB TER;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
+  SelectSubUnits = FactionTags WHI DON KUB TER TEC;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags WHI DON KUB TER;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
+  SelectSubUnits = FactionTags WHI DON KUB TER TEC;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
   AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -20
 
 EndEvent
@@ -218,12 +218,12 @@ Conditions
   MinDate = 1918/12/01
   MaxDate = 1923/12/30
   Probability = 35
-  SelectSubUnits = FactionTags WH3 ORE WH5 BSH ZAB SIB URL SEM;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
+  SelectSubUnits = FactionTags WH3 WH5 ORE BSH ZAB SIB URL SEM TEC;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags WH3;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
+  SelectSubUnits = FactionTags WH3 WH5 ORE BSH ZAB SIB URL SEM TEC;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
   AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -20
 
 EndEvent
@@ -1404,12 +1404,12 @@ StartEvent = evt_nam_FarEasterntroopsLosseCohesionInCentral_Russia2|999|0|NULL|N
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = Area $Theater_Central_Russia;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags ZAB JAP TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Central_Russia;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags ZAB JAP TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1421,12 +1421,12 @@ StartEvent = evt_nam_FarEasterntroopsLosseCohesionInFinland2|999|0|NULL|NULL|NUL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = Area $Theater_Finaland;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Finaland;FactionTags ZAB JAP TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Finland;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Finland;FactionTags ZAB JAP TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1438,12 +1438,12 @@ StartEvent = evt_nam_FarEasterntroopsLosseCohesionInWestern2|999|0|NULL|NULL|NUL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = Area $Theater_Western;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Western;FactionTags ZAB JAP TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Western;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Western;FactionTags ZAB JAP TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1455,12 +1455,12 @@ StartEvent = evt_nam_FarEasterntroopsLosseCohesionInUkraine2|999|0|NULL|NULL|NUL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = Area $Theater_Ukraine;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags ZAB JAP TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Ukraine;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags ZAB JAP TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1474,12 +1474,12 @@ StartEvent = evt_nam_FarEasterntroopsLosseCohesionInNorthern2|999|0|NULL|NULL|NU
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = Area $Theater_Northern;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Northern;FactionTags ZAB JAP TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Northern;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Northern;FactionTags ZAB JAP TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1493,12 +1493,12 @@ StartEvent = evt_nam_FarEasterntroopsLosseCohesionInVolga2|999|0|NULL|NULL|NULL|
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = Area $Theater_Volga;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Volga;FactionTags ZAB JAP TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Volga;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Volga;FactionTags ZAB JAP TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1513,12 +1513,12 @@ StartEvent = evt_nam_FarEasterntroopsLosseCohesionInCentral_Asia2|999|1|NULL|NUL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = Area $Theater_Central_Asia;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Central_Asia;FactionTags ZAB JAP TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Central_Asia;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Central_Asia;FactionTags ZAB JAP TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1533,12 +1533,12 @@ StartEvent = evt_nam_FarEasterntroopsLosseCohesionInUral2|999|1|NULL|NULL|$Orenb
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = Area $Theater_Ural;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Ural;FactionTags ZAB JAP TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Ural;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Ural;FactionTags ZAB JAP TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1552,12 +1552,12 @@ StartEvent = evt_nam_FarEasterntroopsLosseCohesionInSouthern2|999|0|NULL|NULL|NU
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = Area $Theater_Southern;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Southern;FactionTags ZAB JAP TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Southern;FactionTags ZAB JAP
+  SelectSubUnits = Area $Theater_Southern;FactionTags ZAB JAP TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1666,7 +1666,7 @@ Conditions
 
   EvalEvent = evt_nam_Flavor_CMN_Directory;=;0
   EvalEvent = evt_nam_WH3_MakeDirectory_Tracker;=;0
-  SelectSubUnits = FactionTags WH3;Area $Theater_Volga
+  SelectSubUnits = FactionTags WH3 SIB ZAB SEM;Area $Theater_Volga
   EvalSubUnitSel = NULL
 
 Actions
@@ -1719,14 +1719,14 @@ Conditions
 
 SelectFaction = $WH3
 
-  SelectSubUnits = Area $Theater_Ukraine;FactionTags ORE WH5 BSH URL
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags ORE BSH URL
   EvalSubUnitSel = NULL
 
 Actions
 
 SelectFaction = $WH3
 
-  SelectSubUnits = Area $Theater_Ukraine;FactionTags ORE WH5 BSH URL
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags ORE BSH URL
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1742,12 +1742,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Siberia;FactionTags ORE WH5 BSH URL ZAB KUB TER DON
+  SelectSubUnits = Area $Theater_Siberia;FactionTags ORE BSH URL ZAB KUB TER DON
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Siberia;FactionTags ORE WH5 BSH URL ZAB KUB TER DON
+  SelectSubUnits = Area $Theater_Siberia;FactionTags ORE BSH URL ZAB KUB TER DON
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1761,12 +1761,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Siberia;FactionTags ORE WH5 BSH URL ZAB KUB TER DON 
+  SelectSubUnits = Area $Theater_Siberia;FactionTags ORE BSH URL ZAB KUB TER DON 
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Siberia;FactionTags ORE WH5 BSH URL ZAB KUB TER DON
+  SelectSubUnits = Area $Theater_Siberia;FactionTags ORE BSH URL ZAB KUB TER DON
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1780,12 +1780,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Ufa;FactionTags ORE WH5 URL ZAB KUB TER SEM DON SIB
+  SelectSubUnits = Area $Area_Ufa;FactionTags ORE URL ZAB KUB TER SEM DON SIB
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Ufa;FactionTags ORE WH5 URL ZAB KUB TER SEM DON SIB
+  SelectSubUnits = Area $Area_Ufa;FactionTags ORE URL ZAB KUB TER SEM DON SIB
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1799,12 +1799,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Ufa;FactionTags ORE WH5 URL ZAB KUB TER SEM DON SIB
+  SelectSubUnits = Area $Area_Ufa;FactionTags ORE URL ZAB KUB TER SEM DON SIB
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Ufa;FactionTags ORE WH5 URL ZAB KUB TER SEM DON SIB
+  SelectSubUnits = Area $Area_Ufa;FactionTags ORE URL ZAB KUB TER SEM DON SIB
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -1818,12 +1818,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Uralsk;FactionTags ORE WH5 SIB ZAB KUB TER SEM DON
+  SelectSubUnits = Area $Area_Uralsk;FactionTags ORE SIB ZAB KUB TER SEM DON
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Uralsk;FactionTags ORE WH5 SIB ZAB KUB TER SEM DON
+  SelectSubUnits = Area $Area_Uralsk;FactionTags ORE SIB ZAB KUB TER SEM DON
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -1837,12 +1837,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Uralsk;FactionTags ORE WH5 SIB ZAB KUB TER SEM DON
+  SelectSubUnits = Area $Area_Uralsk;FactionTags ORE SIB ZAB KUB TER SEM DON
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Uralsk;FactionTags ORE WH5 SIB ZAB KUB TER SEM DON
+  SelectSubUnits = Area $Area_Uralsk;FactionTags ORE SIB ZAB KUB TER SEM DON
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -1856,12 +1856,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Perm;FactionTags ORE WH5 URL SIB ZAB KUB TER SEM DON
+  SelectSubUnits = Area $Area_Perm;FactionTags ORE URL SIB ZAB KUB TER SEM DON
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Perm;FactionTags ORE WH5 URL SIB ZAB KUB TER SEM DON
+  SelectSubUnits = Area $Area_Perm;FactionTags ORE URL SIB ZAB KUB TER SEM DON
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -1875,12 +1875,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Perm;FactionTags ORE WH5 URL SIB ZAB KUB TER SEM DON
+  SelectSubUnits = Area $Area_Perm;FactionTags ORE URL SIB ZAB KUB TER SEM DON
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Perm;FactionTags ORE WH5 URL SIB ZAB KUB TER SEM DON
+  SelectSubUnits = Area $Area_Perm;FactionTags ORE URL SIB ZAB KUB TER SEM DON
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -1894,12 +1894,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Turgay;FactionTags ORE WH5 URL SIB ZAB KUB TER SEM DON
+  SelectSubUnits = Area $Area_Turgay;FactionTags ORE URL SIB ZAB KUB TER SEM DON
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Turgay;FactionTags ORE WH5 URL SIB ZAB KUB TER SEM DON
+  SelectSubUnits = Area $Area_Turgay;FactionTags ORE URL SIB ZAB KUB TER SEM DON
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -1913,12 +1913,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Turgay;FactionTags ORE WH5 URL SIB ZAB KUB TER SEM DON
+  SelectSubUnits = Area $Area_Turgay;FactionTags ORE URL SIB ZAB KUB TER SEM DON
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Turgay;FactionTags ORE WH5 URL SIB ZAB KUB TER SEM DON
+  SelectSubUnits = Area $Area_Turgay;FactionTags ORE URL SIB ZAB KUB TER SEM DON
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -1932,12 +1932,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Southern;FactionTags ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Theater_Southern;FactionTags ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Southern;FactionTags ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Theater_Southern;FactionTags ORE URL SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -1951,12 +1951,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Volga;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Theater_Volga;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Volga;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Theater_Volga;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -1970,12 +1970,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Central_Asia;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Theater_Central_Asia;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Central_Asia;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Theater_Central_Asia;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -1989,12 +1989,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Eastern;FactionTags TER KUB DON ORE WH5 URL SIB SEM
+  SelectSubUnits = Area $Theater_Eastern;FactionTags TER KUB DON ORE URL SIB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Eastern;FactionTags TER KUB DON ORE WH5 URL SIB SEM
+  SelectSubUnits = Area $Theater_Eastern;FactionTags TER KUB DON ORE URL SIB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2046,12 +2046,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Saratov;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Saratov;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Saratov;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Saratov;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2065,12 +2065,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Taurida;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Taurida;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Taurida;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Taurida;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2084,12 +2084,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Don;FactionTags TER KUB ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Don;FactionTags TER KUB ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Don;FactionTags TER KUB URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Don;FactionTags TER KUB URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2103,12 +2103,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Terek;FactionTags KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Terek;FactionTags KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Terek;FactionTags KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Terek;FactionTags KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2122,12 +2122,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Voronezh;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Voronezh;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Voronezh;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Voronezh;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2141,12 +2141,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Stavropol;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Stavropol;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Stavropol;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Stavropol;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2160,12 +2160,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Kuban;FactionTags TER DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Kuban;FactionTags TER DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Kuban;FactionTags TER DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Kuban;FactionTags TER DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2179,12 +2179,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Astrakhan;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Astrakhan;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Astrakhan;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Astrakhan;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2198,12 +2198,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Azerbaijan;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Azerbaijan;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Azerbaijan;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Azerbaijan;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2217,12 +2217,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Georgia;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Georgia;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Georgia;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Georgia;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2255,12 +2255,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Southern;FactionTags ORE WH5 URL SIB ZAB SEM BSH
+  SelectSubUnits = Area $Theater_Southern;FactionTags ORE URL SIB ZAB SEM BSH
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Southern;FactionTags ORE WH5 URL SIB ZAB SEM BSH
+  SelectSubUnits = Area $Theater_Southern;FactionTags ORE URL SIB ZAB SEM BSH
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2274,12 +2274,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Volga;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM BSH
+  SelectSubUnits = Area $Theater_Volga;FactionTags TER KUB DON ORE URL SIB ZAB SEM BSH
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Volga;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM BSH
+  SelectSubUnits = Area $Theater_Volga;FactionTags TER KUB DON ORE URL SIB ZAB SEM BSH
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2293,12 +2293,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Central_Asia;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM BSH
+  SelectSubUnits = Area $Theater_Central_Asia;FactionTags TER KUB DON ORE URL SIB ZAB SEM BSH
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Central_Asia;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM BSH
+  SelectSubUnits = Area $Theater_Central_Asia;FactionTags TER KUB DON ORE URL SIB ZAB SEM BSH
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2312,12 +2312,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Eastern;FactionTags TER KUB DON ORE WH5 URL SIB SEM
+  SelectSubUnits = Area $Theater_Eastern;FactionTags TER KUB DON ORE URL SIB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Eastern;FactionTags TER KUB DON ORE WH5 URL SIB SEM
+  SelectSubUnits = Area $Theater_Eastern;FactionTags TER KUB DON ORE URL SIB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2369,12 +2369,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Saratov;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Saratov;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Saratov;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Saratov;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2388,12 +2388,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Taurida;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Taurida;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Taurida;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Taurida;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2407,12 +2407,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Don;FactionTags TER KUB ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Don;FactionTags TER KUB ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Don;FactionTags TER KUB URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Don;FactionTags TER KUB URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2426,12 +2426,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Terek;FactionTags KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Terek;FactionTags KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Terek;FactionTags KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Terek;FactionTags KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2445,12 +2445,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Voronezh;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Voronezh;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Voronezh;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Voronezh;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2464,12 +2464,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Stavropol;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Stavropol;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Stavropol;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Stavropol;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2483,12 +2483,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Kuban;FactionTags TER DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Kuban;FactionTags TER DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Kuban;FactionTags TER DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Kuban;FactionTags TER DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2502,12 +2502,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Astrakhan;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Astrakhan;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Astrakhan;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Astrakhan;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2521,12 +2521,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Azerbaijan;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Azerbaijan;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Azerbaijan;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Azerbaijan;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2540,12 +2540,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Area_Georgia;FactionTags TER KUB DON ORE WH5 URL SIB ZAB SEM
+  SelectSubUnits = Area $Area_Georgia;FactionTags TER KUB DON ORE URL SIB ZAB SEM
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Area_Georgia;FactionTags TER KUB DON URL ORE WH5 SIB ZAB SEM
+  SelectSubUnits = Area $Area_Georgia;FactionTags TER KUB DON URL ORE SIB ZAB SEM
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2580,14 +2580,14 @@ Conditions
 
 SelectFaction = $WH3
 
-  SelectSubUnits = Area $Theater_Eastern;FactionTags ORE WH5 URL BSH
+  SelectSubUnits = Area $Theater_Eastern;FactionTags ORE URL BSH
   EvalSubUnitSel = NULL
 
 Actions
 
 SelectFaction = $WH3
 
-  SelectSubUnits = Area $Theater_Eastern;FactionTags ORE WH5 URL BSH
+  SelectSubUnits = Area $Theater_Eastern;FactionTags ORE URL BSH
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -5
 
 EndEvent
@@ -2605,14 +2605,14 @@ Conditions
 
 SelectFaction = $WH3
 
-  SelectSubUnits = Area $Theater_Northern;FactionTags ORE WH5 URL BSH
+  SelectSubUnits = Area $Theater_Northern;FactionTags ORE URL BSH
   EvalSubUnitSel = NULL
 
 Actions
 
 SelectFaction = $WH3
 
-  SelectSubUnits = Area $Theater_Northern;FactionTags ORE WH5 URL BSH
+  SelectSubUnits = Area $Theater_Northern;FactionTags ORE URL BSH
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -5
 
 EndEvent
@@ -2628,12 +2628,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Northern;FactionTags ORE WH5 URL BSH
+  SelectSubUnits = Area $Theater_Northern;FactionTags ORE URL BSH
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Northern;FactionTags ORE WH5
+  SelectSubUnits = Area $Theater_Northern;FactionTags ORE
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -2648,12 +2648,12 @@ StartEvent = evt_nam_UraltroopsLosseCohesionInVolga|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = Area $Theater_Northern;FactionTags ORE WH5 URL BSH
+  SelectSubUnits = Area $Theater_Northern;FactionTags ORE URL BSH
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Northern;FactionTags ORE WH5 URL BSH
+  SelectSubUnits = Area $Theater_Northern;FactionTags ORE URL BSH
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -5
 
 EndEvent
@@ -2666,12 +2666,12 @@ StartEvent = evt_nam_UraltroopsLosseCohesionInSouthern|999|1|NULL|NULL|$Kiev|NUL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = Area $Theater_Southern;FactionTags ORE WH5 URL BSH
+  SelectSubUnits = Area $Theater_Southern;FactionTags ORE URL BSH
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Southern;FactionTags ORE WH5 URL BSH
+  SelectSubUnits = Area $Theater_Southern;FactionTags ORE URL BSH
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -2684,12 +2684,12 @@ StartEvent = evt_nam_UraltroopsLosseCohesionInWestern|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = Area $Theater_Western;FactionTags ORE WH5 URL BSH
+  SelectSubUnits = Area $Theater_Western;FactionTags ORE URL BSH
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Western;FactionTags ORE WH5 URL BSH
+  SelectSubUnits = Area $Theater_Western;FactionTags ORE URL BSH
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -2702,12 +2702,12 @@ StartEvent = evt_nam_UraltroopsLosseCohesionInFinland|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = Area $Theater_Finland;FactionTags ORE WH5 URL BSH
+  SelectSubUnits = Area $Theater_Finland;FactionTags ORE URL BSH
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Finland;FactionTags ORE WH5 URL BSH
+  SelectSubUnits = Area $Theater_Finland;FactionTags ORE URL BSH
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -2723,12 +2723,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Ural;FactionTags KAZ
+  SelectSubUnits = Area $Theater_Ural;FactionTags KAZ TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Ural;FactionTags KAZ
+  SelectSubUnits = Area $Theater_Ural;FactionTags KAZ TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2742,12 +2742,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Southern;FactionTags KAZ
+  SelectSubUnits = Area $Theater_Southern;FactionTags KAZ TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Southern;FactionTags KAZ
+  SelectSubUnits = Area $Theater_Southern;FactionTags KAZ TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2761,12 +2761,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Siberia;FactionTags KAZ
+  SelectSubUnits = Area $Theater_Siberia;FactionTags KAZ TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Siberia;FactionTags KAZ
+  SelectSubUnits = Area $Theater_Siberia;FactionTags KAZ TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2925,12 +2925,12 @@ StartEvent = evt_nam_LITtroopsLosseCohesionInCentral_Russia|999|1|NULL|NULL|$Kie
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Central_Russia
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Central_Russia
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Central_Russia
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Central_Russia
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -2943,12 +2943,12 @@ StartEvent = evt_nam_LITtroopsLosseCohesionInCentral_Asia|999|1|NULL|NULL|$Kiev|
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Central_Asia
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Central_Asia
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Central_Asia
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Central_Asia
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -2958,12 +2958,12 @@ StartEvent = evt_nam_LITtroopsLosseCohesionInSouthern|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Southern
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Southern
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Southern
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Southern
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -2973,12 +2973,12 @@ StartEvent = evt_nam_LITtroopsLosseCohesionInUkraine|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Ukraine
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Ukraine
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Ukraine
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Ukraine
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -2988,12 +2988,12 @@ StartEvent = evt_nam_LITtroopsLosseCohesionInVolga|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Volga
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Volga
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Volga
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Volga
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3003,12 +3003,12 @@ StartEvent = evt_nam_LITtroopsLosseCohesionInUral|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Ural
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Ural
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Ural
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Ural
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3018,12 +3018,12 @@ StartEvent = evt_nam_LITtroopsLosseCohesionInSiberia|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Southern
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Southern
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Southern
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Southern
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3033,12 +3033,12 @@ StartEvent = evt_nam_LITtroopsLosseCohesionInEastern|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Eastern
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Eastern
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LIT BAL;Area $Theater_Eastern
+  SelectSubUnits = FactionTags LIT BAL TEC;Area $Theater_Eastern
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3053,12 +3053,12 @@ StartEvent = evt_nam_LATtroopsLosseCohesionInCentral_Russia|999|1|NULL|NULL|$Kie
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Central_Russia
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Central_Russia
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Central_Russia
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Central_Russia
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3071,12 +3071,12 @@ StartEvent = evt_nam_LATtroopsLosseCohesionInCentral_Asia|999|1|NULL|NULL|$Kiev|
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Central_Asia
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Central_Asia
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Central_Asia
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Central_Asia
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3086,12 +3086,12 @@ StartEvent = evt_nam_LATtroopsLosseCohesionInSouthern|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Southern
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Southern
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Southern
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Southern
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3101,12 +3101,12 @@ StartEvent = evt_nam_LATtroopsLosseCohesionInUkraine|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Ukraine
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Ukraine
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Ukraine
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Ukraine
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3116,12 +3116,12 @@ StartEvent = evt_nam_LATtroopsLosseCohesionInVolga|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Volga
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Volga
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Volga
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Volga
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3131,12 +3131,12 @@ StartEvent = evt_nam_LATtroopsLosseCohesionInUral|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Ural
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Ural
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Ural
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Ural
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3146,12 +3146,12 @@ StartEvent = evt_nam_LATtroopsLosseCohesionInSiberia|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Southern
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Southern
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Southern
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Southern
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3161,12 +3161,12 @@ StartEvent = evt_nam_LATtroopsLosseCohesionInEastern|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Eastern
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Eastern
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags LAT BAL;Area $Theater_Eastern
+  SelectSubUnits = FactionTags LAT BAL TEC;Area $Theater_Eastern
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3179,12 +3179,12 @@ StartEvent = evt_nam_ESTtroopsLosseCohesionInCentral_Russia|999|1|NULL|NULL|$Kie
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Central_Russia
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Central_Russia
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Central_Russia
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Central_Russia
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3197,12 +3197,12 @@ StartEvent = evt_nam_ESTtroopsLosseCohesionInCentral_Asia|999|1|NULL|NULL|$Kiev|
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Central_Asia
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Central_Asia
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Central_Asia
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Central_Asia
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3212,12 +3212,12 @@ StartEvent = evt_nam_ESTtroopsLosseCohesionInSouthern|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Southern
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Southern
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Southern
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Southern
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3227,12 +3227,12 @@ StartEvent = evt_nam_ESTtroopsLosseCohesionInUkraine|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Ukraine
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Ukraine
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Ukraine
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Ukraine
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3242,12 +3242,12 @@ StartEvent = evt_nam_ESTtroopsLosseCohesionInVolga|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Volga
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Volga
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Volga
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Volga
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3257,12 +3257,12 @@ StartEvent = evt_nam_ESTtroopsLosseCohesionInUral|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Ural
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Ural
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Ural
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Ural
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3272,12 +3272,12 @@ StartEvent = evt_nam_ESTtroopsLosseCohesionInSiberia|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Southern
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Southern
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Southern
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Southern
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3287,12 +3287,12 @@ StartEvent = evt_nam_ESTtroopsLosseCohesionInEastern|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1918/06/01
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Eastern
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Eastern
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags EST BAL;Area $Theater_Eastern
+  SelectSubUnits = FactionTags EST BAL TEC;Area $Theater_Eastern
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -3631,7 +3631,7 @@ SelectFaction = $RED
 
 Actions
 
-  SelectSubUnits = Region $Hungary;FactionTags RED
+  SelectSubUnits = Region $Hungary;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;Kill
 
 SelectFaction = $WHI
@@ -3646,7 +3646,7 @@ SelectRegion = $Hungary
 
 SelectFaction = $RED
 
-  SelectSubUnits = Region $Transylvania;FactionTags RED
+  SelectSubUnits = Region $Transylvania;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;Kill
 
 SelectFaction = $WHI
@@ -3674,12 +3674,12 @@ Conditions
   MaxDate = 1918/10/01
   EvalEvent = evt_nam_Renforts_RED_StalinInTzaritsyn;=;1
   EvalRgnOwned = $Tzaritsyn
-  SelectSubUnits = Region $Tzaritsyn;FactionTags RED;OnlyNPermFixed;Families $famLine $famMilitia $famCavalry $famLightInf
+  SelectSubUnits = Region $Tzaritsyn;FactionTags RED TEC;OnlyNPermFixed;Families $famLine $famMilitia $famCavalry $famLightInf
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Region $Tzaritsyn;FactionTags RED;OnlyNPermFixed;Families $famLine $famMilitia $famCavalry $famLightInf
+  SelectSubUnits = Region $Tzaritsyn;FactionTags RED TEC;OnlyNPermFixed;Families $famLine $famMilitia $famCavalry $famLightInf
   AlterCuSubUnit = ApplyToList;SetParentGroupFixing 999
 
 EndEvent
@@ -3712,12 +3712,12 @@ Conditions
   EvalRgnOwned = $Tzaritsyn
   EvalEvent = evt_nam_Renforts_RED_StalinInTzaritsyn;=;1
   EvalEvent = evt_nam_Renforts_RED_StalinInMoscow1;=;0
-  SelectSubUnits = Area $Theater_Stalin_VS_Southern;FactionTags RED
+  SelectSubUnits = Area $Theater_Stalin_VS_Southern;FactionTags RED TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Stalin_VS_Southern;FactionTags RED
+  SelectSubUnits = Area $Theater_Stalin_VS_Southern;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
 
 EndEvent
@@ -3749,12 +3749,12 @@ Conditions
 
   EvalEvent = evt_nam_Renforts_RED_StalinInWestFront;=;1
   EvalEvent = evt_nam_Renforts_RED_StalinInMoscow2;=;0
-  SelectSubUnits = Area $Theater_Western;FactionTags RED
+  SelectSubUnits = Area $Theater_Western;FactionTags RED TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Western;FactionTags RED
+  SelectSubUnits = Area $Theater_Western;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
 
 EndEvent
@@ -3784,12 +3784,12 @@ Conditions
 
   EvalEvent = evt_nam_Renforts_RED_StalinInSouthFront;=;1
   EvalEvent = evt_nam_Renforts_RED_StalinInMoscow3;=;0
-  SelectSubUnits = Area $Theater_Southern;FactionTags RED
+  SelectSubUnits = Area $Theater_Southern;FactionTags RED TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Southern;FactionTags RED
+  SelectSubUnits = Area $Theater_Southern;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
 
 EndEvent
@@ -3819,12 +3819,12 @@ Conditions
 
   EvalEvent = evt_nam_Renforts_RED_StalinInSouthWestFront;=;1
   EvalEvent = evt_nam_Renforts_RED_StalinInMoscow4;=;0
-  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED TEC
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED TEC
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
 
 EndEvent
@@ -3841,7 +3841,7 @@ Conditions
 
 Actions
 
-  SelectSubUnits = Region $Tzaritsyn;FactionTags RED;Families $famLine $famMilitia $famCavalry $famLightInf
+  SelectSubUnits = Region $Tzaritsyn;FactionTags RED TEC;Families $famLine $famMilitia $famCavalry $famLightInf
   AlterCuSubUnit = ApplyToList;SetParentGroupFixing 0
 
 EndEvent
@@ -6008,21 +6008,21 @@ Conditions
 
 Actions
 
-  Replacement = WH5;$famLine;1
-  Replacement = WH5;$famMilitia;1
-  Replacement = WH5;$famElite;1
-  Replacement = WH5;$famCavalry;1
-  Replacement = WH5;$famLightInf;1
-  Replacement = WH5;$famRaider;1
-  Replacement = WH5;$famLightArty;1
-  Replacement = WH5;$famMedArty;1
-  Replacement = WH5;$famHvyArty;1
-  Replacement = WH5;$famService;1
-  Replacement = WH5;$famEngineer;1
-  Replacement = WH5;$famNavalEngineer;1
-  Replacement = WH5;$famSupply;1
-  Replacement = WH5;$famLtVehicle;1
-  Replacement = WH5;$famArmoredTrain;1
+  Replacement =;$famLine;1
+  Replacement =;$famMilitia;1
+  Replacement =;$famElite;1
+  Replacement =;$famCavalry;1
+  Replacement =;$famLightInf;1
+  Replacement =;$famRaider;1
+  Replacement =;$famLightArty;1
+  Replacement =;$famMedArty;1
+  Replacement =;$famHvyArty;1
+  Replacement =;$famService;1
+  Replacement =;$famEngineer;1
+  Replacement =;$famNavalEngineer;1
+  Replacement =;$famSupply;1
+  Replacement =;$famLtVehicle;1
+  Replacement =;$famArmoredTrain;1
 
 EndEvent
 
@@ -6777,15 +6777,21 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $CMN
-SelectRegion = $Erevan
+SelectRegion = $Eastern Turkey
 
-StartEvent = evt_nam_Flavor_CMN_TurkishTroopsRemoved|1|1|NULL|NULL|$Erevan|NULL
+StartEvent = evt_nam_Flavor_CMN_TurkishTroopsRemoved|1|1|NULL|NULL|$Eastern Turkey|NULL
 
 Conditions
 
   MinDate = 1921/02/01
   EvalEvent = evt_nam_Flavor_CMN_TurkyInvadeCaucasus;=;0
   EvalEvent = evt_nam_Flavor_CMN_TurkeyAttack_RED_CAU;=;1
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Erevan
+  EvalRgnOwned = $Tiflis
+  EvalRgnOwned = $Baku
 
 Actions
 
@@ -9413,7 +9419,7 @@ SelectFaction = $WH3
   EvalRgnOwned = $Helsinki
   EvalFacRelationships = FIN;<;0
 
-  SelectSubUnits = Area $Area_Finland;FactionTags WH3 ORE WH5 SEM SIB URL BSH ZAB WH2 CZE GRN POL 
+  SelectSubUnits = Area $Area_Finland;FactionTags WH3 WH5 ORE SEM SIB URL BSH ZAB WH2 CZE GRN POL 
   EvalSubUnitCount = <;10
 
 Actions
@@ -9436,7 +9442,7 @@ SelectFaction = $WH3
   EvalRgnOwned = $Helsinki
   EvalFacRelationships = FIN;<;0
 
-  SelectSubUnits = Area $Area_Karelia;FactionTags WH3 ORE WH5 SEM SIB URL BSH ZAB WH2 CZE GRN POL 
+  SelectSubUnits = Area $Area_Karelia;FactionTags WH3 WH5 ORE SEM SIB URL BSH ZAB WH2 CZE GRN POL 
   EvalSubUnitCount = <;10
 
 Actions
@@ -9459,7 +9465,7 @@ SelectFaction = $WH3
   EvalRgnOwned = $Tallinn
   EvalFacRelationships = EST;<;0
 
-  SelectSubUnits = Area $Area_Estonia;FactionTags WH3 ORE WH5 SEM SIB URL BSH ZAB WH2 CZE GRN POL 
+  SelectSubUnits = Area $Area_Estonia;FactionTags WH3 WH5 ORE SEM SIB URL BSH ZAB WH2 CZE GRN POL 
   EvalSubUnitCount = <;10
 
 Actions
@@ -9482,7 +9488,7 @@ SelectFaction = $WH3
   EvalRgnOwned = $Riga
   EvalFacRelationships = LAT;<;0
 
-  SelectSubUnits = Area $Area_Latvia;FactionTags WH3 ORE WH5 SEM SIB URL BSH ZAB WH2 CZE GRN POL 
+  SelectSubUnits = Area $Area_Latvia;FactionTags WH3 WH5 ORE SEM SIB URL BSH ZAB WH2 CZE GRN POL 
   EvalSubUnitCount = <;10
 
 Actions
@@ -9505,7 +9511,7 @@ SelectFaction = $WH3
   EvalRgnOwned = $Kaunas
   EvalFacRelationships = LIT;<;0
 
-  SelectSubUnits = Area $Area_Lithuania;FactionTags WH3 ORE WH5 SEM SIB URL BSH ZAB WH2 CZE GRN POL 
+  SelectSubUnits = Area $Area_Lithuania;FactionTags WH3 WH5 ORE SEM SIB URL BSH ZAB WH2 CZE GRN POL 
   EvalSubUnitCount = <;10
 
 Actions
@@ -9528,7 +9534,7 @@ SelectFaction = $WH3
   EvalRgnOwned = $Vilnius
   EvalFacRelationships = LIT;<;0
 
-  SelectSubUnits = Area $Area_Vilnius;FactionTags WH3 ORE WH5 SEM SIB URL BSH ZAB WH2 CZE GRN POL 
+  SelectSubUnits = Area $Area_Vilnius;FactionTags WH3 WH5 ORE SEM SIB URL BSH ZAB WH2 CZE GRN POL 
   EvalSubUnitCount = <;10
 
 Actions
@@ -9551,7 +9557,7 @@ SelectFaction = $WH3
   EvalRgnOwned = $Baku
   EvalFacRelationships = AZR;<;0
 
-  SelectSubUnits = Area $Area_Azerbaijan;FactionTags WH3 ORE WH5 SEM SIB URL BSH ZAB WH2 CZE GRN POL 
+  SelectSubUnits = Area $Area_Azerbaijan;FactionTags WH3 WH5 ORE SEM SIB URL BSH ZAB WH2 CZE GRN POL 
   EvalSubUnitCount = <;10
 
 Actions
@@ -9574,7 +9580,7 @@ SelectFaction = $WH3
   EvalRgnOwned = $Erevan
   EvalFacRelationships = ARM;<;0
 
-  SelectSubUnits = Area $Area_Armenia;FactionTags WH3 ORE WH5 SEM SIB URL BSH ZAB WH2 CZE GRN POL 
+  SelectSubUnits = Area $Area_Armenia;FactionTags WH3 WH5 ORE SEM SIB URL BSH ZAB WH2 CZE GRN POL 
   EvalSubUnitCount = <;10
 
 Actions
@@ -9597,7 +9603,7 @@ SelectFaction = $WH3
   EvalRgnOwned = $Tiflis
   EvalFacRelationships = GEO;<;0
 
-  SelectSubUnits = Area $Area_Georgia;FactionTags WH3 ORE WH5 SEM SIB URL BSH ZAB WH2 CZE GRN POL 
+  SelectSubUnits = Area $Area_Georgia;FactionTags WH3 WH5 ORE SEM SIB URL BSH ZAB WH2 CZE GRN POL 
   EvalSubUnitCount = <;10
 
 Actions
@@ -9620,7 +9626,7 @@ SelectFaction = $WH3
   EvalRgnOwned = $Bucuresti
   EvalFacRelationships = ROM;<;0
 
-  SelectSubUnits = Area $Area_Walachia;FactionTags WH3 ORE WH5 SEM SIB URL BSH ZAB WH2 CZE GRN POL 
+  SelectSubUnits = Area $Area_Walachia;FactionTags WH3 WH5 ORE SEM SIB URL BSH ZAB WH2 CZE GRN POL 
   EvalSubUnitCount = <;10
 
 Actions
@@ -9643,7 +9649,7 @@ SelectFaction = $WH3
   EvalRgnOwned = $Warsaw
   EvalFacRelationships = POL;<;0
 
-  SelectSubUnits = Area $Area_Wielkopolska;FactionTags WH3 ORE WH5 SEM SIB URL BSH ZAB WH2 CZE GRN POL 
+  SelectSubUnits = Area $Area_Wielkopolska;FactionTags WH3 WH5 ORE SEM SIB URL BSH ZAB WH2 CZE GRN POL 
   EvalSubUnitCount = <;10
 
 Actions
@@ -9666,7 +9672,7 @@ SelectFaction = $WH3
   EvalRgnOwned = $Warsaw
   EvalFacRelationships = POL;<;0
 
-  SelectSubUnits = Area $Area_Mazowia;FactionTags WH3 ORE WH5 SEM SIB URL BSH ZAB WH2 CZE GRN POL 
+  SelectSubUnits = Area $Area_Mazowia;FactionTags WH3 WH5 ORE SEM SIB URL BSH ZAB WH2 CZE GRN POL 
   EvalSubUnitCount = <;10
 
 Actions
@@ -10143,13 +10149,13 @@ SelectFaction = $WHI
 
 SelectFaction = $WH3
 
-  SelectSubUnits = Area $Theater_Ukraine;FactionTags WH3 WH2 ORE WH5 ZAB SEM BSH URL SIB CZE POL GRN;Families $famLine $famCavalry
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags WH3 WH5 WH2 ORE ZAB SEM BSH URL SIB CZE POL GRN;Families $famLine $famCavalry
   EvalSubUnitCount = <=;10
 
-  SelectSubUnits = Area $Theater_Siberia;FactionTags WH3 WH2 ORE WH5 ZAB SEM BSH URL SIB CZE POL GRN;Families $famLine $famCavalry
+  SelectSubUnits = Area $Theater_Siberia;FactionTags WH3 WH5 WH2 ORE ZAB SEM BSH URL SIB CZE POL GRN;Families $famLine $famCavalry
   EvalSubUnitCount = <=;10
 
-  SelectSubUnits = Area $Theater_Eastern;FactionTags WH3 WH2 ORE WH5 ZAB SEM BSH URL SIB CZE POL GRN;Families $famLine $famCavalry
+  SelectSubUnits = Area $Theater_Eastern;FactionTags WH3 WH5 WH2 ORE ZAB SEM BSH URL SIB CZE POL GRN;Families $famLine $famCavalry
   EvalSubUnitCount = <=;10
 
 SelectFaction = $UKR
@@ -10195,4 +10201,1118 @@ Actions
 
 EndEvent
 
- 
+SelectFaction = $ANA
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_ANAtroopsLosseCohesionOutUkraine|999|1|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1917/06/01
+  SelectSubUnits = Area $Theater_No_ANA_Out_Ukraine;FactionTags ANA GRN RED UKR TEC
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Area $Theater_No_ANA_Out_Ukraine;FactionTags ANA GRN RED UKR TEC
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
+
+SelectFaction = $ANA
+SelectRegion = $Tomsk
+
+StartEvent = evt_nam_ANAtroopsLosseCohesionOutSiberia|999|1|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1917/06/01
+  SelectSubUnits = Area $Theater_No_ANA_Out_Siberia;FactionTags ANA GRN RED UKR TEC
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Area $Theater_No_ANA_Out_Siberia;FactionTags ANA GRN RED UKR TEC
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty1|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Ekaterinodar
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kuban;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Lodz
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Wielkopolska;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tomsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Tomsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Chisinau
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Romania;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Lwow
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Galicia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Warsaw
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Mazowia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Vilnius
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Vilnius;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty8|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Kaunas
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Lithuania;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty9|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Helsinki
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Finland;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty10|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Viipuri
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Karelia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty11|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Riga
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Latvia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty12|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Minsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Minsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty13|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tallinn
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Estonia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty14|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Petrograd
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Petrograd;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty15|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Novgorod
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Novgorod;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty16|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Pskov
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Pskov;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty17|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Gomel
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Mogilev;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty18|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Rowno
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Volhynian;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty19|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Kiev
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kiew;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty20|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Vinnytsia
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Podolsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty21|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Odessa
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kherson;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty22|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Ekaterinoslav
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Ekaterinoslav;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty23|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Konotop
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Chernigov;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty24|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Poltava
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Poltava;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty25|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Smolensk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Smolensk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty26|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tver
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Tver;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty27|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tula
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Tula;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty28|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Yaroslavl
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Yaroslavl;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty29|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Moscow
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Moskwa;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty30|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Kostroma
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kostroma;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty31|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Ryazan
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Ryazan;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty32|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Orel
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Orel;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty33|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Kursk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kursk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty34|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Kharkov
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kharkov;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty35|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Voronezh
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Voronezh;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty36|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Rostov
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Don;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty37|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Sevastopol
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Taurida;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty38|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Nizhniy Novgorod
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Nizhniy_Novgorod;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty39|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Kazan
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kazan;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty40|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tambov
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Tambov;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty41|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Simbirsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Simbirsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty42|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Saransk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Penza;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty43|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tzaritsyn
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Saratov;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty44|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Samara
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Samara;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty45|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Astrakhan
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Astrakhan;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty46|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Stavropol
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Stavropol;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty47|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Grozny
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Terek;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty48|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tiflis
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Georgia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty49|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Erevan
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Armenia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty50|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Baku
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Azerbaijan;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty51|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Petrozavodsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Olonets;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty52|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Bucuresti
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Wallachia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty53|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Perm
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Perm;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty54|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Arkhangelsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Arkhangelsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty55|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Vologda
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Vologda;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty56|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Uralsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Uralsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty57|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Ufa
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Ufa;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty58|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Viatka
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Viatka;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty59|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Orenburg
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Orenburg;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty60|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tyumen
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Tobolsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty61|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Aralsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Turgay;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty62|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Omsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Akmolinsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty63|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tashkent
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Syr-Darinsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty64|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Achkhabad
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Caspian;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty65|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Bukhara
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Samarkand;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty66|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Krasnoyarsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Enisey;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty67|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Irkutsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Irkutsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty68|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Chita
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Zabaikal;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty69|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Manchzhuriya
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Mongolia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty70|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Vladivostok
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Vladivostock;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty71|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Harbin
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Manchuria;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty72|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Semipalatinsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Semipalatinsk;5
+
+EndEvent

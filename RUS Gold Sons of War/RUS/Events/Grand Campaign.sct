@@ -2,21 +2,6 @@ NULL ==========================================================================
 
 RUS All Includes.sct
 RUS F3 Options Leaders Reinforcements GC.sct
-RED_YaroslavlFactory_RplProd.sct
-RED_VladimirFactory_RplProd.sct
-RED_SmolenskFactory_RplProd.sct
-RED_NovgorodFactory_RplProd.sct
-RED_TulaFactory_RplProd.sct
-RED_PetrogradFactory_RplProd.sct
-RED_MoscowFactory_RplProd.sct
-WH3_SamaraFactory_RplProd.sct
-WH3_OmskFactory_RplProd.sct
-WH3_IrkutskFactory_RplProd.sct
-WH3_TomskFactory_RplProd.sct
-WHI_TzaritsynFactory_RplProd.sct
-WHI_SevastopolFactory_RplProd.sct
-WHI_RostovFactory_RplProd.sct
-WHI_EkaterinodarFactory_RplProd.sct
 
 NULL ==========================================================================
 
@@ -36,7 +21,7 @@ Actions
 
 SelectFaction = $COS
 
-  SelectSubUnits = FactionTags TER WHI
+  SelectSubUnits = FactionTags TER WHI TEC
   AlterCuSubUnit = ApplyToList;Kill
 
 SelectFaction = $WHI
@@ -969,17 +954,17 @@ SelectFaction = $WH3
 
 SelectFaction = $RED
 
-  SelectSubUnits = Region $Omsk;FactionTags RED
+  SelectSubUnits = Region $Omsk;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Achair
 
 SelectFaction = $GRN
 
-  SelectSubUnits = Region $Omsk;FactionTags GRN
+  SelectSubUnits = Region $Omsk;FactionTags GRN TEC
   AlterCuSubUnit = ApplytoList;Move $Achair
 
 SelectFaction = $COS
 
-  SelectSubUnits = Region $Omsk;FactionTags SIB ZAB URL SEM ORE
+  SelectSubUnits = Region $Omsk;FactionTags SIB ZAB URL SEM ORE TEC
   AlterCuSubUnit = ApplytoList;Move $Achair
 
 SelectFaction = $WH3
@@ -1469,12 +1454,12 @@ Conditions
 
   EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
   EvalUnqUnit = A.V. Kolchak
-  SelectSubUnits = FactionTags WH3 WH2;Families $famLeader
+  SelectSubUnits = FactionTags WH3 WH2 TEC;Families $famLeader
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags WH3 WH2;Families $famLeader
+  SelectSubUnits = FactionTags WH3 WH2 TEC;Families $famLeader
   AlterCuSubUnit = ApplyToList;LeaderActive
 
 EndEvent
@@ -1490,12 +1475,12 @@ Conditions
   MinDate = 1917/12/01
   EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
   EvalUnqUnit = A.V. Kolchak
-  SelectSubUnits = FactionTags WH3;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
+  SelectSubUnits = FactionTags WH3 TEC;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags WH3;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
+  SelectSubUnits = FactionTags WH3 TEC;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
   AlterCuSubUnit = ApplyToList;ChgXPLevel 1
 
 EndEvent
@@ -1511,12 +1496,12 @@ Conditions
   MinDate = 1917/12/01
   EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
   EvalUnqUnit = A.V. Kolchak
-  SelectSubUnits = FactionTags WH3;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
+  SelectSubUnits = FactionTags WH3 TEC;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = FactionTags WH3;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
+  SelectSubUnits = FactionTags WH3 TEC;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
   AlterCuSubUnit = ApplyToList;Attempts 50;SetCohesionPerc 100
 
 EndEvent
@@ -2399,9 +2384,9 @@ Actions
 
 SelectFaction = $RED
 
-  SelectSubUnits = Region $Achkhabad;FactionTags RED
+  SelectSubUnits = Region $Achkhabad;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move Out
-  SelectSubUnits = Region $Merv;FactionTags RED
+  SelectSubUnits = Region $Merv;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move Out
 
 SelectFaction = $WHI

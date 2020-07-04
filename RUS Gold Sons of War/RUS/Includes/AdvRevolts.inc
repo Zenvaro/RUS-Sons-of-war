@@ -47,4 +47,4 @@ SetAdvRevolt = COS|75|75|150|10|101|NULL|NULL
 SetAdvRevoltFP = COS|$uni_WHI_Rgt8|4|$uni_WHI_Cav2|2|$uni_WHI_Rgt3|4|$uni_WHI_Cav9|2|$uni_ORE_Rgt|4|$uni_ORE_Cav|2|$uni_SEM_Rgt|4|$uni_SEM_Cav|2|$uni_DON_Inf0|4|$uni_DON_Cav0|2|$uni_WH3_Rgt3|4|$uni_WH3_Cav0|2|$uni_WH3_Rgt4|4|$uni_WH3_Cav2|2|$uni_WH3_Lit0|4|$uni_WH3_Cav3|2
 
 SetAdvRevolt = POL|75|75|150|10|101|NULL|NULL
-SetAdvRevoltFP = POL|$uni_POL_Par1|4|$uni_POL_Par2|2
+SetAdvRevoltFP = POL|$uni_POL_Par1|4

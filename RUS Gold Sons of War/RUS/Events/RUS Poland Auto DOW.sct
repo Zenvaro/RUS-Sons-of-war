@@ -11,6 +11,11 @@ Conditions
 
 Actions
 
+SelectFaction = $RED
+  ChgRgnDecisionFP = $rgdTcheka;1
+  ChgRgnDecisionFP = $rgdRequisitions;1
+  ChgRgnDecisionFP = $rgdConscriptions;1
+
 SelectFaction = $POL
 
   ChangeLoyaltyFac = $Area_Mazowia;100
@@ -1151,7 +1156,6 @@ SelectRegion = $Danzig
 
   ChangeRgnOwner = WH3
 
-
 SelectFaction = $POL
 SelectRegion = $Baranavichy
   CreateGroup
@@ -1166,11 +1170,6 @@ SelectRegion = $Baranavichy
     SetType = $uni_POL_Szeptycki3
     FlavorName = North-East Front
     SetName = S.M. Szeptycki
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav5
-    SetLevel = 1
-    SetName = NE Recon Rgt
   Apply
   CreateUnit
     SetType = $uni_POL_Sig
@@ -1202,11 +1201,6 @@ SelectRegion = $Baranavichy
     SetName = S. Majewski
   Apply
   CreateUnit
-    SetType = $uni_POL_Cav5
-    SetLevel = 1
-    SetName = 7th Army Rec. Rgt
-  Apply
-  CreateUnit
     SetType = $uni_POL_Sig
     SetName = 7th Transmission
   Apply
@@ -1215,73 +1209,33 @@ SelectRegion = $Baranavichy
     SetName = 7th Hospital
   Apply
   CreateUnit
-    GMEParam = 6
+    GMEParam = 2
     SetType = $uni_POL_Osikowski1
     FlavorName = 2nd Lithuanian-Belarus Div.
     SetName = M. Osikowski
   Apply
   CreateUnit
-    SetType = $uni_POL_Mil1
-    SUFlavorName = Lida Rgt
-    SetName = Lida Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Mil1
-    SUFlavorName = Kaunas Rgt
-    SetName = Kaunas Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Mil1
-    SUFlavorName = Bialystok Rgt
-    SetName = Bialystok Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Mil1
-    SUFlavorName = Sluck Rgt
-    SetName = Sluck Rgt
-  Apply
-  CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 2nd Division Arty
-    SetName = 2nd Division Artillery
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 2nd Lithuanian-Belarus Div.
   Apply
   CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 2nd Division Supply
-  Apply
-  CreateUnit
-    GMEParam = 6
+    GMEParam = 2
     SetType = $uni_POL_Dindorf-Ankowicz1
     FlavorName = 10th Infantry Div.
     SetName = F. Dindorf-Ankowicz
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 28th Infantry
-    SetName = 28th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 29th Infantry
-    SetName = 29th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 30th Infantry
-    SetName = 30th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 31st Infantry
-    SetName = 31st Infantry Rgt
-  Apply
-  CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 10th Division Arty
-    SetName = 10th Division Artillery
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 10th Infantry Div.
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 2nd Division Supply
   Apply
   CreateUnit
     SetType = $uni_POL_Sup1
@@ -1305,7 +1259,6 @@ SelectRegion = $Baranavichy
     SUFlavorName = 1st  Airbase|1st Recon Sqd|1st Fighter Sqd|1st Bomber Sqd
     SetName = 1st Air Group
   Apply
-
 
 SelectFaction = $POL
 SelectRegion = $Minsk
@@ -1331,45 +1284,45 @@ SelectRegion = $Minsk
     SetName = 1st Hospital
   Apply
   CreateUnit
-    SetType = $uni_POL_Cav5
-    SetLevel = 1
-    SetName = 1st Army Rec. Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav4
-    SetName = 1st Cavalry Brigade
-  Apply
-  CreateUnit
-    GMEParam = 6
+    GMEParam = 2
     SetType = $uni_POL_Czikiel1
     FlavorName = 8th Infantry Div.
     SetName = J. Czikiel
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 13th Infantry
-    SetName = 13th Infantry Rgt
+    SetCommit = 3
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 8th Infantry Div. 
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 21st Infantry
-    SetName = 21st Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 33rd Infantry
-    SetName = 33rd Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 36th Infantry
-    SetName = 36th Infantry Rgt
+    GMEParam = 2
+    SetType = $uni_POL_Kuczewski1
+    FlavorName = 17th Infantry Div.
+    SetName = A. Kuczewski
   Apply
   CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 8th Division Arty
-    SetName = 8th Division Artillery
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 17th Infantry Div.
+  Apply
+  CreateUnit
+    GMEParam = 2
+    SetType = $uni_POL_Rzadkowski1
+    FlavorName = 1st Lithuanian-Belarus Div.
+    SetName = J. Rzadkowski
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 1st Lithuanian-Belarus Div.
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Division Supply
   Apply
   CreateUnit
     SetType = $uni_POL_Sup1
@@ -1377,127 +1330,10 @@ SelectRegion = $Minsk
     SetName = 8th Division Supply
   Apply
   CreateUnit
-    GMEParam = 6
-    SetType = $uni_POL_Kuczewski1
-    FlavorName = 17th Infantry Div.
-    SetName = A. Kuczewski
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 67th Infantry
-    SetName = 67th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 68th Infantry
-    SetName = 68th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 69th Infantry
-    SetName = 69th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 70th Infantry
-    SetName = 70th Infantry Rgt
-  Apply
-  CreateUnit
-    SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 17th Division Arty
-    SetName = 17th Division Artillery
-  Apply
-  CreateUnit
     SetType = $uni_POL_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
     SetName = 17th Division Supply
   Apply
-  CreateUnit
-    GMEParam = 6
-    SetType = $uni_POL_Rzadkowski1
-    FlavorName = 1st Lithuanian-Belarus Div.
-    SetName = J. Rzadkowski
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Mil1
-    SUFlavorName = Wilnius Rgt
-    SetName = Wilnius Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Mil1
-    SUFlavorName = Minsk Rgt
-    SetName = Minsk Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Mil1
-    SUFlavorName = Grodno Rgt
-    SetName = Grodno Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Mil1
-    SUFlavorName = Nowogrodek Rgt
-    SetName = Nowogrodek Rgt
-  Apply
-  CreateUnit
-    SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 1st Division Arty
-    SetName = 1st Division Artillery
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 1st Division Supply
-  Apply
-
-
-SelectFaction = $POL
-SelectRegion = $Tsieliakhany
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 1
-    FixType = 0
-    SetName = 3rd Legion Division
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 7th Infantry
-    SetName = 7th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 8th  Infantry
-    SetName = 8th  Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 9th Infantry
-    SetName = 9th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 23rd Infantry
-    SetName = 23rd Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav5
-    SetLevel = 1
-    SetName = 3rd Legion Rec. Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Art2
-    SUFlavorName = 3rd Legion Arty
-    SetName = 3rd Legion Artillery
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 3rd Division Supply
-  Apply
-
 
 SelectFaction = $POL
 SelectRegion = $Vilnius
@@ -1523,95 +1359,50 @@ SelectRegion = $Vilnius
     SetName = 4th Hospital
   Apply
   CreateUnit
-    SetType = $uni_POL_Cav5
+    SetType = $uni_POL_Cav2
     SetLevel = 1
-    SetName = 4th Army Rec. Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav4
     SetName = 2nd Cavalry Brigade
   Apply
   CreateUnit
-    GMEParam = 7
+    GMEParam = 2
     SetType = $uni_POL_Raszewski1
     FlavorName = 6th Infantry Div.
     SetName = K. Raszewski
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 12th Infantry
-    SetName = 12th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 16th Infantry
-    SetName = 16th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 17th Infantry
-    SetName = 17th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 20th Infantry
-    SetName = 20th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav1
-    SUFlavorName = 4th Cavalry
-    SetLevel = 1
-    SetName = 4th Cavalry Rgt
-  Apply
-  CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 6th Division Arty
-    SetName = 6th Division Artillery
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 6th Infantry Div.
   Apply
   CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 6th Division Supply
-  Apply
-  CreateUnit
-    GMEParam = 7
+    GMEParam = 2
     SetType = $uni_POL_Dojana-Surowki1
     FlavorName = 2nd Legion Div.
     SetName = E. Dojana-Surowki
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 2nd Infantry
-    SetName = 2nd Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 3rd Infantry
-    SetName = 3rd Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 4th Infantry
+    SetCommit = 3
+    SetType = $uni_POL_Bde1
     SetLevel = 1
-    SetName = 4th Infantry Rgt
+    SetName = 2nd Legion Div.
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 24th Infantry
-    SetLevel = 1
-    SetName = 24th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav2
-    SUFlavorName = 5th Cavalry
-    SetName = 5th Cavalry Rgt
+    GMEParam = 2
+    SetType = $uni_POL_Konarzewski1
+    FlavorName = 14th Poznan Div.
+    SetName = D. Konarzewski
   Apply
   CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 2nd Legion Arty
-    SetName = 2nd Legion Artillery
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 14th Poznan Div.
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 14th Division Supply
   Apply
   CreateUnit
     SetType = $uni_POL_Sup1
@@ -1619,49 +1410,10 @@ SelectRegion = $Vilnius
     SetName = 2nd Legion Supply
   Apply
   CreateUnit
-    GMEParam = 7
-    SetType = $uni_POL_Konarzewski1
-    FlavorName = 14th Poznan Div.
-    SetName = D. Konarzewski
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 55th Infantry
-    SetName = 55th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 56th Infantry
-    SetName = 56th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 57th Infantry
-    SetName = 57th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 58th Infantry
-    SetName = 58th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav1
-    SUFlavorName = 5th Cavalry
-    SetLevel = 1
-    SetName = 5th Cavalry Rgt
-  Apply
-  CreateUnit
-    SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 14th Division Arty
-    SetName = 14th Division Artillery
-  Apply
-  CreateUnit
     SetType = $uni_POL_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 14th Division Supply
+    SetName = 6th Division Supply
   Apply
-
 
 SelectFaction = $POL
 SelectRegion = $Minsk
@@ -1687,7 +1439,6 @@ SelectFaction = $POL
   SetFacRelationships = ANA;-100
   SetFacRelationships = ROM;0
 
-
 SelectFaction = $POL
 SelectRegion = $Warsaw
   CreateGroup
@@ -1700,10 +1451,26 @@ SelectRegion = $Warsaw
   Apply
   CreateUnit
     GMEParam = J.K. Pilsudski
-    SetCommit = 1
+    SetCommit = 0
     SetType = $uni_POL_Pilsudski3
     FlavorName = Poland Army GHQ
     SetName = J.K. Pilsudski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Zeligowski1
+    SetName = L. Zeligowski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Savitsky1
+    SetName = Y. Savitsky
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Latinik1
+    SetName = F. Latinik
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Razvodovsky2
+    SetName = T. Razvodovsky
   Apply
   CreateUnit
     SetType = $uni_POL_Sup1
@@ -1722,10 +1489,34 @@ SelectRegion = $Warsaw
     FixType = 0
     SetName = Poland Army reserve
   Apply
+  SetHealth = 50
+  SetCohesion = 100
   CreateUnit
-    SetType = $uni_POL_Cav5
+    SetType = $uni_POL_Bde1
     SetLevel = 1
-    SetName = SE Recon Rgt
+    SetName = Reserve Division
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+  CreateUnit
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 3rd Legion Division
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Cav2
+    SetLevel = 1
+    SetName = SE Recon Div.
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Cav2
+    SetLevel = 1
+    SetName = 8th Cavalry Brigade
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Cav2
+    SetLevel = 1
+    SetName = Brest Cavalry Reserve
   Apply
   CreateUnit
     SetType = $uni_POL_Sig
@@ -1739,7 +1530,6 @@ SelectRegion = $Warsaw
     SetType = $uni_POL_Eng
     SetName = SE Front Eng.
   Apply
-
 
 SelectFaction = $POL
 SelectRegion = $Kowel
@@ -1765,175 +1555,52 @@ SelectRegion = $Kowel
     SetName = 3rd Hospital
   Apply
   CreateUnit
-    SetType = $uni_POL_Cav3
-    SUFlavorName = 1/3rd Cavalry Bde|2/3rd Cavalry Bde|3rd Horse Bty
-    SetName = 3rd Cavalry Brigade
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav3
-    SUFlavorName = 1/7th Cavalry Bde|2/7th Cavalry Bde|7th Horse Bty
-    SetName = 7th Cavalry Brigade
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav5
-    SetLevel = 1
-    SetName = 3rd Army Rec. Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Bde2
-    FlavorName = Col. Ryback
-    SetName = Mountain Brigade
-  Apply
-  CreateUnit
-    GMEParam = 6
+    GMEParam = 2
     SetType = $uni_POL_Schubert1
     FlavorName = 7th Infantry Div.
     SetName = S. Schubert
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 11th Infantry
-    SetName = 11th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 25th Infantry
-    SetName = 25th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 26th Infantry
-    SetName = 26th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 27th Infantry
-    SetName = 27th Infantry Rgt
-  Apply
-  CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 7th Division Arty
-    SetName = 7th Division Artillery
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 7th Infantry Div.
   Apply
   CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 7th Division Supply
-  Apply
-  CreateUnit
-    GMEParam = 6
+    GMEParam = 2
     SetType = $uni_POL_Karaszewicz-Tokarzewski1
     FlavorName = 1st Legion Div.
     SetName = M. Karaszewicz-Tokarzewski
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 1st  Infantry
-    SetLevel = 1
-    SetName = 1st  Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 5th Infantry
-    SetName = 5th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 6th Infantry
-    SetLevel = 1
-    SetName = 6th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 41st Infantry
-    SetName = 41st Infantry Rgt
-  Apply
-  CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 1st Legion Arty
-    SetName = 1st Legion Artillery
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 1st Legion Div.
   Apply
   CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 1st Legion Supply
-  Apply
-  CreateUnit
-    GMEParam = 6
+    GMEParam = 2
     SetType = $uni_POL_Sikorski1
     FlavorName = 9th Infantry Div.
     SetName = W. Sikorski
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 15th Infantry
-    SetName = 15th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 22nd Infantry
-    SetName = 22nd Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 34th Infantry
-    SetName = 34th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 35th Infantry
-    SetName = 35th Infantry Rgt
-  Apply
-  CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 9th Division Arty
-    SetName = 9th Division Artillery
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 9th Infantry Div.
   Apply
   CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 9th Division Supply
-  Apply
-  CreateUnit
-    GMEParam = 6
+    GMEParam = 2
     SetType = $uni_POL_Kaliszek1
     FlavorName = 4th Infantry Div.
     SetName = S.Z. Kaliszek
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 10th Infantry
-    SetName = 10th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 14th Infantry
-    SetName = 14th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 18th Infantry
-    SetLevel = 1
-    SetName = 18th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 37th Infantry
-    SetName = 37th Infantry Rgt
-  Apply
-  CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 4th Division Arty
-    SetName = 4th Division Artillery
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 4th Division Supply
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 4th Infantry Div.
   Apply
   CreateUnit
     GMEParam = 3
@@ -1942,24 +1609,35 @@ SelectRegion = $Kowel
     SetName = J.E. Romer
   Apply
   CreateUnit
-    SetType = $uni_POL_Cav4
-    FlavorName = Col. Gluchowski
-    SUFlavorName = 5th Uhlans|11th Uhlans|17th Uhlans|1st Jaegers Bty
+    SetType = $uni_POL_Cav2
     SetLevel = 1
-    SetName = 1st Jaegers Brigade
+    SetName = 6th Jaegers Bde.
   Apply
   CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Cav4
-    FlavorName = Col. Plisowski
-    SUFlavorName = 1st Uhlans|12th Uhlans|14th Uhlans|6th  Jaegers Bty
+    SetType = $uni_POL_Cav2
     SetLevel = 1
-    SetName = 6th Jaegers Brigade
+    SetName = 1st Jaegers Bde.
   Apply
   CreateUnit
     SetType = $uni_POL_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
     SetName = 1st Cavalry Div. Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 9th Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 1st Legion Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 7th Division Supply
   Apply
 
 SelectFaction = $POL
@@ -2004,84 +1682,79 @@ SelectRegion = $Lwow
     SetName = 2nd Hospital
   Apply
   CreateUnit
-    SetType = $uni_POL_Cav5
-    SetLevel = 1
-    SetName = 2nd Army Rec. Rgt
-  Apply
-  CreateUnit
-    GMEParam = 6
+    GMEParam = 2
     SetType = $uni_POL_Paulik1
     FlavorName = 13th Infantry Div.
     SetName = F. Paulik
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 43rd Infantry
-    SetName = 43rd Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 44th Infantry
-    SetName = 44th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 45th Infantry
-    SetName = 45th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 50th Infantry
-    SetName = 50th Infantry Rgt
-  Apply
-  CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 13th Division Arty
-    SetName = 13th Division Artillery
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 13th Infantry Div.
   Apply
   CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 13th Division Supply
-  Apply
-  CreateUnit
-    GMEParam = 6
+    GMEParam = 2
     SetType = $uni_POL_Jung1
     FlavorName = 15th Infantry Div.
     SetName = W. Jung
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 59th Infantry
-    SetLevel = 1
-    SetName = 59th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 60th Infantry
-    SetName = 60th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 61st Infantry
-    SetName = 61st Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 62nd Infantry
-    SetName = 62nd Infantry Rgt
-  Apply
-  CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 15th Division Arty
-    SetName = 15th Division Artillery
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 15th Infantry Div.
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sig
+    SetName = Strike Grp. Trans.
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Cav2
+    SetLevel = 1
+    SetName = 10th Cavalry Brigade
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Amc
+    SUFlavorName = 1st Armored Cars
+    SetLevel = 1
+    SetName = 1st Armored Cars Sqd
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Amt
+    SUFlavorName = 1st Heavy Armored Train
+    SetLevel = 1
+    SetName = 1st Heavy Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Amt
+    SUFlavorName = 2nd Heavy Armored Train
+    SetLevel = 1
+    SetName = 2nd Heavy Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Amt
+    SUFlavorName = 2nd Heavy Armored Train
+    SetLevel = 1
+    SetName = 3rd Heavy Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Amt
+    SUFlavorName = 2nd Heavy Armored Train
+    SetLevel = 1
+    SetName = 4th Heavy Armored Train
   Apply
   CreateUnit
     SetType = $uni_POL_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetLevel = 1
     SetName = 15th Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetLevel = 1
+    SetName = 13th Division Supply
   Apply
 
 SelectFaction = $POL
@@ -2100,7 +1773,6 @@ SelectRegion = $Lwow
     SUFlavorName = 2nd Airbase|2nd Recon Sqd|2nd Fighter Sqd|2nd Bomber Sqd
     SetName = 2nd Air Group
   Apply
-
 
 SelectFaction = $POL
 SelectRegion = $Kremenetz
@@ -2126,41 +1798,45 @@ SelectRegion = $Kremenetz
     SetName = 6th Hospital
   Apply
   CreateUnit
-    SetType = $uni_POL_Cav5
-    SetLevel = 1
-    SetName = 6th Army Rec. Rgt
-  Apply
-  CreateUnit
-    GMEParam = 6
+    GMEParam = 2
     SetType = $uni_POL_Rosnowski1
     FlavorName = 5th Infantry Div.
     SetName = S. Rosnowski
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 19th Infantry
-    SetName = 19th Infantry Rgt
+    SetCommit = 3
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 5th Infantry Div.
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 38th Infantry
-    SetName = 38th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 39th Infantry
-    SetName = 39th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 40th  Infantry
-    SetName = 40th  Infantry Rgt
+    GMEParam = 2
+    SetType = $uni_POL_Lamezan-Salins1
+    FlavorName = 12th Infantry Div.
+    SetName = R. Lamezan-Salins
   Apply
   CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 5th Division Arty
-    SetName = 5th Division Artillery
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 12th Infantry Div.
+  Apply
+  CreateUnit
+    GMEParam = 2
+    SetType = $uni_POL_Krajowski1
+    FlavorName = 18th Infantry Div.
+    SetName = F. Krajowski
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 18th Infantry Div.
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+    SetName = 18th Division Supply
   Apply
   CreateUnit
     SetType = $uni_POL_Sup1
@@ -2168,85 +1844,9 @@ SelectRegion = $Kremenetz
     SetName = 5th Division Supply
   Apply
   CreateUnit
-    GMEParam = 7
-    SetType = $uni_POL_Lamezan-Salins1
-    FlavorName = 12th Infantry Div.
-    SetName = R. Lamezan-Salins
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 51st Infantry
-    SetName = 51st Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 52nd Infantry
-    SetLevel = 1
-    SetName = 52nd Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 53rd Infantry
-    SetName = 53rd Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 54th Infantry
-    SetName = 54th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav2
-    SUFlavorName = 6th Cavalry
-    SetLevel = 1
-    SetName = 6th Cavalry Rgt
-  Apply
-  CreateUnit
-    SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 12th Division Arty
-    SetName = 12th Division Artillery
-  Apply
-  CreateUnit
     SetType = $uni_POL_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
     SetName = 12th Division Supply
-  Apply
-  CreateUnit
-    GMEParam = 6
-    SetType = $uni_POL_Krajowski1
-    FlavorName = 18th Infantry Div.
-    SetName = F. Krajowski
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt2
-    SUFlavorName = 1st Btn|2nd Btn
-    SetName = 42nd Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 1st Btn|2nd Btn
-    SetName = 144th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 1st Btn|2nd Btn
-    SetName = 145th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt1
-    SUFlavorName = 1st Btn|2nd Btn
-    SetName = 149th Infantry Rgt
-  Apply
-  CreateUnit
-    SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 18th Division Arty
-    SetName = 18th Division Artillery
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 18th Division Supply
   Apply
 
 SelectFaction = $POL
@@ -2266,87 +1866,6 @@ SelectRegion = $Kremenetz
     SetName = 3rd Air Group
   Apply
 
-
-SelectFaction = $POL
-SelectRegion = $Lwow
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 0
-    SetName = Strike Group
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Sig
-    SetName = Strike Grp. Trans.
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav5
-    SetLevel = 1
-    SetName = SG Rec. Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav4
-    SetName = 10th Cavalry Brigade
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav4
-    SetName = 11th Cavalry Brigade
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav1
-    SUFlavorName = Jaegers Rgt
-    SetLevel = 1
-    SetName = Jaegers Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Amc
-    SUFlavorName = 1st Armored Cars
-    SetName = 1st Armored Cars Sqd
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Btn0
-    SUFlavorName = 2nd Motorized Btn
-    SetName = 2nd Motorized Infantry Btn
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Btn0
-    SUFlavorName = 3rd Motorized Btn
-    SetName = 3rd Motorized Infantry Btn
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Amt
-    SUFlavorName = 1st Heavy Armored Train
-    SetName = 1st Heavy Armored Train
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Amt
-    SUFlavorName = 2nd Heavy Armored Train
-    SetName = 2nd Heavy Armored Train
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Amt
-    SUFlavorName = 2nd Heavy Armored Train
-    SetName = 3rd Heavy Armored Train
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Amt
-    SUFlavorName = 2nd Heavy Armored Train
-    SetName = 4th Heavy Armored Train
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 1st Strike Group Supply
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetName = 2nd Strike Group Supply
-  Apply
-
-
 SelectFaction = $POL
 SelectRegion = $Bialystok
   CreateGroup
@@ -2363,84 +1882,6 @@ SelectRegion = $Bialystok
   Apply
 
 SelectFaction = $POL
-SelectRegion = $Bialystok
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 1
-    FixType = 0
-    SetName = 8th Cavalry Brigade
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav3
-    SUFlavorName = 1/8th Cavalry Bde|2/8th Cavalry Bde|8th Horse Bty
-    SetName = 8th Cavalry Brigade
-  Apply
-
-
-SelectFaction = $POL
-SelectRegion = $Warsaw
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 1
-    SetName = Warsaw Cavalry Reserve
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav5
-    SetLevel = 1
-    SetName = 1st Reserve Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav5
-    SetLevel = 1
-    SetName = 2nd Reserve Rgt
-  Apply
-
-
-SelectFaction = $POL
-SelectRegion = $Brest Litovsk
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 1
-    SetName = Brest Cavalry Reserve
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav5
-    SetLevel = 1
-    SetName = 3rd Reserve Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav5
-    SetLevel = 1
-    SetName = 4th Reserve Rgt
-  Apply
-
-
-SelectFaction = $POL
-SelectRegion = $Lodz
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 0
-    InCS = 0
-    FixType = 1
-    SetName = Lodz Cavalry Reserve
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Cav5
-    SetName = 5th Reserve Rgt
-  Apply
-
-
-SelectFaction = $POL
 SelectRegion = $Danzig
   CreateGroup
     Posture = $Defensive
@@ -2453,6 +1894,7 @@ SelectRegion = $Danzig
   CreateUnit
     SetType = $uni_POL_Bde3
     SUFlavorName = 1st Sailors|2nd Sailors|Sailors Bty
+    SetLevel = 1
     SetName = Sailors Brigade
   Apply
 
@@ -2481,92 +1923,6 @@ SelectRegion = $Danzig
     SUFlavorName = RvTr 01|RvTr 02|RvTr 03|RvTr 04
     SetName = River Transport Sqd
   Apply
-
-
-SelectFaction = $POL
-SelectRegion = $Torun
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 6
-    InCS = 1
-    FixType = 1
-    SetName = 1st Frontier Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt3
-    SUFlavorName = 1st Frontier
-    SetName = 1st Frontier Rgt
-  Apply
-
-
-SelectFaction = $POL
-SelectRegion = $Modlin
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 6
-    InCS = 1
-    FixType = 1
-    SetName = 2nd Frontier Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt3
-    SUFlavorName = 2nd Frontier
-    SetName = 2nd Frontier Rgt
-  Apply
-
-
-SelectFaction = $POL
-SelectRegion = $Suwalki
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 6
-    InCS = 1
-    FixType = 1
-    SetName = 3rd Frontier Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt3
-    SUFlavorName = 3rd Frontier
-    SetName = 3rd Frontier Rgt
-  Apply
-
-
-SelectFaction = $POL
-SelectRegion = $Grodno
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 6
-    InCS = 1
-    FixType = 1
-    SetName = 4th Frontier Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt3
-    SUFlavorName = 4th Frontier
-    SetName = 4th Frontier Rgt
-  Apply
-
-
-SelectFaction = $POL
-SelectRegion = $Bialystok
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 6
-    InCS = 1
-    FixType = 1
-    SetName = 5th Frontier Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt3
-    SUFlavorName = 5th Frontier
-    SetName = 5th Frontier Rgt
-  Apply
-
 
 SelectFaction = $POL
 SelectRegion = $Warsaw
@@ -2624,7 +1980,6 @@ SelectRegion = $Warsaw
     SetName = Warszawa Artillery
   Apply
 
-
 SelectFaction = $POL
 SelectRegion = $Krakow
   CreateGroup
@@ -2640,7 +1995,6 @@ SelectRegion = $Krakow
     SUFlavorName = 1st Krakow Militia|2nd Krakow Militia|3rd Krakow Militia|Krakow Fort Bty
     SetName = Krakow Garrison
   Apply
-
 
 SelectFaction = $POL
 SelectRegion = $Lodz
@@ -2658,7 +2012,6 @@ SelectRegion = $Lodz
     SetName = Lodz Garrison
   Apply
 
-
 SelectFaction = $POL
 SelectRegion = $Danzig
   CreateGroup
@@ -2674,7 +2027,6 @@ SelectRegion = $Danzig
     SUFlavorName = 1st Danzig Militia|2nd Danzig Militia|3rd Danzig Militia|Danzig Fort Bty
     SetName = Danzig Garrison
   Apply
-
 
 SelectFaction = $POL
 SelectRegion = $Poznan
@@ -2692,7 +2044,6 @@ SelectRegion = $Poznan
     SetName = Poznan Garrison
   Apply
 
-
 SelectFaction = $POL
 SelectRegion = $Lwow
   CreateGroup
@@ -2708,7 +2059,6 @@ SelectRegion = $Lwow
     SUFlavorName = 1st Lwow Militia|2nd Lwow Militia|3rd Lwow Militia|Lwow Fort Bty
     SetName = Lwow Garrison
   Apply
-
 
 SelectFaction = $POL
 SelectRegion = $Bialystok
@@ -2726,7 +2076,6 @@ SelectRegion = $Bialystok
     SetName = Bialystok Garrison
   Apply
 
-
 SelectFaction = $POL
 SelectRegion = $Brest Litovsk
   CreateGroup
@@ -2742,7 +2091,6 @@ SelectRegion = $Brest Litovsk
     SUFlavorName = 1st Brest Litovsk Militia|2nd Brest Litovsk Militia|3rd Brest Litovsk Militia|Brest Litovsk Fort Bty
     SetName = Brest Litovsk Garrison
   Apply
-
 
 SelectFaction = $POL
 SelectRegion = $Tomaszow
@@ -2760,7 +2108,6 @@ SelectRegion = $Tomaszow
     SetName = Tomaszow Garrison
   Apply
 
-
 SelectFaction = $POL
 SelectRegion = $Bydgoszcz
   CreateGroup
@@ -2777,7 +2124,6 @@ SelectRegion = $Bydgoszcz
     SetName = Bydgoszcz Garrison
   Apply
 
-
 SelectFaction = $POL
 SelectRegion = $Lublin
   CreateGroup
@@ -2793,7 +2139,6 @@ SelectRegion = $Lublin
     SUFlavorName = 1st Lublin Militia|2nd Lublin Militia|3rd Lublin Militia|Lublin Fort Bty
     SetName = Lublin Garrison
   Apply
-
 
 SelectFaction = $POL
 SelectRegion = $Baranavichy
@@ -2821,7 +2166,6 @@ SelectRegion = $Baranavichy
     SetName = 5th Tank Company
   Apply
 
-
 SelectFaction = $POL
 SelectRegion = $Lwow
   CreateGroup
@@ -2835,11 +2179,13 @@ SelectRegion = $Lwow
   CreateUnit
     SetType = $uni_POL_Tnk
     SUFlavorName = 1st Platoon|2nd Platoon|3rd Tank Platoon
+    SetLevel = 1
     SetName = 3rd Tank Company
   Apply
   CreateUnit
     SetType = $uni_POL_Tnk
     SUFlavorName = 1st Platoon|2nd Platoon|3rd Platoon
+    SetLevel = 1
     SetName = 4th Tank Company
   Apply
   CreateStruc
@@ -2944,17 +2290,27 @@ SelectRegion = $Warsaw
     SUFlavorName = Military Advisors
     SetName = French Military Advisors
   Apply
+
   ChangeUnitPool = $uni_POL_MG0;30
-  ChangeUnitPool = $uni_POL_Mil1;30
-  ChangeUnitPool = $uni_POL_Cav5;10
-  ChangeUnitPool = $uni_POL_Rgt2;15
-  ChangeUnitPool = $uni_POL_Rgt1;15
-  ChangeUnitPool = $uni_POL_Cav4;15
-  ChangeUnitPool = $uni_POL_Art2;15
-  ChangeUnitPool = $uni_POL_Amt;4
-  ChangeUnitPool = $uni_POL_Amc;4
-  ChangeUnitPool = $uni_POL_Sup1;15
-  ChangeUnitPool = $uni_POL_Eng;4
+  ChangeUnitPool = $uni_POL_Art0;30
+  ChangeUnitPool = $uni_POL_Art1;30
+  ChangeUnitPool = $uni_POL_Art2;30
+  ChangeUnitPool = $uni_POL_Art3;30
+  ChangeUnitPool = $uni_POL_Art4;30
+  ChangeUnitPool = $uni_POL_Mil1;100
+  ChangeUnitPool = $uni_POL_Cav5;40
+  ChangeUnitPool = $uni_POL_Cav4;20
+  ChangeUnitPool = $uni_POL_Bde2;50
+  ChangeUnitPool = $uni_POL_Amc;10
+  ChangeUnitPool = $uni_POL_Sup1;200
+  ChangeUnitPool = $uni_POL_Eng;10
+  ChangeUnitPool = $uni_POL_Sie;3
+  ChangeUnitPool = $uni_POL_Bty;5
+  ChangeUnitPool = $uni_POL_Tnk;10
+  ChangeUnitPool = $uni_POL_Amt;30
+  ChangeUnitPool = $uni_POL_Hq1;3
+  ChangeUnitPool = $uni_POL_Sig;10
+  ChangeUnitPool = $uni_POL_Med;10
 
 EndEvent
 
@@ -2993,36 +2349,28 @@ SelectRegion = $Warsaw
     SetName = K. Sosnkowski
   Apply
   CreateUnit
-    GMEParam = 6
+    GMEParam = 2
     SetType = $uni_POL_Jazwinski1
     FlavorName = 11th Infantry Div.
     SetName = B. Jazwinski
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt4
-    SUFlavorName = 46th Infantry
-    SetName = 46th Infantry Rgt
+    SetCommit = 3
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 11th Infantry Div.
   Apply
   CreateUnit
-    SetType = $uni_POL_Rgt4
-    SUFlavorName = 47th Infantry
-    SetName = 47th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt4
-    SUFlavorName = 48th Infantry
-    SetName = 48th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt4
-    SUFlavorName = 49th Infantry
-    SetName = 49th Infantry Rgt
+    GMEParam = 2
+    SetType = $uni_POL_Skrzynski1
+    FlavorName = 16th Infantry Div.
+    SetName = S. Skrzynski
   Apply
   CreateUnit
     SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 11th Division Arty
-    SetName = 11th Division Artillery
+    SetType = $uni_POL_Bde1
+    SetLevel = 1
+    SetName = 16th Infantry Div.
   Apply
   CreateUnit
     SetType = $uni_POL_Sup1
@@ -3031,54 +2379,10 @@ SelectRegion = $Warsaw
     SetName = 11th Division Supply
   Apply
   CreateUnit
-    GMEParam = 6
-    SetType = $uni_POL_Skrzynski1
-    FlavorName = 16th Infantry Div.
-    SetName = S. Skrzynski
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt4
-    SUFlavorName = 63rd Infantry
-    SetName = 63rd Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt4
-    SUFlavorName = 64th Infantry
-    SetName = 64th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt4
-    SUFlavorName = 65th Infantry
-    SetName = 65th Infantry Rgt
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Rgt4
-    SUFlavorName = 66th Infantry
-    SetName = 66th Infantry Rgt
-  Apply
-  CreateUnit
-    SetCommit = 3
-    SetType = $uni_POL_Art2
-    SUFlavorName = 16th Division Arty
-    SetName = 16th Division Artillery
-  Apply
-  CreateUnit
     SetType = $uni_POL_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
     SetLevel = 1
     SetName = 16th Division Supply
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetLevel = 1
-    SetName = Reserve Supply
-  Apply
-  CreateUnit
-    SetType = $uni_POL_Sup1
-    SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
-    SetLevel = 1
-    SetName = Reserve Supply
   Apply
 
 SelectFaction = $POL
@@ -3124,40 +2428,6 @@ Actions
   Replacement = POL;$famLightArty;3
   Replacement = POL;$famHvyArty;1
   Replacement = POL;$famMedArty;2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_Renforts_POL_UkrainianUprising1|1|1|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_POL_PolandAttacks;=;1
-
-Actions
-
-SelectFaction = $UKR
-
-  ChgUnitPoolInfos = $uni_UKR_Mil;15;75
-  ChgUnitPoolInfos = $uni_UKR_Div0;3;75
-  ChgUnitPoolInfos = $uni_UKR_Div2;5;75
-  ChgUnitPoolInfos = $uni_UKR_Bde0;5;75
-  ChgUnitPoolInfos = $uni_UKR_Bde2;5;75
-  ChgUnitPoolInfos = $uni_UKR_Art1;5;75
-  ChgUnitPoolInfos = $uni_UKR_Art2;5;75
-  ChgUnitPoolInfos = $uni_UKR_Amt1;2;75
-  ChgUnitPoolInfos = $uni_UKR_Amc1;4;75
-  ChgUnitPoolInfos = $uni_UKR_Sup;15;75
-  Replacement = UKR;$famLine;6
-  Replacement = UKR;$famCavalry;3
-  Replacement = UKR;$famElite;2
-  Replacement = UKR;$famLightArty;3
-  Replacement = UKR;$famHvyArty;1
-  Replacement = UKR;$famMedArty;2
 
 EndEvent
 
@@ -3231,50 +2501,62 @@ SelectRegion = $Ternopil
   Apply
   CreateUnit
     SetType = $uni_UKR_Bde0
+    SetLevel = 1
     SetName = 1st Galicia Div
   Apply
   CreateUnit
     SetType = $uni_UKR_Bde0
+    SetLevel = 1
     SetName = 2nd Galicia Div
   Apply
   CreateUnit
     SetType = $uni_UKR_Bde0
+    SetLevel = 1
     SetName = 3rd Galicia Div
   Apply
   CreateUnit
     SetType = $uni_UKR_Bde0
+    SetLevel = 1
     SetName = 4th Galicia Div
   Apply
   CreateUnit
     SetType = $uni_UKR_Bde0
+    SetLevel = 1
     SetName = 5th Galicia Div
   Apply
   CreateUnit
     SetType = $uni_UKR_Bde0
+    SetLevel = 1
     SetName = 6th Galicia Div
   Apply
   CreateUnit
     SetType = $uni_UKR_Art5
+    SetLevel = 1
     SetName = 1st Galicia Artillery
   Apply
   CreateUnit
     SetType = $uni_UKR_Art5
+    SetLevel = 1
     SetName = 2nd Galicia Artillery
   Apply
   CreateUnit
     SetType = $uni_UKR_Trs
+    SetLevel = 1
     SetName = Transmission Co.
   Apply
   CreateUnit
     SetType = $uni_UKR_Med
+    SetLevel = 1
     SetName = Medical Co.
   Apply
   CreateUnit
     SetType = $uni_UKR_Eng
+    SetLevel = 1
     SetName = Engineers Co.
   Apply
   CreateUnit
     SetType = $uni_UKR_Hq
+    SetLevel = 1
     SetName = Galicia HQ
   Apply
   CreateUnit
@@ -3403,7 +2685,6 @@ StartEvent = evt_nam_POL_PolesInKiev|999|1|NULL|NULL|$Kiev|NULL
 Conditions
 
   MinDate = 1920/01/01
-  MaxDate = 1921/12/30
 
 SelectFaction = $RED
 
@@ -3420,7 +2701,7 @@ SelectFaction = $POL
 
 SelectFaction = $RED
 
-  ChgVPCount = -10
+  ChangeFacMorale  = -1
 
 EndEvent
 
@@ -3434,7 +2715,6 @@ StartEvent = evt_nam_POL_PolesInMinsk|999|1|NULL|NULL|$Minsk|NULL
 Conditions
 
   MinDate = 1920/01/01
-  MaxDate = 1921/12/30
   EvalEvent = evt_nam_POL_PolandAttacks;=;1
   EvalEvent = evt_nam_POL_PolishVictory;=;0
 
@@ -3451,7 +2731,7 @@ SelectFaction = $POL
 
 SelectFaction = $RED
 
-  ChgVPCount = -10
+  ChangeFacMorale  = -1
 
 EndEvent
 
@@ -3465,7 +2745,6 @@ StartEvent = evt_nam_POL_PolesInEkaterinoslav|999|1|NULL|NULL|$Ekaterinoslav|NUL
 Conditions
 
   MinDate = 1920/01/01
-  MaxDate = 1921/12/30
   EvalEvent = evt_nam_POL_PolandAttacks;=;1
   EvalEvent = evt_nam_POL_PolishVictory;=;0
 
@@ -3482,7 +2761,7 @@ SelectFaction = $POL
 
 SelectFaction = $RED
 
-  ChgVPCount = -10
+  ChangeFacMorale  = -1
 
 EndEvent
 
@@ -3496,7 +2775,6 @@ StartEvent = evt_nam_POL_PolesInKharkov|999|1|NULL|NULL|$Kharkov|NULL
 Conditions
 
   MinDate = 1920/01/01
-  MaxDate = 1921/12/30
   EvalEvent = evt_nam_POL_PolandAttacks;=;1
   EvalEvent = evt_nam_POL_PolishVictory;=;0
 
@@ -3513,7 +2791,7 @@ SelectFaction = $POL
 
 SelectFaction = $RED
 
-  ChgVPCount = -10
+  ChangeFacMorale  = -1
 
 EndEvent
 
@@ -3670,8 +2948,6 @@ StartEvent = evt_nam_RED_PolishDivisions|1|1|NULL|NULL|$Warsaw|NULL
 Conditions
 
   MinDate = 1920/01/01
-  MaxDate = 1921/12/30
-  EvalEvent = evt_nam_POL_PolandTotalDefeatA;=;1
   EvalRgnOwned = $Warsaw
 
 Actions
@@ -3688,165 +2964,13 @@ SelectRegion = $Warsaw
     SetName = Polish Communists
   Apply
   CreateUnit
-    SetType = $uni_RED_Div36
-    SUFlavorName = 1st Polish|2nd Polish|3rd Polish|4th Polish|5th Polish|Polish Cavalry|1st Bty|2nd Bty
+    SetType = $uni_RED_Div3
     SetName = 1st Polish Division
   Apply
   CreateUnit
-    SetType = $uni_RED_Div36
-    SUFlavorName = 6th Polish|7th Polish|8th Polish|9th Polish|10th Polish|Polish Cavalry|3rd Bty|4th Bty
+    SetType = $uni_RED_Div3
     SetName = 2nd Polish Division
   Apply
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-
-StartEvent = evt_nam_POL_RED_NM_Balance1|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1920/01/01
-  EvalEvent = evt_nam_POL_PolandAttacks;=;1
-  EvalEvent = evt_nam_POL_RED_NM_Balance2;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance3;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance4;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance5;=;0
-
-SelectFaction = $RED
-
-  EvalMorale = <;50
-
-Actions
-
-  ChangeFacMorale = 70
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-
-StartEvent = evt_nam_POL_RED_NM_Balance2|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1920/01/01
-  EvalEvent = evt_nam_POL_PolandAttacks;=;1
-  EvalEvent = evt_nam_POL_RED_NM_Balance1;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance3;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance4;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance5;=;0
-
-SelectFaction = $RED
-
-  EvalMorale = >=;50
-  EvalMorale = <;70
-
-Actions
-
-  ChangeFacMorale = 50
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-
-StartEvent = evt_nam_POL_RED_NM_Balance3|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1920/01/01
-  EvalEvent = evt_nam_POL_PolandAttacks;=;1
-  EvalEvent = evt_nam_POL_RED_NM_Balance1;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance2;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance4;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance5;=;0
-
-SelectFaction = $RED
-
-  EvalMorale = >=;70
-  EvalMorale = <;90
-
-Actions
-
-  ChangeFacMorale = 30
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-
-StartEvent = evt_nam_POL_RED_NM_Balance4|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1920/01/01
-  EvalEvent = evt_nam_POL_PolandAttacks;=;1
-  EvalEvent = evt_nam_POL_RED_NM_Balance1;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance2;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance3;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance5;=;0
-
-SelectFaction = $RED
-
-  EvalMorale = >=;90
-  EvalMorale = <;100
-
-Actions
-
-  ChangeFacMorale = 20
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $CMN
-
-StartEvent = evt_nam_POL_RED_NM_Balance5|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1920/01/01
-  EvalEvent = evt_nam_POL_PolandAttacks;=;1
-  EvalEvent = evt_nam_POL_RED_NM_Balance1;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance2;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance3;=;0
-  EvalEvent = evt_nam_POL_RED_NM_Balance4;=;0
-
-SelectFaction = $RED
-
-  EvalMorale = >=;130
-
-Actions
-
-  ChangeFacMorale = -30
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-SelectRegion = $Moscow
-
-StartEvent = evt_nam_RED_ForcesWithoutPolitkomMayBeLockedThisTurn1920|12|1|NULL|NULL|$Moscow|NULL
-
-Conditions
-
-  CheckIsPlayer = NULL
-  MinDate = 1920/01/01
-  TurnIndex = 0;2;4;6;8;10;12;14;16;18;20;22
-  SelectSubUnits = FactionTags RED;OnlyNotFixed;OnlyNPermFixed
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = FactionTags RED;OnlyNotFixed;OnlyNPermFixed
-  AlterCuSubUnit = ApplyToList;Probability 1;Attempts 50;SetParentGroupFixing 1;SkipAttribs 100 #PoliticalUnit#
 
 EndEvent
 
@@ -3923,25 +3047,25 @@ Actions
 SelectFaction = $POL
 
   ChangeUnitPool = $uni_POL_MG0;-30
-  ChangeUnitPool = $uni_UKR_Div0;-3
-  ChangeUnitPool = $uni_UKR_Div2;-10
-  ChangeUnitPool = $uni_UKR_Bde0;-15
-  ChangeUnitPool = $uni_UKR_Bde2;-15
-  ChangeUnitPool = $uni_UKR_Art1;-15
-  ChangeUnitPool = $uni_UKR_Art2;-15
-  ChangeUnitPool = $uni_UKR_Amt1;-2
-  ChangeUnitPool = $uni_UKR_Amc1;-4
-  ChangeUnitPool = $uni_UKR_Sup;-15
-  ChangeUnitPool = $uni_POL_Mil1;-30
-  ChangeUnitPool = $uni_POL_Cav5;-10
-  ChangeUnitPool = $uni_POL_Rgt2;-15
-  ChangeUnitPool = $uni_POL_Rgt1;-15
-  ChangeUnitPool = $uni_POL_Cav4;-15
-  ChangeUnitPool = $uni_POL_Art2;-15
-  ChangeUnitPool = $uni_POL_Amt;-4
-  ChangeUnitPool = $uni_POL_Amc;-4
-  ChangeUnitPool = $uni_POL_Sup1;-15
-  ChangeUnitPool = $uni_POL_Eng;-4
+  ChangeUnitPool = $uni_POL_Art0;-30
+  ChangeUnitPool = $uni_POL_Art1;-30
+  ChangeUnitPool = $uni_POL_Art2;30
+  ChangeUnitPool = $uni_POL_Art3;-30
+  ChangeUnitPool = $uni_POL_Art4;-30
+  ChangeUnitPool = $uni_POL_Mil1;-100
+  ChangeUnitPool = $uni_POL_Cav5;-40
+  ChangeUnitPool = $uni_POL_Cav4;-20
+  ChangeUnitPool = $uni_POL_Bde2;-50
+  ChangeUnitPool = $uni_POL_Amc;-10
+  ChangeUnitPool = $uni_POL_Sup1;-200
+  ChangeUnitPool = $uni_POL_Eng;-10
+  ChangeUnitPool = $uni_POL_Sie;-3
+  ChangeUnitPool = $uni_POL_Bty;-5
+  ChangeUnitPool = $uni_POL_Tnk;-10
+  ChangeUnitPool = $uni_POL_Amt;-30
+  ChangeUnitPool = $uni_POL_Hq1;-3
+  ChangeUnitPool = $uni_POL_Sig;-10
+  ChangeUnitPool = $uni_POL_Med;-10
   SelUnqSubUnit = 1st  Airbase
   RemoveCuSubUnit = NULL
   SelUnqSubUnit = 7th Airbase
@@ -3957,20 +3081,20 @@ SelectFaction = $POL
 
 SelectFaction = $POL
 
-  SelectSubUnits = Area $Area_Romania;FactionTags POL UKR
+  SelectSubUnits = Area $Area_Romania;FactionTags POL UKR TEC FRA
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Area_Wallachia;FactionTags POL UKR
+  SelectSubUnits = Area $Area_Wallachia;FactionTags POL UKR TEC FRA
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Area_Central_Powers;FactionTags POL UKR
+  SelectSubUnits = Area $Area_Central_Powers;FactionTags POL UKR TEC FRA
   AlterCuSubUnit = ApplytoList;Kill
 
 SelectFaction = $UKR
 
-  SelectSubUnits = Area $Area_Romania;FactionTags POL UKR
+  SelectSubUnits = Area $Area_Romania;FactionTags POL UKR TEC RED
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Area_Wallachia;FactionTags POL UKR
+  SelectSubUnits = Area $Area_Wallachia;FactionTags POL UKR TEC RED
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Area_Central_Powers;FactionTags POL UKR
+  SelectSubUnits = Area $Area_Central_Powers;FactionTags POL UKR TEC RED
   AlterCuSubUnit = ApplytoList;Kill
 
 SelectFaction = $WHI
@@ -3982,21 +3106,21 @@ SelectFaction = $WHI
 
 SelectFaction = $RED
 
-  SelectSubUnits = Area $Area_Romania;FactionTags RED ANA GRN
+  SelectSubUnits = Area $Area_Romania;FactionTags RED ANA GRN TEC
   AlterCuSubUnit = ApplytoList;Move $Odessa
-  SelectSubUnits = Area $Area_Wallachia;FactionTags RED ANA GRN
+  SelectSubUnits = Area $Area_Wallachia;FactionTags RED ANA GRN TEC
   AlterCuSubUnit = ApplytoList;Move $Odessa
-  SelectSubUnits = Area $Area_Central_Powers;FactionTags RED ANA GRN
+  SelectSubUnits = Area $Area_Central_Powers;FactionTags RED ANA GRN TEC
   AlterCuSubUnit = ApplytoList;Kill
 
 SelectFaction = $WH3
 
-  SelectSubUnits = Area $Area_Central_Powers;FactionTags WH3
+  SelectSubUnits = Area $Area_Central_Powers;FactionTags WH3 TEC
   AlterCuSubUnit = ApplytoList;Kill
 
 SelectFaction = $WHI
 
-  SelectSubUnits = Area $Area_Central_Powers;FactionTags WH4 DON
+  SelectSubUnits = Area $Area_Central_Powers;FactionTags WH4 DON TEC
   AlterCuSubUnit = ApplytoList;Kill
   SelectSubUnits = Models $ldr_FRA_Franchet d'Esperey3
   AlterCuSubUnit = ApplyToList;Kill
@@ -4389,19 +3513,19 @@ SelectRegion = $Hungary
 
 SelectFaction = $POL
 
-  SelectSubUnits = FactionTags POL
+  SelectSubUnits = FactionTags POL TEC
   AlterCuSubUnit = ApplytoList;Kill;
-  SelectSubUnits = FactionTags UKR FRA
+  SelectSubUnits = FactionTags UKR FRA TEC
   AlterCuSubUnit = ApplytoList;Kill;
 
 SelectFaction = $ROM
 
-  SelectSubUnits = FactionTags ROM
+  SelectSubUnits = FactionTags ROM TEC
   AlterCuSubUnit = ApplytoList;Kill;
 
 SelectFaction = $UKR
 
-  SelectSubUnits = FactionTags UKR
+  SelectSubUnits = FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill;
 
 SelectFaction = $RED
@@ -4416,11 +3540,11 @@ SelectFaction = $WHI
 
 SelectFaction = $RED
 
-  SelectSubUnits = Area $Area_Mazowia;FactionTags RED COS
+  SelectSubUnits = Area $Area_Mazowia;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Smolensk
-  SelectSubUnits = Area $Area_Wielkopolska;FactionTags RED COS
+  SelectSubUnits = Area $Area_Wielkopolska;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Smolensk
-  SelectSubUnits = Area $Area_Galicia;FactionTags RED COS
+  SelectSubUnits = Area $Area_Galicia;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Korenovo
 
 SelectFaction = $POL
@@ -4430,69 +3554,69 @@ SelectFaction = $POL
 
 SelectFaction = $RED
 
-  SelectSubUnits = Area $Area_Kharkov;FactionTags RED COS
+  SelectSubUnits = Area $Area_Kharkov;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Yakovlevo
-  SelectSubUnits = Area $Area_Ekaterinoslav;FactionTags RED COS
+  SelectSubUnits = Area $Area_Ekaterinoslav;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Yakovlevo
-  SelectSubUnits = Area $Area_Kherson;FactionTags RED COS
+  SelectSubUnits = Area $Area_Kherson;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Guevo
-  SelectSubUnits = Area $Area_Chernigov;FactionTags RED COS
+  SelectSubUnits = Area $Area_Chernigov;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Korenovo
-  SelectSubUnits = Area $Area_Poltava;FactionTags RED COS
+  SelectSubUnits = Area $Area_Poltava;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Guevo
-  SelectSubUnits = Area $Area_Podolsk;FactionTags RED COS
+  SelectSubUnits = Area $Area_Podolsk;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Korenovo
-  SelectSubUnits = Area $Area_Kiew;FactionTags RED COS
+  SelectSubUnits = Area $Area_Kiew;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Korenovo
-  SelectSubUnits = Area $Area_Volhynian;FactionTags RED COS
+  SelectSubUnits = Area $Area_Volhynian;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Korenovo
-  SelectSubUnits = Area $Area_Minsk;FactionTags RED COS
+  SelectSubUnits = Area $Area_Minsk;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Smolensk
-  SelectSubUnits = Area $Area_Mogilev;FactionTags RED COS
+  SelectSubUnits = Area $Area_Mogilev;FactionTags RED TEC
   AlterCuSubUnit = ApplytoList;Move $Smolensk
 
 SelectFaction = $WHI
 
-  SelectSubUnits = Area $Area_Mogilev;FactionTags WHI WH4 DON
+  SelectSubUnits = Area $Area_Mogilev;FactionTags WHI WH4 DON TEC
   AlterCuSubUnit = ApplytoList;Move $Haradok
-  SelectSubUnits = Area $Area_Minsk;FactionTags WHI WH4 DON
+  SelectSubUnits = Area $Area_Minsk;FactionTags WHI WH4 DON TEC
   AlterCuSubUnit = ApplytoList;Move $Haradok
-  SelectSubUnits = Area $Area_Vilnius;FactionTags WHI WH4 DON
+  SelectSubUnits = Area $Area_Vilnius;FactionTags WHI WH4 DON TEC
   AlterCuSubUnit = ApplytoList;Move $Haradok
-  SelectSubUnits = Area $Area_Kharkov;FactionTags WHI WH4 DON
+  SelectSubUnits = Area $Area_Kharkov;FactionTags WHI WH4 DON TEC
   AlterCuSubUnit = ApplytoList;Move $Vasylivka
-  SelectSubUnits = Area $Area_Ekaterinoslav;FactionTags WHI WH4 DON
+  SelectSubUnits = Area $Area_Ekaterinoslav;FactionTags WHI WH4 DON TEC
   AlterCuSubUnit = ApplytoList;Move $Vasylivka
-  SelectSubUnits = Area $Area_Kherson;FactionTags WHI WH4 DON
+  SelectSubUnits = Area $Area_Kherson;FactionTags WHI WH4 DON TEC
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
-  SelectSubUnits = Area $Area_Chernigov;FactionTags WHI WH4 DON
+  SelectSubUnits = Area $Area_Chernigov;FactionTags WHI WH4 DON TEC
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
-  SelectSubUnits = Area $Area_Poltava;FactionTags WHI WH4 DON
+  SelectSubUnits = Area $Area_Poltava;FactionTags WHI WH4 DON TEC
   AlterCuSubUnit = ApplytoList;Move $Vasylivka
-  SelectSubUnits = Area $Area_Podolsk;FactionTags WHI WH4 DON
+  SelectSubUnits = Area $Area_Podolsk;FactionTags WHI WH4 DON TEC
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
-  SelectSubUnits = Area $Area_Kiew;FactionTags WHI WH4 DON
+  SelectSubUnits = Area $Area_Kiew;FactionTags WHI WH4 DON TEC
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
-  SelectSubUnits = Area $Area_Volhynian;FactionTags WHI WH4 DON
+  SelectSubUnits = Area $Area_Volhynian;FactionTags WHI WH4 DON TEC
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
 
 SelectFaction = $ANA
 
-  SelectSubUnits = Area $Area_Kharkov;FactionTags ANA
+  SelectSubUnits = Area $Area_Kharkov;FactionTags ANA TEC
   AlterCuSubUnit = ApplytoList;Move $Vasylivka
-  SelectSubUnits = Area $Area_Ekaterinoslav;FactionTags ANA
+  SelectSubUnits = Area $Area_Ekaterinoslav;FactionTags ANA TEC
   AlterCuSubUnit = ApplytoList;Move $Vasylivka
-  SelectSubUnits = Area $Area_Kherson;FactionTags ANA
+  SelectSubUnits = Area $Area_Kherson;FactionTags ANA TEC
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
-  SelectSubUnits = Area $Area_Chernigov;FactionTags ANA
+  SelectSubUnits = Area $Area_Chernigov;FactionTags ANA TEC
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
-  SelectSubUnits = Area $Area_Poltava;FactionTags ANA
+  SelectSubUnits = Area $Area_Poltava;FactionTags ANA TEC
   AlterCuSubUnit = ApplytoList;Move $Vasylivka
-  SelectSubUnits = Area $Area_Podolsk;FactionTags ANA
+  SelectSubUnits = Area $Area_Podolsk;FactionTags ANA TEC
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
-  SelectSubUnits = Area $Area_Kiew;FactionTags ANA
+  SelectSubUnits = Area $Area_Kiew;FactionTags ANA TEC
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
-  SelectSubUnits = Area $Area_Volhynian;FactionTags ANA
+  SelectSubUnits = Area $Area_Volhynian;FactionTags ANA TEC
   AlterCuSubUnit = ApplytoList;Move $Kakhovka
 
 SelectFaction = $CMN
@@ -10079,94 +9203,63 @@ SelectRegion = $Salcininkai
 
 SelectFaction = $POL
 
-  SelectSubUnits = Area $Area_Karelia;FactionTags POL
+  SelectSubUnits = Area $Area_Karelia;FactionTags POL TEC
   AlterCuSubUnit = ApplytoList;Move $Danzig
-  SelectSubUnits = Area $Area_Finland;FactionTags POL
+  SelectSubUnits = Area $Area_Finland;FactionTags POL TEC
   AlterCuSubUnit = ApplytoList;Move $Danzig
-  SelectSubUnits = Area $Area_Estonia;FactionTags POL
+  SelectSubUnits = Area $Area_Estonia;FactionTags POL TEC
   AlterCuSubUnit = ApplytoList;Move $Danzig
-  SelectSubUnits = Area $Area_Latvia;FactionTags POL
+  SelectSubUnits = Area $Area_Latvia;FactionTags POL TEC
   AlterCuSubUnit = ApplytoList;Move $Danzig
-  SelectSubUnits = Area $Area_Lithuania;FactionTags POL
+  SelectSubUnits = Area $Area_Lithuania;FactionTags POL TEC
   AlterCuSubUnit = ApplytoList;Move $Danzig
-  SelectSubUnits = Area $Theater_Northern;FactionTags POL
+  SelectSubUnits = Area $Theater_Northern;FactionTags POL TEC
   AlterCuSubUnit = ApplytoList;Move $Danzig
-  SelectSubUnits = Area $Theater_Central_Russia;FactionTags POL
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags POL TEC
   AlterCuSubUnit = ApplytoList;Move $Danzig
-  SelectSubUnits = Area $Theater_Western;FactionTags POL
+  SelectSubUnits = Area $Theater_Western;FactionTags POL TEC
   AlterCuSubUnit = ApplytoList;Move $Danzig
-  SelectSubUnits = Area $Theater_Southern;FactionTags POL
+  SelectSubUnits = Area $Theater_Southern;FactionTags POL TEC
   AlterCuSubUnit = ApplytoList;Move $Danzig
-  SelectSubUnits = Area $Area_Karelia;FactionTags UKR
+  SelectSubUnits = Area $Area_Karelia;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Area_Finland;FactionTags UKR
+  SelectSubUnits = Area $Area_Finland;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Area_Estonia;FactionTags UKR
+  SelectSubUnits = Area $Area_Estonia;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Area_Latvia;FactionTags UKR
+  SelectSubUnits = Area $Area_Latvia;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Area_Lithuania;FactionTags UKR
+  SelectSubUnits = Area $Area_Lithuania;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Theater_Northern;FactionTags UKR
+  SelectSubUnits = Area $Theater_Northern;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Theater_Central_Russia;FactionTags UKR
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Theater_Western;FactionTags UKR
+  SelectSubUnits = Area $Theater_Western;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Theater_Southern;FactionTags UKR
+  SelectSubUnits = Area $Theater_Southern;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
 
 SelectFaction = $UKR
 
-  SelectSubUnits = Area $Area_Karelia;FactionTags UKR
+  SelectSubUnits = Area $Area_Karelia;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Area_Finland;FactionTags UKR
+  SelectSubUnits = Area $Area_Finland;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Area_Estonia;FactionTags UKR
+  SelectSubUnits = Area $Area_Estonia;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Area_Latvia;FactionTags UKR
+  SelectSubUnits = Area $Area_Latvia;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Area_Lithuania;FactionTags UKR
+  SelectSubUnits = Area $Area_Lithuania;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Theater_Northern;FactionTags UKR
+  SelectSubUnits = Area $Theater_Northern;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
   SelectSubUnits = Area $Theater_Central_Russia;FactionTags UKR
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Theater_Western;FactionTags UKR
+  SelectSubUnits = Area $Theater_Western;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-  SelectSubUnits = Area $Theater_Southern;FactionTags UKR
+  SelectSubUnits = Area $Theater_Southern;FactionTags UKR TEC
   AlterCuSubUnit = ApplytoList;Kill
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = RED_RGD_Add_Exclusion_Poland_Ukraine_Bielorussia|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_POL_PolishVictory;=;1
-
-Actions
-
-  AddRgnDecisionExcl = $Area_Vilnius
-  AddRgnDecisionExcl = $Area_Mogilev
-  AddRgnDecisionExcl = $Area_Minsk
-  AddRgnDecisionExcl = $Area_Romania
-  AddRgnDecisionExcl = $Area_Volhynian
-  AddRgnDecisionExcl = $Area_Podolsk
-  AddRgnDecisionExcl = $Area_Ekaterinoslav
-  AddRgnDecisionExcl = $Area_Kherson
-  AddRgnDecisionExcl = $Area_Kiew
-  AddRgnDecisionExcl = $Area_Chernigov
-  AddRgnDecisionExcl = $Area_Poltava
-  AddRgnDecisionExcl = $Area_Kharkov
-  AddRgnDecisionExcl = $Area_Mazowia
-  AddRgnDecisionExcl = $Area_Wielkopolska
-  AddRgnDecisionExcl = $Area_Galicia
-  AddRgnDecisionExcl = $Area_Vilnius
 
 EndEvent
 

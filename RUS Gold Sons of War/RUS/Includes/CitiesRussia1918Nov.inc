@@ -12631,7 +12631,7 @@ ChangeAssetsProd = 20|0|0|0|0|0
 CivLevel = $Civilized
 Transport = $Road
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Emptsa
 BlockState = 0
@@ -12646,7 +12646,7 @@ CityStyle = $csiNone
 CivLevel = $Cleared
 Transport = $Railroad
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Onega
 BlockState = 0
@@ -12672,7 +12672,7 @@ ChangeAssetsProd = 40|0|0|0|0|0
 CivLevel = $Civilized
 Transport = $Road
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Malozhma
 BlockState = 0
@@ -12690,7 +12690,7 @@ Transport = $NoNetwork
 SelectRegion = $Dvina Bay
 BlockState = 0
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Letniy Bereg
 BlockState = 0
@@ -12720,7 +12720,7 @@ CityStyle = $csiNone
 CivLevel = $Cleared
 Transport = $NoNetwork
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Kodino
 BlockState = 0
@@ -12735,7 +12735,7 @@ CityStyle = $csiNone
 CivLevel = $Cleared
 Transport = $Road
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Obozerskaya
 BlockState = 0
@@ -12765,7 +12765,7 @@ CityStyle = $csiNone
 CivLevel = $Cleared
 Transport = $Track
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Arkhangelsk
 BlockState = 0
@@ -13206,7 +13206,7 @@ CityStyle = $csiNone
 CivLevel = $Cleared
 Transport = $Road
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Uemskiy
 BlockState = 0
@@ -18464,7 +18464,7 @@ ChangeAssetsProd = 40|0|0|0|0|0
 CivLevel = $Civilized
 Transport = $Railroad
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Pukshenga
 BlockState = 0
@@ -22155,7 +22155,7 @@ CityStyle = $csiNone
 CivLevel = $Wild
 Transport = $NoNetwork
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Murmansk
 BlockState = 0
@@ -22181,7 +22181,7 @@ ChangeAssetsProd = 40|0|0|0|0|0
 CivLevel = $Civilized
 Transport = $Railroad
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Aleksandrovsk
 BlockState = 0
@@ -22196,7 +22196,7 @@ CityStyle = $csiNone
 CivLevel = $Wild
 Transport = $NoNetwork
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Severomorsk
 BlockState = 0
@@ -24237,7 +24237,7 @@ CityStyle = $csiNone
 CivLevel = $Wild
 Transport = $NoNetwork
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Palozero
 BlockState = 0
@@ -24252,7 +24252,7 @@ CityStyle = $csiNone
 CivLevel = $Cleared
 Transport = $Road
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Emetskoye
 BlockState = 0
@@ -24267,7 +24267,7 @@ CityStyle = $csiNone
 CivLevel = $Wild
 Transport = $NoNetwork
 
-SelectFaction = $WHI
+SelectFaction = $WH3
 
 SelectRegion = $Stryukovo
 BlockState = 0

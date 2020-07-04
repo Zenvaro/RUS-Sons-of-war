@@ -949,6 +949,21 @@ BalticSetup.sct
 FinlandSetup.sct
 CaucasusSetup.sct
 RUS Poland Auto DOW.sct
+RED_YaroslavlFactory_RplProd.sct
+RED_VladimirFactory_RplProd.sct
+RED_SmolenskFactory_RplProd.sct
+RED_NovgorodFactory_RplProd.sct
+RED_TulaFactory_RplProd.sct
+RED_PetrogradFactory_RplProd.sct
+RED_MoscowFactory_RplProd.sct
+WH3_SamaraFactory_RplProd.sct
+WH3_OmskFactory_RplProd.sct
+WH3_IrkutskFactory_RplProd.sct
+WH3_TomskFactory_RplProd.sct
+WHI_TzaritsynFactory_RplProd.sct
+WHI_SevastopolFactory_RplProd.sct
+WHI_RostovFactory_RplProd.sct
+WHI_EkaterinodarFactory_RplProd.sct
 
 NULL ==========================================================================
 

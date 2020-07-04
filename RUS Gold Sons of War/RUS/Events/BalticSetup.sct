@@ -1555,7 +1555,7 @@ SelectFaction = $GER
 
 SelectFaction = $GER
 
-  SelectSubUnits = FactionTags GER
+  SelectSubUnits = FactionTags GER TEC
   AlterCuSubUnit = ApplyToList;SetFixing 0
 
 EndEvent
