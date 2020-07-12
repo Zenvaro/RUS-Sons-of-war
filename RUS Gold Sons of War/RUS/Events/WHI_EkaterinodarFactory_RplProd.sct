@@ -15,52 +15,6 @@ Conditions
 
 Actions
 
-  ChangeWSUPool = 20
-
-  Replacement = WHI;$famLine;2
-  Replacement = WHI;$famMilitia;2
-  Replacement = WHI;$famElite;2
-  Replacement = WHI;$famCavalry;2
-  Replacement = WHI;$famLightInf;2
-  Replacement = WHI;$famRaider;2
-  Replacement = WHI;$famLightArty;2
-  Replacement = WHI;$famMedArty;2
-  Replacement = WHI;$famHvyArty;2
-  Replacement = WHI;$famService;2
-  Replacement = WHI;$famEngineer;2
-  Replacement = WHI;$famNavalEngineer;2
-  Replacement = WHI;$famSupply;2
-  Replacement = WHI;$famLtVehicle;2
-  Replacement = WHI;$famArmoredTrain;2
-  Replacement = DON;$famLine;2
-  Replacement = DON;$famMilitia;2
-  Replacement = DON;$famElite;2
-  Replacement = DON;$famCavalry;2
-  Replacement = DON;$famLightInf;2
-  Replacement = DON;$famRaider;2
-  Replacement = DON;$famLightArty;2
-  Replacement = DON;$famMedArty;2
-  Replacement = DON;$famHvyArty;2
-  Replacement = DON;$famService;2
-  Replacement = DON;$famEngineer;2
-  Replacement = DON;$famSupply;2
-  Replacement = DON;$famLtVehicle;2
-  Replacement = DON;$famArmoredTrain;2
-  Replacement = WH4;$famLine;2
-  Replacement = WH4;$famMilitia;2
-  Replacement = WH4;$famElite;2
-  Replacement = WH4;$famCavalry;2
-  Replacement = WH4;$famLightInf;2
-  Replacement = WH4;$famRaider;2
-  Replacement = WH4;$famLightArty;2
-  Replacement = WH4;$famMedArty;2
-  Replacement = WH4;$famHvyArty;2
-  Replacement = WH4;$famService;2
-  Replacement = WH4;$famEngineer;2
-  Replacement = WH4;$famSupply;2
-  Replacement = WH4;$famLtVehicle;2
-  Replacement = WH4;$famArmoredTrain;2
-
   ChangeUnitPool = $uni_WHI_Mil1;4
   ChangeUnitPool = $uni_WHI_MBde1;2
   ChangeUnitPool = $uni_WHI_MBde2;1
@@ -79,7 +33,6 @@ Actions
   ChangeUnitPool = $uni_WHI_Gar0;2
   ChangeUnitPool = $uni_WHI_Mon;1
   ChangeUnitPool = $uni_WHI_Sai;1
-  ChangeUnitPool = $uni_WHI_Rgt5;1
   ChangeUnitPool = $uni_WHI_Art0;1
   ChangeUnitPool = $uni_WHI_Art1;1
   ChangeUnitPool = $uni_WHI_Art2;1
@@ -164,50 +117,6 @@ Conditions
 
 Actions
 
-  Replacement = WHI;$famLine;2
-  Replacement = WHI;$famMilitia;2
-  Replacement = WHI;$famElite;2
-  Replacement = WHI;$famCavalry;2
-  Replacement = WHI;$famLightInf;2
-  Replacement = WHI;$famRaider;2
-  Replacement = WHI;$famLightArty;2
-  Replacement = WHI;$famMedArty;2
-  Replacement = WHI;$famHvyArty;2
-  Replacement = WHI;$famService;2
-  Replacement = WHI;$famEngineer;2
-  Replacement = WHI;$famNavalEngineer;2
-  Replacement = WHI;$famSupply;2
-  Replacement = WHI;$famLtVehicle;2
-  Replacement = WHI;$famArmoredTrain;2
-  Replacement = DON;$famLine;2
-  Replacement = DON;$famMilitia;2
-  Replacement = DON;$famElite;2
-  Replacement = DON;$famCavalry;2
-  Replacement = DON;$famLightInf;2
-  Replacement = DON;$famRaider;2
-  Replacement = DON;$famLightArty;2
-  Replacement = DON;$famMedArty;2
-  Replacement = DON;$famHvyArty;2
-  Replacement = DON;$famService;2
-  Replacement = DON;$famEngineer;2
-  Replacement = DON;$famSupply;2
-  Replacement = DON;$famLtVehicle;2
-  Replacement = DON;$famArmoredTrain;2
-  Replacement = WH4;$famLine;2
-  Replacement = WH4;$famMilitia;2
-  Replacement = WH4;$famElite;2
-  Replacement = WH4;$famCavalry;2
-  Replacement = WH4;$famLightInf;2
-  Replacement = WH4;$famRaider;2
-  Replacement = WH4;$famLightArty;2
-  Replacement = WH4;$famMedArty;2
-  Replacement = WH4;$famHvyArty;2
-  Replacement = WH4;$famService;2
-  Replacement = WH4;$famEngineer;2
-  Replacement = WH4;$famSupply;2
-  Replacement = WH4;$famLtVehicle;2
-  Replacement = WH4;$famArmoredTrain;2
-
   ChangeUnitPool = $uni_WHI_Vol1;4
   ChangeUnitPool = $uni_WHI_MBde5;1
   ChangeUnitPool = $uni_WHI_MBde6;1
@@ -232,7 +141,6 @@ Actions
   ChangeUnitPool = $uni_WHI_Gar0;2
   ChangeUnitPool = $uni_WHI_Mon;1
   ChangeUnitPool = $uni_WHI_Sai;1
-  ChangeUnitPool = $uni_WHI_Rgt5;1
   ChangeUnitPool = $uni_WHI_Art0;1
   ChangeUnitPool = $uni_WHI_Art1;1
   ChangeUnitPool = $uni_WHI_Art2;1
@@ -316,50 +224,6 @@ Conditions
 
 Actions
 
-  Replacement = WHI;$famLine;2
-  Replacement = WHI;$famMilitia;2
-  Replacement = WHI;$famElite;2
-  Replacement = WHI;$famCavalry;2
-  Replacement = WHI;$famLightInf;2
-  Replacement = WHI;$famRaider;2
-  Replacement = WHI;$famLightArty;2
-  Replacement = WHI;$famMedArty;2
-  Replacement = WHI;$famHvyArty;2
-  Replacement = WHI;$famService;2
-  Replacement = WHI;$famEngineer;2
-  Replacement = WHI;$famNavalEngineer;2
-  Replacement = WHI;$famSupply;2
-  Replacement = WHI;$famLtVehicle;2
-  Replacement = WHI;$famArmoredTrain;2
-  Replacement = DON;$famLine;2
-  Replacement = DON;$famMilitia;2
-  Replacement = DON;$famElite;2
-  Replacement = DON;$famCavalry;2
-  Replacement = DON;$famLightInf;2
-  Replacement = DON;$famRaider;2
-  Replacement = DON;$famLightArty;2
-  Replacement = DON;$famMedArty;2
-  Replacement = DON;$famHvyArty;2
-  Replacement = DON;$famService;2
-  Replacement = DON;$famEngineer;2
-  Replacement = DON;$famSupply;2
-  Replacement = DON;$famLtVehicle;2
-  Replacement = DON;$famArmoredTrain;2
-  Replacement = WH4;$famLine;2
-  Replacement = WH4;$famMilitia;2
-  Replacement = WH4;$famElite;2
-  Replacement = WH4;$famCavalry;2
-  Replacement = WH4;$famLightInf;2
-  Replacement = WH4;$famRaider;2
-  Replacement = WH4;$famLightArty;2
-  Replacement = WH4;$famMedArty;2
-  Replacement = WH4;$famHvyArty;2
-  Replacement = WH4;$famService;2
-  Replacement = WH4;$famEngineer;2
-  Replacement = WH4;$famSupply;2
-  Replacement = WH4;$famLtVehicle;2
-  Replacement = WH4;$famArmoredTrain;2
-
   ChangeUnitPool = $uni_WHI_VolBde;4
   ChangeUnitPool = $uni_WHI_MBde7;1
   ChangeUnitPool = $uni_WHI_MBde8;1
@@ -390,7 +254,6 @@ Actions
   ChangeUnitPool = $uni_WHI_Gar0;2
   ChangeUnitPool = $uni_WHI_Mon;1
   ChangeUnitPool = $uni_WHI_Sai;1
-  ChangeUnitPool = $uni_WHI_Rgt5;1
   ChangeUnitPool = $uni_WHI_Art0;1
   ChangeUnitPool = $uni_WHI_Art1;1
   ChangeUnitPool = $uni_WHI_Art2;1

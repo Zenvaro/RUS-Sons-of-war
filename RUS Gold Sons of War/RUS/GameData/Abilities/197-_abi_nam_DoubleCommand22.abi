@@ -8,4 +8,4 @@ Color = $colAbi_Tan
 Appliance = Group
 Family = 0
 Level = 1
-StrParam0 = KUB|TEC
+StrParam0 = KUB|COS|TEC

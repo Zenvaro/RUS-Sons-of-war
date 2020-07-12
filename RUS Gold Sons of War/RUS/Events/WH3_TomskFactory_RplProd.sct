@@ -15,37 +15,6 @@ Conditions
 
 Actions
 
-  ChangeWSUPool = 20
-  Replacement = WH3;$famLine;2
-  Replacement = WH3;$famMilitia;2
-  Replacement = WH3;$famElite;2
-  Replacement = WH3;$famCavalry;2
-  Replacement = WH3;$famLightInf;2
-  Replacement = WH3;$famRaider;2
-  Replacement = WH3;$famLightArty;2
-  Replacement = WH3;$famMedArty;2
-  Replacement = WH3;$famHvyArty;2
-  Replacement = WH3;$famService;2
-  Replacement = WH3;$famEngineer;2
-  Replacement = WH3;$famNavalEngineer;2
-  Replacement = WH3;$famSupply;2
-  Replacement = WH3;$famLtVehicle;2
-  Replacement = WH3;$famArmoredTrain;2
-  Replacement = WH5;$famLine;2
-  Replacement = WH5;$famMilitia;2
-  Replacement = WH5;$famElite;2
-  Replacement = WH5;$famCavalry;2
-  Replacement = WH5;$famLightInf;2
-  Replacement = WH5;$famRaider;2
-  Replacement = WH5;$famLightArty;2
-  Replacement = WH5;$famMedArty;2
-  Replacement = WH5;$famHvyArty;2
-  Replacement = WH5;$famService;2
-  Replacement = WH5;$famEngineer;2
-  Replacement = WH5;$famSupply;2
-  Replacement = WH5;$famLtVehicle;2
-  Replacement = WH5;$famArmoredTrain;2
-
   ChangeUnitPool = $uni_WH5_Mil0;4
   ChangeUnitPool = $uni_WH5_Bde2;1
   ChangeUnitPool = $uni_WH5_Cav0;4
@@ -75,7 +44,6 @@ Actions
   ChangeUnitPool = $uni_WH3_MP;2
   ChangeUnitPool = $uni_WH3_MG0;2
   ChangeUnitPool = $uni_WH3_Rgt6;1
-  ChangeUnitPool = $uni_WH3_Rgt2;1
   ChangeUnitPool = $uni_WH3_Rgt3;1
   ChangeUnitPool = $uni_WH3_Rgt4;1
   ChangeUnitPool = $uni_WH3_Lit0;1
@@ -131,36 +99,6 @@ Conditions
 
 Actions
 
-  Replacement = WH3;$famLine;2
-  Replacement = WH3;$famMilitia;2
-  Replacement = WH3;$famElite;2
-  Replacement = WH3;$famCavalry;2
-  Replacement = WH3;$famLightInf;2
-  Replacement = WH3;$famRaider;2
-  Replacement = WH3;$famLightArty;2
-  Replacement = WH3;$famMedArty;2
-  Replacement = WH3;$famHvyArty;2
-  Replacement = WH3;$famService;2
-  Replacement = WH3;$famEngineer;2
-  Replacement = WH3;$famNavalEngineer;2
-  Replacement = WH3;$famSupply;2
-  Replacement = WH3;$famLtVehicle;2
-  Replacement = WH3;$famArmoredTrain;2
-  Replacement = WH5;$famLine;2
-  Replacement = WH5;$famMilitia;2
-  Replacement = WH5;$famElite;2
-  Replacement = WH5;$famCavalry;2
-  Replacement = WH5;$famLightInf;2
-  Replacement = WH5;$famRaider;2
-  Replacement = WH5;$famLightArty;2
-  Replacement = WH5;$famMedArty;2
-  Replacement = WH5;$famHvyArty;2
-  Replacement = WH5;$famService;2
-  Replacement = WH5;$famEngineer;2
-  Replacement = WH5;$famSupply;2
-  Replacement = WH5;$famLtVehicle;2
-  Replacement = WH5;$famArmoredTrain;2
-
   ChangeUnitPool = $uni_WH5_Mil0;4
   ChangeUnitPool = $uni_WH5_Bde2;1
   ChangeUnitPool = $uni_WH5_Cav0;4
@@ -196,7 +134,6 @@ Actions
   ChangeUnitPool = $uni_WH3_MP;2
   ChangeUnitPool = $uni_WH3_MG0;2
   ChangeUnitPool = $uni_WH3_Rgt6;1
-  ChangeUnitPool = $uni_WH3_Rgt2;1
   ChangeUnitPool = $uni_WH3_Rgt3;1
   ChangeUnitPool = $uni_WH3_Rgt4;1
   ChangeUnitPool = $uni_WH3_Lit0;1
@@ -251,36 +188,6 @@ Conditions
 
 Actions
 
-  Replacement = WH3;$famLine;2
-  Replacement = WH3;$famMilitia;2
-  Replacement = WH3;$famElite;2
-  Replacement = WH3;$famCavalry;2
-  Replacement = WH3;$famLightInf;2
-  Replacement = WH3;$famRaider;2
-  Replacement = WH3;$famLightArty;2
-  Replacement = WH3;$famMedArty;2
-  Replacement = WH3;$famHvyArty;2
-  Replacement = WH3;$famService;2
-  Replacement = WH3;$famEngineer;2
-  Replacement = WH3;$famNavalEngineer;2
-  Replacement = WH3;$famSupply;2
-  Replacement = WH3;$famLtVehicle;2
-  Replacement = WH3;$famArmoredTrain;2
-  Replacement = WH5;$famLine;2
-  Replacement = WH5;$famMilitia;2
-  Replacement = WH5;$famElite;2
-  Replacement = WH5;$famCavalry;2
-  Replacement = WH5;$famLightInf;2
-  Replacement = WH5;$famRaider;2
-  Replacement = WH5;$famLightArty;2
-  Replacement = WH5;$famMedArty;2
-  Replacement = WH5;$famHvyArty;2
-  Replacement = WH5;$famService;2
-  Replacement = WH5;$famEngineer;2
-  Replacement = WH5;$famSupply;2
-  Replacement = WH5;$famLtVehicle;2
-  Replacement = WH5;$famArmoredTrain;2
-
   ChangeUnitPool = $uni_WH5_Mil0;4
   ChangeUnitPool = $uni_WH5_Bde2;1
   ChangeUnitPool = $uni_WH5_Cav0;4
@@ -322,7 +229,6 @@ Actions
   ChangeUnitPool = $uni_WH3_MP;2
   ChangeUnitPool = $uni_WH3_MG0;2
   ChangeUnitPool = $uni_WH3_Rgt6;1
-  ChangeUnitPool = $uni_WH3_Rgt2;1
   ChangeUnitPool = $uni_WH3_Rgt3;1
   ChangeUnitPool = $uni_WH3_Rgt4;1
   ChangeUnitPool = $uni_WH3_Lit0;1

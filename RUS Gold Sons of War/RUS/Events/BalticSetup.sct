@@ -2449,7 +2449,7 @@ SelectRegion = $Riga
     SetName = Keller Rgt
   Apply
   CreateUnit
-    SetType = $uni_WHI_Rgt5
+    SetType = $uni_WH4_Par1
     SetName = Reserve Battalion
   Apply
   CreateUnit

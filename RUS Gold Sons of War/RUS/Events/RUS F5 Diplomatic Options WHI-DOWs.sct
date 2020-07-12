@@ -645,7 +645,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanAZRption = $gmaOptionDip;WHI_SignPeace_AZR;1
+  ChangeOption = $gmaOptionDip;WHI_SignPeace_AZR;1
 
 EndEvent
 
@@ -1176,7 +1176,7 @@ Actions
 
 SelectFaction = $WHI
 
-  ChanAZRption = $gmaOptionDip;WHI_BreakPeace_AZR;1
+  ChangeOption = $gmaOptionDip;WHI_BreakPeace_AZR;1
 
 SelectFaction = $CMN
 
@@ -1266,7 +1266,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanARMption = $gmaOptionDip;WHI_SignPeace_ARM;1
+  ChangeOption = $gmaOptionDip;WHI_SignPeace_ARM;1
 
 EndEvent
 
@@ -1778,7 +1778,7 @@ Actions
 
 SelectFaction = $WHI
 
-  ChanARMption = $gmaOptionDip;WHI_BreakPeace_ARM;1
+  ChangeOption = $gmaOptionDip;WHI_BreakPeace_ARM;1
 
 SelectFaction = $CMN
 
@@ -1865,7 +1865,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanFINption = $gmaOptionDip;WHI_SignPeace_FIN;1
+  ChangeOption = $gmaOptionDip;WHI_SignPeace_FIN;1
 
 EndEvent
 
@@ -2707,7 +2707,7 @@ Actions
 
 SelectFaction = $WHI
 
-  ChanFINption = $gmaOptionDip;WHI_BreakPeace_FIN;1
+  ChangeOption = $gmaOptionDip;WHI_BreakPeace_FIN;1
 
 SelectFaction = $CMN
 
@@ -2795,7 +2795,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanESTption = $gmaOptionDip;WHI_SignPeace_EST;1
+  ChangeOption = $gmaOptionDip;WHI_SignPeace_EST;1
 
 EndEvent
 
@@ -3612,7 +3612,7 @@ Actions
 
 SelectFaction = $WHI
 
-  ChanESTption = $gmaOptionDip;WHI_BreakPeace_EST;1
+  ChangeOption = $gmaOptionDip;WHI_BreakPeace_EST;1
 
 SelectFaction = $CMN
 
@@ -3700,7 +3700,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanLATption = $gmaOptionDip;WHI_SignPeace_LAT;1
+  ChangeOption = $gmaOptionDip;WHI_SignPeace_LAT;1
 
 EndEvent
 
@@ -4522,7 +4522,7 @@ Actions
 
 SelectFaction = $WHI
 
-  ChanLATption = $gmaOptionDip;WHI_BreakPeace_LAT;1
+  ChangeOption = $gmaOptionDip;WHI_BreakPeace_LAT;1
 
 SelectFaction = $CMN
 
@@ -4610,7 +4610,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanLITption = $gmaOptionDip;WHI_SignPeace_LIT;1
+  ChangeOption = $gmaOptionDip;WHI_SignPeace_LIT;1
 
 EndEvent
 
@@ -5416,7 +5416,7 @@ Actions
 
 SelectFaction = $WHI
 
-  ChanLITption = $gmaOptionDip;WHI_BreakPeace_LIT;1
+  ChangeOption = $gmaOptionDip;WHI_BreakPeace_LIT;1
 
 SelectFaction = $CMN
 
@@ -5504,7 +5504,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanROMption = $gmaOptionDip;WHI_SignPeace_ROM;1
+  ChangeOption = $gmaOptionDip;WHI_SignPeace_ROM;1
 
 EndEvent
 
@@ -5904,7 +5904,7 @@ Actions
 
 SelectFaction = $WHI
 
-  ChanROMption = $gmaOptionDip;WHI_BreakPeace_ROM;1
+  ChangeOption = $gmaOptionDip;WHI_BreakPeace_ROM;1
 
 SelectFaction = $CMN
 
@@ -7542,7 +7542,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanAZRption = $gmaOptionDip;WH3_SignPeace_AZR;1
+  ChangeOption = $gmaOptionDip;WH3_SignPeace_AZR;1
 
 EndEvent
 
@@ -8073,7 +8073,7 @@ Actions
 
 SelectFaction = $WH3
 
-  ChanAZRption = $gmaOptionDip;WH3_BreakPeace_AZR;1
+  ChangeOption = $gmaOptionDip;WH3_BreakPeace_AZR;1
 
 SelectFaction = $CMN
 
@@ -8163,7 +8163,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanARMption = $gmaOptionDip;WH3_SignPeace_ARM;1
+  ChangeOption = $gmaOptionDip;WH3_SignPeace_ARM;1
 
 EndEvent
 
@@ -8675,7 +8675,7 @@ Actions
 
 SelectFaction = $WH3
 
-  ChanARMption = $gmaOptionDip;WH3_BreakPeace_ARM;1
+  ChangeOption = $gmaOptionDip;WH3_BreakPeace_ARM;1
 
 SelectFaction = $CMN
 
@@ -8762,7 +8762,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanFINption = $gmaOptionDip;WH3_SignPeace_FIN;1
+  ChangeOption = $gmaOptionDip;WH3_SignPeace_FIN;1
 
 EndEvent
 
@@ -9604,7 +9604,7 @@ Actions
 
 SelectFaction = $WH3
 
-  ChanFINption = $gmaOptionDip;WH3_BreakPeace_FIN;1
+  ChangeOption = $gmaOptionDip;WH3_BreakPeace_FIN;1
 
 SelectFaction = $CMN
 
@@ -9692,7 +9692,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanESTption = $gmaOptionDip;WH3_SignPeace_EST;1
+  ChangeOption = $gmaOptionDip;WH3_SignPeace_EST;1
 
 EndEvent
 
@@ -10509,7 +10509,7 @@ Actions
 
 SelectFaction = $WH3
 
-  ChanESTption = $gmaOptionDip;WH3_BreakPeace_EST;1
+  ChangeOption = $gmaOptionDip;WH3_BreakPeace_EST;1
 
 SelectFaction = $CMN
 
@@ -10597,7 +10597,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanLATption = $gmaOptionDip;WH3_SignPeace_LAT;1
+  ChangeOption = $gmaOptionDip;WH3_SignPeace_LAT;1
 
 EndEvent
 
@@ -11419,7 +11419,7 @@ Actions
 
 SelectFaction = $WH3
 
-  ChanLATption = $gmaOptionDip;WH3_BreakPeace_LAT;1
+  ChangeOption = $gmaOptionDip;WH3_BreakPeace_LAT;1
 
 SelectFaction = $CMN
 
@@ -11507,7 +11507,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanLITption = $gmaOptionDip;WH3_SignPeace_LIT;1
+  ChangeOption = $gmaOptionDip;WH3_SignPeace_LIT;1
 
 EndEvent
 
@@ -12313,7 +12313,7 @@ Actions
 
 SelectFaction = $WH3
 
-  ChanLITption = $gmaOptionDip;WH3_BreakPeace_LIT;1
+  ChangeOption = $gmaOptionDip;WH3_BreakPeace_LIT;1
 
 SelectFaction = $CMN
 
@@ -12401,7 +12401,7 @@ Conditions
 Actions
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
-  ChanROMption = $gmaOptionDip;WH3_SignPeace_ROM;1
+  ChangeOption = $gmaOptionDip;WH3_SignPeace_ROM;1
 
 EndEvent
 
@@ -12801,7 +12801,7 @@ Actions
 
 SelectFaction = $WH3
 
-  ChanROMption = $gmaOptionDip;WH3_BreakPeace_ROM;1
+  ChangeOption = $gmaOptionDip;WH3_BreakPeace_ROM;1
 
 SelectFaction = $CMN
 

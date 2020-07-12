@@ -216,7 +216,6 @@ Conditions
 
   CheckIsPlayer = NULL
   MinDate = 1918/12/01
-  MaxDate = 1923/12/30
   Probability = 35
   SelectSubUnits = FactionTags WH3 WH5 ORE BSH ZAB SIB URL SEM TEC;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
   EvalSubUnitSel = NULL
@@ -261,7 +260,6 @@ Conditions
 
   CheckIsPlayer = NULL
   MinDate = 1918/12/01
-  MaxDate = 1923/12/30
   Probability = 35
   SelectSubUnits = FactionTags WH2;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
   EvalSubUnitSel = NULL
@@ -283,8 +281,7 @@ StartEvent = evt_nam_WHI_BritishMutinery|999|1|NULL|NULL|$Murmansk|NULL
 Conditions
 
   MinDate = 1919/01/01
-  MaxDate = 1920/01/30
-  Probability = 35
+  Probability = 50
 
 SelectFaction = $WH3
 
@@ -1732,11 +1729,105 @@ SelectFaction = $WH3
 EndEvent
 
 NULL ==========================================================================
+SelectFaction = $COS
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_CossacktroopsLosseCohesionInCentral_Russia1|999|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags ORE BSH URL ZAB KUB TER DON SEM SIB
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags ORE BSH URL ZAB KUB TER DON SEM SIB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
 
 SelectFaction = $COS
 SelectRegion = $Kiev
 
-StartEvent = evt_nam_UraltroopsLosseCohesionInSiberia1|999|0|NULL|NULL|$Kiev|NULL
+StartEvent = evt_nam_CossacktroopsLosseCohesionInFinland1|999|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+  SelectSubUnits = Area $Theater_Finland;FactionTags ORE BSH URL ZAB KUB TER DON SEM SIB
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Area $Theater_Finland;FactionTags ORE BSH URL ZAB KUB TER DON SEM SIB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
+
+SelectFaction = $COS
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_CossacktroopsLosseCohesionInBelarus1|999|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+  SelectSubUnits = Area $Theater_Belarus;FactionTags ORE BSH URL ZAB KUB TER DON SEM SIB
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Area $Theater_Belarus;FactionTags ORE BSH URL ZAB KUB TER DON SEM SIB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
+
+SelectFaction = $COS
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_CossacktroopsLosseCohesionInWestern1|999|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+  SelectSubUnits = Area $Theater_Western;FactionTags ORE BSH URL ZAB KUB TER DON SEM SIB
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Area $Theater_Western;FactionTags ORE BSH URL ZAB KUB TER DON SEM SIB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
+
+SelectFaction = $COS
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_CossacktroopsLosseCohesionInNothern1|999|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+  SelectSubUnits = Area $Theater_Nothern;FactionTags ORE BSH URL ZAB KUB TER DON SEM SIB
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Area $Theater_Nothern;FactionTags ORE BSH URL ZAB KUB TER DON SEM SIB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
+
+SelectFaction = $COS
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_CossacktroopsLosseCohesionInSiberia1|999|0|NULL|NULL|$Kiev|NULL
 
 Conditions
 
@@ -1749,177 +1840,6 @@ Actions
 
   SelectSubUnits = Area $Theater_Siberia;FactionTags ORE BSH URL ZAB KUB TER DON
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
-
-EndEvent
-
-SelectFaction = $GRN
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_UraltroopsLosseCohesionInSiberia2|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Theater_Siberia;FactionTags ORE BSH URL ZAB KUB TER DON 
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Theater_Siberia;FactionTags ORE BSH URL ZAB KUB TER DON
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_CostroopsLosseCohesionInUfa1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Ufa;FactionTags ORE URL ZAB KUB TER SEM DON SIB
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Ufa;FactionTags ORE URL ZAB KUB TER SEM DON SIB
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
-
-EndEvent
-
-SelectFaction = $GRN
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_CostroopsLosseCohesionInUfa2|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Ufa;FactionTags ORE URL ZAB KUB TER SEM DON SIB
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Ufa;FactionTags ORE URL ZAB KUB TER SEM DON SIB
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_UraltroopsLosseCohesionInUralsk1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Uralsk;FactionTags ORE SIB ZAB KUB TER SEM DON
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Uralsk;FactionTags ORE SIB ZAB KUB TER SEM DON
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $GRN
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_UraltroopsLosseCohesionInUralsk2|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Uralsk;FactionTags ORE SIB ZAB KUB TER SEM DON
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Uralsk;FactionTags ORE SIB ZAB KUB TER SEM DON
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_UraltroopsLosseCohesionInPerm1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Perm;FactionTags ORE URL SIB ZAB KUB TER SEM DON
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Perm;FactionTags ORE URL SIB ZAB KUB TER SEM DON
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $GRN
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_UraltroopsLosseCohesionInPerm2|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Perm;FactionTags ORE URL SIB ZAB KUB TER SEM DON
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Perm;FactionTags ORE URL SIB ZAB KUB TER SEM DON
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_UraltroopsLosseCohesionInTurgay1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Turgay;FactionTags ORE URL SIB ZAB KUB TER SEM DON
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Turgay;FactionTags ORE URL SIB ZAB KUB TER SEM DON
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $GRN
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_UraltroopsLosseCohesionInTurgay2|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Turgay;FactionTags ORE URL SIB ZAB KUB TER SEM DON
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Turgay;FactionTags ORE URL SIB ZAB KUB TER SEM DON
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
 
@@ -1932,12 +1852,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Southern;FactionTags ORE URL SIB ZAB SEM
+  SelectSubUnits = Area $Theater_Southern;FactionTags ORE URL SIB ZAB SEM BSH
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Southern;FactionTags ORE URL SIB ZAB SEM
+  SelectSubUnits = Area $Theater_Southern;FactionTags ORE URL SIB ZAB SEM BSH
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -1951,12 +1871,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Volga;FactionTags TER KUB DON ORE URL SIB ZAB SEM
+  SelectSubUnits = Area $Theater_Volga;FactionTags TER KUB DON ORE URL SIB ZAB SEM BSH
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Volga;FactionTags TER KUB DON ORE URL SIB ZAB SEM
+  SelectSubUnits = Area $Theater_Volga;FactionTags TER KUB DON ORE URL SIB ZAB SEM BSH
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -1970,12 +1890,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Central_Asia;FactionTags TER KUB DON ORE URL SIB ZAB SEM
+  SelectSubUnits = Area $Theater_Central_Asia;FactionTags TER KUB DON ORE URL SIB ZAB SEM BSH
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Central_Asia;FactionTags TER KUB DON ORE URL SIB ZAB SEM
+  SelectSubUnits = Area $Theater_Central_Asia;FactionTags TER KUB DON ORE URL SIB ZAB SEM BSH
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -1989,12 +1909,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Eastern;FactionTags TER KUB DON ORE URL SIB SEM
+  SelectSubUnits = Area $Theater_Eastern;FactionTags TER KUB DON ORE URL SIB SEM BSH
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Eastern;FactionTags TER KUB DON ORE URL SIB SEM
+  SelectSubUnits = Area $Theater_Eastern;FactionTags TER KUB DON ORE URL SIB SEM BSH
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -2027,221 +1947,12 @@ Conditions
 
   MinDate = 1918/06/01
 
-  SelectSubUnits = Area $Theater_Ukraine;FactionTags TER KUB ZAB DON SIB SEM
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags TER KUB ZAB DON SIB SEM BSH URL ORE
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_Ukraine;FactionTags TER KUB DON ZAB SIB SEM
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_CostroopsLosseCohesionInSaratov1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Saratov;FactionTags TER KUB DON ORE URL SIB ZAB SEM
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Saratov;FactionTags TER KUB DON URL ORE SIB ZAB SEM
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_CostroopsLosseCohesionInTaurida1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Taurida;FactionTags TER KUB DON ORE URL SIB ZAB SEM
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Taurida;FactionTags TER KUB DON URL ORE SIB ZAB SEM
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_CostroopsLosseCohesionInDon1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Don;FactionTags TER KUB ORE URL SIB ZAB SEM
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Don;FactionTags TER KUB URL ORE SIB ZAB SEM
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_CostroopsLosseCohesionInTerek1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Terek;FactionTags KUB DON ORE URL SIB ZAB SEM
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Terek;FactionTags KUB DON URL ORE SIB ZAB SEM
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_CostroopsLosseCohesionInVoronezh1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Voronezh;FactionTags TER KUB DON ORE URL SIB ZAB SEM
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Voronezh;FactionTags TER KUB DON URL ORE SIB ZAB SEM
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_CostroopsLosseCohesionInStavropol1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Stavropol;FactionTags TER KUB DON ORE URL SIB ZAB SEM
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Stavropol;FactionTags TER KUB DON URL ORE SIB ZAB SEM
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_CostroopsLosseCohesionInKuban1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Kuban;FactionTags TER DON ORE URL SIB ZAB SEM
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Kuban;FactionTags TER DON URL ORE SIB ZAB SEM
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_CostroopsLosseCohesionInAstrakhan1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Astrakhan;FactionTags TER KUB DON ORE URL SIB ZAB SEM
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Astrakhan;FactionTags TER KUB DON URL ORE SIB ZAB SEM
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_CostroopsLosseCohesionInAzerbaijan1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Azerbaijan;FactionTags TER KUB DON ORE URL SIB ZAB SEM
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Azerbaijan;FactionTags TER KUB DON URL ORE SIB ZAB SEM
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_CostroopsLosseCohesionInGeorgia1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Georgia;FactionTags TER KUB DON ORE URL SIB ZAB SEM
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Georgia;FactionTags TER KUB DON URL ORE SIB ZAB SEM
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
-
-EndEvent
-
-SelectFaction = $COS
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_CostroopsLosseCohesionInOrenburg1|999|0|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-  SelectSubUnits = Area $Area_Orenburg;FactionTags TER KUB DON URL SIB ZAB SEM
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = Area $Area_Orenburg;FactionTags TER KUB DON URL SIB ZAB SEM
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags TER KUB DON ZAB SIB SEM BSH URL ORE
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -70
 
 EndEvent
@@ -5300,765 +5011,6 @@ EndEvent
 
 NULL ==========================================================================
 
-SelectFaction = $WH3
-SelectRegion = $Izhevsk
-
-StartEvent = evt_nam_WH3_IzhevskFactory_RplProduction|999|1|NULL|NULL|$Izhevsk|NULL
-
-Conditions
-
-  MinDate = 1918/10/02
-  Probability = 25
-  EvalRgnOwned = $Izhevsk
-  EvalUnqUnit = A.V. Kolchak;NOT
-
-Actions
-
-  Replacement = WH2;$famLine;1
-  Replacement = WH2;$famMilitia;1
-  Replacement = WH2;$famElite;1
-  Replacement = WH2;$famCavalry;1
-  Replacement = WH2;$famLightInf;1
-  Replacement = WH2;$famRaider;1
-  Replacement = WH2;$famLightArty;1
-  Replacement = WH2;$famMedArty;1
-  Replacement = WH2;$famHvyArty;1
-  Replacement = WH2;$famService;1
-  Replacement = WH2;$famEngineer;1
-  Replacement = WH2;$famNavalEngineer;1
-  Replacement = WH2;$famSupply;1
-  Replacement = WH2;$famLtVehicle;1
-  Replacement = WH2;$famArmoredTrain;1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-SelectRegion = $Donetsk
-
-StartEvent = evt_nam_RED_DonetskFactory_RplProduction|999|1|NULL|NULL|$Donetsk|NULL
-
-Conditions
-
-  MinDate = 1918/10/02
-  Probability = 25
-  EvalRgnOwned = $Donetsk
-
-Actions
-
-  Replacement = RED;$famLine;1
-  Replacement = RED;$famMilitia;1
-  Replacement = RED;$famElite;1
-  Replacement = RED;$famCavalry;1
-  Replacement = RED;$famLightInf;1
-  Replacement = RED;$famRaider;1
-  Replacement = RED;$famLightArty;1
-  Replacement = RED;$famMedArty;1
-  Replacement = RED;$famHvyArty;1
-  Replacement = RED;$famService;1
-  Replacement = RED;$famEngineer;1
-  Replacement = RED;$famNavalEngineer;1
-  Replacement = RED;$famSupply;1
-  Replacement = RED;$famLtVehicle;1
-  Replacement = RED;$famArmoredTrain;1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-SelectRegion = $Orel
-
-StartEvent = evt_nam_RED_OrelFactory_RplProduction|999|1|NULL|NULL|$Orel|NULL
-
-Conditions
-
-  MinDate = 1918/10/02
-  Probability = 25
-  EvalRgnOwned = $Orel
-
-Actions
-
-  Replacement = RED;$famLine;1
-  Replacement = RED;$famMilitia;1
-  Replacement = RED;$famElite;1
-  Replacement = RED;$famCavalry;1
-  Replacement = RED;$famLightInf;1
-  Replacement = RED;$famRaider;1
-  Replacement = RED;$famLightArty;1
-  Replacement = RED;$famMedArty;1
-  Replacement = RED;$famHvyArty;1
-  Replacement = RED;$famService;1
-  Replacement = RED;$famEngineer;1
-  Replacement = RED;$famNavalEngineer;1
-  Replacement = RED;$famSupply;1
-  Replacement = RED;$famLtVehicle;1
-  Replacement = RED;$famArmoredTrain;1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $EST
-SelectRegion = $Tallinn
-
-StartEvent = evt_nam_EST_TallinnFactory_RplProduction2|999|1|NULL|NULL|$Tallinn|NULL
-
-Conditions
-
-  MinDate = 1919/01/17
-  Probability = 25
-  EvalRgnOwned = $Tallinn
-
-Actions
-
-  Replacement = BAL;$famLine;1
-  Replacement = BAL;$famMilitia;1
-  Replacement = BAL;$famElite;1
-  Replacement = BAL;$famCavalry;1
-  Replacement = BAL;$famLightInf;1
-  Replacement = BAL;$famRaider;1
-  Replacement = BAL;$famLightArty;1
-  Replacement = BAL;$famMedArty;1
-  Replacement = BAL;$famHvyArty;1
-  Replacement = BAL;$famService;1
-  Replacement = BAL;$famEngineer;1
-  Replacement = BAL;$famNavalEngineer;1
-  Replacement = BAL;$famSupply;1
-  Replacement = BAL;$famLtVehicle;1
-  Replacement = BAL;$famArmoredTrain;1
-
-  Replacement = EST;$famLine;1
-  Replacement = EST;$famMilitia;1
-  Replacement = EST;$famElite;1
-  Replacement = EST;$famCavalry;1
-  Replacement = EST;$famLightInf;1
-  Replacement = EST;$famRaider;1
-  Replacement = EST;$famLightArty;1
-  Replacement = EST;$famMedArty;1
-  Replacement = EST;$famHvyArty;1
-  Replacement = EST;$famService;1
-  Replacement = EST;$famEngineer;1
-  Replacement = EST;$famNavalEngineer;1
-  Replacement = EST;$famSupply;1
-  Replacement = EST;$famLtVehicle;1
-  Replacement = EST;$famArmoredTrain;1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $LAT
-SelectRegion = $Riga
-
-StartEvent = evt_nam_LAT_RigaFactory_RplProduction|999|1|NULL|NULL|$Riga|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Riga
-
-Actions
-
-  Replacement = BAL;$famLine;1
-  Replacement = BAL;$famMilitia;1
-  Replacement = BAL;$famElite;1
-  Replacement = BAL;$famCavalry;1
-  Replacement = BAL;$famLightInf;1
-  Replacement = BAL;$famRaider;1
-  Replacement = BAL;$famLightArty;1
-  Replacement = BAL;$famMedArty;1
-  Replacement = BAL;$famHvyArty;1
-  Replacement = BAL;$famService;1
-  Replacement = BAL;$famEngineer;1
-  Replacement = BAL;$famNavalEngineer;1
-  Replacement = BAL;$famSupply;1
-  Replacement = BAL;$famLtVehicle;1
-  Replacement = BAL;$famArmoredTrain;1
-
-  Replacement = LAT;$famLine;1
-  Replacement = LAT;$famMilitia;1
-  Replacement = LAT;$famElite;1
-  Replacement = LAT;$famCavalry;1
-  Replacement = LAT;$famLightInf;1
-  Replacement = LAT;$famRaider;1
-  Replacement = LAT;$famLightArty;1
-  Replacement = LAT;$famMedArty;1
-  Replacement = LAT;$famHvyArty;1
-  Replacement = LAT;$famService;1
-  Replacement = LAT;$famEngineer;1
-  Replacement = LAT;$famNavalEngineer;1
-  Replacement = LAT;$famSupply;1
-  Replacement = LAT;$famLtVehicle;1
-  Replacement = LAT;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $LIT
-SelectRegion = $Kaunas
-
-StartEvent = evt_nam_LIT_KaunasFactory_RplProduction|999|1|NULL|NULL|$Kaunas|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Kaunas
-
-Actions
-
-  Replacement = BAL;$famLine;1
-  Replacement = BAL;$famMilitia;1
-  Replacement = BAL;$famElite;1
-  Replacement = BAL;$famCavalry;1
-  Replacement = BAL;$famLightInf;1
-  Replacement = BAL;$famRaider;1
-  Replacement = BAL;$famLightArty;1
-  Replacement = BAL;$famMedArty;1
-  Replacement = BAL;$famHvyArty;1
-  Replacement = BAL;$famService;1
-  Replacement = BAL;$famEngineer;1
-  Replacement = BAL;$famNavalEngineer;1
-  Replacement = BAL;$famSupply;1
-  Replacement = BAL;$famLtVehicle;1
-  Replacement = BAL;$famArmoredTrain;1
-
-  Replacement = LIT;$famLine;1
-  Replacement = LIT;$famMilitia;1
-  Replacement = LIT;$famElite;1
-  Replacement = LIT;$famCavalry;1
-  Replacement = LIT;$famLightInf;1
-  Replacement = LIT;$famRaider;1
-  Replacement = LIT;$famLightArty;1
-  Replacement = LIT;$famMedArty;1
-  Replacement = LIT;$famHvyArty;1
-  Replacement = LIT;$famService;1
-  Replacement = LIT;$famEngineer;1
-  Replacement = LIT;$famNavalEngineer;1
-  Replacement = LIT;$famSupply;1
-  Replacement = LIT;$famLtVehicle;1
-  Replacement = LIT;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $GEO
-SelectRegion = $Tiflis
-
-StartEvent = evt_nam_GEO_TiflisFactory_RplProduction|999|1|NULL|NULL|$Tiflis|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Tiflis
-
-Actions
-
-  Replacement = CAU;$famLine;1
-  Replacement = CAU;$famMilitia;1
-  Replacement = CAU;$famElite;1
-  Replacement = CAU;$famCavalry;1
-  Replacement = CAU;$famLightInf;1
-  Replacement = CAU;$famRaider;1
-  Replacement = CAU;$famLightArty;1
-  Replacement = CAU;$famMedArty;1
-  Replacement = CAU;$famHvyArty;1
-  Replacement = CAU;$famService;1
-  Replacement = CAU;$famEngineer;1
-  Replacement = CAU;$famNavalEngineer;1
-  Replacement = CAU;$famSupply;1
-  Replacement = CAU;$famLtVehicle;1
-  Replacement = CAU;$famArmoredTrain;1
-
-  Replacement = GEO;$famLine;1
-  Replacement = GEO;$famMilitia;1
-  Replacement = GEO;$famElite;1
-  Replacement = GEO;$famCavalry;1
-  Replacement = GEO;$famLightInf;1
-  Replacement = GEO;$famRaider;1
-  Replacement = GEO;$famLightArty;1
-  Replacement = GEO;$famMedArty;1
-  Replacement = GEO;$famHvyArty;1
-  Replacement = GEO;$famService;1
-  Replacement = GEO;$famEngineer;1
-  Replacement = GEO;$famNavalEngineer;1
-  Replacement = GEO;$famSupply;1
-  Replacement = GEO;$famLtVehicle;1
-  Replacement = GEO;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $ARM
-SelectRegion = $Erevan
-
-StartEvent = evt_nam_ARM_ErevanFactory_RplProduction|999|1|NULL|NULL|$Erevan|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Erevan
-
-Actions
-
-  Replacement = CAU;$famLine;1
-  Replacement = CAU;$famMilitia;1
-  Replacement = CAU;$famElite;1
-  Replacement = CAU;$famCavalry;1
-  Replacement = CAU;$famLightInf;1
-  Replacement = CAU;$famRaider;1
-  Replacement = CAU;$famLightArty;1
-  Replacement = CAU;$famMedArty;1
-  Replacement = CAU;$famHvyArty;1
-  Replacement = CAU;$famService;1
-  Replacement = CAU;$famEngineer;1
-  Replacement = CAU;$famNavalEngineer;1
-  Replacement = CAU;$famSupply;1
-  Replacement = CAU;$famLtVehicle;1
-  Replacement = CAU;$famArmoredTrain;1
-
-  Replacement = ARM;$famLine;1
-  Replacement = ARM;$famMilitia;1
-  Replacement = ARM;$famElite;1
-  Replacement = ARM;$famCavalry;1
-  Replacement = ARM;$famLightInf;1
-  Replacement = ARM;$famRaider;1
-  Replacement = ARM;$famLightArty;1
-  Replacement = ARM;$famMedArty;1
-  Replacement = ARM;$famHvyArty;1
-  Replacement = ARM;$famService;1
-  Replacement = ARM;$famEngineer;1
-  Replacement = ARM;$famNavalEngineer;1
-  Replacement = ARM;$famSupply;1
-  Replacement = ARM;$famLtVehicle;1
-  Replacement = ARM;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $AZR
-SelectRegion = $Baku
-
-StartEvent = evt_nam_AZR_BakuFactory_RplProduction|999|1|NULL|NULL|$Baku|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Baku
-
-Actions
-
-  Replacement = CAU;$famLine;1
-  Replacement = CAU;$famMilitia;1
-  Replacement = CAU;$famElite;1
-  Replacement = CAU;$famCavalry;1
-  Replacement = CAU;$famLightInf;1
-  Replacement = CAU;$famRaider;1
-  Replacement = CAU;$famLightArty;1
-  Replacement = CAU;$famMedArty;1
-  Replacement = CAU;$famHvyArty;1
-  Replacement = CAU;$famService;1
-  Replacement = CAU;$famEngineer;1
-  Replacement = CAU;$famNavalEngineer;1
-  Replacement = CAU;$famSupply;1
-  Replacement = CAU;$famLtVehicle;1
-  Replacement = CAU;$famArmoredTrain;1
-
-  Replacement = AZR;$famLine;1
-  Replacement = AZR;$famMilitia;1
-  Replacement = AZR;$famElite;1
-  Replacement = AZR;$famCavalry;1
-  Replacement = AZR;$famLightInf;1
-  Replacement = AZR;$famRaider;1
-  Replacement = AZR;$famLightArty;1
-  Replacement = AZR;$famMedArty;1
-  Replacement = AZR;$famHvyArty;1
-  Replacement = AZR;$famService;1
-  Replacement = AZR;$famEngineer;1
-  Replacement = AZR;$famNavalEngineer;1
-  Replacement = AZR;$famSupply;1
-  Replacement = AZR;$famLtVehicle;1
-  Replacement = AZR;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $FIN
-SelectRegion = $Helsinki
-
-StartEvent = evt_nam_FIN_HelsinkiFactory_RplProduction|999|1|NULL|NULL|$Helsinki|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Helsinki
-
-Actions
-
-  Replacement = FIN;$famLine;1
-  Replacement = FIN;$famMilitia;1
-  Replacement = FIN;$famElite;1
-  Replacement = FIN;$famCavalry;1
-  Replacement = FIN;$famLightInf;1
-  Replacement = FIN;$famRaider;1
-  Replacement = FIN;$famLightArty;1
-  Replacement = FIN;$famMedArty;1
-  Replacement = FIN;$famHvyArty;1
-  Replacement = FIN;$famService;1
-  Replacement = FIN;$famEngineer;1
-  Replacement = FIN;$famNavalEngineer;1
-  Replacement = FIN;$famSupply;1
-  Replacement = FIN;$famLtVehicle;1
-  Replacement = FIN;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $ROM
-SelectRegion = $Bucuresti
-
-StartEvent = evt_nam_ROM_BucurestiFactory_RplProduction|999|1|NULL|NULL|$Bucuresti|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Bucuresti
-
-Actions
-
-  Replacement = ROM;$famLine;1
-  Replacement = ROM;$famMilitia;1
-  Replacement = ROM;$famElite;1
-  Replacement = ROM;$famCavalry;1
-  Replacement = ROM;$famLightInf;1
-  Replacement = ROM;$famRaider;1
-  Replacement = ROM;$famLightArty;1
-  Replacement = ROM;$famMedArty;1
-  Replacement = ROM;$famHvyArty;1
-  Replacement = ROM;$famService;1
-  Replacement = ROM;$famEngineer;1
-  Replacement = ROM;$famNavalEngineer;1
-  Replacement = ROM;$famSupply;1
-  Replacement = ROM;$famLtVehicle;1
-  Replacement = ROM;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $POL
-SelectRegion = $Warsaw
-
-StartEvent = evt_nam_POL_WarsawFactory_RplProduction|999|1|NULL|NULL|$Warsaw|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Warsaw
-
-Actions
-
-  Replacement = POL;$famLine;1
-  Replacement = POL;$famMilitia;1
-  Replacement = POL;$famElite;1
-  Replacement = POL;$famCavalry;1
-  Replacement = POL;$famLightInf;1
-  Replacement = POL;$famRaider;1
-  Replacement = POL;$famLightArty;1
-  Replacement = POL;$famMedArty;1
-  Replacement = POL;$famHvyArty;1
-  Replacement = POL;$famService;1
-  Replacement = POL;$famEngineer;1
-  Replacement = POL;$famNavalEngineer;1
-  Replacement = POL;$famSupply;1
-  Replacement = POL;$famLtVehicle;1
-  Replacement = POL;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $UKR
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_UKR_KievFactory_RplProduction|999|1|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Kiev
-
-Actions
-
-  Replacement = UKR;$famLine;1
-  Replacement = UKR;$famMilitia;1
-  Replacement = UKR;$famElite;1
-  Replacement = UKR;$famCavalry;1
-  Replacement = UKR;$famLightInf;1
-  Replacement = UKR;$famRaider;1
-  Replacement = UKR;$famLightArty;1
-  Replacement = UKR;$famMedArty;1
-  Replacement = UKR;$famHvyArty;1
-  Replacement = UKR;$famService;1
-  Replacement = UKR;$famEngineer;1
-  Replacement = UKR;$famNavalEngineer;1
-  Replacement = UKR;$famSupply;1
-  Replacement = UKR;$famLtVehicle;1
-  Replacement = UKR;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $UKR
-SelectRegion = $Kharkov
-
-StartEvent = evt_nam_UKR_KharkovFactory_RplProduction|999|1|NULL|NULL|$Kharkov|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Kharkov
-
-Actions
-
-  Replacement = UKR;$famLine;1
-  Replacement = UKR;$famMilitia;1
-  Replacement = UKR;$famElite;1
-  Replacement = UKR;$famCavalry;1
-  Replacement = UKR;$famLightInf;1
-  Replacement = UKR;$famRaider;1
-  Replacement = UKR;$famLightArty;1
-  Replacement = UKR;$famMedArty;1
-  Replacement = UKR;$famHvyArty;1
-  Replacement = UKR;$famService;1
-  Replacement = UKR;$famEngineer;1
-  Replacement = UKR;$famNavalEngineer;1
-  Replacement = UKR;$famSupply;1
-  Replacement = UKR;$famLtVehicle;1
-  Replacement = UKR;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $ANA
-SelectRegion = $Huliaipole
-
-StartEvent = evt_nam_ANA_HuliaipoleFactory_RplProduction|999|1|NULL|NULL|$Huliaipole|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Huliaipole
-
-Actions
-
-  Replacement = ANA;$famLine;1
-  Replacement = ANA;$famMilitia;1
-  Replacement = ANA;$famElite;1
-  Replacement = ANA;$famCavalry;1
-  Replacement = ANA;$famLightInf;1
-  Replacement = ANA;$famRaider;1
-  Replacement = ANA;$famLightArty;1
-  Replacement = ANA;$famMedArty;1
-  Replacement = ANA;$famHvyArty;1
-  Replacement = ANA;$famService;1
-  Replacement = ANA;$famEngineer;1
-  Replacement = ANA;$famNavalEngineer;1
-  Replacement = ANA;$famSupply;1
-  Replacement = ANA;$famLtVehicle;1
-  Replacement = ANA;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $ANA
-SelectRegion = $Tomsk
-
-StartEvent = evt_nam_ANA_TomskFactory_RplProduction|999|1|NULL|NULL|$Tomsk|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Tomsk
-
-Actions
-
-  Replacement = ANA;$famLine;1
-  Replacement = ANA;$famMilitia;1
-  Replacement = ANA;$famElite;1
-  Replacement = ANA;$famCavalry;1
-  Replacement = ANA;$famLightInf;1
-  Replacement = ANA;$famRaider;1
-  Replacement = ANA;$famLightArty;1
-  Replacement = ANA;$famMedArty;1
-  Replacement = ANA;$famHvyArty;1
-  Replacement = ANA;$famService;1
-  Replacement = ANA;$famEngineer;1
-  Replacement = ANA;$famNavalEngineer;1
-  Replacement = ANA;$famSupply;1
-  Replacement = ANA;$famLtVehicle;1
-  Replacement = ANA;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $WH3
-SelectRegion = $Vladivostok
-
-StartEvent = evt_nam_WH3_VladivostokFactory_RplProduction|999|1|NULL|NULL|$Vladivostok|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Vladivostok
-
-Actions
-
-  Replacement = WH3;$famLine;1
-  Replacement = WH3;$famMilitia;1
-  Replacement = WH3;$famElite;1
-  Replacement = WH3;$famCavalry;1
-  Replacement = WH3;$famLightInf;1
-  Replacement = WH3;$famRaider;1
-  Replacement = WH3;$famLightArty;1
-  Replacement = WH3;$famMedArty;1
-  Replacement = WH3;$famHvyArty;1
-  Replacement = WH3;$famService;1
-  Replacement = WH3;$famEngineer;1
-  Replacement = WH3;$famNavalEngineer;1
-  Replacement = WH3;$famSupply;1
-  Replacement = WH3;$famLtVehicle;1
-  Replacement = WH3;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $WHI
-SelectRegion = $Grozny
-
-StartEvent = evt_nam_WHI_GroznyFactory_RplProduction|999|1|NULL|NULL|$Grozny|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Grozny
-
-Actions
-
-  Replacement = WHI;$famLine;1
-  Replacement = WHI;$famMilitia;1
-  Replacement = WHI;$famElite;1
-  Replacement = WHI;$famCavalry;1
-  Replacement = WHI;$famLightInf;1
-  Replacement = WHI;$famRaider;1
-  Replacement = WHI;$famLightArty;1
-  Replacement = WHI;$famMedArty;1
-  Replacement = WHI;$famHvyArty;1
-  Replacement = WHI;$famService;1
-  Replacement = WHI;$famEngineer;1
-  Replacement = WHI;$famNavalEngineer;1
-  Replacement = WHI;$famSupply;1
-  Replacement = WHI;$famLtVehicle;1
-  Replacement = WHI;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $WHI
-SelectRegion = $Novocherkassk
-
-StartEvent = evt_nam_WHI_NovocherkasskFactory_RplProduction|999|1|NULL|NULL|$Novocherkassk|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Novocherkassk
-
-Actions
-
-  Replacement = DON;$famLine;1
-  Replacement = DON;$famMilitia;1
-  Replacement = DON;$famElite;1
-  Replacement = DON;$famCavalry;1
-  Replacement = DON;$famLightInf;1
-  Replacement = DON;$famRaider;1
-  Replacement = DON;$famLightArty;1
-  Replacement = DON;$famMedArty;1
-  Replacement = DON;$famHvyArty;1
-  Replacement = DON;$famService;1
-  Replacement = DON;$famEngineer;1
-  Replacement = DON;$famNavalEngineer;1
-  Replacement = DON;$famSupply;1
-  Replacement = DON;$famLtVehicle;1
-  Replacement = DON;$famArmoredTrain;1
-
-EndEvent
-
-
-SelectFaction = $WH3
-SelectRegion = $Arkhangelsk
-
-StartEvent = evt_nam_WHI_ArkhangelskFactory_RplProduction|999|1|NULL|NULL|$Arkhangelsk|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Arkhangelsk
-
-Actions
-
-  Replacement =;$famLine;1
-  Replacement =;$famMilitia;1
-  Replacement =;$famElite;1
-  Replacement =;$famCavalry;1
-  Replacement =;$famLightInf;1
-  Replacement =;$famRaider;1
-  Replacement =;$famLightArty;1
-  Replacement =;$famMedArty;1
-  Replacement =;$famHvyArty;1
-  Replacement =;$famService;1
-  Replacement =;$famEngineer;1
-  Replacement =;$famNavalEngineer;1
-  Replacement =;$famSupply;1
-  Replacement =;$famLtVehicle;1
-  Replacement =;$famArmoredTrain;1
-
-EndEvent
-
-SelectFaction = $WHI
-SelectRegion = $Novgorod
-
-StartEvent = evt_nam_WHI_NovgorodFactory_RplProduction|999|1|NULL|NULL|$Novgorod|NULL
-
-Conditions
-
-  MinDate = 1919/01/01
-  Probability = 25
-  EvalRgnOwned = $Novgorod
-
-Actions
-
-  Replacement = WH4;$famLine;1
-  Replacement = WH4;$famMilitia;1
-  Replacement = WH4;$famElite;1
-  Replacement = WH4;$famCavalry;1
-  Replacement = WH4;$famLightInf;1
-  Replacement = WH4;$famRaider;1
-  Replacement = WH4;$famLightArty;1
-  Replacement = WH4;$famMedArty;1
-  Replacement = WH4;$famHvyArty;1
-  Replacement = WH4;$famService;1
-  Replacement = WH4;$famEngineer;1
-  Replacement = WH4;$famNavalEngineer;1
-  Replacement = WH4;$famSupply;1
-  Replacement = WH4;$famLtVehicle;1
-  Replacement = WH4;$famArmoredTrain;1
-
-EndEvent
-
-NULL ==========================================================================
-
 SelectFaction = $CMN
 SelectRegion = $Anatolia
 
@@ -6067,7 +5019,7 @@ StartEvent = evt_nam_Flavor_CMN_TurkishWarIndependence|1|2|evt_txt_Flavor_CMN_Tu
 Conditions
 
   MinDate = 1920/03/23
-  MaxDate = 1920/05/23
+  Probability = 50
 
 Actions
 
@@ -8633,7 +7585,7 @@ EndEvent
 SelectFaction = $CMN
 SelectRegion = $Moscow
 
-StartEvent = evt_nam_CMN_WhiteUnification|999|2|evt_nam_CMN_WhiteUnification|Event-img_CMN_WhiteUnification|$Moscow|NULL
+StartEvent = evt_nam_CMN_WhiteUnification|999|2|evt_txt_CMN_WhiteUnification|Event-img_CMN_WhiteUnification|$Moscow|NULL
 
 Conditions
 
@@ -9970,23 +8922,24 @@ Conditions
 
   MinDate = 1918/01/01
   MaxDate = 1918/12/30
+  Probability = 25
 
 Actions
 
 SelectFaction = $GRN
 
-  ChangeLoyaltyFac = $Theater_Southern;15
-  ChangeLoyaltyFac = $Theater_Western;15
-  ChangeLoyaltyFac = $Theater_Siberia;15
-  ChangeLoyaltyFac = $Theater_Ukraine;15
-  ChangeLoyaltyFac = $Theater_Belarus;15
-  ChangeLoyaltyFac = $Theater_Finland;15
-  ChangeLoyaltyFac = $Theater_Northern;15
-  ChangeLoyaltyFac = $Theater_Central_Russia;15
-  ChangeLoyaltyFac = $Theater_Volga;15
-  ChangeLoyaltyFac = $Theater_Ural;15
-  ChangeLoyaltyFac = $Theater_Central_Asia;15
-  ChangeLoyaltyFac = $Theater_Eastern;15
+  ChangeLoyaltyFac = $Theater_Southern;10
+  ChangeLoyaltyFac = $Theater_Western;10
+  ChangeLoyaltyFac = $Theater_Siberia;10
+  ChangeLoyaltyFac = $Theater_Ukraine;10
+  ChangeLoyaltyFac = $Theater_Belarus;10
+  ChangeLoyaltyFac = $Theater_Finland;10
+  ChangeLoyaltyFac = $Theater_Northern;10
+  ChangeLoyaltyFac = $Theater_Central_Russia;10
+  ChangeLoyaltyFac = $Theater_Volga;10
+  ChangeLoyaltyFac = $Theater_Ural;10
+  ChangeLoyaltyFac = $Theater_Central_Asia;10
+  ChangeLoyaltyFac = $Theater_Eastern;10
 
 EndEvent
 
@@ -9999,23 +8952,24 @@ Conditions
 
   MinDate = 1919/01/01
   MaxDate = 1919/12/30
+  Probability = 25
 
 Actions
 
 SelectFaction = $GRN
 
-  ChangeLoyaltyFac = $Theater_Southern;15
-  ChangeLoyaltyFac = $Theater_Western;15
-  ChangeLoyaltyFac = $Theater_Siberia;15
-  ChangeLoyaltyFac = $Theater_Ukraine;15
-  ChangeLoyaltyFac = $Theater_Belarus;15
-  ChangeLoyaltyFac = $Theater_Finland;15
-  ChangeLoyaltyFac = $Theater_Northern;15
-  ChangeLoyaltyFac = $Theater_Central_Russia;15
-  ChangeLoyaltyFac = $Theater_Volga;15
-  ChangeLoyaltyFac = $Theater_Ural;15
-  ChangeLoyaltyFac = $Theater_Central_Asia;15
-  ChangeLoyaltyFac = $Theater_Eastern;15
+  ChangeLoyaltyFac = $Theater_Southern;10
+  ChangeLoyaltyFac = $Theater_Western;10
+  ChangeLoyaltyFac = $Theater_Siberia;10
+  ChangeLoyaltyFac = $Theater_Ukraine;10
+  ChangeLoyaltyFac = $Theater_Belarus;10
+  ChangeLoyaltyFac = $Theater_Finland;10
+  ChangeLoyaltyFac = $Theater_Northern;10
+  ChangeLoyaltyFac = $Theater_Central_Russia;10
+  ChangeLoyaltyFac = $Theater_Volga;10
+  ChangeLoyaltyFac = $Theater_Ural;10
+  ChangeLoyaltyFac = $Theater_Central_Asia;10
+  ChangeLoyaltyFac = $Theater_Eastern;10
 
 EndEvent
 
@@ -10028,23 +8982,24 @@ Conditions
 
   MinDate = 1920/01/01
   MaxDate = 1920/12/30
+  Probability = 25
 
 Actions
 
 SelectFaction = $GRN
 
-  ChangeLoyaltyFac = $Theater_Southern;15
-  ChangeLoyaltyFac = $Theater_Western;15
-  ChangeLoyaltyFac = $Theater_Siberia;15
-  ChangeLoyaltyFac = $Theater_Ukraine;15
-  ChangeLoyaltyFac = $Theater_Belarus;15
-  ChangeLoyaltyFac = $Theater_Finland;15
-  ChangeLoyaltyFac = $Theater_Northern;15
-  ChangeLoyaltyFac = $Theater_Central_Russia;15
-  ChangeLoyaltyFac = $Theater_Volga;15
-  ChangeLoyaltyFac = $Theater_Ural;15
-  ChangeLoyaltyFac = $Theater_Central_Asia;15
-  ChangeLoyaltyFac = $Theater_Eastern;15
+  ChangeLoyaltyFac = $Theater_Southern;10
+  ChangeLoyaltyFac = $Theater_Western;10
+  ChangeLoyaltyFac = $Theater_Siberia;10
+  ChangeLoyaltyFac = $Theater_Ukraine;10
+  ChangeLoyaltyFac = $Theater_Belarus;10
+  ChangeLoyaltyFac = $Theater_Finland;10
+  ChangeLoyaltyFac = $Theater_Northern;10
+  ChangeLoyaltyFac = $Theater_Central_Russia;10
+  ChangeLoyaltyFac = $Theater_Volga;10
+  ChangeLoyaltyFac = $Theater_Ural;10
+  ChangeLoyaltyFac = $Theater_Central_Asia;10
+  ChangeLoyaltyFac = $Theater_Eastern;10
 
 EndEvent
 
@@ -10057,23 +9012,24 @@ Conditions
 
   MinDate = 1921/01/01
   MaxDate = 1921/12/30
+  Probability = 25
 
 Actions
 
 SelectFaction = $GRN
 
-  ChangeLoyaltyFac = $Theater_Southern;15
-  ChangeLoyaltyFac = $Theater_Western;15
-  ChangeLoyaltyFac = $Theater_Siberia;15
-  ChangeLoyaltyFac = $Theater_Ukraine;15
-  ChangeLoyaltyFac = $Theater_Belarus;15
-  ChangeLoyaltyFac = $Theater_Finland;15
-  ChangeLoyaltyFac = $Theater_Northern;15
-  ChangeLoyaltyFac = $Theater_Central_Russia;15
-  ChangeLoyaltyFac = $Theater_Volga;15
-  ChangeLoyaltyFac = $Theater_Ural;15
-  ChangeLoyaltyFac = $Theater_Central_Asia;15
-  ChangeLoyaltyFac = $Theater_Eastern;15
+  ChangeLoyaltyFac = $Theater_Southern;10
+  ChangeLoyaltyFac = $Theater_Western;10
+  ChangeLoyaltyFac = $Theater_Siberia;10
+  ChangeLoyaltyFac = $Theater_Ukraine;10
+  ChangeLoyaltyFac = $Theater_Belarus;10
+  ChangeLoyaltyFac = $Theater_Finland;10
+  ChangeLoyaltyFac = $Theater_Northern;10
+  ChangeLoyaltyFac = $Theater_Central_Russia;10
+  ChangeLoyaltyFac = $Theater_Volga;10
+  ChangeLoyaltyFac = $Theater_Ural;10
+  ChangeLoyaltyFac = $Theater_Central_Asia;10
+  ChangeLoyaltyFac = $Theater_Eastern;10
 
 EndEvent
 
@@ -10086,23 +9042,24 @@ Conditions
 
   MinDate = 1922/01/01
   MaxDate = 1922/12/30
+  Probability = 25
 
 Actions
 
 SelectFaction = $GRN
 
-  ChangeLoyaltyFac = $Theater_Southern;15
-  ChangeLoyaltyFac = $Theater_Western;15
-  ChangeLoyaltyFac = $Theater_Siberia;15
-  ChangeLoyaltyFac = $Theater_Ukraine;15
-  ChangeLoyaltyFac = $Theater_Belarus;15
-  ChangeLoyaltyFac = $Theater_Finland;15
-  ChangeLoyaltyFac = $Theater_Northern;15
-  ChangeLoyaltyFac = $Theater_Central_Russia;15
-  ChangeLoyaltyFac = $Theater_Volga;15
-  ChangeLoyaltyFac = $Theater_Ural;15
-  ChangeLoyaltyFac = $Theater_Central_Asia;15
-  ChangeLoyaltyFac = $Theater_Eastern;15
+  ChangeLoyaltyFac = $Theater_Southern;10
+  ChangeLoyaltyFac = $Theater_Western;10
+  ChangeLoyaltyFac = $Theater_Siberia;10
+  ChangeLoyaltyFac = $Theater_Ukraine;10
+  ChangeLoyaltyFac = $Theater_Belarus;10
+  ChangeLoyaltyFac = $Theater_Finland;10
+  ChangeLoyaltyFac = $Theater_Northern;10
+  ChangeLoyaltyFac = $Theater_Central_Russia;10
+  ChangeLoyaltyFac = $Theater_Volga;10
+  ChangeLoyaltyFac = $Theater_Ural;10
+  ChangeLoyaltyFac = $Theater_Central_Asia;10
+  ChangeLoyaltyFac = $Theater_Eastern;10
 
 EndEvent
 
@@ -10115,23 +9072,24 @@ Conditions
 
   MinDate = 1923/01/01
   MaxDate = 1923/12/30
+  Probability = 25
 
 Actions
 
 SelectFaction = $GRN
 
-  ChangeLoyaltyFac = $Theater_Southern;15
-  ChangeLoyaltyFac = $Theater_Western;15
-  ChangeLoyaltyFac = $Theater_Siberia;15
-  ChangeLoyaltyFac = $Theater_Ukraine;15
-  ChangeLoyaltyFac = $Theater_Belarus;15
-  ChangeLoyaltyFac = $Theater_Finland;15
-  ChangeLoyaltyFac = $Theater_Northern;15
-  ChangeLoyaltyFac = $Theater_Central_Russia;15
-  ChangeLoyaltyFac = $Theater_Volga;15
-  ChangeLoyaltyFac = $Theater_Ural;15
-  ChangeLoyaltyFac = $Theater_Central_Asia;15
-  ChangeLoyaltyFac = $Theater_Eastern;15
+  ChangeLoyaltyFac = $Theater_Southern;10
+  ChangeLoyaltyFac = $Theater_Western;10
+  ChangeLoyaltyFac = $Theater_Siberia;10
+  ChangeLoyaltyFac = $Theater_Ukraine;10
+  ChangeLoyaltyFac = $Theater_Belarus;10
+  ChangeLoyaltyFac = $Theater_Finland;10
+  ChangeLoyaltyFac = $Theater_Northern;10
+  ChangeLoyaltyFac = $Theater_Central_Russia;10
+  ChangeLoyaltyFac = $Theater_Volga;10
+  ChangeLoyaltyFac = $Theater_Ural;10
+  ChangeLoyaltyFac = $Theater_Central_Asia;10
+  ChangeLoyaltyFac = $Theater_Eastern;10
 
 EndEvent
 

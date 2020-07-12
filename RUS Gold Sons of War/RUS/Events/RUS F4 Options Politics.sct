@@ -1218,30 +1218,6 @@ SelectFaction = $WH3
     SetName = Omsk Lines
   Apply
   CreateUnit
-    SetType = $uni_WH3_Gar0
-    SetName = Omsk Garrison
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Gar0
-    SetName = Omsk Garrison
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Gar0
-    SetName = Omsk Garrison
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art2
-    SetName = Lines Battery
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art2
-    SetName = Lines Battery
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art4
-    SetName = Lines Battery
-  Apply
-  CreateUnit
     SetType = $uni_WH3_Sup2
     SetName = Lines Magazine
   Apply
@@ -1253,73 +1229,33 @@ SelectFaction = $WH3
     SetType = $uni_WH3_Sig
     SetName = Omsk Signal
   Apply
-
-SelectFaction = $WH3
-SelectRegion = $Omsk
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 6
-    InCS = 1
-    FixType = 0
-    SetName = Omsk Fortifications
+  CreateUnit
+    SetType = $uni_WH3_Gar0
+    SetName = Omsk Garrison
   Apply
   CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
+    SetType = $uni_WH3_Gar0
+    SetName = Omsk Garrison
   Apply
   CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
+    SetType = $uni_WH3_Gar0
+    SetName = Omsk Garrison
   Apply
   CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
   Apply
   CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
   Apply
   CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
+    SetType = $uni_RED_Bal1
+    SetName = Omsk Balloon
   Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Sup1
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Sup1
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Sup1
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Sup1
-    SetName = Omsk Fortifications
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Omsk Lines
   Apply
 
 EndEvent
@@ -1371,18 +1307,6 @@ SelectRegion = $Omsk
     SetName = Omsk Garrison
   Apply
   CreateUnit
-    SetType = $uni_WH3_Art2
-    SetName = Lines Battery
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art2
-    SetName = Lines Battery
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art4
-    SetName = Lines Battery
-  Apply
-  CreateUnit
     SetType = $uni_WH3_Sup2
     SetName = Lines Magazine
   Apply
@@ -1394,75 +1318,25 @@ SelectRegion = $Omsk
     SetType = $uni_WH3_Sig
     SetName = Omsk Signal
   Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal1
+    SetName = Omsk Balloon
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Omsk Lines
+  Apply
 
-SelectFaction = $WH3
-SelectRegion = $Omsk
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 6
-    InCS = 1
-    FixType = 0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Art0
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Sup1
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Sup1
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Sup1
-    SetName = Omsk Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WH3_Sup1
-    SetName = Omsk Fortifications
-  Apply
   ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Hold_Omsk
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Hold_Irkutsk
   ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Irkutsk_Capital
 
 SelectFaction = $CMN
@@ -1797,73 +1671,13 @@ SelectFaction = $WHI
     SetType = $uni_WHI_Sig
     SetName = Ekaterinodar Signal
   Apply
-
-SelectFaction = $WHI
-SelectRegion = $Ekaterinodar
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 6
-    InCS = 1
-    FixType = 0
-    SetName = Ekaterinodar Fortifications
-  Apply
   CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
+    SetType = $uni_RED_Bal1
+    SetName = Ekaterinodar Balloon
   Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Sup1
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Sup1
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Sup1
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Sup1
-    SetName = Ekaterinodar Fortifications
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Ekaterinodar Lines
   Apply
 
 EndEvent
@@ -1938,74 +1752,16 @@ SelectRegion = $Ekaterinodar
     SetType = $uni_WHI_Sig
     SetName = Ekaterinodar Signal
   Apply
+  CreateUnit
+    SetType = $uni_RED_Bal1
+    SetName = Ekaterinodar Balloon
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Ekaterinodar Lines
+  Apply
 
-SelectFaction = $WHI
-SelectRegion = $Ekaterinodar
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 6
-    InCS = 1
-    FixType = 0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Art0
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Sup1
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Sup1
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Sup1
-    SetName = Ekaterinodar Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_WHI_Sup1
-    SetName = Ekaterinodar Fortifications
-  Apply
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Dzhankoi
   ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Ekaterinodar
   ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Rostov
   ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Sevastopol_Capital
@@ -2574,6 +2330,7 @@ SelectRegion = $Rostov
     SetType = $uni_WHI_Sup1
     SetName = Rostov Fortifications
   Apply
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Dzhankoi
   ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Ekaterinodar
   ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Rostov
   ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Sevastopol_Capital
@@ -5220,23 +4977,6 @@ SelectFaction = $WHI
 
 EndEvent
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 SelectFaction = $RED
 SelectRegion = $Moscow
 
@@ -5320,5 +5060,445 @@ SelectFaction = $RED
 SelectFaction = $RED
   ChangeVPCount = 300
   ChgRgnDecisionFP = $rgdRequisitions;-9
+
+EndEvent
+
+
+
+
+
+
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Dzhankoi_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Dzhankoi_AIActivate|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/21
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WHI_Hold_Dzhankoi
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WHI_Hold_Dzhankoi;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Dzhankoi_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/21
+  EvalEvent = evt_nam_CMN_SevastopolNewCapital;=;1
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Drang_Fortifications.png;Title;opt_title_WHI_Hold_Dzhankoi;ToolString;opt_hint_WHI_Hold_Dzhankoi;SubType;WHI_Hold_Dzhankoi;SParam1;WHI
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Dzhankoi_Check_AI|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  CheckOption = $gmaOptionPol;WHI_Hold_Dzhankoi;=;1
+  EvalWSU = >=;50
+  EvalMoney = >=;100
+  EvalRgnOwned = $Dzhankoi
+  EvalEvent = evt_nam_WHI_Sevastopol_Capital_Chosen;=;1
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_Hold_Dzhankoi_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Dzhankoi
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Dzhankoi;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Sevastopol_Capital
+
+SelectRegion = $Dzhankoi
+SelectFaction = $WHI
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Dzhankoi Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar0
+    SUFlavorName = 2nd Dzhankoi
+    SetName = 2nd Dzhankoi
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar0
+    SUFlavorName = 3rd Dzhankoi
+    SetName = 3rd Dzhankoi
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar0
+    SUFlavorName = 4th Dzhankoi
+    SetName = 4th Dzhankoi
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Eng
+    SetName = Dzhankoi Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sig
+    SetName = Dzhankoi Signal
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal1
+    SetName = Dzhankoi Balloon
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Dzhankoi Lines
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Dzhankoi_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  CheckOption = $gmaOptionPol;WHI_Hold_Dzhankoi;=;1
+  EvalWSU = >=;80
+  EvalMoney = >=;100
+  EvalRgnOwned = $Dzhankoi
+  EvalEvent = evt_nam_WHI_Sevastopol_Capital_Chosen;=;1
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_Hold_Dzhankoi_Chosen;MaxOccurs;1
+  ChangeFacMorale = 2
+  ChgFacEngagementPts = 5
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -80
+
+SelectFaction = $WHI
+SelectRegion = $Dzhankoi
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Dzhankoi Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar0
+    SUFlavorName = 2nd Dzhankoi
+    SetName = 2nd Dzhankoi
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar0
+    SUFlavorName = 3rd Dzhankoi
+    SetName = 3rd Dzhankoi
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar0
+    SUFlavorName = 4th Dzhankoi
+    SetName = 4th Dzhankoi
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Eng
+    SetName = Dzhankoi Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sig
+    SetName = Dzhankoi Signal
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal1
+    SetName = Dzhankoi Balloon
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Dzhankoi Lines
+  Apply
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Dzhankoi
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Ekaterinodar
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Rostov
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Sevastopol_Capital
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Dzhankoi;1;NULL;NULL;NULL
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Irkutsk_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Irkutsk_AIActivate|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/21
+  EvalEvent = evt_nam_WH3_Irkutsk_Capital_Chosen;=;1
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WH3_Hold_Irkutsk
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WH3_Hold_Irkutsk;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Irkutsk_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/21
+  EvalEvent = evt_nam_WH3_Irkutsk_Capital_Chosen;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Drang_Fortifications.png;Title;opt_title_WH3_Hold_Irkutsk;ToolString;opt_hint_WH3_Hold_Irkutsk;SubType;WH3_Hold_Irkutsk;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Irkutsk_Check_AI|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  CheckOption = $gmaOptionPol;WH3_Hold_Irkutsk;=;1
+  EvalRgnOwned = $Irkutsk
+  EvalWSU = >=;50
+  EvalMoney = >=;100
+  EvalEvent = evt_nam_WH3_Omsk_Capital_Chosen;=;0
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_Hold_Irkutsk_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Hold_Irkutsk
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Irkutsk;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Irkutsk_Capital
+
+SelectRegion = $Irkutsk
+SelectFaction = $WH3
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Irkutsk Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Eng
+    SetName = Irkutsk Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sig
+    SetName = Irkutsk Signal
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar0
+    SetName = Irkutsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar0
+    SetName = Irkutsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar0
+    SetName = Irkutsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal1
+    SetName = Irkutsk Balloon
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Irkutsk Lines
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Irkutsk_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  CheckOption = $gmaOptionPol;WH3_Hold_Irkutsk;=;1
+  EvalWSU = >=;80
+  EvalMoney = >=;100
+  EvalRgnOwned = $Irkutsk
+  EvalEvent = evt_nam_WH3_Omsk_Capital_Chosen;=;0
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_Hold_Irkutsk_Chosen;MaxOccurs;1
+  ChangeFacMorale = 2
+  ChgFacEngagementPts = 5
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -80
+
+SelectFaction = $WH3
+SelectRegion = $Irkutsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Irkutsk Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar0
+    SetName = Irkutsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar0
+    SetName = Irkutsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar0
+    SetName = Irkutsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Eng
+    SetName = Irkutsk Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sig
+    SetName = Irkutsk Signal
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal1
+    SetName = Irkutsk Balloon
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Irkutsk Lines
+  Apply
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Hold_Omsk
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Hold_Irkutsk
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Irkutsk_Capital
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Irkutsk;1;NULL;NULL;NULL
 
 EndEvent

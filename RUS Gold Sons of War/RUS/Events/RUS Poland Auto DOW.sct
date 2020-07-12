@@ -2941,42 +2941,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $RED
-SelectRegion = $Warsaw
-
-StartEvent = evt_nam_RED_PolishDivisions|1|1|NULL|NULL|$Warsaw|NULL
-
-Conditions
-
-  MinDate = 1920/01/01
-  EvalRgnOwned = $Warsaw
-
-Actions
-
-SelectFaction = $RED
-SelectRegion = $Warsaw
-
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 2
-    InCS = 1
-    FixType = 0
-    SetName = Polish Communists
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Div3
-    SetName = 1st Polish Division
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Div3
-    SetName = 2nd Polish Division
-  Apply
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
 SelectRegion = $Moscow
 
 StartEvent = evt_nam_RED_ForcesWithoutPolitkomMayBeLockedThisTurn1921|12|1|NULL|NULL|$Moscow|NULL

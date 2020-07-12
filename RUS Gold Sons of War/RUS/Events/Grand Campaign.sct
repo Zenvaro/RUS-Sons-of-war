@@ -60,7 +60,7 @@ StartEvent = evt_nam_CMN_SR_Uprising|1|2|evt_txt_CMN_SR_Uprising|Event-img_CMN_S
 Conditions
 
   MinDate = 1918/06/20
-  MaxDate = 1918/07/23
+  Probability = 50
 
 Actions
 
@@ -848,7 +848,7 @@ Conditions
   MinDate = 1918/07/13
   CheckAILevel = 1
   ActorEnabled = $gmaOptionPol;WhiteMilitaryDictatorship
-  Probability = 50
+  Probability = 33
 
 Actions
 
@@ -2029,7 +2029,7 @@ Actions
 
   ChangeConscriptPool = 150
   SetCapital = $Ekaterinodar;3
-  ChangeLoyaltyFac = $Area_Kuban;60
+  ChangeLoyaltyFac = $Area_Kuban;90
 
 SelectFaction = $WHI
 SelectRegion = $Ekaterinodar
@@ -2065,7 +2065,7 @@ Actions
 
 SelectFaction = $WHI
 
-  ChangeLoyaltyFac = $Area_Terek;70
+  ChangeLoyaltyFac = $Area_Terek;80
 
 EndEvent
 
@@ -2404,7 +2404,7 @@ SelectRegion = $Achkhabad
   ChangeRgnOwner = KAZ
   ChangeRgnOwner = WH3
 
-SelectRegion = $Kislovodsk
+SelectRegion = $Krasnovodsk
 
   ChangeRgnOwner = RED
   ChangeRgnOwner = GRN
@@ -2436,7 +2436,7 @@ SelectRegion = $Achkhabad
   SetHealth = 100
   SetCohesion = 100
   CreateUnit
-    SetType = $uni_WHI_Wor
+    SetType = $uni_WH2_Wor
     SUFlavorName = Insurgents
     SetName = Achkhabad Insurgents
   Apply
@@ -2461,13 +2461,13 @@ SelectRegion = $Merv
     SetName = Oraz Sirdar
   Apply
   CreateUnit
-    SetType = $uni_WH3_Rgt5
+    SetType = $uni_KAZ_Inf
     SUFlavorName = Merv Infantry
     SetLevel = 1
     SetName = Merv Infantry Rgt
   Apply
   CreateUnit
-    SetType = $uni_WH3_Cav4
+    SetType = $uni_KAZ_Cav2
     SUFlavorName = Merv Cavalry
     SetName = Merv Cavalry Rgt
   Apply
@@ -2478,7 +2478,7 @@ SelectRegion = $Merv
   Apply
 
 SelectFaction = $WHI
-SelectRegion = $Kislovodsk
+SelectRegion = $Krasnovodsk
 
   CreateGroup
     Posture = $Defensive
@@ -2486,12 +2486,12 @@ SelectRegion = $Kislovodsk
     Entranch = 0
     InCS = 1
     FixType = 0
-    SetName = Kislovodsk Uprising
+    SetName = Krasnovodsk Uprising
   Apply
   CreateUnit
     SetType = $uni_WH2_Wor
     SUFlavorName = Insurgents
-    SetName = Achkhabad Insurgents
+    SetName = Krasnovodsk Insurgents
   Apply
   CreateUnit
     SetType = $uni_WH3_Sup1

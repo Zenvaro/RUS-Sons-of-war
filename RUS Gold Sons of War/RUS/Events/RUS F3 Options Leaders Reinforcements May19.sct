@@ -40,7 +40,6 @@ Actions
 
   ChgFacEngagementPts = -4
 
-  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_Leader
   SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;1
 
@@ -81,7 +80,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -114,7 +113,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -147,7 +146,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -180,7 +179,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -213,7 +212,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -246,7 +245,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -279,7 +278,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -312,7 +311,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -345,7 +344,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -378,7 +377,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -411,7 +410,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -444,7 +443,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -477,7 +476,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -510,7 +509,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -543,7 +542,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -576,7 +575,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -609,7 +608,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -642,7 +641,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -675,7 +674,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -708,7 +707,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -741,7 +740,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -774,7 +773,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -807,7 +806,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -840,7 +839,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -873,7 +872,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -906,7 +905,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -939,7 +938,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -972,7 +971,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1005,7 +1004,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1038,7 +1037,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1071,7 +1070,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1104,7 +1103,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1137,7 +1136,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1170,7 +1169,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1203,7 +1202,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1236,7 +1235,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1269,7 +1268,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1302,7 +1301,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1335,7 +1334,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1368,7 +1367,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1401,7 +1400,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1434,7 +1433,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1467,7 +1466,7 @@ Actions
 
 SelectFaction = $RED
   GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1526,7 +1525,6 @@ Actions
 
   ChgFacEngagementPts = -4
 
-  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_Leader
   SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;1
 
@@ -1567,7 +1565,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1600,7 +1598,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1633,7 +1631,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1666,7 +1664,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1699,7 +1697,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1732,7 +1730,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1765,7 +1763,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1798,7 +1796,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1831,7 +1829,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1864,7 +1862,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1897,7 +1895,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1930,7 +1928,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1963,7 +1961,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -1996,7 +1994,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2029,7 +2027,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2088,7 +2086,6 @@ Actions
 
   ChgFacEngagementPts = -4
 
-  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_COS_Leader
   SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;1
 
@@ -2129,7 +2126,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2162,7 +2159,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2195,7 +2192,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2228,7 +2225,7 @@ Actions
 
 SelectFaction = $WHI
   GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar;$Grozny
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2287,7 +2284,6 @@ Actions
 
   ChgFacEngagementPts = -4
 
-  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_Leader
   SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;1
 
@@ -2328,7 +2324,7 @@ Actions
 
 SelectFaction = $WH3
   GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2361,7 +2357,7 @@ Actions
 
 SelectFaction = $WH3
   GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2394,7 +2390,7 @@ Actions
 
 SelectFaction = $WH3
   GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2427,7 +2423,7 @@ Actions
 
 SelectFaction = $WH3
   GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2460,7 +2456,7 @@ Actions
 
 SelectFaction = $WH3
   GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2493,7 +2489,7 @@ Actions
 
 SelectFaction = $WH3
   GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2526,7 +2522,7 @@ Actions
 
 SelectFaction = $WH3
   GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2559,7 +2555,7 @@ Actions
 
 SelectFaction = $WH3
   GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2592,7 +2588,7 @@ Actions
 
 SelectFaction = $WH3
   GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2625,7 +2621,7 @@ Actions
 
 SelectFaction = $WH3
   GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2658,7 +2654,7 @@ Actions
 
 SelectFaction = $WH3
   GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 
@@ -2691,7 +2687,7 @@ Actions
 
 SelectFaction = $WH3
   GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
-  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan;$Moscow
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
   PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
   GenMsg
 

@@ -327,7 +327,7 @@ Conditions
   MinDate = 1918/07/13
   CheckAILevel = 1
   ActorEnabled = $gmaOptionPol;WhiteMilitaryDictatorship
-  Probability = 50
+  Probability = 33
 
 Actions
 

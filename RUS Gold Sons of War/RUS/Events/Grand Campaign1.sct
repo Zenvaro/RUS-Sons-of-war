@@ -60,7 +60,7 @@ StartEvent = evt_nam_CMN_SR_Uprising|1|2|evt_txt_CMN_SR_Uprising|Event-img_CMN_S
 Conditions
 
   MinDate = 1918/06/20
-  MaxDate = 1918/07/23
+  Probability = 50
 
 Actions
 

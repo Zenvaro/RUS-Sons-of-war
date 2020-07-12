@@ -1,7 +1,7 @@
 1. *** Sound media options ***
 LoadSounds      = 1
 PlayMusic       = 1
-MusicDelay       = 0
+MusicDelay       = 3
 
 2. *** Language ***
 // language (0: English; 1: Francais; 2: Espanol; 3: Deutsche; 4: Russian; 5: Italian)
@@ -10,7 +10,7 @@ ThirdLanguage   = 4
 
 
 3. *** Games Rules (some are for debug only) ***
-FoWActivated     = 1
+FoWActivated     = 0
 RetreatRule      	= 1 // is retreat rule On (default 1)
 AlwaysActivable  	= 0
 CountrySideSupply 	= 1 // CountrySide provides supply (default 1)
@@ -21,7 +21,7 @@ ActivationLevel  = 0
 OMBHandling      = 0
 
 4. *** System, Editing & debug options ***
-EditorMode       	= 1
+EditorMode       	= 0
 FullDebug        	= 1
 LogBatch         	= 10 	// how many log lines should be written at once. Can slow down significatively the app & hosting if below 10.
 MemUsage         	= 75 	// How much of the physical memory % we allow to be used before cache is checked for old textures
@@ -35,7 +35,7 @@ UseZip           	= 0
 ReportError      	= 0
 
 5. *** AI Options ***
-AIActivated      = 0
+AIActivated      = 1
 AIUseFow    	 	= 1
 AIDiffLevel      = 2
 AIAgressivity    = 1
@@ -70,4 +70,4 @@ DelayedCommit    = 0
 rulUIExtForcePool  = 0
 NoWinterBitmaps  = 0
 RegionsBorders   = 0
-LastPlayedGame   = D:\Repositories\RUS-Sons-of-war\RUS Gold Sons of War\RUS\Scens\Grand Campaign.scn
+LastPlayedGame   = D:\Repositories\RUS-Sons-of-war\RUS Gold Sons of War\RUS\Saves\Grand Campaign\Grand Campaign~WHI.trn

@@ -80,157 +80,6 @@ NULL ==========================================================================
 
 SelectFaction = $WHI
 
-StartEvent = evt_nam_WHI_More_Rail_AIActivate|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-  CheckAILevel = 1
-  ActorEnabled = $gmaOptionVar;WHI_More_Rail
-
-Actions
-
-  ChangeOption = $gmaOptionVar;WHI_More_Rail;1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_More_Rail_ON|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-Actions
-
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_WHI_More_Rail;MsgString;opt_desc_WHI_More_Rail;ToolString;opt_hint_WHI_More_Rail;SubType;WHI_More_Rail;SParam1;WHI
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_More_Rail_Check|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckIsPlayer = NULL
-  CheckOption = $gmaOptionVar;WHI_More_Rail;=;1
-  EvalMoney = >=;50
-  EvalWSU = >=;20
-
-Actions
-
-  ChangeMoneyPool = -50
-  ChangeWSUPool = -20
-  ChangeRailPool = 100
-  GenTextMsg  = opt_notify_WHI_More_Rail;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_More_Rail
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_More_Rail_CheckAI|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  CheckOption = $gmaOptionVar;WHI_More_Rail;=;1
-
-Actions
-
-  ChangeRailPool = 400
-  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_More_Rail
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_More_Rail_Regen_EkaterinodarFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_WHI_EkaterinodarFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;WHI_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_WHI_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_WHI_More_Rail;MsgString;opt_desc_WHI_More_Rail;ToolString;opt_hint_WHI_More_Rail;SubType;WHI_More_Rail;SParam1;WHI
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_More_Rail_Regen_RostovFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_WHI_RostovFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;WHI_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_WHI_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_WHI_More_Rail;MsgString;opt_desc_WHI_More_Rail;ToolString;opt_hint_WHI_More_Rail;SubType;WHI_More_Rail;SParam1;WHI
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_More_Rail_Regen_SevastopolFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_WHI_SevastopolFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;WHI_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_WHI_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_WHI_More_Rail;MsgString;opt_desc_WHI_More_Rail;ToolString;opt_hint_WHI_More_Rail;SubType;WHI_More_Rail;SParam1;WHI
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
-StartEvent = evt_nam_WHI_More_Rail_Regen_TzaritsynFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_WHI_TzaritsynFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;WHI_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_WHI_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_WHI_More_Rail;MsgString;opt_desc_WHI_More_Rail;ToolString;opt_hint_WHI_More_Rail;SubType;WHI_More_Rail;SParam1;WHI
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-
 StartEvent = evt_nam_WHI_TaganrogTankFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
 
 Conditions
@@ -875,7 +724,7 @@ Actions
   Apply
   RemDynGraphic = $Ekaterinodar;Icon_IndusConstr.png
   AddDynGraphic = $Ekaterinodar;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;130;130;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   RemDynGraphic = $Ekaterinodar;Icon_IndusConstr.png
   Replacement = WHI;$famLine;2
   Replacement = WHI;$famMilitia;2
@@ -1037,7 +886,7 @@ Actions
   Apply
   RemDynGraphic = $Rostov;Icon_IndusConstr.png
   AddDynGraphic = $Rostov;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;217;94;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   Replacement = WHI;$famLine;2
   Replacement = WHI;$famMilitia;2
   Replacement = WHI;$famElite;2
@@ -1213,7 +1062,7 @@ Actions
   Apply
   RemDynGraphic = $Sevastopol;Icon_IndusConstr.png
   AddDynGraphic = $Sevastopol;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;34;119;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   Replacement = WHI;$famLine;2
   Replacement = WHI;$famMilitia;2
   Replacement = WHI;$famElite;2
@@ -1378,7 +1227,7 @@ Actions
   Apply
   RemDynGraphic = $Tzaritsyn;Icon_IndusConstr.png
   AddDynGraphic = $Tzaritsyn;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;34;104;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   Replacement = WHI;$famLine;2
   Replacement = WHI;$famMilitia;2
   Replacement = WHI;$famElite;2
@@ -1495,157 +1344,6 @@ Actions
 
   GenTextMsg  = opt_notify_WH3_More_Money_Regen;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_WHI_RaiseMoney.png;Title;opt_title_WH3_More_Money;MsgString;opt_desc_WH3_More_Money;ToolString;opt_hint_WH3_More_Money;SubType;WH3_More_Money;SParam1;WH3
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
-
-StartEvent = evt_nam_WH3_More_Rail_AIActivate|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-  CheckAILevel = 1
-  ActorEnabled = $gmaOptionVar;WH3_More_Rail
-
-Actions
-
-  ChangeOption = $gmaOptionVar;WH3_More_Rail;1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
-
-StartEvent = evt_nam_WH3_More_Rail_ON|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-Actions
-
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_WH3_More_Rail;MsgString;opt_desc_WH3_More_Rail;ToolString;opt_hint_WH3_More_Rail;SubType;WH3_More_Rail;SParam1;WH3
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
-
-StartEvent = evt_nam_WH3_More_Rail_Check|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckIsPlayer = NULL
-  CheckOption = $gmaOptionVar;WH3_More_Rail;=;1
-  EvalMoney = >=;50
-  EvalWSU = >=;20
-
-Actions
-
-  ChangeMoneyPool = -50
-  ChangeWSUPool = -20
-  ChangeRailPool = 100
-  GenTextMsg  = opt_notify_WH3_More_Rail;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WH3_More_Rail
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
-
-StartEvent = evt_nam_WH3_More_Rail_CheckAI|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  CheckOption = $gmaOptionVar;WH3_More_Rail;=;1
-
-Actions
-
-  ChangeRailPool = 400
-  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WH3_More_Rail
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
-
-StartEvent = evt_nam_WH3_More_Rail_Regen_TomskFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_WH3_TomskFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;WH3_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_WH3_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_WH3_More_Rail;MsgString;opt_desc_WH3_More_Rail;ToolString;opt_hint_WH3_More_Rail;SubType;WH3_More_Rail;SParam1;WH3
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
-
-StartEvent = evt_nam_WH3_More_Rail_Regen_IrkutskFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_WH3_IrkutskFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;WH3_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_WH3_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_WH3_More_Rail;MsgString;opt_desc_WH3_More_Rail;ToolString;opt_hint_WH3_More_Rail;SubType;WH3_More_Rail;SParam1;WH3
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
-
-StartEvent = evt_nam_WH3_More_Rail_Regen_OmskFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_WH3_OmskFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;WH3_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_WH3_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_WH3_More_Rail;MsgString;opt_desc_WH3_More_Rail;ToolString;opt_hint_WH3_More_Rail;SubType;WH3_More_Rail;SParam1;WH3
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
-
-StartEvent = evt_nam_WH3_More_Rail_Regen_SamaraFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_WH3_SamaraFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;WH3_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_WH3_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_WH3_More_Rail;MsgString;opt_desc_WH3_More_Rail;ToolString;opt_hint_WH3_More_Rail;SubType;WH3_More_Rail;SParam1;WH3
 
 EndEvent
 
@@ -2063,7 +1761,7 @@ Actions
   Apply
   RemDynGraphic = $Tomsk;Icon_IndusConstr.png
   AddDynGraphic = $Tomsk;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;39;203;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   Replacement = WH3;$famLine;2
   Replacement = WH3;$famMilitia;2
   Replacement = WH3;$famElite;2
@@ -2225,7 +1923,7 @@ Actions
   Apply
   RemDynGraphic = $Irkutsk;Icon_IndusConstr.png
   AddDynGraphic = $Irkutsk;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;129;113;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   Replacement = WH3;$famLine;2
   Replacement = WH3;$famMilitia;2
   Replacement = WH3;$famElite;2
@@ -2386,7 +2084,7 @@ Actions
   Apply
   RemDynGraphic = $Omsk;Icon_IndusConstr.png
   AddDynGraphic = $Omsk;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;114;138;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   Replacement = WH3;$famLine;2
   Replacement = WH3;$famMilitia;2
   Replacement = WH3;$famElite;2
@@ -2547,7 +2245,7 @@ Actions
   Apply
   RemDynGraphic = $Samara;Icon_IndusConstr.png
   AddDynGraphic = $Samara;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;100;152;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   Replacement = WH3;$famLine;2
   Replacement = WH3;$famMilitia;2
   Replacement = WH3;$famElite;2

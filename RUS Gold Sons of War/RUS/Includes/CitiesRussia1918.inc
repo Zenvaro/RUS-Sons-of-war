@@ -108,7 +108,7 @@ SelectRegion = $Novonikolaievsk
 SetControl = 0
 SetLoyalty = 20
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|1
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -312,7 +312,7 @@ SetName = Lwow
 SetLevel = 3
 Apply
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 12|0|0|0|0|0
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -346,7 +346,7 @@ SetName = Stanislawow
 SetLevel = 1
 Apply
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|5
 CivLevel = $Civilized
 Transport = $Track
 
@@ -375,7 +375,7 @@ SelectRegion = $Krakow
 SetControl = 100
 SetLoyalty = 10
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 12|0|0|0|1|0
+ChangeAssetsProd = 12|0|0|0|0|0
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -615,7 +615,7 @@ SelectRegion = $Lodz
 SetControl = 100
 SetLoyalty = 50
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 7|0|0|0|0|0
+ChangeAssetsProd = 7|0|0|0|0|2
 CivLevel = $Rich
 Transport = $Railroad
 
@@ -658,7 +658,7 @@ SetName = _genName
 SetLevel = 7
 Apply
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 5|0|0|5|1|1
+ChangeAssetsProd = 5|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -691,7 +691,7 @@ SetControl = 100
 SetLoyalty = 25
 VP = 1
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 4|25|0|0|1|0
+ChangeAssetsProd = 4|25|0|5|0|2
 CivLevel = $Rich
 Transport = $Railroad
 
@@ -704,7 +704,6 @@ SetLoyalty = 75
 CityStyle = $csiNone
 CivLevel = $Civilized
 Transport = $Railroad
-
 SelectRegion = $Lubartow
 BlockState = 2
 SetControl = 100
@@ -804,7 +803,7 @@ SetName = _genName
 SetLevel = 1
 Apply
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -1150,7 +1149,7 @@ SetName = _genName
 SetLevel = 1
 Apply
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 12|0|0|0|0|0
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -1225,7 +1224,7 @@ SetName = Iasi
 SetLevel = 1
 Apply
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -1284,7 +1283,7 @@ SetName = _genName
 SetLevel = 1
 Apply
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Track
 
@@ -1542,7 +1541,7 @@ SelectRegion = $Kaunas
 SetControl = 100
 SetLoyalty = 25
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 20|25|0|1|1|1
+ChangeAssetsProd = 20|25|0|1|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -1688,7 +1687,7 @@ SelectRegion = $Vilnius
 SetControl = 100
 SetLoyalty = 40
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 10|0|0|0|0|1
+ChangeAssetsProd = 10|0|0|5|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -1720,7 +1719,7 @@ SetName = Grodno
 SetLevel = 2
 Apply
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -1918,7 +1917,7 @@ SetControl = 100
 SetLoyalty = 40
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|0|1|1
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -2013,7 +2012,7 @@ SetControl = 100
 SetLoyalty = 25
 VP = 1
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 5|25|0|3|1|4
+ChangeAssetsProd = 5|25|0|5|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -2089,7 +2088,7 @@ SetName = _genName
 SetLevel = 1
 Apply
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -2280,7 +2279,7 @@ SetName = _genName
 SetLevel = 3
 Apply
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 12|25|0|1|1|1
+ChangeAssetsProd = 12|25|0|5|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -2315,7 +2314,7 @@ SetName = _genName
 SetLevel = 1
 Apply
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -2495,7 +2494,7 @@ SetControl = 0
 SetLoyalty = 5
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 2|0|0|3|1|4
+ChangeAssetsProd = 2|0|0|5|0|2
 CivLevel = $Rich
 Transport = $Railroad
 
@@ -2889,7 +2888,7 @@ SelectRegion = $Pskov
 SetControl = 0
 SetLoyalty = 50
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|1
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -3285,7 +3284,7 @@ SetName = Brest Litovsk
 SetLevel = 2
 Apply
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -3795,7 +3794,7 @@ SetName = Vinnytsia
 SetLevel = 2
 Apply
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -3856,7 +3855,7 @@ SetControl = 100
 SetLoyalty = 15
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 5|0|0|3|1|4
+ChangeAssetsProd = 5|0|0|5|0|2
 CivLevel = $Rich
 Transport = $Railroad
 
@@ -3918,7 +3917,7 @@ SetName = Chisinau
 SetLevel = 2
 Apply
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|5|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -3957,7 +3956,7 @@ SetControl = 100
 SetLoyalty = 10
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 5|0|0|1|1|3
+ChangeAssetsProd = 5|0|0|5|0|2
 CivLevel = $Rich
 Transport = $Railroad
 
@@ -4245,7 +4244,7 @@ SetName = Elizavetgrad
 SetLevel = 1
 Apply
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -4444,7 +4443,7 @@ SetName = Konotop
 SetLevel = 1
 Apply
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -4589,7 +4588,7 @@ SetControl = 0
 SetLoyalty = 20
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|1|1|2
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -5323,7 +5322,7 @@ SetControl = 0
 SetLoyalty = 5
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 3|0|0|3|1|5
+ChangeAssetsProd = 3|0|0|5|0|2
 CivLevel = $Rich
 Transport = $Railroad
 
@@ -5841,7 +5840,7 @@ SetControl = 0
 SetLoyalty = 10
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|1|1|2
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -6309,7 +6308,7 @@ SetName = Sumy
 SetLevel = 1
 Apply
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -6382,7 +6381,7 @@ SetName = Poltava
 SetLevel = 2
 Apply
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|5|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -6453,7 +6452,7 @@ SetControl = 100
 SetLoyalty = 30
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 8|0|0|2|1|3
+ChangeAssetsProd = 8|0|0|5|0|2
 CivLevel = $Rich
 Transport = $Railroad
 
@@ -6870,7 +6869,7 @@ SelectRegion = $Novocherkassk
 SetControl = 0
 SetLoyalty = 20
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|1
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -6935,7 +6934,7 @@ SetControl = 100
 SetLoyalty = 50
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 10|0|0|2|1|3
+ChangeAssetsProd = 10|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -6956,7 +6955,7 @@ SetName = _genName
 SetLevel = 2
 Apply
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|1|0
+ChangeAssetsProd = 20|0|0|5|0|0
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -7641,7 +7640,7 @@ SetControl = 0
 SetLoyalty = 20
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|3|1|4
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -8334,7 +8333,7 @@ SetControl = 0
 SetLoyalty = 40
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|1|1
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -8376,7 +8375,7 @@ SetControl = 0
 SetLoyalty = 20
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|1|1|2
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -8737,7 +8736,7 @@ SetControl = 0
 SetLoyalty = 30
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -8788,7 +8787,7 @@ SelectRegion = $Penza
 SetControl = 0
 SetLoyalty = 90
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|1|0|2
+ChangeAssetsProd = 20|0|0|0|0|0
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -8975,7 +8974,7 @@ SetControl = 0
 SetLoyalty = 20
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 8|0|0|1|1|2
+ChangeAssetsProd = 8|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -9311,7 +9310,7 @@ SetControl = 0
 SetLoyalty = 10
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|2|1|3
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -9635,7 +9634,7 @@ SetControl = 0
 SetLoyalty = 30
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|0|1|1
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -10184,7 +10183,7 @@ SetControl = 0
 SetLoyalty = 30
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|1|0|2
+ChangeAssetsProd = 12|0|0|5|0|2
 CivLevel = $Rich
 Transport = $Railroad
 
@@ -10529,7 +10528,7 @@ SelectRegion = $Vladikavkaz
 SetControl = 0
 SetLoyalty = 40
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|1
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -10551,7 +10550,7 @@ SetControl = 0
 SetLoyalty = 50
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|1|1
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -10874,7 +10873,7 @@ SelectRegion = $Batumi
 SetControl = 0
 SetLoyalty = 0
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -10943,7 +10942,7 @@ SelectRegion = $Gori
 SetControl = 0
 SetLoyalty = 10
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -11006,7 +11005,7 @@ SelectRegion = $Tiflis
 SetControl = 0
 SetLoyalty = 0
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 7|0|0|1|1|2
+ChangeAssetsProd = 7|0|0|5|0|2
 CivLevel = $Rich
 Transport = $Railroad
 
@@ -11073,7 +11072,7 @@ SelectRegion = $Elizavetpol
 SetControl = 0
 SetLoyalty = 10
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -11140,7 +11139,7 @@ SetControl = 0
 SetLoyalty = 0
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|1|1|1
+ChangeAssetsProd = 12|0|0|5|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -11236,7 +11235,7 @@ SelectRegion = $Goris
 SetControl = 0
 SetLoyalty = 10
 CityStyle = $csiMiddleEast
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -11257,7 +11256,7 @@ SelectRegion = $Nakhitchevan
 SetControl = 0
 SetLoyalty = 0
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -11823,7 +11822,7 @@ SelectRegion = $Derbent
 SetControl = 0
 SetLoyalty = 40
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -11986,7 +11985,7 @@ SetName = _genName
 SetLevel = 1
 Apply
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 40|0|0|1|1|1
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -12025,7 +12024,7 @@ SetName = Tampere
 SetLevel = 2
 Apply
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -12154,7 +12153,7 @@ SetLevel = 4
 Apply
 VP = 1
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 10|25|0|3|1|2
+ChangeAssetsProd = 10|25|0|5|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -12196,7 +12195,7 @@ SetName = Varkaus
 SetLevel = 1
 Apply
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -12317,7 +12316,7 @@ SelectRegion = $Olonets
 SetControl = 0
 SetLoyalty = 30
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Road
 
@@ -12722,7 +12721,7 @@ SetControl = 0
 SetLoyalty = 50
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|1|0
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -13298,7 +13297,7 @@ SetControl = 0
 SetLoyalty = 20
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 10|0|0|2|1|3
+ChangeAssetsProd = 10|0|0|0|0|0
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -13521,7 +13520,7 @@ SetControl = 0
 SetLoyalty = 40
 VP = 1
 CityStyle = $csiMiddleEast
-ChangeAssetsProd = 8|20|0|2|1|3
+ChangeAssetsProd = 8|20|0|5|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -14093,7 +14092,7 @@ SelectRegion = $Uralsk
 SetControl = 0
 SetLoyalty = 40
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -14293,7 +14292,7 @@ SetControl = 10
 SetLoyalty = 10
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|2|1|3
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -14505,7 +14504,7 @@ SelectRegion = $Gurjev
 SetControl = 0
 SetLoyalty = 40
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Cleared
 Transport = $Road
 
@@ -14591,7 +14590,7 @@ SetControl = 0
 SetLoyalty = 60
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|0|0|1
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -14796,7 +14795,7 @@ SelectRegion = $Izhevsk
 SetControl = 0
 SetLoyalty = 50
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|25|0|1|2|2
+ChangeAssetsProd = 20|25|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -15065,7 +15064,7 @@ SetControl = 0
 SetLoyalty = 50
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|2|0|3
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -15745,7 +15744,7 @@ SelectRegion = $Aktjubinsk
 SetControl = 0
 SetLoyalty = 40
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -15938,7 +15937,7 @@ SetControl = 0
 SetLoyalty = 30
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|3|1|4
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -17849,7 +17848,7 @@ SetControl = 0
 SetLoyalty = 10
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|2|1|3
+ChangeAssetsProd = 12|0|0|5|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -18613,7 +18612,7 @@ SelectRegion = $Viatka
 SetControl = 0
 SetLoyalty = 40
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -18763,7 +18762,7 @@ SetControl = 100
 SetLoyalty = 10
 VP = 1
 CityStyle = $csiNorthEurope
-ChangeAssetsProd = 4|25|0|1|1|3
+ChangeAssetsProd = 4|25|0|0|0|2
 CivLevel = $Rich
 Transport = $Railroad
 
@@ -18847,7 +18846,7 @@ SelectRegion = $Khiva
 SetControl = 0
 SetLoyalty = 10
 CityStyle = $csiMiddleEast
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Road
 
@@ -18883,7 +18882,7 @@ SelectRegion = $Bukhara
 SetControl = 0
 SetLoyalty = 10
 CityStyle = $csiMiddleEast
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -18934,7 +18933,7 @@ SelectRegion = $Samarkand
 SetControl = 0
 SetLoyalty = 40
 CityStyle = $csiMiddleEast
-ChangeAssetsProd = 20|0|0|0|0|1
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -18992,7 +18991,7 @@ SetControl = 20
 SetLoyalty = 30
 VP = 1
 CityStyle = $csiMiddleEast
-ChangeAssetsProd = 12|0|0|0|0|1
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -19436,7 +19435,7 @@ SelectRegion = $Tomsk
 SetControl = 0
 SetLoyalty = 30
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|0|0|1
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -19543,7 +19542,7 @@ SelectRegion = $Krasnoyarsk
 SetControl = 0
 SetLoyalty = 40
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|1|0|2
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -19972,7 +19971,7 @@ SetControl = 0
 SetLoyalty = 20
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|0|1|1
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -20119,7 +20118,7 @@ SelectRegion = $Chita
 SetControl = 0
 SetLoyalty = 40
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|0
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -20517,7 +20516,7 @@ SelectRegion = $Khabarovsk
 SetControl = 0
 SetLoyalty = 40
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|1
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -20767,7 +20766,7 @@ SetControl = 0
 SetLoyalty = 20
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 12|0|0|0|1|1
+ChangeAssetsProd = 12|0|0|5|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -21120,7 +21119,7 @@ SelectRegion = $Syktyvkar
 SetControl = 0
 SetLoyalty = 30
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|5|0|0
 CivLevel = $Cleared
 Transport = $Road
 
@@ -21487,7 +21486,7 @@ SetControl = 20
 SetLoyalty = 40
 VP = 1
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 20|0|0|0|0|1
+ChangeAssetsProd = 20|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -21691,7 +21690,7 @@ SetControl = 20
 SetLoyalty = 50
 VP = 1
 CityStyle = $csiMiddleEast
-ChangeAssetsProd = 12|0|0|0|0|1
+ChangeAssetsProd = 12|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -22125,7 +22124,7 @@ SelectRegion = $Murmansk
 SetControl = 0
 SetLoyalty = 10
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 
@@ -22630,7 +22629,7 @@ SelectRegion = $Aralsk
 SetControl = 0
 SetLoyalty = 50
 CityStyle = $csiOrthodox
-ChangeAssetsProd = 40|0|0|0|0|0
+ChangeAssetsProd = 40|0|0|0|0|2
 CivLevel = $Civilized
 Transport = $Railroad
 

@@ -15,23 +15,7 @@ EvalRgnOwned = $Tula
   EvalEvent = evt_nam_RED_TulaFactory_RplProduction2;=;0
 
 Actions
-  ChangeWSUPool = 20
-  Replacement = RED;$famLine;2
-  Replacement = RED;$famMilitia;2
-  Replacement = RED;$famElite;2
-  Replacement = RED;$famCavalry;2
-  Replacement = RED;$famLightInf;2
-  Replacement = RED;$famRaider;2
-  Replacement = RED;$famLightArty;2
-  Replacement = RED;$famMedArty;2
-  Replacement = RED;$famHvyArty;2
-  Replacement = RED;$famService;2
-  Replacement = RED;$famEngineer;2
-  Replacement = RED;$famNavalEngineer;2
-  Replacement = RED;$famSupply;2
-  Replacement = RED;$famLtVehicle;2
-  Replacement = RED;$famArmoredTrain;2
-
+  
   ChangeUnitPool = $uni_RED_Mil6;4
   ChangeUnitPool = $uni_RED_MBde2;1
   ChangeUnitPool = $uni_RED_MBde3;1
@@ -92,22 +76,6 @@ EvalRgnOwned = $Tula
   EvalEvent = evt_nam_RED_TulaFactory_RplProduction3;=;0
 
 Actions
-
-  Replacement = RED;$famLine;2
-  Replacement = RED;$famMilitia;2
-  Replacement = RED;$famElite;2
-  Replacement = RED;$famCavalry;2
-  Replacement = RED;$famLightInf;2
-  Replacement = RED;$famRaider;2
-  Replacement = RED;$famLightArty;2
-  Replacement = RED;$famMedArty;2
-  Replacement = RED;$famHvyArty;2
-  Replacement = RED;$famService;2
-  Replacement = RED;$famEngineer;2
-  Replacement = RED;$famNavalEngineer;2
-  Replacement = RED;$famSupply;2
-  Replacement = RED;$famLtVehicle;2
-  Replacement = RED;$famArmoredTrain;2
 
   ChangeUnitPool = $uni_RED_Mil1;4
   ChangeUnitPool = $uni_RED_MBde5;1
@@ -174,22 +142,6 @@ EvalRgnOwned = $Tula
   EvalEvent = evt_nam_RED_TulaFactoryCompleted;=;1
 
 Actions
-
-  Replacement = RED;$famLine;2
-  Replacement = RED;$famMilitia;2
-  Replacement = RED;$famElite;2
-  Replacement = RED;$famCavalry;2
-  Replacement = RED;$famLightInf;2
-  Replacement = RED;$famRaider;2
-  Replacement = RED;$famLightArty;2
-  Replacement = RED;$famMedArty;2
-  Replacement = RED;$famHvyArty;2
-  Replacement = RED;$famService;2
-  Replacement = RED;$famEngineer;2
-  Replacement = RED;$famNavalEngineer;2
-  Replacement = RED;$famSupply;2
-  Replacement = RED;$famLtVehicle;2
-  Replacement = RED;$famArmoredTrain;2
 
   ChangeUnitPool = $uni_RED_Mil4;4
   ChangeUnitPool = $uni_RED_MBde11;1

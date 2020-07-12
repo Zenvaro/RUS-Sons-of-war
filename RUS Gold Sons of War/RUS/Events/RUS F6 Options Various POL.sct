@@ -87,89 +87,6 @@ NULL ==========================================================================
 
 SelectFaction = $POL
 
-StartEvent = evt_nam_POL_More_Rail_AIActivate|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-  CheckAILevel = 1
-  ActorEnabled = $gmaOptionVar;POL_More_Rail
-  Probability = 75
-
-Actions
-
-  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
-  ChangeOption = $gmaOptionVar;POL_More_Rail;1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $POL
-
-StartEvent = evt_nam_POL_More_Rail_ON|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-Actions
-
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_POL_More_Rail;MsgString;opt_desc_POL_More_Rail;ToolString;opt_hint_POL_More_Rail;SubType;POL_More_Rail;SParam1;POL
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $POL
-
-StartEvent = evt_nam_POL_More_Rail_Check|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckOption = $gmaOptionVar;POL_More_Rail;=;1
-  EvalMoney = >=;100
-  EvalWSU = >=;10
-
-Actions
-
-  ChangeMoneyPool = -25
-  ChangeWSUPool = -50
-  ChangeRailPool = 200
-
-SelectFaction = $CMN
-
-  GenTextMsg  = opt_notify_CMN_Rail;1;NULL;NULL;NULL
-
-SelectFaction = $POL
-
-  GenTextMsg  = opt_notify_POL_More_Rail;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;POL_More_Rail
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $POL
-
-StartEvent = evt_nam_POL_More_Rail_Regen|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;POL_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_POL_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_POL_More_Rail;MsgString;opt_desc_POL_More_Rail;ToolString;opt_hint_POL_More_Rail;SubType;POL_More_Rail;SParam1;POL
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $POL
-
 StartEvent = evt_nam_POL_WarsawFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
 
 Conditions
@@ -289,7 +206,7 @@ Actions
 
 SelectRegion = $Warsaw
 
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
 
 EndEvent
 
@@ -438,7 +355,7 @@ Actions
 
 SelectRegion = $Krakow
 
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
 
 EndEvent
 
@@ -587,7 +504,7 @@ Actions
 
 SelectRegion = $Lodz;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;104;121;strArmsFactory
 
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
 
 EndEvent
 
@@ -736,7 +653,7 @@ Actions
 
 SelectRegion = $Poznan
 
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   RemDynGraphic = $Poznan;Icon_IndusConstr.png
 
 EndEvent

@@ -70,6 +70,7 @@ Ability9 = $Charismatic
 Ability10 = $Kuban_Commander
 Ability11 = $Gifted_Cmd
 Ability12 = $Expert_Forager
+Ability13 = $Cossack_Commander2
 VPValue = 1
 POLValue = 3
 Morale = 0

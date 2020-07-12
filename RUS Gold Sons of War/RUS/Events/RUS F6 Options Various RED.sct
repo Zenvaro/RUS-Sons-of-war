@@ -80,214 +80,6 @@ NULL ==========================================================================
 
 SelectFaction = $RED
 
-StartEvent = evt_nam_RED_More_Rail_AIActivate|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-  CheckAILevel = 1
-  ActorEnabled = $gmaOptionVar;RED_More_Rail
-
-Actions
-
-  ChangeOption = $gmaOptionVar;RED_More_Rail;1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_More_Rail_ON|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  MinDate = 1918/06/01
-
-Actions
-
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_RED_More_Rail;MsgString;opt_desc_RED_More_Rail;ToolString;opt_hint_RED_More_Rail;SubType;RED_More_Rail;SParam1;RED
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_More_Rail_Check|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckIsPlayer = NULL
-  CheckOption = $gmaOptionVar;RED_More_Rail;=;1
-  EvalMoney = >=;50
-  EvalWSU = >=;20
-
-Actions
-
-  ChangeMoneyPool = -50
-  ChangeWSUPool = -20
-  ChangeRailPool = 100
-  GenTextMsg  = opt_notify_RED_More_Rail;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_More_Rail
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_More_Rail_CheckAI|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  CheckOption = $gmaOptionVar;RED_More_Rail;=;1
-
-Actions
-
-  ChangeRailPool = 600
-  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_More_Rail
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_More_Rail_MoscowFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_RED_MoscowFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;RED_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_RED_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_RED_More_Rail;MsgString;opt_desc_RED_More_Rail;ToolString;opt_hint_RED_More_Rail;SubType;RED_More_Rail;SParam1;RED
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_More_Rail_PetrogradFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_RED_PetrogradFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;RED_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_RED_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_RED_More_Rail;MsgString;opt_desc_RED_More_Rail;ToolString;opt_hint_RED_More_Rail;SubType;RED_More_Rail;SParam1;RED
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_More_Rail_TulaFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_RED_TulaFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;RED_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_RED_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_RED_More_Rail;MsgString;opt_desc_RED_More_Rail;ToolString;opt_hint_RED_More_Rail;SubType;RED_More_Rail;SParam1;RED
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_More_Rail_NovgorodFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_RED_NovgorodFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;RED_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_RED_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_RED_More_Rail;MsgString;opt_desc_RED_More_Rail;ToolString;opt_hint_RED_More_Rail;SubType;RED_More_Rail;SParam1;RED
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_More_Rail_SmolenskFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_RED_SmolenskFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;RED_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_RED_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_RED_More_Rail;MsgString;opt_desc_RED_More_Rail;ToolString;opt_hint_RED_More_Rail;SubType;RED_More_Rail;SParam1;RED
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_More_Rail_VladimirFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_RED_VladimirFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;RED_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_RED_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_RED_More_Rail;MsgString;opt_desc_RED_More_Rail;ToolString;opt_hint_RED_More_Rail;SubType;RED_More_Rail;SParam1;RED
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
-StartEvent = evt_nam_RED_More_Rail_YaroslavlFactoryCompleted|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_RED_YaroslavlFactoryCompleted;=;1
-  MinDate = 1918/06/01
-  ActorDisabled = $gmaOptionVar;RED_More_Rail
-
-Actions
-
-  GenTextMsg  = opt_notify_RED_More_Rail_Regen;1;NULL;NULL;NULL
-  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Locomotive.png;Title;opt_title_RED_More_Rail;MsgString;opt_desc_RED_More_Rail;ToolString;opt_hint_RED_More_Rail;SubType;RED_More_Rail;SParam1;RED
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-
 StartEvent = evt_nam_RED_IvanovoTankFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
 
 Conditions
@@ -797,7 +589,7 @@ Actions
   Apply
   RemDynGraphic = $Moscow;Icon_IndusConstr.png
   AddDynGraphic = $Moscow;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;94;108;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   RemDynGraphic = $Moscow;Icon_IndusConstr.png
   Replacement = RED;$famLine;2
   Replacement = RED;$famMilitia;8
@@ -974,7 +766,7 @@ Actions
   Apply
   RemDynGraphic = $Petrograd;Icon_IndusConstr.png
   AddDynGraphic = $Petrograd;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;68;77;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   RemDynGraphic = $Petrograd;Icon_IndusConstr.png
   Replacement = RED;$famLine;2
   Replacement = RED;$famMilitia;8
@@ -1155,7 +947,7 @@ Actions
   Apply
   RemDynGraphic = $Tula;Icon_IndusConstr.png
   AddDynGraphic = $Tula;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;45;193;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   RemDynGraphic = $Tula;Icon_IndusConstr.png
   Replacement = RED;$famLine;2
   Replacement = RED;$famMilitia;8
@@ -1332,7 +1124,7 @@ Actions
   Apply
   RemDynGraphic = $Novgorod;Icon_IndusConstr.png
   AddDynGraphic = $Novgorod;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;41;119;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   RemDynGraphic = $Novgorod;Icon_IndusConstr.png
   Replacement = RED;$famLine;2
   Replacement = RED;$famMilitia;8
@@ -1509,7 +1301,7 @@ Actions
   Apply
   RemDynGraphic = $Smolensk;Icon_IndusConstr.png
   AddDynGraphic = $Smolensk;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;68;118;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   RemDynGraphic = $Smolensk;Icon_IndusConstr.png
   Replacement = RED;$famLine;2
   Replacement = RED;$famMilitia;8
@@ -1686,7 +1478,7 @@ Actions
   Apply
   RemDynGraphic = $Vladimir;Icon_IndusConstr.png
   AddDynGraphic = $Vladimir;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;158;133;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   RemDynGraphic = $Vladimir;Icon_IndusConstr.png
   Replacement = RED;$famLine;2
   Replacement = RED;$famMilitia;8
@@ -1863,7 +1655,7 @@ Actions
   Apply
   RemDynGraphic = $Yaroslavl;Icon_IndusConstr.png
   AddDynGraphic = $Yaroslavl;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;104;137;strArmsFactory
-  ChangeAssetsProd = 0;50;0;0;5;0
+  ChangeAssetsProd = 0;500;0;0;8;0
   RemDynGraphic = $Yaroslavl;Icon_IndusConstr.png
   Replacement = RED;$famLine;2
   Replacement = RED;$famMilitia;8
