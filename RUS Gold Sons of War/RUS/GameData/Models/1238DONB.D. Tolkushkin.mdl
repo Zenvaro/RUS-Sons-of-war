@@ -64,6 +64,7 @@ Ability4 = $Cossack_Commander2
 Ability5 = $Infantryman
 Ability6 = $Staffer
 Ability7 = $Recruiting_Officer
+Ability8 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 1
 Morale = 0

@@ -69,6 +69,7 @@ Ability9 = $Charismatic
 Ability10 = $Superior_Tactician 
 Ability11 = $Strategist
 Ability12 = $Propagandist
+Ability13 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 1
 Morale = 0

@@ -8,5 +8,6 @@ Color = $colAbi_Green
 Appliance = Leader
 Family = 0
 Level = 1
-Param0 = 25
+Param0 = 100
+ListParams0 = $Mountain|$Moors|$Marsh|$Bocage|$Wood|$Forest|$Alpine|$Hill|$WoodedHill|$Wilderness|$Swamp
 ListParams3 = $famRaider

@@ -832,8 +832,7 @@ Conditions
 
 Actions
 
-  SelectSubUnits = Models $ldr_WH3_Grichin-Almazov3
-  AlterCuSubUnit = ApplyToList;Kill
+  RemoveUnqUnit = A.N. Grichin-Almazov
 
 EndEvent
 

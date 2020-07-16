@@ -65,6 +65,7 @@ Ability4 = $Cossack_Commander2
 Ability5 = $Ex-Imperial_Officer
 Ability6 = $Good_Cmd
 Ability7 = $Ural_Commander
+Ability8 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 1
 Morale = 0

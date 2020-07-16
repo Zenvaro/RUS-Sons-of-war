@@ -402,14 +402,14 @@ StartEvent = evt_nam_WHI_NovorossiyskTankFactory_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionVar;WHI_NovorossiyskTankFactory;=;1
-  EvalEngagementPts = >=;10
+  EvalEngagementPts = >=;5
   EvalMoney = >=;30
   EvalWSU = >=;8
   EvalRgnOwned = $Novorossiysk
 
 Actions
 
-  ChgFacEngagementPts = -10
+  ChgFacEngagementPts = -5
   ChangeMoneyPool = -30
   ChangeWSUPool = -8
   AddDynGraphic = $Novorossiysk;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
@@ -664,14 +664,14 @@ StartEvent = evt_nam_WHI_EkaterinodarFactory_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionVar;WHI_EkaterinodarFactory;=;1
-  EvalEngagementPts = >=;10
+  EvalEngagementPts = >=;5
   EvalMoney = >=;50
   EvalWSU = >=;10
   EvalRgnOwned = $Ekaterinodar
 
 Actions
 
-  ChgFacEngagementPts = -10
+  ChgFacEngagementPts = -5
   ChangeMoneyPool = -50
   ChangeWSUPool = -10
   AddDynGraphic = $Ekaterinodar;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
@@ -826,14 +826,14 @@ StartEvent = evt_nam_WHI_RostovFactory_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionVar;WHI_RostovFactory;=;1
-  EvalEngagementPts = >=;10
+  EvalEngagementPts = >=;5
   EvalMoney = >=;50
   EvalWSU = >=;10
   EvalRgnOwned = $Rostov
 
 Actions
 
-  ChgFacEngagementPts = -10
+  ChgFacEngagementPts = -5
   ChangeMoneyPool = -50
   ChangeWSUPool = -10
   AddDynGraphic = $Rostov;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
@@ -1862,14 +1862,14 @@ StartEvent = evt_nam_WH3_IrkutskFactory_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionVar;WH3_IrkutskFactory;=;1
-  EvalEngagementPts = >=;10
+  EvalEngagementPts = >=;5
   EvalMoney = >=;50
   EvalWSU = >=;10
   EvalRgnOwned = $Irkutsk
 
 Actions
 
-  ChgFacEngagementPts = -10
+  ChgFacEngagementPts = -5
   ChangeMoneyPool = -50
   ChangeWSUPool = -10
   AddDynGraphic = $Irkutsk;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
@@ -2457,3 +2457,1082 @@ Actions
 EndEvent
 
 NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WHI_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WHI_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_WHI_Sell_WSU;MsgString;opt_desc_WHI_Sell_WSU;ToolString;opt_hint_WHI_Sell_WSU;SubType;WHI_Sell_WSU;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WHI_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_WHI_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;WHI_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_WHI_Sell_WSU;MsgString;opt_desc_WHI_Sell_WSU;ToolString;opt_hint_WHI_Sell_WSU;SubType;WHI_Sell_WSU;SParam1;WHI
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WH3_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WH3_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_WH3_Sell_WSU;MsgString;opt_desc_WH3_Sell_WSU;ToolString;opt_hint_WH3_Sell_WSU;SubType;WH3_Sell_WSU;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WH3_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_WH3_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WH3_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;WH3_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_WH3_Sell_WSU;MsgString;opt_desc_WH3_Sell_WSU;ToolString;opt_hint_WH3_Sell_WSU;SubType;WH3_Sell_WSU;SParam1;WH3
+
+EndEvent
+
+SelectFaction = $ROM
+
+StartEvent = evt_nam_ROM_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;ROM_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;ROM_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ROM
+
+StartEvent = evt_nam_ROM_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_ROM_Sell_WSU;MsgString;opt_desc_ROM_Sell_WSU;ToolString;opt_hint_ROM_Sell_WSU;SubType;ROM_Sell_WSU;SParam1;ROM
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ROM
+
+StartEvent = evt_nam_ROM_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;ROM_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_ROM_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;ROM_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ROM
+
+StartEvent = evt_nam_ROM_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;ROM_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_ROM_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_ROM_Sell_WSU;MsgString;opt_desc_ROM_Sell_WSU;ToolString;opt_hint_ROM_Sell_WSU;SubType;ROM_Sell_WSU;SParam1;ROM
+
+EndEvent
+
+SelectFaction = $FIN
+
+StartEvent = evt_nam_FIN_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;FIN_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;FIN_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $FIN
+
+StartEvent = evt_nam_FIN_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_FIN_Sell_WSU;MsgString;opt_desc_FIN_Sell_WSU;ToolString;opt_hint_FIN_Sell_WSU;SubType;FIN_Sell_WSU;SParam1;FIN
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $FIN
+
+StartEvent = evt_nam_FIN_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;FIN_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_FIN_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;FIN_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $FIN
+
+StartEvent = evt_nam_FIN_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;FIN_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_FIN_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_FIN_Sell_WSU;MsgString;opt_desc_FIN_Sell_WSU;ToolString;opt_hint_FIN_Sell_WSU;SubType;FIN_Sell_WSU;SParam1;FIN
+
+EndEvent
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;ANA_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;ANA_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_ANA_Sell_WSU;MsgString;opt_desc_ANA_Sell_WSU;ToolString;opt_hint_ANA_Sell_WSU;SubType;ANA_Sell_WSU;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;ANA_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_ANA_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;ANA_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;ANA_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_ANA_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_ANA_Sell_WSU;MsgString;opt_desc_ANA_Sell_WSU;ToolString;opt_hint_ANA_Sell_WSU;SubType;ANA_Sell_WSU;SParam1;ANA
+
+EndEvent
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;UKR_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;UKR_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_UKR_Sell_WSU;MsgString;opt_desc_UKR_Sell_WSU;ToolString;opt_hint_UKR_Sell_WSU;SubType;UKR_Sell_WSU;SParam1;UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;UKR_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_UKR_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;UKR_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;UKR_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_UKR_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_UKR_Sell_WSU;MsgString;opt_desc_UKR_Sell_WSU;ToolString;opt_hint_UKR_Sell_WSU;SubType;UKR_Sell_WSU;SParam1;UKR
+
+EndEvent
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;POL_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;POL_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_POL_Sell_WSU;MsgString;opt_desc_POL_Sell_WSU;ToolString;opt_hint_POL_Sell_WSU;SubType;POL_Sell_WSU;SParam1;POL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;POL_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_POL_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;POL_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;POL_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_POL_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_POL_Sell_WSU;MsgString;opt_desc_POL_Sell_WSU;ToolString;opt_hint_POL_Sell_WSU;SubType;POL_Sell_WSU;SParam1;POL
+
+EndEvent
+
+SelectFaction = $KAZ
+
+StartEvent = evt_nam_KAZ_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;KAZ_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;KAZ_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $KAZ
+
+StartEvent = evt_nam_KAZ_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_KAZ_Sell_WSU;MsgString;opt_desc_KAZ_Sell_WSU;ToolString;opt_hint_KAZ_Sell_WSU;SubType;KAZ_Sell_WSU;SParam1;KAZ
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $KAZ
+
+StartEvent = evt_nam_KAZ_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;KAZ_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_KAZ_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;KAZ_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $KAZ
+
+StartEvent = evt_nam_KAZ_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;KAZ_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_KAZ_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_KAZ_Sell_WSU;MsgString;opt_desc_KAZ_Sell_WSU;ToolString;opt_hint_KAZ_Sell_WSU;SubType;KAZ_Sell_WSU;SParam1;KAZ
+
+EndEvent
+
+SelectFaction = $EST
+
+StartEvent = evt_nam_EST_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;EST_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;EST_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $EST
+
+StartEvent = evt_nam_EST_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_EST_Sell_WSU;MsgString;opt_desc_EST_Sell_WSU;ToolString;opt_hint_EST_Sell_WSU;SubType;EST_Sell_WSU;SParam1;EST
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $EST
+
+StartEvent = evt_nam_EST_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;EST_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_EST_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;EST_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $EST
+
+StartEvent = evt_nam_EST_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;EST_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_EST_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_EST_Sell_WSU;MsgString;opt_desc_EST_Sell_WSU;ToolString;opt_hint_EST_Sell_WSU;SubType;EST_Sell_WSU;SParam1;EST
+
+EndEvent
+
+SelectFaction = $LAT
+
+StartEvent = evt_nam_LAT_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;LAT_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;LAT_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LAT
+
+StartEvent = evt_nam_LAT_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_LAT_Sell_WSU;MsgString;opt_desc_LAT_Sell_WSU;ToolString;opt_hint_LAT_Sell_WSU;SubType;LAT_Sell_WSU;SParam1;LAT
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LAT
+
+StartEvent = evt_nam_LAT_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;LAT_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_LAT_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;LAT_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LAT
+
+StartEvent = evt_nam_LAT_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;LAT_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_LAT_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_LAT_Sell_WSU;MsgString;opt_desc_LAT_Sell_WSU;ToolString;opt_hint_LAT_Sell_WSU;SubType;LAT_Sell_WSU;SParam1;LAT
+
+EndEvent
+
+SelectFaction = $LIT
+
+StartEvent = evt_nam_LIT_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;LIT_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;LIT_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LIT
+
+StartEvent = evt_nam_LIT_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_LIT_Sell_WSU;MsgString;opt_desc_LIT_Sell_WSU;ToolString;opt_hint_LIT_Sell_WSU;SubType;LIT_Sell_WSU;SParam1;LIT
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LIT
+
+StartEvent = evt_nam_LIT_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;LIT_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_LIT_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;LIT_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LIT
+
+StartEvent = evt_nam_LIT_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;LIT_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_LIT_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_LIT_Sell_WSU;MsgString;opt_desc_LIT_Sell_WSU;ToolString;opt_hint_LIT_Sell_WSU;SubType;LIT_Sell_WSU;SParam1;LIT
+
+EndEvent
+
+SelectFaction = $ARM
+
+StartEvent = evt_nam_ARM_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;ARM_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;ARM_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ARM
+
+StartEvent = evt_nam_ARM_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_ARM_Sell_WSU;MsgString;opt_desc_ARM_Sell_WSU;ToolString;opt_hint_ARM_Sell_WSU;SubType;ARM_Sell_WSU;SParam1;ARM
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ARM
+
+StartEvent = evt_nam_ARM_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;ARM_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_ARM_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;ARM_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ARM
+
+StartEvent = evt_nam_ARM_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;ARM_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_ARM_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_ARM_Sell_WSU;MsgString;opt_desc_ARM_Sell_WSU;ToolString;opt_hint_ARM_Sell_WSU;SubType;ARM_Sell_WSU;SParam1;ARM
+
+EndEvent
+
+SelectFaction = $AZR
+
+StartEvent = evt_nam_AZR_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;AZR_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;AZR_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $AZR
+
+StartEvent = evt_nam_AZR_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_AZR_Sell_WSU;MsgString;opt_desc_AZR_Sell_WSU;ToolString;opt_hint_AZR_Sell_WSU;SubType;AZR_Sell_WSU;SParam1;AZR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $AZR
+
+StartEvent = evt_nam_AZR_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;AZR_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_AZR_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;AZR_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $AZR
+
+StartEvent = evt_nam_AZR_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;AZR_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_AZR_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_AZR_Sell_WSU;MsgString;opt_desc_AZR_Sell_WSU;ToolString;opt_hint_AZR_Sell_WSU;SubType;AZR_Sell_WSU;SParam1;AZR
+
+EndEvent
+
+SelectFaction = $GEO
+
+StartEvent = evt_nam_GEO_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;GEO_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;GEO_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GEO
+
+StartEvent = evt_nam_GEO_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_GEO_Sell_WSU;MsgString;opt_desc_GEO_Sell_WSU;ToolString;opt_hint_GEO_Sell_WSU;SubType;GEO_Sell_WSU;SParam1;GEO
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GEO
+
+StartEvent = evt_nam_GEO_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;GEO_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_GEO_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;GEO_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GEO
+
+StartEvent = evt_nam_GEO_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;GEO_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_GEO_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_GEO_Sell_WSU;MsgString;opt_desc_GEO_Sell_WSU;ToolString;opt_hint_GEO_Sell_WSU;SubType;GEO_Sell_WSU;SParam1;GEO
+
+EndEvent
+

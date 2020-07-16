@@ -200,6 +200,10 @@ SelectRegion = $Tzaritsyn
     SetType = $uni_RED_Eng
     SetName = Tzaritsyn Engineer
   Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Tzaritsyn Lines
+  Apply
 
 EndEvent
 
@@ -5737,6 +5741,57 @@ SelectRegion = $Belgorod
   Apply
 
 SelectFaction = $RED
+SelectRegion = $Stolin
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Mozyr Uprising
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par2
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par2
+    SetName = Ukrainian Partisans
+  Apply
+
+SelectFaction = $RED
 SelectRegion = $Poltava
   CreateGroup
     Posture = $Defensive
@@ -6100,6 +6155,58 @@ SelectRegion = $Belgorod
     SetType = $uni_RED_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
     SetName = Ukraine Supply
+  Apply
+
+
+SelectFaction = $RED
+SelectRegion = $Stolin
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Mozyr Uprising
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par2
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par2
+    SetName = Ukrainian Partisans
   Apply
 
 SelectFaction = $RED
@@ -6466,6 +6573,58 @@ SelectRegion = $Belgorod
     SetType = $uni_RED_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
     SetName = Ukraine Supply
+  Apply
+
+
+SelectFaction = $RED
+SelectRegion = $Stolin
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Mozyr Uprising
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par2
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par2
+    SetName = Ukrainian Partisans
   Apply
 
 SelectFaction = $RED
@@ -7174,6 +7333,58 @@ SelectRegion = $Belgorod
     SetType = $uni_RED_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
     SetName = Ukraine Supply
+  Apply
+
+
+SelectFaction = $RED
+SelectRegion = $Stolin
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Mozyr Uprising
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par2
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par1
+    SetName = Ukrainian Partisans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Par2
+    SetName = Ukrainian Partisans
   Apply
 
 SelectFaction = $RED
@@ -10636,7 +10847,7 @@ SelectRegion = $Nova Odessa
     SetName = Artillery
   Apply
   CreateUnit
-    SetType = $uni_GRN_Art2
+    SetType = $uni_RED_Art2
     SetName = Artillery
   Apply
   CreateUnit
@@ -13987,7 +14198,6 @@ StartEvent = evt_nam_CMN_gold_train_bonus_Moscow|999|1|NULL|NULL|$Moscow|NULL
 Conditions
 
   MinDate = 1918/10/02
-  Probability = 30
 
 SelectFaction = $RED
 
@@ -13997,7 +14207,7 @@ SelectFaction = $RED
 
 Actions
 
-  ChangeMoneyPool = 300
+  ChangeMoneyPool = 200
 
 EndEvent
 
@@ -14011,7 +14221,6 @@ StartEvent = evt_nam_CMN_gold_train_bonus_Ekaterinodar|999|1|NULL|NULL|$Ekaterin
 Conditions
 
   MinDate = 1918/10/02
-  Probability = 30
   EvalEvent = evt_nam_CMN_EkaterinodarNewCapital;=;1
   EvalEvent = evt_nam_WHI_Sevastopol_Capital_Chosen;=;0
 
@@ -14023,7 +14232,7 @@ SelectFaction = $WHI
 
 Actions
 
-  ChangeMoneyPool = 300
+  ChangeMoneyPool = 200
 
 EndEvent
 
@@ -14037,7 +14246,6 @@ StartEvent = evt_nam_CMN_gold_train_bonus_Rostov|999|1|NULL|NULL|$Rostov|NULL
 Conditions
 
   MinDate = 1918/10/02
-  Probability = 30
   EvalEvent = evt_nam_CMN_RostovNewCapital;=;1
   EvalEvent = evt_nam_WHI_Sevastopol_Capital_Chosen;=;0
 
@@ -14049,7 +14257,7 @@ SelectFaction = $WHI
 
 Actions
 
-  ChangeMoneyPool = 300
+  ChangeMoneyPool = 200
 
 EndEvent
 
@@ -14063,7 +14271,6 @@ StartEvent = evt_nam_CMN_gold_train_bonus_Sevastopol|999|1|NULL|NULL|$Sevastopol
 Conditions
 
   MinDate = 1918/10/02
-  Probability = 30
   EvalEvent = evt_nam_WHI_Sevastopol_Capital_Chosen;=;1
 
 SelectFaction = $WHI
@@ -14074,7 +14281,7 @@ SelectFaction = $WHI
 
 Actions
 
-  ChangeMoneyPool = 300
+  ChangeMoneyPool = 200
 
 EndEvent
 
@@ -14088,7 +14295,6 @@ StartEvent = evt_nam_CMN_gold_train_bonus_Irkutsk|999|1|NULL|NULL|$Irkutsk|NULL
 Conditions
 
   MinDate = 1918/10/02
-  Probability = 30
   EvalEvent = evt_nam_WH3_Irkutsk_Capital_Chosen;=;1
 
 SelectFaction = $WH3
@@ -14099,7 +14305,7 @@ SelectFaction = $WH3
 
 Actions
 
-  ChangeMoneyPool = 300
+  ChangeMoneyPool = 200
 
 EndEvent
 
@@ -14113,7 +14319,6 @@ StartEvent = evt_nam_CMN_gold_train_bonus_Omsk|999|1|NULL|NULL|$Omsk|NULL
 Conditions
 
   MinDate = 1918/10/02
-  Probability = 30
   EvalEvent = evt_nam_WH3_Omsk_Capital_Chosen;=;1
 
 SelectFaction = $WH3
@@ -14124,7 +14329,7 @@ SelectFaction = $WH3
 
 Actions
 
-  ChangeMoneyPool = 300
+  ChangeMoneyPool = 200
 
 EndEvent
 
@@ -14138,7 +14343,6 @@ StartEvent = evt_nam_CMN_gold_train_bonus_Samara|999|1|NULL|NULL|$Samara|NULL
 Conditions
 
   MinDate = 1918/10/02
-  Probability = 30
   EvalEvent = evt_nam_WH3_Samara_Capital_Chosen;=;1
 
 SelectFaction = $WH3
@@ -14149,7 +14353,7 @@ SelectFaction = $WH3
 
 Actions
 
-  ChangeMoneyPool = 300
+  ChangeMoneyPool = 200
 
 EndEvent
 
@@ -19366,8 +19570,9 @@ StartEvent = evt_nam_WHI_KillRyabovol|1|2|evt_txt_WHI_KillRyabovol|Event-img_WHI
 Conditions
 
   EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;0
-  MinDate = 1919/06/13
-
+  MinDate = 1919/05/13
+  Probability = 33
+  
 SelectFaction = $WHI
 
   EvalRgnOwned = $Ekaterinodar
@@ -19979,7 +20184,7 @@ EndEvent
 
 SelectFaction = $CMN
 SelectRegion = $Kursk
-StartEvent = evt_nam_RED_RedPartisanArmy2|1|1|NULL|NULL|Kursk|NULL
+StartEvent = evt_nam_RED_RedPartisanArmy2|1|1|NULL|NULL|$Kursk|NULL
 
 Conditions
 

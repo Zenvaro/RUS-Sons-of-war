@@ -68,6 +68,7 @@ Ability7 = $Master_Spy
 Ability8 = $Irregular_Fighter
 Ability9 = $Infantryman
 Ability10 = $Multinational
+Ability11 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 2
 Morale = 0

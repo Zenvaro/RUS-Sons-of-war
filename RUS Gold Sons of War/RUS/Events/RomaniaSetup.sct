@@ -558,7 +558,7 @@ SelectFaction = $ROM
   ChangeUnitPool = $uni_ROM_Sig;2
   ChangeUnitPool = $uni_ROM_Med;2
   ChangeUnitPool = $uni_ROM_Eng;2
-  ChangeUnitPool = $uni_ROM_Tnk1;2
+  ChangeUnitPool = $uni_RED_Tnk1;2
 
 EndEvent
 

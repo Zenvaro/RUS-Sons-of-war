@@ -1,0 +1,1814 @@
+{Faction}
+1000006
+0
+22
+0
+0
+2
+-2500
+-3000
+0
+0
+1
+1
+0
+0
+0
+4043
+0
+1
+0
+0
+0
+200
+0
+0
+0
+0
+0
+0
+0
+0
+4
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Басмачи
+strGrandCampaign_GRN
+NULL
+NULL
+NULL
+NULL
+1576|5|1395|5|1392|5|1386|5|1384|5|0|5|
+StrMajorVictory|2|txt_Win|scores_Reds_victory.png|SND_VICTORY|
+StrMajordDefeat|2|txt_Lose|scores_Reds_defeat.png|SND_DEFEAT|
+StrMinorVictory|2|txt_WinVP|scores_Reds_MinorDefeat.png|SND_VICTORY|
+StrMinorDefeat|2|txt_LoseVP|scores_Reds_MinorDefeat.png|SND_DEFEAT|
+1384|33|1382|33|1581|33|1416|33|1954|33|1383|33|1380|33|1415|33|1943|33|1403|33|1405|33|1594|33|1386|51|1387|51|1388|51|1390|51|1590|51|1952|51|1591|51|1409|51|
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+2429|20|2430|20|2431|20|2432|20|2433|20|2434|20|2435|20|2436|20|2437|20|2438|20|2439|20|2440|20|2441|20|2442|20|2443|20|2444|1|2445|20|
+2429|2|
+NULL
+NULL
+926|925|927|-1
+681|10|35|50
+712|1|
+NULL
+5|0|200
+93|3|2429|100|Gar1|Gar2|Gar3|Gar4&
+80|10|10|10|0|Scorched1|Scorched2|Scorched3|Scorched4
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+7|0|8|50|11|10|0|5000|12|30|10|100|6|0|
+NULL
+NULL
+NULL
+#Aifg#0&NULL&NULL&NULL&#Aifg#NULL#Aifg#NULL#Aifg#50|50#Aifg#NULL#Aifg#|1|10|6|10|300|100|300|5|3|75|2|4|5|8|150|10|25|2|5|5|2|125|66|50|6|11|16|25|11|3|5|150|100|250|75|100|75|7|8|90|60|1|#Aifg#NULL#Aifg#NULL#Aifg#NULL#Aifg#NULL#Aifg#
+-1|-1|-1|-1|-1|-1|-1|-1|-1|-1|-1|0|PH1
+NULL&NULL&NULL&NULL&#FacHis#1700|521|1701|0|1702|0|1703|521|1704|0|1705|12922|1706|6592|1707|32|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|21|1714|21|1715|0|1722|0|1723|0|1724|2|1725|0|1726|0|1727|0|1716|59|1717|9|1718|3|1719|0|1720|3|1721|0|1728|63|1729|62|1050|0|&#FacHis#1700|521|1701|0|1702|0|1703|521|1704|0|1705|12922|1706|6592|1707|32|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|21|1714|21|1715|0|1722|0|1723|0|1724|2|1725|0|1726|0|1727|0|1716|59|1717|9|1718|3|1719|0|1720|3|1721|0|1728|63|1729|62|1050|0|&#FacHis#
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+521|0|521|0
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+#Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#2485|4|2486|2|#Revolt#NULL#Revolt#
+NULL
+NULL
+NULL
+1|3|2|3|3|3|
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+  {Group}
+  1003575
+  -1
+  50001
+  1386
+  -1
+  1000006
+  12255
+  8870
+  50001
+  1386
+  -1
+  -1
+  -1
+  0
+  12255
+  8870
+  1
+  -1
+  0
+  0
+  0
+  -1
+  -1
+  1
+  0
+  1
+  0
+  0
+  -1
+  0
+  100
+  100
+  0
+  0
+  0
+  Bukhara Emirate
+  NULL
+  NULL
+  NULL
+  1003575-Bukhara Emirate Power:287 Health:100% Бухара>Бухара Mission:Garrison Fitness:100% Need:0 Threat:0 GoalValue: 100000
+  1003575|-1|16|100|1386|100|1000|4043|4043|-1|-1|DEPREC|-1|-1|-1|-1|-1|PH0|PH1|PH2|PH3|PH4|PH5|PH6|PH7|PH8|PH9&
+  NULL
+  #Kind#0#Kind#
+  Bukhara Emirate|Seid-Alim Khan|1386|1|
+  NULL
+    {Unit}
+    1003576
+    1358
+    3
+    1386
+    0
+    1003575
+    1000006
+    0
+    1
+    0
+    -1
+    0
+    6
+    -1
+    1
+    -1
+    -1
+    0
+    0
+    -1
+    0
+    0
+    Seid-Alim Khan
+    NULL
+    Bukhara Emirate
+    Seid-Alim Khan
+    NULL
+    1st Bukhara|2434|1st Bukhara|1003579 1003580 1003581 1003582 1003583 1003584 1003585 &1st Bukhara Cavalry Rgt|2438|1st Bukhara Cavalry Rgt|1003587 &2nd Bukhara Cavalry Rgt|2438|2nd Bukhara Cavalry Rgt|1003589 &3rd Bukhara Cavalry Rgt|2438|3rd Bukhara Cavalry Rgt|1003591 &Bukhara Artillery|2439|Bukhara Artillery|1003593 &
+    Bukhara Emirate
+    NULL
+    NULL
+    NULL
+    #CbtPower#287#CbtPower#
+    NULL
+      {SubUnit}
+      1003577
+      1356
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      80
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      Seid-Alim Khan
+      {/SubUnit}
+      {SubUnit}
+      1003583
+      2208
+      8
+      0
+      0
+      2
+      3
+      0
+      0
+      60
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      1st Machine Guns
+      {/SubUnit}
+      {SubUnit}
+      1003582
+      885
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      75
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      Infantry
+      {/SubUnit}
+      {SubUnit}
+      1003581
+      885
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      75
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      Infantry
+      {/SubUnit}
+      {SubUnit}
+      1003580
+      885
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      75
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      Infantry
+      {/SubUnit}
+      {SubUnit}
+      1003579
+      885
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      75
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      Infantry
+      {/SubUnit}
+      {SubUnit}
+      1003591
+      887
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      85
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      3rd Bukhara Cavalry
+      {/SubUnit}
+      {SubUnit}
+      1003589
+      887
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      85
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      2nd Bukhara Cavalry
+      {/SubUnit}
+      {SubUnit}
+      1003587
+      887
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      85
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      1st Bukhara Cavalry
+      {/SubUnit}
+      {SubUnit}
+      1003584
+      887
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      85
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      Cavalry
+      {/SubUnit}
+      {SubUnit}
+      1003593
+      2194
+      8
+      0
+      0
+      2
+      8
+      0
+      0
+      60
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      Bukhara Arty
+      {/SubUnit}
+      {SubUnit}
+      1003585
+      2196
+      8
+      0
+      0
+      2
+      8
+      0
+      0
+      60
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      1st Medium Bty
+      {/SubUnit}
+    {/Unit}
+  {/Group}
+  {Group}
+  1003560
+  -1
+  50001
+  1384
+  -1
+  1000006
+  11560
+  8475
+  50001
+  1384
+  -1
+  -1
+  -1
+  0
+  11560
+  8475
+  1
+  -1
+  0
+  0
+  0
+  -1
+  -1
+  1
+  0
+  1
+  0
+  0
+  -1
+  0
+  100
+  100
+  0
+  0
+  0
+  Khiva Khanate
+  NULL
+  NULL
+  NULL
+  1003560-Khiva Khanate Power:234 Health:100% Хива>Хива Mission:Garrison Fitness:100% Need:0 Threat:0 GoalValue: 100000
+  1003560|-1|16|100|1384|100|1000|4043|4043|-1|-1|DEPREC|-1|-1|-1|-1|-1|PH0|PH1|PH2|PH3|PH4|PH5|PH6|PH7|PH8|PH9&
+  NULL
+  #Kind#0#Kind#
+  Khiva Khanate|Juna-Id-Khan|1384|1|
+  NULL
+    {Unit}
+    1003561
+    1357
+    3
+    1384
+    0
+    1003560
+    1000006
+    0
+    1
+    0
+    -1
+    0
+    6
+    -1
+    1
+    -1
+    -1
+    0
+    0
+    -1
+    0
+    0
+    Juna-Id-Khan
+    NULL
+    Khiva Khanate
+    Juna-Id-Khan
+    NULL
+    1st Khiva Rgt|2431|1st Khiva Rgt|1003564 &2nd  Khiva Rgt|2431|2nd  Khiva Rgt|1003566 &1st Khiva Cavalry|2436|1st Khiva Cavalry|1003568 1003569 1003570 1003571 1003572 &Khiva Artillery|2440|Khiva Artillery|1003574 &
+    Khiva Khanate
+    NULL
+    NULL
+    NULL
+    #CbtPower#234#CbtPower#
+    NULL
+      {SubUnit}
+      1003562
+      1355
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      85
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      Juna-Id-Khan
+      {/SubUnit}
+      {SubUnit}
+      1003566
+      885
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      85
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      2nd  Khiva
+      {/SubUnit}
+      {SubUnit}
+      1003564
+      885
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      85
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      1st Khiva
+      {/SubUnit}
+      {SubUnit}
+      1003571
+      887
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      95
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      Cavalry
+      {/SubUnit}
+      {SubUnit}
+      1003570
+      887
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      95
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      Cavalry
+      {/SubUnit}
+      {SubUnit}
+      1003569
+      887
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      95
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      Cavalry
+      {/SubUnit}
+      {SubUnit}
+      1003568
+      887
+      20
+      0
+      0
+      4
+      4
+      0
+      0
+      95
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      Cavalry
+      {/SubUnit}
+      {SubUnit}
+      1003574
+      2195
+      8
+      0
+      0
+      2
+      8
+      0
+      0
+      60
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      Khiva Arty
+      {/SubUnit}
+      {SubUnit}
+      1003572
+      2194
+      8
+      0
+      0
+      2
+      8
+      0
+      0
+      60
+      0
+      0
+      0
+      0
+      0
+      1
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      1st Horse Bty
+      {/SubUnit}
+    {/Unit}
+  {/Group}
+  {Region}
+    UID              = 1380
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1380
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1381
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1381
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1382
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1382
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1383
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1383
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1384
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 913
+    Loyalty          = 90
+    {StrucList}
+    1384
+      {Structure}
+      1000478
+      3
+      1
+      0
+      1000006
+      0
+      1
+      1
+      0
+      22
+      0
+      0
+      Khiva
+      
+      {/Structure}
+      {Structure}
+      1001181
+      14
+      1
+      0
+      1000006
+      0
+      1
+      1
+      0
+      22
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1001182
+      2
+      2
+      0
+      1000006
+      0
+      1
+      1
+      0
+      22
+      0
+      0
+      Khiva Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1385
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1385
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1386
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 499
+    Loyalty          = 90
+    {StrucList}
+    1386
+      {Structure}
+      1000479
+      3
+      1
+      0
+      1000006
+      0
+      1
+      1
+      0
+      22
+      0
+      0
+      Bukhara
+      
+      {/Structure}
+      {Structure}
+      1001213
+      14
+      1
+      0
+      1000006
+      0
+      1
+      1
+      0
+      22
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1001214
+      2
+      1
+      0
+      1000006
+      0
+      1
+      1
+      0
+      22
+      0
+      0
+      Bukhara Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1387
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 2
+    Loyalty          = 80
+    {StrucList}
+    1387
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1388
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 2
+    Loyalty          = 80
+    {StrucList}
+    1388
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1389
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 4
+    Loyalty          = 40
+    {StrucList}
+    1389
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1390
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1390
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1391
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1391
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1392
+    Control          = 20
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 19
+    Loyalty          = 30
+    {StrucList}
+    1392
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1393
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1393
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1395
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 10
+    Loyalty          = 80
+    {StrucList}
+    1395
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1396
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1396
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1397
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1397
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1398
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1398
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1399
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1399
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1400
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1400
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1401
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1401
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1402
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1402
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1403
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1403
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1404
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1404
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1405
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1405
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1406
+    Control          = 20
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1406
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1407
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1407
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1408
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1408
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1409
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1409
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1410
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1410
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1411
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1411
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1412
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1412
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1413
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1413
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1414
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1414
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1415
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1415
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1416
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1416
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1534
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1534
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1535
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1535
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1565
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 4
+    Loyalty          = 80
+    {StrucList}
+    1565
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1566
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1566
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1567
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1567
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1568
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 2
+    Loyalty          = 80
+    {StrucList}
+    1568
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1569
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1569
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1570
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1570
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1571
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 2
+    Loyalty          = 80
+    {StrucList}
+    1571
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1572
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1572
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1573
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1573
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1574
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1574
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1575
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1575
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1576
+    Control          = 20
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 16
+    Loyalty          = 50
+    {StrucList}
+    1576
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1577
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1577
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1578
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1578
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1579
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1579
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1580
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1580
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1581
+    Control          = 20
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 59
+    Loyalty          = 10
+    {StrucList}
+    1581
+      {Structure}
+      1000515
+      3
+      1
+      0
+      1000006
+      0
+      1
+      1
+      0
+      22
+      0
+      0
+      Urgench
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1582
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1582
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1583
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1583
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1584
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1584
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1585
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1585
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1586
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1586
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1587
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 2
+    Loyalty          = 50
+    {StrucList}
+    1587
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1588
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 2
+    Loyalty          = 80
+    {StrucList}
+    1588
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1589
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 40
+    {StrucList}
+    1589
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1590
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1590
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1591
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1591
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1592
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1592
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1593
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1593
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1594
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1594
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1595
+    Control          = 60
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 1
+    Loyalty          = 80
+    {StrucList}
+    1595
+    {/StrucList}
+  {/Region}
+{/Faction}

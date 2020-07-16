@@ -65,6 +65,7 @@ Ability5 = $Beloved_By_Army
 Ability6 = $Cavalryman
 Ability7 = $Honour
 Ability8 = $Multinational
+Ability9 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 5
 Morale = 0

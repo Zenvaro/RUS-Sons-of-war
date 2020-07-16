@@ -16,7 +16,8 @@ SelectFaction = GRN
   AddGarrison = -1;$sfmCity;$uni_GRN_Par1;100;x;x;x;x
 
 SelectFaction = ANA
-  AddGarrison = -1;$sfmCity;$uni_ANA_Inf2;100;x;x;x;x
+  AddGarrison = $Recruit_ANA_Siberian;$sfmCity;$uni_ANA_Inf1;100;x;x;x;x
+  AddGarrison = $Recruit_ANA_Ukrainian;$sfmCity;$uni_ANA_Inf2;100;x;x;x;x
 
 SelectFaction = KAZ
   AddGarrison = $Theater_Central_Asia;$sfmCity;$uni_KAZ_Mil;100;x;x;x;x

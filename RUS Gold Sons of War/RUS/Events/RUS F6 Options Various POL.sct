@@ -143,14 +143,14 @@ StartEvent = evt_nam_POL_WarsawFactory_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionVar;POL_WarsawFactory;=;1
-  EvalEngagementPts = >=;15
+  EvalEngagementPts = >=;5
   EvalMoney = >=;100
   EvalWSU = >=;10
   EvalRgnOwned = $Warsaw
 
 Actions
 
-  ChgFacEngagementPts = -15
+  ChgFacEngagementPts = -5
   ChangeMoneyPool = -100
   ChangeWSUPool = -10
   AddDynGraphic = $Warsaw;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
@@ -292,14 +292,14 @@ StartEvent = evt_nam_POL_KrakowFactory_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionVar;POL_KrakowFactory;=;1
-  EvalEngagementPts = >=;15
+  EvalEngagementPts = >=;5
   EvalMoney = >=;100
   EvalWSU = >=;10
   EvalRgnOwned = $Krakow
 
 Actions
 
-  ChgFacEngagementPts = -15
+  ChgFacEngagementPts = -5
   ChangeMoneyPool = -100
   ChangeWSUPool = -10
   AddDynGraphic = $Krakow;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
@@ -441,14 +441,14 @@ StartEvent = evt_nam_POL_LodzFactory_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionVar;POL_LodzFactory;=;1
-  EvalEngagementPts = >=;15
+  EvalEngagementPts = >=;5
   EvalMoney = >=;100
   EvalWSU = >=;10
   EvalRgnOwned = $Lodz
 
 Actions
 
-  ChgFacEngagementPts = -15
+  ChgFacEngagementPts = -5
   ChangeMoneyPool = -100
   ChangeWSUPool = -10
   AddDynGraphic = $Lodz;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
@@ -590,14 +590,14 @@ StartEvent = evt_nam_POL_PoznanFactory_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionVar;POL_PoznanFactory;=;1
-  EvalEngagementPts = >=;15
+  EvalEngagementPts = >=;5
   EvalMoney = >=;100
   EvalWSU = >=;10
   EvalRgnOwned = $Poznan
 
 Actions
 
-  ChgFacEngagementPts = -15
+  ChgFacEngagementPts = -5
   ChangeMoneyPool = -100
   ChangeWSUPool = -10
   AddDynGraphic = $Poznan;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction

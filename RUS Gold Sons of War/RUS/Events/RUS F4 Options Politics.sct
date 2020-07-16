@@ -5063,12 +5063,6 @@ SelectFaction = $RED
 
 EndEvent
 
-
-
-
-
-
-
 SelectFaction = $WHI
 
 StartEvent = evt_nam_WHI_Hold_Dzhankoi_Chosen|0|0|NULL|NULL|NULL|NULL
@@ -5089,6 +5083,7 @@ Conditions
 
   MinDate = 1919/01/21
   CheckAILevel = 1
+  EvalEvent = evt_nam_WHI_Sevastopol_Capital_Chosen;=;1
   ActorEnabled = $gmaOptionPol;WHI_Hold_Dzhankoi
 
 Actions
@@ -5145,7 +5140,6 @@ SelectFaction = $WHI
 
 SelectRegion = $Dzhankoi
 SelectFaction = $WHI
-
   CreateGroup
     Posture = $Defensive
     SetKind = $Land

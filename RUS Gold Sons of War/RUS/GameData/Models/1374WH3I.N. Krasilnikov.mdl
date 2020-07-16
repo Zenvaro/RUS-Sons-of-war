@@ -70,6 +70,7 @@ Ability10 = $Pillager_Pop
 Ability11 = $Irregular_Fighter
 Ability12 = $Insurrection_Fighter
 Ability13 = $Siberian_Commander
+Ability14 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 1
 Morale = 0

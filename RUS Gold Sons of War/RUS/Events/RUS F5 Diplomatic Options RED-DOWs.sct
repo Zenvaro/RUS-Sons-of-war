@@ -131,6 +131,7 @@ StartEvent = evt_nam_RED_SignAlliance_ANA_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
+  MinDate = 1918/12/16
   EvalFacRelationships = ANA;<;0
 
 Actions
@@ -199,8 +200,6 @@ Actions
 SelectFaction = $RED
 
   SetEvtOccurs = evt_nam_RED_NoReasonsToSignAllianceWithAnarchists;CuOccurs;0
-
-SelectFaction = $CMN
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakAlliance_ANA
@@ -329,6 +328,7 @@ StartEvent = evt_nam_RED_SignPeace_GEO_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
+  MinDate = 1918/12/16
   EvalFacRelationships = GEO;<;0
 
 Actions
@@ -859,8 +859,6 @@ SelectFaction = $RED
 
   ChangeOption = $gmaOptionDip;RED_BreakPeace_GEO;1
 
-SelectFaction = $CMN
-
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_GEO
 
@@ -951,6 +949,7 @@ StartEvent = evt_nam_RED_SignPeace_AZR_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
+  MinDate = 1918/12/16
   EvalFacRelationships = AZR;<;0
 
 Actions
@@ -1472,8 +1471,6 @@ SelectFaction = $RED
 
   ChangeOption = $gmaOptionDip;RED_BreakPeace_AZR;1
 
-SelectFaction = $CMN
-
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_AZR
 
@@ -1564,6 +1561,7 @@ StartEvent = evt_nam_RED_SignPeace_ARM_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
+  MinDate = 1918/12/16
   EvalFacRelationships = ARM;<;0
 
 Actions
@@ -2066,8 +2064,6 @@ SelectFaction = $RED
 
   ChangeOption = $gmaOptionDip;RED_BreakPeace_ARM;1
 
-SelectFaction = $CMN
-
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_ARM
 
@@ -2157,6 +2153,7 @@ StartEvent = evt_nam_RED_SignPeace_FIN_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
+  MinDate = 1918/12/16
   EvalFacRelationships = FIN;<;0
 
 Actions
@@ -2686,7 +2683,7 @@ SelectFaction = $RED
     ChangeRgnOwner = FIN
   SelectRegion = $Shalimovo
     ChangeRgnOwner = FIN
-  SelectRegion = $KFINanovo
+  SelectRegion = $Karmanovo
     ChangeRgnOwner = FIN
   SelectRegion = $Fatezh
     ChangeRgnOwner = FIN
@@ -2989,8 +2986,6 @@ SelectFaction = $RED
 
   ChangeOption = $gmaOptionDip;RED_BreakPeace_FIN;1
 
-SelectFaction = $CMN
-
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_FIN
 
@@ -3026,8 +3021,6 @@ Actions
 
   ChangeFacMorale = 8
   SetFacRelationships = FIN;-100
-
-SelectFaction = $CMN
 
   GenTextMsg  = opt_notify_RED_BreakPeace_FIN;1;NULL;NULL;NULL
 
@@ -3081,6 +3074,7 @@ StartEvent = evt_nam_RED_SignPeace_EST_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
+  MinDate = 1918/12/16
   EvalFacRelationships = EST;<;0
 
 Actions
@@ -3154,7 +3148,7 @@ SelectFaction = $RED
     ChangeRgnOwner = EST
   SelectRegion = $Kirishi
     ChangeRgnOwner = EST
-  SelectRegion = $OESTezh
+  SelectRegion = $Oredezh
     ChangeRgnOwner = EST
   SelectRegion = $Chudovo
     ChangeRgnOwner = EST
@@ -3168,7 +3162,7 @@ SelectFaction = $RED
     ChangeRgnOwner = EST
   SelectRegion = $Bologoie
     ChangeRgnOwner = EST
-  SelectRegion = $ParESTo
+  SelectRegion = $Parfino
     ChangeRgnOwner = EST
   SelectRegion = $Staraya Russa
     ChangeRgnOwner = EST
@@ -3610,7 +3604,7 @@ SelectFaction = $RED
     ChangeRgnOwner = EST
   SelectRegion = $Shalimovo
     ChangeRgnOwner = EST
-  SelectRegion = $KESTanovo
+  SelectRegion = $Karmanovo
     ChangeRgnOwner = EST
   SelectRegion = $Fatezh
     ChangeRgnOwner = EST
@@ -3888,8 +3882,6 @@ SelectFaction = $RED
 
   ChangeOption = $gmaOptionDip;RED_BreakPeace_EST;1
 
-SelectFaction = $CMN
-
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_EST
 
@@ -3980,6 +3972,7 @@ StartEvent = evt_nam_RED_SignPeace_LAT_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
+  MinDate = 1918/12/16
   EvalFacRelationships = LAT;<;0
 
 Actions
@@ -4053,13 +4046,13 @@ SelectFaction = $RED
     ChangeRgnOwner = LAT
   SelectRegion = $Kirishi
     ChangeRgnOwner = LAT
-  SelectRegion = $OLATezh
+  SelectRegion = $Oredezh
     ChangeRgnOwner = LAT
   SelectRegion = $Chudovo
     ChangeRgnOwner = LAT
   SelectRegion = $Novgorod
     ChangeRgnOwner = LAT
-  SelectRegion = $KrLATtsy
+  SelectRegion = $Kresttsy
     ChangeRgnOwner = LAT
   SelectRegion = $Borovichi
     ChangeRgnOwner = LAT
@@ -4067,7 +4060,7 @@ SelectFaction = $RED
     ChangeRgnOwner = LAT
   SelectRegion = $Bologoie
     ChangeRgnOwner = LAT
-  SelectRegion = $ParLATo
+  SelectRegion = $Parfino
     ChangeRgnOwner = LAT
   SelectRegion = $Staraya Russa
     ChangeRgnOwner = LAT
@@ -4509,7 +4502,7 @@ SelectFaction = $RED
     ChangeRgnOwner = LAT
   SelectRegion = $Shalimovo
     ChangeRgnOwner = LAT
-  SelectRegion = $KLATanovo
+  SelectRegion = $Karmanovo
     ChangeRgnOwner = LAT
   SelectRegion = $Fatezh
     ChangeRgnOwner = LAT
@@ -4791,9 +4784,6 @@ Actions
 SelectFaction = $RED
 
   ChangeOption = $gmaOptionDip;RED_BreakPeace_LAT;1
-
-SelectFaction = $CMN
-
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_LAT
 
@@ -4884,6 +4874,7 @@ StartEvent = evt_nam_RED_SignPeace_LIT_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
+  MinDate = 1918/12/16
   EvalFacRelationships = LIT;<;0
 
 Actions
@@ -4957,13 +4948,13 @@ SelectFaction = $RED
     ChangeRgnOwner = LIT
   SelectRegion = $Kirishi
     ChangeRgnOwner = LIT
-  SelectRegion = $OLITezh
+  SelectRegion = $Oredezh
     ChangeRgnOwner = LIT
   SelectRegion = $Chudovo
     ChangeRgnOwner = LIT
   SelectRegion = $Novgorod
     ChangeRgnOwner = LIT
-  SelectRegion = $KrLITtsy
+  SelectRegion = $Kresttsy
     ChangeRgnOwner = LIT
   SelectRegion = $Borovichi
     ChangeRgnOwner = LIT
@@ -4971,7 +4962,7 @@ SelectFaction = $RED
     ChangeRgnOwner = LIT
   SelectRegion = $Bologoie
     ChangeRgnOwner = LIT
-  SelectRegion = $ParLITo
+  SelectRegion = $Parfino
     ChangeRgnOwner = LIT
   SelectRegion = $Staraya Russa
     ChangeRgnOwner = LIT
@@ -5413,7 +5404,7 @@ SelectFaction = $RED
     ChangeRgnOwner = LIT
   SelectRegion = $Shalimovo
     ChangeRgnOwner = LIT
-  SelectRegion = $KLITanovo
+  SelectRegion = $Karmanovo
     ChangeRgnOwner = LIT
   SelectRegion = $Fatezh
     ChangeRgnOwner = LIT
@@ -5679,9 +5670,6 @@ Actions
 SelectFaction = $RED
 
   ChangeOption = $gmaOptionDip;RED_BreakPeace_LIT;1
-
-SelectFaction = $CMN
-
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_LIT
 
@@ -5772,6 +5760,7 @@ StartEvent = evt_nam_RED_SignPeace_ROM_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
+  MinDate = 1918/12/16
   EvalFacRelationships = ROM;<;0
 
 Actions
@@ -6013,7 +6002,7 @@ SelectFaction = $RED
     ChangeRgnOwner = ROM
   SelectRegion = $Vasylivka
     ChangeRgnOwner = ROM
-  SelectRegion = $MeROMopol
+  SelectRegion = $Melitopol
     ChangeRgnOwner = ROM
   SelectRegion = $Kakhovka
     ChangeRgnOwner = ROM
@@ -6054,7 +6043,7 @@ SelectFaction = $ROM
     ChangeRgnOwner = RED
   SelectRegion = $Iasi
     ChangeRgnOwner = RED
-  SelectRegion = $REDan
+  SelectRegion = $Roman
     ChangeRgnOwner = RED
   SelectRegion = $Vaslui
     ChangeRgnOwner = RED
@@ -6161,9 +6150,6 @@ Actions
 SelectFaction = $RED
 
   ChangeOption = $gmaOptionDip;RED_BreakPeace_ROM;1
-
-SelectFaction = $CMN
-
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_ROM
 
@@ -6575,6 +6561,7 @@ StartEvent = evt_nam_ANA_SignPeace_UKR_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
+  MinDate = 1918/12/16
   EvalFacRelationships = UKR;<;0
   EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
 
@@ -6644,8 +6631,6 @@ Conditions
   EvalRgnOwned = $Nikopol
 
 Actions
-
-SelectFaction = $CMN
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;ANA_BreakPeace_UKR
@@ -6738,6 +6723,7 @@ StartEvent = evt_nam_UKR_SignPeace_ANA_ON|1|0|NULL|NULL|NULL|NULL
 
 Conditions
 
+  MinDate = 1918/12/16
   EvalFacRelationships = ANA;<;0
   EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
 
@@ -6809,8 +6795,6 @@ Conditions
   EvalRgnOwned = $Ekaterinoslav
 
 Actions
-
-SelectFaction = $CMN
 
   GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
   ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;UKR_BreakPeace_ANA

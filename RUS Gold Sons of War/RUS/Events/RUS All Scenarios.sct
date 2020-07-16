@@ -105,7 +105,6 @@ Conditions
 
   CheckIsPlayer = NULL
   MinDate = 1918/12/01
-  MaxDate = 1923/12/30
   Probability = 35
   SelectSubUnits = FactionTags WHI DON KUB TER TEC;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
   EvalSubUnitSel = NULL
@@ -135,7 +134,7 @@ Conditions
 Actions
 
   SelectSubUnits = FactionTags KUB;Families $famLine $famMilitia $famCavalry $famLightInf;OnlyNotFixed;OnlyNPermFixed
-  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -50
+  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -20
 
 EndEvent
 
@@ -157,29 +156,7 @@ Conditions
 Actions
 
   SelectSubUnits = FactionTags TER;Families $famLine $famMilitia $famCavalry $famLightInf;OnlyNotFixed;OnlyNPermFixed
-  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -50
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-SelectRegion = $Novocherkassk
-
-StartEvent = evt_nam_DON_SouthernWhiteArmyDeserters|999|1|NULL|NULL|$Novocherkassk|NULL
-
-Conditions
-
-  CheckIsPlayer = NULL
-  MinDate = 1918/12/01
-  Probability = 35
-  SelectSubUnits = FactionTags DON;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
-  EvalSubUnitSel = NULL
-
-Actions
-
-  SelectSubUnits = FactionTags DON;Families $famLine $famCavalry;OnlyNotFixed;OnlyNPermFixed
-  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -50
+  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -20
 
 EndEvent
 
@@ -201,7 +178,7 @@ Conditions
 Actions
 
   SelectSubUnits = FactionTags DON;Families $famLine $famMilitia $famCavalry $famLightInf;OnlyNotFixed;OnlyNPermFixed
-  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -50
+  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -20
 
 EndEvent
 
@@ -6531,8 +6508,7 @@ StartEvent = evt_nam_Supply_WHI_AlliedSupplyAid|25|1|NULL|NULL|$Sevastopol|NULL
 
 Conditions
 
-  MinDate = 1919/03/10
-  MaxDate = 1919/12/30
+  MinDate = 1918/11/16
   EvalEvent = evt_nam_CMN_BritainStopsAid;=;0
   EvalEvent = evt_nam_CMN_BritainStopsAid2;=;0
 
@@ -6558,9 +6534,9 @@ StartEvent = evt_nam_Supply_WH3_SiberiaSupplyAid|14|1|NULL|NULL|$Vladivostok|NUL
 
 Conditions
 
-  MinDate = 1919/04/10
-  MaxDate = 1919/10/20
+  MinDate = 1918/11/16
   EvalEvent = evt_nam_CMN_BritainStopsAid;=;0
+  EvalEvent = evt_nam_CMN_BritainStopsAid2;=;0
 
 SelectFaction = $WH3
 
@@ -8922,7 +8898,7 @@ Conditions
 
   MinDate = 1918/01/01
   MaxDate = 1918/12/30
-  Probability = 25
+  Probability = 5
 
 Actions
 
@@ -8952,7 +8928,7 @@ Conditions
 
   MinDate = 1919/01/01
   MaxDate = 1919/12/30
-  Probability = 25
+  Probability = 5
 
 Actions
 
@@ -8982,7 +8958,7 @@ Conditions
 
   MinDate = 1920/01/01
   MaxDate = 1920/12/30
-  Probability = 25
+  Probability = 5
 
 Actions
 
@@ -9012,7 +8988,7 @@ Conditions
 
   MinDate = 1921/01/01
   MaxDate = 1921/12/30
-  Probability = 25
+  Probability = 5
 
 Actions
 
@@ -9042,7 +9018,7 @@ Conditions
 
   MinDate = 1922/01/01
   MaxDate = 1922/12/30
-  Probability = 25
+  Probability = 5
 
 Actions
 
@@ -9072,7 +9048,7 @@ Conditions
 
   MinDate = 1923/01/01
   MaxDate = 1923/12/30
-  Probability = 25
+  Probability = 5
 
 Actions
 
@@ -9167,12 +9143,12 @@ StartEvent = evt_nam_ANAtroopsLosseCohesionOutUkraine|999|1|NULL|NULL|$Huliaipol
 Conditions
 
   MinDate = 1917/06/01
-  SelectSubUnits = Area $Theater_No_ANA_Out_Ukraine;FactionTags ANA GRN RED UKR TEC
+  SelectSubUnits = Area $Theater_No_ANA_Out_Ukraine;Models $mdl_ANA_Lit $uni_ANA_Cav2 $uni_ANA_Inf2
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_No_ANA_Out_Ukraine;FactionTags ANA GRN RED UKR TEC
+  SelectSubUnits = Area $Theater_No_ANA_Out_Ukraine;Models $mdl_ANA_Lit $uni_ANA_Cav2 $uni_ANA_Inf2
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent
@@ -9185,12 +9161,12 @@ StartEvent = evt_nam_ANAtroopsLosseCohesionOutSiberia|999|1|NULL|NULL|$Huliaipol
 Conditions
 
   MinDate = 1917/06/01
-  SelectSubUnits = Area $Theater_No_ANA_Out_Siberia;FactionTags ANA GRN RED UKR TEC
+  SelectSubUnits = Area $Theater_No_ANA_Out_Siberia;Models $mdl_ANA_CosCav $mdl_ANA_CosInf $uni_ANA_Cav1 $uni_ANA_Inf1
   EvalSubUnitSel = NULL
 
 Actions
 
-  SelectSubUnits = Area $Theater_No_ANA_Out_Siberia;FactionTags ANA GRN RED UKR TEC
+  SelectSubUnits = Area $Theater_No_ANA_Out_Siberia;Models $mdl_ANA_CosCav $mdl_ANA_CosInf $uni_ANA_Cav1 $uni_ANA_Inf1
   AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
 
 EndEvent

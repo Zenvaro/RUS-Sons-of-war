@@ -65,6 +65,7 @@ Ability4 = $Deep_Raider
 Ability5 = $Ambusher
 Ability6 = $Diplomat
 Ability7 = $Multinational
+Ability8 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 1
 Morale = 0

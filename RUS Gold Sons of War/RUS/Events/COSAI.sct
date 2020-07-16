@@ -80,7 +80,7 @@ Actions
   AI.SetLocalInterest = $Manych;5;$Izobilnyy;5;$Svetlograd;5;$Stavropol;5;$Mineralnye Vody;5;$Sviatoy Krest;5;$Gheorgievsk;5;$Kursavka;5;
   AI.SetLocalInterest = $Saarema Shore;5;$Kihnu Island;5;$Northwest Aland;5;$Southeast Aland;5;$Cape Kerempe;5;$Bay of Asmara;5;$Gulf of Karasu;5;$Black Sea 1;5;$Black Sea 2;5;$Black Sea 3;5;$Black Sea 4;5;$Black Sea 5;5;$Central Black Sea;5;$Black Sea 6;5;$Black Sea 7;5;$Black Sea 8;5;$Black Sea 9;5;$Dogu Karedeniz;5;$Varna Shore;5;$West Gulf of Bothnia;5;$North Gulf of Botnhia;5;$Persia;5;$Greece;5;$France;5;$Great Britain;5;$Japan;5;$California;5;$North Pole;5;$Hong Kong;5;$Indochina;5;$Playboard1;5;$Playboard2;5;$Playboard3;5;$Playboard4;5;$Playboard5;5;$Playboard6;5;$Playboard7;5;$Playboard8;5;$Playboard9;5;$Playboard10;5;$Playboard11;5;$Playboard12;5;$Playboard13;5;$Playboard14;5;$Playboard15;5;$Playboard16;5;$Playboard17;5;$Playboard18;5;$Playboard19;5;$Playboard20;5;$Playboard21;5;$Playboard22;5;$Playboard23;5;$Playboard24;5;$Playboard25;5;$Playboard26;5;$Playboard28;5;$Playboard29;5;$Playboard30;5;$Playboard31;5;$Playboard32;5;$Playboard33;5;$Playboard34;5;$Playboard35;5;$Playboard36;5;$Playboard37;5;$Playboard38;5;$Playboard39;5;$Playboard40;5;$Playboard41;5;$Playboard42;5;$Playboard43;5;$Playboard44;5;$Playboard45;5;$Playboard46;5;$Playboard47;5;$Playboard48;5;$Playboard49;5;$Playboard50;5;$Playboard51;5;$Playboard52;5;$Playboard53;5;$Playboard54;5;$Playboard55;5;$Playboard56;5;$Playboard57;5;$Playboard58;5;$Playboard59;5;$Playboard60;5;$Playboard61;5;$Playboard62;5;$Playboard63;5;$Playboard64;5;$Playboard65;5;$Playboard66;5;$Playboard67;5;$Playboard68;5;$Playboard69;5;$Playboard70;5;$Playboard71;5;$Playboard72;5;$Playboard73;5;$Playboard74;5;$Playboard75;5;$Playboard76;5;$Playboard77;5;$Playboard78;5;$Playboard79;5;$Playboard80;5;$Playboard81;5;$Playboard82;5;$Playboard83;5;$Playboard84;5;$Playboard85;5;$Playboard86;5;$Playboard87;5;$Playboard88;5;$Playboard89;5;$Playboard90;5;$Playboard91;5;$Playboard92;5;$Playboard93;5;$Playboard94;5;$Playboard95;5;$Playboard96;5;$Playboard97;5;$Playboard98;5;$Playboard99;5;$Playboard100;5;$Playboard101;5;$Playboard102;5;$Playboard103;5;$Playboard104;5;$Playboard105;5;$Playboard106;5;$Playboard107;5;$Playboard108;5;$Playboard109;5;$Playboard110;5;$Playboard111;5;$Playboard112;5;$Playboard113;5;$Playboard114;5;$Playboard115;5;$Playboard116;5;$Playboard117;5;$Playboard118;5;$Playboard119;5;$Playboard120;5;$Playboard121;5;
   AI.SetLocalInterest = $Pomerania Sea;5;$Gulf of Danzig;5;$Wisla Haf;5;$Preussen Bucht;5;$Bay of Memel;5;$Niemen Haf;5;$Baltic Sea;5;$Akmenrags;5;$Gotland;5;$Braviken;5;$Visby Bay;5;$Oxelosund;5;$Farosund;5;$Kurland Channel;5;$Ventspils Bay;5;$Kolkasrags;5;$Gulf of Riga;5;$Vormsi Straits;5;$Muhu Bay;5;$Stockholm Sund;5;$Southwest Aland;5;$Bottniska Viken;5;$Gulf of Bjornborg;5;$Bay of Turku;5;$Gulf of Finland;5;$Nyland Coast;5;$Estonian Coast;5;$Bay of Viipuri;5;$Gulf of Narva;5;$Neva Bay;5;$East Gulf of Bothnia;5;$Gulf of Bothnia;5;$Northwest Gulf of Bothnia;5;$Coast of Vaasa;5;$Oland;5;$Kiel Bay;5;$Kronstadt Approaches;5;
-  AI.SetLocalInterest = $Cape Kaliakas;5;$Delta Dunarea;5;$Ozero Bay;5;$Gulf of Odessa;5;$Mouth of the Dnieper;5;$Eupatoria Bay;5;$Gulf of Sevastopol;5;$Cape Sarytch;5;$Gulf of Feodosia;5;$Taman Bay;5;$Kertch Straits;5;$Arabatskaia Bay;5;$Bay of Berdiansk;5;$Sea of Azov;5;$Gulf of Taganrog;5;$Mouth of the Eastern;5;$Anapa Bay;5;$Coast of Sochi;5;$Coast of Abkhazia;5;$Coast of Georgia;5;$Western Black Sea;5;$Eastern Black Sea;5;$Burgas Shore;5;$Turkish Straits;5;
+  AI.SetLocalInterest = $Cape Kaliakas;5;$Delta DunArea;5;$Ozero Bay;5;$Gulf of Odessa;5;$Mouth of the Dnieper;5;$Eupatoria Bay;5;$Gulf of Sevastopol;5;$Cape Sarytch;5;$Gulf of Feodosia;5;$Taman Bay;5;$Kertch Straits;5;$Arabatskaia Bay;5;$Bay of Berdiansk;5;$Sea of Azov;5;$Gulf of Taganrog;5;$Mouth of the Eastern;5;$Anapa Bay;5;$Coast of Sochi;5;$Coast of Abkhazia;5;$Coast of Georgia;5;$Western Black Sea;5;$Eastern Black Sea;5;$Burgas Shore;5;$Turkish Straits;5;
   AI.SetLocalInterest = $Wallachia;5;$Constanta;5;$Buzau;5;$Calarasi;5;$Bucuresti;5;
   AI.SetLocalInterest = $Kalya;5;$Upper Kama;5;$Votkinsk;5;$Chaikovskiy;5;$Perm Shore;5;$Ilinskiy;5;$Perm;5;$Kungur;5;$Lysva;5;$Shalya;5;$Achit;5;$Krasnoufimsk;5;$Berezniki;5;$Vassilevsko-Chaitanski;5;$Redva;5;$Nevyansk;5;$Ekaterinburg;5;$Nizhny Tagil;5;$Visim;5;$Uralsk;5;$Kizel;5;$Kachkanar;5;$Lobva;5;$Sosva;5;$Asbest;5;$Ozersk;5;$Alapaevsk;5;$Vishnevogorsk;5;$Kamensk-Uralskskiy;5;$Kamyshlov;5;$Dalmatovo;5;$Kataysk;5;$Tugulym;5;$Ertarskiy;5;$Isetskoye;5;$Shadrinsk;5;$Irbit;5;$Makhnevo;5;$Kudymkar;5;$Kerchevskiy;5;$Kazevo;5;$Cherdyn;5;$Solikamsk;5;$Nyrob;5;$Northern Uralsk;5;$Bogoslovsk;5;$Nadejdinsk;5;$Ous;5;$Ivdel;5;$Pelym;5;$Ushma;5;$Kubari;5;$Bagaryak;5;
   AI.SetLocalInterest = $Soroka;5;$Onega Bay;5;$Sumski Posad;5;$Emptsa;5;$Onega;5;$Malozhma;5;$Dvina Bay;5;$Letniy Bereg;5;$Igisha;5;$Kodino;5;$Obozerskaya;5;$Maloshuyka;5;$Arkhangelsk;5;$Bereznik;5;$Savinskiy;5;$Nyandoma;5;$Potashevskaya;5;$Ust-Shonosha;5;$Konocha;5;$Shenkursk;5;$Dvinskoy;5;$Uemskiy;5;$Middle Dvina;5;$North Dvina;5;$Pukshenga;5;$Upper Toyma;5;$Murmansk;5;$Aleksandrovsk;5;$Severomorsk;5;$Petrovskiy Yam;5;$Chekuevo;5;$Palozero;5;$Emetskoye;5;$Stryukovo;5;$Pletskaya;5;$Chamovo;5;$Tulgas;5;
@@ -124,7 +124,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Theater_Ural;FactionTags COS KUB;Domains $Land
+  SelectSubUnits = Area $Theater_Ural;FactionTags COS KUB;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -145,7 +145,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneUral;=;1
-  SelectSubUnits = area $Theater_Ural;FactionTags COS KUB;Domains $Land
+  SelectSubUnits = Area $Theater_Ural;FactionTags COS KUB;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -167,7 +167,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Theater_Eastern;FactionTags COS DON;Domains $Land
+  SelectSubUnits = Area $Theater_Eastern;FactionTags COS DON;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -187,8 +187,8 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  EvalEvent = evt_nam_AI_COSzoneEastern;=;1
-  SelectSubUnits = area $Theater_Eastern;FactionTags COS DON;Domains $Land
+  EvalEvent = evt_nam_AI_COSzoneEastefrn;=;1
+  SelectSubUnits = Area $Theater_Eastern;FactionTags COS DON;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -210,7 +210,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Theater_Uralsksk;FactionTags COS URL;Domains $Land
+  SelectSubUnits = Area $Theater_Uralsksk;FactionTags COS URL;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -231,7 +231,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneUralsksk;=;1
-  SelectSubUnits = area $Theater_Uralsksk;FactionTags COS URL;Domains $Land
+  SelectSubUnits = Area $Theater_Uralsksk;FactionTags COS URL;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -253,7 +253,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Theater_Orenburg;FactionTags COS ORE;Domains $Land
+  SelectSubUnits = Area $Theater_Orenburg;FactionTags COS ORE;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -274,7 +274,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneOrenburg;=;1
-  SelectSubUnits = area $Theater_Orenburg;FactionTags COS ORE;Domains $Land
+  SelectSubUnits = Area $Theater_Orenburg;FactionTags COS ORE;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -296,7 +296,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Theater_Akmolinsk;FactionTags COS SIB;Domains $Land
+  SelectSubUnits = Area $Theater_Akmolinsk;FactionTags COS SIB;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -317,7 +317,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneAkmolinsk;=;1
-  SelectSubUnits = area $Theater_Akmolinsk;FactionTags COS SIB;Domains $Land
+  SelectSubUnits = Area $Theater_Akmolinsk;FactionTags COS SIB;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -340,7 +340,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Theater_Zabaikal;FactionTags COS ZAB;Domains $Land
+  SelectSubUnits = Area $Theater_Zabaikal;FactionTags COS ZAB;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -361,7 +361,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneZaibakal;=;1
-  SelectSubUnits = area $Theater_Zabaikal;FactionTags COS ZAB;Domains $Land
+  SelectSubUnits = Area $Theater_Zabaikal;FactionTags COS ZAB;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -383,7 +383,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Theater_Vladivostock;FactionTags COS ZAB;Domains $Land
+  SelectSubUnits = Area $Theater_Vladivostock;FactionTags COS ZAB;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -404,7 +404,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneVladivostok;=;1
-  SelectSubUnits = area $Theater_Vladivostock;FactionTags COS ZAB;Domains $Land
+  SelectSubUnits = Area $Theater_Vladivostock;FactionTags COS ZAB;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -426,7 +426,7 @@ Conditions
   CheckAILevel = 1
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
-  SelectSubUnits = area $Theater_Siberia;FactionTags COS SEM;Domains $Land
+  SelectSubUnits = Area $Theater_Siberia;FactionTags COS SEM;Domains $Land
   EvalSubUnitCount = >=;1
 
 Actions
@@ -447,7 +447,7 @@ Conditions
   MinDate = 1917/11/01
   MaxDate = 1923/01/01
   EvalEvent = evt_nam_AI_COSzoneSiberia;=;1
-  SelectSubUnits = area $Theater_Siberia;FactionTags COS SEM;Domains $Land
+  SelectSubUnits = Area $Theater_Siberia;FactionTags COS SEM;Domains $Land
   EvalSubUnitCount = =;0
 
 Actions
@@ -469,12 +469,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 15
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Southern;100
+  AI.SetAggro = $Theater_Southern;100
 
 EndEvent
 
@@ -489,12 +489,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 10
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Southern;150
+  AI.SetAggro = $Theater_Southern;150
 
 EndEvent
 
@@ -509,12 +509,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 8
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Southern;200
+  AI.SetAggro = $Theater_Southern;200
 
 EndEvent
 
@@ -529,12 +529,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 10
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Southern;400
+  AI.SetAggro = $Theater_Southern;400
 
 EndEvent
 
@@ -549,12 +549,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 5
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Southern;600
+  AI.SetAggro = $Theater_Southern;600
 
 EndEvent
 
@@ -569,12 +569,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 15
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Southern;900
+  AI.SetAggro = $Theater_Southern;900
 
 EndEvent
 
@@ -589,12 +589,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 12
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Southern;70
+  AI.SetAggro = $Theater_Southern;70
 
 EndEvent
 
@@ -609,12 +609,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 15
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Ural;100
+  AI.SetAggro = $Theater_Ural;100
 
 EndEvent
 
@@ -629,12 +629,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 10
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Ural;150
+  AI.SetAggro = $Theater_Ural;150
 
 EndEvent
 
@@ -649,12 +649,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 8
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Ural;200
+  AI.SetAggro = $Theater_Ural;200
 
 EndEvent
 
@@ -669,12 +669,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 10
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Ural;400
+  AI.SetAggro = $Theater_Ural;400
 
 EndEvent
 
@@ -689,12 +689,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 5
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Ural;600
+  AI.SetAggro = $Theater_Ural;600
 
 EndEvent
 
@@ -709,12 +709,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 15
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Ural;900
+  AI.SetAggro = $Theater_Ural;900
 
 EndEvent
 
@@ -729,12 +729,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 12
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Ural;70
+  AI.SetAggro = $Theater_Ural;70
 
 EndEvent
 
@@ -748,13 +748,11 @@ Conditions
 
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 15
-  CheckAILevel = 1
-  MinDate = 1918/10/01
-   
+  CheckAILevel = 1   
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Siberia;100
+  AI.SetAggro = $Theater_Siberia;100
 
 EndEvent
 
@@ -769,12 +767,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 10
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Siberia;150
+  AI.SetAggro = $Theater_Siberia;150
 
 EndEvent
 
@@ -789,12 +787,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 8
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Siberia;200
+  AI.SetAggro = $Theater_Siberia;200
 
 EndEvent
 
@@ -809,12 +807,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 10
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Siberia;400
+  AI.SetAggro = $Theater_Siberia;400
 
 EndEvent
 
@@ -829,12 +827,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 5
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Siberia;600
+  AI.SetAggro = $Theater_Siberia;600
 
 EndEvent
 
@@ -849,12 +847,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 15
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Siberia;900
+  AI.SetAggro = $Theater_Siberia;900
 
 EndEvent
 
@@ -869,12 +867,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 12
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Siberia;70
+  AI.SetAggro = $Theater_Siberia;70
 
 EndEvent
 
@@ -890,12 +888,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 15
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Eastern;100
+  AI.SetAggro = $Theater_Eastern;100
 
 EndEvent
 
@@ -910,12 +908,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 10
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Eastern;150
+  AI.SetAggro = $Theater_Eastern;150
 
 EndEvent
 
@@ -930,12 +928,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 8
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Eastern;200
+  AI.SetAggro = $Theater_Eastern;200
 
 EndEvent
 
@@ -950,12 +948,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 10
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Eastern;400
+  AI.SetAggro = $Theater_Eastern;400
 
 EndEvent
 
@@ -970,12 +968,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 5
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Eastern;600
+  AI.SetAggro = $Theater_Eastern;600
 
 EndEvent
 
@@ -990,12 +988,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 15
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Eastern;900
+  AI.SetAggro = $Theater_Eastern;900
 
 EndEvent
 
@@ -1010,12 +1008,12 @@ Conditions
   TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
   Probability = 12
   CheckAILevel = 1
-  MinDate = 1918/10/01
+
    
 
 Actions
 
-  AI.SetTheaPrev = $Theater_Eastern;70
+  AI.SetAggro = $Theater_Eastern;70
 
 EndEvent
 
@@ -1267,12 +1265,10 @@ Conditions
   EvalRgnWeather = $Ekaterinodar;>=;2;
   EvalRgnWeather = $Rostov;>=;2;
   Probability = 15
-  MinDate = 1918/05/01
-   
 
 Actions
 
-  AI.SetTheaPrev  = $Theater_Southern;25
+  AI.SetAggro  = $Theater_Southern;25
 
 EndEvent
 
@@ -1289,12 +1285,12 @@ Conditions
   EvalRgnWeather = $Uralsk;>=;2;
   EvalRgnWeather = $Orenburg;>=;2;
   Probability = 15
-  MinDate = 1918/05/01
+
    
 
 Actions
 
-  AI.SetTheaPrev  = $Theater_Ural;25
+  AI.SetAggro  = $Theater_Ural;25
 
 EndEvent
 
@@ -1314,12 +1310,12 @@ Conditions
   EvalRgnWeather = $Khabarovsk;>=;2;
   EvalRgnWeather = $Vladivostok;>=;2;
   Probability = 15
-  MinDate = 1918/05/01
+
    
 
 Actions
 
-  AI.SetTheaPrev  = $Theater_Eastern;25
+  AI.SetAggro  = $Theater_Eastern;25
 
 EndEvent
 
@@ -1338,12 +1334,12 @@ Conditions
   EvalRgnWeather = $Krasnoyarsk;>=;2;
   EvalRgnWeather = $Semipalatinsk;>=;2;
   Probability = 15
-  MinDate = 1918/05/01
+
    
 
 Actions
 
-  AI.SetTheaPrev  = $Theater_Siberia;25
+  AI.SetAggro  = $Theater_Siberia;25
 
 EndEvent
 
@@ -1361,12 +1357,12 @@ Conditions
   EvalRgnWeather = $Grozny;<=;1;
   EvalRgnWeather = $Ekaterinodar;<=;1;
   EvalRgnWeather = $Rostov;<=;1;
-  MinDate = 1918/05/01
+
    
 
 Actions
 
-  AI.SetTheaPrev  = $Theater_Southern;100
+  AI.SetAggro  = $Theater_Southern;100
   SetEvtOccurs = evt_nam_Winter_COS_Southern;CuOccurs;0;
 
 EndEvent
@@ -1384,12 +1380,12 @@ Conditions
   EvalEvent = evt_nam_Winter_COS_Ural;=;1;
   EvalRgnWeather = $Uralsk;<=;1;
   EvalRgnWeather = $Orenburg;<=;1;
-  MinDate = 1918/05/01
+
    
 
 Actions
 
-  AI.SetTheaPrev  = $Theater_Ural;100
+  AI.SetAggro  = $Theater_Ural;100
   SetEvtOccurs = evt_nam_Winter_COS_Ural;CuOccurs;0;
 
 EndEvent
@@ -1409,12 +1405,12 @@ Conditions
   EvalRgnWeather = $Chita;<=;1;
   EvalRgnWeather = $Khabarovsk;<=;1;
   EvalRgnWeather = $Vladivostok;<=;1;
-  MinDate = 1918/05/01
+
    
 
 Actions
 
-  AI.SetTheaPrev  = $Theater_Eastern;100
+  AI.SetAggro  = $Theater_Eastern;100
   SetEvtOccurs = evt_nam_Winter_COS_Eastern;CuOccurs;0;
 
 EndEvent
@@ -1434,12 +1430,12 @@ Conditions
   EvalRgnWeather = $Tomsk;<=;1;
   EvalRgnWeather = $Krasnoyarsk;<=;1;
   EvalRgnWeather = $Semipalatinsk;<=;1;
-  MinDate = 1918/05/01
+
    
 
 Actions
 
-  AI.SetTheaPrev  = $Theater_Siberia;100
+  AI.SetAggro  = $Theater_Siberia;100
   SetEvtOccurs = evt_nam_Winter_COS_Siberia;CuOccurs;0;
 
 EndEvent

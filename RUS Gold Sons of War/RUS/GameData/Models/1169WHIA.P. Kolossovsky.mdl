@@ -62,6 +62,7 @@ Ability2 = $Infantryman
 Ability3 = $Ex-Imperial_Officer
 Ability4 = $Partisan
 Ability5 = $Cossack_Commander
+Ability6 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 1
 Morale = 0

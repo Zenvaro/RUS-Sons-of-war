@@ -63,6 +63,7 @@ Ability3 = $Strong_Discipline
 Ability4 = $Partisan
 Ability5 = $Training_Officer
 Ability6 = $Fast_Move
+Ability7 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 3
 Morale = 0

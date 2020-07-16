@@ -137,14 +137,14 @@ StartEvent = evt_nam_RED_IvanovoTankFactory_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionVar;RED_IvanovoTankFactory;=;1
-  EvalEngagementPts = >=;10
+  EvalEngagementPts = >=;5
   EvalMoney = >=;50
   EvalWSU = >=;15
   EvalRgnOwned = $Ivanovo
 
 Actions
 
-  ChgFacEngagementPts = -10
+  ChgFacEngagementPts = -5
   ChangeMoneyPool = -50
   ChangeWSUPool = -15
   AddDynGraphic = $Ivanovo;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
@@ -335,14 +335,14 @@ StartEvent = evt_nam_RED_Nizhniy_NovgorodTankFactory_Check|999|0|NULL|NULL|NULL|
 Conditions
 
   CheckOption = $gmaOptionVar;RED_Nizhniy_NovgorodTankFactory;=;1
-  EvalEngagementPts = >=;10
+  EvalEngagementPts = >=;5
   EvalMoney = >=;50
   EvalWSU = >=;15
   EvalRgnOwned = $Nizhniy Novgorod
 
 Actions
 
-  ChgFacEngagementPts = -10
+  ChgFacEngagementPts = -5
   ChangeMoneyPool = -50
   ChangeWSUPool = -15
   AddDynGraphic = $Nizhniy Novgorod;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
@@ -530,14 +530,14 @@ StartEvent = evt_nam_RED_MoscowFactory_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionVar;RED_MoscowFactory;=;1
-  EvalEngagementPts = >=;10
+  EvalEngagementPts = >=;5
   EvalMoney = >=;50
   EvalWSU = >=;10
   EvalRgnOwned = $Moscow
 
 Actions
 
-  ChgFacEngagementPts = -10
+  ChgFacEngagementPts = -5
   ChangeMoneyPool = -50
   ChangeWSUPool = -10
   AddDynGraphic = $Moscow;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
@@ -888,14 +888,14 @@ StartEvent = evt_nam_RED_TulaFactory_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionVar;RED_TulaFactory;=;1
-  EvalEngagementPts = >=;10
+  EvalEngagementPts = >=;5
   EvalMoney = >=;50
   EvalWSU = >=;10
   EvalRgnOwned = $Tula
 
 Actions
 
-  ChgFacEngagementPts = -10
+  ChgFacEngagementPts = -5
   ChangeMoneyPool = -50
   ChangeWSUPool = -10
   AddDynGraphic = $Tula;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;100;strIndustryConstruction
@@ -1716,3 +1716,79 @@ EndEvent
 
 NULL ==========================================================================
 
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_RED_Sell_WSU;MsgString;opt_desc_RED_Sell_WSU;ToolString;opt_hint_RED_Sell_WSU;SubType;RED_Sell_WSU;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;RED_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_RED_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionVar;RED_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_RED_Sell_WSU;MsgString;opt_desc_RED_Sell_WSU;ToolString;opt_hint_RED_Sell_WSU;SubType;RED_Sell_WSU;SParam1;RED
+
+EndEvent

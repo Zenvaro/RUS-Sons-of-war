@@ -68,6 +68,7 @@ Ability8 = $Militiaman
 Ability9 = $Recruiting_Officer
 Ability10 = $Deep_Raider
 Ability11 = $Honour
+Ability12 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 10
 Morale = 0

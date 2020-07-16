@@ -65,6 +65,7 @@ Ability4 = $Political_Unit
 Ability5 = $Honour
 Ability6 = $Good_Cmd
 Ability7 = $Multinational
+Ability8 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 3
 Morale = 0

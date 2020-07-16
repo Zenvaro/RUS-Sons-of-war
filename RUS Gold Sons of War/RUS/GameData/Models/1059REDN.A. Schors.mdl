@@ -66,6 +66,7 @@ Ability6 = $Recruiting_Officer
 Ability7 = $Superior_Tactician
 Ability8 = $Defensive_Commander
 Ability9 = $Multinational
+Ability10 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 1
 Morale = 0

@@ -68,6 +68,7 @@ Ability8 = $Good_Cmd
 Ability9 = $Good_Admin_Army
 Ability10 = $Beloved_By_Army
 Ability11 = $Strong_Discipline
+Ability12 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 1
 Morale = 0

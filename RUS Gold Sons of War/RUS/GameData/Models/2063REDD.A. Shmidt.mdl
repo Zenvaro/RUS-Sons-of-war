@@ -66,6 +66,7 @@ Ability6 = $Defensive_Commander
 Ability7 = $Ex-Imperial_Officer
 Ability8 = $Honour 
 Ability9 = $Multinational
+Ability10 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 1
 Morale = 0

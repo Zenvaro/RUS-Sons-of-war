@@ -67,6 +67,7 @@ Ability7 = $Partisan
 Ability8 = $Deep_Raider
 Ability9 = $Very_Fast_Raider
 Ability10 = $Recruiting_Officer
+Ability11 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 1
 Morale = 0

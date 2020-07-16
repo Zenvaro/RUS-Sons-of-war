@@ -59,6 +59,7 @@ SupCbtPen = 0
 Ability0 = $Propagandist
 Ability1 = $Cossack_Commander3
 Ability2 = $Partisan
+Ability3 = $Very_Fast_Raider
 VPValue = 1
 POLValue = 1
 Morale = 0
