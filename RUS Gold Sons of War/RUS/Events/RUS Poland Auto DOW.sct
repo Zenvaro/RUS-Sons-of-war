@@ -1376,13 +1376,6 @@ SelectRegion = $Vilnius
     SetName = 6th Infantry Div.
   Apply
   CreateUnit
-    GMEParam = 2
-    SetType = $uni_POL_Dojana-Surowki1
-    FlavorName = 2nd Legion Div.
-    SetName = E. Dojana-Surowki
-  Apply
-  CreateUnit
-    SetCommit = 3
     SetType = $uni_POL_Bde1
     SetLevel = 2
     SetName = 2nd Legion Div.
@@ -1591,13 +1584,6 @@ SelectRegion = $Kowel
     SetName = 9th Infantry Div.
   Apply
   CreateUnit
-    GMEParam = 2
-    SetType = $uni_POL_Kaliszek1
-    FlavorName = 4th Infantry Div.
-    SetName = S.Z. Kaliszek
-  Apply
-  CreateUnit
-    SetCommit = 3
     SetType = $uni_POL_Bde1
     SetLevel = 2
     SetName = 4th Infantry Div.

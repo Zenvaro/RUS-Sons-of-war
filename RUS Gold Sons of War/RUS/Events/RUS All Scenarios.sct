@@ -3086,7 +3086,7 @@ Conditions
 SelectFaction = $RED
 
   EvalRgnOwned = $Hungary
-  EvalRgnOwned = $Bucuresti
+  EvalRgnOwned = $Chisinau
 
 Actions
 
@@ -3110,69 +3110,9 @@ SelectFaction = $RED
 SelectFaction = $RED
 SelectRegion = $Hungary
 
-  CreateGroup
-    Posture = $Defensive
-    SetKind = $Land
-    Entranch = 6
-    InCS = 1
-    FixType = 0
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Art0
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Art0
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Art0
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Art0
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Art0
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Art0
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Art0
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Art0
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Art0
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Art0
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Sup1
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Sup1
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Sup1
-    SetName = Budapest Fortifications
-  Apply
-  CreateUnit
-    SetType = $uni_RED_Sup1
-    SetName = Budapest Fortifications
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Hungarian Lines
   Apply
 
 SelectFaction = $RED
@@ -3406,7 +3346,7 @@ Conditions
 Actions
 
   SelectSubUnits = Area $Theater_Stalin_VS_Southern;FactionTags RED TEC
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -30
 
 EndEvent
 
@@ -3443,7 +3383,7 @@ Conditions
 Actions
 
   SelectSubUnits = Area $Theater_Western;FactionTags RED TEC
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -30
 
 EndEvent
 
@@ -3478,7 +3418,7 @@ Conditions
 Actions
 
   SelectSubUnits = Area $Theater_Southern;FactionTags RED TEC
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -30
 
 EndEvent
 
@@ -3501,7 +3441,7 @@ NULL ==========================================================================
 SelectFaction = $RED
 SelectRegion = $Kharkov
 
-StartEvent = evt_nam_RED_ForcesMayBeLockedByStalinSouth2|999|1|NULL|NULL|$Kharkov|NULL
+StartEvent = evt_nam_RED_ForcesMayBeLockedByStalinSouthWest|999|1|NULL|NULL|$Kharkov|NULL
 
 Conditions
 
@@ -3513,7 +3453,7 @@ Conditions
 Actions
 
   SelectSubUnits = Area $Theater_Ukraine;FactionTags RED TEC
-  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -50
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -30
 
 EndEvent
 
@@ -3535,6 +3475,156 @@ Actions
 EndEvent
 
 NULL ==========================================================================
+
+SelectFaction = $ANA
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_ANA_Everyone_Moral_Balance2|999|0|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  EvalMorale = >=;190
+
+Actions
+
+  ChangeFacMorale = -10
+
+EndEvent
+
+SelectFaction = $UKR
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_UKR_Everyone_Moral_Balance2|999|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  EvalMorale = >=;190
+
+Actions
+
+  ChangeFacMorale = -10
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_Everyone_Moral_Balance2|999|0|NULL|NULL|$Sevastopol|NULL
+
+Conditions
+
+  EvalMorale = >=;190
+
+Actions
+
+  ChangeFacMorale = -10
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Everyone_Moral_Balance2|999|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  EvalMorale = >=;190
+
+Actions
+
+  ChangeFacMorale = -10
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Everyone_Moral_Balance2|999|0|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  EvalMorale = >=;190
+
+Actions
+
+  ChangeFacMorale = -10
+
+EndEvent
+
+SelectFaction = $ANA
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_ANA_Everyone_Moral_Balance1|999|0|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  EvalMorale = <=;10
+
+Actions
+
+  ChangeFacMorale = 10
+
+EndEvent
+
+SelectFaction = $UKR
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_UKR_Everyone_Moral_Balance1|999|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  EvalMorale = <=;10
+
+Actions
+
+  ChangeFacMorale = 10
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_Everyone_Moral_Balance1|999|0|NULL|NULL|$Sevastopol|NULL
+
+Conditions
+
+  EvalMorale = <=;10
+
+Actions
+
+  ChangeFacMorale = 10
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_Everyone_Moral_Balance1|999|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  EvalMorale = <=;10
+
+Actions
+
+  ChangeFacMorale = 10
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_Everyone_Moral_Balance1|999|0|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  EvalMorale = <=;10
+
+Actions
+
+  ChangeFacMorale = 10
+
+EndEvent
 
 SelectFaction = $RED
 SelectRegion = $Moscow
@@ -3826,24 +3916,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $RED
-SelectRegion = $Moscow
-
-StartEvent = evt_nam_RED_Moral_BalanceMoscow2|999|1|NULL|NULL|$Moscow|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Moscow
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
 SelectRegion = $Petrograd
 
 StartEvent = evt_nam_RED_Moral_BalancePetrograd|999|1|NULL|NULL|$Petrograd|NULL
@@ -3857,24 +3929,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-SelectRegion = $Petrograd
-
-StartEvent = evt_nam_RED_Moral_BalancePetrograd2|999|1|NULL|NULL|$Petrograd|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Petrograd
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -3900,24 +3954,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $RED
-SelectRegion = $Kazan
-
-StartEvent = evt_nam_RED_Moral_BalanceKazan2|999|1|NULL|NULL|$Kazan|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Kazan
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
 SelectRegion = $Kiev
 
 StartEvent = evt_nam_RED_Moral_BalanceKiev|999|1|NULL|NULL|$Kiev|NULL
@@ -3931,24 +3967,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_RED_Moral_BalanceKiev2|999|1|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Kiev
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -3973,22 +3991,6 @@ EndEvent
 
 NULL ==========================================================================
 
-SelectFaction = $RED
-SelectRegion = $Riga
-
-StartEvent = evt_nam_RED_Moral_BalanceRiga2|999|1|NULL|NULL|$Riga|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Riga
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
 NULL ==========================================================================
 
 SelectFaction = $RED
@@ -4005,24 +4007,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-SelectRegion = $Baku
-
-StartEvent = evt_nam_RED_Moral_BalanceBaku2|999|1|NULL|NULL|$Baku|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Baku
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -4048,24 +4032,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $RED
-SelectRegion = $Omsk
-
-StartEvent = evt_nam_RED_Moral_BalanceOmsk2|999|1|NULL|NULL|$Omsk|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Omsk
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
 SelectRegion = $Ekaterinburg
 
 StartEvent = evt_nam_RED_Moral_BalanceEkaterinburg|999|1|NULL|NULL|$Ekaterinburg|NULL
@@ -4079,24 +4045,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-SelectRegion = $Ekaterinburg
-
-StartEvent = evt_nam_RED_Moral_BalanceEkaterinburg2|999|1|NULL|NULL|$Ekaterinburg|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Ekaterinburg
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -4122,24 +4070,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $RED
-SelectRegion = $Sevastopol
-
-StartEvent = evt_nam_RED_Moral_BalanceSevastopol2|999|1|NULL|NULL|$Sevastopol|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Sevastopol
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
 SelectRegion = $Rostov
 
 StartEvent = evt_nam_RED_Moral_BalanceRostov|999|1|NULL|NULL|$Rostov|NULL
@@ -4153,24 +4083,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $RED
-SelectRegion = $Rostov
-
-StartEvent = evt_nam_RED_Moral_BalanceRostov2|999|1|NULL|NULL|$Rostov|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Rostov
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -4196,24 +4108,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $WH3
-SelectRegion = $Moscow
-
-StartEvent = evt_nam_WH3_Moral_BalanceMoscow2|999|1|NULL|NULL|$Moscow|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Moscow
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
 SelectRegion = $Petrograd
 
 StartEvent = evt_nam_WH3_Moral_BalancePetrograd|999|1|NULL|NULL|$Petrograd|NULL
@@ -4227,24 +4121,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
-SelectRegion = $Petrograd
-
-StartEvent = evt_nam_WH3_Moral_BalancePetrograd2|999|1|NULL|NULL|$Petrograd|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Petrograd
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -4270,24 +4146,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $WH3
-SelectRegion = $Kazan
-
-StartEvent = evt_nam_WH3_Moral_BalanceKazan2|999|1|NULL|NULL|$Kazan|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Kazan
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
 SelectRegion = $Kiev
 
 StartEvent = evt_nam_WH3_Moral_BalanceKiev|999|1|NULL|NULL|$Kiev|NULL
@@ -4301,24 +4159,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_WH3_Moral_BalanceKiev2|999|1|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Kiev
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -4344,24 +4184,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $WH3
-SelectRegion = $Riga
-
-StartEvent = evt_nam_WH3_Moral_BalanceRiga2|999|1|NULL|NULL|$Riga|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Riga
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
 SelectRegion = $Baku
 
 StartEvent = evt_nam_WH3_Moral_BalanceBaku|999|1|NULL|NULL|$Baku|NULL
@@ -4375,24 +4197,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
-SelectRegion = $Baku
-
-StartEvent = evt_nam_WH3_Moral_BalanceBaku2|999|1|NULL|NULL|$Baku|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Baku
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -4418,24 +4222,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $WH3
-SelectRegion = $Omsk
-
-StartEvent = evt_nam_WH3_Moral_BalanceOmsk2|999|1|NULL|NULL|$Omsk|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Omsk
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
 SelectRegion = $Ekaterinburg
 
 StartEvent = evt_nam_WH3_Moral_BalanceEkaterinburg|999|1|NULL|NULL|$Ekaterinburg|NULL
@@ -4449,24 +4235,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
-SelectRegion = $Ekaterinburg
-
-StartEvent = evt_nam_WH3_Moral_BalanceEkaterinburg2|999|1|NULL|NULL|$Ekaterinburg|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Ekaterinburg
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -4492,24 +4260,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $WH3
-SelectRegion = $Sevastopol
-
-StartEvent = evt_nam_WH3_Moral_BalanceSevastopol2|999|1|NULL|NULL|$Sevastopol|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Sevastopol
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
 SelectRegion = $Rostov
 
 StartEvent = evt_nam_WH3_Moral_BalanceRostov|999|1|NULL|NULL|$Rostov|NULL
@@ -4523,24 +4273,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WH3
-SelectRegion = $Rostov
-
-StartEvent = evt_nam_WH3_Moral_BalanceRostov2|999|1|NULL|NULL|$Rostov|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Rostov
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -4566,24 +4298,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $WHI
-SelectRegion = $Moscow
-
-StartEvent = evt_nam_WHI_Moral_BalanceMoscow2|999|1|NULL|NULL|$Moscow|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Moscow
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
 SelectRegion = $Petrograd
 
 StartEvent = evt_nam_WHI_Moral_BalancePetrograd|999|1|NULL|NULL|$Petrograd|NULL
@@ -4597,24 +4311,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-SelectRegion = $Petrograd
-
-StartEvent = evt_nam_WHI_Moral_BalancePetrograd2|999|1|NULL|NULL|$Petrograd|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Petrograd
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -4640,24 +4336,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $WHI
-SelectRegion = $Kazan
-
-StartEvent = evt_nam_WHI_Moral_BalanceKazan2|999|1|NULL|NULL|$Kazan|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Kazan
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
 SelectRegion = $Kiev
 
 StartEvent = evt_nam_WHI_Moral_BalanceKiev|999|1|NULL|NULL|$Kiev|NULL
@@ -4671,24 +4349,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-SelectRegion = $Kiev
-
-StartEvent = evt_nam_WHI_Moral_BalanceKiev2|999|1|NULL|NULL|$Kiev|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Kiev
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -4716,24 +4376,6 @@ NULL ==========================================================================
 SelectFaction = $WHI
 SelectRegion = $Riga
 
-StartEvent = evt_nam_WHI_Moral_BalanceRiga2|999|1|NULL|NULL|$Riga|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Riga
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-SelectRegion = $Riga
-
 StartEvent = evt_nam_WHI_Moral_BalanceRiga3|999|1|NULL|NULL|$Riga|NULL
 
 Conditions
@@ -4745,24 +4387,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-SelectRegion = $Riga
-
-StartEvent = evt_nam_WHI_Moral_BalanceRiga4|999|1|NULL|NULL|$Riga|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Riga
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -4790,24 +4414,6 @@ NULL ==========================================================================
 SelectFaction = $WHI
 SelectRegion = $Baku
 
-StartEvent = evt_nam_WHI_Moral_BalanceBaku2|999|1|NULL|NULL|$Baku|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Baku
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-SelectRegion = $Baku
-
 StartEvent = evt_nam_WHI_Moral_BalanceBaku3|999|1|NULL|NULL|$Baku|NULL
 
 Conditions
@@ -4819,24 +4425,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-SelectRegion = $Baku
-
-StartEvent = evt_nam_WHI_Moral_BalanceBaku4|999|1|NULL|NULL|$Baku|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Baku
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -4861,24 +4449,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $WHI
-SelectRegion = $Omsk
-
-StartEvent = evt_nam_WHI_Moral_BalanceOmsk2|999|1|NULL|NULL|$Omsk|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Omsk
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
 SelectRegion = $Ekaterinburg
 
 StartEvent = evt_nam_WHI_Moral_BalanceEkaterinburg|999|1|NULL|NULL|$Ekaterinburg|NULL
@@ -4891,24 +4461,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-SelectRegion = $Ekaterinburg
-
-StartEvent = evt_nam_WHI_Moral_BalanceEkaterinburg2|999|1|NULL|NULL|$Ekaterinburg|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Ekaterinburg
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 
@@ -4934,24 +4486,6 @@ EndEvent
 NULL ==========================================================================
 
 SelectFaction = $WHI
-SelectRegion = $Sevastopol
-
-StartEvent = evt_nam_WHI_Moral_BalanceSevastopol2|999|1|NULL|NULL|$Sevastopol|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Sevastopol
-
-Actions
-
-  ChangeFacMorale = -1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
 SelectRegion = $Rostov
 
 StartEvent = evt_nam_WHI_Moral_BalanceRostov|999|1|NULL|NULL|$Rostov|NULL
@@ -4965,24 +4499,6 @@ Conditions
 Actions
 
   ChangeFacMorale = 2
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $WHI
-SelectRegion = $Rostov
-
-StartEvent = evt_nam_WHI_Moral_BalanceRostov2|999|1|NULL|NULL|$Rostov|NULL
-
-Conditions
-
-  EvalMorale = >;120
-  EvalRgnOwned = $Rostov
-
-Actions
-
-  ChangeFacMorale = -1
 
 EndEvent
 

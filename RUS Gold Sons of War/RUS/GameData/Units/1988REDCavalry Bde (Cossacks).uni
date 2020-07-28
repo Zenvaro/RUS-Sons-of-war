@@ -13,6 +13,6 @@ FamilyType0 = $famCavalry|4
 FamilyType1 = $famLightArty|1
 CmdCost = 1
 Pillage = 0
-BuildRule = $recTown
+BuildRule = $recWSU
 BuildWeight = 1
 Area = $Recruit_Ukrainians

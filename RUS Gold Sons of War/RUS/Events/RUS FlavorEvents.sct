@@ -21,6 +21,7 @@ Conditions
 
   EvalUnqUnit = A.V. Kolchak
   MinDate = 1919/06/01
+  Probability = 33
   EvalEvent = evt_nam_WH3_MakeUkrainianDiv_Tracker;=;1
 
 Actions
@@ -223,7 +224,7 @@ EndEvent
 SelectFaction = $CMN
 SelectRegion = $Tzaritsyn
 
-StartEvent = evt_nam_Renforts_RED_StalinInSouthFront|1|2|evt_txt_Renforts_RED_StalinInSouthFront|Event-img_Renforts_RED_StalinInTzaritsyn|$Smolensk|NULL
+StartEvent = evt_nam_Renforts_RED_StalinInSouthFront|1|2|evt_txt_Renforts_RED_StalinInSouthFront|Event-img_Renforts_RED_StalinInTzaritsyn|$Tzaritsyn|NULL
 
 Conditions
 
@@ -313,6 +314,7 @@ StartEvent = evt_nam_Renforts_GRN_Samarkand|1|2|evt_txt_Renforts_GRN_Samarkand|E
 Conditions
 
   MinDate = 1918/06/21
+  Probability = 33
 
 Actions
 
@@ -673,6 +675,7 @@ Conditions
 
   MinDate = 1919/05/21
   EvalUnqUnit = A.V. Kolchak
+  Probability = 33
 
 Actions
 
@@ -2004,6 +2007,7 @@ Conditions
 
   MinDate = 1918/07/25
   EvalRgnOwned = $Murmansk
+  Probability = 33
 
 Actions
 
@@ -2920,6 +2924,7 @@ Conditions
   MinDate = 1919/01/13
   EvalUnqUnit = M. Janin
   EvalUnqUnit = A.V. Kolchak
+  Probability = 33
 
 Actions
 
@@ -4548,6 +4553,7 @@ Conditions
 
   MinDate = 1918/11/01
   EvalRgnOwned = $Grozny
+  Probability = 33
 
 Actions
 
@@ -4585,6 +4591,7 @@ Conditions
 
   MinDate = 1918/11/01
   EvalRgnOwned = $Vladikavkaz
+  Probability = 33
 
 Actions
 
@@ -7527,6 +7534,7 @@ StartEvent = evt_nam_Renforts_CMN_VolgaInsurrection|1|2|evt_txt_Renforts_CMN_Vol
 
 Conditions
   MinDate = 1919/03/03
+  Probability = 33
 
 SelectFaction = $RED
 
@@ -8487,6 +8495,7 @@ StartEvent = evt_nam_Renforts_GRN_Madanin-Bek|1|2|evt_txt_Renforts_GRN_Madanin-B
 Conditions
 
   MinDate = 1919/07/01
+  Probability = 33
 
 Actions
 
@@ -12642,6 +12651,7 @@ StartEvent = evt_nam_Renforts_GRN_BlackSeaInsurrection|1|1|NULL|NULL|NULL|NULL
 Conditions
 
   MinDate = 1920/01/01
+  Probability = 33
 
 SelectFaction = $RED
 
@@ -12800,6 +12810,7 @@ Conditions
   EvalEvent = evt_nam_CMN_WHI_WH3_SouthUnification;=;0
 
   MinDate = 1919/12/20
+  Probability = 33
 
 Actions
 
@@ -12905,6 +12916,7 @@ StartEvent = evt_nam_RED_ProletarianToHorses|1|2|evt_txt_RED_ProletarianToHorses
 Conditions
 
   MinDate = 1919/06/15
+  Probability = 33
 
 Actions
 
@@ -12969,6 +12981,7 @@ Conditions
 
   MinDate = 1920/09/11
   EvalEvent = evt_nam_CMN_TambovUprising;=;1
+  Probability = 33
 
 SelectFaction = $GRN
 
@@ -13061,6 +13074,7 @@ Conditions
 
   MinDate = 1920/09/11
   EvalEvent = evt_nam_CMN_TambovUprising;=;1
+  Probability = 33
 
 SelectFaction = $GRN
 
@@ -13153,6 +13167,7 @@ Conditions
 
   MinDate = 1920/09/11
   EvalEvent = evt_nam_CMN_TambovUprising;=;1
+  Probability = 33
 
 SelectFaction = $GRN
 
@@ -13245,6 +13260,7 @@ Conditions
 
   MinDate = 1920/09/11
   EvalEvent = evt_nam_CMN_TambovUprising;=;1
+  Probability = 33
 
 SelectFaction = $GRN
 
@@ -13337,6 +13353,7 @@ Conditions
 
   MinDate = 1920/09/11
   EvalEvent = evt_nam_CMN_TambovUprising;=;1
+  Probability = 33
 
 SelectFaction = $GRN
 
@@ -13428,6 +13445,7 @@ StartEvent = evt_nam_CMN_TambovUprising|1|2|evt_txt_CMN_TambovUprising|Event-img
 Conditions
 
   MinDate = 1920/08/21
+  Probability = 33
 
 SelectFaction = $RED
 
@@ -13672,6 +13690,7 @@ SelectFaction = $RED
   EvalRgnOwned = $Kronstadt
   EvalRgnOwned = $Petrograd
   MinDate = 1921/01/01
+  Probability = 33
 
 Actions
 
@@ -14207,7 +14226,7 @@ SelectFaction = $RED
 
 Actions
 
-  ChangeMoneyPool = 200
+  ChangeMoneyPool = 150
 
 EndEvent
 
@@ -14232,7 +14251,7 @@ SelectFaction = $WHI
 
 Actions
 
-  ChangeMoneyPool = 200
+  ChangeMoneyPool = 150
 
 EndEvent
 
@@ -14257,7 +14276,7 @@ SelectFaction = $WHI
 
 Actions
 
-  ChangeMoneyPool = 200
+  ChangeMoneyPool = 150
 
 EndEvent
 
@@ -14281,7 +14300,7 @@ SelectFaction = $WHI
 
 Actions
 
-  ChangeMoneyPool = 200
+  ChangeMoneyPool = 150
 
 EndEvent
 
@@ -14305,7 +14324,7 @@ SelectFaction = $WH3
 
 Actions
 
-  ChangeMoneyPool = 200
+  ChangeMoneyPool = 150
 
 EndEvent
 
@@ -14329,7 +14348,7 @@ SelectFaction = $WH3
 
 Actions
 
-  ChangeMoneyPool = 200
+  ChangeMoneyPool = 150
 
 EndEvent
 
@@ -14353,7 +14372,7 @@ SelectFaction = $WH3
 
 Actions
 
-  ChangeMoneyPool = 200
+  ChangeMoneyPool = 150
 
 EndEvent
 
@@ -14370,6 +14389,7 @@ SelectFaction = $RED
 
   EvalRgnOwned = $Krasnaya Gorka
   MinDate = 1919/06/12
+  Probability = 33
 
 Actions
 
@@ -14434,6 +14454,7 @@ SelectFaction = $RED
   EvalRgnOwned = $Kyamenitsy
 
   MinDate = 1921/11/06
+  Probability = 33
 
 Actions
 
@@ -14496,14 +14517,14 @@ SelectFaction = $RED
 Actions
 
 SelectFaction = $WH3
-SelectRegion = $Olonetsk
+SelectRegion = $Olonets
   CreateGroup
     Posture = $Defensive
     SetKind = $Land
     Entranch = 0
     InCS = 0
     FixType = 0
-    SetName = Olonetsk Volunteers Army
+    SetName = Olonets Volunteers Army
   Apply
   CreateUnit
     SetType = $uni_WH5_Skobeltsyn1
@@ -14511,11 +14532,11 @@ SelectRegion = $Olonetsk
   Apply
   CreateUnit
     SetType = $uni_FIN_Par1
-    SetName = 1st Olonetsk Vols Rgt
+    SetName = 1st Olonets Vols Rgt
   Apply
   CreateUnit
     SetType = $uni_FIN_Par1
-    SetName = 2nd Olonetsk Vols Rgt
+    SetName = 2nd Olonets Vols Rgt
   Apply
 
 EndEvent
@@ -14577,6 +14598,7 @@ SelectFaction = $WHI
 
   EvalRgnOwned = $Nikolaiev
   MinDate = 1919/09/16
+  Probability = 33
 
 Actions
 
@@ -14623,6 +14645,7 @@ SelectFaction = $RED
   EvalRgnOwned = $Birsk
   EvalRgnOwned = $Ufa
   MinDate = 1920/06/16
+  Probability = 33
 
 Actions
 
@@ -14860,6 +14883,7 @@ StartEvent = evt_nam_CMN_WestSiberiaUprising|1|2|evt_txt_CMN_WestSiberiaUprising
 Conditions
 
   MinDate = 1921/02/01
+  Probability = 33
 
 SelectFaction = $RED
 
@@ -15681,6 +15705,7 @@ SelectFaction = $RED
 
   EvalRgnOwned = $Nerchinsk;NOT
   MinDate = 1919/05/09
+  Probability = 33
 
 Actions
 
@@ -15726,6 +15751,7 @@ SelectFaction = $RED
 
   EvalRgnOwned = $Verkhneudinsk;NOT
   MinDate = 1919/12/22
+  Probability = 33
 
 Actions
 
@@ -15781,8 +15807,10 @@ Conditions
 
 SelectFaction = $WH3
 
+  EvalUnqUnit = A.V. Kolchak
   EvalRgnOwned = $Omsk
   MinDate = 1918/12/22
+  Probability = 33
 
 Actions
 
@@ -16368,6 +16396,7 @@ StartEvent = evt_nam_CMN_Eysk_Uprising|1|2|evt_txt_CMN_Eysk_Uprising|Event-img_C
 Conditions
 
   MinDate = 1920/02/03
+  Probability = 33
 
 SelectFaction = $WHI
 
@@ -16438,6 +16467,7 @@ StartEvent = evt_nam_CMN_Giandzha_Uprising|1|2|evt_txt_CMN_Giandzha_Uprising|Eve
 Conditions
 
   MinDate = 1920/05/24
+  Probability = 33
 
 SelectFaction = $RED
 
@@ -16525,6 +16555,7 @@ StartEvent = evt_nam_CMN_Mugan_Events|1|2|evt_txt_CMN_Mugan_Events|Event-img_CMN
 Conditions
 
   MinDate = 1919/07/15
+  Probability = 33
 
 SelectFaction = $RED
 
@@ -16709,6 +16740,7 @@ StartEvent = evt_nam_CMN_Chuvashi_Uprising|1|2|evt_txt_CMN_Chuvashi_Uprising|Eve
 Conditions
 
   MinDate = 1921/02/19
+  Probability = 33
 
 SelectFaction = $RED
 
@@ -16769,6 +16801,7 @@ StartEvent = evt_nam_CMN_Kolesnikovshina|1|2|evt_txt_CMN_Kolesnikovshina|Event-i
 Conditions
 
   MinDate = 1920/12/01
+  Probability = 33
 
 SelectFaction = $RED
 
@@ -16960,6 +16993,7 @@ StartEvent = evt_nam_CMN_Zinevich_Uprisnig|1|2|evt_txt_CMN_Zinevich_Uprisnig|Eve
 Conditions
 
   MinDate = 1919/12/23
+  Probability = 33
 
 SelectFaction = $RED
 
@@ -17142,6 +17176,7 @@ SelectFaction = $RED
 
   EvalUnqUnit = G.S. Maslakov
   EvalFacRelationships = ANA;<;0
+  Probability = 33
 
 Actions
 
@@ -17890,7 +17925,7 @@ SelectRegion = $Riga
   SetKind = $Land
   Entranch = 0
   InCS = 0
-  FixType = 2
+  FixType = 0
   SetName = Latvian Red Army
   Apply
   SetHealth = 50
@@ -17901,6 +17936,7 @@ SelectRegion = $Riga
   Apply
   SetHealth = 100
   SetCohesion = 100
+  CreateUnit
   SetType = $uni_RED_Sup1
   SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
   SetName = Red Supply
@@ -17926,7 +17962,7 @@ SelectRegion = $Kaunas
   SetKind = $Land
   Entranch = 0
   InCS = 0
-  FixType = 2
+  FixType = 0
   SetName = Lithuanian Red Army
   Apply
   SetHealth = 50
@@ -17937,6 +17973,7 @@ SelectRegion = $Kaunas
   Apply
   SetHealth = 100
   SetCohesion = 100
+  CreateUnit
   SetType = $uni_RED_Sup1
   SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
   SetName = Red Supply
@@ -17962,7 +17999,7 @@ SelectRegion = $Tallinn
   SetKind = $Land
   Entranch = 0
   InCS = 0
-  FixType = 2
+  FixType = 0
   SetName = Estonian Red Army
   Apply
   SetHealth = 50
@@ -17973,6 +18010,7 @@ SelectRegion = $Tallinn
   Apply
   SetHealth = 100
   SetCohesion = 100
+  CreateUnit
   SetType = $uni_RED_Sup1
   SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
   SetName = Red Supply
@@ -17998,7 +18036,7 @@ SelectRegion = $Baku
   SetKind = $Land
   Entranch = 0
   InCS = 0
-  FixType = 2
+  FixType = 0
   SetName = Azerbaijanian Red Army
   Apply
   SetHealth = 50
@@ -18009,6 +18047,7 @@ SelectRegion = $Baku
   Apply
   SetHealth = 100
   SetCohesion = 100
+  CreateUnit
   SetType = $uni_RED_Sup1
   SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
   SetName = Red Supply
@@ -18034,7 +18073,7 @@ SelectRegion = $Erevan
   SetKind = $Land
   Entranch = 0
   InCS = 0
-  FixType = 2
+  FixType = 0
   SetName = Armenian Red Army
   Apply
   SetHealth = 50
@@ -18045,6 +18084,7 @@ SelectRegion = $Erevan
   Apply
   SetHealth = 100
   SetCohesion = 100
+  CreateUnit
   SetType = $uni_RED_Sup1
   SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
   SetName = Red Supply
@@ -18070,7 +18110,7 @@ SelectRegion = $Tiflis
   SetKind = $Land
   Entranch = 0
   InCS = 0
-  FixType = 2
+  FixType = 0
   SetName = Georgian Red Army
   Apply
   SetHealth = 50
@@ -18081,6 +18121,7 @@ SelectRegion = $Tiflis
   Apply
   SetHealth = 100
   SetCohesion = 100
+  CreateUnit
   SetType = $uni_RED_Sup1
   SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
   SetName = Red Supply
@@ -18106,13 +18147,14 @@ SelectRegion = $Bucuresti
   SetKind = $Land
   Entranch = 0
   InCS = 0
-  FixType = 2
+  FixType = 0
   SetName = Romanian Red Army
   Apply
   CreateUnit
   SetType = $uni_RED_Div3
   SetName = Romanian Int. Div.
   Apply
+  CreateUnit
   SetType = $uni_RED_Sup1
   SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
   SetName = Red Supply
@@ -18138,13 +18180,14 @@ SelectRegion = $Helsinki
   SetKind = $Land
   Entranch = 0
   InCS = 0
-  FixType = 2
+  FixType = 0
   SetName = Finland Red Army
   Apply
   CreateUnit
   SetType = $uni_RED_Div3
   SetName = Finland Int. Div.
   Apply
+  CreateUnit
   SetType = $uni_RED_Sup1
   SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
   SetName = Red Supply
@@ -18170,7 +18213,7 @@ SelectRegion = $Bukhara
   SetKind = $Land
   Entranch = 0
   InCS = 0
-  FixType = 2
+  FixType = 0
   SetName = Bukhara Red Army
   Apply
   SetHealth = 25
@@ -18181,6 +18224,7 @@ SelectRegion = $Bukhara
   Apply
   SetHealth = 100
   SetCohesion = 100
+  CreateUnit
   SetType = $uni_RED_Sup1
   SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
   SetName = Red Supply
@@ -18195,7 +18239,6 @@ StartEvent = evt_nam_RED_PolandArmy|1|2|evt_txt_RED_PolandArmy|Event-img_RED_Pol
 
 Conditions
 
-  MinDate = 1920/01/01
   EvalRgnOwned = $Warsaw
 
 Actions
@@ -18207,13 +18250,14 @@ SelectRegion = $Warsaw
   SetKind = $Land
   Entranch = 0
   InCS = 0
-  FixType = 2
+  FixType = 0
   SetName = Poland Red Army
   Apply
   CreateUnit
   SetType = $uni_RED_Div3
   SetName = Poland Int. Div.
   Apply
+  CreateUnit
   SetType = $uni_RED_Sup1
   SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
   SetName = Red Supply
@@ -18235,6 +18279,7 @@ SelectFaction = $WHI
   MinDate = 1920/02/15
   Probability = 33
   EvalUnqUnit = K.V. Ermakov
+  Probability = 33
 
 Actions
 
@@ -18339,6 +18384,7 @@ Conditions
 SelectFaction = $RED
   MinDate = 1919/03/24
   EvalRgnOwned = $Gomel
+  Probability = 33
 
 Actions
 
@@ -19094,6 +19140,7 @@ SelectFaction = $KAZ
 
   MinDate = 1920/09/25
   EvalRgnOwned = $Bukhara;NOT
+  Probability = 33
 
 Actions
 
@@ -19169,6 +19216,7 @@ Conditions
 
   MinDate = 1919/02/18
   EvalUnqUnit = A.V. Kolchak
+  Probability = 33
 
 Actions
 
@@ -19351,6 +19399,7 @@ StartEvent = evt_nam_RED_MurtazinDesertsKolchakArmy|1|1|NULL|NULL|$Omsk|NULL
 Conditions
 
   MinDate = 1919/02/18
+  Probability = 33
   EvalEvent = evt_nam_Renforts_WH3_BashkirTroopsDesertKolchakArmy;=;1
   EvalUnqUnit = M.L. Murtazin
 
@@ -19389,6 +19438,7 @@ StartEvent = evt_nam_WH3_MurtazinDesertsToKolchakArmy|1|1|NULL|NULL|$Omsk|NULL
 Conditions
 
   MinDate = 1919/04/16
+  Probability = 33
   EvalEvent = evt_nam_RED_MurtazinDesertsKolchakArmy;=;1
   EvalUnqUnit = M.L. Murtazin
 
@@ -19430,6 +19480,7 @@ StartEvent = evt_nam_RED_MurtazinDesertsFromKolchakArmy|1|1|NULL|NULL|$Omsk|NULL
 Conditions
 
   MinDate = 1919/08/23
+  Probability = 33
   EvalEvent = evt_nam_WH3_MurtazinDesertsToKolchakArmy;=;1
   EvalUnqUnit = M.L. Murtazin
 
@@ -19663,6 +19714,7 @@ StartEvent = evt_nam_CMN_SvanetiaUprising|1|2|evt_txt_CMN_SvanetiaUprising|Event
 Conditions
 
   MinDate = 1921/05/23
+  Probability = 33
 
 SelectFaction = $RED
 
@@ -19794,7 +19846,7 @@ Actions
 
 SelectFaction = $RED
 
-  ChgFacRelationships = ANA;-5
+  ChgFacRelationships = ANA;-7
 
 EndEvent
 
@@ -19808,7 +19860,7 @@ Conditions
 
 SelectFaction = $RED
 
-  EvalFacRelationships = ANA;=;-5
+  EvalFacRelationships = ANA;<;0
 
 Actions
 

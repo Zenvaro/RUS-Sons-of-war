@@ -116,7 +116,7 @@ Conditions
   MinDate = 1918/12/16
   CheckAILevel = 1
   ActorEnabled = $gmaOptionDip;RED_SignAlliance_ANA
-  EvalFacRelationships = ANA;<;0
+  EvalFacRelationships = ANA;<=;0
   EvalEvent = evt_nam_RED_NoReasonsToSignAllianceWithAnarchists;=;0
 
 Actions
@@ -132,7 +132,7 @@ StartEvent = evt_nam_RED_SignAlliance_ANA_ON|1|0|NULL|NULL|NULL|NULL
 Conditions
 
   MinDate = 1918/12/16
-  EvalFacRelationships = ANA;<;0
+  EvalFacRelationships = ANA;<=;0
 
 Actions
 
@@ -172,7 +172,7 @@ Conditions
 
   MinDate = 1918/12/16
   ActorDisabled = $gmaOptionDip;RED_SignAlliance_ANA
-  EvalFacRelationships = ANA;<;0
+  EvalFacRelationships = ANA;<=;0
 
 Actions
 
@@ -293,7 +293,7 @@ StartEvent = evt_nam_RED_BreakAlliance_ANA_Options_Removed|999|0|NULL|NULL|NULL|
 Conditions
 
   MinDate = 1918/12/16
-  EvalFacRelationships = ANA;=;-5
+  EvalFacRelationships = ANA;<=;0
 
 Actions
 
@@ -6244,7 +6244,7 @@ Conditions
 SelectFaction = $GRN
 
   SelectSubUnits = Area $Theater_Ukraine;FactionTags  RED GRN
-  EvalSubUnitCount = <;15
+  EvalSubUnitCount = <;30
 
 Actions
 

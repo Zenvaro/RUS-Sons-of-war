@@ -33,11 +33,11 @@ StartEvent = evt_nam_RED_Leader_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionReinf;RED_Leader;=;1
-  EvalEngagementPts = >=;4
+  EvalEngagementPts = >=;2
 
 Actions
 
-  ChgFacEngagementPts = -4
+  ChgFacEngagementPts = -2
 
   ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_Leader
   SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;1
@@ -2574,11 +2574,11 @@ StartEvent = evt_nam_WHI_Leader_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionReinf;WHI_Leader;=;1
-  EvalEngagementPts = >=;4
+  EvalEngagementPts = >=;2
 
 Actions
 
-  ChgFacEngagementPts = -4
+  ChgFacEngagementPts = -2
 
   ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_Leader
   SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;1
@@ -3663,11 +3663,11 @@ StartEvent = evt_nam_WHI_COS_Leader_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionReinf;WHI_COS_Leader;=;1
-  EvalEngagementPts = >=;4
+  EvalEngagementPts = >=;2
 
 Actions
 
-  ChgFacEngagementPts = -4
+  ChgFacEngagementPts = -2
 
   ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_COS_Leader
   SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;1
@@ -4587,11 +4587,11 @@ StartEvent = evt_nam_WH3_Leader_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionReinf;WH3_Leader;=;1
-  EvalEngagementPts = >=;4
+  EvalEngagementPts = >=;2
 
 Actions
 
-  ChgFacEngagementPts = -4
+  ChgFacEngagementPts = -2
 
   ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_Leader
   SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;1
@@ -5775,11 +5775,11 @@ StartEvent = evt_nam_WH3_COS_Leader_Check|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckOption = $gmaOptionReinf;WH3_COS_Leader;=;1
-  EvalEngagementPts = >=;4
+  EvalEngagementPts = >=;2
 
 Actions
 
-  ChgFacEngagementPts = -4
+  ChgFacEngagementPts = -2
 
   ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_COS_Leader
   SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;MaxOccurs;1
