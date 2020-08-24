@@ -1,0 +1,9269 @@
+{Faction}
+1000018
+0
+9
+0
+0
+2
+-4000
+-5400
+0
+0
+0
+1
+0
+0
+0
+4043
+0
+1
+0
+0
+0
+200
+0
+0
+0
+0
+0
+0
+0
+0
+8
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Германия
+strGrandCampaignVC_GER
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+926|925|927|-1
+538|10|35|50
+2|3|
+NULL
+5|0|200
+NULL
+80|10|10|10|0|Scorched1|Scorched2|Scorched3|Scorched4
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+7|0|8|400|9|20|11|250|0|1500|12|300|10|100|6|0|
+NULL
+NULL
+NULL
+#Aifg#0&NULL&NULL&NULL&#Aifg#NULL#Aifg#NULL#Aifg#50|50#Aifg#NULL#Aifg#|1|10|6|10|300|100|300|5|3|75|2|4|5|8|150|10|25|2|5|5|2|125|66|50|6|11|16|25|11|3|5|150|100|250|75|100|75|7|8|90|60|1|#Aifg#NULL#Aifg#NULL#Aifg#NULL#Aifg#NULL#Aifg#
+-1|-1|-1|-1|-1|-1|-1|-1|-1|-1|-1|0|PH1
+NULL&NULL&NULL&NULL&#FacHis#1700|0|1701|0|1702|0|1703|0|1704|0|1705|0|1706|0|1707|0|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|0|1714|0|1715|0|1722|0|1723|0|1724|0|1725|0|1726|0|1727|0|1716|36000|1717|4000|1718|93|1719|5|1720|279|1721|82|1728|341|1729|340|1050|0|&#FacHis#1700|0|1701|0|1702|0|1703|0|1704|0|1705|0|1706|0|1707|0|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|0|1714|0|1715|0|1722|0|1723|0|1724|0|1725|0|1726|0|1727|0|1716|36000|1717|4000|1718|93|1719|5|1720|279|1721|82|1728|341|1729|340|1050|0|&#FacHis#
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+0|0|0|0
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+#Revolt#PH0|0|0|0|0|0|-1|-1|PH1|PH2|PH3|#Revolt#NULL#Revolt#NULL#Revolt#
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+  {Region}
+    UID              = 1
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    1
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 2
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    2
+      {Structure}
+      1000021
+      3
+      10
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Berlin
+      
+      {/Structure}
+      {Structure}
+      1000972
+      2
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Berlin Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 3
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    3
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 8
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    8
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 9
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    9
+      {Structure}
+      1000024
+      3
+      3
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Poznan
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 10
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    10
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 11
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    11
+      {Structure}
+      1000025
+      3
+      6
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kiel
+      
+      {/Structure}
+      {Structure}
+      1000864
+      9
+      10
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      OstSee Flotte
+      
+      {/Structure}
+      {Structure}
+      1000973
+      2
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kiel Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 12
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    12
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 13
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    13
+      {Structure}
+      1000027
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Bydgoszcz
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 14
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    14
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 15
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    15
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 18
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    18
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 19
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    19
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 20
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    20
+      {Structure}
+      1000028
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Wloclavsk
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 21
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    21
+      {Structure}
+      1000029
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kalisz
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 22
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    22
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 23
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    23
+      {Structure}
+      1000030
+      3
+      10
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Breslau
+      
+      {/Structure}
+      {Structure}
+      1000928
+      1
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Breslau Fortifications
+      
+      {/Structure}
+      {Structure}
+      1000974
+      2
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Breslau Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 25
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    25
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 26
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 0
+    {StrucList}
+    26
+      {Structure}
+      1001008
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1001009
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1001010
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 27
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    27
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 31
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    31
+      {Structure}
+      1000033
+      3
+      3
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Krakow
+      
+      {/Structure}
+      {Structure}
+      1000991
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1000992
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Arms Factory
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 34
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    34
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 35
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    35
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 36
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    36
+      {Structure}
+      1000035
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Tarnow
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 37
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    37
+      {Structure}
+      1000036
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Katowice
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 38
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    38
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 39
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    39
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 40
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    40
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 41
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    41
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 42
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    42
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 43
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    43
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 44
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    44
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 45
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    45
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 46
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    46
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 48
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    48
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 49
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    49
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 50
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    50
+      {Structure}
+      1000037
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Lublin
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 51
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    51
+      {Structure}
+      1000038
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Radom
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 52
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    52
+      {Structure}
+      1000039
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kielce
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 53
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    53
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 54
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    54
+      {Structure}
+      1000040
+      3
+      6
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Lodz
+      
+      {/Structure}
+      {Structure}
+      1001007
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 55
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    55
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 56
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    56
+      {Structure}
+      1000041
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Tomaszow
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 57
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    57
+      {Structure}
+      1000042
+      3
+      8
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Danzig
+      
+      {/Structure}
+      {Structure}
+      1000043
+      0
+      7
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000993
+      12
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Shipyard
+      
+      {/Structure}
+      {Structure}
+      1000994
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1000995
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000996
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Arms Factory
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 58
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    58
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 59
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    59
+      {Structure}
+      1000044
+      3
+      10
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Warsaw
+      
+      {/Structure}
+      {Structure}
+      1000045
+      0
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000998
+      17
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Military Academy
+      
+      {/Structure}
+      {Structure}
+      1000999
+      13
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Air Force School
+      
+      {/Structure}
+      {Structure}
+      1001000
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1001001
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1001002
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1001003
+      12
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Shipyard
+      
+      {/Structure}
+      {Structure}
+      1001004
+      15
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Central Bank
+      
+      {/Structure}
+      {Structure}
+      1001005
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Arms Factory
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 60
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    60
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 61
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    61
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 62
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    62
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 63
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    63
+      {Structure}
+      1000046
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Siedlce
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 64
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    64
+      {Structure}
+      1000047
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Modlin
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 65
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    65
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 66
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    66
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 67
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    67
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 68
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    68
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 69
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    69
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 70
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    70
+      {Structure}
+      1000048
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Torun
+      
+      {/Structure}
+      {Structure}
+      1000049
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000997
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 71
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    71
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 72
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    72
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 73
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    73
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 74
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    74
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 75
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    75
+      {Structure}
+      1000050
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Elbing
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 76
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    76
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 77
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    77
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 78
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    78
+      {Structure}
+      1000051
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Allenstein
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 79
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    79
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 80
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    80
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 81
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    81
+      {Structure}
+      1000052
+      3
+      5
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Koenigsberg
+      
+      {/Structure}
+      {Structure}
+      1000053
+      0
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000971
+      1
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Koenigsberg Fortifications
+      
+      {/Structure}
+      {Structure}
+      1000975
+      2
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Koenigsberg Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 82
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    82
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 83
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    83
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 84
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    84
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 85
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    85
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 86
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    86
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 87
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    87
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 88
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    88
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 89
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    89
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 90
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    90
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 91
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    91
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 92
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    92
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 93
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    93
+      {Structure}
+      1000054
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Suwalki
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 94
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    94
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 95
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    95
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 96
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    96
+      {Structure}
+      1000055
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Bialystok
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 97
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    97
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 111
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    111
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 112
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    112
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 113
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    113
+      {Structure}
+      1000062
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Iasi
+      
+      {/Structure}
+      {Structure}
+      1000944
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000945
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 114
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    114
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 115
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    115
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 116
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    116
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 117
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    117
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 118
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    118
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 119
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    119
+      {Structure}
+      1000063
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ismail
+      
+      {/Structure}
+      {Structure}
+      1000064
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000949
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000950
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 120
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    120
+      {Structure}
+      1000065
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kagul
+      
+      {/Structure}
+      {Structure}
+      1000066
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 121
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    121
+      {Structure}
+      1000067
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Galati
+      
+      {/Structure}
+      {Structure}
+      1000068
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000951
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1000952
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 122
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    122
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 123
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    123
+      {Structure}
+      1000069
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Braila
+      
+      {/Structure}
+      {Structure}
+      1000070
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 124
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    124
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 125
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    125
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 126
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    126
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 127
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    127
+      {Structure}
+      1000071
+      3
+      3
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Memel
+      
+      {/Structure}
+      {Structure}
+      1000072
+      0
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 128
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    128
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 129
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    129
+      {Structure}
+      1000073
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Liepaja
+      
+      {/Structure}
+      {Structure}
+      1000074
+      0
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1001013
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 130
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    130
+      {Structure}
+      1000075
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ventspils
+      
+      {/Structure}
+      {Structure}
+      1000076
+      0
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1001012
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 131
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    131
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 132
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    132
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 133
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    133
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 134
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    134
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 135
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    135
+      {Structure}
+      1000077
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kuldiga
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 136
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    136
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 137
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    137
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 138
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    138
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 139
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    139
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 140
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 25
+    {StrucList}
+    140
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 141
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    141
+      {Structure}
+      1000080
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Siauliai
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 142
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    142
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 143
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    143
+      {Structure}
+      1000081
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Jelgava
+      
+      {/Structure}
+      {Structure}
+      1001014
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 144
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    144
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 145
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    145
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 146
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    146
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 147
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    147
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 148
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    148
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 149
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    149
+      {Structure}
+      1000082
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ponevezh
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 150
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    150
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 151
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    151
+      {Structure}
+      1000083
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Sventsiany
+      
+      {/Structure}
+      {Structure}
+      1001015
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 152
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    152
+      {Structure}
+      1000084
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Oshmiany
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 153
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    153
+      {Structure}
+      1000085
+      3
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Vilnius
+      
+      {/Structure}
+      {Structure}
+      1000982
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000983
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000984
+      15
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Central Bank
+      
+      {/Structure}
+      {Structure}
+      1000985
+      17
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Military Academy
+      
+      {/Structure}
+      {Structure}
+      1000986
+      2
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Vilna Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 154
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    154
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 155
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    155
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 156
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    156
+      {Structure}
+      1000086
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Grodno
+      
+      {/Structure}
+      {Structure}
+      1000987
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1000988
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 157
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    157
+      {Structure}
+      1000087
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Lida
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 158
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    158
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 159
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    159
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 160
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    160
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 161
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    161
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 162
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    162
+      {Structure}
+      1000088
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Slonim
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 163
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    163
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 164
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    164
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 165
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    165
+      {Structure}
+      1000089
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kobrin
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 166
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    166
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 167
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    167
+      {Structure}
+      1000090
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Baranavichy
+      
+      {/Structure}
+      {Structure}
+      1000908
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 168
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    168
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 169
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    169
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 170
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    170
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 171
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    171
+      {Structure}
+      1000091
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Bobruisk
+      
+      {/Structure}
+      {Structure}
+      1000092
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000907
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 172
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    172
+      {Structure}
+      1000093
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Slutsk
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 173
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    173
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 174
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    174
+      {Structure}
+      1000094
+      3
+      3
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Minsk
+      
+      {/Structure}
+      {Structure}
+      1000909
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000910
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000911
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Minsk railroad workshops
+      
+      {/Structure}
+      {Structure}
+      1000912
+      2
+      3
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+      {Structure}
+      1000913
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Budapest Small Arms Factory
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 175
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    175
+      {Structure}
+      1000095
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Borisov
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 176
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    176
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 177
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    177
+      {Structure}
+      1000096
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Vileyka
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 178
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    178
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 179
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    179
+      {Structure}
+      1000097
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Disna
+      
+      {/Structure}
+      {Structure}
+      1001011
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 180
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    180
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 182
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    182
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 183
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    183
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 184
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    184
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 185
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    185
+      {Structure}
+      1000100
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Cesis
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 186
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    186
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 187
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    187
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 188
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    188
+      {Structure}
+      1000101
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Daugavpils
+      
+      {/Structure}
+      {Structure}
+      1000102
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000929
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1000930
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000931
+      2
+      3
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Daugavpils Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 189
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    189
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 190
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    190
+      {Structure}
+      1000103
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Rezekne
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 191
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    191
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 192
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    192
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 254
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    254
+      {Structure}
+      1000128
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Polotsk
+      
+      {/Structure}
+      {Structure}
+      1000863
+      17
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Military Academy
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 258
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    258
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 259
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    259
+      {Structure}
+      1000130
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Vitebsk
+      
+      {/Structure}
+      {Structure}
+      1000981
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 261
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    261
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 262
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    262
+      {Structure}
+      1000131
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Orsha
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 263
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    263
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 264
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    264
+      {Structure}
+      1000132
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Mogilev
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 265
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    265
+      {Structure}
+      1000133
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Bykhov
+      
+      {/Structure}
+      {Structure}
+      1000906
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 266
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    266
+      {Structure}
+      1000134
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Rogachev
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 267
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    267
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 268
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    268
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 269
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    269
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 270
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    270
+      {Structure}
+      1000135
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Brest Litovsk
+      
+      {/Structure}
+      {Structure}
+      1000989
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1000990
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 271
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    271
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 272
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    272
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 273
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    273
+      {Structure}
+      1000136
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kowel
+      
+      {/Structure}
+      {Structure}
+      1001006
+      17
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Academy
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 274
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    274
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 275
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    275
+      {Structure}
+      1000137
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Pinsk
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 276
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    276
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 277
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    277
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 278
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    278
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 279
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    279
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 280
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    280
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 281
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    281
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 282
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    282
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 283
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    283
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 284
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    284
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 285
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    285
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 286
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    286
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 287
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    287
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 288
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    288
+      {Structure}
+      1000138
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Retchytsa
+      
+      {/Structure}
+      {Structure}
+      1000139
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 289
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    289
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 290
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 70
+    {StrucList}
+    290
+      {Structure}
+      1000140
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Mozyr
+      
+      {/Structure}
+      {Structure}
+      1000917
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 291
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    291
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 292
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    292
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 293
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    293
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 294
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    294
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 295
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    295
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 296
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    296
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 301
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    301
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 302
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    302
+      {Structure}
+      1000142
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Khotyn
+      
+      {/Structure}
+      {Structure}
+      1000946
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 303
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    303
+      {Structure}
+      1000143
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kamenets-Podolsk
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 304
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    304
+      {Structure}
+      1000144
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Khmelnik
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 305
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    305
+      {Structure}
+      1000145
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Starokonstantinov
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 306
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    306
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 307
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 80
+    {StrucList}
+    307
+      {Structure}
+      1000146
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Rowne
+      
+      {/Structure}
+      {Structure}
+      1000916
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 308
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    308
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 309
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    309
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 310
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    310
+      {Structure}
+      1000147
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Novograd-Volynsk
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 311
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    311
+      {Structure}
+      1000148
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Korosteni
+      
+      {/Structure}
+      {Structure}
+      1000918
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 312
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    312
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 313
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    313
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 314
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    314
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 315
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    315
+      {Structure}
+      1000149
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Vinnytsia
+      
+      {/Structure}
+      {Structure}
+      1000954
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1000955
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000956
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000957
+      2
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Vinnytsia Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 316
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    316
+      {Structure}
+      1000150
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Berdychev
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 317
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    317
+      {Structure}
+      1000151
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Zhitomir
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 318
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    318
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 319
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 85
+    {StrucList}
+    319
+      {Structure}
+      1000152
+      3
+      8
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kiev
+      
+      {/Structure}
+      {Structure}
+      1000153
+      0
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000888
+      13
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Air Force School
+      
+      {/Structure}
+      {Structure}
+      1000889
+      12
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kiev Shipyard
+      
+      {/Structure}
+      {Structure}
+      1000890
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000891
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kiev railroad workshops
+      
+      {/Structure}
+      {Structure}
+      1000892
+      17
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kiev Military School
+      
+      {/Structure}
+      {Structure}
+      1000893
+      15
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Central Bank
+      
+      {/Structure}
+      {Structure}
+      1000894
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000895
+      2
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kiev Depot
+      
+      {/Structure}
+      {Structure}
+      1000896
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Budapest Small Arms Factory
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 320
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    320
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 321
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    321
+      {Structure}
+      1000154
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Bila Tsverka
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 322
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    322
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 323
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    323
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 324
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    324
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 325
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    325
+      {Structure}
+      1000155
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Chisinau
+      
+      {/Structure}
+      {Structure}
+      1000939
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000940
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1000941
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000942
+      15
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Central Bank
+      
+      {/Structure}
+      {Structure}
+      1000943
+      2
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Chisinau Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 326
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 80
+    {StrucList}
+    326
+      {Structure}
+      1000156
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Akkerman
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 327
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    327
+      {Structure}
+      1000157
+      3
+      7
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Odessa
+      
+      {/Structure}
+      {Structure}
+      1000158
+      0
+      8
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000920
+      13
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Air Force School
+      
+      {/Structure}
+      {Structure}
+      1000921
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000922
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000923
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Odessa railroad workshops
+      
+      {/Structure}
+      {Structure}
+      1000924
+      15
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Central Bank
+      
+      {/Structure}
+      {Structure}
+      1000925
+      17
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Odessa Military School
+      
+      {/Structure}
+      {Structure}
+      1000926
+      2
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Odessa Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 328
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    328
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 329
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    329
+      {Structure}
+      1000159
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Nikolaiev
+      
+      {/Structure}
+      {Structure}
+      1000880
+      12
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Shipyard
+      
+      {/Structure}
+      {Structure}
+      1000881
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 330
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    330
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 331
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 70
+    {StrucList}
+    331
+      {Structure}
+      1000160
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Tiraspol
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 332
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    332
+      {Structure}
+      1000161
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Bendery
+      
+      {/Structure}
+      {Structure}
+      1000947
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 333
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    333
+      {Structure}
+      1000162
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Beltsy
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 334
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    334
+      {Structure}
+      1000163
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Soroca
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 335
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    335
+      {Structure}
+      1000164
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Balta
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 336
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    336
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 337
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    337
+      {Structure}
+      1000165
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ouman
+      
+      {/Structure}
+      {Structure}
+      1000953
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 338
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    338
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 339
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    339
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 340
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    340
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 342
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    342
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 343
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    343
+      {Structure}
+      1000166
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kherson
+      
+      {/Structure}
+      {Structure}
+      1000167
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000882
+      17
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Military Academy
+      
+      {/Structure}
+      {Structure}
+      1000883
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 344
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    344
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 345
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    345
+      {Structure}
+      1000168
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Nikopol
+      
+      {/Structure}
+      {Structure}
+      1000169
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 346
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    346
+      {Structure}
+      1000170
+      3
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ekaterinoslav
+      
+      {/Structure}
+      {Structure}
+      1000171
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000865
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000866
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1000867
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000868
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Arms Factory
+      
+      {/Structure}
+      {Structure}
+      1000869
+      2
+      3
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ekaterinoslav Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 347
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    347
+      {Structure}
+      1000172
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Krivoi Rog
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 348
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 70
+    {StrucList}
+    348
+      {Structure}
+      1000173
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Elizavetgrad
+      
+      {/Structure}
+      {Structure}
+      1000884
+      17
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Military Academy
+      
+      {/Structure}
+      {Structure}
+      1000885
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000886
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000887
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 349
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    349
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 350
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    350
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 351
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    351
+      {Structure}
+      1000174
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Cherkasy
+      
+      {/Structure}
+      {Structure}
+      1000175
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000919
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 352
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    352
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 353
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    353
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 354
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    354
+      {Structure}
+      1000176
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Gomel
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 355
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    355
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 356
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    356
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 357
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    357
+      {Structure}
+      1000872
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Arms Factory
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 358
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    358
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 359
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    359
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 360
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 70
+    {StrucList}
+    360
+      {Structure}
+      1000177
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Chernigov
+      
+      {/Structure}
+      {Structure}
+      1000178
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 361
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    361
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 362
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    362
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 363
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    363
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 364
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    364
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 365
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    365
+      {Structure}
+      1000179
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Konotop
+      
+      {/Structure}
+      {Structure}
+      1000967
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1000968
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000969
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000970
+      2
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Konotop Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 366
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    366
+      {Structure}
+      1000180
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Nezhyn
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 367
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    367
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 368
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    368
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 369
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    369
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 370
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    370
+      {Structure}
+      1000181
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Priluki
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 371
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    371
+      {Structure}
+      1000182
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Romny
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 372
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    372
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 476
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 70
+    {StrucList}
+    476
+      {Structure}
+      1000218
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Sumy
+      
+      {/Structure}
+      {Structure}
+      1000963
+      17
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Military Academy
+      
+      {/Structure}
+      {Structure}
+      1000964
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000965
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000966
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 477
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    477
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 478
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    478
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 479
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    479
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 480
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    480
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 481
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 70
+    {StrucList}
+    481
+      {Structure}
+      1000219
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kremenchuk
+      
+      {/Structure}
+      {Structure}
+      1000220
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 482
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    482
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 483
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    483
+      {Structure}
+      1000221
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Poltava
+      
+      {/Structure}
+      {Structure}
+      1000958
+      17
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Military Academy
+      
+      {/Structure}
+      {Structure}
+      1000959
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1000960
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000961
+      15
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Central Bank
+      
+      {/Structure}
+      {Structure}
+      1000962
+      2
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Poltava Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 484
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    484
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 485
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    485
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 486
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    486
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 487
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    487
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 488
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 70
+    {StrucList}
+    488
+      {Structure}
+      1000222
+      3
+      5
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kharkov
+      
+      {/Structure}
+      {Structure}
+      1000223
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000898
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Budapest Small Arms Factory
+      
+      {/Structure}
+      {Structure}
+      1000899
+      13
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Air Force School
+      
+      {/Structure}
+      {Structure}
+      1000900
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kharkov railroad workshops
+      
+      {/Structure}
+      {Structure}
+      1000901
+      15
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Central Bank
+      
+      {/Structure}
+      {Structure}
+      1000902
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000903
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000904
+      2
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kharkov Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 489
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    489
+      {Structure}
+      1000224
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Belgorod
+      
+      {/Structure}
+      {Structure}
+      1000905
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 494
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    494
+      {Structure}
+      1000226
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kupiansk
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 495
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    495
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 496
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    496
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 497
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    497
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 508
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    508
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 509
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    509
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 511
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    511
+      {Structure}
+      1000232
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Slaviansk
+      
+      {/Structure}
+      {Structure}
+      1000233
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 512
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    512
+      {Structure}
+      1000234
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Lugansk
+      
+      {/Structure}
+      {Structure}
+      1000235
+      0
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1001016
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Arms Factory
+      
+      {/Structure}
+      {Structure}
+      1001017
+      2
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 516
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    516
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 517
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    517
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 518
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    518
+      {Structure}
+      1000238
+      3
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Rostov
+      
+      {/Structure}
+      {Structure}
+      1000239
+      0
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000875
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Small Arms Factory
+      
+      {/Structure}
+      {Structure}
+      1000876
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Rostov Barracks
+      
+      {/Structure}
+      {Structure}
+      1000877
+      12
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Rostov Shipyard
+      
+      {/Structure}
+      {Structure}
+      1000878
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000879
+      2
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Rostov Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 519
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    519
+      {Structure}
+      1000240
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Taganrog
+      
+      {/Structure}
+      {Structure}
+      1000241
+      0
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000914
+      15
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Central Bank
+      
+      {/Structure}
+      {Structure}
+      1000915
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 520
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    520
+      {Structure}
+      1000242
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Donetsk
+      
+      {/Structure}
+      {Structure}
+      1000873
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Donbass Arms Factory
+      
+      {/Structure}
+      {Structure}
+      1000874
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 521
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    521
+      {Structure}
+      1000243
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Makeievka
+      
+      {/Structure}
+      {Structure}
+      1000870
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Arms Factory
+      
+      {/Structure}
+      {Structure}
+      1000871
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 522
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    522
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 523
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    523
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 524
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    524
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 525
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    525
+      {Structure}
+      1000244
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Pavlograd
+      
+      {/Structure}
+      {Structure}
+      1000245
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 526
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    526
+      {Structure}
+      1000246
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Alexandrovsk
+      
+      {/Structure}
+      {Structure}
+      1000247
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 527
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    527
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 528
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    528
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 529
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    529
+      {Structure}
+      1000248
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Mariupol
+      
+      {/Structure}
+      {Structure}
+      1000249
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1001033
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 531
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 70
+    {StrucList}
+    531
+      {Structure}
+      1000250
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Berdjiansk
+      
+      {/Structure}
+      {Structure}
+      1000251
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1001034
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 532
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    532
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 533
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 70
+    {StrucList}
+    533
+      {Structure}
+      1000252
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Melitopol
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 534
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    534
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 535
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    535
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 536
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 70
+    {StrucList}
+    536
+      {Structure}
+      1000253
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Perekop
+      
+      {/Structure}
+      {Structure}
+      1000254
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1001027
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1001028
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 537
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    537
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 538
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    538
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 539
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    539
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 540
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    540
+      {Structure}
+      1000255
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Eupatoria
+      
+      {/Structure}
+      {Structure}
+      1000256
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000980
+      17
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Military Academy
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 541
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    541
+      {Structure}
+      1000257
+      3
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Simferopol
+      
+      {/Structure}
+      {Structure}
+      1000258
+      0
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1001029
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1001030
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 542
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 50
+    {StrucList}
+    542
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 543
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    543
+      {Structure}
+      1000259
+      3
+      3
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Sevastopol
+      
+      {/Structure}
+      {Structure}
+      1001018
+      17
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Military Academy
+      
+      {/Structure}
+      {Structure}
+      1001019
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1001020
+      9
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Black Sea Fleet Arsenal
+      
+      {/Structure}
+      {Structure}
+      1001021
+      13
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Air Force School
+      
+      {/Structure}
+      {Structure}
+      1001022
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1001023
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1001024
+      15
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Central Bank
+      
+      {/Structure}
+      {Structure}
+      1001025
+      1
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Sevastopol Fortress
+      
+      {/Structure}
+      {Structure}
+      1001026
+      2
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Sevastopol Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 544
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    544
+      {Structure}
+      1000261
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Feodosia
+      
+      {/Structure}
+      {Structure}
+      1000262
+      0
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1001031
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 545
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 70
+    {StrucList}
+    545
+      {Structure}
+      1000263
+      3
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Kertch
+      
+      {/Structure}
+      {Structure}
+      1000264
+      0
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1001032
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 856
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    856
+      {Structure}
+      1000351
+      3
+      10
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Munich
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 857
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 75
+    {StrucList}
+    857
+      {Structure}
+      1000352
+      3
+      3
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Craiova
+      
+      {/Structure}
+      {Structure}
+      1000897
+      10
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ploeisti Oilfields
+      
+      {/Structure}
+      {Structure}
+      1000932
+      2
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Wallachia Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 878
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 60
+    {StrucList}
+    878
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1375
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    1375
+      {Structure}
+      1000474
+      3
+      3
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Constanta
+      
+      {/Structure}
+      {Structure}
+      1000475
+      0
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000948
+      2
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1376
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    1376
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1377
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    1377
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1378
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    1378
+      {Structure}
+      1000476
+      3
+      10
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Bucuresti
+      
+      {/Structure}
+      {Structure}
+      1000477
+      0
+      2
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Ii
+      
+      {/Structure}
+      {Structure}
+      1000933
+      11
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Railroad Workshop
+      
+      {/Structure}
+      {Structure}
+      1000934
+      14
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000935
+      16
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000936
+      12
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Shipyard
+      
+      {/Structure}
+      {Structure}
+      1000937
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Arms Factory
+      
+      {/Structure}
+      {Structure}
+      1000938
+      2
+      4
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Bucuresti Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1704
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    1704
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1706
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    1706
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1707
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    1707
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1883
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    1883
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1884
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    1884
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1885
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    1885
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1886
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 90
+    {StrucList}
+    1886
+      {Structure}
+      1000862
+      17
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Military Academy
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1976
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    1976
+      {Structure}
+      1000561
+      3
+      10
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Budapest
+      
+      {/Structure}
+      {Structure}
+      1000927
+      7
+      1
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Budapest Small Arms Factory
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1977
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 100
+    {StrucList}
+    1977
+      {Structure}
+      1000562
+      3
+      5
+      0
+      1000018
+      0
+      1
+      1
+      0
+      9
+      0
+      0
+      Hermannstadt
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+{/Faction}

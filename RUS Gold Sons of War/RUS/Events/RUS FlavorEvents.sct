@@ -241,7 +241,7 @@ StartEvent = evt_nam_Renforts_RED_StalinInSouthWestFront|1|2|evt_txt_Renforts_RE
 
 Conditions
 
-  FixedDate = 1920/01/06
+  FixedDate = 1920/01/19
 
 Actions
 
@@ -862,6 +862,8 @@ SelectRegion = $Samara
   SetType = $uni_WH3_Neyzel1
   SetName = V.K. Neyzel
   Apply
+  SetHealth = 10
+  SetCohesion = 100 
   CreateUnit
     SetType = $uni_WH2_Bde10
     SetName = 1st Samara Fusilier Division
@@ -874,6 +876,8 @@ SelectRegion = $Samara
   SetType = $uni_WH2_Imshenetsky1
   SetName = A.S. Imshenetsky
   Apply
+  SetHealth = 100
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_WH2_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
@@ -897,7 +901,6 @@ SelectRegion = $Samara
     SetName = Komuch Air Force
   Apply
 
-
 SelectFaction = $WH3
 SelectRegion = $Syzran
   CreateGroup
@@ -905,7 +908,7 @@ SelectRegion = $Syzran
     SetKind = $Land
     Entranch = 0
     InCS = 0
-    FixType = 2
+    FixType = 0
     SetName = 2nd Syzran Fusilier Division
   Apply
   CreateUnit
@@ -914,11 +917,15 @@ SelectRegion = $Syzran
     FlavorName = 2nd Syzran Fusilier Division
     SetName = A.S. Bakich
   Apply
+  SetHealth = 10
+  SetCohesion = 100
   CreateUnit
     SetCommit = 3
     SetType = $uni_WH2_Bde10
     SetName = 2nd Syzran Fusilier Division
   Apply
+  SetHealth = 100
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_WH2_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
@@ -932,7 +939,7 @@ SelectRegion = $Khvalynsk
     SetKind = $Land
     Entranch = 0
     InCS = 1
-    FixType = 1
+    FixType = 0
     SetName = 4th Ufa Fusiliers Division
   Apply
   CreateUnit
@@ -941,11 +948,15 @@ SelectRegion = $Khvalynsk
     FlavorName = 4th Ufa Fusiliers Division
     SetName = F.E. Makhin
   Apply
+  SetHealth = 10
+  SetCohesion = 100
   CreateUnit
     SetCommit = 3
     SetType = $uni_WH2_Bde10
     SetName = 4th Ufa Fusiliers Division
   Apply
+  SetHealth = 100
+  SetCohesion = 100
   CreateUnit
     SetType = $uni_WH2_Sup1
     SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
@@ -10731,16 +10742,6 @@ SelectRegion = $Huliaipole
   SetName = 2nd Inf Dtch
   Apply
   CreateUnit
-  SetType = $uni_ANA_Cav2
-  SetLevel = 1
-  SetName = 3rd Inf Dtch
-  Apply
-  CreateUnit
-  SetType = $uni_ANA_Cav2
-  SetLevel = 1
-  SetName = 4th Inf Dtch
-  Apply
-  CreateUnit
   SetType = $uni_ANA_MG1
   SetLevel = 1
   SetName = 1st Tachankas Dcht
@@ -14173,9 +14174,9 @@ SelectRegion = $Omsk
 EndEvent
 
 SelectFaction = $CMN
-SelectRegion = $Kazan
+SelectRegion = $Samara
 
-StartEvent = evt_nam_CMN_RussianGoldTrain4|1|0|NULL|NULL|$Kazan|NULL
+StartEvent = evt_nam_CMN_RussianGoldTrain4|1|0|NULL|NULL|$Samara|NULL
 
 Conditions
 
@@ -14185,6 +14186,46 @@ SelectFaction = $WH3
 
   EvalEvent = evt_nam_CMN_gold_train_Omsk_WH3AI;=;0
   EvalEvent = evt_nam_CMN_RussianGoldTrain;=;1
+  EvalEvent = evt_nam_CMN_RussianGoldTrain5;=;0
+  EvalRgnOwned = $Samara
+
+Actions
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 1
+    InCS = 1
+    FixType = 0
+    SetName = Imperial Gold Train
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Amt4
+    SUFlavorName = Imperial Gold Train
+    SetName = Imperial Gold Train
+  Apply
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_CMN_RussianGoldTrain5|1|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/02
+
+SelectFaction = $WH3
+
+  EvalEvent = evt_nam_CMN_gold_train_Omsk_WH3AI;=;0
+  EvalEvent = evt_nam_CMN_RussianGoldTrain;=;1
+  EvalEvent = evt_nam_CMN_RussianGoldTrain4;=;0
+  EvalRgnOwned = $Samara;NOT
+  EvalRgnOwned = $Omsk
 
 Actions
 
@@ -14206,7 +14247,6 @@ SelectRegion = $Omsk
   Apply
 
 EndEvent
-
 NULL ==========================================================================
 
 SelectFaction = $CMN
@@ -14215,8 +14255,6 @@ SelectRegion = $Moscow
 StartEvent = evt_nam_CMN_gold_train_bonus_Moscow|999|1|NULL|NULL|$Moscow|NULL
 
 Conditions
-
-  MinDate = 1918/10/02
 
 SelectFaction = $RED
 
@@ -14239,7 +14277,6 @@ StartEvent = evt_nam_CMN_gold_train_bonus_Ekaterinodar|999|1|NULL|NULL|$Ekaterin
 
 Conditions
 
-  MinDate = 1918/10/02
   EvalEvent = evt_nam_CMN_EkaterinodarNewCapital;=;1
   EvalEvent = evt_nam_WHI_Sevastopol_Capital_Chosen;=;0
 
@@ -14264,7 +14301,6 @@ StartEvent = evt_nam_CMN_gold_train_bonus_Rostov|999|1|NULL|NULL|$Rostov|NULL
 
 Conditions
 
-  MinDate = 1918/10/02
   EvalEvent = evt_nam_CMN_RostovNewCapital;=;1
   EvalEvent = evt_nam_WHI_Sevastopol_Capital_Chosen;=;0
 
@@ -14289,7 +14325,6 @@ StartEvent = evt_nam_CMN_gold_train_bonus_Sevastopol|999|1|NULL|NULL|$Sevastopol
 
 Conditions
 
-  MinDate = 1918/10/02
   EvalEvent = evt_nam_WHI_Sevastopol_Capital_Chosen;=;1
 
 SelectFaction = $WHI
@@ -14313,7 +14348,6 @@ StartEvent = evt_nam_CMN_gold_train_bonus_Irkutsk|999|1|NULL|NULL|$Irkutsk|NULL
 
 Conditions
 
-  MinDate = 1918/10/02
   EvalEvent = evt_nam_WH3_Irkutsk_Capital_Chosen;=;1
 
 SelectFaction = $WH3
@@ -14337,7 +14371,6 @@ StartEvent = evt_nam_CMN_gold_train_bonus_Omsk|999|1|NULL|NULL|$Omsk|NULL
 
 Conditions
 
-  MinDate = 1918/10/02
   EvalEvent = evt_nam_WH3_Omsk_Capital_Chosen;=;1
 
 SelectFaction = $WH3
@@ -14361,7 +14394,6 @@ StartEvent = evt_nam_CMN_gold_train_bonus_Samara|999|1|NULL|NULL|$Samara|NULL
 
 Conditions
 
-  MinDate = 1918/10/02
   EvalEvent = evt_nam_WH3_Samara_Capital_Chosen;=;1
 
 SelectFaction = $WH3
@@ -19323,7 +19355,7 @@ EndEvent
 SelectFaction = $CMN
 SelectRegion = $Bukhara
 
-StartEvent = evt_nam_KAZ_BashkirsBasmachi|1|1|NULL|NULL|$Bukhara|NULL
+StartEvent = evt_nam_KAZ_BashkirsBasmachi|1|0|NULL|NULL|$Bukhara|NULL
 
 Conditions
 
@@ -19331,6 +19363,7 @@ SelectFaction = $GRN
 
   MinDate = 1920/05/18
   Probability = 33
+  EvalEvent = evt_nam_CMN_BashkirUprising;=;1
 
   EvalUnqUnit = I.G. Ishmurzin
 
@@ -19359,7 +19392,7 @@ EndEvent
 SelectFaction = $CMN
 SelectRegion = $Bukhara
 
-StartEvent = evt_nam_KAZ_BashkirsBasmachi2|1|1|NULL|NULL|$Bukhara|NULL
+StartEvent = evt_nam_KAZ_BashkirsBasmachi2|1|0|NULL|NULL|$Bukhara|NULL
 
 Conditions
 
@@ -19368,6 +19401,7 @@ SelectFaction = $GRN
   MinDate = 1920/05/18
   Probability = 33
   EvalUnqUnit = A. Validov
+  EvalEvent = evt_nam_CMN_BashkirUprising;=;1
 
 Actions
 

@@ -2484,7 +2484,6 @@ Conditions
   EvalEvent = evt_nam_CMN_WrangelInCommand;=;1
   CheckOption = $gmaOptionPol;WHI_AutonomyRecognition;=;1
   CanPayOption = $gmaOptionPol;WHI_AutonomyRecognition
-  EvalEvent = evt_nam_WH3_AutonomyRecognition_Check;=;0
 
 Actions
 
@@ -2622,7 +2621,6 @@ Conditions
   EvalUnqUnit = A.V. Kolchak;NOT
   CheckOption = $gmaOptionPol;WH3_AutonomyRecognition;=;1
   CanPayOption = $gmaOptionPol;WH3_AutonomyRecognition
-  EvalEvent = evt_nam_WHI_AutonomyRecognition_Check;=;0
 
 Actions
 
@@ -2889,7 +2887,6 @@ StartEvent = evt_nam_WH3_Autonomy_troops_Zabaikal|12|1|NULL|NULL|NULL|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalEvent = evt_nam_WH3_Attack_Semenov_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
@@ -2923,7 +2920,6 @@ StartEvent = evt_nam_WH3_Autonomy_troops_Akmolinsk|12|1|NULL|NULL|NULL|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   Probability = 50
@@ -2956,7 +2952,6 @@ StartEvent = evt_nam_WH3_Autonomy_troops_Uralsk|12|1|NULL|NULL|NULL|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   Probability = 50
@@ -2989,7 +2984,6 @@ StartEvent = evt_nam_WH3_Autonomy_troops_Orenburg|12|1|NULL|NULL|NULL|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   Probability = 50
@@ -3023,7 +3017,6 @@ StartEvent = evt_nam_WH3_Autonomy_Zabaikal|999|1|NULL|NULL|$Chita|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalEvent = evt_nam_WH3_Attack_Semenov_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
@@ -3043,7 +3036,6 @@ StartEvent = evt_nam_WH3_Autonomy_Uralsk|999|1|NULL|NULL|$Uralsk|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   EvalRgnOwned = $Uralsk
@@ -3062,7 +3054,6 @@ StartEvent = evt_nam_WH3_Autonomy_Akmolinsk|999|1|NULL|NULL|$Akmolinsk|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   EvalRgnOwned = $Akmolinsk
@@ -3081,7 +3072,6 @@ StartEvent = evt_nam_WH3_Autonomy_Orenburg|999|1|NULL|NULL|$Orenburg|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   EvalRgnOwned = $Orenburg
@@ -3160,7 +3150,6 @@ StartEvent = evt_nam_WH3_Autonomy_Terek|999|1|NULL|NULL|$Grozny|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   EvalRgnOwned = $Grozny
@@ -3181,7 +3170,6 @@ StartEvent = evt_nam_WH3_Autonomy_Semipalatinsk|999|1|NULL|NULL|$Semipalatinsk|N
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   EvalRgnOwned = $Semipalatinsk
@@ -3202,7 +3190,6 @@ StartEvent = evt_nam_WH3_Autonomy_Ufa|999|1|NULL|NULL|$Ufa|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   EvalRgnOwned = $Ufa
@@ -3223,7 +3210,6 @@ StartEvent = evt_nam_WH3_Autonomy_Caspian|999|1|NULL|NULL|$Achkhabad|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   EvalRgnOwned = $Achkhabad
@@ -3264,7 +3250,6 @@ StartEvent = evt_nam_WH3_Autonomy_Syr-Darinsk|999|1|NULL|NULL|$Tashkent|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   EvalRgnOwned = $Tashkent
@@ -3285,7 +3270,6 @@ StartEvent = evt_nam_WH3_Autonomy_Samarkand|999|1|NULL|NULL|$Samarkand|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   EvalRgnOwned = $Samarkand
@@ -3404,7 +3388,6 @@ StartEvent = evt_nam_WH3_Autonomy_troops_Semipalatinsk|12|1|NULL|NULL|NULL|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   Probability = 50
@@ -3439,7 +3422,6 @@ StartEvent = evt_nam_WH3_Autonomy_troops_Ufa|12|1|NULL|NULL|NULL|NULL
 
 Conditions
 
-  MinDate = 1919/01/01
   EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
   EvalUnqUnit = A.V. Kolchak;NOT
   Probability = 50
@@ -3958,7 +3940,8 @@ SelectFaction = $WH3
 
   SetCapitals = $Omsk;3
   SetEvtOccurs = evt_nam_WH3_Omsk_Capital_Chosen;MaxOccurs;1
-
+  SetEvtOccurs = evt_nam_WH3_AutonomyRecognition_Generate;CuOccurs;1
+  
 RemSubFacRgn = ORE;$Orenburg
 RemSubFacRgn = ORE;$Salavat
 RemSubFacRgn = ORE;$Saraktash
@@ -5494,5 +5477,91 @@ SelectRegion = $Irkutsk
 SelectFaction = $CMN
 
   GenTextMsg  = opt_notify_CMN_Hold_Irkutsk;1;NULL;NULL;NULL
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_HelpAlly_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/10
+  EvalFacRelationships = ANA;>=;0
+  CheckAILevel = 1
+  CanPayOption = $gmaOptionPol;RED_HelpAlly;200
+  ActorEnabled = $gmaOptionPol;RED_HelpAlly
+  Probability = 50
+  EvalMoney = >=;300
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_HelpAlly;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_HelpAlly_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalFacRelationships = ANA;>=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;Money;150;ImageID;Opt_WHI_HelpAlly.png;Title;opt_title_RED_HelpAlly;MsgString;opt_desc_RED_HelpAlly;ToolString;opt_hint_RED_HelpAlly;SubType;RED_HelpAlly;SParam1;RED
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_HelpAlly|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;RED_HelpAlly;=;1
+  CanPayOption = $gmaOptionPol;RED_HelpAlly
+
+Actions
+
+  PayOption = $gmaOptionPol;RED_HelpAlly
+
+SelectFaction = $ANA
+  ChangeMoneyPool = 100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_HelpAlly3;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_HelpAlly
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_HelpAlly_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalFacRelationships = ANA;>=;0
+  ActorDisabled = $gmaOptionPol;RED_HelpAlly
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_HelpAlly_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;Money;150;ImageID;Opt_WHI_HelpAlly.png;Title;opt_title_RED_HelpAlly;MsgString;opt_desc_RED_HelpAlly;ToolString;opt_hint_RED_HelpAlly;SubType;RED_HelpAlly;SParam1;RED
 
 EndEvent

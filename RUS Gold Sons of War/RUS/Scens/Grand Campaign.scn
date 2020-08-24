@@ -22,7 +22,7 @@ RUS GOLD 1.01
 
 GlobSupplyMod|100|100
 NULL
-1000001|1000002|1000003|1000004|1000005|1000006|1000007|1000008|1000009|1000010|1000011|1000012|1000013|1000014|1000015|1000016|1000017|1000018|1000019|1000020|&-999|&0|-999|&-100|-100|-999|&-100|-100|-100|-999|&100|-100|-100|-100|-999|&100|100|-100|-100|100|-999|&-100|-100|-100|-100|-100|0|-999|&0|0|-100|-100|0|-100|-100|-999|&-100|-100|-100|-100|-100|100|100|-100|-999|&100|100|-100|-100|100|-100|0|0|0|-999|&100|100|-100|-100|100|-100|0|0|0|100|-999|&100|100|-100|-100|100|-100|0|0|0|100|100|-999|&0|0|0|-100|100|-100|0|0|0|100|100|100|-999|&-100|-100|-100|-100|-100|-100|0|0|0|0|0|0|0|-999|&0|100|-100|-100|-100|0|0|0|0|0|0|0|0|0|-999|&-100|-100|100|100|-100|-100|-100|-100|-100|-100|-100|-100|-100|-100|-100|-999|&-100|-100|-100|-100|0|0|0|0|0|100|100|100|100|100|0|-100|-999|&-100|-100|-100|-100|100|0|0|0|0|0|0|0|0|-100|0|-100|0|-999|&-100|-100|-100|-100|-100|0|0|0|0|0|0|0|0|0|0|-100|-100|-100|-999|&-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|&
+1000001|1000002|1000003|1000004|1000005|1000006|1000007|1000008|1000009|1000010|1000011|1000012|1000013|1000014|1000015|1000016|1000017|1000018|1000019|1000020|&-999|&0|-999|&-100|-100|-999|&-100|-100|-100|-999|&0|-100|-100|-100|-999|&100|100|-100|-100|100|-999|&-100|-100|-100|-100|-100|0|-999|&0|0|-100|-100|0|-100|-100|-999|&-100|-100|-100|-100|-100|100|100|-100|-999|&100|0|-100|-100|100|-100|0|0|0|-999|&100|0|-100|-100|100|-100|0|0|0|100|-999|&0|0|-100|-100|100|-100|0|0|0|100|100|-999|&0|0|0|-100|100|-100|0|0|0|100|100|100|-999|&0|0|-100|-100|-100|-100|0|0|0|0|0|0|0|-999|&0|100|-100|-100|-100|0|0|0|0|0|0|0|0|0|-999|&-100|-100|100|100|-100|-100|-100|-100|-100|-100|-100|-100|-100|-100|-100|-999|&-100|-100|-100|-100|0|0|0|0|0|100|100|100|100|100|0|-100|-999|&-100|-100|-100|-100|100|0|0|0|0|0|0|0|0|-100|0|-100|0|-999|&-100|-100|-100|-100|-100|0|0|0|0|0|0|0|0|0|0|-100|-100|-100|-999|&-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|-999|&
 [TMILM]1000001|1000002|1000003|1000004|1000005|1000006|1000007|1000008|1000009|1000010|1000011|1000012|1000013|1000014|1000015|1000016|1000017|1000018|1000019|1000020|§&§&&§&&&§&&&&§&&&&&§&&&&&&§&&&&&&&§&&&&&&&&§&&&&&&&&&§&&&&&&&&&&§&&&&&&&&&&&§&&&&&&&&&&&&§&&&&&&&&&&&&&§&&&&&&&&&&&&&&§&&&&&&&&&&&&&&&§&&&&&&&&&&&&&&&&§&&&&&&&&&&&&&&&&&§&&&&&&&&&&&&&&&&&&§&&&&&&&&&&&&&&&&&&&§&&&&&&&&&&&&&&&&&&&&§[TMILM][TMTDB]NULL[TMTDB]
 0
 0|1|2|0|2|1|1|2|0|1|0|0|1|0|1|1|2|1|0|1|0|0|0|1|1|1|0|0|1|0|0|0|0|1|1|1|0|A|1|1|0|0|999|999|999|999|999|999|999
@@ -128,7 +128,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  2415|10|252|24|2052|8|2053|8|174|4|179|4|2068|2|2069|2|196|4|202|4|2070|2|2071|2|203|6|1771|2|187|5|193|6|192|6|176|6|207|6|208|6|209|6|210|6|211|6|212|6|213|6|218|14|214|6|215|4|217|4|221|5|216|4|223|14|225|14|224|14|228|10|229|15|230|10|231|40|239|3|240|4|241|5|242|6|243|7|244|8|245|11|246|9|247|9|248|9|249|10|265|32|269|10|2378|6|266|10|270|10|271|3|272|1|273|10|275|6|276|3|277|8|281|40|282|4|1933|1|1994|10|373|8|2082|2|359|4|2083|1|361|4|362|3|1999|2|2000|1|365|10|2002|10|2001|10|366|3|367|1|364|3|370|10|371|2|1997|5|
+  2415|10|252|26|2052|8|2053|9|174|4|179|4|2068|2|2069|2|196|4|202|4|2070|2|2071|2|203|6|1771|2|187|5|193|6|192|6|207|6|208|6|209|6|210|6|211|6|212|6|213|6|218|14|214|6|215|4|217|4|221|5|216|4|223|14|225|14|224|14|228|10|229|15|230|10|231|40|239|3|240|4|241|5|242|6|243|7|244|8|245|11|246|9|247|9|248|9|249|10|265|32|269|10|2378|6|266|10|270|10|271|3|272|1|273|10|275|6|276|3|277|8|281|40|282|4|1933|1|1994|10|373|8|2082|2|359|4|2083|1|361|4|362|3|1999|2|2000|1|365|10|2002|10|2001|10|366|3|367|1|364|3|370|10|371|2|1997|5|
   NULL
   NULL
   NULL
@@ -146,7 +146,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  7|0|8|200|11|130|0|120|12|40|10|90|6|0|17|15|
+  7|0|8|200|11|130|0|120|12|40|10|130|6|0|17|15|
   NULL
   NULL
   NULL
@@ -164,7 +164,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  4012|39|3977|35
+  3394|34|3363|31
   NULL
   NULL
   NULL
@@ -173,7 +173,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#255|4|256|2|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#255|10|256|5|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -609,7 +609,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#70#CbtPower#
+      #CbtPower#58#CbtPower#
       NULL
         {SubUnit}
         1002733
@@ -1028,7 +1028,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#169#CbtPower#
+      #CbtPower#140#CbtPower#
       NULL
         {SubUnit}
         1002746
@@ -1537,7 +1537,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#279#CbtPower#
+      #CbtPower#234#CbtPower#
       NULL
         {SubUnit}
         1002718
@@ -2052,7 +2052,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#257#CbtPower#
+      #CbtPower#218#CbtPower#
       NULL
         {SubUnit}
         1002783
@@ -2381,7 +2381,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#246#CbtPower#
+      #CbtPower#205#CbtPower#
       NULL
         {SubUnit}
         1002765
@@ -3027,7 +3027,7 @@ Placeholder16
       {/Unit}
       {Unit}
       1002705
-      176
+      255
       0
       699
       0
@@ -3058,7 +3058,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#46#CbtPower#
+      #CbtPower#26#CbtPower#
       NULL
         {SubUnit}
         1002708
@@ -3092,15 +3092,15 @@ Placeholder16
         {/SubUnit}
         {SubUnit}
         1002706
-        134
-        15
-        30
+        176
+        20
+        60
         0
-        3
-        3
+        4
+        4
         0
         0
-        65
+        35
         0
         0
         0
@@ -3154,7 +3154,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#70#CbtPower#
+      #CbtPower#59#CbtPower#
       NULL
         {SubUnit}
         1002698
@@ -3838,7 +3838,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#31#CbtPower#
+      #CbtPower#27#CbtPower#
       NULL
         {SubUnit}
         1002688
@@ -3934,7 +3934,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#31#CbtPower#
+      #CbtPower#27#CbtPower#
       NULL
         {SubUnit}
         1002691
@@ -4365,7 +4365,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#188#CbtPower#
+      #CbtPower#159#CbtPower#
       NULL
         {SubUnit}
         1002989
@@ -4611,7 +4611,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#188#CbtPower#
+      #CbtPower#159#CbtPower#
       NULL
         {SubUnit}
         1002981
@@ -5060,7 +5060,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#39#CbtPower#
+      #CbtPower#34#CbtPower#
       NULL
         {SubUnit}
         1002931
@@ -5263,7 +5263,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#35#CbtPower#
+      #CbtPower#31#CbtPower#
       NULL
         {SubUnit}
         1002921
@@ -6114,7 +6114,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#15#CbtPower#
+      #CbtPower#13#CbtPower#
       NULL
         {SubUnit}
         1002862
@@ -6515,7 +6515,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#40#CbtPower#
+      #CbtPower#33#CbtPower#
       NULL
         {SubUnit}
         1002798
@@ -6581,7 +6581,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#40#CbtPower#
+      #CbtPower#33#CbtPower#
       NULL
         {SubUnit}
         1002796
@@ -6647,7 +6647,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1002800
@@ -6916,7 +6916,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#139#CbtPower#
+      #CbtPower#121#CbtPower#
       NULL
         {SubUnit}
         1002824
@@ -7162,7 +7162,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#139#CbtPower#
+      #CbtPower#121#CbtPower#
       NULL
         {SubUnit}
         1002832
@@ -7408,7 +7408,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#139#CbtPower#
+      #CbtPower#121#CbtPower#
       NULL
         {SubUnit}
         1002808
@@ -7654,7 +7654,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#139#CbtPower#
+      #CbtPower#121#CbtPower#
       NULL
         {SubUnit}
         1002816
@@ -8103,7 +8103,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#202#CbtPower#
+      #CbtPower#171#CbtPower#
       NULL
         {SubUnit}
         1002878
@@ -8319,7 +8319,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#179#CbtPower#
+      #CbtPower#152#CbtPower#
       NULL
         {SubUnit}
         1002892
@@ -8601,7 +8601,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#188#CbtPower#
+      #CbtPower#159#CbtPower#
       NULL
         {SubUnit}
         1002870
@@ -8847,7 +8847,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#142#CbtPower#
+      #CbtPower#121#CbtPower#
       NULL
         {SubUnit}
         1002886
@@ -9033,7 +9033,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#75#CbtPower#
       NULL
         {SubUnit}
         1002902
@@ -9159,7 +9159,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#47#CbtPower#
+      #CbtPower#41#CbtPower#
       NULL
         {SubUnit}
         1002908
@@ -9225,7 +9225,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#31#CbtPower#
+      #CbtPower#26#CbtPower#
       NULL
         {SubUnit}
         1002906
@@ -9716,7 +9716,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#188#CbtPower#
+      #CbtPower#159#CbtPower#
       NULL
         {SubUnit}
         1002965
@@ -10231,7 +10231,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#164#CbtPower#
+      #CbtPower#139#CbtPower#
       NULL
         {SubUnit}
         1003013
@@ -10477,7 +10477,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#164#CbtPower#
+      #CbtPower#139#CbtPower#
       NULL
         {SubUnit}
         1003005
@@ -11124,7 +11124,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#188#CbtPower#
+      #CbtPower#159#CbtPower#
       NULL
         {SubUnit}
         1002949
@@ -11370,7 +11370,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#142#CbtPower#
+      #CbtPower#121#CbtPower#
       NULL
         {SubUnit}
         1002943
@@ -16836,7 +16836,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  2417|4|2418|4|2419|2|2420|2|2416|10|1996|14|322|8|353|12|313|4|314|2|332|6|1767|2|318|8|321|12|319|4|320|4|327|4|329|4|330|4|331|12|2225|2|2226|2|2227|2|2228|2|2229|2|2230|2|335|14|1764|14|1765|14|336|10|337|10|338|10|339|10|340|8|341|8|342|20|343|10|344|8|348|50|350|8|351|4|352|6|349|10|1932|5|1934|10|2234|5|393|8|2085|2|380|4|2086|1|377|1|378|4|382|4|383|3|2003|2|2004|1|384|8|2006|8|2005|8|2007|3|2087|3|385|1|379|1|388|10|389|5|390|3|391|1|
+  2417|4|2418|4|2419|2|2420|2|2416|10|1996|14|322|8|353|12|313|4|314|4|332|6|1767|2|321|12|319|4|320|4|327|4|329|4|330|4|331|12|2225|2|2226|2|2227|2|2228|2|2229|2|2230|2|335|14|1764|14|1765|14|336|10|337|10|338|10|339|10|340|8|341|8|342|20|343|10|344|8|348|50|350|8|351|4|352|6|349|10|1932|5|1934|10|2234|5|393|8|2085|2|380|4|2086|1|377|1|378|4|382|4|383|3|2003|2|2004|1|384|8|2006|8|2005|8|2007|3|2087|3|385|1|379|1|388|10|389|5|390|3|391|1|
   NULL
   NULL
   NULL
@@ -16854,7 +16854,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  7|0|8|300|11|60|0|100|12|20|10|90|6|0|17|15|
+  7|0|8|300|11|60|0|100|12|20|10|130|6|0|17|15|
   NULL
   NULL
   NULL
@@ -16872,7 +16872,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  4054|638|3915|139
+  3585|557|3461|124
   NULL
   NULL
   NULL
@@ -16881,7 +16881,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#356|4|355|2|311|4|310|2|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#356|10|355|5|311|10|310|5|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -16982,7 +16982,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#53#CbtPower#
+      #CbtPower#46#CbtPower#
       NULL
         {SubUnit}
         1003110
@@ -17431,7 +17431,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#26#CbtPower#
       NULL
         {SubUnit}
         1003502
@@ -17497,7 +17497,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#28#CbtPower#
+      #CbtPower#23#CbtPower#
       NULL
         {SubUnit}
         1003506
@@ -17563,7 +17563,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#28#CbtPower#
+      #CbtPower#23#CbtPower#
       NULL
         {SubUnit}
         1003504
@@ -17629,7 +17629,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#8#CbtPower#
       NULL
         {SubUnit}
         1003508
@@ -17820,7 +17820,240 @@ Placeholder16
       {/Unit}
     {/Group}
     {Group}
-    1003551
+    1003546
+    -1
+    50001
+    1564
+    -1
+    1000002
+    12645
+    5950
+    50001
+    1564
+    -1
+    -1
+    -1
+    0
+    12645
+    5950
+    1
+    -1
+    0
+    0
+    0
+    -1
+    -1
+    1
+    0
+    1
+    0
+    0
+    -1
+    0
+    100
+    100
+    0
+    0
+    0
+    Semiretche Partisans
+    NULL
+    NULL
+    NULL
+    NULL
+    NULL
+    NULL
+    #Kind#0#Kind#
+    Semiretche Partisans|NoLeader|1564|1|
+    NULL
+      {Unit}
+      1003547
+      2424
+      0
+      1564
+      1
+      1003546
+      1000002
+      0
+      1
+      0
+      -1
+      0
+      8
+      -1
+      0
+      -1
+      -1
+      0
+      0
+      -1
+      0
+      0
+      Annenkov's Cavalry
+      NULL
+      NULL
+      Annenkov's Cavalry
+      NULL
+      NULL
+      NULL
+      NULL
+      NULL
+      NULL
+      #CbtPower#119#CbtPower#
+      NULL
+        {SubUnit}
+        1003548
+        2111
+        20
+        0
+        0
+        4
+        4
+        0
+        0
+        75
+        0
+        0
+        0
+        0
+        0
+        1
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        2nd Semirechie Cossacks
+        {/SubUnit}
+        {SubUnit}
+        1003549
+        2111
+        20
+        0
+        0
+        4
+        4
+        0
+        0
+        75
+        0
+        0
+        0
+        0
+        0
+        1
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        3rd Semirechie Cossacks
+        {/SubUnit}
+        {SubUnit}
+        1003550
+        2111
+        20
+        0
+        0
+        4
+        4
+        0
+        0
+        75
+        0
+        0
+        0
+        0
+        0
+        1
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        4th Semirechie Cossacks
+        {/SubUnit}
+        {SubUnit}
+        1003551
+        2111
+        20
+        0
+        0
+        4
+        4
+        0
+        0
+        75
+        0
+        0
+        0
+        0
+        0
+        1
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        5th Semirechie Cossacks
+        {/SubUnit}
+        {SubUnit}
+        1003552
+        2194
+        8
+        0
+        0
+        2
+        8
+        0
+        0
+        60
+        0
+        0
+        0
+        0
+        0
+        1
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        4th Horse Bty
+        {/SubUnit}
+      {/Unit}
+    {/Group}
+    {Group}
+    1003558
     -1
     50001
     1564
@@ -17866,12 +18099,12 @@ Placeholder16
     Alash Orda|A. Bukeikhanov|1564|1|
     NULL
       {Unit}
-      1003552
+      1003559
       1640
       3
       1564
       0
-      1003551
+      1003558
       1000002
       0
       1
@@ -17893,15 +18126,15 @@ Placeholder16
       Alash Orda
       A. Bukeikhanov
       NULL
-      Alash Orda Infantry Rgt|319|Alash Orda Infantry Rgt|1003555 &Alash Orda Cavalry Rgt|329|Alash Orda Cavalry Rgt|1003557 &Alash Orda Cavalry Rgt|329|Alash Orda Cavalry Rgt|1003559 &
+      Alash Orda Infantry Rgt|319|Alash Orda Infantry Rgt|1003562 &Alash Orda Cavalry Rgt|329|Alash Orda Cavalry Rgt|1003564 &Alash Orda Cavalry Rgt|329|Alash Orda Cavalry Rgt|1003566 &
       Alash Orda
       NULL
       NULL
       NULL
-      #CbtPower#88#CbtPower#
+      #CbtPower#74#CbtPower#
       NULL
         {SubUnit}
-        1003553
+        1003560
         1637
         1
         0
@@ -17931,7 +18164,7 @@ Placeholder16
         A. Bukeikhanov
         {/SubUnit}
         {SubUnit}
-        1003555
+        1003562
         222
         20
         0
@@ -17961,7 +18194,7 @@ Placeholder16
         Alash Orda Infantry
         {/SubUnit}
         {SubUnit}
-        1003559
+        1003566
         227
         20
         0
@@ -17991,7 +18224,7 @@ Placeholder16
         Alash Orda Cavalry
         {/SubUnit}
         {SubUnit}
-        1003557
+        1003564
         227
         20
         0
@@ -18101,7 +18334,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#174#CbtPower#
+      #CbtPower#146#CbtPower#
       NULL
         {SubUnit}
         1003545
@@ -18316,7 +18549,7 @@ Placeholder16
       {/Unit}
     {/Group}
     {Group}
-    1003672
+    1003679
     -1
     50001
     1675
@@ -18362,12 +18595,12 @@ Placeholder16
     Allied Eastern Shipping|NoLeader|1675|1|
     NULL
       {Unit}
-      1003673
+      1003680
       883
       0
       1675
       1
-      1003672
+      1003679
       1000002
       0
       1
@@ -18394,10 +18627,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#53#CbtPower#
+      #CbtPower#46#CbtPower#
       NULL
         {SubUnit}
-        1003674
+        1003681
         813
         10
         0
@@ -18427,7 +18660,7 @@ Placeholder16
         Crescent
         {/SubUnit}
         {SubUnit}
-        1003675
+        1003682
         813
         10
         0
@@ -18457,7 +18690,7 @@ Placeholder16
         Juno
         {/SubUnit}
         {SubUnit}
-        1003676
+        1003683
         813
         10
         0
@@ -18487,7 +18720,7 @@ Placeholder16
         Macedonian
         {/SubUnit}
         {SubUnit}
-        1003677
+        1003684
         813
         10
         0
@@ -18517,7 +18750,7 @@ Placeholder16
         Tyne
         {/SubUnit}
         {SubUnit}
-        1003678
+        1003685
         813
         10
         0
@@ -18547,7 +18780,7 @@ Placeholder16
         Calcutta
         {/SubUnit}
         {SubUnit}
-        1003679
+        1003686
         813
         10
         0
@@ -18577,7 +18810,7 @@ Placeholder16
         Madras
         {/SubUnit}
         {SubUnit}
-        1003680
+        1003687
         813
         10
         0
@@ -18607,7 +18840,7 @@ Placeholder16
         Hindustan
         {/SubUnit}
         {SubUnit}
-        1003681
+        1003688
         813
         10
         0
@@ -18637,7 +18870,7 @@ Placeholder16
         Altea
         {/SubUnit}
         {SubUnit}
-        1003682
+        1003689
         813
         10
         0
@@ -18667,7 +18900,7 @@ Placeholder16
         Tyrea
         {/SubUnit}
         {SubUnit}
-        1003683
+        1003690
         813
         10
         0
@@ -18843,7 +19076,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#136#CbtPower#
+      #CbtPower#114#CbtPower#
       NULL
         {SubUnit}
         1003467
@@ -19059,7 +19292,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#115#CbtPower#
+      #CbtPower#97#CbtPower#
       NULL
         {SubUnit}
         1003461
@@ -19670,7 +19903,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#137#CbtPower#
+      #CbtPower#117#CbtPower#
       NULL
         {SubUnit}
         1003487
@@ -20287,7 +20520,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#153#CbtPower#
+      #CbtPower#130#CbtPower#
       NULL
         {SubUnit}
         1003524
@@ -20838,7 +21071,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#258#CbtPower#
+      #CbtPower#212#CbtPower#
       NULL
         {SubUnit}
         1003136
@@ -21174,7 +21407,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#28#CbtPower#
+      #CbtPower#23#CbtPower#
       NULL
         {SubUnit}
         1003158
@@ -21306,7 +21539,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#61#CbtPower#
+      #CbtPower#54#CbtPower#
       NULL
         {SubUnit}
         1003160
@@ -21372,7 +21605,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#41#CbtPower#
+      #CbtPower#36#CbtPower#
       NULL
         {SubUnit}
         1003166
@@ -21504,7 +21737,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#3#CbtPower#
+      #CbtPower#2#CbtPower#
       NULL
         {SubUnit}
         1003164
@@ -21851,7 +22084,7 @@ Placeholder16
       {/Unit}
     {/Group}
     {Group}
-    1003637
+    1003644
     -1
     50001
     1512
@@ -21897,12 +22130,12 @@ Placeholder16
     Kalmykov Warband|I.P. Kalmykov|1512|2|
     NULL
       {Unit}
-      1003638
+      1003645
       1332
       3
       1512
       0
-      1003637
+      1003644
       1000002
       0
       1
@@ -21924,15 +22157,15 @@ Placeholder16
       Kalmykov Warband
       I.P. Kalmykov
       NULL
-      Kalmykov Dcht|2470|Kalmykov Dcht|1003641 &Orlov Dcht|2470|D. Orlov|1003643 &
+      Kalmykov Dcht|2470|Kalmykov Dcht|1003648 &Orlov Dcht|2470|D. Orlov|1003650 &
       Kalmykov Warband
       NULL
       NULL
       NULL
-      #CbtPower#59#CbtPower#
+      #CbtPower#49#CbtPower#
       NULL
         {SubUnit}
-        1003639
+        1003646
         1330
         1
         0
@@ -21962,7 +22195,7 @@ Placeholder16
         I.P. Kalmykov
         {/SubUnit}
         {SubUnit}
-        1003643
+        1003650
         2140
         12
         0
@@ -21992,7 +22225,7 @@ Placeholder16
         Orlov Dcht
         {/SubUnit}
         {SubUnit}
-        1003641
+        1003648
         2140
         15
         5
@@ -22023,12 +22256,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003644
+      1003651
       348
       0
       1512
       1
-      1003637
+      1003644
       1000002
       0
       1
@@ -22058,7 +22291,7 @@ Placeholder16
       #CbtPower#0#CbtPower#
       NULL
         {SubUnit}
-        1003645
+        1003652
         2192
         6
         0
@@ -22088,7 +22321,7 @@ Placeholder16
         1st Co.
         {/SubUnit}
         {SubUnit}
-        1003646
+        1003653
         2192
         6
         0
@@ -22118,7 +22351,7 @@ Placeholder16
         2nd Co.
         {/SubUnit}
         {SubUnit}
-        1003647
+        1003654
         2192
         6
         0
@@ -22148,7 +22381,7 @@ Placeholder16
         3rd Co.
         {/SubUnit}
         {SubUnit}
-        1003648
+        1003655
         2192
         6
         0
@@ -22258,7 +22491,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#427#CbtPower#
+      #CbtPower#368#CbtPower#
       NULL
         {SubUnit}
         1003232
@@ -22594,7 +22827,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#34#CbtPower#
+      #CbtPower#30#CbtPower#
       NULL
         {SubUnit}
         1003258
@@ -22660,7 +22893,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#34#CbtPower#
+      #CbtPower#30#CbtPower#
       NULL
         {SubUnit}
         1003260
@@ -22726,7 +22959,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#34#CbtPower#
+      #CbtPower#30#CbtPower#
       NULL
         {SubUnit}
         1003262
@@ -22792,7 +23025,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#34#CbtPower#
+      #CbtPower#30#CbtPower#
       NULL
         {SubUnit}
         1003254
@@ -22858,7 +23091,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#34#CbtPower#
+      #CbtPower#30#CbtPower#
       NULL
         {SubUnit}
         1003256
@@ -22924,7 +23157,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#32#CbtPower#
+      #CbtPower#28#CbtPower#
       NULL
         {SubUnit}
         1003266
@@ -22990,7 +23223,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#61#CbtPower#
+      #CbtPower#54#CbtPower#
       NULL
         {SubUnit}
         1003264
@@ -23056,7 +23289,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#61#CbtPower#
+      #CbtPower#54#CbtPower#
       NULL
         {SubUnit}
         1003252
@@ -23637,7 +23870,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#37#CbtPower#
+      #CbtPower#33#CbtPower#
       NULL
         {SubUnit}
         1003381
@@ -23882,7 +24115,7 @@ Placeholder16
       {/Unit}
     {/Group}
     {Group}
-    1003546
+    1003553
     -1
     50001
     1320
@@ -23928,12 +24161,12 @@ Placeholder16
     Krasilnikov Partisans|I.N. Krasilnikov|1320|1|
     NULL
       {Unit}
-      1003547
+      1003554
       355
       0
       1320
       0
-      1003546
+      1003553
       1000002
       0
       1
@@ -23955,15 +24188,15 @@ Placeholder16
       NULL
       Annenkov Partisans
       NULL
-      I.N. Krasilnikov|1376|I.N. Krasilnikov|1003550 &
+      I.N. Krasilnikov|1376|I.N. Krasilnikov|1003557 &
       Semiretche Partisans
       NULL
       NULL
       NULL
-      #CbtPower#33#CbtPower#
+      #CbtPower#29#CbtPower#
       NULL
         {SubUnit}
-        1003550
+        1003557
         1374
         1
         0
@@ -23993,7 +24226,7 @@ Placeholder16
         I.N. Krasilnikov
         {/SubUnit}
         {SubUnit}
-        1003548
+        1003555
         230
         20
         0
@@ -24565,7 +24798,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#23#CbtPower#
+      #CbtPower#19#CbtPower#
       NULL
         {SubUnit}
         1003350
@@ -24841,7 +25074,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#27#CbtPower#
+      #CbtPower#23#CbtPower#
       NULL
         {SubUnit}
         1003364
@@ -24942,7 +25175,7 @@ Placeholder16
       {/Unit}
       {Unit}
       1003359
-      318
+      356
       0
       1320
       1
@@ -25039,7 +25272,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1003366
@@ -25105,7 +25338,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#47#CbtPower#
+      #CbtPower#41#CbtPower#
       NULL
         {SubUnit}
         1003368
@@ -25171,7 +25404,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#15#CbtPower#
+      #CbtPower#13#CbtPower#
       NULL
         {SubUnit}
         1003336
@@ -25518,7 +25751,7 @@ Placeholder16
       {/Unit}
     {/Group}
     {Group}
-    1003594
+    1003601
     -1
     50001
     1657
@@ -25564,12 +25797,12 @@ Placeholder16
     Harbin Garrison|NoLeader|1657|1|
     NULL
       {Unit}
-      1003595
+      1003602
       924
       0
       1657
       1
-      1003594
+      1003601
       1000002
       0
       1
@@ -25596,10 +25829,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#24#CbtPower#
+      #CbtPower#21#CbtPower#
       NULL
         {SubUnit}
-        1003596
+        1003603
         922
         20
         0
@@ -25631,7 +25864,7 @@ Placeholder16
       {/Unit}
     {/Group}
     {Group}
-    1003649
+    1003656
     -1
     50001
     1657
@@ -25677,12 +25910,12 @@ Placeholder16
     Gamov Warband|I.M. Gamov|1657|2|
     NULL
       {Unit}
-      1003650
+      1003657
       1776
       3
       1657
       0
-      1003649
+      1003656
       1000002
       0
       1
@@ -25704,15 +25937,15 @@ Placeholder16
       Gamov Warband
       I.M. Gamov
       NULL
-      Gamov Dcht|2467|Gamov Dcht|1003653 &Gamov Dcht|2467|Gamov Dcht|1003655 &Gamov Dcht|2467|Gamov Dcht|1003657 &Gamov Cavalry Dcht|2466|Gamov Cavalry Dcht|1003659 &1st Artillery Battery|337|1st Artillery Battery|1003661 &
+      Gamov Dcht|2467|Gamov Dcht|1003660 &Gamov Dcht|2467|Gamov Dcht|1003662 &Gamov Dcht|2467|Gamov Dcht|1003664 &Gamov Cavalry Dcht|2466|Gamov Cavalry Dcht|1003666 &1st Artillery Battery|337|1st Artillery Battery|1003668 &
       Gamov Warband
       NULL
       NULL
       NULL
-      #CbtPower#116#CbtPower#
+      #CbtPower#99#CbtPower#
       NULL
         {SubUnit}
-        1003651
+        1003658
         1767
         1
         0
@@ -25742,7 +25975,7 @@ Placeholder16
         I.M. Gamov
         {/SubUnit}
         {SubUnit}
-        1003657
+        1003664
         2138
         15
         0
@@ -25772,7 +26005,7 @@ Placeholder16
         Gamov Dcht
         {/SubUnit}
         {SubUnit}
-        1003655
+        1003662
         2138
         12
         0
@@ -25802,7 +26035,7 @@ Placeholder16
         Gamov Dcht
         {/SubUnit}
         {SubUnit}
-        1003653
+        1003660
         2138
         15
         10
@@ -25832,7 +26065,7 @@ Placeholder16
         Gamov Dcht
         {/SubUnit}
         {SubUnit}
-        1003659
+        1003666
         2139
         15
         0
@@ -25862,7 +26095,7 @@ Placeholder16
         Gamov Cavalry Dcht
         {/SubUnit}
         {SubUnit}
-        1003661
+        1003668
         2195
         8
         20
@@ -25893,12 +26126,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003662
+      1003669
       348
       0
       1657
       1
-      1003649
+      1003656
       1000002
       0
       1
@@ -25928,7 +26161,7 @@ Placeholder16
       #CbtPower#0#CbtPower#
       NULL
         {SubUnit}
-        1003663
+        1003670
         2192
         6
         0
@@ -25958,7 +26191,7 @@ Placeholder16
         1st Co.
         {/SubUnit}
         {SubUnit}
-        1003664
+        1003671
         2192
         6
         0
@@ -25988,7 +26221,7 @@ Placeholder16
         2nd Co.
         {/SubUnit}
         {SubUnit}
-        1003665
+        1003672
         2192
         6
         0
@@ -26018,7 +26251,7 @@ Placeholder16
         3rd Co.
         {/SubUnit}
         {SubUnit}
-        1003666
+        1003673
         2192
         6
         0
@@ -26194,7 +26427,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#26#CbtPower#
       NULL
         {SubUnit}
         1003124
@@ -26260,7 +26493,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#41#CbtPower#
+      #CbtPower#36#CbtPower#
       NULL
         {SubUnit}
         1003126
@@ -26595,7 +26828,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#18#CbtPower#
+      #CbtPower#15#CbtPower#
       NULL
         {SubUnit}
         1003395
@@ -26937,7 +27170,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#8#CbtPower#
+      #CbtPower#7#CbtPower#
       NULL
         {SubUnit}
         1003405
@@ -27122,7 +27355,7 @@ Placeholder16
       {/Unit}
       {Unit}
       1003411
-      318
+      356
       0
       1246
       1
@@ -27842,7 +28075,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1003440
@@ -28058,7 +28291,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1003433
@@ -28274,7 +28507,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#18#CbtPower#
+      #CbtPower#15#CbtPower#
       NULL
         {SubUnit}
         1003447
@@ -28663,7 +28896,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#465#CbtPower#
+      #CbtPower#401#CbtPower#
       NULL
         {SubUnit}
         1003179
@@ -28999,7 +29232,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#61#CbtPower#
+      #CbtPower#54#CbtPower#
       NULL
         {SubUnit}
         1003199
@@ -29346,7 +29579,7 @@ Placeholder16
       {/Unit}
     {/Group}
     {Group}
-    1003667
+    1003674
     -1
     50001
     1165
@@ -29392,12 +29625,12 @@ Placeholder16
     Ural White Guards|NoLeader|1165|2|
     NULL
       {Unit}
-      1003670
+      1003677
       353
       0
       1165
       1
-      1003667
+      1003674
       1000002
       0
       1
@@ -29424,10 +29657,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#14#CbtPower#
       NULL
         {SubUnit}
-        1003671
+        1003678
         252
         15
         0
@@ -29458,12 +29691,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003668
+      1003675
       353
       0
       1165
       1
-      1003667
+      1003674
       1000002
       0
       1
@@ -29490,10 +29723,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#14#CbtPower#
       NULL
         {SubUnit}
-        1003669
+        1003676
         252
         15
         0
@@ -29525,7 +29758,7 @@ Placeholder16
       {/Unit}
     {/Group}
     {Group}
-    1003597
+    1003604
     -1
     50001
     1688
@@ -29571,12 +29804,12 @@ Placeholder16
     Semenov Army|G.M. Semenov|1688|18|
     NULL
       {Unit}
-      1003598
+      1003605
       1315
       0
       1688
       0
-      1003597
+      1003604
       1000002
       0
       1
@@ -29606,7 +29839,7 @@ Placeholder16
       #CbtPower#0#CbtPower#
       NULL
         {SubUnit}
-        1003599
+        1003606
         2001
         1
         0
@@ -29637,12 +29870,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003604
+      1003611
       2262
       0
       1688
       0
-      1003597
+      1003604
       1000002
       0
       1
@@ -29672,7 +29905,7 @@ Placeholder16
       #CbtPower#0#CbtPower#
       NULL
         {SubUnit}
-        1003605
+        1003612
         1956
         1
         0
@@ -29703,12 +29936,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003602
+      1003609
       2304
       0
       1688
       0
-      1003597
+      1003604
       1000002
       0
       1
@@ -29738,7 +29971,7 @@ Placeholder16
       #CbtPower#0#CbtPower#
       NULL
         {SubUnit}
-        1003603
+        1003610
         1999
         1
         0
@@ -29769,12 +30002,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003600
+      1003607
       1359
       0
       1688
       0
-      1003597
+      1003604
       1000002
       0
       1
@@ -29804,7 +30037,7 @@ Placeholder16
       #CbtPower#0#CbtPower#
       NULL
         {SubUnit}
-        1003601
+        1003608
         1357
         1
         0
@@ -29835,12 +30068,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003606
+      1003613
       1371
       0
       1688
       0
-      1003597
+      1003604
       1000002
       0
       1
@@ -29870,7 +30103,7 @@ Placeholder16
       #CbtPower#0#CbtPower#
       NULL
         {SubUnit}
-        1003607
+        1003614
         1369
         1
         0
@@ -29901,12 +30134,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003612
+      1003619
       2462
       0
       1688
       1
-      1003597
+      1003604
       1000002
       0
       1
@@ -29933,10 +30166,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#24#CbtPower#
+      #CbtPower#20#CbtPower#
       NULL
         {SubUnit}
-        1003613
+        1003620
         2137
         15
         5
@@ -29967,12 +30200,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003614
+      1003621
       2462
       0
       1688
       1
-      1003597
+      1003604
       1000002
       0
       1
@@ -29999,10 +30232,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#24#CbtPower#
+      #CbtPower#20#CbtPower#
       NULL
         {SubUnit}
-        1003615
+        1003622
         2137
         15
         5
@@ -30033,12 +30266,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003608
+      1003615
       2463
       0
       1688
       1
-      1003597
+      1003604
       1000002
       0
       1
@@ -30065,10 +30298,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#19#CbtPower#
+      #CbtPower#16#CbtPower#
       NULL
         {SubUnit}
-        1003609
+        1003616
         2136
         15
         10
@@ -30099,12 +30332,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003610
+      1003617
       2463
       0
       1688
       1
-      1003597
+      1003604
       1000002
       0
       1
@@ -30131,10 +30364,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#19#CbtPower#
+      #CbtPower#16#CbtPower#
       NULL
         {SubUnit}
-        1003611
+        1003618
         2136
         15
         10
@@ -30165,12 +30398,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003616
+      1003623
       2462
       0
       1688
       1
-      1003597
+      1003604
       1000002
       0
       1
@@ -30197,10 +30430,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#13#CbtPower#
+      #CbtPower#11#CbtPower#
       NULL
         {SubUnit}
-        1003617
+        1003624
         2137
         8
         5
@@ -30231,12 +30464,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003620
+      1003627
       337
       0
       1688
       1
-      1003597
+      1003604
       1000002
       0
       1
@@ -30263,10 +30496,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#15#CbtPower#
+      #CbtPower#13#CbtPower#
       NULL
         {SubUnit}
-        1003621
+        1003628
         2195
         8
         20
@@ -30297,12 +30530,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003618
+      1003625
       337
       0
       1688
       1
-      1003597
+      1003604
       1000002
       0
       1
@@ -30329,10 +30562,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#15#CbtPower#
+      #CbtPower#13#CbtPower#
       NULL
         {SubUnit}
-        1003619
+        1003626
         2195
         8
         20
@@ -30363,12 +30596,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003622
+      1003629
       335
       0
       1688
       1
-      1003597
+      1003604
       1000002
       0
       1
@@ -30395,10 +30628,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#10#CbtPower#
+      #CbtPower#9#CbtPower#
       NULL
         {SubUnit}
-        1003623
+        1003630
         235
         4
         0
@@ -30429,12 +30662,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003628
+      1003635
       342
       0
       1688
       1
-      1003597
+      1003604
       1000002
       0
       1
@@ -30461,10 +30694,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#33#CbtPower#
+      #CbtPower#28#CbtPower#
       NULL
         {SubUnit}
-        1003629
+        1003636
         244
         8
         0
@@ -30495,12 +30728,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003630
+      1003637
       342
       0
       1688
       1
-      1003597
+      1003604
       1000002
       0
       1
@@ -30527,10 +30760,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#33#CbtPower#
+      #CbtPower#28#CbtPower#
       NULL
         {SubUnit}
-        1003631
+        1003638
         244
         8
         0
@@ -30561,12 +30794,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003624
+      1003631
       342
       0
       1688
       1
-      1003597
+      1003604
       1000002
       0
       1
@@ -30593,10 +30826,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#33#CbtPower#
+      #CbtPower#28#CbtPower#
       NULL
         {SubUnit}
-        1003625
+        1003632
         244
         8
         0
@@ -30627,12 +30860,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003626
+      1003633
       342
       0
       1688
       1
-      1003597
+      1003604
       1000002
       0
       1
@@ -30659,10 +30892,10 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#33#CbtPower#
+      #CbtPower#28#CbtPower#
       NULL
         {SubUnit}
-        1003627
+        1003634
         244
         8
         0
@@ -30693,12 +30926,12 @@ Placeholder16
         {/SubUnit}
       {/Unit}
       {Unit}
-      1003632
+      1003639
       348
       0
       1688
       1
-      1003597
+      1003604
       1000002
       0
       1
@@ -30728,7 +30961,7 @@ Placeholder16
       #CbtPower#0#CbtPower#
       NULL
         {SubUnit}
-        1003633
+        1003640
         2192
         6
         0
@@ -30758,7 +30991,7 @@ Placeholder16
         1st Co.
         {/SubUnit}
         {SubUnit}
-        1003634
+        1003641
         2192
         6
         0
@@ -30788,7 +31021,7 @@ Placeholder16
         2nd Co.
         {/SubUnit}
         {SubUnit}
-        1003635
+        1003642
         2192
         6
         0
@@ -30818,7 +31051,7 @@ Placeholder16
         3rd Co.
         {/SubUnit}
         {SubUnit}
-        1003636
+        1003643
         2192
         6
         0
@@ -30928,7 +31161,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#26#CbtPower#
       NULL
         {SubUnit}
         1003284
@@ -31041,7 +31274,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#240#CbtPower#
+      #CbtPower#197#CbtPower#
       NULL
         {SubUnit}
         1003212
@@ -31257,7 +31490,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#62#CbtPower#
+      #CbtPower#55#CbtPower#
       NULL
         {SubUnit}
         1003224
@@ -31526,7 +31759,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#166#CbtPower#
+      #CbtPower#145#CbtPower#
       NULL
         {SubUnit}
         1003076
@@ -31652,7 +31885,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#51#CbtPower#
+      #CbtPower#44#CbtPower#
       NULL
         {SubUnit}
         1003085
@@ -31718,7 +31951,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#144#CbtPower#
+      #CbtPower#126#CbtPower#
       NULL
         {SubUnit}
         1003080
@@ -31874,7 +32107,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#33#CbtPower#
+      #CbtPower#29#CbtPower#
       NULL
         {SubUnit}
         1003087
@@ -31940,7 +32173,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#84#CbtPower#
+      #CbtPower#73#CbtPower#
       NULL
         {SubUnit}
         1003089
@@ -32096,7 +32329,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#18#CbtPower#
+      #CbtPower#16#CbtPower#
       NULL
         {SubUnit}
         1003099
@@ -32252,7 +32485,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#18#CbtPower#
+      #CbtPower#16#CbtPower#
       NULL
         {SubUnit}
         1003104
@@ -32408,7 +32641,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#18#CbtPower#
+      #CbtPower#16#CbtPower#
       NULL
         {SubUnit}
         1003094
@@ -32564,7 +32797,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#102#CbtPower#
+      #CbtPower#91#CbtPower#
       NULL
         {SubUnit}
         1003063
@@ -33139,7 +33372,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#18#CbtPower#
+      #CbtPower#15#CbtPower#
       NULL
         {SubUnit}
         1003301
@@ -33415,7 +33648,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#18#CbtPower#
+      #CbtPower#15#CbtPower#
       NULL
         {SubUnit}
         1003311
@@ -33691,7 +33924,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#14#CbtPower#
+      #CbtPower#12#CbtPower#
       NULL
         {SubUnit}
         1003293
@@ -33937,7 +34170,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#2#CbtPower#
+      #CbtPower#1#CbtPower#
       NULL
         {SubUnit}
         1003321
@@ -34428,7 +34661,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#19#CbtPower#
       NULL
         {SubUnit}
         1003058
@@ -34494,7 +34727,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#19#CbtPower#
+      #CbtPower#17#CbtPower#
       NULL
         {SubUnit}
         1003060
@@ -34739,7 +34972,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#20#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1003031
@@ -34805,7 +35038,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#27#CbtPower#
+      #CbtPower#23#CbtPower#
       NULL
         {SubUnit}
         1003033
@@ -34871,7 +35104,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#26#CbtPower#
+      #CbtPower#22#CbtPower#
       NULL
         {SubUnit}
         1003035
@@ -41777,7 +42010,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  7|0|8|400|11|700|0|500|12|300|10|120|6|0|17|30|
+  7|0|8|400|11|700|0|500|12|300|10|90|6|0|17|30|
   NULL
   NULL
   NULL
@@ -41795,7 +42028,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  10183|497|10151|32
+  11387|553|11352|35
   NULL
   NULL
   NULL
@@ -41804,7 +42037,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#147|4|148|2|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#147|10|148|5|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -41905,7 +42138,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#113#CbtPower#
+      #CbtPower#133#CbtPower#
       NULL
         {SubUnit}
         1002264
@@ -42384,7 +42617,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002399
@@ -42497,7 +42730,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1002405
@@ -42903,7 +43136,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002123
@@ -43016,7 +43249,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002120
@@ -43261,7 +43494,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002117
@@ -43374,7 +43607,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002129
@@ -43553,7 +43786,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#42#CbtPower#
+      #CbtPower#47#CbtPower#
       NULL
         {SubUnit}
         1001852
@@ -43666,7 +43899,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002126
@@ -44114,7 +44347,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1002099
@@ -44473,7 +44706,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#161#CbtPower#
+      #CbtPower#178#CbtPower#
       NULL
         {SubUnit}
         1002070
@@ -44689,7 +44922,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1002085
@@ -44935,7 +45168,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1002077
@@ -45516,7 +45749,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#108#CbtPower#
+      #CbtPower#119#CbtPower#
       NULL
         {SubUnit}
         1001988
@@ -45762,7 +45995,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#108#CbtPower#
+      #CbtPower#119#CbtPower#
       NULL
         {SubUnit}
         1001980
@@ -46008,7 +46241,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#35#CbtPower#
       NULL
         {SubUnit}
         1001996
@@ -46277,7 +46510,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1002059
@@ -46570,7 +46803,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#161#CbtPower#
+      #CbtPower#178#CbtPower#
       NULL
         {SubUnit}
         1002030
@@ -46786,7 +47019,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1002045
@@ -47032,7 +47265,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1002037
@@ -47481,7 +47714,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002110
@@ -47547,7 +47780,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002108
@@ -47726,7 +47959,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#108#CbtPower#
+      #CbtPower#119#CbtPower#
       NULL
         {SubUnit}
         1002016
@@ -47972,7 +48205,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#108#CbtPower#
+      #CbtPower#119#CbtPower#
       NULL
         {SubUnit}
         1002008
@@ -48218,7 +48451,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#35#CbtPower#
       NULL
         {SubUnit}
         1002006
@@ -48487,7 +48720,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#108#CbtPower#
+      #CbtPower#119#CbtPower#
       NULL
         {SubUnit}
         1001939
@@ -48733,7 +48966,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1001931
@@ -48979,7 +49212,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1001923
@@ -49225,7 +49458,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1001907
@@ -49471,7 +49704,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1001915
@@ -49764,7 +49997,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002487
@@ -49967,7 +50200,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002466
@@ -50146,7 +50379,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1001787
@@ -50392,7 +50625,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1001779
@@ -51129,7 +51362,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#89#CbtPower#
+      #CbtPower#104#CbtPower#
       NULL
         {SubUnit}
         1001861
@@ -51375,7 +51608,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#71#CbtPower#
+      #CbtPower#81#CbtPower#
       NULL
         {SubUnit}
         1001885
@@ -51621,7 +51854,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#71#CbtPower#
+      #CbtPower#81#CbtPower#
       NULL
         {SubUnit}
         1001893
@@ -51867,7 +52100,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#71#CbtPower#
+      #CbtPower#81#CbtPower#
       NULL
         {SubUnit}
         1001877
@@ -52113,7 +52346,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#71#CbtPower#
+      #CbtPower#81#CbtPower#
       NULL
         {SubUnit}
         1001869
@@ -52359,7 +52592,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#27#CbtPower#
+      #CbtPower#31#CbtPower#
       NULL
         {SubUnit}
         1001859
@@ -52694,7 +52927,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1001950
@@ -52850,7 +53083,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#35#CbtPower#
+      #CbtPower#39#CbtPower#
       NULL
         {SubUnit}
         1001960
@@ -53006,7 +53239,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#35#CbtPower#
+      #CbtPower#39#CbtPower#
       NULL
         {SubUnit}
         1001955
@@ -53162,7 +53395,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1001970
@@ -53318,7 +53551,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1001965
@@ -53521,7 +53754,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002481
@@ -53837,7 +54070,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#36#CbtPower#
+      #CbtPower#42#CbtPower#
       NULL
         {SubUnit}
         1001635
@@ -54112,7 +54345,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#111#CbtPower#
+      #CbtPower#122#CbtPower#
       NULL
         {SubUnit}
         1001688
@@ -54358,7 +54591,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#108#CbtPower#
+      #CbtPower#119#CbtPower#
       NULL
         {SubUnit}
         1001696
@@ -54604,7 +54837,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#108#CbtPower#
+      #CbtPower#119#CbtPower#
       NULL
         {SubUnit}
         1001680
@@ -54850,7 +55083,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1001704
@@ -54916,7 +55149,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001706
@@ -54982,7 +55215,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#42#CbtPower#
+      #CbtPower#47#CbtPower#
       NULL
         {SubUnit}
         1001664
@@ -55048,7 +55281,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#42#CbtPower#
+      #CbtPower#47#CbtPower#
       NULL
         {SubUnit}
         1001666
@@ -55114,7 +55347,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#42#CbtPower#
+      #CbtPower#47#CbtPower#
       NULL
         {SubUnit}
         1001654
@@ -55180,7 +55413,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#42#CbtPower#
+      #CbtPower#47#CbtPower#
       NULL
         {SubUnit}
         1001652
@@ -55246,7 +55479,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#42#CbtPower#
+      #CbtPower#47#CbtPower#
       NULL
         {SubUnit}
         1001650
@@ -55312,7 +55545,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#42#CbtPower#
+      #CbtPower#47#CbtPower#
       NULL
         {SubUnit}
         1001656
@@ -55378,7 +55611,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#42#CbtPower#
+      #CbtPower#47#CbtPower#
       NULL
         {SubUnit}
         1001662
@@ -55444,7 +55677,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#42#CbtPower#
+      #CbtPower#47#CbtPower#
       NULL
         {SubUnit}
         1001660
@@ -55510,7 +55743,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#42#CbtPower#
+      #CbtPower#47#CbtPower#
       NULL
         {SubUnit}
         1001658
@@ -55576,7 +55809,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#34#CbtPower#
       NULL
         {SubUnit}
         1001678
@@ -55642,7 +55875,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#34#CbtPower#
       NULL
         {SubUnit}
         1001670
@@ -55708,7 +55941,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#34#CbtPower#
       NULL
         {SubUnit}
         1001668
@@ -55774,7 +56007,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#34#CbtPower#
       NULL
         {SubUnit}
         1001672
@@ -55840,7 +56073,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#34#CbtPower#
       NULL
         {SubUnit}
         1001676
@@ -55906,7 +56139,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#34#CbtPower#
       NULL
         {SubUnit}
         1001674
@@ -55972,7 +56205,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#13#CbtPower#
+      #CbtPower#15#CbtPower#
       NULL
         {SubUnit}
         1001708
@@ -56085,7 +56318,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002493
@@ -56288,7 +56521,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002438
@@ -56467,7 +56700,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#184#CbtPower#
+      #CbtPower#211#CbtPower#
       NULL
         {SubUnit}
         1001713
@@ -57449,7 +57682,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#3#CbtPower#
+      #CbtPower#4#CbtPower#
       NULL
         {SubUnit}
         1002505
@@ -57897,7 +58130,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#36#CbtPower#
+      #CbtPower#45#CbtPower#
       NULL
         {SubUnit}
         1002300
@@ -58143,7 +58376,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#36#CbtPower#
+      #CbtPower#45#CbtPower#
       NULL
         {SubUnit}
         1002292
@@ -58389,7 +58622,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#36#CbtPower#
+      #CbtPower#45#CbtPower#
       NULL
         {SubUnit}
         1002284
@@ -59107,7 +59340,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#13#CbtPower#
+      #CbtPower#14#CbtPower#
       NULL
         {SubUnit}
         1002625
@@ -59496,7 +59729,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#133#CbtPower#
+      #CbtPower#154#CbtPower#
       NULL
         {SubUnit}
         1001806
@@ -59527,6 +59760,66 @@ Placeholder16
         0
         0
         V.K. Blucher
+        {/SubUnit}
+        {SubUnit}
+        1001826
+        78
+        10
+        0
+        0
+        5
+        4
+        0
+        0
+        70
+        0
+        0
+        0
+        0
+        0
+        1
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        South Ural Dtch
+        {/SubUnit}
+        {SubUnit}
+        1001824
+        78
+        10
+        0
+        0
+        5
+        4
+        0
+        0
+        70
+        0
+        0
+        0
+        0
+        0
+        1
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        South Ural Dtch
         {/SubUnit}
         {SubUnit}
         1001822
@@ -59749,66 +60042,6 @@ Placeholder16
         0
         0
         50
-        0
-        0
-        0
-        0
-        0
-        1
-        0
-        0
-        0
-        0
-        0
-        0
-        0
-        0
-        0
-        0
-        0
-        South Ural Dtch
-        {/SubUnit}
-        {SubUnit}
-        1001826
-        78
-        10
-        0
-        0
-        5
-        4
-        0
-        0
-        70
-        0
-        0
-        0
-        0
-        0
-        1
-        0
-        0
-        0
-        0
-        0
-        0
-        0
-        0
-        0
-        0
-        0
-        South Ural Dtch
-        {/SubUnit}
-        {SubUnit}
-        1001824
-        78
-        10
-        0
-        0
-        5
-        4
-        0
-        0
-        70
         0
         0
         0
@@ -60125,7 +60358,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1002420
@@ -60418,7 +60651,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#189#CbtPower#
+      #CbtPower#209#CbtPower#
       NULL
         {SubUnit}
         1001737
@@ -60741,7 +60974,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#150#CbtPower#
+      #CbtPower#173#CbtPower#
       NULL
         {SubUnit}
         1002205
@@ -61130,7 +61363,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002417
@@ -61469,7 +61702,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002432
@@ -61648,7 +61881,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#8#CbtPower#
+      #CbtPower#9#CbtPower#
       NULL
         {SubUnit}
         1002218
@@ -61924,7 +62157,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#7#CbtPower#
+      #CbtPower#8#CbtPower#
       NULL
         {SubUnit}
         1002238
@@ -62200,7 +62433,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002228
@@ -62991,7 +63224,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002460
@@ -63057,7 +63290,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002458
@@ -63123,7 +63356,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002456
@@ -63236,7 +63469,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002370
@@ -63349,7 +63582,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002429
@@ -63708,7 +63941,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#7#CbtPower#
+      #CbtPower#8#CbtPower#
       NULL
         {SubUnit}
         1002613
@@ -64137,7 +64370,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002469
@@ -64609,7 +64842,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002435
@@ -64835,7 +65068,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002463
@@ -64948,7 +65181,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#10#CbtPower#
+      #CbtPower#12#CbtPower#
       NULL
         {SubUnit}
         1001465
@@ -65211,7 +65444,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#11#CbtPower#
+      #CbtPower#13#CbtPower#
       NULL
         {SubUnit}
         1001456
@@ -65540,7 +65773,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#108#CbtPower#
+      #CbtPower#119#CbtPower#
       NULL
         {SubUnit}
         1001750
@@ -65786,7 +66019,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#85#CbtPower#
+      #CbtPower#94#CbtPower#
       NULL
         {SubUnit}
         1001758
@@ -66391,7 +66624,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002475
@@ -66726,7 +66959,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#41#CbtPower#
+      #CbtPower#46#CbtPower#
       NULL
         {SubUnit}
         1002169
@@ -66882,7 +67115,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1002164
@@ -67038,7 +67271,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#35#CbtPower#
+      #CbtPower#39#CbtPower#
       NULL
         {SubUnit}
         1002179
@@ -67194,7 +67427,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#35#CbtPower#
+      #CbtPower#39#CbtPower#
       NULL
         {SubUnit}
         1002174
@@ -67350,7 +67583,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002189
@@ -67506,7 +67739,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002184
@@ -67709,7 +67942,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002596
@@ -67822,7 +68055,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002364
@@ -68001,7 +68234,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#37#CbtPower#
+      #CbtPower#43#CbtPower#
       NULL
         {SubUnit}
         1002332
@@ -68277,7 +68510,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#34#CbtPower#
+      #CbtPower#39#CbtPower#
       NULL
         {SubUnit}
         1002350
@@ -68523,7 +68756,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#34#CbtPower#
+      #CbtPower#39#CbtPower#
       NULL
         {SubUnit}
         1002342
@@ -69085,7 +69318,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#32#CbtPower#
+      #CbtPower#35#CbtPower#
       NULL
         {SubUnit}
         1001446
@@ -69408,7 +69641,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#33#CbtPower#
       NULL
         {SubUnit}
         1001547
@@ -69474,7 +69707,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#33#CbtPower#
       NULL
         {SubUnit}
         1001549
@@ -69540,7 +69773,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001535
@@ -69606,7 +69839,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001533
@@ -69672,7 +69905,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001531
@@ -69738,7 +69971,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001541
@@ -69804,7 +70037,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001539
@@ -69870,7 +70103,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001537
@@ -69936,7 +70169,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001529
@@ -70002,7 +70235,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001523
@@ -70068,7 +70301,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001525
@@ -70134,7 +70367,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001527
@@ -70200,7 +70433,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#21#CbtPower#
+      #CbtPower#23#CbtPower#
       NULL
         {SubUnit}
         1001545
@@ -70266,7 +70499,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#21#CbtPower#
+      #CbtPower#23#CbtPower#
       NULL
         {SubUnit}
         1001543
@@ -70332,7 +70565,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#17#CbtPower#
+      #CbtPower#19#CbtPower#
       NULL
         {SubUnit}
         1001513
@@ -70398,7 +70631,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#17#CbtPower#
+      #CbtPower#19#CbtPower#
       NULL
         {SubUnit}
         1001515
@@ -70464,7 +70697,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1001521
@@ -70530,7 +70763,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1001519
@@ -70596,7 +70829,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1001517
@@ -70709,7 +70942,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#45#CbtPower#
+      #CbtPower#50#CbtPower#
       NULL
         {SubUnit}
         1001510
@@ -70775,7 +71008,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#33#CbtPower#
       NULL
         {SubUnit}
         1001508
@@ -70841,7 +71074,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001496
@@ -70907,7 +71140,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001494
@@ -70973,7 +71206,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001492
@@ -71039,7 +71272,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001502
@@ -71105,7 +71338,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001500
@@ -71171,7 +71404,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001498
@@ -71237,7 +71470,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001490
@@ -71303,7 +71536,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001484
@@ -71369,7 +71602,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001486
@@ -71435,7 +71668,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001488
@@ -71501,7 +71734,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#21#CbtPower#
+      #CbtPower#23#CbtPower#
       NULL
         {SubUnit}
         1001506
@@ -71567,7 +71800,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#21#CbtPower#
+      #CbtPower#23#CbtPower#
       NULL
         {SubUnit}
         1001504
@@ -71633,7 +71866,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#17#CbtPower#
+      #CbtPower#19#CbtPower#
       NULL
         {SubUnit}
         1001474
@@ -71699,7 +71932,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#17#CbtPower#
+      #CbtPower#19#CbtPower#
       NULL
         {SubUnit}
         1001476
@@ -71765,7 +71998,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1001482
@@ -71831,7 +72064,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1001480
@@ -71897,7 +72130,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1001478
@@ -72010,7 +72243,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#81#CbtPower#
+      #CbtPower#90#CbtPower#
       NULL
         {SubUnit}
         1001271
@@ -72136,7 +72369,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#81#CbtPower#
+      #CbtPower#90#CbtPower#
       NULL
         {SubUnit}
         1001275
@@ -72262,7 +72495,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#81#CbtPower#
+      #CbtPower#90#CbtPower#
       NULL
         {SubUnit}
         1001263
@@ -72388,7 +72621,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#81#CbtPower#
+      #CbtPower#90#CbtPower#
       NULL
         {SubUnit}
         1001267
@@ -72514,7 +72747,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#150#CbtPower#
+      #CbtPower#166#CbtPower#
       NULL
         {SubUnit}
         1001284
@@ -72670,7 +72903,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#150#CbtPower#
+      #CbtPower#166#CbtPower#
       NULL
         {SubUnit}
         1001279
@@ -72939,7 +73172,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#76#CbtPower#
+      #CbtPower#88#CbtPower#
       NULL
         {SubUnit}
         1001295
@@ -73065,7 +73298,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#18#CbtPower#
+      #CbtPower#20#CbtPower#
       NULL
         {SubUnit}
         1001292
@@ -73161,7 +73394,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#19#CbtPower#
+      #CbtPower#22#CbtPower#
       NULL
         {SubUnit}
         1001290
@@ -73769,7 +74002,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#221#CbtPower#
+      #CbtPower#257#CbtPower#
       NULL
         {SubUnit}
         1001607
@@ -73985,7 +74218,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#108#CbtPower#
+      #CbtPower#119#CbtPower#
       NULL
         {SubUnit}
         1001615
@@ -74231,7 +74464,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#42#CbtPower#
+      #CbtPower#47#CbtPower#
       NULL
         {SubUnit}
         1001628
@@ -74297,7 +74530,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#42#CbtPower#
+      #CbtPower#47#CbtPower#
       NULL
         {SubUnit}
         1001630
@@ -74363,7 +74596,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#42#CbtPower#
+      #CbtPower#47#CbtPower#
       NULL
         {SubUnit}
         1001632
@@ -74429,7 +74662,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#13#CbtPower#
+      #CbtPower#15#CbtPower#
       NULL
         {SubUnit}
         1001605
@@ -76140,7 +76373,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002367
@@ -76253,7 +76486,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#136#CbtPower#
+      #CbtPower#150#CbtPower#
       NULL
         {SubUnit}
         1002319
@@ -76576,7 +76809,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002499
@@ -76779,7 +77012,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002441
@@ -76892,7 +77125,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002414
@@ -77005,7 +77238,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002599
@@ -77118,7 +77351,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002157
@@ -77231,7 +77464,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002373
@@ -77344,7 +77577,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#81#CbtPower#
+      #CbtPower#90#CbtPower#
       NULL
         {SubUnit}
         1001219
@@ -77470,7 +77703,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#150#CbtPower#
+      #CbtPower#166#CbtPower#
       NULL
         {SubUnit}
         1001223
@@ -77626,7 +77859,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#35#CbtPower#
+      #CbtPower#39#CbtPower#
       NULL
         {SubUnit}
         1001228
@@ -77895,7 +78128,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002444
@@ -78008,7 +78241,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#468#CbtPower#
+      #CbtPower#544#CbtPower#
       NULL
         {SubUnit}
         1001302
@@ -78464,7 +78697,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#35#CbtPower#
+      #CbtPower#39#CbtPower#
       NULL
         {SubUnit}
         1001327
@@ -78530,7 +78763,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#35#CbtPower#
+      #CbtPower#39#CbtPower#
       NULL
         {SubUnit}
         1001325
@@ -78596,7 +78829,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#35#CbtPower#
+      #CbtPower#39#CbtPower#
       NULL
         {SubUnit}
         1001323
@@ -78662,7 +78895,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1001331
@@ -79938,7 +80171,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#19#CbtPower#
+      #CbtPower#20#CbtPower#
       NULL
         {SubUnit}
         1002525
@@ -80034,7 +80267,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#101#CbtPower#
+      #CbtPower#113#CbtPower#
       NULL
         {SubUnit}
         1002528
@@ -80130,7 +80363,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#35#CbtPower#
+      #CbtPower#39#CbtPower#
       NULL
         {SubUnit}
         1002533
@@ -80196,7 +80429,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#35#CbtPower#
+      #CbtPower#39#CbtPower#
       NULL
         {SubUnit}
         1002531
@@ -80309,7 +80542,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#33#CbtPower#
       NULL
         {SubUnit}
         1001441
@@ -80375,7 +80608,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#33#CbtPower#
       NULL
         {SubUnit}
         1001443
@@ -80441,7 +80674,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001429
@@ -80507,7 +80740,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001427
@@ -80573,7 +80806,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001425
@@ -80639,7 +80872,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001435
@@ -80705,7 +80938,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001433
@@ -80771,7 +81004,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001431
@@ -80837,7 +81070,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001423
@@ -80903,7 +81136,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001417
@@ -80969,7 +81202,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001419
@@ -81035,7 +81268,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001421
@@ -81101,7 +81334,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#21#CbtPower#
+      #CbtPower#23#CbtPower#
       NULL
         {SubUnit}
         1001439
@@ -81167,7 +81400,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#21#CbtPower#
+      #CbtPower#23#CbtPower#
       NULL
         {SubUnit}
         1001437
@@ -81233,7 +81466,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#17#CbtPower#
+      #CbtPower#19#CbtPower#
       NULL
         {SubUnit}
         1001407
@@ -81299,7 +81532,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#17#CbtPower#
+      #CbtPower#19#CbtPower#
       NULL
         {SubUnit}
         1001409
@@ -81365,7 +81598,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1001415
@@ -81431,7 +81664,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1001413
@@ -81497,7 +81730,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1001411
@@ -81610,7 +81843,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#45#CbtPower#
+      #CbtPower#50#CbtPower#
       NULL
         {SubUnit}
         1001404
@@ -81676,7 +81909,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#30#CbtPower#
+      #CbtPower#33#CbtPower#
       NULL
         {SubUnit}
         1001402
@@ -81742,7 +81975,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001390
@@ -81808,7 +82041,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001388
@@ -81874,7 +82107,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001386
@@ -81940,7 +82173,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001396
@@ -82006,7 +82239,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001394
@@ -82072,7 +82305,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001392
@@ -82138,7 +82371,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001384
@@ -82204,7 +82437,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001378
@@ -82270,7 +82503,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001380
@@ -82336,7 +82569,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#22#CbtPower#
+      #CbtPower#24#CbtPower#
       NULL
         {SubUnit}
         1001382
@@ -82402,7 +82635,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#21#CbtPower#
+      #CbtPower#23#CbtPower#
       NULL
         {SubUnit}
         1001400
@@ -82468,7 +82701,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#21#CbtPower#
+      #CbtPower#23#CbtPower#
       NULL
         {SubUnit}
         1001398
@@ -82534,7 +82767,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#17#CbtPower#
+      #CbtPower#19#CbtPower#
       NULL
         {SubUnit}
         1001368
@@ -82600,7 +82833,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#17#CbtPower#
+      #CbtPower#19#CbtPower#
       NULL
         {SubUnit}
         1001370
@@ -82666,7 +82899,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1001376
@@ -82732,7 +82965,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1001374
@@ -82798,7 +83031,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#16#CbtPower#
+      #CbtPower#18#CbtPower#
       NULL
         {SubUnit}
         1001372
@@ -82911,7 +83144,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#81#CbtPower#
+      #CbtPower#90#CbtPower#
       NULL
         {SubUnit}
         1001244
@@ -83037,7 +83270,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#81#CbtPower#
+      #CbtPower#90#CbtPower#
       NULL
         {SubUnit}
         1001248
@@ -83163,7 +83396,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#81#CbtPower#
+      #CbtPower#90#CbtPower#
       NULL
         {SubUnit}
         1001236
@@ -83289,7 +83522,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#81#CbtPower#
+      #CbtPower#90#CbtPower#
       NULL
         {SubUnit}
         1001240
@@ -83415,7 +83648,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#150#CbtPower#
+      #CbtPower#166#CbtPower#
       NULL
         {SubUnit}
         1001257
@@ -83571,7 +83804,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#150#CbtPower#
+      #CbtPower#166#CbtPower#
       NULL
         {SubUnit}
         1001252
@@ -83774,7 +84007,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1002585
@@ -84020,7 +84253,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#15#CbtPower#
+      #CbtPower#17#CbtPower#
       NULL
         {SubUnit}
         1002569
@@ -84266,7 +84499,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#15#CbtPower#
+      #CbtPower#17#CbtPower#
       NULL
         {SubUnit}
         1002577
@@ -84512,7 +84745,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#15#CbtPower#
+      #CbtPower#17#CbtPower#
       NULL
         {SubUnit}
         1002545
@@ -84758,7 +84991,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#15#CbtPower#
+      #CbtPower#17#CbtPower#
       NULL
         {SubUnit}
         1002553
@@ -85004,7 +85237,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#15#CbtPower#
+      #CbtPower#17#CbtPower#
       NULL
         {SubUnit}
         1002561
@@ -85250,7 +85483,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#13#CbtPower#
+      #CbtPower#15#CbtPower#
       NULL
         {SubUnit}
         1002593
@@ -85858,7 +86091,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1002447
@@ -86151,7 +86384,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002396
@@ -86264,7 +86497,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002154
@@ -86377,7 +86610,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#3#CbtPower#
+      #CbtPower#4#CbtPower#
       NULL
         {SubUnit}
         1002511
@@ -86580,7 +86813,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002376
@@ -86693,7 +86926,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002393
@@ -86806,7 +87039,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#35#CbtPower#
+      #CbtPower#39#CbtPower#
       NULL
         {SubUnit}
         1002143
@@ -86962,7 +87195,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002148
@@ -87344,7 +87577,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#71#CbtPower#
+      #CbtPower#81#CbtPower#
       NULL
         {SubUnit}
         1002134
@@ -87703,7 +87936,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#86#CbtPower#
+      #CbtPower#95#CbtPower#
       NULL
         {SubUnit}
         1002381
@@ -87996,7 +88229,7 @@ Placeholder16
       NULL
       NULL
       NULL
-      #CbtPower#9#CbtPower#
+      #CbtPower#10#CbtPower#
       NULL
         {SubUnit}
         1002390
@@ -117434,7 +117667,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#179|4|196|2|174|4|202|2|2417|4|2418|2|2421|4|2422|2|265|4|266|2|319|4|327|2|320|4|329|2|326|4|330|2|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#285|80|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -117606,7 +117839,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  2429|20|2430|20|2431|20|2432|20|2433|20|2434|20|2435|20|2436|20|2437|20|2438|20|2439|20|2440|20|2441|20|2442|20|2443|20|2444|1|2445|20|
+  2429|20|2432|6|2435|6|2437|20|2439|5|2440|5|2445|5|2441|5|2442|5|2443|20|2444|1|2014|10|
   NULL
   NULL
   NULL
@@ -117651,7 +117884,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#2485|4|2486|2|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#2485|40|2486|20|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -117674,7 +117907,7 @@ Placeholder16
   NULL
   NULL
     {Group}
-    1003575
+    1003582
     -1
     50001
     1386
@@ -117720,12 +117953,12 @@ Placeholder16
     Bukhara Emirate|Seid-Alim Khan|1386|1|
     NULL
       {Unit}
-      1003576
+      1003583
       1358
       3
       1386
       0
-      1003575
+      1003582
       1000006
       0
       1
@@ -117747,7 +117980,7 @@ Placeholder16
       Bukhara Emirate
       Seid-Alim Khan
       NULL
-      1st Bukhara|2434|1st Bukhara|1003579 1003580 1003581 1003582 1003583 1003584 1003585 &1st Bukhara Cavalry Rgt|2438|1st Bukhara Cavalry Rgt|1003587 &2nd Bukhara Cavalry Rgt|2438|2nd Bukhara Cavalry Rgt|1003589 &3rd Bukhara Cavalry Rgt|2438|3rd Bukhara Cavalry Rgt|1003591 &Bukhara Artillery|2439|Bukhara Artillery|1003593 &
+      1st Bukhara|2434|1st Bukhara|1003586 1003587 1003588 1003589 1003590 1003591 1003592 &1st Bukhara Cavalry Rgt|2438|1st Bukhara Cavalry Rgt|1003594 &2nd Bukhara Cavalry Rgt|2438|2nd Bukhara Cavalry Rgt|1003596 &3rd Bukhara Cavalry Rgt|2438|3rd Bukhara Cavalry Rgt|1003598 &Bukhara Artillery|2439|Bukhara Artillery|1003600 &
       Bukhara Emirate
       NULL
       NULL
@@ -117755,7 +117988,7 @@ Placeholder16
       #CbtPower#259#CbtPower#
       NULL
         {SubUnit}
-        1003577
+        1003584
         1356
         1
         0
@@ -117785,7 +118018,7 @@ Placeholder16
         Seid-Alim Khan
         {/SubUnit}
         {SubUnit}
-        1003583
+        1003590
         2208
         8
         0
@@ -117815,7 +118048,7 @@ Placeholder16
         1st Machine Guns
         {/SubUnit}
         {SubUnit}
-        1003582
+        1003589
         885
         20
         0
@@ -117845,7 +118078,7 @@ Placeholder16
         Infantry
         {/SubUnit}
         {SubUnit}
-        1003581
+        1003588
         885
         20
         0
@@ -117875,7 +118108,7 @@ Placeholder16
         Infantry
         {/SubUnit}
         {SubUnit}
-        1003580
+        1003587
         885
         20
         0
@@ -117905,7 +118138,7 @@ Placeholder16
         Infantry
         {/SubUnit}
         {SubUnit}
-        1003579
+        1003586
         885
         20
         0
@@ -117935,7 +118168,7 @@ Placeholder16
         Infantry
         {/SubUnit}
         {SubUnit}
-        1003591
+        1003598
         887
         20
         0
@@ -117965,7 +118198,7 @@ Placeholder16
         3rd Bukhara Cavalry
         {/SubUnit}
         {SubUnit}
-        1003589
+        1003596
         887
         20
         0
@@ -117995,7 +118228,7 @@ Placeholder16
         2nd Bukhara Cavalry
         {/SubUnit}
         {SubUnit}
-        1003587
+        1003594
         887
         20
         0
@@ -118025,7 +118258,7 @@ Placeholder16
         1st Bukhara Cavalry
         {/SubUnit}
         {SubUnit}
-        1003584
+        1003591
         887
         20
         0
@@ -118055,7 +118288,7 @@ Placeholder16
         Cavalry
         {/SubUnit}
         {SubUnit}
-        1003593
+        1003600
         2194
         8
         0
@@ -118085,7 +118318,7 @@ Placeholder16
         Bukhara Arty
         {/SubUnit}
         {SubUnit}
-        1003585
+        1003592
         2196
         8
         0
@@ -118117,7 +118350,7 @@ Placeholder16
       {/Unit}
     {/Group}
     {Group}
-    1003560
+    1003567
     -1
     50001
     1384
@@ -118163,12 +118396,12 @@ Placeholder16
     Khiva Khanate|Juna-Id-Khan|1384|1|
     NULL
       {Unit}
-      1003561
+      1003568
       1357
       3
       1384
       0
-      1003560
+      1003567
       1000006
       0
       1
@@ -118190,7 +118423,7 @@ Placeholder16
       Khiva Khanate
       Juna-Id-Khan
       NULL
-      1st Khiva Rgt|2431|1st Khiva Rgt|1003564 &2nd  Khiva Rgt|2431|2nd  Khiva Rgt|1003566 &1st Khiva Cavalry|2436|1st Khiva Cavalry|1003568 1003569 1003570 1003571 1003572 &Khiva Artillery|2440|Khiva Artillery|1003574 &
+      1st Khiva Rgt|2431|1st Khiva Rgt|1003571 &2nd  Khiva Rgt|2431|2nd  Khiva Rgt|1003573 &1st Khiva Cavalry|2436|1st Khiva Cavalry|1003575 1003576 1003577 1003578 1003579 &Khiva Artillery|2440|Khiva Artillery|1003581 &
       Khiva Khanate
       NULL
       NULL
@@ -118198,7 +118431,7 @@ Placeholder16
       #CbtPower#191#CbtPower#
       NULL
         {SubUnit}
-        1003562
+        1003569
         1355
         1
         0
@@ -118228,7 +118461,7 @@ Placeholder16
         Juna-Id-Khan
         {/SubUnit}
         {SubUnit}
-        1003566
+        1003573
         885
         20
         0
@@ -118258,7 +118491,7 @@ Placeholder16
         2nd  Khiva
         {/SubUnit}
         {SubUnit}
-        1003564
+        1003571
         885
         20
         0
@@ -118288,7 +118521,7 @@ Placeholder16
         1st Khiva
         {/SubUnit}
         {SubUnit}
-        1003571
+        1003578
         887
         20
         0
@@ -118318,7 +118551,7 @@ Placeholder16
         Cavalry
         {/SubUnit}
         {SubUnit}
-        1003570
+        1003577
         887
         20
         0
@@ -118348,7 +118581,7 @@ Placeholder16
         Cavalry
         {/SubUnit}
         {SubUnit}
-        1003569
+        1003576
         887
         20
         0
@@ -118378,7 +118611,7 @@ Placeholder16
         Cavalry
         {/SubUnit}
         {SubUnit}
-        1003568
+        1003575
         887
         20
         0
@@ -118408,7 +118641,7 @@ Placeholder16
         Cavalry
         {/SubUnit}
         {SubUnit}
-        1003574
+        1003581
         2195
         8
         0
@@ -118438,7 +118671,7 @@ Placeholder16
         Khiva Arty
         {/SubUnit}
         {SubUnit}
-        1003572
+        1003579
         2194
         8
         0
@@ -119535,7 +119768,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#2487|4|2488|2|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#2487|40|2488|20|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -119752,7 +119985,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#2491|4|2492|2|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#2491|40|2492|20|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -119969,7 +120202,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#2489|4|2490|2|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#2489|40|2490|20|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -120186,7 +120419,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#646|4|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#646|40|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -120403,7 +120636,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#647|4|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#647|40|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -120620,7 +120853,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#648|4|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#648|40|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -120837,7 +121070,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#434|4|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#434|40|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -120860,7 +121093,7 @@ Placeholder16
   NULL
   NULL
     {Group}
-    1003684
+    1003691
     -1
     50001
     942
@@ -120906,12 +121139,12 @@ Placeholder16
     Karelian Nationalists|NoLeader|942|1|
     NULL
       {Unit}
-      1003685
+      1003692
       434
       0
       942
       1
-      1003684
+      1003691
       1000013
       0
       1
@@ -120941,7 +121174,7 @@ Placeholder16
       #CbtPower#19#CbtPower#
       NULL
         {SubUnit}
-        1003686
+        1003693
         304
         20
         0
@@ -121178,7 +121411,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#1908|4|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#1908|40|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -121619,7 +121852,7 @@ Placeholder16
   530|1|
   NULL
   5|0|100
-  -1|3|684|100|Gar1|Gar2|Gar3|Gar4&
+  166|3|683|100|Gar1|Gar2|Gar3|Gar4&167|3|684|100|Gar1|Gar2|Gar3|Gar4&
   80|10|10|10|0|Scorched1|Scorched2|Scorched3|Scorched4
   NULL
   NULL
@@ -121655,7 +121888,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#683|4|684|4|685|2|686|2|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#683|20|684|20|685|10|686|10|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -131286,7 +131519,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#699|4|719|2|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#699|40|719|20|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -131503,7 +131736,7 @@ Placeholder16
   NULL
   NULL
   NULL
-  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#764|4|#Revolt#NULL#Revolt#
+  #Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#764|40|#Revolt#NULL#Revolt#
   NULL
   NULL
   NULL
@@ -173808,175 +174041,181 @@ Placeholder16
   DynGraphics=NULL
   {/GlobalRegionData}
   {Weather Patterns}
-  17Дунай = 1
-  24Самбор = 1
-  26Львов = 1
-  28Стрый = 1
-  29Станислав = 1
-  30Чортков = 1
-  32Черновцы = 1
-  33Красно = 1
-  47Каменска = 1
-  111Ботошани = 1
-  112Сучава = 1
-  113Яссы = 1
-  114Роман = 1
-  115Васлуй = 1
-  116Бакэу = 1
-  117Георге = 1
-  118Комрат = 1
-  119Измаил = 1
-  120Кагул = 1
-  121Галац = 1
-  122Фокшаны = 1
-  123Брэила = 1
-  124Сулина = 1
-  125Тулча = 1
-  126Бабадаг = 1
-  281Столин = 1
-  282Сарны = 1
-  283Олевск = 1
-  284Припять = 1
-  289Лоев = 1
-  290Мозырь = 1
-  291Глинск = 1
-  292Белокоровичи = 1
-  293Ельск = 1
-  294Овруч = 1
-  295Чернобыль = 1
-  296Рожище = 1
-  297Луцк = 1
-  298Тернополь = 1
-  299Дубно = 1
-  300Кременец = 1
-  301Залич = 1
-  302Хотин = 1
-  303Проскуров = 1
-  304Хмельник = 1
-  305Заслав = 1
-  306Острог = 1
-  307Ровно = 1
-  308Костополь = 1
-  309Волынский = 1
-  310Новоград = 1
-  311Коростень = 1
-  312Дымер = 1
-  313Радомир = 1
-  314Любар = 1
-  315Винница = 1
-  316Бердичев = 1
-  317Житомир = 1
-  318Коростычев = 1
-  319Киев = 1
-  320Канев = 1
-  321Белая Церковь = 1
-  322Корсун = 1
-  323Сквира = 1
-  324Сарата = 1
-  325Кишинев = 1
-  326Белгород = 1
-  332Криулень = 1
-  333Оргеев = 1
-  334Сороки = 1
-  335Балта = 1
-  336Бершадь = 1
-  337Умань = 1
-  338Хольта = 1
-  339Помична = 1
-  351Черкассы = 1
-  355Старослав = 1
-  356Добручи = 1
-  357Шостка = 1
-  358Мена = 1
-  359Козелец = 1
-  360Чернигов = 1
-  361Борзна = 1
-  362Кролевец = 1
-  363Бурынь = 1
-  364Бахмач = 1
-  365Конотоп = 1
-  366Нежин = 1
-  367Носовка = 1
-  368Бровары = 1
-  369Борисполь = 1
-  370Прилуки = 1
-  371Лохвица = 1
-  372Переяслав = 1
-  463Карманово = 1
-  464Фатеж = 1
-  465Щигры = 1
-  466Колпны = 1
-  467Горшечное = 1
-  468Тим = 1
-  469Курск = 1
-  470Рыльск = 1
-  471Кореново = 1
-  472Обоянь = 1
-  473Суджа = 1
-  474Яковлево = 1
-  475Гуево = 1
-  476Сумы = 1
-  477Грайворон = 1
-  478Лебедин = 1
-  479Краснокутск = 1
-  480Лубни = 1
-  481Кременчук = 1
-  482Магдалиновка = 1
-  483Полтава = 1
-  484Коломак = 1
-  485Карловка = 1
-  486Мерефа = 1
-  487Змиев = 1
-  488Харьков = 1
-  489Белгород = 1
-  490Пристен = 1
-  491Короча = 1
-  492Старый Оскол = 1
-  493Новый Оскол = 1
-  494Купянск = 1
-  495Балаклея = 1
-  496Валуйки = 1
-  497Алексеевка = 1
-  498Острогожск = 1
-  502Задонск = 1
-  503Чернянка = 1
-  504Алексеевка = 1
-  505Митрофановка = 1
-  506Павловск = 1
-  508Миллерово = 1
-  509Северодонецк = 1
-  523Лозовая = 1
-  524Новомосковск = 1
-  592Уткино = 1
-  593Усмань = 1
-  594Мордово = 1
-  605Рамонь = 1
-  606Воронеж = 1
-  607Лиски = 1
-  608Бобров = 1
-  609Калач = 1
-  611Урюпинск = 1
-  612Анна = 1
-  613Борщево = 1
-  640Уварово = 1
-  651Турки = 1
-  652Большая Грибановка = 1
-  794Прут = 1
-  795Устье Дуная = 1
-  857Валахия = 1
-  1019р. Псел = 1
-  1020р. Десна = 1
-  1021р. Припять = 1
-  1026Верхний Донец = 1
-  1030Верхний Дон = 1
-  1375Констанца = 1
-  1376Бузэу = 1
-  1377Кэлэраши = 1
-  1378Бухарест = 1
+  1Гдыня = 1
+  2Германия = 1
+  3Хойнице = 1
+  4Богемия = 1
+  8Лежно = 1
+  9Познань = 1
+  10Варта = 1
+  11Киль = 1
+  12Тчев = 1
+  13Быдгощ = 1
+  14Иновроцлав = 1
+  15Яроцин = 1
+  18Острув-Велькопольский = 1
+  19Конин = 1
+  20Влоцлавек = 1
+  21Калиш = 1
+  22Ключборк = 1
+  23Силезия = 1
+  25Цешин = 1
+  27Новы-Тарг = 1
+  31Краков = 1
+  34Новы-Сонч = 1
+  35Ченстохова = 1
+  36Тарнов = 1
+  37Катовице = 1
+  38Перемышль = 1
+  39Вольбром = 1
+  40Бохня = 1
+  41Бжеско = 1
+  42Буско-Здруй = 1
+  43Сандомир = 1
+  44Сталева-Воля = 1
+  45Ярослав = 1
+  46Белжец = 1
+  48Замосць = 1
+  49Хелм = 1
+  50Люблин = 1
+  51Радом = 1
+  52Кельце = 1
+  53Петроков = 1
+  54Лодзь = 1
+  55Кутно = 1
+  56Томашув = 1
+  57Гданьск = 1
+  58Скерневице = 1
+  59Варшава = 1
+  60Демблин = 1
+  61Любартув = 1
+  62Бяла-Подляская = 1
+  63Седльце = 1
+  64Модлин = 1
+  65Калужин = 1
+  66Соколув-Подляски = 1
+  67Вышкув = 1
+  68Цеханув = 1
+  69Плоцк = 1
+  70Торунь = 1
+  71Дрвенца = 1
+  72Млава = 1
+  73Остроленка = 1
+  74Квидзын = 1
+  75Эльблонг = 1
+  76Оструда = 1
+  77Стебарк = 1
+  78Ольштын = 1
+  79Бранево = 1
+  80Фридланд = 1
+  81Кенигсберг = 1
+  82Тильзит = 1
+  83Интерсбург = 1
+  84Гумбиннен = 1
+  85Элк = 1
+  86Нидзица = 1
+  87Мышинец = 1
+  88Ломжа = 1
+  90Велау = 1
+  91Преголя = 1
+  96Белосток = 1
+  97Пагегяй = 1
+  127Клайпеда = 1
+  160Бельск-Подляский = 1
+  161Сокулка = 1
+  162Слоним = 1
+  163Береза = 1
+  164Жабинка = 1
+  165Кобирн = 1
+  166Телеханы = 1
+  270Брест-Литовск = 1
+  271Малорита = 1
+  272Любомль = 1
+  273Ковель = 1
+  274Иваново = 1
+  275Пинск = 1
+  721Кочубей = 1
+  725Кисловодск = 1
+  726Пятигорск = 1
+  727Нальчик = 1
+  728Докшукино = 1
+  729Малгобек = 1
+  730Моздок = 1
+  731Долина Терека = 1
+  732Хасавюрт = 1
+  733Владикавказ = 1
+  734Грозный = 1
+  735Аргун = 1
+  736Петровск = 1
+  742Сухуми = 1
+  744Тырныауз = 1
+  745Они = 1
+  746Садон = 1
+  747Казбек = 1
+  748Цхинвали = 1
+  749Сачхере = 1
+  750Кутаиси = 1
+  751Поти = 1
+  752Батуми = 1
+  753Пилица = 1
+  754Озургети = 1
+  755Хуло = 1
+  756Боржоми = 1
+  757Гори = 1
+  758Вале = 1
+  759Гюмри = 1
+  760Тифлис = 1
+  761Душети = 1
+  762Каспи = 1
+  763Телави = 1
+  764Елизаветполь = 1
+  765Славянка = 1
+  766Караклис = 1
+  767Дилижан = 1
+  768Ереван = 1
+  769Ыгдыр = 1
+  770Арарат = 1
+  771Садарак = 1
+  772Севан = 1
+  773Еленендорф = 1
+  774Горис = 1
+  775Нахичевань = 1
+  776Каджаран = 1
+  789Астара = 1
+  790Пушкино = 1
+  791Устье Вислы = 1
+  792Висла = 1
+  793Висла = 1
+  856Бавария = 1
+  858Сербия = 1
+  859Болгария = 1
+  877Дербент = 1
+  880Остров Готланд = 1
+  1036Баку = 1
+  1037Кахи = 1
+  1038Кварели = 1
+  1039Темир-Хан-Шура = 1
+  1040Биджов = 1
+  1041Ивановка = 1
+  1042Шеки = 1
+  1043Ленкорань = 1
+  1044Петропавловка = 1
+  1045Барда = 1
+  1046Набиагалы = 1
+  1047Агдам = 1
+  1048Горадиз = 1
+  1049Восточная Турция = 1
+  1112Неман = 1
   1669Индийский океан = 1
   1677Восточно-Китайское море = 1
   1679Южно-Китайское Море = 1
   1702Кильская бухта = -1
+  1704Мариенбург = 1
+  1705Лолланн = 1
+  1706Гнезно = 1
+  1707Косцежина = 1
+  1713Кизляр = 1
+  1714Карели = 1
   1722Playboard1 = -1
   1724Playboard3 = -1
   1725Playboard4 = -1
@@ -174094,8 +174333,13 @@ Placeholder16
   1837Playboard117 = -1
   1838Playboard118 = -1
   1839Playboard119 = -1
-  1885Боровеньки = 1
-  1886Чугуев = 1
+  1895Южно-Сухокумск = 1
+  1974Швеция = 1
+  1975Австрия = 1
+  1976Венгрия = 1
+  1977Трансильвания = 1
+  1980Стамбул = 1
+  1981Анатолия = 1
   1982Playboard120 = -1
   1983Playboard121 = -1
   {/Weather Patterns}

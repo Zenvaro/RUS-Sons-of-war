@@ -1,0 +1,1917 @@
+{Faction}
+1000004
+0
+12
+0
+0
+0
+-7865
+-2753
+0
+0
+20
+1
+0
+0
+0
+4052
+0
+0
+0
+0
+0
+200
+0
+0
+0
+0
+0
+0
+0
+0
+4
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Анархисты
+strGrandCampaign_ANA
+NULL
+NULL
+NULL
+NULL
+530|10|1320|5|543|5|518|5|488|5|346|5|319|5|1420|3|1426|2|526|2|343|2|327|2|1564|1|1417|1|1288|1|1267|1|1246|1|1240|1|514|1|7|1|
+StrMajorVictory|2|txt_ANA_Win_Fin1921|scores_ANA_victory.png|218|
+StrMajordDefeat|2|txt_ANA_Lose_Fin1921|scores_Reds_defeat.png|219|
+StrMinorVictory|2|txt_ANA_WinVP_Fin1921|scores_ANA_victory.png|SND_VICTORY|
+StrMinorDefeat|2|txt_ANA_LoseVP_Fin1921|scores_Reds_MinorDefeat.png|SND_DEFEAT|
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+5026|1&1&Opt_CMN_Sell_WSU.png&opt_title_ANA_Sell_WSU&opt_desc_ANA_Sell_WSU&opt_hint_ANA_Sell_WSU&0&0&0&0&0&0&0&0&0&NULL&NULL&ANA&NULL&NULL&ANA_Sell_WSU&0&0&0&0&0&1&0&0&NULL&0&NULL&NULL&NULL&NULL&NULL&|5038|1&0&Opt_WHI_Requisitions.png&opt_title_ANA_CareOfThePeople&opt_desc_ANA_CareOfThePeople&opt_hint_ANA_CareOfThePeople&0&0&0&0&0&0&0&0&0&NULL&NULL&ANA&NULL&NULL&ANA_CareOfThePeople&0&0&0&0&0&1&0&0&NULL&20&NULL&NULL&NULL&NULL&NULL&|
+NULL
+926|925|927|-1
+0|10|35|50
+530|1|
+NULL
+5|0|100
+166|3|683|100|Gar1|Gar2|Gar3|Gar4&167|3|684|100|Gar1|Gar2|Gar3|Gar4&
+80|10|10|10|0|Scorched1|Scorched2|Scorched3|Scorched4
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+7|0|8|84|11|120|0|50|12|10|10|119|6|0|17|10|
+NULL
+NULL
+NULL
+#Aifg#0&NULL&NULL&NULL&#Aifg#NULL#Aifg#NULL#Aifg#50|50#Aifg#NULL#Aifg#|1|10|6|10|300|80|300|5|3|75|2|4|5|8|150|10|25|2|5|5|2|125|66|50|6|11|16|20|13|3|5|150|100|250|75|100|75|7|8|90|60|0|#Aifg#NULL#Aifg#NULL#Aifg#NULL#Aifg#NULL#Aifg#
+-1|-1|-1|-1|-1|-1|-1|-1|-1|-1|-1|0|PH1
+NULL&NULL&NULL&NULL&#FacHis#1700|0|1701|0|1702|0|1703|0|1704|0|1705|0|1706|0|1707|0|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|0|1714|0|1715|0|1722|0|1723|0|1724|0|1725|0|1726|0|1727|0|1716|1000|1717|100|1718|1|1719|1|1720|0|1721|0|1728|1|1729|1|1050|0|0|450|1|0|2|0|3|0|4|0|5|0|6|0|7|0|8|836|9|0|10|1077|11|1080|12|90|13|0|14|0|15|0|16|0|17|90|18|0|19|0|20|0|21|0|1052|0|1306|0|1105|0|1353|0|1403|0|1204|0|1653|0|800|0|801|0|802|0|803|0|804|0|805|0|806|0|807|0|808|0|809|0|810|0|811|0|812|0|813|0|814|0|815|0|816|0|817|0|818|0|819|0|820|0|821|0|1067|0|1310|0|1106|0|1352|0|1652|0|650|0|651|0|652|0|653|0|654|0|655|0|656|0|657|0|658|0|659|0|660|0|661|0|662|0|663|0|664|0|665|0|666|0|667|0|668|0|669|0|670|0|671|0|1202|0|500|0|501|0|502|0|503|0|504|0|505|0|506|0|507|0|508|0|509|0|510|0|511|0|512|0|513|0|514|0|515|0|516|0|517|0|518|0|519|0|520|0|521|0|1057|0|1058|0|1059|0|1075|0|1104|450|1350|1076|1400|1080|1450|90|1203|90|1660|0|1302|-1|&#FacHis#1700|0|1701|0|1702|0|1703|0|1704|0|1705|0|1706|0|1707|0|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|0|1714|0|1715|0|1722|0|1723|0|1724|0|1725|0|1726|0|1727|0|1716|1000|1717|100|1718|1|1719|1|1720|0|1721|0|1728|1|1729|1|1050|0|0|50|1|0|2|0|3|0|4|0|5|0|6|0|7|0|8|100|9|0|10|120|11|120|12|10|13|0|14|0|15|0|16|0|17|10|18|0|19|0|20|0|21|0|1052|0|1306|0|1105|0|1353|0|1403|0|1204|0|1653|0|800|0|801|0|802|0|803|0|804|0|805|0|806|0|807|0|808|0|809|0|810|0|811|0|812|0|813|0|814|0|815|0|816|0|817|0|818|0|819|0|820|0|821|0|1067|0|1310|0|1106|0|1352|0|1652|0|650|0|651|0|652|0|653|0|654|0|655|0|656|0|657|0|658|0|659|0|660|0|661|0|662|0|663|0|664|0|665|0|666|0|667|0|668|0|669|0|670|0|671|0|1202|0|500|0|501|0|502|0|503|0|504|0|505|0|506|0|507|0|508|0|509|0|510|0|511|0|512|0|513|0|514|0|515|0|516|0|517|0|518|0|519|0|520|0|521|0|&1057|0|1058|0|1700|0|1701|0|1702|0|1703|0|1704|0|1705|0|1706|0|1707|0|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|0|1714|0|1715|0|1722|0|1723|0|1724|0|1725|0|1726|0|1727|0|1716|1000|1717|100|1718|1|1719|1|1720|0|1721|0|1728|1|1729|1|1059|0|1075|0|1104|50|1350|120|1400|120|1450|10|1203|10|1660|0|1050|0|0|50|1|0|2|0|3|0|4|0|5|0|6|0|7|0|8|98|9|0|10|120|11|120|12|10|13|0|14|0|15|0|16|0|17|10|18|0|19|0|20|0|21|0|1052|0|1306|0|1105|0|1353|0|1403|0|1204|0|1653|0|800|0|801|0|802|0|803|0|804|0|805|0|806|0|807|0|808|0|809|0|810|0|811|0|812|0|813|0|814|0|815|0|816|0|817|0|818|0|819|0|820|0|821|0|1067|0|1310|0|1106|0|1352|0|1652|0|650|0|651|0|652|0|653|0|654|0|655|0|656|0|657|0|658|0|659|0|660|0|661|0|662|0|663|0|664|0|665|0|666|0|667|0|668|0|669|0|670|0|671|0|1202|0|500|0|501|0|502|0|503|0|504|0|505|0|506|0|507|0|508|0|509|0|510|0|511|0|512|0|513|0|514|0|515|0|516|0|517|0|518|0|519|0|520|0|521|0|&1057|0|1058|0|1700|0|1701|0|1702|0|1703|0|1704|0|1705|0|1706|0|1707|0|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|0|1714|0|1715|0|1722|0|1723|0|1724|0|1725|0|1726|0|1727|0|1716|1000|1717|100|1718|1|1719|1|1720|0|1721|0|1728|1|1729|1|1059|0|1075|0|1104|50|1350|120|1400|120|1450|10|1203|10|1660|0|1050|0|0|50|1|0|2|0|3|0|4|0|5|0|6|0|7|0|8|97|9|0|10|120|11|120|12|10|13|0|14|0|15|0|16|0|17|10|18|0|19|0|20|0|21|0|1052|0|1306|0|1105|0|1353|0|1403|0|1204|0|1653|0|800|0|801|0|802|0|803|0|804|0|805|0|806|0|807|0|808|0|809|0|810|0|811|0|812|0|813|0|814|0|815|0|816|0|817|0|818|0|819|0|820|0|821|0|1067|0|1310|0|1106|0|1352|0|1652|0|650|0|651|0|652|0|653|0|654|0|655|0|656|0|657|0|658|0|659|0|660|0|661|0|662|0|663|0|664|0|665|0|666|0|667|0|668|0|669|0|670|0|671|0|1202|0|500|0|501|0|502|0|503|0|504|0|505|0|506|0|507|0|508|0|509|0|510|0|511|0|512|0|513|0|514|0|515|0|516|0|517|0|518|0|519|0|520|0|521|0|&1057|0|1058|0|1700|0|1701|0|1702|0|1703|0|1704|0|1705|0|1706|0|1707|0|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|0|1714|0|1715|0|1722|0|1723|0|1724|0|1725|0|1726|0|1727|0|1716|1000|1717|100|1718|1|1719|1|1720|0|1721|0|1728|1|1729|1|1059|0|1075|0|1104|50|1350|120|1400|120|1450|10|1203|10|1660|0|1050|0|0|50|1|0|2|0|3|0|4|0|5|0|6|0|7|0|8|95|9|0|10|120|11|120|12|10|13|0|14|0|15|0|16|0|17|10|18|0|19|0|20|0|21|0|1052|0|1306|0|1105|0|1353|0|1403|0|1204|0|1653|0|800|0|801|0|802|0|803|0|804|0|805|0|806|0|807|0|808|0|809|0|810|0|811|0|812|0|813|0|814|0|815|0|816|0|817|0|818|0|819|0|820|0|821|0|1067|0|1310|0|1106|0|1352|0|1652|0|650|0|651|0|652|0|653|0|654|0|655|0|656|0|657|0|658|0|659|0|660|0|661|0|662|0|663|0|664|0|665|0|666|0|667|0|668|0|669|0|670|0|671|0|1202|0|500|0|501|0|502|0|503|0|504|0|505|0|506|0|507|0|508|0|509|0|510|0|511|0|512|0|513|0|514|0|515|0|516|0|517|0|518|0|519|0|520|0|521|0|&1057|0|1058|0|1700|0|1701|0|1702|0|1703|0|1704|0|1705|0|1706|0|1707|0|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|0|1714|0|1715|0|1722|0|1723|0|1724|0|1725|0|1726|0|1727|0|1716|1000|1717|100|1718|1|1719|1|1720|0|1721|0|1728|1|1729|1|1059|0|1075|0|1104|50|1350|120|1400|120|1450|10|1203|10|1660|0|1050|0|0|50|1|0|2|0|3|0|4|0|5|0|6|0|7|0|8|93|9|0|10|120|11|120|12|10|13|0|14|0|15|0|16|0|17|10|18|0|19|0|20|0|21|0|1052|0|1306|0|1105|0|1353|0|1403|0|1204|0|1653|0|800|0|801|0|802|0|803|0|804|0|805|0|806|0|807|0|808|0|809|0|810|0|811|0|812|0|813|0|814|0|815|0|816|0|817|0|818|0|819|0|820|0|821|0|1067|0|1310|0|1106|0|1352|0|1652|0|650|0|651|0|652|0|653|0|654|0|655|0|656|0|657|0|658|0|659|0|660|0|661|0|662|0|663|0|664|0|665|0|666|0|667|0|668|0|669|0|670|0|671|0|1202|0|500|0|501|0|502|0|503|0|504|0|505|0|506|0|507|0|508|0|509|0|510|0|511|0|512|0|513|0|514|0|515|0|516|0|517|0|518|0|519|0|520|0|521|0|&1057|0|1058|0|1700|0|1701|0|1702|0|1703|0|1704|0|1705|0|1706|0|1707|0|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|0|1714|0|1715|0|1722|0|1723|0|1724|0|1725|0|1726|0|1727|0|1716|1000|1717|100|1718|1|1719|1|1720|0|1721|0|1728|1|1729|1|1059|0|1075|0|1104|50|1350|120|1400|120|1450|10|1203|10|1660|0|1050|0|0|50|1|0|2|0|3|0|4|0|5|0|6|0|7|0|8|91|9|0|10|120|11|120|12|10|13|0|14|0|15|0|16|0|17|10|18|0|19|0|20|0|21|0|1052|0|1306|0|1105|0|1353|0|1403|0|1204|0|1653|0|800|0|801|0|802|0|803|0|804|0|805|0|806|0|807|0|808|0|809|0|810|0|811|0|812|0|813|0|814|0|815|0|816|0|817|0|818|0|819|0|820|0|821|0|1067|0|1310|0|1106|0|1352|0|1652|0|650|0|651|0|652|0|653|0|654|0|655|0|656|0|657|0|658|0|659|0|660|0|661|0|662|0|663|0|664|0|665|0|666|0|667|0|668|0|669|0|670|0|671|0|1202|0|500|0|501|0|502|0|503|0|504|0|505|0|506|0|507|0|508|0|509|0|510|0|511|0|512|0|513|0|514|0|515|0|516|0|517|0|518|0|519|0|520|0|521|0|&1057|0|1058|0|1700|0|1701|0|1702|0|1703|0|1704|0|1705|0|1706|0|1707|0|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|0|1714|0|1715|0|1722|0|1723|0|1724|0|1725|0|1726|0|1727|0|1716|1000|1717|100|1718|1|1719|1|1720|0|1721|0|1728|1|1729|1|1302|-1|1059|0|1075|0|1104|50|1350|119|1400|120|1450|10|1203|10|1660|0|1050|0|0|50|1|0|2|0|3|0|4|0|5|0|6|0|7|0|8|89|9|0|10|119|11|120|12|10|13|0|14|0|15|0|16|0|17|10|18|0|19|0|20|0|21|0|1052|0|1306|0|1105|0|1353|0|1403|0|1204|0|1653|0|800|0|801|0|802|0|803|0|804|0|805|0|806|0|807|0|808|0|809|0|810|0|811|0|812|0|813|0|814|0|815|0|816|0|817|0|818|0|819|0|820|0|821|0|1067|0|1310|0|1106|0|1352|0|1652|0|650|0|651|0|652|0|653|0|654|0|655|0|656|0|657|0|658|0|659|0|660|0|661|0|662|0|663|0|664|0|665|0|666|0|667|0|668|0|669|0|670|0|671|0|1202|0|500|0|501|0|502|0|503|0|504|0|505|0|506|0|507|0|508|0|509|0|510|0|511|0|512|0|513|0|514|0|515|0|516|0|517|0|518|0|519|0|520|0|521|0|&1057|0|1058|0|1700|0|1701|0|1702|0|1703|0|1704|0|1705|0|1706|0|1707|0|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|0|1714|0|1715|0|1722|0|1723|0|1724|0|1725|0|1726|0|1727|0|1716|1000|1717|100|1718|1|1719|1|1720|0|1721|0|1728|1|1729|1|1059|0|1075|0|1104|50|1350|119|1400|120|1450|10|1203|10|1660|0|1050|0|0|50|1|0|2|0|3|0|4|0|5|0|6|0|7|0|8|87|9|0|10|119|11|120|12|10|13|0|14|0|15|0|16|0|17|10|18|0|19|0|20|0|21|0|1052|0|1306|0|1105|0|1353|0|1403|0|1204|0|1653|0|800|0|801|0|802|0|803|0|804|0|805|0|806|0|807|0|808|0|809|0|810|0|811|0|812|0|813|0|814|0|815|0|816|0|817|0|818|0|819|0|820|0|821|0|1067|0|1310|0|1106|0|1352|0|1652|0|650|0|651|0|652|0|653|0|654|0|655|0|656|0|657|0|658|0|659|0|660|0|661|0|662|0|663|0|664|0|665|0|666|0|667|0|668|0|669|0|670|0|671|0|1202|0|500|0|501|0|502|0|503|0|504|0|505|0|506|0|507|0|508|0|509|0|510|0|511|0|512|0|513|0|514|0|515|0|516|0|517|0|518|0|519|0|520|0|521|0|&1057|0|1058|0|1700|0|1701|0|1702|0|1703|0|1704|0|1705|0|1706|0|1707|0|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|0|1714|0|1715|0|1722|0|1723|0|1724|0|1725|0|1726|0|1727|0|1716|1000|1717|100|1718|1|1719|1|1720|0|1721|0|1728|1|1729|1|1059|0|1075|0|1104|50|1350|119|1400|120|1450|10|1203|10|1660|0|1050|0|0|50|1|0|2|0|3|0|4|0|5|0|6|0|7|0|8|86|9|0|10|119|11|120|12|10|13|0|14|0|15|0|16|0|17|10|18|0|19|0|20|0|21|0|1052|0|1306|0|1105|0|1353|0|1403|0|1204|0|1653|0|800|0|801|0|802|0|803|0|804|0|805|0|806|0|807|0|808|0|809|0|810|0|811|0|812|0|813|0|814|0|815|0|816|0|817|0|818|0|819|0|820|0|821|0|1067|0|1310|0|1106|0|1352|0|1652|0|650|0|651|0|652|0|653|0|654|0|655|0|656|0|657|0|658|0|659|0|660|0|661|0|662|0|663|0|664|0|665|0|666|0|667|0|668|0|669|0|670|0|671|0|1202|0|500|0|501|0|502|0|503|0|504|0|505|0|506|0|507|0|508|0|509|0|510|0|511|0|512|0|513|0|514|0|515|0|516|0|517|0|518|0|519|0|520|0|521|0|&1057|0|1058|0|1700|0|1701|0|1702|0|1703|0|1704|0|1705|0|1706|0|1707|0|1708|0|1709|0|1710|0|1711|0|1712|0|1730|0|1713|0|1714|0|1715|0|1722|0|1723|0|1724|0|1725|0|1726|0|1727|0|1716|1000|1717|100|1718|1|1719|1|1720|0|1721|0|1728|1|1729|1|1059|0|1075|0|1104|50|1350|119|1400|120|1450|10|1203|10|1660|0|&#FacHis#
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+0|0|0|0
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+#Revolt#PH0|60|60|0|120|0|-1|-1|PH1|PH2|PH3|#Revolt#683|20|684|20|685|10|686|10|#Revolt#NULL#Revolt#
+NULL
+NULL
+NULL
+5|4|4|4|
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+  {Region}
+    UID              = 5
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    5
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 6
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    6
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 7
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    7
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 530
+    Control          = 100
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 80
+    {StrucList}
+    530
+      {Structure}
+      1000976
+      5
+      1
+      0
+      1000004
+      0
+      1
+      1
+      0
+      12
+      0
+      0
+      Huliaipole
+      
+      {/Structure}
+      {Structure}
+      1000977
+      14
+      1
+      0
+      1000004
+      0
+      1
+      1
+      0
+      12
+      0
+      0
+      Barracks
+      
+      {/Structure}
+      {Structure}
+      1000978
+      16
+      1
+      0
+      1000004
+      0
+      1
+      1
+      0
+      12
+      0
+      0
+      Police/Cheka
+      
+      {/Structure}
+      {Structure}
+      1000979
+      2
+      1
+      0
+      1000004
+      0
+      1
+      1
+      0
+      12
+      0
+      0
+      Depot
+      
+      {/Structure}
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1119
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1119
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1240
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1240
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1242
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1242
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1245
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1245
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1246
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1246
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1247
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1247
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1260
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1260
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1261
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1261
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1262
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1262
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1263
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1263
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1264
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1264
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1265
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1265
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1269
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1269
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1270
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1270
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1271
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1271
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1272
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1272
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1273
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1273
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1283
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1283
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1285
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1285
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1286
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1286
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1287
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1287
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1288
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1288
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1289
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1289
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1290
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1290
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1291
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1291
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1293
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1293
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1294
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1294
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1296
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 7
+    {StrucList}
+    1296
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1297
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1297
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1298
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 4
+    {StrucList}
+    1298
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1299
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1299
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1300
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 7
+    {StrucList}
+    1300
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1302
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1302
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1304
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1304
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1305
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 7
+    {StrucList}
+    1305
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1307
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1307
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1308
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1308
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1310
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1310
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1312
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1312
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1313
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1313
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1314
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1314
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1315
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1315
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1316
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1316
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1317
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 4
+    {StrucList}
+    1317
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1318
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1318
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1319
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1319
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1320
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 5
+    {StrucList}
+    1320
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1321
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1321
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1322
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1322
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1323
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1323
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1324
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1324
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1325
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 4
+    {StrucList}
+    1325
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1326
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1326
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1327
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1327
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1328
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 7
+    {StrucList}
+    1328
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1330
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1330
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1331
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1331
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1333
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1333
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1334
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1334
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1335
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 7
+    {StrucList}
+    1335
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1336
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 4
+    {StrucList}
+    1336
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1339
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1339
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1340
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1340
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1341
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1341
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1342
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 7
+    {StrucList}
+    1342
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1343
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1343
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1344
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1344
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1345
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 7
+    {StrucList}
+    1345
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1347
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1347
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1349
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1349
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1394
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1394
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1417
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1417
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1418
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1418
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1419
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1419
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1420
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1420
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1421
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1421
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1422
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1422
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1423
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1423
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1424
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1424
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1425
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1425
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1426
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1426
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1428
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1428
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1429
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1429
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1430
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1430
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1431
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1431
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1432
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1432
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1433
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1433
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1434
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1434
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1435
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1435
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1436
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1436
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1437
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1437
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1438
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1438
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1439
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1439
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1440
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1440
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1441
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1441
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1442
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1442
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1443
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1443
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1444
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1444
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1445
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1445
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1446
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1446
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1447
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1447
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1558
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1558
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1559
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1559
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1561
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1561
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1562
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1562
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1563
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1563
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1596
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1596
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1597
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1597
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1598
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1598
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1600
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1600
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1601
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1601
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1602
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1602
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1652
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1652
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1655
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1655
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1656
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1656
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1698
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1698
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1699
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1699
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1700
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1700
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1720
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1720
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1918
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1918
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1919
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1919
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1920
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1920
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1921
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1921
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1922
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1922
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1923
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1923
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1925
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1925
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1926
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1926
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1928
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 8
+    {StrucList}
+    1928
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1959
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1959
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1961
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1961
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1962
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1962
+    {/StrucList}
+  {/Region}
+  {Region}
+    UID              = 1963
+    Control          = 0
+    AirRecoMod       = 0
+    WasBesieged      = 0
+    AIValue          = 0
+    Loyalty          = 10
+    {StrucList}
+    1963
+    {/StrucList}
+  {/Region}
+  {Event}
+  -1
+  0
+  27
+  419
+  -1
+  1000004
+  -1
+  0
+  0
+  0
+  0
+  1
+  -1
+  0
+  0
+  evt_nam_CMN_gold_train_bonus_Moscow
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  evt_nam_CMN_gold_train_bonus_Moscow
+  
+  
+  
+  
+  
+  {/Event}
+  {Event}
+  -1
+  0
+  27
+  1420
+  -1
+  1000004
+  -1
+  0
+  0
+  0
+  0
+  1
+  -1
+  0
+  0
+  evt_nam_ANA_SiberiaSepUprising
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  evt_nam_ANA_SiberiaSepUprising
+  
+  
+  
+  
+  
+  {/Event}
+  {Event}
+  -1
+  0
+  27
+  419
+  -1
+  1000004
+  -1
+  0
+  0
+  0
+  0
+  2
+  -1
+  0
+  0
+  evt_nam_CMN_WhiteUnification
+  evt_txt_CMN_WhiteUnification
+  Event-img_CMN_WhiteUnification
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  evt_nam_CMN_WhiteUnification
+  
+  
+  
+  
+  
+  {/Event}
+  {Event}
+  -1
+  0
+  27
+  -1
+  -1
+  1000004
+  -1
+  0
+  0
+  0
+  0
+  1
+  -1
+  0
+  0
+  Красные начали пропагандистскую кампанию с целью повышения Национального духа
+  NULL
+  NULL
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  Красные начали пропагандистскую кампанию с целью повышения Национального духа
+  
+  
+  
+  
+  
+  {/Event}
+  {Event}
+  -1
+  0
+  27
+  0
+  -1
+  1000004
+  -1
+  0
+  0
+  0
+  0
+  1
+  -1
+  0
+  0
+  evt_nam_KAZ_FreeFrom_RED_WHI
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  evt_nam_KAZ_FreeFrom_RED_WHI
+  
+  
+  
+  
+  
+  {/Event}
+  {Event}
+  -1
+  0
+  27
+  0
+  -1
+  1000004
+  -1
+  0
+  0
+  0
+  0
+  1
+  -1
+  0
+  0
+  evt_nam_KAZ_FreeFrom_RED_WH3
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  evt_nam_KAZ_FreeFrom_RED_WH3
+  
+  
+  
+  
+  
+  {/Event}
+{/Faction}

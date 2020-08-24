@@ -112,1163 +112,22 @@ Actions
 
 EndEvent
 
-
 NULL ==========================================================================
 
 SelectFaction = $COS
 
-StartEvent = evt_nam_AI_COSzoneUral|1|0|NULL|NULL|NULL|NULL
+StartEvent = evt_nam_Winter_COS_Southern|999|0|NULL|NULL|NULL|NULL
 
 Conditions
 
   CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  SelectSubUnits = Area $Theater_Ural;FactionTags COS KUB;Domains $Land
-  EvalSubUnitCount = >=;1
-
-Actions
-
-  AI.SetLocalInterest = $Kurganinsk;200;$Eysk;200;$Akhtarsk;200;$Kanevskaya;200;$Temriuk;200;$Korenovsk;200;$Romanovski Khoutor;200;$Taman;200;$Novorossiysk;200;$Gelendzhik;200;$Ekaterinodar;200;$Krymsk;200;$Goriachiy Klyuch;200;$Maikop;200;$Solnechnodolsk;200;$Nevynominsk;200;$Essentuki;200;$Tuapse;200;$Mostovskoy;200;$Batalpachinskaya;200;$Teberda;200;$Sochi;200;$Elbrus Mountain;200;$Tikhoretskaya;200;$Armavir;200;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSUralend|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  EvalEvent = evt_nam_AI_COSzoneUral;=;1
-  SelectSubUnits = Area $Theater_Ural;FactionTags COS KUB;Domains $Land
-  EvalSubUnitCount = =;0
-
-Actions
-
-  AI.SetLocalInterest = $Kurganinsk;5;$Eysk;5;$Akhtarsk;5;$Kanevskaya;5;$Temriuk;5;$Korenovsk;5;$Romanovski Khoutor;5;$Taman;5;$Novorossiysk;5;$Gelendzhik;5;$Ekaterinodar;5;$Krymsk;5;$Goriachiy Klyuch;5;$Maikop;5;$Solnechnodolsk;5;$Nevynominsk;5;$Essentuki;5;$Tuapse;5;$Mostovskoy;5;$Batalpachinskaya;5;$Teberda;5;$Sochi;5;$Elbrus Mountain;5;$Tikhoretskaya;5;$Armavir;5;
-  ChgEvtOccurs = evt_nam_AI_COSzoneUral;CuOccurs;-1
-  ChgEvtOccurs = evt_nam_AI_COSUralend;CuOccurs;-1
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSzoneEastern|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  SelectSubUnits = Area $Theater_Eastern;FactionTags COS DON;Domains $Land
-  EvalSubUnitCount = >=;1
-
-Actions
-
-  AI.SetLocalInterest = $Chertkovo;200;$Glubokiy ;200;$Viochenskaya;200;$Balashov;200;$Panfilovo;200;$Khoper;200;$Mikhailovka;200;$Kotovo;200;$Frolovo;200;$Golubinskiy;200;$Serafimovich;200;$Kletskiy;200;$Perelazovski;200;$Chernyshkovskiy;200;$Morozovsk;200;$Nizhniy Chir;200;$Shakhty;200;$Tsimlyansk;200;$Surovikino;200;$Romashkin;200;$Kalach-on-Eastern;200;$Logovskiy;200;$Semkin;200;$Kotelnikovo;200;$Yashalta;200;$Zimovniki;200;$Maloorlovskiy;200;$Solenovskaya;200;$Semikarakorski;200;$Bataisk;200;$Azov;200;$Zernograd;200;$Stefanidinodar;200;$Salsk;200;$Eastern Estuary;200;$Lower Easternets;200;$Eastern River;200;$Khoper Confluent;200;$Middle Eastern;200;$Orlovskiy;200;$Tikhiy;200;$Preobrazhenskaya;200;$Belaya-Kalitva;200;$Olkhovka;200;$Kugoyeyskaya;200;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSEasternend|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  EvalEvent = evt_nam_AI_COSzoneEastefrn;=;1
-  SelectSubUnits = Area $Theater_Eastern;FactionTags COS DON;Domains $Land
-  EvalSubUnitCount = =;0
-
-Actions
-
-  ChgEvtOccurs = evt_nam_AI_COSzoneEastern;CuOccurs;-1
-  ChgEvtOccurs = evt_nam_AI_COSEasternend;CuOccurs;-1
-  AI.SetLocalInterest = $Chertkovo;5;$Glubokiy ;5;$Viochenskaya;5;$Balashov;5;$Panfilovo;5;$Khoper;5;$Mikhailovka;5;$Kotovo;5;$Frolovo;5;$Golubinskiy;5;$Serafimovich;5;$Kletskiy;5;$Perelazovski;5;$Chernyshkovskiy;5;$Morozovsk;5;$Nizhniy Chir;5;$Shakhty;5;$Tsimlyansk;5;$Surovikino;5;$Romashkin;5;$Kalach-on-Eastern;5;$Logovskiy;5;$Semkin;5;$Kotelnikovo;5;$Yashalta;5;$Zimovniki;5;$Maloorlovskiy;5;$Solenovskaya;5;$Semikarakorski;5;$Bataisk;5;$Azov;5;$Zernograd;5;$Stefanidinodar;5;$Salsk;5;$Eastern Estuary;5;$Lower Easternets;5;$Eastern River;5;$Khoper Confluent;5;$Middle Eastern;5;$Orlovskiy;5;$Tikhiy;5;$Preobrazhenskaya;5;$Belaya-Kalitva;5;$Olkhovka;5;$Kugoyeyskaya;5;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSzoneUralsksk|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  SelectSubUnits = Area $Theater_Uralsksk;FactionTags COS URL;Domains $Land
-  EvalSubUnitCount = >=;1
-
-Actions
-
-  AI.SetLocalInterest = $Akkystau;200;$Aybas;200;$Kharkin;200;$Lbischensk;200;$Janaikino;200;$Uralsksk;200;$Gurjev;200;$Kurm;200;$Makat;200;$Rozkov;200;$Syrt;200;$Tortkuduk;200;$Kurman-Kuduk;200;$Kuraylysay;200;$Saryumir;200;$Aksay;200;$Dzhambeyty;200;$Karabau;200;$Karatobe;200;$Zirenkopa;200;$Lebedevka;200;$Novoselnyy;200;$Sagiz;200;$Miyala;200;$Shubarkuduk;200;$Bolgarskoye;200;$Kulsary;200;$Ajakkum;200;$Ojmaut;200;$Munalyl;200;$Aktumsyk;200;$Altai;200;$Karazhar;200;$Southerniy;200;$Ushenino;200;$Furmanovo;200;$Zhuldyz;200;$Sergiyevka;200;$Kyzylzhar;200;$Bazarsholan;200;$Raygorodok;200;$Zhanterek;200;$Bayganin;200;$Akrab;200;$Aksij;200;$Shygalak;200;$Opornyy;200;$Karaton;200;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSUralskskend|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  EvalEvent = evt_nam_AI_COSzoneUralsksk;=;1
-  SelectSubUnits = Area $Theater_Uralsksk;FactionTags COS URL;Domains $Land
-  EvalSubUnitCount = =;0
-
-Actions
-
-  ChgEvtOccurs = evt_nam_AI_COSzoneUralsksk;CuOccurs;-1
-  ChgEvtOccurs = evt_nam_AI_COSUralskskend;CuOccurs;-1
-  AI.SetLocalInterest = $Akkystau;5;$Aybas;5;$Kharkin;5;$Lbischensk;5;$Janaikino;5;$Uralsksk;5;$Gurjev;5;$Kurm;5;$Makat;5;$Rozkov;5;$Syrt;5;$Tortkuduk;5;$Kurman-Kuduk;5;$Kuraylysay;5;$Saryumir;5;$Aksay;5;$Dzhambeyty;5;$Karabau;5;$Karatobe;5;$Zirenkopa;5;$Lebedevka;5;$Novoselnyy;5;$Sagiz;5;$Miyala;5;$Shubarkuduk;5;$Bolgarskoye;5;$Kulsary;5;$Ajakkum;5;$Ojmaut;5;$Munalyl;5;$Aktumsyk;5;$Altai;5;$Karazhar;5;$Southerniy;5;$Ushenino;5;$Furmanovo;5;$Zhuldyz;5;$Sergiyevka;5;$Kyzylzhar;5;$Bazarsholan;5;$Raygorodok;5;$Zhanterek;5;$Bayganin;5;$Akrab;5;$Aksij;5;$Shygalak;5;$Opornyy;5;$Karaton;5;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSzoneOrenburg|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  SelectSubUnits = Area $Theater_Orenburg;FactionTags COS ORE;Domains $Land
-  EvalSubUnitCount = >=;1
-
-Actions
-
-  AI.SetLocalInterest = $Orenburg;200;$Salavat;200;$Saraktash;200;$Iletsk;200;$Orsk;200;$Ishimbay;200;$Southern Uralsk;200;$Jamantau Moutain;200;$Tazlarovo;200;$Kuvandyk;200;$Gay;200;$Baymak;200;$Beloretsk;200;$Sibay;200;$Magnitnaya Mountain;200;$Buribay;200;$Shilda;200;$Agapovka;200;$Chelyabinsk;200;$Miass;200;$Plast;200;$Korkino;200;$Iremel Moutain;200;$Yuzhnyy;200;$Kopeysk;200;$Atkul;200;$Kartaly;200;$Yurgamish;200;$Shumikha;200;$Kurtamysh;200;$Karakulka;200;$Bulanovo;200;$Fedorovka;200;$Rudnyy;200;$Alakamys;200;$Alabaytal;200;$Kirdasovo;200;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSOrenburgend|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  EvalEvent = evt_nam_AI_COSzoneOrenburg;=;1
-  SelectSubUnits = Area $Theater_Orenburg;FactionTags COS ORE;Domains $Land
-  EvalSubUnitCount = =;0
-
-Actions
-
-  ChgEvtOccurs = evt_nam_AI_COSzoneOrenburg;CuOccurs;-1
-  ChgEvtOccurs = evt_nam_AI_COSOrenburgend;CuOccurs;-1
-  AI.SetLocalInterest = $Orenburg;5;$Salavat;5;$Saraktash;5;$Iletsk;5;$Orsk;5;$Ishimbay;5;$Southern Uralsk;5;$Jamantau Moutain;5;$Tazlarovo;5;$Kuvandyk;5;$Gay;5;$Baymak;5;$Beloretsk;5;$Sibay;5;$Magnitnaya Mountain;5;$Buribay;5;$Shilda;5;$Agapovka;5;$Chelyabinsk;5;$Miass;5;$Plast;5;$Korkino;5;$Iremel Moutain;5;$Yuzhnyy;5;$Kopeysk;5;$Atkul;5;$Kartaly;5;$Yurgamish;5;$Shumikha;5;$Kurtamysh;5;$Karakulka;5;$Bulanovo;5;$Fedorovka;5;$Rudnyy;5;$Alakamys;5;$Alabaytal;5;$Kirdasovo;5;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSzoneAkmolinsk|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  SelectSubUnits = Area $Theater_Akmolinsk;FactionTags COS SIB;Domains $Land
-  EvalSubUnitCount = >=;1
-
-Actions
-
-  AI.SetLocalInterest = $Pospelovka;200;$Presnogorkovka;200;$Koybagar;200;$Karasu;200;$Petropavolvsk;200;$Sergueyevka;200;$Mamlyutka;200;$Kayrankol;200;$Urickij;200;$Stavropolka;200;$Barakholskiy;200;$Tokushi;200;$Korneyevka;200;$Kotovskoje;200;$Kokchetav;200;$Scucinsk;200;$Upper Irkytch;200;$Bulyaevo;200;$Maryanovka;200;$Omsk;200;$Kormiloka;200;$Achair;200;$Poltavka;200;$Pavlovgradka;200;$Cherlak;200;$Lake Teke;200;$Lake Seletyteniz;200;$Lake Zhalauly;200;$Biskul;200;$Yesil;200;$Sholaksay;200;$Atbasar;200;$Marinovka;200;$Lobanovo;200;$Komenka;200;$Akmolinsk;200;$Vishnevka;200;$Aleksejevka;200;$Jermentau;200;$Bestobe;200;$Tenguiz Lake;200;$Kajrat;200;$Ladyzhenka;200;$Chernyayevka;200;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSAkmolinskend|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  EvalEvent = evt_nam_AI_COSzoneAkmolinsk;=;1
-  SelectSubUnits = Area $Theater_Akmolinsk;FactionTags COS SIB;Domains $Land
-  EvalSubUnitCount = =;0
-
-Actions
-
-  ChgEvtOccurs = evt_nam_AI_COSzoneAkmolinsk;CuOccurs;-1
-  ChgEvtOccurs = evt_nam_AI_COSAkmolinskend;CuOccurs;-1
-  AI.SetLocalInterest = $Pospelovka;5;$Presnogorkovka;5;$Koybagar;5;$Karasu;5;$Petropavolvsk;5;$Sergueyevka;5;$Mamlyutka;5;$Kayrankol;5;$Urickij;5;$Stavropolka;5;$Barakholskiy;5;$Tokushi;5;$Korneyevka;5;$Kotovskoje;5;$Kokchetav;5;$Scucinsk;5;$Upper Irkytch;5;$Bulyaevo;5;$Maryanovka;5;$Omsk;5;$Kormiloka;5;$Achair;5;$Poltavka;5;$Pavlovgradka;5;$Cherlak;5;$Lake Teke;5;$Lake Seletyteniz;5;$Lake Zhalauly;5;$Biskul;5;$Yesil;5;$Sholaksay;5;$Atbasar;5;$Marinovka;5;$Lobanovo;5;$Komenka;5;$Akmolinsk;5;$Vishnevka;5;$Aleksejevka;5;$Jermentau;5;$Bestobe;5;$Tenguiz Lake;5;$Kajrat;5;$Ladyzhenka;5;$Chernyayevka;5;
-
-EndEvent
-
-NULL ==========================================================================
-
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSzoneZaibakal|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  SelectSubUnits = Area $Theater_Zabaikal;FactionTags COS ZAB;Domains $Land
-  EvalSubUnitCount = >=;1
-
-Actions
-
-  AI.SetLocalInterest = $Vydrino;200;$Mysovsk;200;$Kamensk;200;$Verkhneudinsk;200;$Onokhoy;200;$Petrovsk;200;$Mogzon;200;$Khorinsk;200;$Chita;200;$Gusinoozersk;200;$Selenduma;200;$Bayangol;200;$Troitskossavsk;200;$Balyaga;200;$Tamir;200;$Ulentuy;200;$Klochnevo;200;$Shuluta;200;$Abotyy;200;$Barguzin;200;$Ingoda;200;$Shilka;200;$Karymskoye;200;$Nerchinsk;200;$Aginskoye;200;$Olovyannaya;200;$Borzya;200;$Baley;200;$Sretensk;200;$Nercha;200;$Yablonoi Mountains;200;$Vitim;200;$Uldsa;200;$Ulzar;200;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSZaibakalend|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  EvalEvent = evt_nam_AI_COSzoneZaibakal;=;1
-  SelectSubUnits = Area $Theater_Zabaikal;FactionTags COS ZAB;Domains $Land
-  EvalSubUnitCount = =;0
-
-Actions
-
-  ChgEvtOccurs = evt_nam_AI_COSzoneZaibakal;CuOccurs;-1
-  ChgEvtOccurs = evt_nam_AI_COSZaibakalend;CuOccurs;-1
-  AI.SetLocalInterest = $Vydrino;5;$Mysovsk;5;$Kamensk;5;$Verkhneudinsk;5;$Onokhoy;5;$Petrovsk;5;$Mogzon;5;$Khorinsk;5;$Chita;5;$Gusinoozersk;5;$Selenduma;5;$Bayangol;5;$Troitskossavsk;5;$Balyaga;5;$Tamir;5;$Ulentuy;5;$Klochnevo;5;$Shuluta;5;$Abotyy;5;$Barguzin;5;$Ingoda;5;$Shilka;5;$Karymskoye;5;$Nerchinsk;5;$Aginskoye;5;$Olovyannaya;5;$Borzya;5;$Baley;5;$Sretensk;5;$Nercha;5;$Yablonoi Mountains;5;$Vitim;5;$Uldsa;5;$Ulzar;5;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSzoneVladivostok|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  SelectSubUnits = Area $Theater_Vladivostock;FactionTags COS ZAB;Domains $Land
-  EvalSubUnitCount = >=;1
-
-Actions
-
-  AI.SetLocalInterest = $Tihonkaya;200;$Smidovich;200;$Karemyy;200;$Khabarovsk;200;$Mukhen;200;$Sikhota-Alin;200;$Korfovskiy;200;$Birushka;200;$Khor;200;$Poletnoye;200;$Bikin;200;$Gvasyugi;200;$Luchegorsk;200;$Dalnerechensk;200;$Vostok;200;$Spasskoye;200;$Zharikovo;200;$Nikolsk;200;$Vladivostok;200;$Poset;200;$Nakhodka;200;$Sutchan;200;$Vostretsovo;200;$Semenovka;200;$Saratovka;200;$Preobrazheniye;200;$Berezovka;200;$Lake Khanka;200;$Blagoveshchensk;200;$Churki;200;$Kavalerovo;200;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSVladivostokend|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  EvalEvent = evt_nam_AI_COSzoneVladivostok;=;1
-  SelectSubUnits = Area $Theater_Vladivostock;FactionTags COS ZAB;Domains $Land
-  EvalSubUnitCount = =;0
-
-Actions
-
-  ChgEvtOccurs = evt_nam_AI_COSzoneVladivostok;CuOccurs;-1
-  ChgEvtOccurs = evt_nam_AI_COSVladivostokend;CuOccurs;-1
-  AI.SetLocalInterest = $Tihonkaya;5;$Smidovich;5;$Karemyy;5;$Khabarovsk;5;$Mukhen;5;$Sikhota-Alin;5;$Korfovskiy;5;$Birushka;5;$Khor;5;$Poletnoye;5;$Bikin;5;$Gvasyugi;5;$Luchegorsk;5;$Dalnerechensk;5;$Vostok;5;$Spasskoye;5;$Zharikovo;5;$Nikolsk;5;$Vladivostok;5;$Poset;5;$Nakhodka;5;$Sutchan;5;$Vostretsovo;5;$Semenovka;5;$Saratovka;5;$Preobrazheniye;5;$Berezovka;5;$Lake Khanka;5;$Blagoveshchensk;5;$Churki;5;$Kavalerovo;5;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSzoneSiberia|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  SelectSubUnits = Area $Theater_Siberia;FactionTags COS SEM;Domains $Land
-  EvalSubUnitCount = >=;1
-
-Actions
-
-  AI.SetLocalInterest = $Semipalatinsk;200;$Chagan;200;$Talitsa;200;$Shemonaikha;200;$Ust-Kamenogorsk;200;$Ulanskoje;200;$Privolnoye;200;$Arkalyk;200;$Verchuba;200;$Zmeinogorsk;200;$Rubtsovsk;200;$Shadrukha;200;$Malinovoye;200;$Pavlodar;200;$Krugloye;200;$Troynitskoye;200;$Sekisovka;200;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_AI_COSSiberiaend|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  MinDate = 1917/11/01
-  MaxDate = 1923/01/01
-  EvalEvent = evt_nam_AI_COSzoneSiberia;=;1
-  SelectSubUnits = Area $Theater_Siberia;FactionTags COS SEM;Domains $Land
-  EvalSubUnitCount = =;0
-
-Actions
-
-  ChgEvtOccurs = evt_nam_AI_COSzoneSiberia;CuOccurs;-1
-  ChgEvtOccurs = evt_nam_AI_COSSiberiaend;CuOccurs;-1
-  AI.SetLocalInterest = $Semipalatinsk;5;$Chagan;5;$Talitsa;5;$Shemonaikha;5;$Ust-Kamenogorsk;5;$Ulanskoje;5;$Privolnoye;5;$Arkalyk;5;$Verchuba;5;$Zmeinogorsk;5;$Rubtsovsk;5;$Shadrukha;5;$Malinovoye;5;$Pavlodar;5;$Krugloye;5;$Troynitskoye;5;$Sekisovka;5;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Southern|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 15
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Southern;100
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Southern3|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 10
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Southern;150
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Southern4|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 8
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Southern;200
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Southern2|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 10
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Southern;400
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Southern5|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 5
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Southern;600
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Southern6|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 15
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Southern;900
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Southern7|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 12
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Southern;70
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Ural|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 15
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Ural;100
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Ural3|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 10
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Ural;150
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Ural4|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 8
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Ural;200
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Ural2|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 10
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Ural;400
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Ural5|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 5
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Ural;600
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Ural6|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 15
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Ural;900
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Ural7|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 12
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Ural;70
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Siberia|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 15
-  CheckAILevel = 1   
-
-Actions
-
-  AI.SetAggro = $Theater_Siberia;100
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Siberia3|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 10
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Siberia;150
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Siberia4|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 8
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Siberia;200
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Siberia2|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 10
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Siberia;400
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Siberia5|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 5
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Siberia;600
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Siberia6|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 15
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Siberia;900
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Siberia7|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 12
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Siberia;70
-
-EndEvent
-
-NULL ==========================================================================
-
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Eastern|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 15
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Eastern;100
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Eastern3|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 10
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Eastern;150
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Eastern4|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 8
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Eastern;200
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Eastern2|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 10
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Eastern;400
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Eastern5|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 5
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Eastern;600
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Eastern6|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 15
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Eastern;900
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_COS_aggro1Eastern7|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  TurnIndex  = 7;8;9;10;11;12;13;14;15;16;17;18;19
-  Probability = 12
-  CheckAILevel = 1
-
-   
-
-Actions
-
-  AI.SetAggro = $Theater_Eastern;70
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_Winter_B|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  TurnIndex = 22;1;2;4
-  Probability = 50
-
-Actions
-
-  AI.ChgAggro = $Theater_Southern;25;$Theater_Ural;25;$Theater_Eastern;25;$Theater_Siberia;25;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_Winter_offensive1|4|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  TurnIndex = 20;22;1;2;4
-  Probability = 25
-
-Actions
-
-  AI.ChgAggro  = $Theater_Southern;100
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_Winter_offensive3|4|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  TurnIndex = 22;1;2;4
-  Probability = 4
-
-Actions
-
-  AI.ChgAggro  = $Theater_Siberia;100;
-
-EndEvent
-
-StartEvent = evt_nam_Winter_offensive4|4|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  TurnIndex = 22;1;2;4
-  Probability = 4
-
-Actions
-
-  AI.ChgAggro  = $Theater_Ural;100;
-
-EndEvent
-
-StartEvent = evt_nam_Winter_offensive5|4|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  TurnIndex = 22;1;2;4
-  Probability = 4
-
-Actions
-
-  AI.ChgAggro  = $Theater_Eastern;100;
-
-EndEvent
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_Winter_offensive1end|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_Winter_offensive1;=;1;
-  CheckAILevel = 1
-  TurnIndex = 22;1;2;4
-  Probability = 10
-
-Actions
-
-  AI.ChgAggro  = $Theater_Southern;-50
-  ChgEvtOccurs = evt_nam_Winter_offensive1;CuOccurs;-1;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_Winter_offensive4end|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_Winter_offensive4;=;1;
-  CheckAILevel = 1
-  TurnIndex = 22;1;2;4
-  Probability = 10
-
-Actions
-
-  AI.ChgAggro  = $Theater_Ural;-50
-  ChgEvtOccurs = evt_nam_Winter_offensive4;CuOccurs;-1;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_Winter_offensive5end|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_Winter_offensive5;=;1;
-  CheckAILevel = 1
-  TurnIndex = 22;1;2;4
-  Probability = 10
-
-Actions
-
-  AI.ChgAggro  = $Theater_Eastern;-50
-  ChgEvtOccurs = evt_nam_Winter_offensive5;CuOccurs;-1;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_Winter_offensive7end|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_Winter_offensive7;=;1;
-  CheckAILevel = 1
-  TurnIndex = 22;1;2;4
-  Probability = 10
-
-Actions
-
-  AI.ChgAggro  = $Theater_Siberia;-50
-  ChgEvtOccurs = evt_nam_Winter_offensive7;CuOccurs;-1;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_Winter_offensive1end2|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_Winter_offensive1;=;2;
-  CheckAILevel = 1
-  TurnIndex = 22;1;2;4
-  Probability = 10
-
-Actions
-
-  AI.ChgAggro  = $Theater_Southern;-50
-  ChgEvtOccurs = evt_nam_Winter_offensive1;CuOccurs;-1;
-
-EndEvent
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_Winter_offensive4end2|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_Winter_offensive4;=;2;
-  CheckAILevel = 1
-  TurnIndex = 22;1;2;4
-  Probability = 10
-
-Actions
-
-  AI.ChgAggro  = $Theater_Ural;-50
-  ChgEvtOccurs = evt_nam_Winter_offensive4;CuOccurs;-1;
-
-EndEvent
-
-NULL ==========================================================================
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_Winter_offensive5end2|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_Winter_offensive5;=;2;
-  CheckAILevel = 1
-  TurnIndex = 22;1;2;4
-  Probability = 10
-
-Actions
-
-  AI.ChgAggro  = $Theater_Eastern;-50
-  ChgEvtOccurs = evt_nam_Winter_offensive5;CuOccurs;-1;
-
-EndEvent
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_Winter_offensive7end2|999|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  EvalEvent = evt_nam_Winter_offensive7;=;2;
-  CheckAILevel = 1
-  TurnIndex = 22;1;2;4
-  Probability = 10
-
-Actions
-
-  AI.ChgAggro  = $Theater_Siberia;-50
-  ChgEvtOccurs = evt_nam_Winter_offensive7;CuOccurs;-1;
-
-EndEvent
-
-SelectFaction = $COS
-
-StartEvent = evt_nam_Winter_COS_Southern|1|0|NULL|NULL|NULL|NULL
-
-Conditions
-
-  CheckAILevel = 1
-  TurnIndex = 20;21;22;23;1;2;3;
   EvalRgnWeather = $Grozny;>=;2;
   EvalRgnWeather = $Ekaterinodar;>=;2;
   EvalRgnWeather = $Rostov;>=;2;
-  Probability = 15
 
 Actions
 
-  AI.SetAggro  = $Theater_Southern;25
+  AI.SetAggro  = $Theater_Southern;50
 
 EndEvent
 
@@ -1276,21 +135,19 @@ NULL ==========================================================================
 
 SelectFaction = $COS
 
-StartEvent = evt_nam_Winter_COS_Ural|1|0|NULL|NULL|NULL|NULL
+StartEvent = evt_nam_Winter_COS_Ural|999|0|NULL|NULL|NULL|NULL
 
 Conditions
 
   CheckAILevel = 1
-  TurnIndex = 20;21;22;23;1;2;3;
   EvalRgnWeather = $Uralsk;>=;2;
   EvalRgnWeather = $Orenburg;>=;2;
-  Probability = 15
-
-   
+  EvalRgnWeather = $Ekaterinburg;>=;2;
+  EvalRgnWeather = $Perm;>=;2;
 
 Actions
 
-  AI.SetAggro  = $Theater_Ural;25
+  AI.SetAggro  = $Theater_Ural;50
 
 EndEvent
 
@@ -1298,24 +155,20 @@ NULL ==========================================================================
 
 SelectFaction = $COS
 
-StartEvent = evt_nam_Winter_COS_Eastern|1|0|NULL|NULL|NULL|NULL
+StartEvent = evt_nam_Winter_COS_Eastern|999|0|NULL|NULL|NULL|NULL
 
 Conditions
 
   CheckAILevel = 1
-  TurnIndex = 20;21;22;23;1;2;3;
   EvalRgnWeather = $Novocherkassk;>=;2;
   EvalRgnWeather = $Irkutsk;>=;2;
   EvalRgnWeather = $Chita;>=;2;
   EvalRgnWeather = $Khabarovsk;>=;2;
   EvalRgnWeather = $Vladivostok;>=;2;
-  Probability = 15
-
-   
 
 Actions
 
-  AI.SetAggro  = $Theater_Eastern;25
+  AI.SetAggro  = $Theater_Eastern;50
 
 EndEvent
 
@@ -1323,23 +176,19 @@ NULL ==========================================================================
 
 SelectFaction = $COS
 
-StartEvent = evt_nam_Winter_COS_Siberia|1|0|NULL|NULL|NULL|NULL
+StartEvent = evt_nam_Winter_COS_Siberia|999|0|NULL|NULL|NULL|NULL
 
 Conditions
 
   CheckAILevel = 1
-  TurnIndex = 20;21;22;23;1;2;3;
   EvalRgnWeather = $Omsk;>=;2;
   EvalRgnWeather = $Tomsk;>=;2;
   EvalRgnWeather = $Krasnoyarsk;>=;2;
   EvalRgnWeather = $Semipalatinsk;>=;2;
-  Probability = 15
-
-   
 
 Actions
 
-  AI.SetAggro  = $Theater_Siberia;25
+  AI.SetAggro  = $Theater_Siberia;50
 
 EndEvent
 
@@ -1352,18 +201,13 @@ StartEvent = evt_nam_Spring_COS_Southern|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckAILevel = 1
-  TurnIndex = 20;21;22;23;1;2;3;4;5;6
-  EvalEvent = evt_nam_Winter_COS_Southern;=;1;
   EvalRgnWeather = $Grozny;<=;1;
   EvalRgnWeather = $Ekaterinodar;<=;1;
   EvalRgnWeather = $Rostov;<=;1;
 
-   
-
 Actions
 
-  AI.SetAggro  = $Theater_Southern;100
-  SetEvtOccurs = evt_nam_Winter_COS_Southern;CuOccurs;0;
+  AI.SetAggro  = $Theater_Southern;900
 
 EndEvent
 
@@ -1376,12 +220,10 @@ StartEvent = evt_nam_Spring_COS_Ural|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckAILevel = 1
-  TurnIndex = 20;21;22;23;1;2;3;4;5;6
-  EvalEvent = evt_nam_Winter_COS_Ural;=;1;
   EvalRgnWeather = $Uralsk;<=;1;
   EvalRgnWeather = $Orenburg;<=;1;
-
-   
+  EvalRgnWeather = $Ekaterinburg;>=;2;
+  EvalRgnWeather = $Perm;>=;2;
 
 Actions
 
@@ -1399,19 +241,14 @@ StartEvent = evt_nam_Spring_COS_Eastern|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckAILevel = 1
-  TurnIndex = 20;21;22;23;1;2;3;4;5;6
-  EvalEvent = evt_nam_Winter_COS_Eastern;=;1;
   EvalRgnWeather = $Irkutsk;<=;1;
   EvalRgnWeather = $Chita;<=;1;
   EvalRgnWeather = $Khabarovsk;<=;1;
   EvalRgnWeather = $Vladivostok;<=;1;
 
-   
-
 Actions
 
-  AI.SetAggro  = $Theater_Eastern;100
-  SetEvtOccurs = evt_nam_Winter_COS_Eastern;CuOccurs;0;
+  AI.SetAggro  = $Theater_Eastern;900
 
 EndEvent
 
@@ -1424,19 +261,14 @@ StartEvent = evt_nam_Spring_COS_Siberia|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   CheckAILevel = 1
-  TurnIndex = 20;21;22;23;1;2;3;4;5;6
-  EvalEvent = evt_nam_Winter_COS_Siberia;=;1;
   EvalRgnWeather = $Omsk;<=;1;
   EvalRgnWeather = $Tomsk;<=;1;
   EvalRgnWeather = $Krasnoyarsk;<=;1;
   EvalRgnWeather = $Semipalatinsk;<=;1;
 
-   
-
 Actions
 
-  AI.SetAggro  = $Theater_Siberia;100
-  SetEvtOccurs = evt_nam_Winter_COS_Siberia;CuOccurs;0;
+  AI.SetAggro  = $Theater_Siberia;900
 
 EndEvent
 

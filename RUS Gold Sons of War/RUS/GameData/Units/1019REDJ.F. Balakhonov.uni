@@ -1,9 +1,9 @@
 UID = 1019
 NationTag = RED
-Name = J.F. Balakhonov1
+Name = J.F. Balakhonov
 Alias = uni_RED_Balakhonov1
 ForcePool = -1
-ShortName = Balakhonov1
+ShortName = Balakhonov
 Text = $uni_RED_Balakhonov1_txt
 Color = $colREDRegular
 ModelType0 = $ldr_RED_Balakhonov1|1

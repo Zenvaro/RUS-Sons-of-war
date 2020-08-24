@@ -150,7 +150,7 @@ Conditions
 Actions
 
   ChgVPCount = -20
-  ChangeFacMorale = -20
+  ChangeFacMorale = -7
   SetFacRelationships = ANA;100
 
 SelectFaction = $CMN
@@ -6356,7 +6356,6 @@ Conditions
   ActorEnabled = $gmaOptionVar;ANA_Get_Weapons
   EvalEngagementPts = >=;1
   EvalFacRelationships = ANA;>=;0
-  Probability = 75
 
 Actions
 
@@ -6414,7 +6413,6 @@ StartEvent = evt_nam_ANA_Get_Weapons_Regen|999|0|NULL|NULL|NULL|NULL
 Conditions
 
   MinDate = 1918/11/11
-  Probability = 50
   ActorDisabled = $gmaOptionVar;ANA_Get_Weapons
   CheckIsPlayer = NULL
   EvalFacRelationships = ANA;>=;0
@@ -6945,8 +6943,7 @@ SelectFaction = $ANA
   ChgFacEngagementPts = -10
   ChangeFacMorale = -10
   ChangeWSUPool = 100
-  Replacement = ANA;$famRaider;4
-  Replacement = ANA;$famCavalry;2
+  Replacement = ANA;$famRaider;10
 
 SelectFaction = $UKR
 

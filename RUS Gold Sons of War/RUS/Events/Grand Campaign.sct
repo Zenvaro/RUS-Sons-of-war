@@ -394,8 +394,8 @@ SelectRegion = $Samara
 
 SelectFaction = $WH3
 
-  SetCapitals = $Omsk;3
-  SetEvtOccurs = evt_nam_WH3_Omsk_Capital_Chosen;MaxOccurs;1
+  SetCapital = $Omsk;3
+  SetEvtOccurs = evt_nam_WH3_Omsk_Capital_Chosen;CuOccurs;1
   SetEvtOccurs = evt_nam_WH3_AutonomyRecognition_Generate;CuOccurs;1
 
 RemSubFacRgn = ORE;$Orenburg

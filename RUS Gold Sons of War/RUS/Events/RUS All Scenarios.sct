@@ -3042,6 +3042,8 @@ SelectFaction = $RED
 
   EvalRgnOwned = $Hungary
   EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver1;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver2;=;0
 
 Actions
 
@@ -3066,6 +3068,8 @@ SelectFaction = $RED
 
   EvalRgnOwned = $Hungary
   EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver1;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver2;=;0
 
 Actions
 
@@ -3245,6 +3249,9 @@ Conditions
   MinDate = 1919/09/25
   EvalEvent = evt_nam_RED_Revolution_In_Hungary;=;1
   EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalEvent = evt_nam_Hungarian_Red_Army_Ready;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver2;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver3;=;0
 
 SelectFaction = $RED
 
@@ -3256,6 +3263,107 @@ SelectFaction = $RED
   EvalRgnOwned = $Constanta;NOT
   EvalRgnOwned = $Bucuresti;NOT
   EvalRgnOwned = $Wallachia;NOT
+
+Actions
+
+  SelectSubUnits = Region $Hungary;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Hungary
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+  BlockState = 2
+
+SelectFaction = $RED
+
+  SelectSubUnits = Region $Transylvania;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Transylvania
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+SelectRegion = $Transylvania
+
+  BlockState = 2
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+StartEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver2|1|1|NULL|NULL|$Hungary|NULL
+
+Conditions
+
+  MinDate = 1919/09/25
+  EvalEvent = evt_nam_RED_Revolution_In_Hungary;=;1
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalEvent = evt_nam_Hungarian_Red_Army_Ready;=;1
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver3;=;0
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Hungary;NOT
+  EvalRgnOwned = $Transylvania;NOT
+
+Actions
+
+  SelectSubUnits = Region $Hungary;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Hungary
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+  BlockState = 2
+
+SelectFaction = $RED
+
+  SelectSubUnits = Region $Transylvania;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Transylvania
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+SelectRegion = $Transylvania
+
+  BlockState = 2
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+StartEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver3|1|1|NULL|NULL|$Hungary|NULL
+
+Conditions
+
+  MinDate = 1919/09/25
+  EvalEvent = evt_nam_RED_Revolution_In_Hungary;=;1
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalEvent = evt_nam_Hungarian_Red_Army_Ready;=;1
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver2;=;0
+
+SelectFaction = $RED
+
+  EvalFacRelationships = ROM;>=;0
 
 Actions
 
@@ -5471,23 +5579,23 @@ SelectFaction = $JAP
   ChangeLoyaltyFac = $Area_Zabaikal;20
   ChangeLoyaltyFac = $Area_Vladivostock;20
 
-  ChangeUnitPool = $uni_WH3_KalInf;8
-  ChangeUnitPool = $uni_WH3_KalCav;8
-  ChangeUnitPool = $uni_WH3_GamInf;8
-  ChangeUnitPool = $uni_WH3_GamCav;8
-  ChangeUnitPool = $uni_WH3_SemInf;16
-  ChangeUnitPool = $uni_WH3_SemCav;16
-  ChangeUnitPool = $uni_WH3_GamInfDiv;2
-  ChangeUnitPool = $uni_WH3_GamCavDiv;2
-  ChangeUnitPool = $uni_WH3_SemInfDiv;4
-  ChangeUnitPool = $uni_WH3_SemCavDiv;4
-  ChangeUnitPool = $uni_WH3_KalInfDiv;2
-  ChangeUnitPool = $uni_WH3_KalCavDiv;2
-  ChangeUnitPool = $uni_WH3_Art0;10
-  ChangeUnitPool = $uni_WH3_Art1;10
-  ChangeUnitPool = $uni_WH3_Amt1;10
-  ChangeUnitPool = $uni_WH3_Sup1;20
-  ChangeUnitPool = $uni_WH3_Bas1;4
+  ChangeUnitPool = $uni_WH3_KalInf;4
+  ChangeUnitPool = $uni_WH3_KalCav;4
+  ChangeUnitPool = $uni_WH3_GamInf;4
+  ChangeUnitPool = $uni_WH3_GamCav;4
+  ChangeUnitPool = $uni_WH3_SemInf;8
+  ChangeUnitPool = $uni_WH3_SemCav;8
+  ChangeUnitPool = $uni_WH3_GamInfDiv;1
+  ChangeUnitPool = $uni_WH3_GamCavDiv;1
+  ChangeUnitPool = $uni_WH3_SemInfDiv;2
+  ChangeUnitPool = $uni_WH3_SemCavDiv;2
+  ChangeUnitPool = $uni_WH3_KalInfDiv;1
+  ChangeUnitPool = $uni_WH3_KalCavDiv;1
+  ChangeUnitPool = $uni_WH3_Art0;4
+  ChangeUnitPool = $uni_WH3_Art1;4
+  ChangeUnitPool = $uni_WH3_Amt1;4
+  ChangeUnitPool = $uni_WH3_MG0;4
+  ChangeUnitPool = $uni_WH3_Sup1;10
 
 SelectFaction = $WH3
 

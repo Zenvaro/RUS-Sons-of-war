@@ -1,7 +1,7 @@
 1. *** Sound media options ***
 LoadSounds      = 1
 PlayMusic       = 1
-MusicDelay       = 3
+MusicDelay       = 0
 
 2. *** Language ***
 // language (0: English; 1: Francais; 2: Espanol; 3: Deutsche; 4: Russian; 5: Italian)
@@ -70,4 +70,4 @@ DelayedCommit    = 0
 rulUIExtForcePool  = 0
 NoWinterBitmaps  = 0
 RegionsBorders   = 0
-LastPlayedGame   = D:\Repositories\RUS-Sons-of-war\RUS Gold Sons of War\RUS\Saves\Grand Campaign1\Grand Campaign~RED.trn
+LastPlayedGame   = D:\Repositories\RUS-Sons-of-war\RUS Gold Sons of War\RUS\Saves\Grand Campaign13\Grand Campaign1~UKR.trn
